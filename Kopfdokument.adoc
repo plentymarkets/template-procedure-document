@@ -1,4 +1,4 @@
-= Kopfdokument: Verfahrensdokumentation plentymarkets
+= Kopfdokument: Vorlage zur Verfahrensdokumentation für plentymarkets Anwender
 :lang: de
 include::{includedir}/_header.adoc[]
 
