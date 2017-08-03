@@ -1,0 +1,800 @@
+= Vorlage zur Verfahrensdokumentation für plentymarkets POS Anwender
+:lang: de
+include::{includedir}/_header.adoc[]
+
+_Aufbau_
+
+* _Verwendungszweck_
+* _Arbeitsweise_
+* _Datenstruktur_
+
+////
+Im Rahmen der Verfahrensdokumentation sind alle Anweisungen aufzubewahren, die dem umfassenden Verständnis der *Datenentstehung, -erfassung, -speicherung und –verarbeitung dienen. *Dazu gehören auch Arbeitsanweisungen, die die *Rechte und Pflichten bei der Bedienung der eingesetzten Kassen* abbilden, sowie die *Festlegung von Kontrollen über die Einhaltung der festgelegten Nutzungsregeln*. So muss beispielsweise auch dokumentiert werden, wer die Kasse führt, wer Zugang zur Kasse hat und wer als Kassenführer/-in fungiert. Ausgeführte Kontrollen sind dabei zu protokollieren.
+
+Vorzuhalten ist auch eine Verfahrensdokumentation, die neben einer allgemeinen Beschreibung der eingesetzten Kasse (Bedienungs- und Programmieranleitungen) auch eine technische Systemdokumentation sowie eine Dokumentation über Betriebszeiten und Anwender (Nutzungsprotokolle, Datenänderungen etc.) enthält.
+////
+
+== plentymarkets App
+
+=== Verwendungszweck
+
+
+Die plentymarkets App ist eine mobile App, die die folgenden Funktionen bereitstellt:
+
+* Anzeige von Kennzahlen des ERP-Systems plentymarkets
+* Artikelsuche
+* Kundensuche
+* Auftragssuche
+* Picklistenanzeige
+* Umbuchung zwischen Lagern
+* PC-Kassensystem plentymarkets POS
+
+=== Systemvoraussetzungen und Betrieb
+
+Ebenso wie die plentymarkets App läuft das Kassensystem plentymarkets POS auf mobilen Endgeräten mit folgenden Systemvoraussetzungen:
+
+* Android-Geräte mit OS-Version ab 4.2.2
+* iOS-Geräte (iPad, iPhone, iPod) mit OS-Version ab 8
+
+Die plentymarkets App wird ohne eigene Hardware ausgeliefert.
+
+Die plentymarkets App wird in folgenden App-Stores kostenlos bereitgestellt:
+
+** iOS: https://itunes.apple.com/de/app/plentymarkets/id957702618?mt=8[https://itunes.apple.com/de/app/plentymarkets/id957702618?mt=8]
+** Android: https://play.google.com/store/apps/details?id=eu.plentymarkets.mobile[https://play.google.com/store/apps/details?id=eu.plentymarkets.mobile]
+
+Versionen der plentymarkets App sind durch Versionsnummern gekennzeichnet. Änderungen an der Software werden in den Changelogs der App-Stores veröffentlicht:
+
+** iOS: https://itunes.apple.com/de/app/plentymarkets/id957702618?mt=8[https://itunes.apple.com/de/app/plentymarkets/id957702618?mt=8]
+** Android: https://play.google.com/store/apps/details?id=eu.plentymarkets.mobile[https://play.google.com/store/apps/details?id=eu.plentymarkets.mobile]
+
+Die plentymarkets App ist nur in Kombination mit einem gebuchten plentymarkets System funktionsfähig, da eine Anmeldung erforderlich ist.
+
+Mandanten
+
+=== Sicherheitsfunktionen
+
+Der Zugriff auf plentymarkets Daten über die plentymarkets App wird über umfassende Zugangsrechte gesteuert. Bei der Anmeldung müssen die Login-Daten eines gültigen plentymarkets Systems eingegeben werden. Diese Longin-Daten bestehen aus:
+
+* Basis-URL des plentymarkets Systems
+* Benutzer
+* Passwort
+
+In welchem Umfang Benutzer die App nutzen können, wird über die Benutzerverwaltung des ERP-Systems plentymarkets gesteuert. Benutzer werden im Menü *Einstellungen » Grundeinstellungen » Benutzer* erstellt. Die Zugriffsrechte für die plentymarkets App werden im Menü *Einstellungen » Grundeinstellungen » Benutzer » Konten » Konto öffnen » Tab: Berechtigung » Tab: Mobile *definiert. Benutzer der Benutzerklasse Admin haben standardmäßig alle verfügbaren Rechte für den Zugriff auf plentymarkets App. Für alle anderen Benutzerklassen müssen die Rechte pro Benutzer oder pro Benutzerrolle definiert werden.
+
+Für die plentymarkets App sind die folgenden Zugriffsrechte verfügbar:
+
+|===
+|*Rechtegruppe*|*Einzelrechte*
+
+|Sichtbare Funktionen| * Alle
+|POS-Funktionen| * Preis bearbeiten
+|Sichtbare Kennzahlen| * Alle
+|===
+
+Diese Benutzerrechte werden im Handbuch des ERP-Systems plentymarkets näher erläutert: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#130[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#130]
+
+Die folgenden Mitarbeiter verfügen über uneingeschränkten Zugriff auf alle Funktionen der plentymarkets App. Dies umfasst auch uneingeschränkten Zugriff auf alle Funktionen der Kassensoftware plentymarkets POS.
+
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+
+.Erteilte Rechte pro Benutzer
+[cols="1,2"]
+|====
+|Mitarbeiter/-in |An Mitarbeiter/-in erteilte Rechte
+
+|[_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+|Sichtbare Funktionen
+
+ * Alle
+ * Artikelsuche
+ * Aufträge
+ * Picklisten
+ * Umbuchung
+ * Konten
+ * POS (beta)
+ * Kundensuche
+
+POS-Funktionen
+
+* Preis bearbeiten
+* Artikelposition umbenennen
+* Rabatt gewähren
+* Kassieren
+* Kasse sperren
+* Einlagen und Entnahmen
+* Kassensturz
+* Zwischenbericht
+* Tagesabschluss
+* Artikelsynchronisation 
+* Aufträge hochladen
+* Retoure anlegen
+* Kunde auswählen
+* Stornierung
+
+Sichtbare Kennzahlen
+
+* Alle
+* Aufträge
+* Durchschnittliche Aufträge
+* Neue Kunden
+* Unbezahlte Aufträge
+* Unzugeordnete Zahlungen
+* Neue Artikel
+* Umsatz
+* Durchschnittlicher Umsatz
+* Verkaufte Artikel
+* Durchschnittlich Verkaufte Artikel
+* Artikel pro Auftrag
+* Aktive Listings
+* Gestartete Listings
+* Wareneingänge
+|====
+
+== plentymarkets POS
+
+plentymarkets POS ist ein Modul der plentymarkets App, das für den stationären Verkauf von Waren und/oder Dienstleistung entwickelt wurde. plentymarkets POS ist ein mobiles, App-basiertes Registrierkassensystem des Typs 3 (EDV-Registrierkassen). Im Sinne der GoBD ist plentymarkets POS als Registrierkasse ein Vorsystem der elektronischen Buchhaltung.
+
+Der Zugriff auf die plentymarkets App wird über Zugriffsrechte gesteuert, die im ERP-System plentymarkets über Benutzerrechte pro Benutzer oder über Benutzerrollen definiert werden.
+
+=== Verwendungszweck
+
+plentymarkets POS dient zur exakten Einzelerfassung und Dokumentation sämtlicher Kassenvorgänge. Hierbei kann es sich um Bargeldtransaktionen, bargeldlose Transaktionen, Retouren, Stornierungen, Gutschriften oder Einlagen oder Entnahmen handeln. plentymarkets POS bildet also alle Kassenvorgänge des Einzelhandels ab, dokumentiert diese Vorgänge unveränderlich und hält die Daten dieser Vorgänge in elektronischer Form vor. Zahlungsvorgänge werden sowohl in Form von Belegen als auch in Form von Aufträgen im plentymarkets Backend gespeichert. Auch dort sind die Vorgänge unveränderlich gespeichert.
+
+Eine softwareseitige Erfassung von Geschäftsvorfällen kann in plentymarkets nicht unterdrückt werden. Eine Belegerstellung, ohne dass dabei die vereinnahmten Beträge erfasst werden, ist technisch nicht möglich.
+
+Umfangreiche Berichtsoptionen ermöglichen außerdem eine detaillierte Visualisierung der Kassenvorgänge.
+
+
+=== plentymarkets POS Betreiber
+
+Die in dieser Verfahrensdokumentation aufgeführten Kassen werden von folgendem Unternehmen betrieben:
+
+|===
+|Unternehmensname|
+|Anschrift|
+|===
+
+=== Verantwortliche Auskunftsperson
+
+Verantwortliche Auskunftsperson für die Kassensysteme des Unternehmens ist/sind:
+
+|===
+|Ansprechpartner/-in|
+|Telefonnummer|
+|E-Mail-Adresse|
+|Weitere Anmerkungen|
+|===
+
+
+=== Eingesetzte Kassen
+
+Durch die Nutzung der nachfolgend bezeichneten Hard- und Software wird sichergestellt, dass bei ordnungsgemäßer und zeitlich ununterbrochenener Anwendung die GoBD eingehalten werden.
+
+==== plentymarkets POS Kassen
+
+Das Unternehmen verfügt über [______] plentymarkets POS Kassensysteme. Diese Kassen haben die folgenden IDs/Namen:
+
+|===
+|Kassen-ID|Kassenname|Einsatzort (Adresse)|Einsatzzeitraum (von/bis)
+
+|
+|
+|
+|
+
+|
+|
+|
+|
+
+|
+|
+|
+|
+|===
+
+
+==== Soft- und Hardware
+
+////
+Darstellung dieser Infos noch zu klären
+////
+
+|===
+|Kasse|ID des gekoppelten mobilen Geräts|Eingesetzte Hardware|Eingesetzte Software|plentymarkets-System
+
+|[_Kassen-ID, Name der Kasse_]
+|[_ID des gekoppelten mobilen Geräts_]
+|[_Modell, Hersteller_]
+|[_Programmname; Versionsnummer; Hersteller_]
+|[_plenty-ID, Link, Mandant (Shop)_]
+
+|[_Kassen-ID, Name der Kasse_]
+|[_ID des gekoppelten mobilen Geräts_]
+|[_Modell, Hersteller_]
+|[_Programmname; Versionsnummer; Hersteller_]
+|[_plenty-ID, Link, Mandant (Shop)_]
+
+|[_Kassen-ID, Name der Kasse_]
+|[_ID des gekoppelten mobilen Geräts_]
+|[_Modell, Hersteller_]
+|[_Programmname; Versionsnummer; Hersteller_]
+|[_plenty-ID, Link, Mandant (Shop)_]
+|===
+
+////
+Noch einfügen: Zusammenspiel mit plentymarkets Backend
+* Daten werden an plentymarkets Backend gesendet - wann, wie, wohin?
+////
+
+Für die Kasse mit der Kassen-ID _____ kommt folgende Hardware zum Einsatz: +
+//Noch einfügen: Verwendung ab wann - Verwendungszweck im Sinne der Datenerfassung und Archivierung
+
+* Tablet / Smartphone [Modell, Hersteller]
+* Belegdrucker [Modell, Hersteller]
+* Kartenterminal [Modell, Hersteller]
+* Kassenlade [Modell, Hersteller]
+* Barcodescanner [Modell, Hersteller]
+* EC-Terminal [Modell, Hersteller]
+* Sonstiges [Modell; Hersteller]
+
+Für die Kasse mit der Kassen-ID _____ kommt folgende Software zum Einsatz:
+
+* Betriebssystem [Programmname; Versionsnummer; Hersteller]
+* ERP-System [Programmname; Versionsnummer; Hersteller - auch das plenty-System?]
+* Scan-Software [Programmname; Versionsnummer; Hersteller]
+* Sonstiges [Programmname; Versionsnummer; Hersteller]
+
+
+=== plentymarkets POS Geschäftsvorfälle
+
+In plentymarkets POS werden Geschäftsvorfälle einzeln, vollständig und unveränderbar aufgezeichnet. Geschäftsvorfälle sind jederzeit über das Kassenjournal des ERP-System plentymarkets verfügbar und über den IDEA-Export maschinell auslesbar.
+
+Die folgenden Arten von Geschäftsvorfällen können über plentymarkets POS erstellt und im ERP-System plentymarkets gespeichert und archiviert werden:
+
+* Verkäufe
+* Stornierungen
+* Retouren
+* Einlagen
+* Entnahmen
+
+Diese Geschäftsvorfälle werden nachfolgend einzeln erläutert.
+
+==== Buchungsablauf bei Verkäufen
+
+Verkäufe, die über plentymarkets POS abgewickelt werden, werden als Geschäftsfall des Typs “Auftrag” mit der der Kasse fest zugeordneten Auftragsherkunft (103.[Kassen-ID]) im ERP-System plentymarkets gespeichert. Während der Auftragsanlage werden die Auftragsdaten auf dem mobilen Endgerät zwischengespeichert, um die Ausfallsicherheit zu gewährleisten. Wird die Internetverbindung während der Auftragsanlage unterbrochen, wird der gesamte Auftrag auf dem mobilen Gerät gespeichert. Wird die Internetverbindung wiederhergestellt, werden die offline gespeicherten Aufträge an das ERP-System plentymarkets übertragen.
+
+Während der Auftragserfassung können Kassierende folgende Daten bearbeiten:
+
+* Artikelposition umbenennen
+* Einzelpreis ändern
+* Gesamtpreis ändern
+* Rabatt auf Einzelpositionen gewähren
+* Rabatt auf gesamten Auftragswert gewähren
+* Gutscheine einlösen
+
+Nach Abschluss des Auftrags können diese Daten nicht mehr geändert werden.
+
+Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt gespeichert:
+
+* Geschäftsvorfall im Kassenjournal
+* Beleg im Dokumentenarchiv
+* Auftrag im Auftragsmodul
+* Tab “Aufträge” des Kunden
+* Daten für den IDEA-Export
+Eine Änderung der Kassenauftragsdaten durch plentymarkets Anwender ist nicht möglich.
+
+// Wie wird dokumentiert, dass/wer den Preis geändert wurde?
+
+==== Buchungsablauf bei Stornierungen
+
+Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten. Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine Retoure erstellt werden.
+
+Durch die Stornierung in plentymarkets POS wird der Auftrag in den Auftragsstatus *[8] Storniert* versetzt. Der Kassenbestand wird angepasst.
+
+Die Vorgehensweise zum Stornieren von Aufträgen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173]
+
+Die Daten einer Stornierung mit der Herkunft POS werden im ERP-System plentymarkets wie folgt gespeichert:
+
+* Geschäftsvorfall im Kassenjournal
+* Beleg im Dokumentenarchiv
+* Vorhandener Auftrag wird in Auftragsstatus *[8] Storniert* gesetzt
+* Tab “Aufträge” des Kunden
+* Daten für den IDEA-Export
+
+==== Buchungsablauf bei Retouren
+
+Über plentymarkets POS erstellte Retouren werden im ERP-System plentymarkets als Auftrag des Typs “Retoure” ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht.
+
+Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt gespeichert:
+
+* Geschäftsvorfall im Kassenjournal
+* Beleg im Dokumentenarchiv
+* Auftrag des Typs “Retoure” im Auftragsmodul
+* Tab “Aufträge” des Kunden
+* Daten für den IDEA-Export
+
+Die Vorgehensweise zum Retournieren von Artikeln wird im Handbuch des ERP-Systems plentymarkets beschrieben:  +
+https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#175
+
+==== Buchungsablauf bei Einlagen
+
+Einzahlungen in die Kasse, die nicht durch das Buchen von Aufträgen entstehen, werden als Einlagen über plentymarkets POS erfasst und im ERP-System plentymarkets gespeichert und archiviert. Systembedingt können Einlagen von allen Anwendern der Benutzerklasse “Admin” getätigt werden sowie von Anwendern mit der Benutzerklasse “Variabel”, für die das Recht “Einlagen und Entnahmen” aktiviert ist.
+
+Um eine Einzahlung über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Eine Einlage ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Einlagedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
+
+Beim Erstellen eines Geschäftsvorfalls des Typs Einlage wird ein Beleg erstellt und im ERP-System plentymarkets im Menü *Aufträge » POS » Kassenjournal* gespeichert. Einlagen werden außerdem im IDEA-Export berücksichtigt. Systembedingt können Einlagen nach der Erfassung nicht mehr gelöscht oder manipuliert werden.
+
+Der Ablauf einer Einlage wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#180[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#180]
+
+Folgende Personen sind autorisiert, Einlagen durchzuführen:
+
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+==== Buchungsablauf bei Entnahmen
+
+Entnahmen aus der Kasse, die nicht durch das Buchen von Aufträgen entstehen, werden über plentymarkets POS erfasst und im ERP-System plentymarkets gespeichert und archiviert. Systembedingt können Entnahmen von allen Anwendern der Benutzerklasse “Admin” getätigt werden sowie von Anwendern mit der Benutzerklasse “Variabel”, für die das Recht “Einlagen und Entnahmen” aktiviert ist.
+
+Um eine Entnahme über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Eine Entnahme ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Entnahmedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
+
+Beim Erstellen eines Geschäftsvorfalls des Typs Entnahme wird ein Beleg erstellt und im ERP-System plentymarkets im Menü *Aufträge » POS » Kassenjournal* gespeichert. Einlagen werden außerdem im IDEA-Export berücksichtigt. Systembedingt können Entnahmen nach der Erfassung nicht mehr gelöscht oder manipuliert werden.
+
+Der Ablauf einer Entnahme wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#180
+
+Folgende Personen sind autorisiert, Entnahmen durchzuführen:
+
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+
+
+////
+Ist das Kassensystem Bestandteil einer komplexen Branchensoftware? Welche weiteren Anwendungsgebiete nutzen Sie von der Branchenlösung?
+* Auftragsannahme, -abwicklung, -fakturierung
+* Beschaffungswirtschaft (Einkauf-, Waren-, Materialwirtschaft)
+* Controlling (Planungsrechnung und Statistik)
+* Finanzbuchführung inkl. Anlagenbuchführung
+* Kosten- und Leistungsrechnung (inkl. Kostenstellenrechnung)
+* Lohnbuchführung (inkl. Zeiterfassung für die Mitar
+* beiter)
+* Sonstiges: [ _Beschreibung einfügen_ ]
+////
+
+
+Welche Daten werden pro Auftrag erhoben?
+
+Belege
+
+* Welche Belege gibt es?
+* Welche Infos enthalten diese Belege?
+* Wo werden die Belege offline gespeichert?
+* Wie werden die Belege online gespeichert?
+* Wie und wann werden die Belege an plentymarkets übertragen?
+* Wie lang werden die Belege gespeichert?
+* Wie werden die Belege in plentymarkets abgerufen?
+* Wie setzen sich die Belegnummern zusammen?
+
+
+Eindeutige Belegnummer +
+Kassierer +
+Währung +
+Einzelbeträge +
+Summenbeträge +
+Belegdatum und Uhrzeit +
+Kassen-ID +
+Name und Anschrift des Unternehmens +
+Umsatzsteuer-ID +
+Erläuterung des Geschäftsvorfalls +
+Bonierter Betrag, Mengen und WErtangaben
+
+*_Welche Daten sind unveränderbar?_*
+
+
+
+////
+Informationen über Aufbau und Struktur der Datenbank liegen vor +
+(z.B. in welchen Tabellen werden die Daten abgelegt, welche (internen) Prozeduren werden ausgeführt, welche Eingabe-/Auswertungsmöglichkeiten gibt es, etc.?)
+////
+
+=== Speicherung von POS Geschäftsvorfällen
+
+Sämtliche über plentymarkets POS generierten Geschäftsvorfälle werden in das ERP-System plentymarkets importiert. Ein Kassenbuch wird in Form eines elektronischen Kassenjournals automatisch erstellt und aktualisiert.
+
+Das Kassenjournal ist im ERP-System plentymarkets über das Menü *Aufträge » POS » Kassenjournal* erreichbar. Das Kassenjournal enthält sämtliche Geschäftsvorfälle, die über plentymarkets POS Kassen in das System gelangen. Im Kassenjournal sind folgende Vorgänge möglich:
+
+* Filterung von Geschäftsvorfällen anhand von Filtern
+* Export der Daten im PDF-Format
+* Export der Daten im CSV-Format
+* Aufrufen der für die Geschäftsvorfälle gespeicherten Einzelbelege
+* Aufrufen der für die Geschäftsvorfälle angelegten Aufträge
+
+Für jeden Geschäftsvorfall sind im Kassenjournal die folgenden Daten gespeichert und einsehbar:
+
+* Datum des Geschäftsvorfalls
+* Vorgang: E = Einnahme / A = Ausgabe
+* Betrag
+* Belegnummer
+* Zahlungsart
+* Typ (Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift)
+* Barbestand
+* Auftrags-ID
+* Steuersatz in %
+* USt.-Betrag
+* Buchungstext: Bei Einlagen und Entnahmen entspricht der Buchungstext dem Grund der Bargeldbewegung.
+
+Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann die Anzahl der angezeigten Vorfälle durch das Setzen von Filtern reduziert werden. Folgende Filtermöglichkeiten sind verfügbar:
+
+|===
+|*Filter*|*Erläuterung / Filtermöglichkeiten*
+
+|Belegnummer|Filterung nach einer oder mehreren Belegnummern. Folgende Filtermöglichkeiten existieren:
+|Mandant (Shop)|Filterung nach einem Mandanten (Shop)
+|Kasse|Filterung nach dem Namen einer Kasse
+|Benutzer|Filterung nach dem Benutzer, der den Geschäftsvorfall erstellt hat.
+|Zahlungsart|Filterung nach der Zahlungsart. Folgende Zahlungsart sind verfügbar:
+|Zeitraum|Filterung nach dem Zeitpunkt des Geschäftsvorfalls. Folgende Zeiträume sind verfügbar:
+|Typ|Filterung nach Typ des Geschäftsvorfalls. Folgende Typen sind verfügbar:
+|===
+
+
+Aus dem Kassenjournal können außerdem Geschäftsvorfalldaten exportiert werden. Die Daten können im PDF- oder im CSV-Format exportiert werden. Exportiert werden jedoch nur die gefilterten Vorfälle. Um einen vollständigen Export zu erstellen, dürfen daher keine Filter angewendet werden.
+
+
+=== Berichtswesen
+
+////
+* Welche Berichte gibt es?
+* Welche Infos stehen in diesen Berichten?
+* Wo werden die Berichte gespeichert?
+* Wie lang werden die Berichte aufbewahrt?
+* Welche Gesetze halten die Berichte ein?
+* Wer darf die Berichte erstellen? Welche Rechte sind dazu erforderlich?
+* [Wer darf im Unternehmen die Berichte erstellen]
+* [Wie oft werden die Berichte im Unternehmen erstellt]
+////
+
+plentymarkets POS bietet umfassende Berichtsfunktionen. Folgende Berichte können erstellt werden:
+
+* Zwischenberichte
+* Tagesberichte
+* Kassensturzberichte
+* IDEA-Exporte
+* Statistiken
+
+==== Zwischenberichte (X-Berichte)
+
+Zwischenberichte zeigen eine Auflistung der Umsätze über die Kasse seit dem letzten Tagesabschluss. In plentymarkets POS können jederzeit und beliebig viele Zwischenberichte gedruckt werden. Wie Zwischenberichte erstellt werden, wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220]  +
+Zwischenberichte sind kein gültiger Nachweis gegenüber dem Finanzamt und werden daher weder in der plentymarkets App noch im ERP-System plentymarkets gespeichert.
+
+Im Unternehmen wird mit den Ausdrucken von Zwischenberichten wie folgt verfahren:
+
+* [ _Beschreibung einfügen_ ]
+
+==== Tagesberichte (Z-Berichte)
+
+Tagesbereichte sind GoBD-relevante Dokumente. Tagesberichte werden in plentymarkets POS fortlaufend nummeriert, um die Vollständigkeit zu gewährleisten.
+
+In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informationen, die sowohl auf dem Tagesberichtsbeleg gedruckt als auch systemseitig gespeichert werden:
+
+* ID (fortlaufende Nummer des Tagesbelegs)
+* Datum und Uhrzeit der Erstellung
+* Systeminterne ID der Kasse
+* Erster Beleg
+* Letzter Beleg
+* Zeitraum (von / bis)
+* Barbestand
+** Entnahmen (Anzahl, Summe)
+** Einlagen (Anzahl, Summe)
+** Anfangsbarbestand
+** Soll-Kassenbestand
+** Ist-Kassenbestand
+* Umsatz
+** Seit letztem Tagesabschluss (“Summe”)
+** Seit Inbetriebnahme der Kasse (“Grand Total”)
+* Steuerbericht
+** Angewandte Steuersätze
+** Steuersumme getrennt nach Steuersatz
+** Nettoumsatz getrennt nach Steuersatz
+* Zahlungsarten
+** Umsatz nach Zahlungsart (Anzahl und Summe)
+* Stornierungen (Anzahl und Summe) gemäß §147 Abs. 4 AO
+* Retouren (Anzahl und Summe) gemäß §147 Abs. 4 AO
+* Rabattierte Artikel (Anzahl und Summe)
+* Benutzer
+** ID der Bediener/-innen
+** Name der Bediener/-innen
+** Generierter Umsatz pro Bediener/-in
+
+Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
+
+Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Tagesberichte zu erstellen:
+
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+Tagesberichte werden zu folgenden Zeiten/im folgenden Intervall erstellt:
+
+* [_Beschreibung einfügen_]
+
+Mit ausgedruckten Tagesberichten wird wie folgt verfahren:
+
+* [_Beschreibung einfügen_]
+
+==== Kassensturzberichte
+
+In plentymarkets POS ist jederzeit kassensturzfähig. Es ist also jederzeit möglich, den Soll-Bestand laut Kassenjournal mit dem Ist-Bestand der Kasse zu vergleichen. Zu diesem Zweck werden die in der Kasse vorhandenen Geldscheine und Münzen physisch gezählt und ein Zählprotokoll erstellt. In plentymarkets POS kann entweder die Anzahl der einzelnen Münzen und Geldscheine oder das Ergebnis der Zählung als Gesamtbetrag eingeben werden.
+
+Im Kassensturzbericht werden systembedingt die folgenden Informationen gespeichert:
+
+* Zeitpunkt (Datum/Uhrzeit) des Kassensturzes
+* Anwender, der den Kassensturz erstellt hat
+* ID der Kasse
+* Soll-Kassenbestand
+* Stückelung und Menge (optional)
+* Ist-Kassenbestand
+* Differenz zwischen Soll- und Kassenbestand
+
+Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Kassenstürze durchzuführen:
+
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+Kassenstürze werden zu folgenden Zeiten/in folgendem Interval durchgeführt:
+
+* [ _Beschreibung einfügen_ ]
+
+Das Zählergebnis des Kassensturzes wird wie folgt erfasst:
+
+* Nur Gesamtbetrag
+* Stückelung und Menge der einzelnen Münzen/Geldscheine
+
+Das Ergebnis des Kassensturzes wird automatisch an das ERP-System plentymarkets übertragen. Kassensturzbelege können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs *Kassensturz* gespeichert.
+
+
+===== Ablauf bei Differenzen im Kassensturzergebnis
+
+Wenn nach der Zählung des Barbestands der Ist-Kassenbestand vom Soll-Kassenbestand abweicht, sind softwareseitig in plentymarkets POS zwei Vorgehensweisen möglich:
+
+* Die Differenz wird ausgeglichen. Bei negativem Ist-Kassenbestand wird also der Differenzbetrag in die Kasse eingezahlt und manuell eine Einlage gebucht. Bei positivem Ist-Kassenbestand wird der Differenzbetrag aus der Kasse entnommen und manuell eine Entnahme gebucht.
+* Die Differenz wird gebucht, d.h., der Ist-Kassenbestand wird als neuer Soll-Kassenbestand übernommen. Im Hintergrund wird für diesen Vorgang entweder automatisch eine Einlage oder eine Entnahme mit dem Buchungstext “Differenz aus Kassensturz” gebucht. Dieser Vorgang wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#_differenz_buchen[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#_differenz_buchen]
+
+Mitarbeiter/-innen sind angewiesen, bei Kassensturzdifferenzen wie folgt zu handeln:
+
+* [_Beschreibung einfügen_]
+
+==== IDEA-Export
+
+Alle plentymarkets POS Geschäftsvorfälle können über das Menü *Aufträge » POS » IDEA-Export *des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen. Es werden also alle Geschäftsvorfälle von allen plentymarkets POS Kassen in den Export übernommen. Benutzer, die den Export durchführen, können also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
+
+Der IDEA-Export enthällt die folgenden Dateien:
+
+* addresses.csv
+* gdpdu-[TT-MM-JJJJ].dtd
+* index.xml
+* journal.csv
+* locations.csv
+* orderitems.csv
+* orders.csv
+* pos.csv
+* taxrates.csv
+* tillcount.csv
+* user.csv
+* variations.csv
+* zreport.csv
+* zreportpayments.csv
+
+Nach Abschluss des Exports stehen die Dateien im Menü *Aufträge » POS » IDEA-Export* des ERP-Systems plentymarkets zum Download zur Verfügung.
+
+Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporte wie folgt zu handlen:
+
+* [_Erstellungsintervall_]
+* [_Für die Erstellung zuständige Person/-en_]
+* [_Speicherort für heruntergeladene IDEA-Exporte_]
+* [_Sonstiges_]
+
+Das Handbuch der ERP-Lösung plentymarkets stellt eine Anleitung zur Erstellung des IDEA-Exports bereit: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500]
+
+=== Verfahren bei Ausfall von plentymarkets POS
+
+Kommt es zu einem Ausfall der Internetverbindung, ist eine Verbindung zum ERP-System plentymarkets nicht möglich. Artikel können nicht gesucht und keine neuen Aufträge erstellt werden. Bereits begonnene Verkäufe können jedoch abgeschlossen werden. Die aus diesen Verkäufen resultierenden Aufträge werden im Speicher des mobilen Geräts gespeichert und an das ERP-System plentymarkets gesendet, sobald die Verbindung wiederhergestellt wird. Neue Aufträge können nicht erstellt werden.
+
+Bei einem Ausfall des Kassensystems plentymarkets POS sind Mitarbeiter/-innen angewiesen, wie folgt zu handeln:
+
+* [_Beschreibung einfügen_]
+
+
+== Organisationsunterlagen
+
+=== Herstellerseitige Dokumentation
+
+Die Dokumentation des ERP-Systems plentymarkets ist online verfügbar. Dort ist der aktuelle Stand der Software dokumentiert. Ein Download der Dokumentation ist zurzeit nicht möglich. Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Dokumentation zur Verfügung.
+
+Auf die Dokumentation von plentymarkets POS ist über die folgenden URLs erreichbar:
+
+* Bedienungsanleitung plentymarkets POS +
+https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer]
+* Programmieranleitung plentymarkets POS +
+https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten]
+
+=== Grundprogrammierung
+
+Die Grundprogrammierung der Kasse erfolgt im ERP-System plentymarkets. Für die Grundprogrammierung sind die folgenden Personen zuständig:
+
+* * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+Die folgenden Personen sind autorisiert, Umprogrammierungen der Kasse vorzunehmen:
+
+* * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+* * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+[_Arbeitsanweisung für die Grundprogrammierung/Umprogrammierung. Wie werden Änderungen protokolliert?_]
+
+==== Grundeinstellungen
+
+Die Grundeinstellungen einer Kasse werden im Menü *Einstellungen » Mandant (Shop) » Mandant öffnen » POS » Kasse öffnen » Tab: Grundeinstellungen *vorgenommen. Die Einstellungen erfolgen pro Kasse.
+
+Die folgenden Grundeinstellungen wurden vorgenommen (1 Tabelle pro Kasse):
+
+|===
+|Option|Einstellung|Datum|Erläuterung
+
+|ID|||
+|Geräte-ID|||
+|Name|||
+|Herkunft|103.___||
+|Standardkunde|||
+|Marktplatz-Verfügbarkeit berücksichtigen|ja/nein||
+|Nur aktive Varianten berücksichtigen|ja/nein||
+|Standort|||
+|Vertriebslager|||
+|Reparaturlager|||
+|===
+
+
+==== Belegeinstelllungen
+
+
+Die Belegeinstellungen einer Kasse werden im Menü *Einstellungen » Mandant (Shop) » Mandant öffnen » POS » Kasse öffnen » Tab: Beleg *vorgenommen. Die Einstellungen erfolgen pro Kasse.
+
+Die folgenden Belegeinstellungen wurden vorgenommen (1 Tabelle pro Kasse):
+
+|===
+|Option|Einstellung|Datum|Erläuterung
+
+|Identische Auftragspositionen|||
+|Bild|||
+|Kopfzeile|||
+|Fußzeile|||
+|===
+
+==== Aktivierte Zahlungsarten
+
+
+Die folgenden Zahlungsarten sind für die Kasse aktiviert:
+
+|===
+|Zahlungsart|plentymarkets Zahlungsart|Datum der Aktivierung|Anmerkungen
+
+|Barzahlungen|4 » Bar bei Übergabe||
+|Kartenzahlungen über externe EC-Kartenterminals|11 » Barverkauf/EC-Karte||
+|Gutscheinzahlungen|1700 » Coupon||
+|===
+
+==== Aktivierte Verkaufspreise
+
+
+Die folgenden Verkaufspreise sind für die Kasse aktiviert:
+
+|===
+|Verkaufspreis|plentymarkets Zahlungsart|Datum der Aktivierung|Anmerkungen
+
+||||
+||||
+||||
+|===
+
+
+
+
+* Informationen zur Grundprogrammierung bzw. spezifische Einstellungen (Customising)
+* Protokolle über jede Veränderung der Kassenprogrammierung (z.B. Stammdaten)
+* Protokolle über die Einrichtung von Verkäufer- oder Trainingsspeichern
+* Aufzeichnung der Programmabrufe nach jeder Programmänderung (u.a. der Artikelpreise)
+
+== [_Weitere Bestandteile einer Verfahrensdokumentation_]
+
+=== [_Beschreibung des internen Kontrollsystems_]
+
+=== [_Arbeitsanweisungen_]
+
+
+=== [_Unternehmensspezifische Informationen_]
+
+- Wo werden die aufbewahrungspflichtigen Kassenbelege (Z-Bons, Stornobelege, Registrierkassen streifen usw.) abgelegt bzw. aufbewahrt?
+- Bis zu welcher Höhe werden Geldscheine angenommen (ausländische Sorten bzw. Falschgeldprüfung etc.)?
+- Wie wird die Kasse übergeben?
+- Wer führt die Belegbearbeitung und Belegprüfung durch?
+- Wie wird die Belegbearbeitung und Belegprüfung durchgeführt?
+- Wie wird der Kassenbestand (Bargeld) verbracht?
+- Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?
+
+
+Kontrollmechanismen
+
+* Benutzerverwaltung
+* Eingeschränkte Zugriffsrechte für Mitarbeiter
+* Welche Rechte sind möglich?
+* Welche Rechte hat welcher Bediener?
+* Was kann ein Chefbediener/Schichtleiter/normaler Kassierer?
+* Wie spielt das mit den Rechten im plenty Backend zusammen?
+* Liste mit den Rechten pro Benutzerrolle
+
+
+== Info-Links
+
+
+http://www.karrer-viellieber.de/files/Blider/Dateien/MI_elektronische%20Kassensysteme%20ab%202017.pdf[http://www.karrer-viellieber.de/files/Blider/Dateien/MI_elektronische%20Kassensysteme%20ab%202017.pdf]
+
+https://www.deubner-steuern.de/uploads/tx_diadeubner/LP_100408_MI_GoBD.pdf[https://www.deubner-steuern.de/uploads/tx_diadeubner/LP_100408_MI_GoBD.pdf]
+
+http://www.bpw-online.de/steuertipps/verschaerfte-anforderungen-an-elektronische-kassen-und-andere-vorsysteme-zu-ihrer-buchhaltung.html[http://www.bpw-online.de/steuertipps/verschaerfte-anforderungen-an-elektronische-kassen-und-andere-vorsysteme-zu-ihrer-buchhaltung.html] +
+Infos zu VD, mit Grafiken
+
+http://www.lueders-warneboldt.de/aktuelles/steuerinformationen/anforderung-an-registrierkassen-ab-2017/[http://www.lueders-warneboldt.de/aktuelles/steuerinformationen/anforderung-an-registrierkassen-ab-2017/] +
+Infos zu Anforderungen an Registrierkassen
+
+http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf[http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf] +
+Checkliste VD
+
+https://www.css-group.de/products/kasse_60/vd_kasse60.pdf[https://www.css-group.de/products/kasse_60/vd_kasse60.pdf] +
+Verfahrensdokumentation zu CSS Group® Kassensoftware 201
+
+http://www.quorion.de/downloads/gobd/verfahrensdokumentation-gobd.pdf[http://www.quorion.de/downloads/gobd/verfahrensdokumentation-gobd.pdf] +
+Verfahrensdoku quorion - checken
+
+http://www.steuerkanzlei-feucht.de/aktuelles/Mandanten-Informationsbrief-2015-12-01.pdf[http://www.steuerkanzlei-feucht.de/aktuelles/Mandanten-Informationsbrief-2015-12-01.pdf]
+
+
+Checklisten +
+http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf[http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf]
+
+http://www.stb-stuttgart.de/content/images/NWB%20Merkblaetter/Checkliste%20Kassenf%C3%BChrung.pdf[http://www.stb-stuttgart.de/content/images/NWB%20Merkblaetter/Checkliste%20Kassenf%C3%BChrung.pdf]
+
+http://www.sharp.de/sharp/media/de/images/de/04-17_SHARP_FAQ_GoBD_4.3.pdf[http://www.sharp.de/sharp/media/de/images/de/04-17_SHARP_FAQ_GoBD_4.3.pdf]
+
+
+
+
+
+
+Neben der betrieblichen EDV zählen hierzu auch sogenannte *Vor- und Nebensysteme*. Das können zum Beispiel elektronische Waagen, Taxameter, Zeiterfassungssysteme und eben auch elektronische Kassensysteme sein. *Bei den Vor- oder Nebensystemen kommt es nicht auf die Bezeichnung an, sondern auf die Frage, ob in dem System buchführungs- oder aufzeichnungspflichtige Daten erfasst, erzeugt, empfangen, übernommen, verarbeitet, gespeichert oder übermittelt werden. *
+
+
+
+plentymarkets POS ist ein VORSYSTEM!
+
+
+Sollen EC-Cash-Zahlungen (BE und/oder BA) in der Registrierkasse erfasst werden, dann müssen diese BE und BA gesondert von den Bareinnahmen und Barausgaben getrennt werden.
+
+
+
+
+* Anweisungen zum Umgang mit Ausdrucken
+
+
+- Artikelsuche
+- Kundensuche
+- Umbuchung
