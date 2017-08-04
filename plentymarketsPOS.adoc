@@ -404,7 +404,7 @@ Informationen über Aufbau und Struktur der Datenbank liegen vor +
 (z.B. in welchen Tabellen werden die Daten abgelegt, welche (internen) Prozeduren werden ausgeführt, welche Eingabe-/Auswertungsmöglichkeiten gibt es, etc.?)
 ////
 
-=== Speicherung von POS Geschäftsvorfällen
+=== Elektronische Aufbewahrung von POS Geschäftsvorfällen
 
 Sämtliche über plentymarkets POS generierten Geschäftsvorfälle werden in das ERP-System plentymarkets importiert. Ein Kassenbuch wird in Form eines elektronischen Kassenjournals automatisch erstellt und aktualisiert.
 
@@ -448,7 +448,7 @@ Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann 
 Aus dem Kassenjournal können außerdem Geschäftsvorfalldaten exportiert werden. Die Daten können im PDF- oder im CSV-Format exportiert werden. Exportiert werden jedoch nur die gefilterten Vorfälle. Um einen vollständigen Export zu erstellen, dürfen daher keine Filter angewendet werden.
 
 
-=== Berichtswesen
+=== Speicherung und Abrufbarkeit von plentymarkets POS Geschäftsvorfällen (Berichtswesen)
 
 ////
 * Welche Berichte gibt es?
@@ -466,7 +466,6 @@ plentymarkets POS bietet umfassende Berichtsfunktionen. Folgende Berichte könne
 * Zwischenberichte
 * Tagesberichte
 * Kassensturzberichte
-* IDEA-Exporte
 * Statistiken
 
 ==== Zwischenberichte (X-Berichte)
@@ -574,9 +573,9 @@ Mitarbeiter/-innen sind angewiesen, bei Kassensturzdifferenzen wie folgt zu hand
 
 * [_Beschreibung einfügen_]
 
-==== IDEA-Export
+=== Maschinelle Auswertbarkeit der POS-Geschäftsvorfälle (IDEA-Export)
 
-Alle plentymarkets POS Geschäftsvorfälle können über das Menü *Aufträge » POS » IDEA-Export *des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen. Es werden also alle Geschäftsvorfälle von allen plentymarkets POS Kassen in den Export übernommen. Benutzer, die den Export durchführen, können also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
+§ 147 Absatz 2 Nummer 2 AO der GoBD sieht vor, dass im Rahmen einer Außenprüfung alle zur Auswertung der aufzeichnungs- und aufbewahrungspflichtigen Daten  notwendigen Strukturinformationen in maschinell auswertbarer Form bereitzustellen sind. Um diesen Anforderungen gerecht zu werden, können alle plentymarkets POS Geschäftsvorfälle über das Menü *Aufträge » POS » IDEA-Export* des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen und enthält alle Geschäftsvorfälle aus allen plentymarkets POS Kassen des plentymarkets Systems. Benutzer können beim Export also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
 
 Der IDEA-Export enthällt die folgenden Dateien:
 
@@ -604,7 +603,7 @@ Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporte wie folgt zu handlen:
 * [_Speicherort für heruntergeladene IDEA-Exporte_]
 * [_Sonstiges_]
 
-Das Handbuch der ERP-Lösung plentymarkets stellt eine Anleitung zur Erstellung des IDEA-Exports bereit: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500]
+Das Handbuch der ERP-Lösung plentymarkets stellt eine detaillierte Anleitung zur Erstellung des IDEA-Exports bereit: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500]
 
 === Verfahren bei Ausfall von plentymarkets POS
 
