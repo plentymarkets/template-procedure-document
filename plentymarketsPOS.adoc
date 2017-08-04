@@ -255,21 +255,23 @@ Für die Kasse mit der Kassen-ID _____ kommt folgende Software zum Einsatz:
 
 In plentymarkets POS werden Geschäftsvorfälle einzeln, vollständig und unveränderbar aufgezeichnet. Geschäftsvorfälle sind jederzeit über das Kassenjournal des ERP-System plentymarkets verfügbar und über den IDEA-Export maschinell auslesbar.
 
-Die folgenden Arten von Geschäftsvorfällen können über plentymarkets POS erstellt und im ERP-System plentymarkets gespeichert und archiviert werden:
+Die folgenden Arten von Geschäftsvorfällen können über plentymarkets POS erstellt und im ERP-System plentymarkets weiter verarbeitet werden:
 
-* Verkäufe
+* Aufträge
 * Stornierungen
-* Retouren
+* Retouren/Gutschriften
 * Einlagen
 * Entnahmen
 
-Diese Geschäftsvorfälle werden nachfolgend einzeln erläutert.
+Für alle über plentymarkets POS erstellten Geschäftsvorfälle werden automatisch Belege erstellt. Diese Belege werden zur eindeutigen Kennzeichnung mit einer fortlaufenden Nummer versehen. Dies Belegnummern setzen sich aus der ID der Kasse (vierstellig, ggf. mit führenden Nullen) und der Vorgangsnummer zusammen. Der erste Beleg der Kasse mit der ID 1 lautet also z.B. 0001-1.
 
-==== Buchungsablauf bei Verkäufen
+Die in plentymarkets POS verfügbaren Geschäftsvorfälle werden nachfolgend einzeln erläutert.
 
-Verkäufe, die über plentymarkets POS abgewickelt werden, werden als Geschäftsfall des Typs “Auftrag” mit der der Kasse fest zugeordneten Auftragsherkunft (103.[Kassen-ID]) im ERP-System plentymarkets gespeichert. Während der Auftragsanlage werden die Auftragsdaten auf dem mobilen Endgerät zwischengespeichert, um die Ausfallsicherheit zu gewährleisten. Wird die Internetverbindung während der Auftragsanlage unterbrochen, wird der gesamte Auftrag auf dem mobilen Gerät gespeichert. Wird die Internetverbindung wiederhergestellt, werden die offline gespeicherten Aufträge an das ERP-System plentymarkets übertragen.
+==== Buchungsablauf bei Aufträgen
 
-Während der Auftragserfassung können Kassierende folgende Daten bearbeiten:
+Verkäufe, die über plentymarkets POS abgewickelt werden, werden als Geschäftsfall des Typs “Auftrag” mit der der Kasse fest zugeordneten Auftragsherkunft (103.[Kassen-ID]) im ERP-System plentymarkets gespeichert. Während der Auftragsanlage werden die Auftragsdaten auf dem mobilen Endgerät zwischengespeichert, um die Ausfallsicherheit zu gewährleisten. Wird die Internetverbindung während der Auftragsanlage unterbrochen, wird der gesamte Auftrag auf dem mobilen Gerät gespeichert. Wird die Internetverbindung wiederhergestellt, werden die offline gespeicherten Aufträge an das ERP-System plentymarkets übertragen und dort gespeichert.
+
+Während der Auftragserfassung können Kassierende je nach Benutzerrechten folgende Daten bearbeiten:
 
 * Artikelposition umbenennen
 * Einzelpreis ändern
@@ -280,6 +282,22 @@ Während der Auftragserfassung können Kassierende folgende Daten bearbeiten:
 
 Nach Abschluss des Auftrags können diese Daten nicht mehr geändert werden.
 
+Folgende Daten werden für Aufträge systemseitig gespeichert und auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit des Auftrags
+* Art des Geschäftsvorfalls
+* Belegnummer
+* Gekaufte Artikel
+* Einzelpreise der Artikel
+* Summe der Artikel
+* Mehrwertsteuersätze
+* Brutto- und Nettobetrag des Auftrags
+* Zahlungsart
+* Bei Barzahlung: Gegeben/Wechselgeld
+* Bei Kartenzahlung: Nur Gesamtbetrag
+* Ersteller/-in
+* ID des Auftrags
+
 Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt gespeichert:
 
 * Geschäftsvorfall im Kassenjournal
@@ -287,9 +305,9 @@ Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt 
 * Auftrag im Auftragsmodul
 * Tab “Aufträge” des Kunden
 * Daten für den IDEA-Export
+
 Eine Änderung der Kassenauftragsdaten durch plentymarkets Anwender ist nicht möglich.
 
-// Wie wird dokumentiert, dass/wer den Preis geändert wurde?
 
 ==== Buchungsablauf bei Stornierungen
 
@@ -299,28 +317,60 @@ Durch die Stornierung in plentymarkets POS wird der Auftrag in den Auftragsstatu
 
 Die Vorgehensweise zum Stornieren von Aufträgen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173]
 
-Die Daten einer Stornierung mit der Herkunft POS werden im ERP-System plentymarkets wie folgt gespeichert:
+Folgende Daten werden für Stornierungen systemseitig gespeichert und auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit der Stornierung
+* Art des Geschäftsvorfalls
+* Belegnummer
+* Stornierte Artikel
+* Summe der Stornierung
+* Mehrwertsteuersätze
+* Brutto- und Nettobetrag der Stornierung
+* Ersteller/-in
+* ID des Auftrags
+
+Die Daten einer Stornierung mit der Herkunft POS können im ERP-System plentymarkets wie folgt angezeigt werden:
 
 * Geschäftsvorfall im Kassenjournal
 * Beleg im Dokumentenarchiv
 * Vorhandener Auftrag wird in Auftragsstatus *[8] Storniert* gesetzt
-* Tab “Aufträge” des Kunden
+* Anzeige im Tab *Aufträge* des Kunden
 * Daten für den IDEA-Export
 
 ==== Buchungsablauf bei Retouren
 
-Über plentymarkets POS erstellte Retouren werden im ERP-System plentymarkets als Auftrag des Typs “Retoure” ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht.
-
-Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt gespeichert:
-
-* Geschäftsvorfall im Kassenjournal
-* Beleg im Dokumentenarchiv
-* Auftrag des Typs “Retoure” im Auftragsmodul
-* Tab “Aufträge” des Kunden
-* Daten für den IDEA-Export
+Über plentymarkets POS erstellte Retouren werden im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht.
 
 Die Vorgehensweise zum Retournieren von Artikeln wird im Handbuch des ERP-Systems plentymarkets beschrieben:  +
 https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#175
+
+Folgende Daten werden für Retouren systemseitig gespeichert und auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit der Retoure
+* Art des Geschäftsvorfalls
+* Belegnummer
+* Retournierte Artikel
+* Summe der Retoure
+* Mehrwertsteuersätze
+* Brutto- und Nettobetrag der Retoure
+* Ersteller/-in
+* ID der Retoure
+
+Beim Erstellen einer Retoure wird außerdem eine Gutschrift erstellt und gespeichert.
+
+Folgende Daten werden für Gutschriften systemseitig gespeichert und auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit der Gutschrift
+* Art des Geschäftsvorfalls
+* Belegnummer
+* Retournierte Artikel
+* Summe der Gutschrift
+* Mehrwertsteuersätze
+* Brutto- und Nettobetrag der Gutschrift
+* Ersteller/-in
+* ID der Gutschrift
+* ID der Retoure
+* Belegnummer der Retoure
 
 ==== Buchungsablauf bei Einlagen
 
@@ -329,6 +379,16 @@ Einzahlungen in die Kasse, die nicht durch das Buchen von Aufträgen entstehen, 
 Um eine Einzahlung über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Eine Einlage ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Einlagedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
 
 Beim Erstellen eines Geschäftsvorfalls des Typs Einlage wird ein Beleg erstellt und im ERP-System plentymarkets im Menü *Aufträge » POS » Kassenjournal* gespeichert. Einlagen werden außerdem im IDEA-Export berücksichtigt. Systembedingt können Einlagen nach der Erfassung nicht mehr gelöscht oder manipuliert werden.
+
+Folgende Daten werden für Einlagen systemseitig gespeichert und auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit der Einlage
+* Belegnummer
+* Art des Geschäftsvorfalls
+* Eingelegter Betrag
+* Grund für die Einlage
+* Ersteller/-in
+* ID der Kasse
 
 Der Ablauf einer Einlage wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#180[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#180]
 
@@ -345,6 +405,16 @@ Entnahmen aus der Kasse, die nicht durch das Buchen von Aufträgen entstehen, we
 Um eine Entnahme über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Eine Entnahme ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Entnahmedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
 
 Beim Erstellen eines Geschäftsvorfalls des Typs Entnahme wird ein Beleg erstellt und im ERP-System plentymarkets im Menü *Aufträge » POS » Kassenjournal* gespeichert. Einlagen werden außerdem im IDEA-Export berücksichtigt. Systembedingt können Entnahmen nach der Erfassung nicht mehr gelöscht oder manipuliert werden.
+
+Folgende Daten werden für Entnahmen systemseitig gespeichert und auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit der Entnahme
+* Belegnummer
+* Art des Geschäftsvorfalls
+* Entnommener Betrag
+* Grund für die Entnahme
+* Ersteller/-in
+* ID der Kasse
 
 Der Ablauf einer Entnahme wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#180
 
@@ -383,19 +453,7 @@ Belege
 * Wie setzen sich die Belegnummern zusammen?
 
 
-Eindeutige Belegnummer +
-Kassierer +
-Währung +
-Einzelbeträge +
-Summenbeträge +
-Belegdatum und Uhrzeit +
-Kassen-ID +
-Name und Anschrift des Unternehmens +
-Umsatzsteuer-ID +
-Erläuterung des Geschäftsvorfalls +
-Bonierter Betrag, Mengen und WErtangaben
 
-*_Welche Daten sind unveränderbar?_*
 
 
 
@@ -471,23 +529,25 @@ plentymarkets POS bietet umfassende Berichtsfunktionen. Folgende Berichte könne
 ==== Zwischenberichte (X-Berichte)
 
 Zwischenberichte zeigen eine Auflistung der Umsätze über die Kasse seit dem letzten Tagesabschluss. In plentymarkets POS können jederzeit und beliebig viele Zwischenberichte gedruckt werden. Wie Zwischenberichte erstellt werden, wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220]  +
-Zwischenberichte sind kein gültiger Nachweis gegenüber dem Finanzamt und werden daher weder in der plentymarkets App noch im ERP-System plentymarkets gespeichert.
+Zwischenberichte sind kein gültiger Nachweis gegenüber dem Finanzamt und werden daher weder in der plentymarkets App noch im ERP-System plentymarkets gespeichert. Sie werden daher auch keinem Nummernkreis zugeordnet.
 
 Im Unternehmen wird mit den Ausdrucken von Zwischenberichten wie folgt verfahren:
 
 * [ _Beschreibung einfügen_ ]
 
-==== Tagesberichte (Z-Berichte)
+==== Tagesabschlussberichte (Z-Berichte)
 
-Tagesbereichte sind GoBD-relevante Dokumente. Tagesberichte werden in plentymarkets POS fortlaufend nummeriert, um die Vollständigkeit zu gewährleisten.
+Tagesabschlussbereichte sind GoBD-relevante Dokumente. In plentymarkets POS werden Tagesabschlussberichte manuell erstellt. Das System gibt keinen Erstellungsintervall vor.
+
+Tagesabschlussberichte werden in plentymarkets POS in einem eigenen Nummernkreis fortlaufend nummeriert. Der erste Z-Bericht der Kasse hat also die Nummer 1, der zweite die Nummer 2 usw.
 
 In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informationen, die sowohl auf dem Tagesberichtsbeleg gedruckt als auch systemseitig gespeichert werden:
 
-* ID (fortlaufende Nummer des Tagesbelegs)
+* Fortlaufende Nummer des Belegs
 * Datum und Uhrzeit der Erstellung
 * Systeminterne ID der Kasse
-* Erster Beleg
-* Letzter Beleg
+* Erster Beleg (seit letztem Tagesbericht)
+* Letzter Beleg (letzer Beleg des Berichts)
 * Zeitraum (von / bis)
 * Barbestand
 ** Entnahmen (Anzahl, Summe)
@@ -507,12 +567,12 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 * Stornierungen (Anzahl und Summe) gemäß §147 Abs. 4 AO
 * Retouren (Anzahl und Summe) gemäß §147 Abs. 4 AO
 * Rabattierte Artikel (Anzahl und Summe)
-* Benutzer
+* Umsatz nach Bediener/-innen
 ** ID der Bediener/-innen
 ** Name der Bediener/-innen
 ** Generierter Umsatz pro Bediener/-in
 
-Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
+Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Sie werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
 
 Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Tagesberichte zu erstellen:
 
@@ -524,13 +584,15 @@ Tagesberichte werden zu folgenden Zeiten/im folgenden Intervall erstellt:
 
 * [_Beschreibung einfügen_]
 
-Mit ausgedruckten Tagesberichten wird wie folgt verfahren:
+Tagesberichte werden [nur elektronisch/elektronisch erstellt und ausgedruckt].
+
+* Mit ausgedruckten Tagesberichten wird wie folgt verfahren:
 
 * [_Beschreibung einfügen_]
 
 ==== Kassensturzberichte
 
-In plentymarkets POS ist jederzeit kassensturzfähig. Es ist also jederzeit möglich, den Soll-Bestand laut Kassenjournal mit dem Ist-Bestand der Kasse zu vergleichen. Zu diesem Zweck werden die in der Kasse vorhandenen Geldscheine und Münzen physisch gezählt und ein Zählprotokoll erstellt. In plentymarkets POS kann entweder die Anzahl der einzelnen Münzen und Geldscheine oder das Ergebnis der Zählung als Gesamtbetrag eingeben werden.
+Kassenaufzeichnungen sind laut GoDB so zu führen, dass der Soll-Bestand jederzeit mit dem Ist-Bestand der Kasse abgeglichen werden kann. plentymarkets POS ist jederzeit kassensturzfähig. Es ist also jederzeit möglich, den Soll-Bestand laut Kassenjournal mit dem Ist-Bestand der Kasse zu vergleichen. Zu diesem Zweck werden die in der Kasse vorhandenen Geldscheine und Münzen physisch gezählt und ein Zählprotokoll erstellt. In plentymarkets POS kann entweder die Anzahl der einzelnen Münzen und Geldscheine oder das Ergebnis der Zählung als Gesamtbetrag eingeben werden. Kassensturzberichten wird keine Belegnummer zugewiesen.
 
 Im Kassensturzbericht werden systembedingt die folgenden Informationen gespeichert:
 
