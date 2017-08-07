@@ -2,12 +2,6 @@
 :lang: de
 include::{includedir}/_header.adoc[]
 
-_Aufbau_
-
-* _Verwendungszweck_
-* _Arbeitsweise_
-* _Datenstruktur_
-
 == plentymarkets App
 
 === Verwendungszweck
