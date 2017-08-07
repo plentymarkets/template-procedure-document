@@ -238,6 +238,10 @@ Darstellung dieser Infos noch zu klären
 |[_plenty-ID, Link, Mandant (Shop)_]
 |===
 
+////
+Alternative Darstellung
+////
+
 Für die Kasse mit der Kassen-ID _____ kommt folgende Hardware zum Einsatz: +
 
 * Tablet / Smartphone [Modell, Hersteller]
@@ -248,7 +252,7 @@ Für die Kasse mit der Kassen-ID _____ kommt folgende Hardware zum Einsatz: +
 * EC-Terminal [Modell, Hersteller]
 * Sonstiges [Modell; Hersteller]
 
-Für die Kasse mit der Kassen-ID _____ kommt folgende Software zum Einsatz:
+Für die Kasse mit der Kassen-ID [_*ID einfügen*_] kommt folgende Software zum Einsatz:
 
 * Betriebssystem [Programmname; Versionsnummer; Hersteller]
 * ERP-System [Programmname; Versionsnummer; Hersteller - auch das plenty-System?]
@@ -312,6 +316,10 @@ Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt 
 * Daten für den IDEA-Export
 
 Eine Änderung der Kassenauftragsdaten durch plentymarkets Anwender ist nicht möglich.
+
+Bei bargeldloser Zahlung treten geringfügige Besonderheiten auf: Bei der Zahlungsart Kartenzahlung muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
+Bei der Kartenzahlung mit Miura kann, wenn es in den Einstellungen so definiert wurde, diese Bestätigung des Zahlungseingang auch automatisiert passieren.
+Außerdem wird bei der Zahlungsart Kartenzahlung der Barbestand der Kasse nicht erhöht.
 
 ==== Buchungsablauf bei Stornierungen
 
@@ -593,10 +601,6 @@ Systemseitig werden die Daten der Tagesberichte in der Datentabelle *plenty_pos_
  * *_withdrawlCount _*-> Die Anzahl der Entnahmen.
  * *_cancellationOderValue _*-> Der Gesamtwert der stornierten Artikel.
  * *_cancelationOderCount _*-> Die Gesamtanzahl der stornierten Artikel.
-
-
-
-
 
 Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Tagesberichte zu erstellen:
 
