@@ -8,12 +8,6 @@ _Aufbau_
 * _Arbeitsweise_
 * _Datenstruktur_
 
-////
-Im Rahmen der Verfahrensdokumentation sind alle Anweisungen aufzubewahren, die dem umfassenden Verständnis der *Datenentstehung, -erfassung, -speicherung und –verarbeitung dienen. *Dazu gehören auch Arbeitsanweisungen, die die *Rechte und Pflichten bei der Bedienung der eingesetzten Kassen* abbilden, sowie die *Festlegung von Kontrollen über die Einhaltung der festgelegten Nutzungsregeln*. So muss beispielsweise auch dokumentiert werden, wer die Kasse führt, wer Zugang zur Kasse hat und wer als Kassenführer/-in fungiert. Ausgeführte Kontrollen sind dabei zu protokollieren.
-
-Vorzuhalten ist auch eine Verfahrensdokumentation, die neben einer allgemeinen Beschreibung der eingesetzten Kasse (Bedienungs- und Programmieranleitungen) auch eine technische Systemdokumentation sowie eine Dokumentation über Betriebszeiten und Anwender (Nutzungsprotokolle, Datenänderungen etc.) enthält.
-////
-
 == plentymarkets App
 
 === Verwendungszweck
@@ -198,6 +192,29 @@ Das Unternehmen verfügt über [______] plentymarkets POS Kassensysteme. Diese K
 |
 |===
 
+Systemseitig wird der Standort der Kasse in der Tabelle *plenty_account_address_pos_relation* und dort in folgenden Tabellen gespeichert:
+
+* *posBaseId* -> Die ID der Kasse, dem eine Adresse zugeordnet wurde.
+* *addressID* -> Die ID des Standorts, der dem System zugeordnet wurde.
+
+Systemseitig werden die Kasseneinstellungen in der Tabelle *plenty_pos_base* und dort in den folgenden Tabellen gespeichert:
+
+ * *_name_* -> Der Name der Kasse.
+ * *_webstoreId_* -> Der Mandant der Kasse.
+ * *_referrerId_* -> Die Herkunft der Aufträge, die über diese Kasse eingehen.
+ * *_defaultCustomerId_* -> Die ID des Standardkunden.
+ * *_shippingWarehouseId_* -> Das für die Kasse hinterlegte Vertriebslager.
+ * *_orderReturnsWarehouseId_* -> Das für die Kasse hinterlegte Reparaturlager.
+ * *_orderReturnsSotrageLocationId_* -> Der Lagerort im Reparaturlager.
+ * *_currentCashBalanceValue_* -> Der Barbestand, der zum aktuellen Zeitpunkt in der Kasse vorhanden ist.
+ * *_currentReceiptNumber_* -> Die aktuelle Anzahl der erstellten Belege.
+ * *_grandTotal_* ->  Der Gesamtumsatz der Kasse.
+ * *_deviceUUID_* -> Die einzigartige ID des Geräts, mit dem die Kasse gekoppelt ist.
+ * *_deviceName_* -> Der nicht einzigartige Name des Geräts, mit dem die Kasse gekoppelt ist.
+ * *_ecConnection_* -> Die eingerichtete EC-Verbindungsart (z.Z. Miura oder ohne)
+ * *_applyMarketAvalibility_* -> Marktplatzverfügbarkeit berücksichtigen (ja/nein)
+ * *_appyItemActive_* -> Nur aktive Varianten berücksichtigen (ja/nein)
+
 
 ==== Soft- und Hardware
 
@@ -227,13 +244,7 @@ Darstellung dieser Infos noch zu klären
 |[_plenty-ID, Link, Mandant (Shop)_]
 |===
 
-////
-Noch einfügen: Zusammenspiel mit plentymarkets Backend
-* Daten werden an plentymarkets Backend gesendet - wann, wie, wohin?
-////
-
 Für die Kasse mit der Kassen-ID _____ kommt folgende Hardware zum Einsatz: +
-//Noch einfügen: Verwendung ab wann - Verwendungszweck im Sinne der Datenerfassung und Archivierung
 
 * Tablet / Smartphone [Modell, Hersteller]
 * Belegdrucker [Modell, Hersteller]
@@ -307,7 +318,6 @@ Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt 
 * Daten für den IDEA-Export
 
 Eine Änderung der Kassenauftragsdaten durch plentymarkets Anwender ist nicht möglich.
-
 
 ==== Buchungsablauf bei Stornierungen
 
@@ -424,21 +434,6 @@ Folgende Personen sind autorisiert, Entnahmen durchzuführen:
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
 
-
-
-////
-Ist das Kassensystem Bestandteil einer komplexen Branchensoftware? Welche weiteren Anwendungsgebiete nutzen Sie von der Branchenlösung?
-* Auftragsannahme, -abwicklung, -fakturierung
-* Beschaffungswirtschaft (Einkauf-, Waren-, Materialwirtschaft)
-* Controlling (Planungsrechnung und Statistik)
-* Finanzbuchführung inkl. Anlagenbuchführung
-* Kosten- und Leistungsrechnung (inkl. Kostenstellenrechnung)
-* Lohnbuchführung (inkl. Zeiterfassung für die Mitar
-* beiter)
-* Sonstiges: [ _Beschreibung einfügen_ ]
-////
-
-
 Welche Daten werden pro Auftrag erhoben?
 
 Belege
@@ -453,16 +448,7 @@ Belege
 * Wie setzen sich die Belegnummern zusammen?
 
 
-
-
-
-
-////
-Informationen über Aufbau und Struktur der Datenbank liegen vor +
-(z.B. in welchen Tabellen werden die Daten abgelegt, welche (internen) Prozeduren werden ausgeführt, welche Eingabe-/Auswertungsmöglichkeiten gibt es, etc.?)
-////
-
-=== Elektronische Aufbewahrung von POS Geschäftsvorfällen
+=== Elektronische Aufbewahrung von POS Geschäftsvorfällen im Kassenjournal
 
 Sämtliche über plentymarkets POS generierten Geschäftsvorfälle werden in das ERP-System plentymarkets importiert. Ein Kassenbuch wird in Form eines elektronischen Kassenjournals automatisch erstellt und aktualisiert.
 
@@ -474,7 +460,7 @@ Das Kassenjournal ist im ERP-System plentymarkets über das Menü *Aufträge » 
 * Aufrufen der für die Geschäftsvorfälle gespeicherten Einzelbelege
 * Aufrufen der für die Geschäftsvorfälle angelegten Aufträge
 
-Für jeden Geschäftsvorfall sind im Kassenjournal die folgenden Daten gespeichert und einsehbar:
+Für jeden Geschäftsvorfall sind im Kassenjournal die unten aufgeführten Daten gespeichert und einsehbar.
 
 * Datum des Geschäftsvorfalls
 * Vorgang: E = Einnahme / A = Ausgabe
@@ -487,6 +473,8 @@ Für jeden Geschäftsvorfall sind im Kassenjournal die folgenden Daten gespeiche
 * Steuersatz in %
 * USt.-Betrag
 * Buchungstext: Bei Einlagen und Entnahmen entspricht der Buchungstext dem Grund der Bargeldbewegung.
+
+
 
 Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann die Anzahl der angezeigten Vorfälle durch das Setzen von Filtern reduziert werden. Folgende Filtermöglichkeiten sind verfügbar:
 
@@ -505,19 +493,23 @@ Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann 
 
 Aus dem Kassenjournal können außerdem Geschäftsvorfalldaten exportiert werden. Die Daten können im PDF- oder im CSV-Format exportiert werden. Exportiert werden jedoch nur die gefilterten Vorfälle. Um einen vollständigen Export zu erstellen, dürfen daher keine Filter angewendet werden.
 
+Systemseitig sind die Daten des Kassenjournals in der Datentabelle *plenty_pos_journal* gespeichert. Die Einzeldaten sind in folgenden Spalten gespeichert:
+
+ * *_posBaseId_* ->  Die ID des POS-Systems, an dem der Auftrag erstellt wurde
+ * *_userId_* -> Die ID des Users, der den Auftrag erstellt hat
+ * *_userRealName_* -> Der volle Name des Benutzers
+ * *_type_* -> Der Typ des  Eintrag (z.B. Bon, Einlage, Entnahme)
+ * *_actionFrom_* ->
+ * *_actionTo_* ->
+ * *_value_* -> Der Gesamtbetrag des Eintrags
+ * *_currency_* -> Die Währung
+ * *_note_* -> Eine dem Eintrag zugeordnete Notiz
+ * *_receiptNumber_* -> Die Nummer des zum Auftrag erstellten Belegs
+ * *_documentId_* -> Die ID des erstellten Dokuments
+ * *_orderId_* -> Die ID des Auftrags
+ * *_currentCashBalance_* -> Der Barbestand der Kasse zum gegebenen Zeitpunkt
 
 === Speicherung und Abrufbarkeit von plentymarkets POS Geschäftsvorfällen (Berichtswesen)
-
-////
-* Welche Berichte gibt es?
-* Welche Infos stehen in diesen Berichten?
-* Wo werden die Berichte gespeichert?
-* Wie lang werden die Berichte aufbewahrt?
-* Welche Gesetze halten die Berichte ein?
-* Wer darf die Berichte erstellen? Welche Rechte sind dazu erforderlich?
-* [Wer darf im Unternehmen die Berichte erstellen]
-* [Wie oft werden die Berichte im Unternehmen erstellt]
-////
 
 plentymarkets POS bietet umfassende Berichtsfunktionen. Folgende Berichte können erstellt werden:
 
@@ -574,6 +566,44 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 
 Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Sie werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
 
+Systemseitig werden die Daten der Tagesberichte in der Datentabelle *plenty_pos_z_report* und dort in den folgenden Spalten gespeichert:
+
+ * *_posBaseId_* -> Die ID der Kasse, an der der Tagesabschluss erstellt wurde.
+ * *_reportNumber_* -> Die Nummer des Tagesabschluss
+ * *_createdAt_* -> Das Datum und die Uhrzeit, zu der der Tagesabschluss erstellt wurde.
+ * *_fromDate _*-> Das Datum und die Uhrzeit des ersten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
+ * *_toDate _*-> Das Datum und die Uhrzeit des letzten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
+ * *_userId _*-> Die ID des Benutzers, der den Tagesabschluss durchgeführt hat.
+ * *_userRealName _*-> Der reale Name des Benutzers, der den Tagesabschluss durchgeführt hat.
+ * *_aggreageteTurnover _*-> Der Gesamtbetrag, der zum Zeitpunkt des Z-Berichts vorhanden war.
+ * *_turnOverVATDutyShare _*-> Der verwendete Steuersatz und Mehrwertsteueranteil des Gesamtbetrags
+ * *_turnOverVATNetShare _*-> Der verwendete Steuersatz und der Nettobetrag des Gesamtbetrags
+ * *_methodOfPayments _*-> Die Beträge pro Zahlungsart.
+ * *_methodOfPaymentsCount _*-> Zählung, wie oft mit welcher Zahlungsart gezahlt wurde.
+ * *_returnItemsValue _*-> Der Gesamtwert der zurückgenommenen Artikel.
+ * *_returnItemsCount _*-> Die Anzahl der zurückgenommenen Artikel.
+ * *_rabateValue _*-> Der gesamte Rabattbetrag für diesen Zeitraum.
+ * *_rabateCount _*-> Die Anzahl der gewährten Rabatte.
+ * *_turnOverUser _*-> Der vom Benutzer eingetragene Betrag, welcher sich beim Tagesabschluss in der Kasse befand
+ * *_currency _*-> Die Währung
+ * *_firstReceipt _*-> Die Nummer des ersten Belegs, der im Tagesabschluss berücksichtigt wurde.
+ * __l__*_astReceipt _*-> Die Nummer des letzten Beleges, der im Tagesabschluss berücksichtigt wurde.
+ * *_startCashBalance _*-> Der Barbestand, der sich zu Beginn des Tages in der Kasse befand.
+ * *_endCashBalance _*-> Der Barbestand, der sich zum Ende des Tages in der Kasse befand.
+ * *_grandTotal _*-> Der Gesamtbetrag, der zu diesem Zeitpunkt mit der Kasse eingenommen wurde.
+ * *_currentCashBalance _*-> Der Barbestand, der sich zum Zeitpunkt des Tagesabschlusses in der Kasse befinden sollte.
+ * *_actualCashBalance_* ->  Der Barbestand, der sich tatsächlich zum Zeitpunkt des Tagesabschlusses in der Kasse befand.
+ * *_depositValue _*-> Der Gesamtbetrag, der als Anzahlung getätigt wurde.
+ * *_depositCount_* -> Die Anzahl der Anzahlungen, die getätigt wurden.
+ * *_withdrawlValue _*-> Der Gesamtbetrag, der aus der Kasse entnommen wurde.
+ * *_withdrawlCount _*-> Die Anzahl der Entnahmen.
+ * *_cancellationOderValue _*-> Der Gesamtwert der stornierten Artikel.
+ * *_cancelationOderCount _*-> Die Gesamtanzahl der stornierten Artikel.
+
+
+
+
+
 Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Tagesberichte zu erstellen:
 
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
@@ -603,6 +633,20 @@ Im Kassensturzbericht werden systembedingt die folgenden Informationen gespeiche
 * Stückelung und Menge (optional)
 * Ist-Kassenbestand
 * Differenz zwischen Soll- und Kassenbestand
+
+Die Daten des Kassensturzberichts werden systemseitig in der Tabelle plenty_pos_till_count und dort in den folgenden Spalten gespeichert:
+
+ * *_posBaseId_* ->  Die ID des POS-Systems, an dem der Kassensturz durchgeführt wurde
+ * *_tillCountNumber_* -> Die Nummer des Kassensturzes
+ * *_expectedCash_* -> Der erwartete Barbestand der Kasse
+ * *_actualCash_* ->  Der tatsächliche, gezählte Barbestand der Kasse
+ * *_userId_* ->  Die ID des Benutzers, der den Kassensturz durchgeführt wird
+ * *_userRealName_* -> Der reale Name des Nutzers
+ * *_currency_* -> Die Währung des Kassensturzes
+ * *_money_* -> Die Ergebnisse der Münzzählung
+ * *_date_* -> Das Datum und die Uhrzeit, zu dem der Kassensturz durchgeführt wurde
+ * *_sum_* -> Die vom Benutzer eingegebene Gesamtmenge, die in der Kasse vorhanden ist.
+ * *_difference_* -> Die Differenz zwischen Ist- und Sollbestand
 
 Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Kassenstürze durchzuführen:
 
@@ -639,6 +683,18 @@ Mitarbeiter/-innen sind angewiesen, bei Kassensturzdifferenzen wie folgt zu hand
 
 § 147 Absatz 2 Nummer 2 AO der GoBD sieht vor, dass im Rahmen einer Außenprüfung alle zur Auswertung der aufzeichnungs- und aufbewahrungspflichtigen Daten  notwendigen Strukturinformationen in maschinell auswertbarer Form bereitzustellen sind. Um diesen Anforderungen gerecht zu werden, können alle plentymarkets POS Geschäftsvorfälle über das Menü *Aufträge » POS » IDEA-Export* des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen und enthält alle Geschäftsvorfälle aus allen plentymarkets POS Kassen des plentymarkets Systems. Benutzer können beim Export also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
 
+Die Daten des IDEA-Exports sind systemseitig in der Tabelle *pleny_pos_idea_export* in den folgenden Spalten gespeichert:
+
+* *_token _*->__ __Das Token des Exportes
+* *_state _*_-> _Der Status des Exports (z.B. in Arbeit oder Fertig)
+* *_progress _*->** **Der momentane Fortschritt des Exports
+* *_currentModule _*-> Das Modul das z.Z. bearbeitet wird.
+* *_filename _*->  Der Dateiname der exportieren Datei
+* *_moudules _*-> Die Module die in dem Export bearbeitet werden
+* *_options_*** **-> Die Optionen die für den Export gesetzt wurden (z.B. das zu exportierende Jahr)
+* *_createdAt _*-> Das Datum + Uhrzeit an dem der Export gestartet wurde
+* *_updatedAt _*-> Das Datum + Uhrzeit an dem der Datensatz das letze mal bearbeitet wurde
+
 Der IDEA-Export enthällt die folgenden Dateien:
 
 * addresses.csv
@@ -658,7 +714,7 @@ Der IDEA-Export enthällt die folgenden Dateien:
 
 Nach Abschluss des Exports stehen die Dateien im Menü *Aufträge » POS » IDEA-Export* des ERP-Systems plentymarkets zum Download zur Verfügung.
 
-Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporte wie folgt zu handlen:
+Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporten wie folgt zu handlen:
 
 * [_Erstellungsintervall_]
 * [_Für die Erstellung zuständige Person/-en_]
@@ -666,6 +722,9 @@ Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporte wie folgt zu handlen:
 * [_Sonstiges_]
 
 Das Handbuch der ERP-Lösung plentymarkets stellt eine detaillierte Anleitung zur Erstellung des IDEA-Exports bereit: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#500]
+
+zz
+
 
 === Verfahren bei Ausfall von plentymarkets POS
 
@@ -741,6 +800,24 @@ Die folgenden Belegeinstellungen wurden vorgenommen (1 Tabelle pro Kasse):
 |Fußzeile|||
 |===
 
+Die Belegeinstellungen werden pro Kasse systemseitig in der Tabelle *plenty_pos_receipt_configuration* und dort in den folgenden Spalten gespeichert:
+
+ * *_posBaseId_* -> Die ID der Kasse, der eine Belegkonfiguration zugewiesen werden soll.
+ * *_imageName_* -> Der Name der Bilddatei
+ * *_imagePath_* -> Der Pfad zum Bild
+ * *_headerText_* -> Der Text, der am Kopf des Beleges stehen soll.
+ * *_headerActive_* -> Ob der Kopftext auf dem Beleg ausgegeben werden soll (ja/nein).
+ * *_footerText_* -> Der Text, der am Ende des Beleges stehen soll.
+ * *_footerActive_* -> Ob der Fußtext auf dem Beleg ausgegeben werden soll (ja/nein).
+ * *_barcodeActive_* -> Soll ein Barcode auf dem Beleg erscheinen (ja/nein)?
+ * *_barcodeType_* -> Bestimmt, welche Art von Barcode genutzt wird.
+ * *_barcodeHRI_* -> Die menschenlesbare Version des Barcodes.
+ * *_barcodeWidth_* -> Die Breite des Barcodes.
+ * *_barcodeHeight_* -> Die Höhe des Barcodes.
+ * *_barcodeFont_* -> Das Aussehen des Barcodes.
+ * *_bonType_* -> Definition, ob auf dem Bon alle Artikel einzeln oder zusammengefasst dargestellt werden sollen.
+
+
 ==== Aktivierte Zahlungsarten
 
 
@@ -803,7 +880,7 @@ Kontrollmechanismen
 * Wie spielt das mit den Rechten im plenty Backend zusammen?
 * Liste mit den Rechten pro Benutzerrolle
 
-
+////
 == Info-Links
 
 
@@ -835,27 +912,4 @@ http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentat
 http://www.stb-stuttgart.de/content/images/NWB%20Merkblaetter/Checkliste%20Kassenf%C3%BChrung.pdf[http://www.stb-stuttgart.de/content/images/NWB%20Merkblaetter/Checkliste%20Kassenf%C3%BChrung.pdf]
 
 http://www.sharp.de/sharp/media/de/images/de/04-17_SHARP_FAQ_GoBD_4.3.pdf[http://www.sharp.de/sharp/media/de/images/de/04-17_SHARP_FAQ_GoBD_4.3.pdf]
-
-
-
-
-
-
-Neben der betrieblichen EDV zählen hierzu auch sogenannte *Vor- und Nebensysteme*. Das können zum Beispiel elektronische Waagen, Taxameter, Zeiterfassungssysteme und eben auch elektronische Kassensysteme sein. *Bei den Vor- oder Nebensystemen kommt es nicht auf die Bezeichnung an, sondern auf die Frage, ob in dem System buchführungs- oder aufzeichnungspflichtige Daten erfasst, erzeugt, empfangen, übernommen, verarbeitet, gespeichert oder übermittelt werden. *
-
-
-
-plentymarkets POS ist ein VORSYSTEM!
-
-
-Sollen EC-Cash-Zahlungen (BE und/oder BA) in der Registrierkasse erfasst werden, dann müssen diese BE und BA gesondert von den Bareinnahmen und Barausgaben getrennt werden.
-
-
-
-
-* Anweisungen zum Umgang mit Ausdrucken
-
-
-- Artikelsuche
-- Kundensuche
-- Umbuchung
+////
