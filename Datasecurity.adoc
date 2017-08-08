@@ -13,7 +13,7 @@ Viele relevante Daten eines plentymarkets Kundensystems werden in Datenbankstruk
 
 ===== Systemdaten
 Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt in einer eigenen Datenbank. Hier werden z.B. Daten wie
-Kundenname, Anschrift etc
+Kundenname, Anschrift etc.
 * Artikel (inkl. aller notwendigen Daten)
 * Kategorien
 * Angebundene Marktplätze etc.
@@ -21,39 +21,39 @@ gespeichert.
 
 Der Zugriff eines Kundensystems ist nur auf die dazugehörige jeweilige Datenbank möglich. Ein Zugriff auf „fremde“ Datenbanken ist aufgrund der Rechtevergabe nicht möglich.
 
-====Kundendaten
+=====Kundendaten
 Die eigentlichen Kundendaten wie z.B.
-*Kundenname
-*Anschrift
-*Kundenklasse
+* Kundenname
+* Anschrift
+* Kundenklasse
 etc.
 und einige Kundensystemdaten wie z.B.
-*Domains
-*IP-Adressen
-*Speicherort für DB und NFS
-etc.
-werden in einer zentralen Datenbank gespeichert, auf die nur das Mastersystem von plentymarkets zugreifen kann. Diese Daten werden zur Verwaltung der Kundensystem genutzt.
+* Domains
+* IP-Adressen
+* Speicherort für DB und NFS
+etc. werden in einer zentralen Datenbank gespeichert, auf die nur das Mastersystem von plentymarkets zugreifen kann. Diese Daten werden zur Verwaltung der Kundensystem genutzt.
 
-====Verschlüsselung
+==== Verschlüsselung
 Eine generelle Verschlüsselung der Datenbanken besteht nicht. Lediglich Tabellenspalten mit Passwörtern werden als HASH gespeichert.
 
-===NFS-SERVER
+=== NFS-SERVER
 
-====Allgemeines
+==== Allgemeines
 Andere Daten eines plentymarkets Kundensystems werden in Filestrukturen abgelegt. Hierzu wird das Netzwerkprotokoll NFS genutzt. Alle NFS-Server sind redundant aufgestellt. Ein Zugriff auf die NFS-Server ist lediglich innerhalb des Clusters möglich. Ein Zugriff von Außerhalb ist nicht möglich.
 
-====Welche Daten werden wie gespeichert?
-*Systemdaten
+==== Welche Daten werden wie gespeichert?
+
+===== Systemdaten
 Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf NFS-Servern. Hier werden z.B. Daten wie
 Konfigurations-Dateien für das Kundensystem selbst Gespeichert.
 
 Der Zugriff eines Kundensystems ist nur auf das dazugehörige Kundenverzeichnis möglich. Ein Zugriff auf ein „fremdes“ Kundenverzeichnis ist aufgrund der Struktur und Rechtevergabe nicht möglich.
 
-*Kundendaten
+===== Kundendaten
 Einige kundenbezogene Daten aus der Datenbank werden in eine oder mehrere Dateien auf dem NFS-Server geschrieben. Diese werden in dem jeweiligen Kundeverzeichnis abgelegt.
 
-===Amazon S3
-====Allgemeines
+=== Amazon S3
+==== Allgemeines
 Andere Daten eines plentymarkets Kundensystems werden in Filestrukturen abgelegt. Hierzu wird der Amazon S3 Dienst genutzt. Alle S3-Server sind redundant aufgestellt. Ein  Zugriff auf die S3-Server ist lediglich innerhalb der Cloud möglich. Ein Zugriff von Außerhalb ist nicht möglich.
 Welche Daten werden wie gespeichert?
 Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Amazon S3-Servern. Hier werden z.B. Daten wie
@@ -75,14 +75,21 @@ Kundendaten
 Löschungen von Kundendaten (Name, Anschrift etc.) werden aktuell nicht durchgeführt.
 
 
-AWS Aufbau
-Allgemein
+== AWS Aufbau
 
-Serverstandorte AWS Cloud
-Neusysteme
+===Allgemein
+
+
+
+=== Serverstandorte AWS Cloud
+
+==== Neusysteme
 Für Neukunden stehen die Standorte “Amazon Frankfurt” sowie “Amazon Dublin” zu Auswahl.
-Bestandssysteme
+
+==== Bestandssysteme
 Bestandskunden steht das Cluster am Standort Frankfurt zur Verfügung.
 
-Sicherheitsarchitektur
+== Sicherheitsarchitektur
+
+=== Allgemein
 Plentymarkets ist durch den TÜV „Geprüfte Cloud-Sicherheit“ zertifiziert. Die Sicherheitsarchitektur entspricht dem aktuellen Stand der Technik. 
