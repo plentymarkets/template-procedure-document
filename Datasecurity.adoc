@@ -82,11 +82,10 @@ Die Kunden habe die Möglichkeit Backups selbstständig über den Admin-Bereich 
 
 ==== Systemdaten
 Systemdaten (Datenbank, NFS-Daten und S3-Daten) werden 30 Tage nach Ablauf des Vertrages des plentymarkets Systems zur Löschung freigegeben. Hierbei hat der Kunde 30 Tage nach Ablauf Zeit seinen Vertrag zu reaktivieren ohne das dass System aufwändig wiederhergestellt werden muss.
-Im Anschluss werden alle Systemdaten auf den Backup-Servern gesichert, und im Anschluss von den Produktiv-Servern gelöscht. Die gesicherten Daten werden weitere 30 Tage aufbewahrt und anschließend endgültig gelöscht. Dabei werden die Daten mit d
+Im Anschluss werden alle Systemdaten auf den Backup-Servern gesichert, und im Anschluss von den Produktiv-Servern gelöscht. Die gesicherten Daten werden weitere 30 Tage aufbewahrt und anschließend endgültig gelöscht.
 
 ==== Kundendaten
 Löschungen von Kundendaten (Name, Anschrift etc.) werden aktuell nicht durchgeführt.
-
 
 == AWS Aufbau
 
