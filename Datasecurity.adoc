@@ -2,14 +2,14 @@
 :lang: de
 include::{includedir}/_header.adoc[]
 
-==Speicherkonzept DB / NFS / S3 & Löschkonzept AWS Cloud
+== Speicherkonzept DB / NFS / S3 & Löschkonzept AWS Cloud
 
-===Datenbankserver
+=== Datenbankserver
 
-====Allgemeines
+==== Allgemeines
 Viele relevante Daten eines plentymarkets Kundensystems werden in Datenbankstrukturen abgelegt. Hierzu wird MariaDB (MySQL Fork) genutzt. Alle Datenbank-Server sind redundant im Master-Master Betrieb aufgestellt. Ein Zugriff auf die Datenbank-Server ist lediglich innerhalb des Clusters möglich. Ein Zugriff von Außerhalb ist nicht möglich.
 
-====Welche Daten werden wie gespeichert?
+==== Welche Daten werden wie gespeichert?
 *Systemdaten
 Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt in einer eigenen Datenbank. Hier werden z.B. Daten wie
 Kundenname, Anschrift etc
