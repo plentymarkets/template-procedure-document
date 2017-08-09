@@ -92,7 +92,9 @@ Löschungen von Kundendaten (Name, Anschrift etc.) werden aktuell nicht durchgef
 
 === Allgemein
 
-image::template_procedure_document/assets/AWS-EntwurfV4.graffle.png[]
+image::assets/AWS-EntwurfV4.graffle.png[]
+
+_Bild 1: Darstellung AWS_
 
 === Serverstandorte AWS Cloud
 
