@@ -18,7 +18,7 @@ Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt 
 * Artikel (inkl. aller notwendigen Daten)
 * Kategorien
 * Angebundene Marktplätze
-* etc..
+* etc.
 
 Der Zugriff eines Kundensystems ist nur auf die dazugehörige jeweilige Datenbank möglich. Ein Zugriff auf „fremde“ Datenbanken ist aufgrund der Rechtevergabe nicht möglich.
 
@@ -68,7 +68,7 @@ Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Ama
 * Layoutdateien zu dem Onlineshop (Bilder, CSS etc.) (Public)
 * PDF-Dokumente (Rechnungen, Gutschriften etc.) (Private).
 
- Der Zugriff eines Kundensystems ist nur auf die dazugehörige Kundenbuckets möglich. Ein Zugriff auf ein „fremdes“ Kundenbuckets ist aufgrund der Struktur und Rechtevergabe nicht möglich.
+Der Zugriff eines Kundensystems ist nur auf die dazugehörige Kundenbuckets möglich. Ein Zugriff auf ein „fremdes“ Kundenbuckets ist aufgrund der Struktur und Rechtevergabe nicht möglich.
 
 === Amazon Cloud Front
 Um die Ausfallsicherheit und die Auslieferungszeit von statischen Inhalten wie z.B. Bildern, CSS, JS und PDF-Dateien weiter zu verbessern werden diese über der Amazon Cloud Front Dienst (CDN) ausgeliefert.
@@ -95,7 +95,7 @@ Löschungen von Kundendaten (Name, Anschrift etc.) werden aktuell nicht durchgef
 === Serverstandorte AWS Cloud
 
 ==== Neusysteme
-Für Neukunden stehen die Standorte “Amazon Frankfurt” sowie “Amazon Dublin” zu Auswahl.
+Für Neukunden stehen die Standorte “Amazon Frankfurt” sowie “Amazon Dublin” zur Auswahl.
 
 ==== Bestandssysteme
 Bestandskunden steht das Cluster am Standort Frankfurt zur Verfügung.
