@@ -12,25 +12,25 @@ Viele relevante Daten eines plentymarkets Kundensystems werden in Datenbankstruk
 ==== Welche Daten werden wie gespeichert?
 
 ===== Systemdaten
-Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt in einer eigenen Datenbank. Hier werden z.B. Daten wie
-Kundenname, Anschrift etc.
+Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt in einer eigenen Datenbank. Hier werden z.B. Daten gespeichert wie:
 
+* Kundenname, Anschrift etc.
 * Artikel (inkl. aller notwendigen Daten)
 * Kategorien
-* Angebundene Marktplätze etc.
-
-gespeichert.
+* Angebundene Marktplätze
+* etc..
 
 Der Zugriff eines Kundensystems ist nur auf die dazugehörige jeweilige Datenbank möglich. Ein Zugriff auf „fremde“ Datenbanken ist aufgrund der Rechtevergabe nicht möglich.
 
 ===== Kundendaten
-Die eigentlichen Kundendaten wie z.B.
+Die eigentlichen Kundendaten wie z. B.:
 
 * Kundenname
 * Anschrift
-* Kundenklasse etc.
+* Kundenklasse 
+* etc.
 
-und einige Kundensystemdaten wie z.B.
+und einige Kundensystemdaten wie z. B.:
 
 * Domains
 * IP-Adressen
@@ -58,16 +58,17 @@ Der Zugriff eines Kundensystems ist nur auf das dazugehörige Kundenverzeichnis 
 Einige kundenbezogene Daten aus der Datenbank werden in eine oder mehrere Dateien auf dem NFS-Server geschrieben. Diese werden in dem jeweiligen Kundeverzeichnis abgelegt.
 
 === Amazon S3
+
 ==== Allgemeines
 Andere Daten eines plentymarkets Kundensystems werden in Filestrukturen abgelegt. Hierzu wird der Amazon S3 Dienst genutzt. Alle S3-Server sind redundant aufgestellt. Ein  Zugriff auf die S3-Server ist lediglich innerhalb der Cloud möglich. Ein Zugriff von Außerhalb ist nicht möglich.
 
 === Welche Daten werden wie gespeichert?
-Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Amazon S3-Servern. Hier werden z.B. Daten wie
+Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Amazon S3-Servern. Hier werden z. B. Daten gespeichert wie:
 
 * Layoutdateien zu dem Onlineshop (Bilder, CSS etc.) (Public)
-* PDF-Dokumente (Rechnungen, Gutschriften etc.) (Private)
+* PDF-Dokumente (Rechnungen, Gutschriften etc.) (Private).
 
-Gespeichert. Der Zugriff eines Kundensystems ist nur auf die dazugehörige Kundenbuckets möglich. Ein Zugriff auf ein „fremdes“ Kundenbuckets ist aufgrund der Struktur und Rechtevergabe nicht möglich.
+ Der Zugriff eines Kundensystems ist nur auf die dazugehörige Kundenbuckets möglich. Ein Zugriff auf ein „fremdes“ Kundenbuckets ist aufgrund der Struktur und Rechtevergabe nicht möglich.
 
 === Amazon Cloud Front
 Um die Ausfallsicherheit und die Auslieferungszeit von statischen Inhalten wie z.B. Bildern, CSS, JS und PDF-Dateien weiter zu verbessern werden diese über der Amazon Cloud Front Dienst (CDN) ausgeliefert.
