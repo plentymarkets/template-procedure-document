@@ -77,7 +77,7 @@ Um die Ausfallsicherheit und die Auslieferungszeit von statischen Inhalten wie z
 Alle oben genannten Kernsysteme sind wie erwähnt redundant ausgelegt. Zusätzlich werden alle Datenbank- und NFS-Daten auf 4 Backup-Servern gesichert. Die Datenbank-Daten werden täglich, die NFS-Daten werden einmal wöchentlich (Sonntagnacht) gesichert.
 
 === Recovery
-Die Kunden habe die Möglichkeit Backups selbstständig über den Admin-Bereich (Grundeinstellungen => Backups) wieder einzuspielen. Eine Anleitung zum Einspielen der Backups befindet sich im Handbuch unter folgender Adresse: https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/backup. Bei Bedarf spielt die Administration Backups oder Teile von Backups wieder ein. 
+Die Kunden habe die Möglichkeit Backups selbstständig über den Admin-Bereich (Grundeinstellungen => Backups) wieder einzuspielen. Eine Anleitung zum Einspielen der Backups ist im Handbuch unter folgender Adresse: https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/backup zu erreichen. Bei Bedarf spielt die Administration Backups oder Teile von Backups wieder ein. 
 
 === Löschung
 
