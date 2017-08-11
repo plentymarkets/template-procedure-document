@@ -1,5 +1,4 @@
-= Kopfdokument: 
-Vorlage zur Verfahrensdokumentation für plentymarkets Anwender
+= Kopfdokument: Vorlage zur Verfahrensdokumentation für plentymarkets Anwender
 :lang: de
 :position: 10
 
