@@ -99,7 +99,7 @@ _Bild 1: Aufbau AWS_
 === Serverstandorte AWS Cloud
 
 ==== Neusysteme
-Für Neukunden stehen die Standorte “Amazon Frankfurt” sowie “Amazon Dublin” zur Auswahl.
+Für Neukunden stehen die Standorte “Amazon Frankfurt” sowie “Amazon Dublin” zur Auswahl. Dementsprechend werden die Daten auch nur an dem jeweiligen Standort gespeichert.
 
 ==== Bestandssysteme
 Bestandskunden steht das Cluster am Standort Frankfurt zur Verfügung.
