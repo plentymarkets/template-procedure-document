@@ -1,0 +1,36 @@
+= Anhang: Formulierungsvorschlag zur Verfahrensdokumentation für plentymarkets Anwender
+:lang: de
+include::{includedir}/_header.adoc[]
+
+Dieser Anhang liefert Formulierungsbeispiele für eine Verfahrensdokumentation beim Einsatz der Software plentymarkets. Die Beispiele bedürfen in jedem Fall Anpassungen an die tatsächlichen Gegebenheiten des Unternehmens, das plentymarkets einsetzt. Die hier angegebenen Beispielformulierungen sind nicht rechtlich geprüft. +
+_Hinweis: Dieses Kapitel ist nicht Teil des Formulierungsvorschlag und sollte nicht in Ihre Verfahrensdokumentation übernommen werden._
+
+== Tarif und Hosting
+
+Ich nutze die Software plentymarkets im Tarif … In diesem Tarif sind folgende Module … integral. Außerdem habe ich folgende optionale Module hinzugebucht: … +
+Ich habe mich für das von plentymarkets angebotene Hosting in … entschieden.
+
+== Fachliche Beschreibung plentymarkets
+
+plentymarkets ist eine modular aufgebaute und Plugin-fähige Software für den Handel mit Sachgütern, digitalen Gütern und immateriellen Gütern. +
+plentymarkets wird in unserem Unternehmen insbesondere zum Verkauf von … sowie zur zentralen Verwaltung von Produktinformationen und zur Abwicklung von Bestellungen genutzt. Hierbei kommen die genannten Module zum Einsatz. Die Vorteile beim Einsatz von plentymarkets liegen für unser Unternehmen insbesondere darin, dass Artikelinformationen zentral in plentymarkets erfasst und verwaltet werden und von hier aus an verschiedene Kanäle für den Verkauf übermittelt werden. Des Weiteren liegen Vorteile darin, dass egal über welchen Kanal ein Artikel verkauft wurde, nach dem Verkauf eine Übermittlung der Auftrags- und Kundendaten an das plentymarkets System des Anwenders erfolgt, sodass die anschließende Abwicklung wieder zentral in unserem plentymarkets System erfolgt. Ein weiterer Vorteil liegt in der Möglichkeit diese Abwicklung bis zu einem hohen Grad zu automatisieren.
+
+== Fachliche und technische Beschreibung Benutzer und Benutzerrechte
+
+Die Benutzer dienen der Zuordnung von Zugriffsrechten sowie der Nachvollziehbarkeit von Änderungen im System.
+
+Die folgende Tabelle zeigt welche Benutzer im System eingerichtet sind oder waren, welcher Benutzerklasse sie angehören und über welche Rechte sie verfügen.
+
+
+|===
+|Benutzername|Benutzerklasse|Benutzerrechte|Gültigkeit
+
+|Xxx Xxx|Admin| * alle|01.01.2015 - aktuell
+|Xxx Xxx|Variabel| * alle Lager|31.12.2013 - 01.09.2016
+||||
+||||
+|===
+
+
+
+
