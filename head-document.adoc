@@ -113,7 +113,7 @@ Der Zugriff auf den Kalender bezieht sich lediglich auf den benutzereigenen Kale
 
 ==== Benutzerklasse Newsletter2Go
 
-Benutzerklasse, die automatisch für die Einrichtung einerhttps://knowledge.plentymarkets.com/crm/newsletter-versenden#2100[https://knowledge.plentymarkets.com/crm/newsletter-versenden#2100[ ]]https://knowledge.plentymarkets.com/crm/newsletter-versenden#2100[*Newsletter2Go]*-Schnittstelle verwendet wird.
+Benutzerklasse, die automatisch für die Einrichtung einer link:https://knowledge.plentymarkets.com/crm/newsletter-versenden#2100[*Newsletter2Go*]-Schnittstelle verwendet wird.
 
 === Fachliche und technische Beschreibung des Moduls Auftragsabwicklung
 
