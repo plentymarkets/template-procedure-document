@@ -1,0 +1,4 @@
+include::head-document.adoc[]
+include::plentymarketsPOS.adoc[]
+include::Datasecurity[]
+include::wording-examples[]
