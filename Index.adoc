@@ -1,4 +1,4 @@
 include::head-document.adoc[]
 include::plentymarketsPOS.adoc[]
-include::Datasecurity[]
-include::wording-examples[]
+include::Datasecurity.adoc[]
+include::wording-examples.adoc[]
