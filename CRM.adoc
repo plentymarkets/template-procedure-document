@@ -68,7 +68,7 @@ Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Ku
 Für die anderen drei Beispielkundendatensätze (IDs 101, 102 und 103) sind bereits Bewegungsdaten gespeichert. Bewegungsdaten beinhalten die folgenden Informationen:
 
 * Datum und Uhrzeit der Registrierung im Webshop des Anwenders
-* die Art, wie sich der Kunde registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<Verfahrensdokumentation_CRM#300, *Regulärer Zugang und Gastzugang*>>)
+* die Art, wie sich der Kunde registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<CRM#300, *Regulärer Zugang und Gastzugang*>>)
 * Datum und Uhrzeit der letzten Aktualisierung des Kundendatensatzes
 * Datum und Uhrzeit des letzten Logins
 * Datum und Uhrzeit des letzten Auftrags
@@ -94,7 +94,7 @@ Ob ein Kundendatensatz im System erstellt wird, hängt zudem vom verwendeten Web
 
 *Auftragszuordnung bei regulären Zugängen und Gastzugängen*
 
-Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kundenübersicht zu sehen (siehe Bild 1 in Kapitel <<Verfahrensdokumentation_CRM#200, *Kunden-IDs*>>).
+Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kundenübersicht zu sehen (siehe Bild 1 in Kapitel <<CRM#200, *Kunden-IDs*>>).
 
 Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird normalerweise ein Auftrag zugeordnet. Dem Anwender ist so nicht unbedingt bekannt, wie viele Aufträge ein bestimmter Gastkunde tatsächlich im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: beispielsweise wenn sie nach Abschluss einer Bestellung im Webshop eine weitere Bestellung aufgeben oder sich über den Link zur Kaufabwicklung wieder einloggen. Ebenfalls denkbar sind vom Anwender manuell angelegte Aufträge, die der Kunde telefonisch direkt beim Anwender erteilt, jedoch kein Kundenkonto (regulärer Zugang) anlegen möchte.
 
@@ -153,7 +153,7 @@ In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden.
 [#600]
 == Rabattsystem für Kundenklassen
 
-Wie im Kapitel <<template-procedure-document/crm#1100, *Kundenklassen*>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
+Wie im Kapitel <<CRM#1100, *Kundenklassen*>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
 
  * Kundenklassenrabatt
  * Rabatt auf den Nettowarenwert
@@ -371,10 +371,10 @@ Für den manuellen Austausch von Kundendaten stehen dem Anwender die folgenden D
 |Der Anwender kann das Datenformat verwenden, um Notizen, die im Kundendatensatz erstellt wurden, zu exportieren, zu bearbeiten und zu importieren.
 
 |*CustomerProperty*
-|Der Anwender kann das Datenformat verwenden, um gespeicherte <<Verfahrensdokumentation_CRM#1100, *Kundeneigenschaften*>> zu exportieren, zu bearbeiten und zu importieren.
+|Der Anwender kann das Datenformat verwenden, um gespeicherte <<CRM#1100, *Kundeneigenschaften*>> zu exportieren, zu bearbeiten und zu importieren.
 
 |*CustomerPropertyLink*
-|Der Anwender kann das Datenformat verwenden, um <<Verfahrensdokumentation_CRM#1100, *Kundeneigenschaften*>> und die für die Kunden eingegebenen Werte zu exportieren, zu bearbeiten und zu importieren.
+|Der Anwender kann das Datenformat verwenden, um <<CRM#1100, *Kundeneigenschaften*>> und die für die Kunden eingegebenen Werte zu exportieren, zu bearbeiten und zu importieren.
 
 |*CustomerNewsletter*
 |Der Anwender kann das Datenformat verwenden, um Daten von Kunden, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
