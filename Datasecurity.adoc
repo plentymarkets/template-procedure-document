@@ -1,6 +1,5 @@
 == Speicherkonzept, Löschkonzept, Aufbau, Sicherheitsarchitektur AWS Cloud
 :lang: de
-include::{includedir}/_header.adoc[]
 
 === Speicherkonzept DB / NFS / S3 & Löschkonzept AWS Cloud
 
