@@ -134,7 +134,7 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 |204.01|Amazon Germany B2B|Auftrag|07.09.2016|14.09.2016|
 |===
 Tabelle 1: Systemherkünfte +
-*Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.
+footnote:[*Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.]
 
 Bei den oben aufgeführten Herkünften handelt es sich um Systemherkünfte. Systemherkünfte deshalb, weil sie bei Auslieferung eines plentymarkets Systems bereits angelegt sind und nicht gelöscht werden können. Die Systemherkünfte sind jedoch nicht automatisch aktiv. Sie sind lediglich bereits namentlich angelegt und verfügen über eine ID. Damit über eine Herkunft tatsächlich Aufträge generiert werden können und diese Herkunft einem Auftrag auch zugeordnet werden kann, muss sie mindestens aktiviert werden, aber bei vielen Systemherkünften sind noch weitere Einstellungen notwendig. +
 Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.  +
