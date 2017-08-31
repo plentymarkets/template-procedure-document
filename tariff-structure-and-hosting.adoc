@@ -1,0 +1,20 @@
+
+== Tarifstruktur
+
+Aktuell ist plentymarkets in den Tarifen Classic und Zero verfügbar. In beiden Tarifen stehen integrale und optionale Module zur Verfügung. Integrale Module sind Module, die von Anfang an im Funktionsumfang des Systems enthalten sind. Optionale Module können zusätzlich gewählt werden und gehören dann ebenfalls zum Funktionsumfang des Systems.  Die integralen und optionalen Module unterscheiden sich je nach Tarif.
+
+=== Tarif Classic
+
+Folgende Module sind integral im Tarif Classic: Online-Shop, Auftragsabwicklung, CRM, Payment und Fulfillment. Optionale Module im Tarif Classic sind: Multi-Channel, POS und Warenwirtschaft.
+
+=== Tarif Zero
+
+Für den Tarif Zero sind integral: Online-Shop, Auftragsabwicklung, CRM, Payment, Fulfillment, Multi-Channel und Warenwirtschaft. Optional in diesem Tarif ist das Modul POS.
+
+=== Hosting-Optionen
+
+Jeder Anwender muss eine der von plentymarkets angebotenen Hosting-Optionen wählen. Die folgenden Hosting-Optionen stehen ihm hierbei zur Verfügung:
+ * AWS Dublin
+ * AWS Frankfurt
+ * Cluster Frankfurt
+Nähere Erläuterungen zu den einzelnen Hosting-Optionen finden sich im Dokument Data Security.

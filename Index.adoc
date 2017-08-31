@@ -1,4 +1,15 @@
-include::head-document.adoc[]
-include::plentymarketsPOS.adoc[]
+= Technische Systemdokumentation plentymarkets
+
+include::document-purpose.adoc[]
+include::definition-plentymarkets.adoc[]
+include::tariff-structure-and-hosting.adoc[]
+include::general-description-plentymarkets-and-user-rights.adoc[]
+include::order.adoc[]
+include::CRM.adoc[]
 include::Datasecurity.adoc[]
 include::wording-examples.adoc[]
+
+Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
+
+Version 2
+Stand: 31.08.2017
