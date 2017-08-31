@@ -79,7 +79,7 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 |105.00|Shopzilla|Merkmal|26.07.2017||
 |106.00|Rakuten.de|Auftrag|11.11.2013||
 |106.02|Rakuten.co.uk|Auftrag|18.05.2015||Marktplatz geschlossen seit 31.08.2016
-|107.00|Neckermann.de Enterprise|Auftrag|26.10.2012||Keine technische Anbindung vorhanden* (Insolvenz 01.10.2012)
+|107.00|Neckermann.de Enterprise|Auftrag|26.10.2012||Keine technische Anbindung vorhanden[tableFoot1] (Insolvenz 01.10.2012)
 |108.00|Otto|Auftrag|26.10.2012||
 |108.02|Otto Integration|Auftrag|05.05.2015||
 |109.00|Shopgate|Auftrag|26.10.2012||
@@ -87,18 +87,18 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 |111.00|Gimahhot|Auftrag|26.10.2012||Marktplatz geschlossen und übergegangen in Yatego
 |112.00|Shopperella|Auftrag|26.10.2012|27.04.2017|Geschlossen bzw. Insolvenz seit Juni 2011
 |112.00|billiger.de|Auftrag|27.04.2017||
-|113.00|Shopshare|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
-|114.00|Quelle|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
+|113.00|Shopshare|Auftrag|26.10.2012||Keine technische Anbindung vorhanden[tableFoot1]
+|114.00|Quelle|Auftrag|26.10.2012||Keine technische Anbindung vorhanden[tableFoot1]
 |115.00|Restposten|Auftrag|26.10.2012||
 |116.00|Kauflux|Auftrag|26.10.2012||
-|117.00|Home24|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
+|117.00|Home24|Auftrag|26.10.2012||Keine technische Anbindung vorhanden[tableFoot1]
 |118.00|Zalando|Auftrag|26.10.2012||
 |119.00|Neckermann.at Enterprise|Auftrag|26.10.2012||
 |120.00|Neckermann.at Cross-Docking|Auftrag|26.10.2012||
 |121.00|Idealo|Auftrag|26.10.2012||
 |121.02|Idealo Direktkauf|Auftrag|14.07.2016||
 |122.00|La Redoute|Auftrag|26.10.2012||
-|123.00|Laary|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
+|123.00|Laary|Auftrag|26.10.2012||Keine technische Anbindung vorhanden[tableFoot1]
 |124.00|SumoNet|Auftrag|26.10.2012||früher SumoScout, Abgeschaltet 30.09.2016
 |125.00|Hood|Auftrag|26.10.2012||
 |126.00|ParfumDEAL|Auftrag|26.10.2012||Marktplatz geschlossen und übergang zu Gimahhot
@@ -109,13 +109,13 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 |131.00|Plus.de|Auftrag|16.09.2013||
 |132.00|GartenXXL.de|Auftrag|16.09.2013||
 |133.00|Twenga|Auftrag|25.09.2013||
-|134.00|Play.com|Auftrag|21.10.2013||Keine technische Anbindung *
-|134.00|SporTrade|Auftrag|24.10.2013||Keine technische Anbindung vorhanden*, Insolvenz Februar 2014
+|134.00|Play.com|Auftrag|21.10.2013||Keine technische Anbindung[tableFoot1]
+|134.00|SporTrade|Auftrag|24.10.2013||Keine technische Anbindung vorhanden[tableFoot1], Insolvenz Februar 2014
 |135.00|Newsletter2Go|Auftrag|24.10.2013||
 |136.00|Play.com|Auftrag|24.10.2013||Marktplatz am 23.05.2015 zu Rakuten.co.uk
 |137.00|Grosshandel.eu|Auftrag|05.11.2013||
 |138.00|Hertie|Auftrag|03.12.2013||
-|139.00|CouchCommerce|Auftrag|29.01.2014||Keine technische Anbindung vorhanden*
+|139.00|CouchCommerce|Auftrag|29.01.2014||Keine technische Anbindung vorhanden[tableFoot1]
 |140.00|Pixmania|Merkmal|28.02.2014||
 |141.00|Schuhe.de|Merkmal|12.05.2014||
 |142.00|MyBestBrands|Merkmal|04.08.2014||
@@ -134,7 +134,7 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 |204.01|Amazon Germany B2B|Auftrag|07.09.2016|14.09.2016|
 |===
 Tabelle 1: Systemherkünfte +
-footnote:[*Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.]
+footnoteref:[tableFoot1,Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.]
 
 Bei den oben aufgeführten Herkünften handelt es sich um Systemherkünfte. Systemherkünfte deshalb, weil sie bei Auslieferung eines plentymarkets Systems bereits angelegt sind und nicht gelöscht werden können. Die Systemherkünfte sind jedoch nicht automatisch aktiv. Sie sind lediglich bereits namentlich angelegt und verfügen über eine ID. Damit über eine Herkunft tatsächlich Aufträge generiert werden können und diese Herkunft einem Auftrag auch zugeordnet werden kann, muss sie mindestens aktiviert werden, aber bei vielen Systemherkünften sind noch weitere Einstellungen notwendig. +
 Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.  +
