@@ -14,7 +14,9 @@ Für den Tarif Zero sind integral: Online-Shop, Auftragsabwicklung, CRM, Payment
 === Hosting-Optionen
 
 Jeder Anwender muss eine der von plentymarkets angebotenen Hosting-Optionen wählen. Die folgenden Hosting-Optionen stehen ihm hierbei zur Verfügung:
+
  * AWS Dublin
  * AWS Frankfurt
  * Cluster Frankfurt
+ 
 Nähere Erläuterungen zu den einzelnen Hosting-Optionen finden sich im Dokument Data Security.

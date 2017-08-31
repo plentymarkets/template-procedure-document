@@ -1,3 +1,4 @@
+
 == Allgemeine fachliche Beschreibung der Software plentymarkets
 
 plentymarkets dient insbesondere der Verwaltung und Abwicklung von Daten und Arbeitsabläufen, die im Zusammenhang mit dem Handel von Sachgütern, digitalen Gütern und immateriellen Gütern stehen. Hierbei kommen die genannten Module zum Einsatz. Die Vorteile beim Einsatz von plentymarkets liegen insbesondere darin, dass Artikelinformationen zentral in plentymarkets erfasst und verwaltet werden und von hier aus an verschiedene Kanäle für den Verkauf übermittelt werden. Des Weiteren liegen Vorteile darin, dass egal über welchen Kanal ein Artikel verkauft wurde, nach dem Verkauf eine Übermittlung der Auftrags- und Kundendaten an das plentymarkets System des Anwenders erfolgt, sodass die anschließende Abwicklung wieder zentral im plentymarkets System des Anwenders erfolgt. Ein weiterer Vorteil liegt in der Möglichkeit diese Abwicklung bis zu einem hohen Grad zu automatisieren. +
@@ -13,6 +14,7 @@ Anschließend werden die Module einzeln genauer beschrieben.
 Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. +
 Die Benutzerrechte eines Benutzer in plentymarkets hängen zunächst von seiner Benutzerklasse ab. Jedem Benutzer muss eine Benutzerklasse zugeordnet werden. Die Benutzerklassen sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
 Folgende Benutzerklassen gibt es in plentymarkets:
+
  * Admin
  * Variabel
  * Callcenter
@@ -45,8 +47,10 @@ Standardmäßig ist kein Mandant freigegeben, so dass in keinem der weiteren Men
 ==== Benutzerklasse API
 
 Die Benutzerklasse API dient dem Datenaustausch über eine von plentymarkets zur Verfügung gestellte API-Technologie. Folgende API-Technologien stehen zur Verfügung:
+
  * SOAP
  * REST
+
 Standardmäßig sind jedoch keine Zugriffsrechte für SOAP oder REST aktiviert. Es besteht lediglich die Möglichkeit einem Benutzer der Klasse API Zugriff per SOAP oder REST auf Daten des Systems zu gewähren. Ein API-Benutzer hat keinen Zugriff auf Daten über die Softwareoberfläche. +
 Die SOAP API wird seit einiger Zeit nicht mehr weiterentwickelt, so dass sie technisch nicht mehr in allen Bereichen kompatibel ist mit der Datenstruktur von plentymarkets. Die REST API löst die SOAP API ab und stellt die neuere Technologie dar.  +
 Eine detaillierte Beschreibung der SOAP-Schnittstelle findet sich unter folgendem Link: +
@@ -57,6 +61,7 @@ https://developers.plentymarkets.com/[https://developers.plentymarkets.com/]
 ==== Benutzerklasse Logistik
 
 Die Benutzerklasse Logistik hat über die Softwareoberfläche Zugriff auf folgende Bereiche:
+
  * Startseite
  * Kalender
  * Warenbestände suchen und bearbeiten
