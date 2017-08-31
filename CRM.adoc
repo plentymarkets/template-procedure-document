@@ -59,7 +59,7 @@ Tabelle 1 listet die Beispielkundendatensätze mit einigen der vorausgefüllten 
 Bild 1 zeigt die Kundenübersicht mit den bereits im System vorhandenen Beispielkundendatensätzen.
 
 .Übersicht der Beispielkundendatensätze in einem neu angelegten System
-image::template-procedure-document/assets/Uebersicht-Beispielkundendatensaetze.png[]
+image::/assets/Uebersicht-Beispielkundendatensaetze.png[]
 
 Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
 
@@ -327,7 +327,7 @@ Welche datenschutzrelevanten Informationen im System gespeichert werden, hängt 
 Ein möglicher Fall wäre auch, dass der Anwender beispielsweise in der Datenschutzerklärung beschreibt, in welcher Form und für welche Dauer die Daten des Kunden gespeichert werden und dass die Daten nicht an Dritte weitergegeben werden. Außerdem legt der Anwender in seinem Webshop fest, dass das Lesen der Datenschutzerklärung und die anschließende Zustimmung zwingend notwendig ist. Das bedeutet, der Kunde muss während der Registrierung im Webshop eine Checkbox aktivieren und stimmt somit bewusst der Speicherung seiner Daten zu.
 
 .Beispiel der Pflichtfelder (mit * gekennzeichnet) im Webshop
-image::template-procedure-document/assets/AGB_Widerrufsrecht.png[]
+image::/assets/AGB_Widerrufsrecht.png[]
 
 [#1800]
 === Speicherung von marktplatzspezifischen Kundendaten
