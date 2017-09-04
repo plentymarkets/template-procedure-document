@@ -131,7 +131,7 @@ Der Zugriff auf die plentymarkets App wird über Zugriffsrechte gesteuert, die i
 
 === Verwendungszweck
 
-plentymarkets POS dient zur exakten Einzelerfassung und Dokumentation sämtlicher Kassenvorgänge. Hierbei kann es sich um Bargeldtransaktionen, bargeldlose Transaktionen, Retouren, Stornierungen, Gutschriften oder Einlagen oder Entnahmen handeln. plentymarkets POS bildet also alle Kassenvorgänge des Einzelhandels ab, dokumentiert diese Vorgänge unveränderlich und hält die Daten dieser Vorgänge in elektronischer Form vor. Zahlungsvorgänge werden sowohl in Form von Belegen als auch in Form von Aufträgen im plentymarkets Backend gespeichert. Auch dort sind die Vorgänge unveränderlich gespeichert.
+plentymarkets POS dient zur exakten Einzelerfassung und Dokumentation sämtlicher Kassenvorgänge. Hierbei kann es sich um Bargeldtransaktionen, bargeldlose Transaktionen, Gutscheinzahlungen, Retouren, Stornierungen, Gutschriften oder Einlagen oder Entnahmen handeln. plentymarkets POS bildet also alle Kassenvorgänge des Einzelhandels ab, dokumentiert diese Vorgänge unveränderlich und hält die Daten dieser Vorgänge in elektronischer Form vor. Zahlungsvorgänge werden sowohl in Form von Belegen als auch in Form von Aufträgen im plentymarkets Backend gespeichert. Auch dort sind die Vorgänge unveränderlich gespeichert.
 
 Eine softwareseitige Erfassung von Geschäftsvorfällen kann in plentymarkets nicht unterdrückt werden. Eine Belegerstellung, ohne dass dabei die vereinnahmten Beträge erfasst werden, ist technisch nicht möglich.
 
@@ -242,7 +242,7 @@ Darstellung dieser Infos noch zu klären
 Alternative Darstellung
 ////
 
-Für die Kasse mit der Kassen-ID _____ kommt folgende Hardware zum Einsatz: +
+Für die Kasse mit der Kassen-ID [*ID einfügen*] kommt folgende Hardware zum Einsatz: +
 
 * Tablet / Smartphone [Modell, Hersteller]
 * Belegdrucker [Modell, Hersteller]
@@ -255,7 +255,7 @@ Für die Kasse mit der Kassen-ID _____ kommt folgende Hardware zum Einsatz: +
 Für die Kasse mit der Kassen-ID [_*ID einfügen*_] kommt folgende Software zum Einsatz:
 
 * Betriebssystem [Programmname; Versionsnummer; Hersteller]
-* ERP-System [Programmname; Versionsnummer; Hersteller - auch das plenty-System?]
+* ERP-System [Programmname; Versionsnummer; Hersteller]
 * Scan-Software [Programmname; Versionsnummer; Hersteller]
 * Sonstiges [Programmname; Versionsnummer; Hersteller]
 
@@ -320,6 +320,39 @@ Eine Änderung der Kassenauftragsdaten durch plentymarkets Anwender ist nicht m�
 Bei bargeldloser Zahlung treten geringfügige Besonderheiten auf: Bei der Zahlungsart Kartenzahlung muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
 Bei der Kartenzahlung mit Miura kann, wenn es in den Einstellungen so definiert wurde, diese Bestätigung des Zahlungseingang auch automatisiert passieren.
 Außerdem wird bei der Zahlungsart Kartenzahlung der Barbestand der Kasse nicht erhöht.
+
+===== Sonderfall 1: Gutscheinverkauf
+
+Pro Gutscheinwert muss im ERP-System plentymarkets ein Gutscheinartikel mit dem Preis des Gutscheinwerts und dem Mehrwertsteuersatz 0% erstellt werden und mit einer Kampagne verknüpft werden.
+
+Die genaue Vorgehensweise zum Verkauf von Gutscheinen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#_gutscheinverkauf_vorbereiten[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#_gutscheinverkauf_vorbereiten]
+
+Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Relevanz:
+
+* Beim Verkauf eines Verkaufsgutscheins erhöht sich der Umsatz nicht.
+* Verkaufte Gutscheine werden auf dem Tagesbericht separat ausgewiesen. * Der Barbestand erhöht sich nur, wenn der Gutschein bar bezahlt wird.
+* Beim Verkauf eines Gutscheins wird dem Kunden ein Gutschein-Code ausgehändigt. Dieser Gutschein-Code ist nicht mit dem Auftrag verknüpft.
+
+Systemseitig ist es möglich, Gutschein-Codes mehrmals zu verkaufen. Um dies zu verhindern, sind Mitarbeiter/-innen angewiesen, beim Verkauf von Gutscheinen wie folgt vorzugehen:
+
+* [_Beschreibung einfügen_]
+
+===== Sonderfall 2: Gutscheineinlösung
+
+Im ERP-System plentymarkets können zwar Aktionsgutscheine und Verkaufsgutscheine angelegt werden. Im Kassensystem plentymarkets POS können jedoch nur Verkaufsgutscheine eingelöst werden. Zur Einlösung ist ein Gutschein-Code erforderlich, der in plentymarkets gespeichert oder generiert wurde.
+
+Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Relevanz:
+
+* Der Wert des Verkaufsgutscheins wird vom Gesamtbetrag inkl. Steuern abgezogen.
+* Der Umsatz erhöht sich um den eingelösten Gutscheinbetrag.
+* Auf dem Tagesbericht wird der eingelöste Gutscheinwert mit der Zahlungsart *Gutschein* ausgewiesen.
+* Der Barbestand der Kasse erhöht sich durch die Einlösung des Gutscheins nicht.
+
+Die Vorgehensweise beim Einlösen von Gutscheinen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#160[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#160]
+
+Abweichend von dieser Beschreibung sind Mitarbeiter/-innen angewiesen, beim Einlösen von Gutscheinen wie folgt vorzugehen:
+
+* [_Beschreibung einfügen_]
 
 ==== Buchungsablauf bei Stornierungen
 
@@ -561,6 +594,7 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 * Stornierungen (Anzahl und Summe) gemäß §147 Abs. 4 AO
 * Retouren (Anzahl und Summe) gemäß §147 Abs. 4 AO
 * Rabattierte Artikel (Anzahl und Summe)
+* Verkaufte Gutscheine (Anzahl und Summe)
 * Umsatz nach Bediener/-innen
 ** ID der Bediener/-innen
 ** Name der Bediener/-innen
@@ -573,34 +607,34 @@ Systemseitig werden die Daten der Tagesberichte in der Datentabelle *plenty_pos_
  * *_posBaseId_* -> Die ID der Kasse, an der der Tagesabschluss erstellt wurde.
  * *_reportNumber_* -> Die Nummer des Tagesabschluss
  * *_createdAt_* -> Das Datum und die Uhrzeit, zu der der Tagesabschluss erstellt wurde.
- * *_fromDate _*-> Das Datum und die Uhrzeit des ersten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
- * *_toDate _*-> Das Datum und die Uhrzeit des letzten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
- * *_userId _*-> Die ID des Benutzers, der den Tagesabschluss durchgeführt hat.
- * *_userRealName _*-> Der reale Name des Benutzers, der den Tagesabschluss durchgeführt hat.
- * *_aggreageteTurnover _*-> Der Gesamtbetrag, der zum Zeitpunkt des Z-Berichts vorhanden war.
- * *_turnOverVATDutyShare _*-> Der verwendete Steuersatz und Mehrwertsteueranteil des Gesamtbetrags
- * *_turnOverVATNetShare _*-> Der verwendete Steuersatz und der Nettobetrag des Gesamtbetrags
- * *_methodOfPayments _*-> Die Beträge pro Zahlungsart.
- * *_methodOfPaymentsCount _*-> Zählung, wie oft mit welcher Zahlungsart gezahlt wurde.
- * *_returnItemsValue _*-> Der Gesamtwert der zurückgenommenen Artikel.
- * *_returnItemsCount _*-> Die Anzahl der zurückgenommenen Artikel.
- * *_rabateValue _*-> Der gesamte Rabattbetrag für diesen Zeitraum.
- * *_rabateCount _*-> Die Anzahl der gewährten Rabatte.
- * *_turnOverUser _*-> Der vom Benutzer eingetragene Betrag, welcher sich beim Tagesabschluss in der Kasse befand
- * *_currency _*-> Die Währung
- * *_firstReceipt _*-> Die Nummer des ersten Belegs, der im Tagesabschluss berücksichtigt wurde.
- * __l__*_astReceipt _*-> Die Nummer des letzten Beleges, der im Tagesabschluss berücksichtigt wurde.
- * *_startCashBalance _*-> Der Barbestand, der sich zu Beginn des Tages in der Kasse befand.
- * *_endCashBalance _*-> Der Barbestand, der sich zum Ende des Tages in der Kasse befand.
- * *_grandTotal _*-> Der Gesamtbetrag, der zu diesem Zeitpunkt mit der Kasse eingenommen wurde.
- * *_currentCashBalance _*-> Der Barbestand, der sich zum Zeitpunkt des Tagesabschlusses in der Kasse befinden sollte.
+ * *_fromDate_* -> Das Datum und die Uhrzeit des ersten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
+ * *_toDate_* -> Das Datum und die Uhrzeit des letzten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
+ * *_userId_* -> Die ID des Benutzers, der den Tagesabschluss durchgeführt hat.
+ * *_userRealName_* -> Der reale Name des Benutzers, der den Tagesabschluss durchgeführt hat.
+ * *_aggreageteTurnover_* -> Der Gesamtbetrag, der zum Zeitpunkt des Z-Berichts vorhanden war.
+ * *_turnOverVATDutyShare_* -> Der verwendete Steuersatz und Mehrwertsteueranteil des Gesamtbetrags
+ * *_turnOverVATNetShare_* -> Der verwendete Steuersatz und der Nettobetrag des Gesamtbetrags
+ * *_methodOfPayments_* -> Die Beträge pro Zahlungsart.
+ * *_methodOfPaymentsCount_* -> Zählung, wie oft mit welcher Zahlungsart gezahlt wurde.
+ * *_returnItemsValue_* -> Der Gesamtwert der zurückgenommenen Artikel.
+ * *_returnItemsCount_* -> Die Anzahl der zurückgenommenen Artikel.
+ * *_rabateValue_* -> Der gesamte Rabattbetrag für diesen Zeitraum.
+ * *_rabateCount_* -> Die Anzahl der gewährten Rabatte.
+ * *_turnOverUser_* -> Der vom Benutzer eingetragene Betrag, welcher sich beim Tagesabschluss in der Kasse befand
+ * *_currency_* -> Die Währung
+ * *_firstReceipt_* -> Die Nummer des ersten Belegs, der im Tagesabschluss berücksichtigt wurde.
+ * __l__*_astReceipt_* -> Die Nummer des letzten Beleges, der im Tagesabschluss berücksichtigt wurde.
+ * *_startCashBalance_* -> Der Barbestand, der sich zu Beginn des Tages in der Kasse befand.
+ * *_endCashBalance_* -> Der Barbestand, der sich zum Ende des Tages in der Kasse befand.
+ * *_grandTotal_* -> Der Gesamtbetrag, der zu diesem Zeitpunkt mit der Kasse eingenommen wurde.
+ * *_currentCashBalance_* -> Der Barbestand, der sich zum Zeitpunkt des Tagesabschlusses in der Kasse befinden sollte.
  * *_actualCashBalance_* ->  Der Barbestand, der sich tatsächlich zum Zeitpunkt des Tagesabschlusses in der Kasse befand.
- * *_depositValue _*-> Der Gesamtbetrag, der als Anzahlung getätigt wurde.
+ * *_depositValue_* -> Der Gesamtbetrag, der als Anzahlung getätigt wurde.
  * *_depositCount_* -> Die Anzahl der Anzahlungen, die getätigt wurden.
- * *_withdrawlValue _*-> Der Gesamtbetrag, der aus der Kasse entnommen wurde.
- * *_withdrawlCount _*-> Die Anzahl der Entnahmen.
- * *_cancellationOderValue _*-> Der Gesamtwert der stornierten Artikel.
- * *_cancelationOderCount _*-> Die Gesamtanzahl der stornierten Artikel.
+ * *_withdrawlValue_* -> Der Gesamtbetrag, der aus der Kasse entnommen wurde.
+ * *_withdrawlCount_* -> Die Anzahl der Entnahmen.
+ * *_cancellationOderValue_* -> Der Gesamtwert der stornierten Artikel.
+ * *_cancelationOderCount_* -> Die Gesamtanzahl der stornierten Artikel.
 
 Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Tagesberichte zu erstellen:
 
@@ -683,17 +717,17 @@ Mitarbeiter/-innen sind angewiesen, bei Kassensturzdifferenzen wie folgt zu hand
 
 Die Daten des IDEA-Exports sind systemseitig in der Tabelle *pleny_pos_idea_export* in den folgenden Spalten gespeichert:
 
-* *_token _*->__ __Das Token des Exportes
-* *_state _*_-> _Der Status des Exports (z.B. in Arbeit oder Fertig)
-* *_progress _*->** **Der momentane Fortschritt des Exports
-* *_currentModule _*-> Das Modul das z.Z. bearbeitet wird.
-* *_filename _*->  Der Dateiname der exportieren Datei
-* *_moudules _*-> Die Module die in dem Export bearbeitet werden
-* *_options_*** **-> Die Optionen die für den Export gesetzt wurden (z.B. das zu exportierende Jahr)
-* *_createdAt _*-> Das Datum + Uhrzeit an dem der Export gestartet wurde
-* *_updatedAt _*-> Das Datum + Uhrzeit an dem der Datensatz das letze mal bearbeitet wurde
+* *_token_* -> Das Token des Exportes
+* *_state_* -> Der Status des Exports (z.B. in Arbeit oder Fertig)
+* *_progress_* -> Der momentane Fortschritt des Exports
+* *_currentModule_* -> Das Modul das z.Z. bearbeitet wird.
+* *_filename_* -> Der Dateiname der exportieren Datei
+* *_moudules_* -> Die Module die in dem Export bearbeitet werden
+* *_options_* -> Die Optionen, die für den Export gesetzt wurden (z.B. das zu exportierende Jahr)
+* *_createdAt_* -> Datum und Uhrzeit an dem der Export gestartet wurde
+* *_updatedAt_* -> Datum und Uhrzeit an dem der Datensatz das letze mal bearbeitet wurde
 
-Der IDEA-Export enthällt die folgenden Dateien:
+Der IDEA-Export besteht aus den folgenden Dateien:
 
 * addresses.csv
 * gdpdu-[TT-MM-JJJJ].dtd
@@ -782,7 +816,7 @@ Die folgenden Grundeinstellungen wurden vorgenommen (1 Tabelle pro Kasse):
 |===
 
 
-==== Belegeinstelllungen
+==== Belegeinstellungen
 
 
 Die Belegeinstellungen einer Kasse werden im Menü *Einstellungen » Mandant (Shop) » Mandant öffnen » POS » Kasse öffnen » Tab: Beleg *vorgenommen. Die Einstellungen erfolgen pro Kasse.
