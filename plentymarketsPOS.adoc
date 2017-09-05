@@ -354,6 +354,49 @@ Abweichend von dieser Beschreibung sind Mitarbeiter/-innen angewiesen, beim Einl
 
 * [_Beschreibung einfügen_]
 
+===== Sonderfall 3: Bestandskunden
+
+Damit POS-Aufträge korrekt in plentymarkets gespeichert werden, muss jedem Auftrag ein Kontakt zugeordnet sein. Um dieser Anforderung gerecht zu werden, wird in plentymarkets ein anonymer Standardkunde erstellt und mit der Kasse verknüpft.
+
+plentymarkets POS Aufträge werden über den Standardkunden mit den folgenden Einstellungen erstellt:
+
+[cols="1,2"]
+|====
+|Einstellung |Erläuterung
+
+|**Kontakt-ID**
+|
+
+|**Firma**
+|
+
+|**Straße; +
+PLZ**; +
+**Ort**
+|
+
+|**Land**
+|
+
+|**Mandant**
+|
+
+|**Typ**
+|
+
+|**Klasse**
+|
+
+|Sonstige Einstellungen
+|
+|====
+
+Kassierer/-innen mit den nötigen Benutzerrechten können Kassenvorgänge auch über im ERP-System plentymarkets gespeicherte Bestandskunden abwickeln, statt den Standardkunden zu wählen. Die Vorgehensweise für Kassierer/-innen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#135[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#135]
+
+Abhängig von der <<CRM#1100, *Kundenklasse*>> des Bestandskunden, und davon, ob für diese Kundenklasse ein <<CRM#600, *Rabatt*>> im ERP-System plentymarkets gespeichert ist, kann der Verkaufspreis für Bestandskunden mit bestimmten Kundenklassen niedriger sein als der Verkaufspreis für den Standardkunden.
+
+Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf dem Kassenbeleg noch im Auftrag separat ausgezeichnet. Das bedeutet, dass über die Kundenklasse rabattierte Artikel auch auf dem Tagesbericht nicht unter *Rabattierte Artikel* aufgeführt werden.
+
 ==== Buchungsablauf bei Stornierungen
 
 Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten. Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine Retoure erstellt werden.
