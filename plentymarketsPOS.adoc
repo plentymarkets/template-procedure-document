@@ -191,7 +191,7 @@ Systemseitig wird der Standort der Kasse in der Tabelle *plenty_account_address_
 * *posBaseId* -> Die ID der Kasse, dem eine Adresse zugeordnet wurde.
 * *addressID* -> Die ID des Standorts, der dem System zugeordnet wurde.
 
-Systemseitig werden die Kasseneinstellungen in der Tabelle *plenty_pos_base* und dort in den folgenden Tabellen gespeichert:
+Systemseitig werden die Kassendaten in der Tabelle *plenty_pos_base* und dort in den folgenden Tabellen gespeichert:
 
  * *_name_* -> Der Name der Kasse.
  * *_webstoreId_* -> Der Mandant der Kasse.
@@ -200,8 +200,8 @@ Systemseitig werden die Kasseneinstellungen in der Tabelle *plenty_pos_base* und
  * *_shippingWarehouseId_* -> Das für die Kasse hinterlegte Vertriebslager.
  * *_orderReturnsWarehouseId_* -> Das für die Kasse hinterlegte Reparaturlager.
  * *_orderReturnsSotrageLocationId_* -> Der Lagerort im Reparaturlager.
- * *_currentCashBalanceValue_* -> Der Barbestand, der zum aktuellen Zeitpunkt in der Kasse vorhanden ist.
- * *_currentReceiptNumber_* -> Die aktuelle Anzahl der erstellten Belege.
+ * *_currentCashBalanceValue_* -> Der Barbestand der Kasse, der zum aktuellen Zeitpunkt bekannt ist. Bei Offline-Betrieb kann dieser Bestand vom physischen Kassenbestand abweichen, bis alle Aufträge in das ERP-System plentymarkets importiert wurden.
+ * *_currentReceiptNumber_* -> Die aktuell bekannte Anzahl der erstellten Belege. Bei Offline-Betrieb kann diese Anzahl von der Anzahl in der Kasse abweichen, bis alle Aufträge in das ERP-System plentymarkets importiert wurden.
  * *_grandTotal_* ->  Der Gesamtumsatz der Kasse.
  * *_deviceUUID_* -> Die einzigartige ID des Geräts, mit dem die Kasse gekoppelt ist.
  * *_deviceName_* -> Der nicht einzigartige Name des Geräts, mit dem die Kasse gekoppelt ist.
@@ -573,16 +573,16 @@ Aus dem Kassenjournal können außerdem Geschäftsvorfalldaten exportiert werden
 
 Systemseitig sind die Daten des Kassenjournals in der Datentabelle *plenty_pos_journal* gespeichert. Die Einzeldaten sind in folgenden Spalten gespeichert:
 
- * *_posBaseId_* ->  Die ID des POS-Systems, an dem der Auftrag erstellt wurde
+ * *_posBaseId_* ->  Die ID des POS-Systems, an dem der Eintrag erstellt wurde
  * *_userId_* -> Die ID des Users, der den Auftrag erstellt hat
  * *_userRealName_* -> Der volle Name des Benutzers
  * *_type_* -> Der Typ des  Eintrag (z.B. Bon, Einlage, Entnahme)
- * *_actionFrom_* ->
- * *_actionTo_* ->
+ * *_actionFrom_* -> Wird aktuell nicht gefüllt
+ * *_actionTo_* -> Wird aktuell nicht gefüllt
  * *_value_* -> Der Gesamtbetrag des Eintrags
  * *_currency_* -> Die Währung
  * *_note_* -> Eine dem Eintrag zugeordnete Notiz
- * *_receiptNumber_* -> Die Nummer des zum Auftrag erstellten Belegs
+ * *_receiptNumber_* -> Die Nummer des zum Eintrag erstellten Belegs
  * *_documentId_* -> Die ID des erstellten Dokuments
  * *_orderId_* -> Die ID des Auftrags
  * *_currentCashBalance_* -> Der Barbestand der Kasse zum gegebenen Zeitpunkt
@@ -672,8 +672,8 @@ Systemseitig werden die Daten der Tagesberichte in der Datentabelle *plenty_pos_
  * *_grandTotal_* -> Der Gesamtbetrag, der zu diesem Zeitpunkt mit der Kasse eingenommen wurde.
  * *_currentCashBalance_* -> Der Barbestand, der sich zum Zeitpunkt des Tagesabschlusses in der Kasse befinden sollte.
  * *_actualCashBalance_* ->  Der Barbestand, der sich tatsächlich zum Zeitpunkt des Tagesabschlusses in der Kasse befand.
- * *_depositValue_* -> Der Gesamtbetrag, der als Anzahlung getätigt wurde.
- * *_depositCount_* -> Die Anzahl der Anzahlungen, die getätigt wurden.
+ * *_depositValue_* -> Der Gesamtbetrag, der als Einlage getätigt wurde.
+ * *_depositCount_* -> Die Anzahl der Einlagen, die getätigt wurden.
  * *_withdrawlValue_* -> Der Gesamtbetrag, der aus der Kasse entnommen wurde.
  * *_withdrawlCount_* -> Die Anzahl der Entnahmen.
  * *_cancellationOderValue_* -> Der Gesamtwert der stornierten Artikel.
@@ -714,13 +714,13 @@ Die Daten des Kassensturzberichts werden systemseitig in der Tabelle plenty_pos_
  * *_posBaseId_* ->  Die ID des POS-Systems, an dem der Kassensturz durchgeführt wurde
  * *_tillCountNumber_* -> Die Nummer des Kassensturzes
  * *_expectedCash_* -> Der erwartete Barbestand der Kasse
- * *_actualCash_* ->  Der tatsächliche, gezählte Barbestand der Kasse
+ * *_actualCash_* ->  Das vom Benutzer als Gesamtsumme eingegebene Ergebnis der Zählung.
  * *_userId_* ->  Die ID des Benutzers, der den Kassensturz durchgeführt wird
  * *_userRealName_* -> Der reale Name des Nutzers
  * *_currency_* -> Die Währung des Kassensturzes
  * *_money_* -> Die Ergebnisse der Münzzählung
  * *_date_* -> Das Datum und die Uhrzeit, zu dem der Kassensturz durchgeführt wurde
- * *_sum_* -> Die vom Benutzer eingegebene Gesamtmenge, die in der Kasse vorhanden ist.
+ * *_sum_* -> Die vom System errechnete Summe der vom Benutzer eingegebenen Anzahl der einzelnen Münzen und Geldscheine.
  * *_difference_* -> Die Differenz zwischen Ist- und Sollbestand
 
 Folgende Mitarbeiter/-innen sind systemseitig und unternehmensseitig autorisiert und angewiesen, Kassenstürze durchzuführen:
@@ -760,15 +760,15 @@ Mitarbeiter/-innen sind angewiesen, bei Kassensturzdifferenzen wie folgt zu hand
 
 Die Daten des IDEA-Exports sind systemseitig in der Tabelle *pleny_pos_idea_export* in den folgenden Spalten gespeichert:
 
-* *_token_* -> Das Token des Exportes
+* *_token_* -> Das Token des Exports
 * *_state_* -> Der Status des Exports (z.B. in Arbeit oder Fertig)
-* *_progress_* -> Der momentane Fortschritt des Exports
-* *_currentModule_* -> Das Modul das z.Z. bearbeitet wird.
+* *_progress_* -> Der aktuelle Fortschritt des Exports
+* *_currentModule_* -> Das Modul, das z.Z. bearbeitet wird
 * *_filename_* -> Der Dateiname der exportieren Datei
-* *_moudules_* -> Die Module die in dem Export bearbeitet werden
-* *_options_* -> Die Optionen, die für den Export gesetzt wurden (z.B. das zu exportierende Jahr)
-* *_createdAt_* -> Datum und Uhrzeit an dem der Export gestartet wurde
-* *_updatedAt_* -> Datum und Uhrzeit an dem der Datensatz das letze mal bearbeitet wurde
+* *_modules_* -> Die Module, die in dem Export bearbeitet werden
+* *_options_* -> Die Optionen, die für den Export gewählt wurden (z.B. das zu exportierende Jahr)
+* *_createdAt_* -> Zeitpunkt (Datum und Uhrzeit), zu dem der Export gestartet wurde
+* *_updatedAt_* -> Zeitpunkt (Datum und Uhrzeit), zu dem neue Daten zum Export hinzugefügt wurden
 
 Der IDEA-Export besteht aus den folgenden Dateien:
 
