@@ -1,0 +1,90 @@
+=== Fachliche und technische Beschreibung des Moduls Newsletter
+
+Um Newsletter an die Kunden zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.
+
+Der Anwender kann den im System integrierten Newsletter-Dienst nutzen oder seine Newsletter über die externen Anbieter Newsletter2Go und CleverReach versenden. Generell besteht die Möglichkeit, Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[plentyMarketplace, window="blank"] zu finden.
+
+Der Anwender kann bestimmte Ereignisse in seinem System einstellen. Wenn dieses Ereignis eintritt, resultiert daraus eine Aktion, d.h. der Newsletter wird dann automatisiert über das System an die Kunden bzw. Interessenten, die sich z.B. im Webshop für den Newsletter angemeldet haben, versendet.
+
+Alle Informationen zum Newsletter-Versand sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/crm/newsletter-versenden[Newsletter versenden] zu finden.
+
+==== Häufigkeit des Newsletter-Versands
+
+Der Newsletter-Versand ist tagsüber eingeschränkt. In der Nacht wird der Versand einer größeren Anzahl von E-Mails erlaubt.
+
+ * Am Tag zwischen 8:00 und 0:00 Uhr: 60 E-Mails je Viertelstunde
+ * In der Nacht zwischen 0:00 und 8:00 Uhr: 500 E-Mails je Viertelstunde
+
+Ein automatisierter, zeitgesteuerter Prozess, ein sogenannter Cron-Job, arbeitet die Empfänger-E-Mail-Adressen dann sukzessive ab und versendet den Newsletter.
+
+==== Double-Opt-In-Methode
+
+Das System bietet dem Anwender die Möglichkeit, die Double-Opt-In-Methode zu verwenden. Double-Opt-In bedeutet, dass der Kunde bzw. der Newsletter-Interessent, nachdem er sich für den Newsletter-Bezug im Webshop eingetragen hat oder sich im Bestellprozess entschieden hat, den Newsletter zu abonnieren, eine E-Mail mit einem Bestätigungslink erhält. Erst nachdem der Kunde bzw. Newsletter-Interessent auf den Link in der E-Mail geklickt hat, gilt dies als “bestätigt” und er ist für den Newsletter-Versand des Anwenders angemeldet.
+
+Aktuell kann der Anwender durch das Setzen des Hakens im Kundendatensatz den Newsletter-Bezug für den Kunden aktivieren. Daraufhin wird der Kundendatensatz im Newsletter-Ordner mit der niedrigsten ID gespeichert und der Kunde erhält eine E-Mail mit dem Bestätigungslink.
+
+Wenn der Anwender die Double-Opt-In-Methode verwenden möchte, kann er für die im System vorhandenen Ereignisse *Newsletter Opt-In* und *Bestätigung Newsletter-Opt-In* je eine E-Mail-Vorlagen erstellen und diese mit den Ereignissen verknüpfen.
+
+Tritt das Ereignis ein, dass der Kunde sich für den Bezug des Newsletters im Webshop angemeldet hat, versendet das System automatisch die mit dem Ereignis *Newsletter Opt-In* verknüpfte E-Mail-Vorlage an den Kunden. Diese E-Mail-Vorlage sollte den Bestätigungslink, den der Kunde anklicken muss, um die Newsletter-Anmeldung abzuschließen, enthalten. Sobald der Kunde den Bestätigungslink anklickt, wird die mit dem Ereignis *Bestätigung Newsletter-Opt-In* verknüpfte E-Mail-Vorlage an den Kunden gesendet. Diese E-Mail-Vorlage sollte einen Text zur Bestätigung der erfolgreichen Newsletter-Anmeldung enthalten.
+
+
+==== Integrierter Newsletter-Dienst
+
+Der Anwender muss die Zugangsdaten des E-Mail-Postfachs, aus dem er die Newsletter versenden möchte, speichern, damit das System E-Mails von dieser E-Mail-Adresse versenden kann.
+
+Der Anwender muss den Postausgangsserver und den Port wie von seinem Provider angegeben eingeben und eine Verschlüsselungsmethode wählen.
+
+==== E-Mail-Ordner für Newsletter-Empfänger
+
+Der Anwender kann beliebig viele Ordner für den Versand von Newslettern erstellen und so seine Newsletter anhand bestimmter Zielgruppen versenden. In den Ordnern speichert der Anwender entweder die E-Mail-Adressen seiner Kunden oder aber der Anwender räumt den Kunden die Möglichkeit ein, dass diese sich selbst für den Newsletter-Bezug eintragen können. Dazu gibt der Anwender die Ordner pro Mandant (Shop) für den Mein Konto-Bereich im Webshop frei. Das ist z.B. von Vorteil, wenn der Anwender regelmäßig Newsletter zu verschiedenen Themenbereichen versendet. So bestimmen die Kunden selbst, welche Newsletter sie von dem Anwender erhalten möchten. Die E-Mail-Adresse des Kunden wird dann automatisch in dem E-Mail-Ordner im System gespeichert.
+
+Beim Erstellen des ersten Ordners schlägt das System die ID 1 vor. Beim Erstellen jedes weiteren Ordners schlägt das System jeweils die nächsthöhere ID vor. Der Anwender kann die vorgeschlagene ID verwenden oder eine andere ID vergeben. Sobald der Ordner erstellt ist, kann die ID nicht mehr geändert werden. Wichtig hierbei ist nur, dass die ID eindeutig ist: Wenn der Anwender eine bereits bestehende ID speichert, wird der ursprüngliche Ordner überschrieben.
+
+==== Externe Newsletter-Anbieter
+
+Neben dem im System verfügbaren internen Newsletter-Dienst hat der Anwender die Möglichkeit seine Newsletter über CleverReach und Newsletter2Go zu versenden.
+
+===== CleverReach
+
+Möchte der Anwender die Newsletter an seine Kunden über CleverReach versenden, muss er sich zunächst über die Website von CleverReach registrieren. Im Anschluss daran muss er die Schnittstelle im System einrichten, damit die Daten zu CleverReach übertragen werden können.
+
+plentymarkets überträgt die folgenden Daten an CleverReach, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
+
+ * Vorname
+ * Nachname
+ * Geburtstag
+ * Geschlecht
+ * Sprache
+ * Artikeldaten
+ * E-Mail-Adresse
+ * Zeitpunkt der letzten Bestellung
+
+===== Newsletter2Go
+
+Möchte der Anwender die Newsletter an seine Kunden über Newsletter2Go versenden, muss er sich zunächst über die Website von Newsletter2Go registrieren.
+
+Im System ist eine Schnittstelle vorhanden, die eingerichtet werden muss, wenn es sich um Neuregistrierungen bei Newsletter2Go handelt. Wenn der Anwender bereits bei Newsletter2Go registriert ist, muss er lediglich einen eigenen Benutzer für das plentymarkets System einrichten und Einstellungen bei Newsletter2Go vornehmen, damit der Zugriff auf die newsletter-relevanten Daten erfolgen kann. Wenn der Anwender die Benutzerklasse *Newsletter2Go* wählt, sind alle benötigten Berechtigungen bereits aktiviert. Bei Verwendung einer anderen Benutzerklasse müssen die Berechtigungen unter Umständen angepasst werden. Anschließend muss der Anwender sich über das System mit dem im Vorfeld erstellten Newsletter2Go-Konto verbinden.
+
+Weitere Informationen zu den Benutzerklassen sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten[Benutzer verwalten] zu finden.
+
+Newsletter2Go ruft die folgenden Daten von plentymarkets ab, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
+
+ * Kunden-ID, sofern vorhanden
+ * Vorname
+ * Nachname
+ * E-Mail-Adresse
+ * Geschlecht
+ * Geburtstag
+ * Zeitpunkt der Newsletter-Anmeldung
+ * Zeitpunkt der Bestätigung des Newsletter-Bezugs
+ * Sprache
+
+==== Import und Export
+
+Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API, window="_blank"] sowie die SOAP-API zur Verfügung.
+
+Für den manuellen Austausch von Newsletterdaten steht dem Anwender das Datenformat *CustomerNewsletter* im Rahmen der Dynamischen Imports/-Exports zur Verfügung. Der Anwender kann das Datenformat verwenden, um Daten von Kunden bzw. Interessenten, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
+
+Auf der Seite link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate/customernewsletter[CustomerNewsletter, window="_blank"] im plentymarkets Handbuch ist eine Auflistung der vorhandenen Datenfelder sowie der Pflichtfelder zu finden.
+
+*Hinweis*: Dieselbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.
