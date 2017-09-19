@@ -79,14 +79,16 @@ Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse
 |Neue Bestellung über sonstige Schnittstelle |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang über eine Schnittstelle abgeschlossen wurde.
 |Sende Kunde E-Mail zur Passwortänderung |Sendet Kunden eine E-Mail mit einem Link zum neuen Passwort, der aktiv bestätigt werden muss. Die Template-Funktion +{% Link_ChangePassword() %}+ muss in der E-Mail-Vorlage enthalten sein.
 |Newsletter Opt-In |Sendet Kunden eine E-Mail, wenn diese sich für den Newsletter angemeldet haben. Die E-Mail-Vorlage sollte den Bestätigungslink, den die Kunden anklicken müssen, um die Newsletter-Anmeldung abzuschließen, enthalten.
-|Bestätigung Newsletter-Opt-In |Sendet Kunden eine E-Mail als Bestätigung, sobald diese den Bestätigungslink, der mit der E-Mail-Vorlage für das Ereignis Newsletter Opt-In verschickt wurde, aktiviert haben.
-|Erinnerung bei Kaufabbruch |Sendet Kunden eine E-Mail als Erinnerung, dass ein oder mehrere Artikel im Warenkorb liegen, der Kaufvorgang jedoch nicht abgeschlossen wurde. Die E-Mail-Vorlage sollte den Link zum Warenkorb enthalten, damit die Kunden diesen aufrufen und die Bestellung abschließen können. Dazu an die URL des Webshops den Suffix /basket/ anfügen (Beispiel: +https://www.meinshop.de/basket/+).
+|Bestätigung Newsletter-Opt-In |Sendet Kunden eine E-Mail als Bestätigung, sobald diese den Bestätigungslink, der mit der E-Mail-Vorlage für das Ereignis *Newsletter Opt-In* verschickt wurde, aktiviert haben.
+|Erinnerung bei Kaufabbruch |Sendet Kunden eine E-Mail als Erinnerung, dass ein oder mehrere Artikel im Warenkorb liegen, der Kaufvorgang jedoch nicht abgeschlossen wurde. Die E-Mail-Vorlage sollte den Link zum Warenkorb enthalten, damit die Kunden diesen aufrufen und die Bestellung abschließen können. Dazu an die URL des Webshops den Suffix */basket/* anfügen (Beispiel: +https://www.meinshop.de/basket/+). +
+Voraussetzung hierbei ist, dass die potenziellen Käufer bei ihrem Besuch im Webshop angemeldet und eingeloggt waren, da andernfalls die E-Mail-Adresse nicht vorliegt und der automatische Versand der E-Mail-Vorlage daher nicht funktionieren kann. +
+*_Wichtig:_* Diese Art von E-Mail-Versand kann aufgrund der fehlenden vorherigen Einwilligung als unzulässiger Spam gelten. Der Anwender sollte sich daher von einem kundigen Fachanwalt beraten lassen.
 |Kundenregistrierung |Sendet Kunden eine E-Mail, wenn diese sich neu im Webshop registriert haben.
-|Tell-A-Friend |Sendet eine E-Mail mit einem Link zu einem Artikel aus dem Webshop als Empfehlung an eine E-Mail-Adresse, die der Kunde im Webshop in das Tell-A-Friend-Formular eingetragen hat.
+|Tell-A-Friend |Sendet eine E-Mail mit einem Link zu einem Artikel aus dem Webshop als Empfehlung an eine E-Mail-Adresse, die der Kunde im Webshop in das Tell-A-Friend-Formular eingetragen hat. +
+*_Wichtig:_* Diese Art von E-Mail-Versand kann aufgrund der fehlenden vorherigen Einwilligung als unzulässiger Spam gelten. Der Anwender sollte sich daher von einem kundigen Fachwanwalt beraten lassen.
 |Neuer Scheduler-Auftrag |Sendet eine E-Mail, wenn das eingestellte Intervall für ein “Abo” erreicht wird.
 |Gewinnspielanmeldung |Sendet Kunden, die sich zum Gewinnspiel angemeldet haben, eine E-Mail als Bestätigung.
 |Serviceeinheiten |Sendet eine E-Mail, wenn auf das “Kundenkonto” ein weiteres Event gebucht wurde.
-|Änderung eines Scheduler-Auftrags |
 |Forum-Benachrichtigung |Sendet Kunden eine E-Mail, sobald eine Benachrichtigung im systeminternen Forum vorliegt.
 |Benachrichtigung bei verfügbarem Artikel |Sendet Kunden eine E-Mail mit dem Hinweis, dass ein bestimmter Artikel wieder verfügbar ist. Der Kunde hat zuvor seine E-Mail-Adresse direkt bei dem nicht lieferbaren Artikel eingetragen.
 |===
@@ -95,7 +97,7 @@ Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse
 
 Neben dem Verknüpfen von E-Mail-Vorlagen mit Ereignissen besteht die Möglichkeit, Ereignisaktionen einzurichten: Der Anwender definiert ein Ereignis, setzt Filter und legt Aktionen fest, die dann vom System automatisch im Ereignisfall ausgeführt werden. Beispielsweise kann der E-Mail-Versand eines Gutscheins ausgelöst werden, wenn der Kunde eine bestimmte Anzahl an Aufträgen generiert hat.
 
-Weitere Informationen zu Ereignisaktionen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/basics/automatisierung/ereignisaktionen[Ereignisaktionen, window="_blank"] zu finden.
+Weitere Informationen zu Ereignisaktionen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/basics/automatisierung/ereignisaktionen[*Ereignisaktionen*, window="_blank"] zu finden.
 
 ==== Gesendete E-Mails einsehen
 
