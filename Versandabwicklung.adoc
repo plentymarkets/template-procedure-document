@@ -36,9 +36,86 @@ In einem neu angelegten System ist die Region *Deutschland* mit ID 101 vorhanden
 [#400]
 ==== Versanddienstleister
 
-In einem neu angelegten System ist der Versanddienstleister *DHL* mit ID 101 vorhanden. Es handelt sich bei der ID um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Ausgehend von ID 101 wird hochgezählt, wenn ein neuer Versanddienstleister erstellt wird. Der systeminterne Name, der Name, wie er im Warenkorb und auf der Rechnung erscheinen soll, sowie die Tracking-URL sind bereits gespeichert. Der Anwender kann die Namen sowie die Tracking-URL ändern. Außerdem kann der Anwender den Versanddienstleister löschen.
+In einem neu angelegten System sind 23 Versanddienstleister mit ID sowie der Eintrag *undefined* mit ID 99 bereits vorhanden. Es handelt sich bei der ID um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Ausgehend von ID 23 wird hochgezählt, wenn ein neuer Versanddienstleister, z.B. über ein Plugin, hinzugefügt wird. Der systeminterne Name, der Name, wie er im Warenkorb und auf der Rechnung erscheinen soll, sowie die Tracking-URL sind bereits gespeichert. Der Anwender kann die Namen sowie die Tracking-URL ändern. Außerdem kann der Anwender den Versanddienstleister löschen.
 
 Versanddienstleister, die der Anwender in diesem Bereich der Software erstellt, sind bei Erstellung des Versandprofils dann wählbar. Das bedeutet, dass kein Versandprofil erstellt werden kann, ohne zuvor den Versanddienstleister erstellt zu haben.
+
+Tabelle 1 listet die standardmäßig in plentymarkets vorhandenen Versanddiensleister mit deren ID auf.
+
+.Versanddienstleister mit deren IDs
+|===
+|*ID* |*Versanddienstleister*
+
+|1
+|Selbstabholer
+
+|2
+|DHL
+
+|3
+|DPD
+
+|4
+|Deutsche Post
+
+|5
+|Hermes
+
+|6
+|TNT
+
+|7
+|FedEx
+
+|8
+|UPS
+
+|9
+|GLS
+
+|10
+|Post AT
+
+|11
+|Spedition
+
+|12
+|GEL Express
+
+|13
+|Trans-O-Flex
+
+|14
+|Spedition Dachser
+
+|15
+|Spedition Schenker
+
+|16
+|EMS Garantpost
+
+|17
+|Swiss Post
+
+|18
+|Royal Mail
+
+|20
+|c.b.c. logistics
+
+|21
+|NetDespatch
+
+|22
+|DHL Fulfillment
+
+|23
+|Parcelforce Worldwide
+
+|99
+|undefined
+
+|===
 
 [#500]
 ==== Versandprofil
@@ -69,7 +146,7 @@ Für den ersten Portoaufschlag wird der am Artikel eingegebene Betrag zu den Ver
 
 Viele Versanddienstleister verlangen für den Versand in Inselregionen höhere Gebühren. Diese Kosten kann der Anwender auf seine Kunde übertragen und im Versandprofil einen Inselzuschlag für den Versand seiner Ware berechnen.
 
-Die folgende Tabelle listet auf, für welche Postleitzahlenbereiche der aktivierbaren Lieferländer der Inselzuschlag eingestellt werden kann:
+Tabelle 2 listet auf, für welche Postleitzahlenbereiche der aktivierbaren Lieferländer der Inselzuschlag eingestellt werden kann:
 
 .Postleitzahlen von Inselregionen
 |===
@@ -92,7 +169,7 @@ In der Portotabelle speichert der Anwender die Versandkosten für das Versandpro
 [#900]
 ===== Berechnungstypen
 
-Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. Tabelle 2 listet die im System verfügbaren Berechnungstypen auf.
+Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. Tabelle 3 listet die im System verfügbaren Berechnungstypen auf.
 
 .Mögliche Berechnungstypen für die Versandkosten
 |===
@@ -124,7 +201,7 @@ In den folgenden Unterkapiteln wird aufgelistet, welche fest integrierten Schnit
 [#1200]
 ===== Integrierte Versanddienstleister
 
-Die folgende Tabelle listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
+Tabelle 4 listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
 
 .Liste der in plentymarkets integrierten Versanddienstleister
 |===
@@ -226,7 +303,7 @@ Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind i
 [#1900]
 ===== Anhang a)
 
-Die folgende Tabelle listet die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs auf:
+Tabelle 5 listet die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs auf:
 
 .Lieferländer mit ID
 |===
