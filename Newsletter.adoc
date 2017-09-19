@@ -2,11 +2,11 @@
 
 Um Newsletter an die Kunden zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.
 
-Der Anwender kann den im System integrierten Newsletter-Dienst nutzen oder seine Newsletter über die externen Anbieter Newsletter2Go und CleverReach versenden. Generell besteht die Möglichkeit, Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[plentyMarketplace, window="blank"] zu finden.
+Der Anwender kann den im System integrierten Newsletter-Dienst nutzen oder seine Newsletter über die externen Anbieter Newsletter2Go und CleverReach versenden. Generell besteht die Möglichkeit, Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[*plentyMarketplace*, window="_blank"] zu finden.
 
 Der Anwender kann bestimmte Ereignisse in seinem System einstellen. Wenn dieses Ereignis eintritt, resultiert daraus eine Aktion, d.h. der Newsletter wird dann automatisiert über das System an die Kunden bzw. Interessenten, die sich z.B. im Webshop für den Newsletter angemeldet haben, versendet.
 
-Alle Informationen zum Newsletter-Versand sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/crm/newsletter-versenden[Newsletter versenden] zu finden.
+Alle Informationen zum Newsletter-Versand sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/crm/newsletter-versenden[*Newsletter versenden*, window="_blank"] zu finden.
 
 ==== Häufigkeit des Newsletter-Versands
 
@@ -65,7 +65,7 @@ Möchte der Anwender die Newsletter an seine Kunden über Newsletter2Go versende
 
 Im System ist eine Schnittstelle vorhanden, die eingerichtet werden muss, wenn es sich um Neuregistrierungen bei Newsletter2Go handelt. Wenn der Anwender bereits bei Newsletter2Go registriert ist, muss er lediglich einen eigenen Benutzer für das plentymarkets System einrichten und Einstellungen bei Newsletter2Go vornehmen, damit der Zugriff auf die newsletter-relevanten Daten erfolgen kann. Wenn der Anwender die Benutzerklasse *Newsletter2Go* wählt, sind alle benötigten Berechtigungen bereits aktiviert. Bei Verwendung einer anderen Benutzerklasse müssen die Berechtigungen unter Umständen angepasst werden. Anschließend muss der Anwender sich über das System mit dem im Vorfeld erstellten Newsletter2Go-Konto verbinden.
 
-Weitere Informationen zu den Benutzerklassen sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten[Benutzer verwalten] zu finden.
+Weitere Informationen zu den Benutzerklassen sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten[*Benutzer verwalten*, window"_blank] zu finden.
 
 Newsletter2Go ruft die folgenden Daten von plentymarkets ab, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
 
@@ -81,10 +81,10 @@ Newsletter2Go ruft die folgenden Daten von plentymarkets ab, sofern der Newslett
 
 ==== Import und Export
 
-Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API, window="_blank"] sowie die SOAP-API zur Verfügung.
+Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[*REST-API*, window="_blank"] sowie die SOAP-API zur Verfügung.
 
 Für den manuellen Austausch von Newsletterdaten steht dem Anwender das Datenformat *CustomerNewsletter* im Rahmen der Dynamischen Imports/-Exports zur Verfügung. Der Anwender kann das Datenformat verwenden, um Daten von Kunden bzw. Interessenten, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
 
-Auf der Seite link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate/customernewsletter[CustomerNewsletter, window="_blank"] im plentymarkets Handbuch ist eine Auflistung der vorhandenen Datenfelder sowie der Pflichtfelder zu finden.
+Auf der Seite link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate/customernewsletter[*CustomerNewsletter*, window="_blank"] im plentymarkets Handbuch ist eine Auflistung der vorhandenen Datenfelder sowie der Pflichtfelder zu finden.
 
 *Hinweis*: Dieselbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.
