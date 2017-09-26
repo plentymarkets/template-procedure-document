@@ -125,13 +125,13 @@ Sichtbare Kennzahlen
 
 == plentymarkets POS
 
-plentymarkets POS ist ein Modul der plentymarkets App, das für den stationären Verkauf von Waren und/oder Dienstleistung entwickelt wurde. plentymarkets POS ist ein mobiles, App-basiertes Registrierkassensystem des Typs 3 (EDV-Registrierkassen). Im Sinne der GoBD ist plentymarkets POS als Kassensystem ein Vorsystem der elektronischen Buchhaltung.
+plentymarkets POS ist ein Modul der plentymarkets App, das für den stationären Verkauf von Waren und/oder Dienstleistung entwickelt wurde. plentymarkets POS ist ein mobiles, App-basiertes Kassensystem. Im Sinne der GoBD ist plentymarkets POS ein Vorsystem der elektronischen Buchhaltung.
 
 Der Zugriff auf die plentymarkets App wird über Zugriffsrechte gesteuert, die im ERP-System plentymarkets über Benutzerrechte pro Benutzer oder über Benutzerrollen definiert werden.
 
 === Verwendungszweck
 
-plentymarkets POS dient zur exakten Einzelerfassung und Dokumentation sämtlicher Kassenvorgänge. Hierbei kann es sich um Bargeldtransaktionen, bargeldlose Transaktionen, Gutscheinzahlungen, Retouren, Stornierungen, Gutschriften, Einlagen oder Entnahmen handeln. plentymarkets POS bildet also alle Kassenvorgänge des Einzelhandels ab, dokumentiert diese Vorgänge unveränderlich und hält die Daten dieser Vorgänge in elektronischer Form vor. Zahlungsvorgänge werden sowohl in Form von Belegen als auch in Form von Aufträgen im plentymarkets Backend gespeichert. Auch dort sind die Vorgänge unveränderlich gespeichert.
+plentymarkets POS dient zur exakten Einzelerfassung und Dokumentation sämtlicher Kassenvorgänge. Hierbei kann es sich um Bargeldtransaktionen, bargeldlose Transaktionen, Gutscheinzahlungen, Retouren, Stornierungen, Gutschriften, Einlagen oder Entnahmen handeln. plentymarkets POS bildet also alle Kassenvorgänge des Einzelhandels ab, dokumentiert diese Vorgänge unveränderlich und hält die Daten dieser Vorgänge in elektronischer Form vor. Kassenvorgänge werden durch Belege dokumentiert. Diese Belege werden im ERP-System plentymarkets manipulationssicher gespeichert. Außerdem wird pro Zahlungsvorgang ein Auftrag im ERP-System plentymarkets gespeichert.
 
 Eine softwareseitige Erfassung von Geschäftsvorfällen kann in plentymarkets nicht unterdrückt werden. Eine Belegerstellung, ohne dass dabei die vereinnahmten Beträge erfasst werden, ist für plentymarkets POS Benutzer/-innen technisch nicht möglich.
 
@@ -794,7 +794,7 @@ Das Handbuch der ERP-Lösung plentymarkets stellt eine detaillierte Anleitung zu
 
 === Verfahren bei Ausfall von plentymarkets POS
 
-Kommt es zu einem Ausfall der Internetverbindung, ist eine Verbindung zum ERP-System plentymarkets nicht möglich. Artikel können nicht gesucht und keine neuen Aufträge erstellt werden. Bereits begonnene Verkäufe können jedoch abgeschlossen werden. Die aus diesen Verkäufen resultierenden Aufträge werden im Speicher des mobilen Geräts gespeichert und an das ERP-System plentymarkets gesendet, sobald die Verbindung wiederhergestellt wird. Neue Aufträge können nicht erstellt werden.
+Kommt es zu einem Ausfall der Internetverbindung, ist eine Verbindung zum ERP-System plentymarkets nicht möglich. Artikel können nicht gesucht und keine neuen Aufträge erstellt werden. Bereits begonnene Verkäufe können jedoch abgeschlossen werden. Die aus diesen Verkäufen resultierenden Aufträge werden im Speicher des mobilen Geräts gespeichert und an das ERP-System plentymarkets gesendet, sobald die Verbindung wiederhergestellt wird.
 
 Bei einem Ausfall des Kassensystems plentymarkets POS sind Mitarbeiter/-innen angewiesen, wie folgt zu handeln:
 
