@@ -52,6 +52,7 @@ In welchem Umfang Benutzer die App nutzen können, wird über die Benutzerverwal
 
 Für die plentymarkets App sind die folgenden Zugriffsrechte verfügbar:
 
+[cols="1,2"]
 |===
 |*Rechtegruppe*|*Einzelrechte*
 
@@ -142,6 +143,7 @@ Umfangreiche Berichtsoptionen ermöglichen außerdem eine detaillierte Visualisi
 
 Die in dieser Verfahrensdokumentation aufgeführten Kassen werden von folgendem Unternehmen betrieben:
 
+[cols="1,2"]
 |===
 |Unternehmensname|
 |Anschrift|
@@ -151,6 +153,7 @@ Die in dieser Verfahrensdokumentation aufgeführten Kassen werden von folgendem 
 
 Verantwortliche Auskunftsperson für die Kassensysteme des Unternehmens ist/sind:
 
+[cols="1,2"]
 |===
 |Name|
 |Telefonnummer|
@@ -262,7 +265,7 @@ Für die Kasse mit der Kassen-ID [_*ID einfügen*_] kommt folgende Software zum 
 
 === plentymarkets POS Geschäftsvorfälle
 
-In plentymarkets POS werden Geschäftsvorfälle einzeln, vollständig und unveränderbar aufgezeichnet. Geschäftsvorfälle sind jederzeit über das Kassenjournal des ERP-System plentymarkets verfügbar und über den IDEA-Export maschinell auslesbar.
+In plentymarkets POS werden Geschäftsvorfälle einzeln, vollständig und unveränderbar aufgezeichnet. Geschäftsvorfälle sind jederzeit über das Kassenjournal des ERP-Systems plentymarkets verfügbar und über den IDEA-Export maschinell auslesbar.
 
 Die folgenden Arten von Geschäftsvorfällen können über plentymarkets POS erstellt und im ERP-System plentymarkets weiter verarbeitet werden:
 
@@ -544,22 +547,37 @@ Für jeden Geschäftsvorfall sind im Kassenjournal die unten aufgeführten Daten
 * Auftrags-ID
 * Steuersatz in %
 * USt.-Betrag
-* Buchungstext: Bei Einlagen und Entnahmen entspricht der Buchungstext dem Grund der Bargeldbewegung.
-
-
+* Buchungstext: Bei Einlagen und Entnahmen entspricht der Buchungstext dem Grund der Bargeldbewegung
 
 Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann die Anzahl der angezeigten Vorfälle durch das Setzen von Filtern reduziert werden. Folgende Filtermöglichkeiten sind verfügbar:
 
+[cols="1,2"]
 |===
 |*Filter*|*Erläuterung / Filtermöglichkeiten*
 
-|Belegnummer|Filterung nach einer Belegnummer (Eingabe einer Belegnummer) oder nach einer Abfolge von Belegnummern (Eingabe eines Bereichs).
-|Mandant (Shop)|Filterung nach einem Mandanten (Shop)
-|Kasse|Filterung nach dem Namen einer Kasse
-|Benutzer|Filterung nach dem Benutzer, der den Geschäftsvorfall erstellt hat.
-|Zahlungsart|Filterung nach der Zahlungsart. Folgende Zahlungsart sind verfügbar:
-|Zeitraum|Filterung nach dem Zeitpunkt des Geschäftsvorfalls. Folgende Zeiträume sind verfügbar:
-|Typ|Filterung nach Typ des Geschäftsvorfalls. Folgende Typen sind verfügbar:
+|Belegnummer
+|Filterung nach einer Belegnummer (bei Eingabe einer Belegnummer) oder nach einer Abfolge von Belegnummern (bei Eingabe eines Bereichs)
+
+|Mandant (Shop)
+|Filterung nach einem Mandanten (Shop)
+
+|Kasse
+|Filterung nach dem Namen einer Kasse
+
+|Benutzer
+|Filterung nach dem Benutzer, der den Geschäftsvorfall erstellt hat
+
+|Zahlungsart
+|Filterung nach der Zahlungsart. Folgende Zahlungsarten sind verfügbar: +
+Barzahlung, EC-Karte, über Plugin eingebundene Zahlungsarten
+
+|Zeitraum
+|Filterung nach dem Zeitpunkt des Geschäftsvorfalls. Folgende Zeiträume sind verfügbar: +
+Aktueller Monat, Letzter Monat, Letzte 30 Tage, Letzte 3 Monate, Letzte 6 Monate, Letzte 12 Monate, Letztes Jahr, Letztes Quartal, freie Datumsauswahl
+
+|Typ
+|Filterung nach Typ des Geschäftsvorfalls. Folgende Typen sind verfügbar: +
+Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift, Startbeleg, Endbeleg, Tagesabschluss
 |===
 
 
@@ -616,7 +634,7 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 * Barbestand
 ** Entnahmen (Anzahl, Summe)
 ** Einlagen (Anzahl, Summe)
-** Anfangsbarbestand
+** Anfangsbestand
 ** Soll-Kassenbestand
 ** Ist-Kassenbestand
 * Umsatz
@@ -637,7 +655,7 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 ** Name der Bediener/-innen
 ** Generierter Umsatz pro Bediener/-in
 
-Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Sie werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
+Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
 
 Systemseitig werden die Daten der Tagesberichte in der Datentabelle *plenty_pos_z_report* und dort in den folgenden Spalten gespeichert:
 
@@ -911,8 +929,6 @@ Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 |===
 
 
-
-
 * Informationen zur Grundprogrammierung bzw. spezifische Einstellungen (Customising)
 * Protokolle über jede Veränderung der Kassenprogrammierung (z.B. Stammdaten)
 * Protokolle über die Einrichtung von Verkäufer- oder Trainingsspeichern
@@ -935,16 +951,6 @@ Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 - Wie wird der Kassenbestand (Bargeld) verbracht?
 - Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?
 
-
-Kontrollmechanismen
-
-* Benutzerverwaltung
-* Eingeschränkte Zugriffsrechte für Mitarbeiter
-* Welche Rechte sind möglich?
-* Welche Rechte hat welcher Bediener?
-* Was kann ein Chefbediener/Schichtleiter/normaler Kassierer?
-* Wie spielt das mit den Rechten im plenty Backend zusammen?
-* Liste mit den Rechten pro Benutzerrolle
 
 ////
 == Info-Links
