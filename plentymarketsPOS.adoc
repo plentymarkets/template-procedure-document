@@ -122,6 +122,7 @@ Sichtbare Kennzahlen
 * Aktive Listings
 * Gestartete Listings
 * Wareneingänge
+* Meldebestand
 |====
 
 == plentymarkets POS
@@ -168,7 +169,7 @@ Durch die Nutzung der nachfolgend bezeichneten Hard- und Software wird sicherges
 
 ==== plentymarkets POS Kassen
 
-Das Unternehmen verfügt über [______] plentymarkets POS Kassensysteme. Diese Kassen haben die folgenden IDs/Namen:
+Das Unternehmen verfügt über [_Anzahl der Kassen eingeben_] plentymarkets POS Kassensysteme. Diese Kassen haben die folgenden IDs/Namen:
 
 |===
 |Kassen-ID|Kassenname|Einsatzort (Adresse)|Einsatzzeitraum (von/bis)
@@ -245,7 +246,7 @@ Darstellung dieser Infos noch zu klären
 Alternative Darstellung
 ////
 
-Für die Kasse mit der Kassen-ID [*ID einfügen*] kommt folgende Hardware zum Einsatz: +
+Für die Kasse mit der Kassen-ID [_ID einfügen_] kommt folgende Hardware zum Einsatz: +
 
 * Tablet / Smartphone [Modell, Hersteller]
 * Belegdrucker [Modell, Hersteller]
@@ -255,7 +256,7 @@ Für die Kasse mit der Kassen-ID [*ID einfügen*] kommt folgende Hardware zum Ei
 * EC-Terminal [Modell, Hersteller]
 * Sonstiges [Modell, Hersteller]
 
-Für die Kasse mit der Kassen-ID [_*ID einfügen*_] kommt folgende Software zum Einsatz:
+Für die Kasse mit der Kassen-ID [_ID einfügen_] kommt folgende Software zum Einsatz:
 
 * Betriebssystem [Programmname, Versionsnummer, Hersteller]
 * ERP-System [Programmname, Versionsnummer, Hersteller]
@@ -603,7 +604,8 @@ Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann 
 |*Filter*|*Erläuterung / Filtermöglichkeiten*
 
 |Belegnummer
-|Filterung nach einer Belegnummer (bei Eingabe einer Belegnummer) oder nach einer Abfolge von Belegnummern (bei Eingabe eines Bereichs)
+|Filterung nach einer Belegnummer durch Eingabe derselben Belegnummer in die Felder **von** und **bis** +
+Filterung nach einer Abfolge von Belegnummern durch Eingabe eines Bereichs
 
 |Mandant (Shop)
 |Filterung nach einem Mandanten (Shop)
@@ -616,15 +618,15 @@ Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann 
 
 |Zahlungsart
 |Filterung nach der Zahlungsart. Folgende Zahlungsarten sind verfügbar: +
-Barzahlung, EC-Karte, über Plugin eingebundene Zahlungsarten
+Barzahlung, EC-Karte, Gutscheinzahlung [_weitere, z.B. über Plugins eingebundene Zahlungsarten einfügen_]
 
 |Zeitraum
 |Filterung nach dem Zeitpunkt des Geschäftsvorfalls. Folgende Zeiträume sind verfügbar: +
-Aktueller Monat, Letzter Monat, Letzte 30 Tage, Letzte 3 Monate, Letzte 6 Monate, Letzte 12 Monate, Letztes Jahr, Letztes Quartal, freie Datumsauswahl
+Aktueller Monat, Letzter Monat, Letzte 30 Tage, Letzte 3 Monate, Letzte 6 Monate, Letzte 12 Monate, Letztes Jahr, Letztes Quartal, freie Datumsauswahl (von/bis)
 
 |Typ
 |Filterung nach Typ des Geschäftsvorfalls. Folgende Typen sind verfügbar: +
-Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift, Startbeleg, Endbeleg, Tagesabschluss
+Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift
 |===
 
 
@@ -788,7 +790,7 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 
 |Benutzer
 |Umsatzsumme pro Benutzer ./. Retouren ./. Stornierungen
-|Auflistung der Benutzer seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
+|Auflistung der Kassenbenutzer (ID und Name) seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
 |====
 
 Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
