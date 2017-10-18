@@ -625,35 +625,123 @@ Tagesabschlussberichte werden in plentymarkets POS in einem eigenen Nummernkreis
 
 In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informationen, die sowohl auf dem Tagesberichtsbeleg gedruckt als auch systemseitig gespeichert werden:
 
-* Fortlaufende Nummer des Belegs
-* Datum und Uhrzeit der Erstellung
-* Systeminterne ID der Kasse
-* Erster Beleg (seit letztem Tagesbericht)
-* Letzter Beleg (letzter Beleg des Berichts)
-* Zeitraum (von / bis)
-* Barbestand
-** Entnahmen (Anzahl, Summe)
-** Einlagen (Anzahl, Summe)
-** Anfangsbestand
-** Soll-Kassenbestand
-** Ist-Kassenbestand
-* Umsatz
-** Seit letztem Tagesabschluss (“Summe”)
-** Seit Inbetriebnahme der Kasse (“Grand Total”)
-* Steuerbericht
-** Angewandte Steuersätze
-** Steuersumme getrennt nach Steuersatz
-** Nettoumsatz getrennt nach Steuersatz
-* Zahlungsarten
-** Umsatz nach Zahlungsart (Anzahl und Summe)
-* Stornierungen (Anzahl und Summe) gemäß §147 Abs. 4 AO
-* Retouren (Anzahl und Summe) gemäß §147 Abs. 4 AO
-* Rabattierte Artikel (Anzahl und Summe)
-* Verkaufte Gutscheine (Anzahl und Summe)
-* Umsatz nach Bediener/-innen
-** ID der Bediener/-innen
-** Name der Bediener/-innen
-** Generierter Umsatz pro Bediener/-in
+|====
+|*Tagesberichtdaten*|*Berechnungsformel*|*Erläuterung*
+
+3+|*Belegkopf*
+
+|Unternehmensdaten
+|---
+|Kopfzeile gemäß Belegeinstellungen der Kasse
+
+|Datum/Uhrzeit
+|---
+|Datum und Uhrzeit der Erstellung des Tagesabschlusses
+
+3+|*Tagesabschluss*
+
+|Nummer
+|---
+|Fortlaufende Nummer des Tagesabschlusses
+
+|Erstellt von
+|---
+|Name des Benutzers, der den Tagesabschluss erstellt hat
+
+|POS-ID
+|---
+|Systeminterne ID der Kasse
+
+|Erster Beleg
+|---
+|Nummer des ersten Belegs seit letztem Tagesabschluss
+
+|Letzter Beleg
+|---
+|Letzter Beleg dieses Tagesabschlusses
+
+3+|*Zeitraum*
+
+|Von
+|---
+|Datum und Uhrzeit der Generierung des ersten Belegs seit dem letzten Tagesbericht
+
+|Bis
+|---
+|Datum und Uhrzeit der Generierung des aktuellen Tagesberichts
+
+3+|*Barbestand*
+
+|Entnahmen
+|Summe der Entnahmen
+|Anzahl in Klammern
+
+|Einlagen
+|Summe der Einlagen
+|Anzahl in Klammern
+
+|Anfangsbestand
+|---
+|Übertrag aus dem letzten Tagesabschlussbericht
+
+|Soll-Bestand
+|Anfangsbestand + Zugänge ./. Abgänge
+|
+
+|Ist-Bestand
+|Summe der eingegebenen Stückelungen oder manuell eingegebene Gesamtsumme
+|
+
+3+|*Umsatz*
+
+|Summe
+|Summe der Aufträge ./. Summe der verkauften Gutscheine ./. Retouren ./. Stornierungen
+|Umsatz seit dem letzten Tagesabschluss
+
+|Grand Total
+|Summe der Aufträge ./. Summe der verkauften Gutscheine ./. Retouren ./. Stornierungen
+|Umsatz seit Inbetriebnahme der Kasse
+
+3+|*Steuerbericht*
+
+|%
+|---
+|Im ERP-System plentymarkets gespeicherte Steuersätze
+
+|Steuer
+|Steuersatz
+|Auflistung der verschiedenen Steuersätze mit abzuführender Steuer
+
+|Netto
+|Umsatzsumme ./. Betrag des Steuersatzes
+|
+
+3+|*Sonstige Summen*
+
+|Zahlungsarten
+|Umsatz exklusive Stornierungen
+|Auflistung aller genutzten Zahlungsarten inkl. Summe, Anzahl der Aufträge pro Zahlungsart in Klammern
+
+|Retouren
+|Summe der Retouren
+|Summe der getätigten Retouren
+
+|Stornierungen
+|Summe der Stornierungen
+|Anzahl in Klammern
+
+|Rabattierte Artikel
+|Summe der rabattierten Artikel
+|Anzahl der rabattierten Artikel in Klammern
+
+|Verkaufsgutscheine
+|Summe der verkauften Gutscheine
+|Anzahl in Klammern
+
+|Benutzer
+|Umsatzsumme pro Benutzer ./. Retouren ./. Stornierungen
+|Auflistung der Benutzer seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
+|====
 
 Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
 
