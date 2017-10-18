@@ -537,17 +537,64 @@ Das Kassenjournal ist im ERP-System plentymarkets über das Menü *Aufträge » 
 
 Für jeden Geschäftsvorfall sind im Kassenjournal die unten aufgeführten Daten gespeichert und einsehbar.
 
-* Datum des Geschäftsvorfalls
-* Vorgang: E = Einnahme / A = Ausgabe
-* Betrag
-* Belegnummer
-* Zahlungsart
-* Typ (Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift)
-* Barbestand
-* Auftrags-ID
-* Steuersatz in %
-* USt.-Betrag
-* Buchungstext: Bei Einlagen und Entnahmen entspricht der Buchungstext dem Grund der Bargeldbewegung
+[cols="1,2,3"]
+|====
+|*Daten*|*Berechnungsformel*|*Erläuterung*
+
+|*Datum*
+|---
+|Datum und Uhrzeit des Geschäftsvorfalls
+
+|*Vorgang*
+|---
+|A = Ausgaben +
+E = Einnahmen
+
+|*Betrag*
+|Brutto-Betrag des Vorgangs ./. Gutscheinverkäufe
+|
+
+|*Zahlungsart*
+|---
+|Die Zahlungsart, mit der der Geschäftsvorfall durchgeführt wurde. +
+Bei Stornierung wird die Zahlungsart angezeigt, über die das Geld zurückgebucht wurde. +
+Der Name der Zahlungsart wird im Menü *Einstellungen » Aufträge » Zahlung » Zahlungsarten* gespeichert bzw. aus dem Zahlungsart-Plugin übernommen. +
+Bei Entnahmen und Einlagen ist das Feld leer.
+
+|*Belegnummer*
+|---
+|Belegnummer im Format [Kassen-ID]-[fortlaufende Nummer]. +
+ Ein Klick auf die Nummer öffnet den Beleg als PDF.
+
+|*Typ*
+|---
+|Mögliche Typen: +
+Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift
+
+|*Barbestand*
+|Übertrag des vorherigen Barbestands + Betrag des aktuellen Eintrags (wenn nicht über Kartenzahlung)
+|Der aktuelle Soll-Bestand der Kasse
+
+|*Auftrags-ID*
+|---
+|Die Auftrags-ID im ERP-System plentymarkets. +
+Bei Entnahmen und Einlagen ist das Feld leer.
+
+|*Steuersatz*
+|---
+|Auflistung der im Auftrag enthaltenen Steuersätze. +
+Die Steuersätze werden im Menü **Einstellungen » Mandant (Shop) » Standard » Standorte » Deutschland (Standard) » Buchhaltung** definiert und am Artikel gespeichert. +
+Gutscheine werden mit 0% angezeigt. +
+Bei Entnahmen und Einlagen ist das Feld leer.
+
+|*USt.*
+|Brutto-Betrag ./. Netto-Betrag
+|Bei Entnahmen und Einlagen ist das Feld leer.
+
+|*Buchungstext*
+|---
+|Der bei Entnahmen und Einlagen eingegebene Grund. Bei allen anderen Geschäftsvorfällen ist das Feld leer.
+|====
 
 Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann die Anzahl der angezeigten Vorfälle durch das Setzen von Filtern reduziert werden. Folgende Filtermöglichkeiten sind verfügbar:
 
@@ -625,6 +672,7 @@ Tagesabschlussberichte werden in plentymarkets POS in einem eigenen Nummernkreis
 
 In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informationen, die sowohl auf dem Tagesberichtsbeleg gedruckt als auch systemseitig gespeichert werden:
 
+[cols="1,2,2"]
 |====
 |*Tagesberichtdaten*|*Berechnungsformel*|*Erläuterung*
 
