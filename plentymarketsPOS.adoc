@@ -1066,20 +1066,9 @@ Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 ||||
 |===
 
-
-* Informationen zur Grundprogrammierung bzw. spezifische Einstellungen (Customising)
-* Protokolle über jede Veränderung der Kassenprogrammierung (z.B. Stammdaten)
-* Protokolle über die Einrichtung von Verkäufer- oder Trainingsspeichern
-* Aufzeichnung der Programmabrufe nach jeder Programmänderung (u.a. der Artikelpreise)
-
-== [_Weitere Bestandteile einer Verfahrensdokumentation_]
-
-=== [_Beschreibung des internen Kontrollsystems_]
-
-=== [_Arbeitsanweisungen_]
-
-
 === [_Unternehmensspezifische Informationen_]
+
+[_Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehmensspezifischen Verfahrensdokumentation eingehen sollten. Diese Liste erhebt keinen Anspruch auf Vollständigkeit._]
 
 - Wo werden die aufbewahrungspflichtigen Kassenbelege (Z-Bons, Stornobelege, Registrierkassen streifen usw.) abgelegt bzw. aufbewahrt?
 - Bis zu welcher Höhe werden Geldscheine angenommen (ausländische Sorten bzw. Falschgeldprüfung etc.)?
@@ -1088,38 +1077,4 @@ Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 - Wie wird die Belegbearbeitung und Belegprüfung durchgeführt?
 - Wie wird der Kassenbestand (Bargeld) verbracht?
 - Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?
-
-
-////
-== Info-Links
-
-
-http://www.karrer-viellieber.de/files/Blider/Dateien/MI_elektronische%20Kassensysteme%20ab%202017.pdf[http://www.karrer-viellieber.de/files/Blider/Dateien/MI_elektronische%20Kassensysteme%20ab%202017.pdf]
-
-https://www.deubner-steuern.de/uploads/tx_diadeubner/LP_100408_MI_GoBD.pdf[https://www.deubner-steuern.de/uploads/tx_diadeubner/LP_100408_MI_GoBD.pdf]
-
-http://www.bpw-online.de/steuertipps/verschaerfte-anforderungen-an-elektronische-kassen-und-andere-vorsysteme-zu-ihrer-buchhaltung.html[http://www.bpw-online.de/steuertipps/verschaerfte-anforderungen-an-elektronische-kassen-und-andere-vorsysteme-zu-ihrer-buchhaltung.html] +
-Infos zu VD, mit Grafiken
-
-http://www.lueders-warneboldt.de/aktuelles/steuerinformationen/anforderung-an-registrierkassen-ab-2017/[http://www.lueders-warneboldt.de/aktuelles/steuerinformationen/anforderung-an-registrierkassen-ab-2017/] +
-Infos zu Anforderungen an Registrierkassen
-
-http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf[http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf] +
-Checkliste VD
-
-https://www.css-group.de/products/kasse_60/vd_kasse60.pdf[https://www.css-group.de/products/kasse_60/vd_kasse60.pdf] +
-Verfahrensdokumentation zu CSS Group® Kassensoftware 201
-
-http://www.quorion.de/downloads/gobd/verfahrensdokumentation-gobd.pdf[http://www.quorion.de/downloads/gobd/verfahrensdokumentation-gobd.pdf] +
-Verfahrensdoku quorion - checken
-
-http://www.steuerkanzlei-feucht.de/aktuelles/Mandanten-Informationsbrief-2015-12-01.pdf[http://www.steuerkanzlei-feucht.de/aktuelles/Mandanten-Informationsbrief-2015-12-01.pdf]
-
-
-Checklisten +
-http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf[http://steuerberatung-sachsen.de/wp-content/uploads/2017/01/Verfahrensdokumentation-Kassenf%C3%BChrung.pdf]
-
-http://www.stb-stuttgart.de/content/images/NWB%20Merkblaetter/Checkliste%20Kassenf%C3%BChrung.pdf[http://www.stb-stuttgart.de/content/images/NWB%20Merkblaetter/Checkliste%20Kassenf%C3%BChrung.pdf]
-
-http://www.sharp.de/sharp/media/de/images/de/04-17_SHARP_FAQ_GoBD_4.3.pdf[http://www.sharp.de/sharp/media/de/images/de/04-17_SHARP_FAQ_GoBD_4.3.pdf]
-////
+- Wie werden EC-Kartenterminals/Zahlungsdienstleister angebunden?
