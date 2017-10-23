@@ -1068,7 +1068,7 @@ Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 
 === [_Unternehmensspezifische Informationen_]
 
-[_Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehmensspezifischen Verfahrensdokumentation eingehen sollten. Diese Liste erhebt keinen Anspruch auf Vollständigkeit._]
+_Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehmensspezifischen Verfahrensdokumentation eingehen sollten. Diese Liste erhebt keinen Anspruch auf Vollständigkeit._
 
 - Wo werden die aufbewahrungspflichtigen Kassenbelege (Z-Bons, Stornobelege, Registrierkassen streifen usw.) abgelegt bzw. aufbewahrt?
 - Bis zu welcher Höhe werden Geldscheine angenommen (ausländische Sorten bzw. Falschgeldprüfung etc.)?
