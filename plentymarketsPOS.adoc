@@ -1,4 +1,4 @@
-= Vorlage zur Verfahrensdokumentation für plentymarkets POS Anwender
+= Vorlage zur Verfahrensdokumentation für plentymarkets POS
 :lang: de
 include::{includedir}/_header.adoc[]
 
