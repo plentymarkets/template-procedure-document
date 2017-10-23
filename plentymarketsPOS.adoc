@@ -552,7 +552,7 @@ Für jeden Geschäftsvorfall sind im Kassenjournal die unten aufgeführten Daten
 E = Einnahmen
 
 |*Betrag*
-|Brutto-Betrag des Vorgangs ./. Gutscheinverkäufe
+|Umsatz bzw. Betrag des Vorgangs
 |
 
 |*Zahlungsart*
