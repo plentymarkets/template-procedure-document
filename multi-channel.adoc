@@ -225,7 +225,7 @@ Import über Rest-API mit JSON
 |real.de|Im- und Export über Rest-API mit CSV-Datei
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
-|Shopgate|
+|Shopgate|Im-und Export über Rest-API mit CSV-Datei
 |Yatego|Export über FTP-Server mit CSV-Datei +
  Import über Rest-API
 |Zalando|Im- und Export über Rest-API mit XML-Datei
