@@ -11,8 +11,11 @@ Anschließend werden die Module einzeln genauer beschrieben.
 
 === Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
-Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. +
+Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Berechtigungen. +
 Die Benutzerrechte eines Benutzer in plentymarkets hängen zunächst von seiner Benutzerklasse ab. Jedem Benutzer muss eine Benutzerklasse zugeordnet werden. Die Benutzerklassen sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
+
+==== Benutzerklassen
+
 Folgende Benutzerklassen gibt es in plentymarkets:
 
  * Admin
@@ -26,25 +29,25 @@ Folgende Benutzerklassen gibt es in plentymarkets:
 Jede Benutzerklasse ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch beschrieben: https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90[https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90] +
 Außerdem können optional Benutzerrollen angelegt werden. Mithilfe von Benutzerrollen lassen sich Rechte für mehrere Benutzer gleichzeitig vergeben. Die Benutzer müssen dafür der Rolle zugeordnet werden.
 
-==== Benutzerklasse Admin
+===== Benutzerklasse Admin
 
 Die Benutzerklasse Admin verfügt über alle Rechte und dient zur Verwaltung des Systems. Benutzern dieser Klasse können keine Rechte zusätzlich gewährt oder verwehrt werden. Sie verfügen pauschal über alle Rechte.
 
-==== Benutzerklasse Variabel
+===== Benutzerklasse Variabel
 
-Die Benutzerklasse Variabel verfügt standardmäßig über keine Rechte und bietet die größte Möglichkeit der individuellen Zuordnung von Rechten. Die 
+Die Benutzerklasse Variabel verfügt standardmäßig über keine Rechte und bietet die größte Möglichkeit der individuellen Zuordnung von Rechten. Alle Rechte, die vergeben werden können, sind im Abschnitt Berechtigungen aufgeführt.
 
-==== Benutzerklasse Callcenter
+===== Benutzerklasse Callcenter
 
-Die Benutzerklasse Callcenter ist eine stark eingeschränkte Klasse. Sie hat standardmäßig Zugriffsrechte auf nur wenige Menüpunkte der Softwareoberflächer und Benutzern dieser Klasse können auch keine weiteren Menüpunkte freigegeben werden. Der Zugriff auf folgende Menübereiche ist freigegeben:
+Die Benutzerklasse Callcenter ist eine stark eingeschränkte Klasse. Sie hat standardmäßig Zugriffsrechte auf nur wenige Menüpunkte der Softwareoberfläche und Benutzern dieser Klasse können auch keine weiteren Menüpunkte freigegeben werden. Der Zugriff auf folgende Menübereiche ist freigegeben:
  * Dashboard des Anwendersystems
  * Kalender
  * Auftragsbearbeitung
  * Kundenbearbeitung inkl. Ticketsystem
 Im Menübereich Kalender kann ein Benutzer der Klasse Callcenter lediglich seinen eigenen Kalender pflegen. Kalender von anderen Benutzer kann er nur sehen sowie bearbeiten, wenn diese es ihm erlauben. +
-Standardmäßig ist kein Mandant freigegeben, so dass in keinem der weiteren Menübereiche tatsächlich Daten angezeigt werden. Des Weiteren sind standardmäßig keine Auftragsstatus sichtbar oder setzbar. Erst die Freigabe eines Mandanten für einen Benutzer der Klasse Callcenter erlaubt den tatsächlichen Zugriff auf Kundendaten und das Ticketsystem. Für den Zugriff auf Auftragsdaten muss zusätzlich zu einem Mandanten mindestens die Freigabe der Sichtbarkeit eines Auftragsstatus erfolgen.
+Einem Benutzer der Klasse Callcenter ist standardmäßig kein Mandant freigegeben, so dass ihm in keinem Menü tatsächlich Daten angezeigt werden. Des Weiteren sind für diese Benutzerklasse standardmäßig keine Auftragsstatus sichtbar oder setzbar. Erst die Freigabe eines Mandanten für einen Benutzer der Klasse Callcenter erlaubt den tatsächlichen Zugriff auf Kundendaten und das Ticketsystem. Für den Zugriff auf Auftragsdaten muss zusätzlich zu einem Mandanten mindestens die Freigabe der Sichtbarkeit eines Auftragsstatus erfolgen.
 
-==== Benutzerklasse API
+===== Benutzerklasse API
 
 Die Benutzerklasse API dient dem Datenaustausch über eine von plentymarkets zur Verfügung gestellte API-Technologie. Folgende API-Technologien stehen zur Verfügung:
 
@@ -58,7 +61,7 @@ https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/plentymanual/imag
 Eine detaillierte Beschreibung der REST-Schnittstelle findet sich unter folgender Adresse: +
 https://developers.plentymarkets.com/[https://developers.plentymarkets.com/]
 
-==== Benutzerklasse Logistik
+===== Benutzerklasse Logistik
 
 Die Benutzerklasse Logistik hat über die Softwareoberfläche Zugriff auf folgende Bereiche:
 
@@ -72,7 +75,7 @@ Die Benutzerklasse Logistik hat über die Softwareoberfläche Zugriff auf folgen
  * Aufträge suchen und bearbeiten
  * Fulfillment
 
-==== Benutzerklasse Blog
+===== Benutzerklasse Blog
 
 Die Benutzerklasse Blog dient dazu einem Benutzer zu ermöglichen Blogbeiträge zu erstellen. Die Klasse hat Berechtigungen für folgende Bereiche:
  * Startseite
@@ -80,6 +83,1435 @@ Die Benutzerklasse Blog dient dazu einem Benutzer zu ermöglichen Blogbeiträge 
  * Blog
 Der Zugriff auf den Kalender bezieht sich lediglich auf den benutzereigenen Kalender. Kalender anderer Benutzer müssen durch diese zur Ansicht oder Bearbeitung freigegeben werden.
 
-==== Benutzerklasse Newsletter2Go
+===== Benutzerklasse Newsletter2Go
 
 Benutzerklasse, die automatisch für die Einrichtung einer link:https://knowledge.plentymarkets.com/crm/newsletter-versenden#2100[*Newsletter2Go*]-Schnittstelle verwendet wird.
+
+==== Berechtigungen
+
+Die Berechtigungen in plentymarkets sind folgendermaßen unterteilt:
+
+* Sichtbarkeiten
+* Menü
+* REST-API
+* SOAP-API
+* Transfer
+* Mobile
+
+Die Berechtigungen von Sichtbarkeiten und Menüs greifen in einander. Wenn ein Menü sichtbar ist, aber keine Sichtbarkeiten aktiviert sind, werden dem Benutzer keine Daten im Menü angezeigt.
+
+Beim Vergeben von Berechtigungen gilt generell, dass das Aktivieren einer Berechtigung einer übergeordneten Ebene alle darunter liegenden Berechtigungen aktiviert. Umgekehrt gilt ebenfalls, dass das Entfernen einer Berechtigung einer übergeordneten Ebene alle darunter einsortieren Berechtigungen entfernt.
+
+===== Sichtbarkeiten
+
+Mithilfe der Sichtbarkeiten wird festgelegt welche tatsächlichen Daten ein Benutzer sieht. +
+Die Sichtbarkeiten sind in 5 Abschnitt unterteilt, die in der folgenden Tabelle aufgeführt und erläutert sind.
+
+
+|===
+|Sichtbarkeiten|Erläuterung
+
+|Lager
+|Die Lager sind einzeln auswählbar unterteilt nach Lagertypen.
+
+|Sichtbare Auftragsstatus
+|Die Auftragsstatus sind einzeln auswählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle eigenen.
+
+|Setzbare Auftragsstatus
+|Die Auftragsstatus sind einzeln auswählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle durch den Anwender eingetragenen Status.
+
+|Mandanten
+|Die Mandanten sind einzeln auswählbar.
+
+|Ticketstatus
+|Die Ticketstatus sind einzeln auswählbar. Zur Auswahl stehen alle durch den Anwender angelegten Ticketstatus.
+|===
+
+===== Menü
+
+Mit Berechtigungen für Menüs wird festgelegt welche Menüs ein Benutzer sehen und öffnen kann. Außerdem lässt sich zum Teil festgelegen welche Bearbeitungsmöglichkeiten der Benutzer im Menü hat. +
+Die folgende Tabelle führt alle Menüberechtigungen auf.
+
+
+|===
+|Hauptmenü|Untermenü 1|Untermenü 2 / Bearbeitungsmöglichkeit|Untermenü 3 / Bearbeitungsmöglichkeit|Untermenü 4 / Bearbeitungsmöglichkeit|Untermenü 5 / Bearbeitungsmöglichkeit
+
+|Einstellungen|||||
+||Grundeinstellungen||||
+|||Benutzer|||
+||||Rollen||
+|||||Bearbeiten|
+|||||Löschen|
+|||||Neue Rolle|
+||||Drucker||
+||||Stammdaten||
+||||Bank||
+||||Zahlenformate||
+||||Editoren||
+||||Tags||
+||||Migration||
+||||API||
+|||||Daten|
+|||||Reporting|
+|||||SOAP-Migration|
+||||Datenbank||
+||||Backup||
+||||Sprache||
+||||Zertifizierung||
+||Mandant (Shop)||||
+|||Globale Einstellungen|||
+||||Sprachpakete||
+||||FTP-Zugang||
+||||Dienste||
+|||||bit.ly|
+|||||Cliplister|
+|||||Dropbox|
+|||||Facebook|
+|||||Facettensuche|
+|||||Familien-Karte Hessen|
+|||||Lionbridge|
+|||||Picalike|
+|||||Testberichte.de|
+|||||Twitter|
+||||Kunden-Feedback||
+||||Live-Shopping||
+||||Geschenk-Service||
+||||Gewinnspiel||
+||||Statistik||
+|||Standard|||
+||||Grundeinstellungen||
+||||Webshop||
+|||||Grundeinstellungen|
+|||||Multilingualismus|
+|||||Währung|
+|||||Webshop sperren|
+|||||Weiterleitung|
+|||||Rechtliche Angaben|
+|||||Seiten|
+|||||Artikelsuche|
+||||POS||
+|||Standorte|||
+||||Standard||
+|||||Einstellungen|
+|||||Buchhaltung|
+|||||Dokumente|
+||||||Rechnung
+||||||Korrekturbeleg
+||||||Sammelrechnung
+||||||Lieferschein
+||||||Gutschrift
+||||||Sammelgutschrift
+||||||Auftragsbestätigung
+||||||Angebot
+||||||Mahnung
+||||||Reparaturschein
+||||||Abhol-/Lieferschein
+||||||Rücksendeschein
+||||||Gelangensbestätigung
+||||||SEPA-Lastschriftmandat
+||||||Stornobeleg Rechnung
+||||||Stornobeleg Gutschrift
+|||E-Mail|||
+||||Zugangsdaten||
+||||Signatur||
+||||Infodienst||
+||||Newsletter-Zugangsdaten||
+||||Vorlagen||
+||||Autoreply||
+||||Automatischer Versand||
+||||HTML-Design||
+|||Artikelansichten|||
+||||Grundeinstellungen||
+||||Artikelverfügbarkeit||
+||||Artikeleinheiten||
+|||SEO|||
+||||Metadaten||
+||||URL-Aufbau||
+|||||Artikel|
+|||||Sonstige|
+||||Robots.txt||
+||||Sitemap.xml||
+|||Kategorien|||
+||||Grundeinstellungen||
+||||Aktivieren||
+||||Rabatte||
+|||Bestellvorgang|||
+||||Grundeinstellungen||
+||||DHL-Packstation||
+|||Mein-Konto|||
+||||Grundeinstellungen||
+||||Auftragsinformationen||
+|||Dienste|||
+||||Adressdoctor||
+|||||Adressprüfung|
+|||||Zugangsdaten|
+||||atriga||
+||||Beezup||
+||||Cliplister||
+||||Easymarketing||
+||||Econda||
+||||Ekomi||
+||||Elmar||
+||||Facettenverknüpfungen||
+||||Factfinder||
+||||Findologic||
+||||Janolaw||
+||||Newsletter2Go||
+||||Social Media||
+||||Treepodia||
+||||TrustedShops||
+||||Twenga||
+||||Yoochoose||
+|||Affiliate|||
+||||affilinet||
+||||belboon||
+||||Criteo||
+||||redpeppix||
+||||schuhe.de||
+||||Trade Doubler||
+||||zanox||
+|||Module|||
+||||Artikel-Link-Cloud||
+||||Blog||
+||||Gästebuch||
+||||Forum||
+||Artikel||||
+|||Grundeinstellungen|||
+|||Freitextfelder|||
+|||GTIN|||
+|||Einheiten|||
+|||Digitale Medien|||
+|||Etiketten|||
+|||Suchindex|||
+|||Hersteller|||
+|||Attribute|||
+|||Merkmale|||
+|||Aktionsmanager|||
+|||Artikelverfügbarkeit|||
+|||Markierungen|||
+|||Verkaufspreise|||
+|||Barcode|||
+|||Preiskalkulation|||
+|||Bilder|||
+||Listings||||
+|||Grundeinstellungen|||
+|||Warenbestand|||
+|||Kaufabwicklung|||
+|||Verkaufsplaner|||
+|||Layout-Vorlagen|||
+|||Verzeichnisse|||
+||Märkte||||
+|||Preisportale|||
+||||Exporte||
+|||Allyouneed|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+||||Artikel-Export||
+|||Amazon|||
+||||Grundeinstellungen||
+||||Frei definierbare Felder||
+||||Kategorieverknüpfung||
+||||Datenaustausch||
+|||||Datenexport|
+|||||Auftragsimport|
+|||||Versandbestätigung|
+|||||Berichte|
+|||||FBA Warenbestand|
+|||bol.com|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+|||Brandsdistribution|||
+|||Cdiscount.com|||
+|||Check24|||
+|||DaWanda|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+|||eBay|||
+||||Grundeinstellungen||
+||||Konten||
+||||Fahrzeugverwendungsliste||
+||||Second Chance Offer||
+||||Datenaustausch||
+||||Rahmenbedingungen||
+|||Flubit|||
+|||Fruugo|||
+||||Grundeinstellungen||
+|||Google|||
+||||Google Shopping DE||
+||||Google Shopping Int.||
+|||grosshandel.eu|||
+|||Hertie|||
+|||Hood|||
+|||idealo Direktkauf|||
+|||Kauflux|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+|||La Redoute|||
+||||Grundeinstellungen||
+||||Artikelmerkmal-Import||
+||||Kategorieverknüpfung||
+|||Mercateo|||
+||||Grundeinstellungen||
+||||Daten-Export||
+||||Export-Verlauf||
+|||Neckermann Österreich Enterprise|||
+|||Otto|||
+||||Cooperation||
+||||Integration||
+|||PIXmania|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+||||Export-Verlauf||
+|||http://Plus.de[Plus.de]|||
+|||http://Rakuten.de[Rakuten.de]|||
+|||http://real.de[real.de]|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+|||Restposten|||
+|||ricardo|||
+||||Grundeinstellungen||
+||||Konten||
+|||Shopgate|||
+|||SumoNet|||
+|||Yatego|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+|||Zalando|||
+||||Grundeinstellungen||
+||||Kategorieverknüpfung||
+||Waren||||
+|||Lager|||
+|||Bestellwesen|||
+||||Grundeinstellungen||
+||||Bestellstatus||
+||||Bestellungen löschen||
+||||Ereignisaktionen||
+||||Vorlagen||
+|||Warenbestand|||
+||||Wareneingang||
+||||Suche||
+|||Externe Warenwirtschaft|||
+||||Mention||
+|||Neuer Wareneingang|||
+||Kunden||||
+|||Grundeinstellungen|||
+|||Kundenklassen|||
+|||Ust.-ID-Prüfung|||
+|||Passwörter|||
+|||Ticketsystem|||
+||||Grundeinstellungen||
+||||Ereignisaktionen||
+||||Aktionsmanager||
+||||E-Mail-Konten||
+||||Vorlagen||
+||||Ticketkarten||
+||||Ticketfragen||
+|||Serviceeinheiten|||
+||||Typen||
+||||Abrechnung||
+||||Provisionen||
+|||Eigenschaften|||
+|||Typen|||
+||Aufträge||||
+|||Grundeinstellungen|||
+|||Ereignisaktionen|||
+|||Aktionsmanager|||
+|||Dokumente|||
+||||Nachbestellung||
+||||Adressetikett||
+||||Pickliste||
+||||Lager-Pickliste||
+||||Packliste||
+|||Auftragsherkunft|||
+|||Auftragsstatus|||
+|||Auftragsvorlage|||
+|||Auftragstypen|||
+||||Lieferauftrag||
+||||Reparatur||
+||||Retoure||
+||||Sammelauftrag||
+|||Inkassodienstleister|||
+||||arvato||
+||||mediafinanz||
+|||Bonitätsprüfung|||
+||||arvato infoscore||
+|||Versand|||
+||||Versandoptionen||
+||||Versanddienstleister||
+|||||Grundeinstellungen|
+|||||CBC Logistics|
+|||||DHL Intraship/Versenden|
+|||||DHL Easylog|
+|||||DHL Freight|
+|||||DHL Retoure Online|
+|||||DHL RETOURE Beilegeretiketten|
+|||||DHL Supply Chain|
+|||||DHL UK|
+|||||DPD Cloud Webservice|
+|||||DPD DELISprint|
+|||||EasyPAK|
+|||||GLS Germany|
+|||||Hermes (2-Mann-Handling)|
+|||||Hermes (ProfiPaketService)|
+|||||MyDPD Business / iloxx|
+|||||NetDespatch|
+|||||Parcelforce Worldwide|
+|||||Royal Mail|
+|||||Swiss Post|
+|||||UPS|
+||||Fulfillmentdienstleister||
+|||||DHL Fulfillment|
+|||||IDS Logistik|
+|||||iLopack|
+||||Versandpakete||
+|||Zahlung|||
+||||Zahlungsarten||
+||||EBICS||
+||||HBCI PIN/TAN||
+||||Zahlungseingänge||
+||||Währungen||
+|||Gutscheine|||
+||CMS||||
+|||Formulare|||
+|||Newsletter|||
+||||plentymarkets||
+|||||E-Mail-Ordner|
+|||||E-Mails|
+|||||E-Mail-Filter|
+||||CleverReach||
+|||RSS|||
+|||Artikel-Galerie|||
+||Prozesse||||
+||plentymarkets-App||||
+|||Mobile Pickliste|||
+|||Artikelsuche|||
+|||Umbuchung|||
+|||Auftragsübersicht|||
+|Start|||||
+||Dashboard||||
+|||Artikel unter Meldebestand|||
+|||Aufträge|||
+|||Listings|||
+|||Verkaufsstatistik|||
+|||Zahlungen|||
+||Statistik||||
+||Kalender||||
+||Aufgaben||||
+||plentymarkets-Konto||||
+|||Service-Center|||
+|||Support-Hotline|||
+|||Support-Zeitkonto|||
+|||Auftragshistorie|||
+|||Hosting|||
+|||Umzug|||
+||Plugins||||
+||plentyBase||||
+|Artikel|||||
+||Artikel bearbeiten||||
+|||Artikel löschen|||
+|||Einkaufspreise anzeigen|||
+|||Artikel öffnen|||
+|||Bestandskorrektur|||
+|||Preise|||
+|||Bilder|||
+|||Neuer Artikel|||
+|||Gruppenfunktion|||
+|||Artikel-ID ändern|||
+||Kategorien||||
+||Stapelverarbeitung||||
+||Suchen & Ersetzen||||
+|Listings|||||
+||Listings bearbeiten||||
+||Aktive Listings||||
+||Zukünftige Listings||||
+||Stapelverarbeitung||||
+|||Listings|||
+|||Aktive Listings|||
+|Waren|||||
+||Warenbestände||||
+||Neuer Wareneingang||||
+||Wareneingänge||||
+||Lagerort-Verwaltung||||
+||Bestellwesen||||
+|||Nachbestellungen|||
+|||Rückstandsliste|||
+|||Auftragsbezogene Rückstandsliste|||
+||Retouren||||
+|||Zulauf|||
+|Kunden|||||
+||Kunden bearbeiten||||
+||Ticketsystem||||
+||OP-Liste||||
+||Kundenkarte||||
+||Serviceeinheiten||||
+||Adressen||||
+|Aufträge|||||
+||Aufträge bearbeiten||||
+|||Aufträge anlegen|||
+|||Aufträge löschen|||
+|||Belege löschen|||
+|||Profit im Auftrag anzeigen|||
+||Sammelaufträge||||
+||Zahlungsverkehr||||
+||POS||||
+|||Kassenjournal|||
+|||IDEA-Export|||
+|||DEP-Export|||
+||Fulfillment||||
+|||Rechnungen erzeugen|||
+|||Lieferscheine erzeugen|||
+|||Gutschriften erzeugen|||
+|||Pickliste|||
+|||Packliste|||
+|||Lieferanschriftenliste|||
+|||Adressetiketten|||
+|||DTA-Export|||
+|||Mahnungen erzeugen|||
+|||Gelangensbestätigungen erzeugen|||
+|||Rücksendescheine erzeugen|||
+|||Kreditkartendaten exportieren|||
+|||Einlieferungsliste|||
+|||ilopack-Datenübergabe|||
+|||DHL Intraship-Versandetiketten erzeugen|||
+|||DHL Intraship-Exportdokumente erzeugen|||
+|||DHL Freight-Datenübergabe|||
+|||DHL Supply Chain-Datenübergabe|||
+|||Hermes (2-Mann-Handling)|||
+|||Import Paketnummern|||
+|||Buche Warenausgang|||
+||Versand-Center||||
+||Gutscheine||||
+||Scheduler||||
+|||Scheduler-Aufträge|||
+|||Durchlauf|||
+||Inkasso-Übergaben||||
+||Dokumentenarchiv||||
+|Datenaustausch|||||
+||Export||||
+|||Elastischer Export|||
+|||Dynamischer Export|||
+|||Spezialexport|||
+||Import||||
+|||Dynamischer Import|||
+|||eBay-Listings|||
+|||Turbo Lister|||
+||API-Log||||
+||Druck Historie||||
+|CMS|||||
+||Webdesign||||
+||Bilder-Galerie||||
+||Webspace||||
+||Blog||||
+|||Blog bearbeiten|||
+|||Blog veröffentlichen|||
+|||Blog-Eintrag anlegen|||
+||FAQ||||
+||Dokumente||||
+||Newsletter||||
+||Termine||||
+||Konstanten||||
+||Suchen & Ersetzen||||
+||Kunden-Feedback||||
+|Prozesse|||||
+|===
+
+===== REST-API-Berechtigungen
+
+Mithilfe der Berechtigungen für die REST-API wird festgelegt, welche Daten ein Benutzer per REST abrufen, bearbeiten, hinzufügen oder löschen kann. Neben den Berechtigungen ist auch eine Authentifizierung für die Arbeit mit REST notwendig.
+
+|===
+|Firma|||||||
+||Adresse||||||
+|||Adresse erstellen|||||
+|||Adresse löschen|||||
+|||Adressoption|||||
+||||Typ der Adressoption||||
+|||||Typ der Adressoption erstellen|||
+|||||Typ der Adressoption löschen|||
+|||||Typ der Adressoption anzeigen|||
+|||||Typ der Adressoption aktualisieren|||
+|||Adresse anzeigen|||||
+|||Adresse aktualisieren|||||
+||Kontakt||||||
+|||Kontaktadresse|||||
+||||Kontaktadresse erstellen||||
+||||Kontaktadresse löschen||||
+||||Kontaktadresse anzeigen||||
+||||Adresstyp||||
+|||||Adresstyp erstellen|||
+|||||Adresstyp löschen|||
+|||||Adresstyp anzeigen|||
+|||||Adresstyp aktualisieren|||
+||||Kontaktadresse aktualisieren||||
+|||Bankdaten|||||
+||||Bankdaten erstellen||||
+||||Bankdaten löschen||||
+||||Bankdaten anzeigen||||
+||||Bankdaten aktualisieren||||
+|||Kontakt löschen|||||
+|||Abteilung|||||
+||||Abteilung erstellen||||
+||||Abteilung löschen||||
+||||Abteilung anzeigen||||
+||||Abteilung aktualisieren||||
+|||Kontatkoption|||||
+||||Typ der Kontaktoption||||
+|||||Typ der Kontaktoption erstellen|||
+|||||Typ der Kontaktoption löschen|||
+|||||Typ der Kontaktoption anzeigen|||
+|||||Typ der Kontaktoption aktualisieren|||
+|||Kontaktposition|||||
+||||Kontaktposition erstellen||||
+||||Kontaktposition löschen||||
+||||Kontaktposition anzeigen||||
+||||Kontaktposition aktualisieren||||
+|||Kontakt anzeigen|||||
+|||Kontakt aktualisieren|||||
+||Firma erstellen||||||
+||Firma löschen||||||
+||Auftragszusammenfassung||||||
+|||Auftragszusammenfassung erstellen|||||
+|||Auftragszusammenfassung löschen|||||
+|||Auftragszusammenfassung anzeigen|||||
+|||Auftragszusammenfassung aktualisieren|||||
+||Firma anzeigen||||||
+||Firma aktualisieren||||||
+|Buchhaltung|||||||
+||Standort||||||
+|||Standort erstellen|||||
+|||Debitorenkonten|||||
+||||Debitorenkonten anzeigen||||
+|||Standort löschen|||||
+|||Buchungsschlüssel|||||
+||||Buchungsschlüssel anzeigen||||
+|||Erlöskonten|||||
+||||Erlöskonten anzeigen||||
+|||Standort anzeigen|||||
+|||Standort aktualisieren|||||
+|Authorisierung|||||||
+||Berechtigungen||||||
+|||Berechtigungen anzeigen|||||
+|||Berechtigungen von Benutzern|||||
+||||Berechtigungen eines Benutzers anzeigen||||
+||Rollen||||||
+|||Rollen erstellen|||||
+|||Rollen löschen|||||
+|||Rollen anzeigen|||||
+|||Rollen von Benutzern|||||
+||||Rollen eines Benutzers anzeigen||||
+||||Rollen eines Benutzers aktualisieren||||
+|bol|||||||
+||config||||||
+|||save|||||
+|||show|||||
+|Kategorien|||||||
+||Kategorien erstellen||||||
+||Kategorien löschen||||||
+||Kategorien anzeigen||||||
+||Kategorien aktualisieren||||||
+|Kommentare|||||||
+||Kommentar erstellen||||||
+||Kommentar löschen||||||
+||Kommentar anzeigen||||||
+|Datenaustausch|||||||
+|Elastischer Export|||||||
+|deleteLog|||||||
+||show||||||
+|Dokumente|||||||
+||Dokument anlegen||||||
+||Dokument löschen||||||
+|Feedbacks|||||||
+||Feedback erstellen||||||
+||Feedback löschen||||||
+||Feedbacks migrieren||||||
+||Feedback aktualisieren||||||
+|Feedback-Kommentare|||||||
+||Kommentar erstellen||||||
+||Kommentar löschen||||||
+||Kommentar aktualisieren||||||
+|Feedback-Bewertungen|||||||
+||Bewertung erstellen||||||
+||Bewertung aktualisieren||||||
+|fitment|||||||
+||create||||||
+||delete||||||
+||show||||||
+||update||||||
+|frontend|||||||
+||legalinformation||||||
+|||save|||||
+|Artikel|||||||
+||Attribute||||||
+|||Attribute erstellen|||||
+|||Attribute löschen|||||
+|||Attribute anzeigen|||||
+|||Attribute aktualisieren|||||
+||Attributnamen||||||
+|||Attributnamen erstellen|||||
+|||Attributnamen löschen|||||
+|||Attributnamen anzeigen|||||
+|||Attributnamen aktualisieren|||||
+||Attributwerte||||||
+|||Attributwerte erstellen|||||
+|||Attributwerte löschen|||||
+|||Attributwerte anzeigen|||||
+|||Attributwerte aktualisieren|||||
+||attributeValueMarketName||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||Attributwertnamen||||||
+|||Attributwertnamen erstellen|||||
+|||Attributwertnamen löschen|||||
+|||Attributwertnamen anzeigen|||||
+|||Attributwertnamen aktualisieren|||||
+||Barcodes||||||
+|||Barcodes erstellen|||||
+|||Barcodes löschen|||||
+|||Barcodes anzeigen|||||
+|||Barcodes aktualisieren|||||
+||Artikelbilder||||||
+|||Verfügbarkeit|||||
+||||Verfügbarkeit aktivieren||||
+||||Verfügbarkeit entfernen||||
+||||Verfügbarkeit anzeigen||||
+||||Verfügbarkeit aktualisieren||||
+|||Bilder hochladen|||||
+|||Bilder löschen|||||
+|||Bildnamen|||||
+||||Bildnamen speichern||||
+||||Bildnamen löschen||||
+||||Bildnamen anzeigen||||
+||||Bildnamen aktualisieren||||
+|||Bilder anzeigen|||||
+|||Bilder aktualisieren|||||
+||item||||||
+|||add|||||
+|||delete|||||
+|||search|||||
+|||show|||||
+|||update|||||
+||itemCrossSelling||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+||Hersteller||||||
+|||Hersteller erstellen|||||
+|||Hersteller löschen|||||
+|||Hersteller anzeigen|||||
+|||Hersteller aktualisieren|||||
+||Merkmale||||||
+|||Merkmale erstellen|||||
+|||Merkmale löschen|||||
+|||Merkmale anzeigen|||||
+|||Merkmale aktualisieren|||||
+||propertyGroup||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||propertyGroupName||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||propertyMarketReference||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||Merkmalnamen||||||
+|||Merkmalnamen erstellen|||||
+|||Merkmalnamen löschen|||||
+|||Merkmalnamen anzeigen|||||
+|||Merkmalnamen aktualisieren|||||
+||Merkmaltyp Auswahl||||||
+|||Merkmaltyp Auswahl erstellen|||||
+|||Merkmaltyp Auswahl löschen|||||
+|||Merkmaltyp Auswahl anzeigen|||||
+|||Merkmaltyp Auswahl aktualisieren|||||
+||Verkaufspreise||||||
+|||Verkaufspreise erstellen|||||
+|||Verkaufspreise löschen|||||
+|||Verkaufspreise anzeigen|||||
+|||Verkaufspreise aktualisieren|||||
+||Verkaufspreise - Konten||||||
+|||Konten aktivieren|||||
+|||Konten entfernen|||||
+|||Konten anzeigen|||||
+||Verkaufspreise - Länder||||||
+|||Länder aktivieren|||||
+|||Länder entfernen|||||
+|||Länder anzeigen|||||
+||Verkaufspreise - Währungen||||||
+|||Währungen aktivieren|||||
+|||Währungen entfernen|||||
+|||Währungen anzeigen|||||
+||Verkaufspreise - Kundenklassen||||||
+|||Kundenklassen aktivieren|||||
+|||Kundenklassen entfernen|||||
+|||Kundenklassen anzeigen|||||
+||Verkaufspreise - Namen||||||
+|||Namen erstellen|||||
+|||Namen löschen|||||
+|||Namen anzeigen|||||
+|||Namen aktualisieren|||||
+||Mandanten||||||
+|||Mandanten aktivieren|||||
+|||Mandanten entfernen|||||
+|||Mandanten anzeigen|||||
+||Verkaufspreise - Herkünfte||||||
+|||Herkünfte aktivieren|||||
+|||Herkünfte entfernen|||||
+|||Herkünfte anzeigen|||||
+||Sets||||||
+|||Sets erstellen|||||
+|||Sets löschen|||||
+|||Sets anzeigen|||||
+|||Sets aktualisieren|||||
+||Einheiten||||||
+|||Einheiten erstellen|||||
+|||Einheiten löschen|||||
+|||Einheiten anzeigen|||||
+|||Einheiten aktualisieren|||||
+||Einheiten - Namen||||||
+|||Namen erstellen|||||
+|||Namen löschen|||||
+|||Namen anzeigen|||||
+|||Namen aktualisieren|||||
+||variation||||||
+|||create|||||
+|||delete|||||
+|||search|||||
+|||show|||||
+|||update|||||
+||Varianten-Barcodes||||||
+|||Barcodes erstellen|||||
+|||Barcodes löschen|||||
+|||Barcodes anzeigen|||||
+|||Barcodes aktualisieren|||||
+||Artikelpakete||||||
+|||Artikelpakete erstellen|||||
+|||Artikelpakete löschen|||||
+|||Artikelpakete anzeigen|||||
+|||Artikelpakete aktualisieren|||||
+||Varianten - Kategorien||||||
+|||Kategorien aktivieren|||||
+|||Kategorien entfernen|||||
+|||Kategorien anzeigen|||||
+|||Kategorien aktualisieren|||||
+||Varianten - Mandanten||||||
+|||Mandanten aktivieren|||||
+|||Mandanten entfernen|||||
+|||Mandanten anzeigen|||||
+|||Mandanten aktualisieren|||||
+||Varianten - Standardkategorien||||||
+|||Standardkategorien aktivieren|||||
+|||Standardkategorien entfernen|||||
+|||Standardkategorien anzeigen|||||
+|||Standardkategorien aktualisieren|||||
+||Varianten - Beschreibungen||||||
+|||Beschreibungen erstellen|||||
+|||Beschreibungen löschen|||||
+|||Beschreibungen anzeigen|||||
+|||Beschreibungen aktualisieren|||||
+||Varianten - Bilder||||||
+|||Bilder hochladen|||||
+|||Bilder löschen|||||
+|||Bilder anzeigen|||||
+|||Bilder aktualisieren|||||
+||Varianten - Marktplätze||||||
+|||Marktplätze aktivieren|||||
+|||Marktplätze entfernen|||||
+|||Marktplätze anzeigen|||||
+|||Marktplätze aktualisieren|||||
+||variationMarketIdentNumber||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||Varianten - Merkmale||||||
+|||Merkmale aktivieren|||||
+|||Merkmale entfernen|||||
+|||Merkmale anzeigen|||||
+|||Merkmale aktualisieren|||||
+||Varianten - Merkmalwerte||||||
+|||Merkmale aktivieren|||||
+|||Merkmale entfernen|||||
+|||Merkmale anzeigen|||||
+|||Merkmale aktualisieren|||||
+||variation PropertyValueText||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||Varianten - Verkaufspreise||||||
+|||Verkaufspreise aktivieren|||||
+|||Verkaufspreise entfernen|||||
+|||Verkaufspreise anzeigen|||||
+|||Verkaufspreise aktualisieren|||||
+||Varianten - Lieferanten||||||
+|||Lieferanten aktivieren|||||
+|||Lieferanten entfernen|||||
+|||Lieferanten anzeigen|||||
+|||Lieferanten aktualisieren|||||
+||Varianten - Lager||||||
+|||Lager aktivieren|||||
+|||Lager entfernen|||||
+|||Lager anzeigen|||||
+|||Lager aktualisieren|||||
+|listing|||||||
+||create||||||
+||delete||||||
+||layoutTemplate||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+||market||||||
+|||create|||||
+|||delete|||||
+|||history|||||
+||||end||||
+||||relist||||
+||||show||||
+||||update||||
+|||info|||||
+||||show||||
+|||show|||||
+|||start|||||
+|||text|||||
+||||create||||
+||||delete||||
+||||show||||
+||||update||||
+|||update|||||
+||optionTemplate||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||shippingProfile||||||
+|||show|||||
+||show||||||
+||stockDependenceType||||||
+|||show|||||
+||type||||||
+|||show|||||
+||update||||||
+|Herstellerprovisionen|||||||
+||Herstellerprovisionen erstellen||||||
+||Herstellerprovisionen löschen||||||
+||Herstellerprovisionen anzeigen||||||
+||Herstellerprovisionen aktualisieren||||||
+|market|||||||
+||credentials||||||
+|||create|||||
+|||delete|||||
+|||show|||||
+|||update|||||
+||ebay||||||
+|||category|||||
+||||show||||
+||otto||||||
+|||save|||||
+|||show|||||
+|Newsletter|||||||
+||Newsletter||||||
+|||Newsletter erstellen|||||
+|||Newsletter löschen|||||
+|||Newsletter anzeigen|||||
+||Newsletter-Ordner||||||
+|||Newsletter-Ordner erstellen|||||
+|||Newsletter-Ordner löschen|||||
+|||Newsletter-Ordner anzeigen|||||
+|||Newsletter-Ordner aktualisieren|||||
+||Newsletter-Empfänger||||||
+|||Newsletter-Empfänger löschen|||||
+|||Newsletter-Empfänger anzeigen|||||
+|||Newsletter-Empfänger aktualisieren|||||
+|Aufträge|||||||
+||Auftragsadressen||||||
+|||Auftragsadressen erstellen|||||
+|||Auftragsadressen löschen|||||
+|||Auftragsadressen anzeigen|||||
+|||Auftragsadressen aktualisieren|||||
+||Warenausgang buchen||||||
+||Aufträge erstellen||||||
+||Aufträge löschen||||||
+||Auftragsposition||||||
+|||Datumsangaben für Auftragspositionen|||||
+||||Datumsangabe erstellen||||
+||||Datumsangabe löschen||||
+||||Datumsangabe anzeigen||||
+||||Datumsangabe aktualisieren||||
+|||Eigenschaften von Auftragspositionen|||||
+||||Eigenschaft erstellen||||
+||||Eigenschaft löschen||||
+||||Eigenschaft anzeigen||||
+||||Eigenschaft aktualisieren||||
+||Auftragseigenschaften||||||
+|||Eigenschaft erstellen|||||
+|||Eigenschaft löschen|||||
+|||Eigenschaft anzeigen|||||
+|||Typen für Auftragseigenschaften|||||
+||||Eigneschaftstyp erstellen||||
+||||Eigenschaftstyp löschen||||
+||||Eigenschaftstyp aktualisieren||||
+|||Eigenschaft aktualisieren|||||
+||Referenzen für Auftragsrelationen||||||
+|||Referenz erstellen|||||
+|||Referenz löschen|||||
+|||Referenz anzeigen|||||
+|||Referenz aktualisieren|||||
+||Auftrag wiederherstellen||||||
+||Warenausgang zurücksetzen||||||
+||Seriennummern im Auftrag||||||
+|||Seriennummern anzeigen|||||
+||shipping||||||
+|||package|||||
+||||create||||
+||||delete||||
+||||show||||
+||||update||||
+|||packagetype|||||
+||||show||||
+||Aufträge anzeigen||||||
+||Aufträge aktualisieren||||||
+|Plugins|||||||
+||Plugins bereitstellen||||||
+|||Plugins in Productive bereitstellen|||||
+|||Plugins in Stage bereitstellen|||||
+||Plugins erstellen||||||
+||Plugin-Dateien||||||
+|||Plugin-Dateien löschen|||||
+|||Plugin-Dateien anzeigen|||||
+|||Plugin-Dateien aktualsieren|||||
+|||Plugin-Dateien hochladen|||||
+||Plugins anzeigen||||||
+||Plugins aktualisieren||||||
+||Versionierung||||||
+|||Git|||||
+||||Repositories||||
+|||||Branches|||
+||||||Commits||
+|||||||Unterschiede|
+||||||||Unterschied anzeigen
+|||||||Commits anzeigen|
+||||||Branches anfordern||
+||||||Branches pullen||
+||||||Branches pushen||
+||||||Konflikte beheben||
+||||||Branches anzeigen||
+|||||Repositories erstellen|||
+|||||Repository-Einstellungen|||
+||||||Einstellungen anzeigen||
+|||||Repositories anzeigen|||
+|processes|||||||
+||show||||||
+|Warenbestände|||||||
+||Bestände anzeigen||||||
+||Lager||||||
+|||Lageradresse|||||
+||||Lageradresse erstellen||||
+||||Lageradresse löschen||||
+||||Lageradresse anzeigen||||
+||||Lageradresse aktualisieren||||
+|Mobile|||||||
+||POS||||||
+|||Kasse erstellen|||||
+|||Kasse löschen|||||
+|||POS-Favoriten|||||
+||||Favoriten erstellen||||
+||||Favoriten löschen||||
+||||Favoriten anzeigen||||
+||||Favoriten aktualisieren||||
+|||Kasse anzeigen|||||
+|||Kasse aktualisieren|||||
+|system|||||||
+||domain||||||
+|||create|||||
+|||show|||||
+|||update|||||
+||show||||||
+|Templates|||||||
+||Designs||||||
+|||Design-Einstellungen|||||
+||||Design-Einstellungen kopieren||||
+||||Design-Einstellungen aktualisieren||||
+|Tickets|||||||
+||Ticket erstellen||||||
+||Ticket löschen||||||
+||role||||||
+|||create|||||
+|||show|||||
+|||update|||||
+||Ticket anzeigen||||||
+||status||||||
+|||create|||||
+|||show|||||
+|||update|||||
+||type||||||
+|||create|||||
+|||show|||||
+|||update|||||
+||Ticket aktualisieren||||||
+|Webshop|||||||
+||Webshop anzeigen||||||
+|===
+
+===== SOAP-Berechtigungen
+
+Mithilfe der Berechtigungen für die SOAP-API wird festgelegt, welche Abrufe, auch Calls genannt, ein Benutzer ausführen kann. Was die Calls bewirken, ist in der SOAP-Dokumentation beschrieben. Neben den Berechtigungen ist auch eine Authentifizierung für die Arbeit mit SOAP notwendig.
+
+|===
+|Bereich|SOAP-Call
+|Auction|
+||GetActiveListings
+||GetMarketListingItemVariants
+||AddAuction
+||DeleteListings
+||DeleteListingsProperties
+||DeleteListingsLayoutTemplates
+||DeleteListingsTemplates
+||GetAuctionMarketsShopCategories
+||GetAuctions
+||GetEbayItemVariations
+||GetListings
+||GetListingsLayoutProperties
+||GetListingsLayoutTemplates
+||GetListingsProperties
+||GetListingsTemplates
+||GetMarketAccounts
+||GetMarketDirectories
+||GetMarketListings
+||GetMarketLogs
+||GetMarketShippingProfiles
+||GetMarketStoreCategories
+||GetMarketClientCategories
+||GetPartsCompatibilityListings
+||SetAuctionStartTimestamp
+||SetListings
+||SetMarketListings
+||SetListingsLayoutTemplates
+||SetPartsCompatibilityListings
+||SetListingsProperties
+||SetListingsTemplates
+||UpdateListingsRelist
+||UpdateListingsUpdate
+||UpdateListingsStart
+||UpdateListingsStop
+||UpdateListingsVerify
+|Customer|
+||AddCustomerDeliveryAddresses
+||AddCustomerNote
+||AddCustomers
+||GetCountriesOfDelivery
+||GetCustomerClasses
+||GetCustomerDeliveryAddresses
+||GetCustomersNewsletterSubscriptions
+||GetCustomerNotes
+||GetCustomerScheduler
+||GetCustomers
+||SetCustomerDeliveryAddresses
+||SetCustomers
+|Item|
+||AddItemAttribute
+||AddItemAttributeValueSets
+||AddItemsBase
+||AddItemCategory
+||AddItemsImage
+||AddItemsToBundle
+||AddItemMediaFile
+||SetItemsToBundle
+||AddLinkedItems
+||SetLinkedItems
+||AddProperty
+||AddPropertyGroup
+||AddPropertyToItem
+||DeleteCategories
+||DeleteItemAttribute
+||DeleteItemMediaFiles
+||DeleteItems
+||DeleteItemsImages
+||DeleteItemsSuppliers
+||DeleteMarketItemNumbers
+||DeletePriceSets
+||DeleteProperty
+||DeletePropertyGroup
+||GetAttributeValueSets
+||GetBarcodeList
+||GetCategories
+||GetCategoryBranchID
+||GetCategoryMappingForMarket
+||GetCategoryPreview
+||GetCustomerOrderOverviewLink
+||GetCustomerOrders
+||GetDefaultAttributeTypeForMarket
+||GetDeleteLog
+||GetItemAttributes
+||GetItemAvailabilityConfig
+||GetItemBundles
+||GetItemCategoryCatalog
+||GetItemCategoryCatalogBase
+||GetItemCategoryTree
+||GetItemMediaFiles
+||GetItemsBase
+||GetItemsByStoreID
+||GetItemsDefaultShippingCost
+||GetItemsImages
+||GetItemsPriceLists
+||GetItemsPriceUpdate
+||GetItemsPropertiesList
+||GetItemsPropertyList
+||GetItemsCrossSellingList
+||GetItemsSearchData
+||GetItemsSuppliers
+||GetItemsTexts
+||GetItemsDescription
+||GetItemsShippingProfileList
+||GetItemsUpdated
+||GetItemsWarehouseSettings
+||GetItemsVariantImages
+||GetItemsVariantsAvailable
+||GetLinkedItems
+||GetMarketItemNumbers
+||GetManufacturers
+||GetOnlineStoreSettings
+||GetProducers
+||GetProperties
+||GetPropertiesList
+||GetPropertyGroups
+||GetSalesPriceList
+||GetWebshopSettings
+||RemoveItemsFromBundle
+||RemovePropertyFromItem
+||SearchItemsSKU
+||SetAttributeValueSetsDetails
+||SetBankCreditCardData
+||SetBankData
+||SetBarcodeList
+||SetCategories
+||SetItemAttributes
+||SetItemsAvailability
+||SetItemsBase
+||SetItemCategory
+||SetItemsCategories
+||SetItemsDefaultCategories
+||SetItemsFreeTextFields
+||SetItemImages
+||SetItemsCrossSellingList
+||SetItemsDescription
+||SetItemsImageList
+||SetItemsShippingProfileList
+||SetItemsPropertyList
+||SetItemsPurchasePrice
+||SetItemsSuppliers
+||SetItemsTexts
+||SetItemAttributeLinks
+||SetItemAttributeVariants
+||SetItemsWarehouseSettings
+||SetMarketItemNumbers
+||SetPriceSets
+||SetProducers
+||SetManufacturers
+||SetProperties
+||SetPropertyGroups
+||SetPropertyToItem
+||SetPropertiesToItem
+||SetSalesPriceList
+||UpdateCategoriesBranches
+||UpdateCategoriesVisibilities
+|Variation|
+||GetMarketVariationNumberList
+||GetVariationIDBySKU
+||GetVariationBaseSKU
+||GetVariationSearchDataList
+||GetVariationsAttributeValueList
+||GetVariationsBarcodeList
+||GetVariationsBase
+||GetVariationsBundleComponentList
+||GetVariationsByClientID
+||GetVariationsCategoryList
+||GetVariationsImageList
+||GetVariationsMarketList
+||GetVariationsClientList
+||GetVariationsMarketIdentNumberList
+||GetVariationsSalesPriceList
+||GetVariationsSupplierList
+||GetVariationsUpdated
+||SetMarketVariationNumbers
+||SetVariationsBarcodeList
+||SetVariationsBase
+||SetVariationsBundleComponentList
+||SetVariationsCategoryList
+||SetVariationsMarketList
+||SetVariationsClientList
+||SetVariationsMarketIdentNumberList
+||SetVariationsSalesPriceList
+||SetVariationsSupplierList
+|Order|
+||AddDeliveryOrder
+||AddIncomingPayments
+||AddDocument
+||AddOrderItems
+||AddOrderNotes
+||AddOrderStatusHistory
+||AddOrders
+||AddOrdersInvoice
+||AddOrdersPackageNumber
+||DeleteOrderItems
+||DeleteOrderNotes
+||DeleteOrderPackageNumber
+||GetActiveMethodOfPaymentList
+||GetCampaignList
+||GetCouponListOfCampaign
+||GetDeliveryCharges
+||GetDeliveryOrders
+||GetIncomingPayments
+||GetItemsReturnStatus
+||GetLinkPriceColumnToReferrer
+||GetMethodOfPayments
+||GetOrderCheckout
+||GetOrderDocument
+||GetOrderMailHistory
+||GetOrdersShipmentNumbers
+||GetOrderStatusHistory
+||GetOrderStatusList
+||GetOrdersCreditNoteDocumentURLs
+||GetOrdersDeliveryNoteDocumentURLs
+||GetOrdersDunningLetterDocumentURLs
+||GetOrdersInvoiceDocumentURLs
+||GetOrdersOfferDocumentURLs
+||GetOrdersOrderConfirmationDocumentURLs
+||GetOrdersPaymentInformation
+||GetReasonsForReturn
+||GetReturns
+||GetSalesOrderReferrer
+||GetShippingProfiles
+||GetShippingServiceProvider
+||GetShippingProfileConfigurations
+||SearchOrders
+||SetAutonomousReturns
+||SetBackPostOutgoingItems
+||SetBookOutgoingItems
+||SetCreditNotes
+||SetDeliveryOrders
+||SetOrderItems
+||SetOrderItemsQuantity
+||SetOrderStatus
+||SetOrdersHead
+||SetReturns
+||SetRepairs
+||SetShipmentRegistration
+||SetWarranties
+||ValidateCoupons
+|Reorder|
+||AddReorder
+||SetReorders
+||DeleteReorder
+||GetReorder
+|Stock|
+||GetCurrentStocks
+||GetCurrentStocks4Marketplace
+||GetCurrentStocks4Market
+||GetItemsStock
+||GetItemsStockSearch
+||GetRacksList
+||GetStockMovements
+||GetWarehouseItem
+||GetWarehouseList
+||GetWarehouseStorageLocation
+||SetCurrentStocks
+||SetIncomingStocks
+||SetStocksTransfer
+||SetWarehouse
+|Webshop|
+||GetLegalInformation
+||GetMultiShops
+||GetTermsAndCancellation
+||SetLegalInformation
+||SetTermsAndCancellation
+||SetStoreCategories
+||SetClientCategories
+|Others|
+||AddShippingProfile
+||AddTicket
+||AddTicketLeafe
+||GetContentPage
+||GetDynamicExport
+||GetDynamicFormats
+||GetDynamicImportStack
+||GetEmailTemplate
+||GetEmailTemplates
+||GetEmailFolderList
+||GetFolderEmails
+||GetMarketplaceTransactions
+||GetPlentyMarketsVersion
+||GetReportingFile
+||GetServerTime
+||GetVATConfig
+||SetContentPage
+||SetContentPages
+||SetDynamicImport
+||SetDynamicExport
+|===
+
+
+===== Mobile-Berechtigungen
+
+Mithilfe der Mobile-Berechtigungen wird festgelegt, was ein Benutzer in der plentymarkets-App sieht und worauf er zugreifen kann. Die Berechtigungen für Mobile sind in die folgenden 3 Abschnitte unterteilt: +
+
+* Sichtbare Funktionen
+* POS-Funktionen
+* Sichtbare Kennzahlen
+
+
+====== Sichtbare Funktionen
+
+Mit den Berechtigungen für sichtbare Funktionen wird festgelegt, welche Funktionen der Benutzer sieht. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+
+* Artikelsuche
+* Aufträge
+* Picklisten
+* Umbuchung
+* Konten
+* POS
+* Kundensuche
+
+====== POS-Funktionen
+
+Mit den Berechtigungen für POS-Funktionen wird festgelegt, welche Kassen-Funktionen der Benutzer ausführen darf. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+
+* Preis bearbeiten
+* Artikelposition umbenennen
+* Rabatt gewähren
+* Kassieren
+* Kasse sperren
+* Zwischenbericht
+* Tagesabschluss
+* Artikel Synchronisation
+* Aufträge hochladen
+* Retoure anlegen
+* Kunde auswählen
+* Stornierung
+
+====== Sichtbare Kennzahlen
+
+Mit den Berechtigungen für sichtbare Kennzahlen wird festgelegt, welche Kennzahlen der Benutzer sieht. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+
+* Aufträge
+* Durchschnittliche Aufträge
+* Neue Kunden
+* Unbezahlte Aufträge
+* Unzugeordnete Zahlungen
+* Neue Artikel
+* Umsatz
+* Durchschnittlicher Umsatz
+* Verkaufte Artikel
+* Durchschnittlich verkaufte Artikel
+* Artikel pro Auftrag
+* Aktive Listings
+* Gestartete Listings
+* Wareneingänge
+* Meldebestand
