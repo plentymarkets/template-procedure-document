@@ -404,16 +404,19 @@ Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf 
 
 Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten sowie Barbestand und Belegnummernfolge nicht zu beeinträchtigen. Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine Retoure erstellt werden.
 
+Wenn der zu stornierende Auftrag mit Karte bezahlt wurde, können Kassierer/-innen bei der Stornierung des Auftrags wählen, ob der stornierte Betrag zurück auf das Konto der Kartenzahlung gebucht oder bar ausgezahlt werden soll.
+
+Mitarbeiter/-innen sind angewiesen, bei Stornierungen von Aufträgen mit Kartenzahlungen wie folgt zu handeln:
+
+* [_Beschreibung des Ablaufs im Unternehmen einfügen_]
+
 Durch eine Stornierung über plentymarkets POS werden die folgenden Änderungen ausgelöst:
 
 - Ein Beleg wird erstellt.
 - Die Belegnummer für den Beleg wird erhöht.
-- Der Barbestand wird erhöht.
+- Bei Barauszahlung der Auftragssumme wird der Barbestand aktualisiert.
 - Ein Journal-Eintrag wird erstellt.
 - Der Auftragsstatus wird geändert. Der neue Auftragsstatus ist [_Status einfügen, der Stornierungen zugewiesen wird. Standardeinstellung ist *[8] Storniert*._]
-
-
-
 
 Die Vorgehensweise zum Stornieren von Aufträgen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173]
 
