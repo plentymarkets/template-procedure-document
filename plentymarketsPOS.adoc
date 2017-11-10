@@ -1080,4 +1080,5 @@ _Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehme
 - Wie wird die Belegbearbeitung und Belegprüfung durchgeführt?
 - Wie wird der Kassenbestand (Bargeld) verbracht?
 - Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?
-- Wie werden EC-Kartenterminals/Zahlungsdienstleister angebunden?
+- Sind externe EC-Kartenterminals/Zahlungsdienstleister im Einsatz?
+- Werden Kartenterminals über Plugins an die Kasse angebunden? Wenn ja, welche Änderungen der hier beschriebenen Verfahren ergeben sich aus diesen Anbindungen?
