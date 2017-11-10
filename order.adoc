@@ -140,7 +140,7 @@ Bei den oben aufgeführten Herkünften handelt es sich um Systemherkünfte. Syst
 Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.  +
 Für alle Herkünfte gilt also, dass sie aktiviert werden müssen und keine Herkunft ohne Wunsch des Anwenders zur Verfügung steht. Welche Schritte genau zur Einrichtung einer Herkunft notwendig sind, unterscheidet sich von Herkunft zu Herkunft und wird in den Beschreibungen der Module Multi-Channel, POS, Online-Shop sowie in den Plugin-Beschreibungen erläutert.
 
-Zunächst folgt eine kurze exemplarische Beschreibung der Auftragsabwicklung. Für diese Kurzbeschreibung nehmen wir an, dass die Ware vorrätig ist, der Kunde im Shop gekauft hat und alle Angaben des Kunden korrekt sind. 
+Zunächst folgt eine kurze exemplarische Beschreibung der Auftragsabwicklung. Für diese Kurzbeschreibung nehmen wir an, dass die Ware vorrätig ist, der Kunde im Shop gekauft hat und alle Angaben des Kunden korrekt sind.
 
 Exemplarische Kurzbeschreibung einer Auftragsabwicklung +
 Die Bestellung geht als Auftrag ins System ein und erhält eine Auftrags-ID. Da die Artikel, die der Kunde bestellt hat, vorrätig sind, wartet der Auftrag nur auf eine Zahlungszuweisung, um für den Versand freigegeben zu werden. Der Kunde zahlt und die Zahlung wird anhand der Auftrags-ID dem Auftrag zugeordnet. Die Zahlung entspricht außerdem genau der Rechnungssumme, sodass der Auftrag vollständig bezahlt ist. Der Auftrag wird für den Versand freigegeben und versandfertig gemacht. Das versandfertige Paket wird einem Versanddienstleister übergeben und dem Kunden zugestellt. Der Kunde ist mit der Ware zufrieden, weshalb weder eine Retoure erfolgt noch andere nachträgliche Schritte notwendig sind.
@@ -161,9 +161,9 @@ Wenn das Modul Warenwirtschaft genutzt wird, haben die Einstellungen zur Bestand
 
 Was ein eingeloggter Benutzer von plentymarkets letztendlich in der Abwicklung eines Auftrags vom Typ Auftrag bearbeiten kann, hängt von seinen Benutzerrechten ab. Die folgende Beschreibung orientiert sich an einem Benutzer mit vollen Bearbeitungsrechten. Bei einem solchen Benutzer hängen die Bearbeitungsmöglichkeiten in einem Auftrag vom Fortschritt der Abwicklung und von der Herkunft ab. Insbesondere das Erzeugen von Dokumenten sorgt für systemseitige Einschränkungen der Bearbeitungsmöglichkeiten, die der Benutzer nicht umgehen kann. Nachdem ein Dokument erzeugt wurde, werden die Einstellungen eingeschränkt, die bearbeitet werden können. Welche Einstellungen noch bearbeitbar sind, hängt wiederum von dem Typ des Dokuments ab. Bei Aufträgen mit einer automatisch zugeordneten Herkunft ist die Herkunft ab dem Moment der Auftragsanlage, also bevor ein Dokument erzeugt wurde, nicht mehr änderbar. Bei Aufträgen mit einer manuell zugeordneten Herkunft ist die Herkunft auch nach Auftragsanlage noch änderbar. Bis das erste Dokument erzeugt wurde, können folgende Angaben ergänzt oder geändert werden:
 
- . die Rechnungsadresse, 
- . die Lieferadresse, 
- . die Auftragspositionen, 
+ . die Rechnungsadresse,
+ . die Lieferadresse,
+ . die Auftragspositionen,
  . die Bankdaten des Kunden,
  . das Eingabedatum mit Eingabeuhrzeit des Auftrags,
  . das Auftragsgewicht,
@@ -193,10 +193,10 @@ Was ein eingeloggter Benutzer von plentymarkets letztendlich in der Abwicklung e
 
 Weitere Bearbeitungsmöglichkeiten, die zur Verfügung stehen, wenn noch kein Dokument erzeugt wurde, sind:
 
- . das Kopieren eines Auftrags, 
- . das Teilen eines Auftrags, 
- . das Löschen eines Auftrags, 
- . das Gruppieren von Aufträgen, 
+ . das Kopieren eines Auftrags,
+ . das Teilen eines Auftrags,
+ . das Löschen eines Auftrags,
+ . das Gruppieren von Aufträgen,
  . das Zuordnen von Lagerorten,
  . das Lösen von Lagerortzuordnungen,
  . das Versenden von E-Mails,
@@ -303,7 +303,7 @@ Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftrags
  * XI - kein Erstellen von Lieferaufträgen
 
 Die Mehrheit dieser Möglichkeiten sind relevant für den Versand von Ware und da eine Gutschrift nicht für den Versand gedacht ist, stehen sie in diesem Auftragstyp nicht zur Verfügung. +
-Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt werden können und welche Einschränkung durch das Erzeugen entstehen: 
+Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt werden können und welche Einschränkung durch das Erzeugen entstehen:
 
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -382,15 +382,16 @@ Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden 
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
-|Rechnung|_Inhalte werden ergänzt_
-|Lieferschein|_Inhalte werden ergänzt_
-|Auftragsbestätigung|_Inhalte werden ergänzt_
-|Mahnung|_Inhalte werden ergänzt_
-|Adressetikett|_Inhalte werden ergänzt_
-|Gelangensbestätigung|_Inhalte werden ergänzt_
-|Abhollieferung|_Inhalte werden ergänzt_
-|Rücksendeschein|_Inhalte werden ergänzt_
-|Reparaturschein|_Inhalte werden ergänzt_
+|Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
+|Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
+|Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
+|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Adressetikett|Das Erzeugen eines Adressetiketts hat keine Auswirkungen auf die Reparatur.
+|Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
+|Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
+|Rücksendeschein|Das Erzeugen eines Rücksendescheins sorgt nicht für Einschränkungen.
+|Reparaturschein|Das Erzeugen eines Reparaturscheins sorgt nicht für Einschränkungen.
+|Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
 |===
 Tabelle 8: Bearbeitungsmöglichkeiten in einer Reparatur nach dem Erzeugen eines Dokuments
 
@@ -412,10 +413,10 @@ In einem Sammelauftrag können folgende Dokumente erstellt werden:
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
-|Rechnung|_Inhalte werden ergänzt_
-|Mahnung|_Inhalte werden ergänzt_
+|Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
+|Mahnung|Inhalte werden ergänzt
 |===
-Tabelle 9: Bearbeitungsmöglichkeiten in eines Sammelauftrags nach dem Erzeugen eines Dokuments
+Tabelle 9: Bearbeitungsmöglichkeiten in einem Sammelauftrag nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Sammelgutschrift
 
@@ -431,5 +432,5 @@ Beim automatisierten Teilen werden auf einmal alle Artikelpositionen anhand eine
  * Versandprofil
  * Lager und Versandprofil
  * Lager und Netto-Warenbestand
- 
+
 Das automatisierte Teilen kann wiederum manuell durch den Anwender oder automatisiert angestoßen werden. Automatisiert angestoßen bedeutet, dass der Anwender einen  Zeitpunkt, zu dem ein Auftrag in Lieferaufträge geteilt wird, bestimmt. Die Funktion, die hierzu genutzt werden kann, nennt sich Ereignisaktion. Die allgemeine Funktionsweise von Ereignisaktionen wird an anderer Stelle beschrieben.

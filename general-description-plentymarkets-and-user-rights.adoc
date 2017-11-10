@@ -11,8 +11,11 @@ Anschließend werden die Module einzeln genauer beschrieben.
 
 === Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
-Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. +
+Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Berechtigungen. +
 Die Benutzerrechte eines Benutzer in plentymarkets hängen zunächst von seiner Benutzerklasse ab. Jedem Benutzer muss eine Benutzerklasse zugeordnet werden. Die Benutzerklassen sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
+
+==== Benutzerklassen
+
 Folgende Benutzerklassen gibt es in plentymarkets:
 
  * Admin
@@ -26,25 +29,25 @@ Folgende Benutzerklassen gibt es in plentymarkets:
 Jede Benutzerklasse ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch beschrieben: https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90[https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90] +
 Außerdem können optional Benutzerrollen angelegt werden. Mithilfe von Benutzerrollen lassen sich Rechte für mehrere Benutzer gleichzeitig vergeben. Die Benutzer müssen dafür der Rolle zugeordnet werden.
 
-==== Benutzerklasse Admin
+===== Benutzerklasse Admin
 
 Die Benutzerklasse Admin verfügt über alle Rechte und dient zur Verwaltung des Systems. Benutzern dieser Klasse können keine Rechte zusätzlich gewährt oder verwehrt werden. Sie verfügen pauschal über alle Rechte.
 
-==== Benutzerklasse Variabel
+===== Benutzerklasse Variabel
 
-Die Benutzerklasse Variabel verfügt standardmäßig über keine Rechte und bietet die größte Möglichkeit der individuellen Zuordnung von Rechten. Die 
+Die Benutzerklasse Variabel verfügt standardmäßig über keine Rechte und bietet die größte Möglichkeit der individuellen Zuordnung von Rechten. Alle Rechte, die vergeben werden können, sind im Abschnitt Berechtigungen aufgeführt.
 
-==== Benutzerklasse Callcenter
+===== Benutzerklasse Callcenter
 
-Die Benutzerklasse Callcenter ist eine stark eingeschränkte Klasse. Sie hat standardmäßig Zugriffsrechte auf nur wenige Menüpunkte der Softwareoberflächer und Benutzern dieser Klasse können auch keine weiteren Menüpunkte freigegeben werden. Der Zugriff auf folgende Menübereiche ist freigegeben:
+Die Benutzerklasse Callcenter ist eine stark eingeschränkte Klasse. Sie hat standardmäßig Zugriffsrechte auf nur wenige Menüpunkte der Softwareoberfläche und Benutzern dieser Klasse können auch keine weiteren Menüpunkte freigegeben werden. Der Zugriff auf folgende Menübereiche ist freigegeben:
  * Dashboard des Anwendersystems
  * Kalender
  * Auftragsbearbeitung
  * Kundenbearbeitung inkl. Ticketsystem
 Im Menübereich Kalender kann ein Benutzer der Klasse Callcenter lediglich seinen eigenen Kalender pflegen. Kalender von anderen Benutzer kann er nur sehen sowie bearbeiten, wenn diese es ihm erlauben. +
-Standardmäßig ist kein Mandant freigegeben, so dass in keinem der weiteren Menübereiche tatsächlich Daten angezeigt werden. Des Weiteren sind standardmäßig keine Auftragsstatus sichtbar oder setzbar. Erst die Freigabe eines Mandanten für einen Benutzer der Klasse Callcenter erlaubt den tatsächlichen Zugriff auf Kundendaten und das Ticketsystem. Für den Zugriff auf Auftragsdaten muss zusätzlich zu einem Mandanten mindestens die Freigabe der Sichtbarkeit eines Auftragsstatus erfolgen.
+Einem Benutzer der Klasse Callcenter ist standardmäßig kein Mandant freigegeben, so dass ihm in keinem Menü tatsächlich Daten angezeigt werden. Des Weiteren sind für diese Benutzerklasse standardmäßig keine Auftragsstatus sichtbar oder setzbar. Erst die Freigabe eines Mandanten für einen Benutzer der Klasse Callcenter erlaubt den tatsächlichen Zugriff auf Kundendaten und das Ticketsystem. Für den Zugriff auf Auftragsdaten muss zusätzlich zu einem Mandanten mindestens die Freigabe der Sichtbarkeit eines Auftragsstatus erfolgen.
 
-==== Benutzerklasse API
+===== Benutzerklasse API
 
 Die Benutzerklasse API dient dem Datenaustausch über eine von plentymarkets zur Verfügung gestellte API-Technologie. Folgende API-Technologien stehen zur Verfügung:
 
@@ -58,7 +61,7 @@ https://cdn02.plentymarkets.com/pmsbpnokwu6a/plugin/production/plentymanual/imag
 Eine detaillierte Beschreibung der REST-Schnittstelle findet sich unter folgender Adresse: +
 https://developers.plentymarkets.com/[https://developers.plentymarkets.com/]
 
-==== Benutzerklasse Logistik
+===== Benutzerklasse Logistik
 
 Die Benutzerklasse Logistik hat über die Softwareoberfläche Zugriff auf folgende Bereiche:
 
@@ -72,7 +75,7 @@ Die Benutzerklasse Logistik hat über die Softwareoberfläche Zugriff auf folgen
  * Aufträge suchen und bearbeiten
  * Fulfillment
 
-==== Benutzerklasse Blog
+===== Benutzerklasse Blog
 
 Die Benutzerklasse Blog dient dazu einem Benutzer zu ermöglichen Blogbeiträge zu erstellen. Die Klasse hat Berechtigungen für folgende Bereiche:
  * Startseite
@@ -80,6 +83,117 @@ Die Benutzerklasse Blog dient dazu einem Benutzer zu ermöglichen Blogbeiträge 
  * Blog
 Der Zugriff auf den Kalender bezieht sich lediglich auf den benutzereigenen Kalender. Kalender anderer Benutzer müssen durch diese zur Ansicht oder Bearbeitung freigegeben werden.
 
-==== Benutzerklasse Newsletter2Go
+===== Benutzerklasse Newsletter2Go
 
 Benutzerklasse, die automatisch für die Einrichtung einer link:https://knowledge.plentymarkets.com/crm/newsletter-versenden#2100[*Newsletter2Go*]-Schnittstelle verwendet wird.
+
+==== Berechtigungen
+
+Die Berechtigungen in plentymarkets sind folgendermaßen unterteilt:
+
+* Sichtbarkeiten
+* Menü
+* REST-API
+* SOAP-API
+* Transfer
+* Mobile
+
+Die Berechtigungen von Sichtbarkeiten und Menüs greifen in einander. Wenn ein Menü sichtbar ist, aber keine Sichtbarkeiten aktiviert sind, werden dem Benutzer keine Daten im Menü angezeigt.
+
+Beim Vergeben von Berechtigungen gilt generell, dass das Aktivieren einer Berechtigung einer übergeordneten Ebene alle darunter liegenden Berechtigungen aktiviert. Das Entfernen einer Berechtigung einer übergeordneten Ebene entfernt analog alle darunter einsortieren Berechtigungen.
+
+===== Sichtbarkeiten
+
+Mithilfe der Sichtbarkeiten wird festgelegt welche tatsächlichen Daten ein Benutzer sieht. +
+Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle aufgeführt und erläutert sind.
+
+
+|===
+|Sichtbarkeiten|Erläuterung
+
+|Lager
+|Die Lager sind einzeln auswählbar unterteilt nach Lagertypen.
+
+|Sichtbare Auftragsstatus
+|Die Auftragsstatus sind einzeln auswählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle eigenen.
+
+|Setzbare Auftragsstatus
+|Die Auftragsstatus sind einzeln auswählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle durch den Anwender eingetragenen Status.
+
+|Mandanten
+|Die Mandanten sind einzeln auswählbar.
+
+|Ticketstatus
+|Die Ticketstatus sind einzeln auswählbar. Zur Auswahl stehen alle durch den Anwender angelegten Ticketstatus.
+|===
+
+===== Menü
+
+Mit Berechtigungen für Menüs wird festgelegt welche Menüs ein Benutzer sehen und öffnen kann. Außerdem lässt sich zum Teil festgelegen welche Bearbeitungsmöglichkeiten der Benutzer im Menü hat. +
+Eine Tabelle mit allen Menüberechtigungen befindet sich im Anhang.
+
+===== REST-API-Berechtigungen
+
+Mithilfe der Berechtigungen für die REST-API wird festgelegt, welche Daten ein Benutzer per REST abrufen, bearbeiten, hinzufügen oder löschen kann. Neben den Berechtigungen ist auch eine Authentifizierung für die Arbeit mit REST notwendig. Eine Tabelle mit allen REST-Berechtigungen befindet sich im Anhang.
+
+
+===== SOAP-Berechtigungen
+
+Mithilfe der Berechtigungen für die SOAP-API wird festgelegt, welche Abrufe, auch Calls genannt, ein Benutzer ausführen kann. Was die Calls bewirken, ist in der SOAP-Dokumentation beschrieben. Neben den Berechtigungen ist auch eine Authentifizierung für die Arbeit mit SOAP notwendig. Eine Tabelle mit allen SOAP-Berechtigungen befindet sich im Anhang.
+
+===== Mobile-Berechtigungen
+
+Mithilfe der Mobile-Berechtigungen wird festgelegt, was ein Benutzer in der plentymarkets-App sieht und worauf er zugreifen kann. Die Berechtigungen für Mobile sind in die folgenden 3 Abschnitte unterteilt: +
+
+* Sichtbare Funktionen
+* POS-Funktionen
+* Sichtbare Kennzahlen
+
+====== Sichtbare Funktionen
+
+Mit den Berechtigungen für sichtbare Funktionen wird festgelegt, welche Funktionen der Benutzer sieht. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+
+* Artikelsuche
+* Aufträge
+* Picklisten
+* Umbuchung
+* Konten
+* POS
+* Kundensuche
+
+====== POS-Funktionen
+
+Mit den Berechtigungen für POS-Funktionen wird festgelegt, welche Kassen-Funktionen der Benutzer ausführen darf. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+
+* Preis bearbeiten
+* Artikelposition umbenennen
+* Rabatt gewähren
+* Kassieren
+* Kasse sperren
+* Zwischenbericht
+* Tagesabschluss
+* Artikel Synchronisation
+* Aufträge hochladen
+* Retoure anlegen
+* Kunde auswählen
+* Stornierung
+
+====== Sichtbare Kennzahlen
+
+Mit den Berechtigungen für sichtbare Kennzahlen wird festgelegt, welche Kennzahlen der Benutzer sieht. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+
+* Aufträge
+* Durchschnittliche Aufträge
+* Neue Kunden
+* Unbezahlte Aufträge
+* Unzugeordnete Zahlungen
+* Neue Artikel
+* Umsatz
+* Durchschnittlicher Umsatz
+* Verkaufte Artikel
+* Durchschnittlich verkaufte Artikel
+* Artikel pro Auftrag
+* Aktive Listings
+* Gestartete Listings
+* Wareneingänge
+* Meldebestand
