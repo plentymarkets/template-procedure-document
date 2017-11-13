@@ -791,9 +791,19 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 |Summe der verkauften Gutscheine
 |Anzahl in Klammern
 
+3+|*Benutzer*
+
 |Benutzer
-|Umsatzsumme pro Benutzer ./. Retouren ./. Stornierungen
-|Auflistung der Kassenbenutzer (ID und Name) seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
+|Umsatzsumme pro Benutzer einschließlich Retouren und Stornierungen
+|Kassenbenutzer (ID und Name) und Summe der Umsätze einschließlich Retouren und Stornierungen, die der Benutzer/die Benutzerin seit dem letzten Tagesabschluss entgegengenommen hat
+
+|Retouren
+|Summe der Retouren
+|Summe der Retouren, die der Benutzer/die Benutzerin seit dem letzten Tagesabschluss entgegengenommen hat
+
+|Stornierungen
+|Summe der Stornierungen
+|Summe der Stornierungen, die der Benutzer/die Benutzerin seit dem letzten Tagesabschluss entgegengenommen hat
 |====
 
 Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
