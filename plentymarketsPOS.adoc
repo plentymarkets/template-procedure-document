@@ -791,7 +791,12 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 |Summe der verkauften Gutscheine
 |Anzahl in Klammern
 
-3+|*Benutzer*
+|Benutzer +
+(bis App-Version 1.6.2)
+|Umsatzsumme pro Benutzer ./. Retouren ./. Stornierungen
+|Auflistung der Kassenbenutzer (ID und Name) seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
+
+3+|*Benutzer* (ab App-Version 1.6.2, Release-Datum 21.11.2017)
 
 |Benutzer
 |Umsatzsumme pro Benutzer einschließlich Retouren und Stornierungen
