@@ -792,7 +792,7 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 |Anzahl in Klammern
 
 |Benutzer +
-(bis App-Version 1.6.2)
+(bis App-Version 1.6.1)
 |Umsatzsumme pro Benutzer ./. Retouren ./. Stornierungen
 |Auflistung der Kassenbenutzer (ID und Name) seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
 
