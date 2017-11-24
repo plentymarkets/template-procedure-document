@@ -328,12 +328,17 @@ Außerdem wird bei der Zahlungsart Kartenzahlung der Barbestand der Kasse nicht 
 
 Pro Gutscheinwert muss im ERP-System plentymarkets ein Gutscheinartikel mit dem Preis des Gutscheinwerts und dem Mehrwertsteuersatz 0% erstellt werden und mit einer Kampagne verknüpft werden.
 
+Zum Einlösen eines Gutscheins benötigen Kunden einen Gutschein-Code. Dieser Gutschein-Code kann beim Verkauf eines Gutscheins automatisch generiert werden. Alternativ können Händler auch mit eigenen Gutschein-Codes arbeiten, die entweder im Vorfeld im ERP-System plentymarkets gespeichert werden oder erst beim Verkauf im System gespeichert werden.
+
+Ab Version 6.1.2 (Release-Datum 21.11.2017) können über plentymarkets POS auch Gutscheinartikel mit dem Preis 0,00 Euro verkauft werden. Wenn Kassierer/-innen diesen Artikel zum Verkauf wählen, erfolgt eine Preisabfrage. Der Preis, den Kassierer/-innen eingeben, entspricht dann dem Gutscheinwert. Der Gutschein-Code wird automatisch generiert. Alternativ kann mit eigenen Gutschein-Codes gearbeitet werden.
+
 Die genaue Vorgehensweise zum Verkauf von Gutscheinen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#_gutscheinverkauf_vorbereiten[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#_gutscheinverkauf_vorbereiten]
 
 Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Relevanz:
 
 * Beim Verkauf eines Verkaufsgutscheins erhöht sich der Umsatz nicht.
-* Verkaufte Gutscheine werden auf dem Tagesbericht separat ausgewiesen. * Der Barbestand erhöht sich nur, wenn der Gutschein bar bezahlt wird.
+* Verkaufte Gutscheine werden auf dem Tagesbericht separat ausgewiesen.
+* Der Barbestand erhöht sich nur, wenn der Gutschein bar bezahlt wird.
 * Beim Verkauf eines Gutscheins wird dem Kunden ein Gutschein-Code ausgehändigt. Dieser Gutschein-Code ist nicht mit dem Auftrag verknüpft.
 
 Systemseitig ist es möglich, Gutschein-Codes mehrmals zu verkaufen. Um dies zu verhindern, sind Mitarbeiter/-innen angewiesen, beim Verkauf von Gutscheinen wie folgt vorzugehen:
@@ -342,7 +347,7 @@ Systemseitig ist es möglich, Gutschein-Codes mehrmals zu verkaufen. Um dies zu 
 
 ===== Sonderfall 2: Gutscheineinlösung
 
-Im ERP-System plentymarkets können zwar Aktionsgutscheine und Verkaufsgutscheine angelegt werden. Im Kassensystem plentymarkets POS können jedoch nur Verkaufsgutscheine eingelöst werden. Zur Einlösung ist ein Gutschein-Code erforderlich, der im ERP-System plentymarkets generiert und gespeichert wurde.
+Im ERP-System plentymarkets können zwar Aktionsgutscheine und Verkaufsgutscheine angelegt werden. Im Kassensystem plentymarkets POS können jedoch nur Verkaufsgutscheine eingelöst werden. Zur Einlösung ist ein Gutschein-Code erforderlich, der bereits im ERP-System plentymarkets gespeichert sein muss.
 
 Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Relevanz:
 
@@ -404,16 +409,19 @@ Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf 
 
 Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten sowie Barbestand und Belegnummernfolge nicht zu beeinträchtigen. Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine Retoure erstellt werden.
 
+Wenn der zu stornierende Auftrag mit Karte bezahlt wurde, können Kassierer/-innen bei der Stornierung des Auftrags wählen, ob der stornierte Betrag zurück auf das Konto der Kartenzahlung gebucht oder bar ausgezahlt werden soll.
+
+Mitarbeiter/-innen sind angewiesen, bei Stornierungen von Aufträgen mit Kartenzahlungen wie folgt zu handeln:
+
+* [_Beschreibung des Ablaufs im Unternehmen einfügen_]
+
 Durch eine Stornierung über plentymarkets POS werden die folgenden Änderungen ausgelöst:
 
 - Ein Beleg wird erstellt.
 - Die Belegnummer für den Beleg wird erhöht.
-- Der Barbestand wird erhöht.
+- Bei Barauszahlung der Auftragssumme wird der Barbestand aktualisiert.
 - Ein Journal-Eintrag wird erstellt.
 - Der Auftragsstatus wird geändert. Der neue Auftragsstatus ist [_Status einfügen, der Stornierungen zugewiesen wird. Standardeinstellung ist *[8] Storniert*._]
-
-
-
 
 Die Vorgehensweise zum Stornieren von Aufträgen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#173]
 
@@ -788,9 +796,24 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 |Summe der verkauften Gutscheine
 |Anzahl in Klammern
 
-|Benutzer
+|Benutzer +
+(bis App-Version 1.6.1)
 |Umsatzsumme pro Benutzer ./. Retouren ./. Stornierungen
 |Auflistung der Kassenbenutzer (ID und Name) seit dem letzten Tagesabschluss inkl. des erwirtschafteten Umsatzes
+
+3+|*Benutzer* (ab App-Version 1.6.2, Release-Datum 21.11.2017)
+
+|Benutzer
+|Umsatzsumme pro Benutzer einschließlich Retouren und Stornierungen
+|Kassenbenutzer (ID und Name) und Summe der Umsätze einschließlich Retouren und Stornierungen, die der Benutzer/die Benutzerin seit dem letzten Tagesabschluss entgegengenommen hat
+
+|Retouren
+|Summe der Retouren
+|Summe der Retouren, die der Benutzer/die Benutzerin seit dem letzten Tagesabschluss entgegengenommen hat
+
+|Stornierungen
+|Summe der Stornierungen
+|Summe der Stornierungen, die der Benutzer/die Benutzerin seit dem letzten Tagesabschluss entgegengenommen hat
 |====
 
 Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-System plentymarkets übertragen. Tagesberichte werden nicht auf dem mobilen Gerät gespeichert. Tagesberichte können im Menü *Aufträge » Dokumentenarchiv* aufgerufen werden. Dort werden sie als Dokumente des Typs “Z-Report” gespeichert.
@@ -1077,4 +1100,5 @@ _Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehme
 - Wie wird die Belegbearbeitung und Belegprüfung durchgeführt?
 - Wie wird der Kassenbestand (Bargeld) verbracht?
 - Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?
-- Wie werden EC-Kartenterminals/Zahlungsdienstleister angebunden?
+- Sind externe EC-Kartenterminals/Zahlungsdienstleister im Einsatz?
+- Werden Kartenterminals über Plugins an die Kasse angebunden? Wenn ja, welche Änderungen der hier beschriebenen Verfahren ergeben sich aus diesen Anbindungen?

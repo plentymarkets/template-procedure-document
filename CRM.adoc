@@ -242,7 +242,8 @@ Im Folgenden wird in tabellarischer Form erläutert, welche Daten der Anwender a
 |Es ist möglich, zu jedem Kunden Notizen zu speichern. Notizen werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Notizen können gelöscht werden.
 
 |Dokumente
-|Im Kundendatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig:
+|Im Kundendatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
+JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 
 |Konto
 |Der Anwender kann aus dem Kundendatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
