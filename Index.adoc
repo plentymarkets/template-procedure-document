@@ -5,11 +5,23 @@ include::definition-plentymarkets.adoc[]
 include::tariff-structure-and-hosting.adoc[]
 include::general-description-plentymarkets-and-user-rights.adoc[]
 include::order.adoc[]
+include::online-store-flow-chart.adoc[]
+include::plentymarketsPOS.adoc[]
 include::CRM.adoc[]
+include::E-Mail-Versand.adoc[]
+include::Newsletter.adoc[]
 include::Datasecurity.adoc[]
 include::wording-examples.adoc[]
 
+== Changelog
+
 NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
 
-Version 2
-Stand: 31.08.2017
+[cols="1,2,6"]
+|===
+|Version  |Datum      |Changelog
+|V4       |07.11.2017 |Die Abschnitte POS und Webshop würden hinzugefügt
+|V3       |26.09.2017 |Die Abschnitte CRM, E-Mail-Versand und Newsletter würden hinzugefügt
+|V2       |31.08.2017 |Der Abschnitt Formulierungsbeispiele wurde hinzugefügt
+|V1       |11.08.2017 |Die Abschnitte Order und Datensicherheit würden hinzugefügt
+|===

@@ -1,6 +1,5 @@
+
 == Anhang: Formulierungsvorschlag zur Verfahrensdokumentation für plentymarkets Anwender
-:lang: de
-include::{includedir}/_header.adoc[]
 
 Dieser Anhang liefert Formulierungsbeispiele für eine Verfahrensdokumentation beim Einsatz der Software plentymarkets. Die Beispiele bedürfen in jedem Fall Anpassungen an die tatsächlichen Gegebenheiten des Unternehmens, das plentymarkets einsetzt. Die hier angegebenen Beispielformulierungen sind nicht rechtlich geprüft. +
 _Hinweis: Dieses Kapitel ist nicht Teil des Formulierungsvorschlag und sollte nicht in Ihre Verfahrensdokumentation übernommen werden._

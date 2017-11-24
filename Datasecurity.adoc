@@ -1,5 +1,5 @@
+
 == Speicherkonzept, Löschkonzept, Aufbau, Sicherheitsarchitektur AWS Cloud
-:lang: de
 
 === Speicherkonzept DB / NFS / S3 & Löschkonzept AWS Cloud
 

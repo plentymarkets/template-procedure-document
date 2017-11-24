@@ -1,6 +1,4 @@
-== CRM
 
-[#100]
 === Fachliche und technische Beschreibung des Moduls CRM
 
 Das CRM-Modul von plentymarkets erlaubt die zentrale Verwaltung, Speicherung und Bearbeitung von Kundendaten. Kundendatensätze, die im System gespeichert sind, können aus verschiedenen Kanälen stammen:
