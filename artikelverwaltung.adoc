@@ -8,7 +8,7 @@ Die Artikelverwaltung von plentymarkets erlaubt die zentrale Verwaltung, Speiche
  * Manuelle Erstellung im Backend durch Anwender
  * Plugins
 
-Produkte werden in plentymarkets als Varianten bezeichnet. Produkte mit ähnlichen Eigenschaften, die in plentymarkets als Attribute bezeichnet werden, können von der Anwenderin als Varianten eines Artikels zusammengefasst werden.  
+Produkte werden in plentymarkets als Varianten bezeichnet. Produkte mit ähnlichen Eigenschaften, die in plentymarkets als Attribute bezeichnet werden, können von der Anwenderin als Varianten eines Artikels zusammengefasst werden.
 
 === Die plentymarkets Artikelstruktur
 
@@ -44,7 +44,7 @@ Um die Flexibilität der Artikelverwaltung zu erhöhen, werden bestimmte Konfigu
 ==== Was ist ein Artikel?
 
 
-In der plentymarkets Artikelstruktur ist ein Artikel ein Datencontainer, der aus globalen Daten und mindestens einer Hauptvariante besteht. Die globalen Daten gelten für alle Varianten des Artikels und werden als Artikeldaten bezeichnet. Wir sprechen auch davon, Daten “auf der Artikelebene” zu speichern. 
+In der plentymarkets Artikelstruktur ist ein Artikel ein Datencontainer, der aus globalen Daten und mindestens einer Hauptvariante besteht. Die globalen Daten gelten für alle Varianten des Artikels und werden als Artikeldaten bezeichnet. Wir sprechen auch davon, Daten “auf der Artikelebene” zu speichern.
 
 Artikeldaten sind:
 
@@ -76,7 +76,10 @@ Varianten sind verschiedene Versionen eines Artikels. Anders als Artikel, die al
 |Variante|Beispiel
 
 |Kombination aus Einheit/Inhalt|Varianten unterscheiden sich nur durch die Menge und/oder Einheit
-|Kombination aus Attributwerten|Varianten unterscheiden sich durch andere Attributwerte, z.B.:
+|Kombination aus Attributwerten|Varianten unterscheiden sich durch andere Attributwerte, z.B.: +
+- Sofa: Farbe (rot, schwarz, braun) = 1 Attribut +
+- Quilt: Farbe (gelb, grün), Größe (Einzel, Doppel) = 2 Attribute +
+- Schuhe: Farbe (schwarz, braun), Größe (38, 39, 40), Breite (schmal, normal) = 3 Attribute
 |===
 
 
@@ -87,14 +90,14 @@ Für Produktportfolios, die nicht über Produkte mit ähnlichen Eigenschaften ve
 
 Die Hauptvariante eines Artikels unterscheidet sich von den anderen Varianten eines Artikels dadurch, dass ihre Eigenschaften an die anderen Varianten des Artikels weitergegeben, also vererbt werden können. Die Hauptvariante ist also eine Elternvariante, die bestimmte Daten an ihre Kinder vererbt. Diese Vererbungsfunktion ist standardmäßig aktiviert. Wenn eine neue Variante eines Artikels erstellt wird, erbt diese Variante also standardmäßig die vererbbaren Einstellungen der Hauptvariante, wenn keine davon abweichenden Daten gespeichert werden.
 
-Es gibt zwei Arten von Vererbung in plentymarkets: einige Einstellungen werden einzeln vererbt, andere werden gruppiert vererbt, also auf einer 1-zu-N-Basis. 
+Es gibt zwei Arten von Vererbung in plentymarkets: einige Einstellungen werden einzeln vererbt, andere werden gruppiert vererbt, also auf einer 1-zu-N-Basis.
 
 ===== Einzelvererbung
 
 
 Einzelvererbung bedeutet, dass eine Einstellung von der Hauptvariante an die Variante vererbt wird. Die folgenden Daten werden einzeln vererbt:
 
-	
+
  * Verfügbarkeitseinstellungen
  ** Verfügbarkeit
  ** Verfügbar wenn Netto-WB positiv
@@ -133,7 +136,7 @@ Einzelvererbung bedeutet, dass eine Einstellung von der Hauptvariante an die Var
  * Lieferanten
  * Lager
  * Marktplätze
- * Mandantenverfügbarkeit       
+ * Mandantenverfügbarkeit
 
 Die 1-zu-N-Vererbung wird automatisch aktiviert, wenn mindestens einer der vererbten Werte an der Variante geändert werden oder wenn ein Wert zur Variante hinzugefügt wird. Bei der Deaktivierung der Vererbung werden alle Einstellungen, die nicht geändert werden, an der Variante gespeichert. Wird die Vererbung wieder aktiviert, werden alle an der Variante gespeicherten Einstellungen gelöscht und durch die Werte der Hauptvariante ersetzt.
 
@@ -172,11 +175,11 @@ Artikel können auf verschiedene Arten erstellt und bearbeitet werden:
  * Per REST-API
  * Plugins
 
-Die Artikelverwaltung wird im https://knowledge.plentymarkets.com/artikel/artikel-verwalten[plentymarkets Handbuch] detailliert beschrieben. Außer der Varianten-ID können sämtliche anderen Artikel- und Variantendaten jederzeit bearbeitet und geändert werden. 
+Die Artikelverwaltung wird im https://knowledge.plentymarkets.com/artikel/artikel-verwalten[plentymarkets Handbuch] detailliert beschrieben. Außer der Varianten-ID können sämtliche anderen Artikel- und Variantendaten jederzeit bearbeitet und geändert werden.
 
 ==== Sonderfall 1: Artikelpakete
 
-Ein Artikelpaket besteht aus mehreren Produkten, die zusammengefasst und zu einem Paketpreis angeboten werden. Wie Artikelpakete erstellt werden, wird im https://knowledge.plentymarkets.com/artikel/artikel-verwalten#920[plentymarkets Handbuch] beschrieben. Wie anderen Varianten wird auch für Artikelpakete ein Verkaufspreis aktiviert und ein Preis hinterlegt. 
+Ein Artikelpaket besteht aus mehreren Produkten, die zusammengefasst und zu einem Paketpreis angeboten werden. Wie Artikelpakete erstellt werden, wird im https://knowledge.plentymarkets.com/artikel/artikel-verwalten#920[plentymarkets Handbuch] beschrieben. Wie anderen Varianten wird auch für Artikelpakete ein Verkaufspreis aktiviert und ein Preis hinterlegt.
 
 ==== Sonderfall 2: Artikelsets
 
@@ -202,9 +205,9 @@ Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Syst
 ==== Was sind Verkaufspreise?
 
 
-In plentymarkets wird zwischen Verkaufspreisen und Preisen unterschieden. Die Verkaufspreise sind ähnlich wie Artikel Datencontainer, die es ermöglichen, die Eigenschaften, die auf einen Preis zutreffen sollen, zentral zu verwalten. Ein Verkaufspreis ist also eine Kombination aus Einstellungen und Bedingungen, unter denen eine Variante zu einem bestimmten Preis verkauft wird. 
+In plentymarkets wird zwischen Verkaufspreisen und Preisen unterschieden. Die Verkaufspreise sind ähnlich wie Artikel Datencontainer, die es ermöglichen, die Eigenschaften, die auf einen Preis zutreffen sollen, zentral zu verwalten. Ein Verkaufspreis ist also eine Kombination aus Einstellungen und Bedingungen, unter denen eine Variante zu einem bestimmten Preis verkauft wird.
 
-Systemseitig werden die Verkaufspreise im Menü *System » Verkaufspreise* verwaltet. Die verfügbaren Einstellungen werden im https://knowledge.plentymarkets.com/artikel/artikel-verwalten#880[plentymarkets Handbuch] beschrieben. Der Zeitpunkt der letzten Änderung (dazu gehört auch der Zeitpunkt, zu dem der Verkaufspreis erstellt wurde), wird in der Symbolleiste des Menü *System » Verkaufspreise » Verkaufspreis öffnen* angezeigt. 
+Systemseitig werden die Verkaufspreise im Menü *System » Verkaufspreise* verwaltet. Die verfügbaren Einstellungen werden im https://knowledge.plentymarkets.com/artikel/artikel-verwalten#880[plentymarkets Handbuch] beschrieben. Der Zeitpunkt der letzten Änderung (dazu gehört auch der Zeitpunkt, zu dem der Verkaufspreis erstellt wurde), wird in der Symbolleiste des Menü *System » Verkaufspreise » Verkaufspreis öffnen* angezeigt.
 
 In einem neu angelegten System sind standardmäßig keine Verkaufspreise angelegt. Die vom Anwender erstellten Verkaufspreise erhalten eine fortlaufende ID beginnend mit ID 1. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. Anwender können beliebig viele Verkaufspreise erstellen.
 
@@ -212,7 +215,7 @@ In einem neu angelegten System sind standardmäßig keine Verkaufspreise angeleg
 
 Im Gegensatz zu den Verkaufspreisen ist der Preis der tatsächliche monetäre Betrag, zu dem die Variante verkauft wird, wenn die durch den Verkaufspreis definierten Bedingungen erfüllt sind. Einer Variante können beliebig viele Verkaufspreise zugeordnet werden. Dazu wird an der Variante zunächst gewählt, welche Verkaufspreise mit der Variante verknüpft werden sollen. Pro Verkaufspreis wird dann ein Preis an der Variante gespeichert. Dieser Preis “greift”, d.h. wird Kunden in Rechnung gestellt, wenn die Bedingungen, die in den Verkaufspreiseinstellungen definiert sind, erfüllt sind.
 
-Standardmäßig werden die Kombinationen aus Verkaufspreis und Preis von der Hauptvariante an die Varianten des Artikels vererbt. Das bedeutet, dass allen Varianten eines Artikels dieselben Kombinationen aus Verkaufspreis und Preis zugeordnet wird, wenn der Benutzer keine abweichenden Einstellungen an der Variante vornimmt. Sobald eine Abweichende Einstellung im Bereich Verkaufspreise der Variante vorgenommen wird, wird die Vererbung für alle Verkaufspreise aufgehoben. Wenn die Vererbung einer Variante wieder aktiviert wird, werden alle an der Variante gespeicherten Verkaufspreise und Preise durch die vererbten ersetzt. 
+Standardmäßig werden die Kombinationen aus Verkaufspreis und Preis von der Hauptvariante an die Varianten des Artikels vererbt. Das bedeutet, dass allen Varianten eines Artikels dieselben Kombinationen aus Verkaufspreis und Preis zugeordnet wird, wenn der Benutzer keine abweichenden Einstellungen an der Variante vornimmt. Sobald eine Abweichende Einstellung im Bereich Verkaufspreise der Variante vorgenommen wird, wird die Vererbung für alle Verkaufspreise aufgehoben. Wenn die Vererbung einer Variante wieder aktiviert wird, werden alle an der Variante gespeicherten Verkaufspreise und Preise durch die vererbten ersetzt.
 
 ==== Wie können Preisdaten geändert werden?
 
@@ -260,13 +263,13 @@ Steuerrechtliche Relevanz haben Artikelkategorien, da in den plentymarkets Einst
 
 ==== Attribute
 
-Attribute erlauben es Anwenderinnen, Produkteigenschaften zu abstrahieren und zentral zu verwalten. Im Menü *Einstellungen » Artikel » Attribute* können beliebig viele Attribute angelegt werden. Pro Attribut können außerdem beliebig viele Attributwerte erstellt werden. Wie weiter oben beschrieben können diese Attribute genutzt werden, um Varianten eines Artikels zu erstellen. Die Attributverwaltung wird im https://knowledge.plentymarkets.com/artikel/artikel-verwalten#390[plentymarkets Handbuch] detailliert erläutert. 
+Attribute erlauben es Anwenderinnen, Produkteigenschaften zu abstrahieren und zentral zu verwalten. Im Menü *Einstellungen » Artikel » Attribute* können beliebig viele Attribute angelegt werden. Pro Attribut können außerdem beliebig viele Attributwerte erstellt werden. Wie weiter oben beschrieben können diese Attribute genutzt werden, um Varianten eines Artikels zu erstellen. Die Attributverwaltung wird im https://knowledge.plentymarkets.com/artikel/artikel-verwalten#390[plentymarkets Handbuch] detailliert erläutert.
 
 Bis Version 6 von plentymarkets konnte für einen oder mehrere Attributwerte ein Aufpreis gespeichert werden, der automatisch zum Preis der Variante hinzuaddiert wurde. Seit Version 7 von plentymarkets ist diese Funktion nicht mehr verfügbar. Die Attributwerte beeinflussen also nicht den Preis einer Variante.
 
 ==== Merkmale
 
-In plentymarkets werden passive Eigenschaften eines Artikels, die nicht dazu verwendet werden, Varianten eines Artikels zu bilden, als Merkmale bezeichnet. Über Merkmale lassen sich Features des Produkts abbilden, z.B. technische Details wie “Bluetooth” oder “WLAN”. Merkmale sind nicht an den Warenbestand gekoppelt sind. 
+In plentymarkets werden passive Eigenschaften eines Artikels, die nicht dazu verwendet werden, Varianten eines Artikels zu bilden, als Merkmale bezeichnet. Über Merkmale lassen sich Features des Produkts abbilden, z.B. technische Details wie “Bluetooth” oder “WLAN”. Merkmale sind nicht an den Warenbestand gekoppelt sind.
 
 
 |===
@@ -276,28 +279,28 @@ In plentymarkets werden passive Eigenschaften eines Artikels, die nicht dazu ver
 |*Ganze Zahl*|Ermöglicht die Eingabe einer ganzen Zahl im Tab *Merkmale* des Artikels, z.B. einer Größe.
 |*Kommazahl*|Ermöglicht die Eingabe einer Zahl mit Kommastellen im Tab *Merkmale* des Artikels, z.B. einer Maßangabe.
 |*Text*|Ermöglicht die Eingabe eines Textes im Tab *Merkmale* des Artikels.
-|*Auswahl*|Ermöglicht die Erstellung einer Auswahlliste. 
+|*Auswahl*|Ermöglicht die Erstellung einer Auswahlliste.
 |*Datei*|Ermöglicht das Hochladen einer Datei im Tab *Merkmale* des Artikels.
 |===
 
 Besondere Bedeutung im Sinne der GoBD kommt Merkmalen zu, da für Merkmale ein Aufpreis definiert werden kann, der automatisch zum Preis der Varianten des Artikels hinzu addiert wird, wenn dieses Merkmal mit einem Artikel verknüpft wird. Um den Preis einer Variable inklusive Aufpreis im Webshop darzustellen, muss die Template-Variable $PriceDynamic in das Design des Webshops eingebunden werden.
 
 Die Option *Aufpreis* kann außerdem genutzt werden, um einen Aufpreis als Zusatzkosten ohne MwSt. für den Artikel zu definieren. Hiermit können z.B. Pfandbeträge dargestellt werden. In Aufträgen werden Merkmale, bei denen die Option *Als Zusatzkosten darstellen *gewählt wurde, als eigene Position mit der *ID -2* dargestellt. +
-Änderungen an Merkmalen und daraus resultierende Preisänderungen werden nicht protokolliert. Die Protokollierung solcher Änderungen obliegt dem Anwender. 
+Änderungen an Merkmalen und daraus resultierende Preisänderungen werden nicht protokolliert. Die Protokollierung solcher Änderungen obliegt dem Anwender.
 
 ==== Versandprofile
 
-Versandprofile stellen die Versandmöglichkeiten bereit, die im Webshop angeboten werden. Die Versandprofile werden zentral verwaltet und mit Artikeln verknüpft. Das plentymarkets Konzept der Versandprofile wird im Abschnitt Versandprofile dieses Dokuments sowie im plentymarkets Handbuch erläutert. 
+Versandprofile stellen die Versandmöglichkeiten bereit, die im Webshop angeboten werden. Die Versandprofile werden zentral verwaltet und mit Artikeln verknüpft. Das plentymarkets Konzept der Versandprofile wird im Abschnitt Versandprofile dieses Dokuments sowie im plentymarkets Handbuch erläutert.
 
-Auf der Artikelebene ist beim Erstellen eines neuen Artikels standardmäßig kein Versandprofil aktiviert. Pro Artikel sollte jedoch mindestens ein Versandprofil aktiviert werden, da sonst ungewollte Effekte bei der Versandkostenberechnung auftreten können. 
+Auf der Artikelebene ist beim Erstellen eines neuen Artikels standardmäßig kein Versandprofil aktiviert. Pro Artikel sollte jedoch mindestens ein Versandprofil aktiviert werden, da sonst ungewollte Effekte bei der Versandkostenberechnung auftreten können.
 
 Die Versandkosten einer Variante ergeben sich also aus der Konfiguration der Versandprofile, die mit dem Artikel verknüpft sind. Um jedoch höhere Portokosten z.B. für große oder sperrige Güter zu berücksichtigen, können an der Variante ein Portoaufschlag 1 und/oder ein Portoaufschlag 2 definiert werden. Diese Aufschläge greifen nur, wenn im Versandprofil die Option *Artikel-Portoaufschlag* aktiviert ist.
 
 ==== Hersteller
 
-Herstellerdaten werden ebenfalls zentral in den plentymarkets Einstellungen verwaltet und mit Artikeln verknüpft. Im zentralen Herstellerdatensatz werden Name, Kontaktdaten und marktplatzspezifische IDs für den Hersteller gespeichert. Jeder Hersteller erhält eine fortlaufende ID. Bei dieser ID handelt es sich um einen eindeutigen Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann. In neuen Systemen sind keine Hersteller gespeichert, der erste vom Anwender erstellte Hersteller erhält die ID 1. 
+Herstellerdaten werden ebenfalls zentral in den plentymarkets Einstellungen verwaltet und mit Artikeln verknüpft. Im zentralen Herstellerdatensatz werden Name, Kontaktdaten und marktplatzspezifische IDs für den Hersteller gespeichert. Jeder Hersteller erhält eine fortlaufende ID. Bei dieser ID handelt es sich um einen eindeutigen Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann. In neuen Systemen sind keine Hersteller gespeichert, der erste vom Anwender erstellte Hersteller erhält die ID 1.
 
-Bestimmte Hersteller erheben für den Verkauf auf bestimmten Kanälen Provisionen. Um dieser Forderung Rechnung zu tragen, kann am Hersteller ein Provisionsbetrag in Prozent gespeichert werden. Provisionen werden mandant- und herkunftsspezifisch gespeichert und 
+Bestimmte Hersteller erheben für den Verkauf auf bestimmten Kanälen Provisionen. Um dieser Forderung Rechnung zu tragen, kann am Hersteller ein Provisionsbetrag in Prozent gespeichert werden. Provisionen werden mandant- und herkunftsspezifisch gespeichert und
 
 Herstellerprovisionen können nur manuell im Menü *Einstellungen » Artikel » Hersteller* hinterlegt werden. Änderungen an den Einstellungen für Herstellerprovisionen werden nicht protokolliert.
 
@@ -316,7 +319,7 @@ Zoll = Die an der Variante gespeicherten Zollkosten werden zum Quellpreis addier
 Betriebskosten = Die an der Variante gespeicherten Betriebskosten werden zum Quellpreis addiert. +
 MwSt. = Die an der Variante gespeicherte MwSt. wird zum Quellpreis addiert.
 
-Über Verknüpfungen werden Preisquelle und Zusatzkosten nun mit bestimmten Verkaufspreisen verknüpft. Durch Auswahl verschiedener Kombinationen aus Mandant (Shop), Herkunft und Operator plus Operand können so sehr spezifische Preiskalkulationen erstellt werden. Änderungen, die Anwender an Preiskalkulationen vornehmen, werden nicht protokolliert. Preiskalkulationen können außerdem nur manuell im plentymarkets Backend erstellt und bearbeitet werden. 
+Über Verknüpfungen werden Preisquelle und Zusatzkosten nun mit bestimmten Verkaufspreisen verknüpft. Durch Auswahl verschiedener Kombinationen aus Mandant (Shop), Herkunft und Operator plus Operand können so sehr spezifische Preiskalkulationen erstellt werden. Änderungen, die Anwender an Preiskalkulationen vornehmen, werden nicht protokolliert. Preiskalkulationen können außerdem nur manuell im plentymarkets Backend erstellt und bearbeitet werden.
 
 Die zentral verwalteten Preiskalkulationen werden auf Variantenebene mit Produkten verknüpft. Bei aktivierter Vererbung werden diese Preise wie andere Preise auch von der Hauptvariante an die anderen Varianten des Artikels vererbt.
 
@@ -369,4 +372,3 @@ _Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehme
  * Wie werden Preisänderungen dokumentiert?
  * Wie werden Artikeländerungen dokumentiert?
  * Wie und von welchen Mitarbeitern werden Artikel angelegt?
-
