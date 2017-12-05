@@ -31,7 +31,6 @@ Im Folgenden werden diese Datenebenen näher erläutert.
 
 ==== Was sind zentral verwaltete Einstellungen?
 
-
 Um die Flexibilität der Artikelverwaltung zu erhöhen, werden bestimmte Konfigurationen zentral in den plentymarkets Einstellungen verwaltet und mit Artikeln oder Varianten verknüpft. Die folgenden Daten werden zentral verwaltet:
 
  * Einheiten
@@ -41,8 +40,8 @@ Um die Flexibilität der Artikelverwaltung zu erhöhen, werden bestimmte Konfigu
  * Lieferanten
  * Attribute
  * Merkmale
-==== Was ist ein Artikel?
 
+==== Was ist ein Artikel?
 
 In der plentymarkets Artikelstruktur ist ein Artikel ein Datencontainer, der aus globalen Daten und mindestens einer Hauptvariante besteht. Die globalen Daten gelten für alle Varianten des Artikels und werden als Artikeldaten bezeichnet. Wir sprechen auch davon, Daten “auf der Artikelebene” zu speichern.
 
@@ -66,8 +65,8 @@ An der Variante gespeicherte Daten sind:
  * Bestand
  * Kategorien
  * Lieferanten
-==== Was ist eine Variante?
 
+==== Was ist eine Variante?
 
 Varianten sind verschiedene Versionen eines Artikels. Anders als Artikel, die als reiner Datencontainer dienen, handelt es sich bei Varianten um die tatsächlichen Produkte, die Kunden erwerben können. Artikel dienen dazu, Varianten mit gleichen Eigenschaften zu gruppieren und gemeinsam zu verwalten. In plentymarkets können Varianten entweder durch verschiedene Kombinationen aus Einheit und Inhalt erstellt werden oder durch den Einsatz von Attributen:
 
@@ -75,18 +74,17 @@ Varianten sind verschiedene Versionen eines Artikels. Anders als Artikel, die al
 |===
 |Variante|Beispiel
 
-|Kombination aus Einheit/Inhalt|Varianten unterscheiden sich nur durch die Menge und/oder Einheit
+|Kombination aus Einheit/Inhalt|Varianten unterscheiden sich nur durch die Menge und/oder Einheit +
+- Seife: 100ml, 250ml, 500ml
 |Kombination aus Attributwerten|Varianten unterscheiden sich durch andere Attributwerte, z.B.: +
 - Sofa: Farbe (rot, schwarz, braun) = 1 Attribut +
 - Quilt: Farbe (gelb, grün), Größe (Einzel, Doppel) = 2 Attribute +
 - Schuhe: Farbe (schwarz, braun), Größe (38, 39, 40), Breite (schmal, normal) = 3 Attribute
 |===
 
-
 Für Produktportfolios, die nicht über Produkte mit ähnlichen Eigenschaften verfügen, müssen keine Varianten erstellt werden. Da Artikel jedoch keine verkaufbaren Produkte sind, entspricht das Produkt einer Variante des Artikels, nicht dem Artikel selbst. Wenn mit mehr als einer Variante pro Artikel gearbeitet wird, kann die Hauptvariante entweder selbst ein verkaufbares Produkt sein oder ähnlich wie der Artikel rein virtuell bestehen, um die weiteren Varianten des Artikels anhand der Vererbung zu verwalten.
 
 ==== Was ist Vererbung?
-
 
 Die Hauptvariante eines Artikels unterscheidet sich von den anderen Varianten eines Artikels dadurch, dass ihre Eigenschaften an die anderen Varianten des Artikels weitergegeben, also vererbt werden können. Die Hauptvariante ist also eine Elternvariante, die bestimmte Daten an ihre Kinder vererbt. Diese Vererbungsfunktion ist standardmäßig aktiviert. Wenn eine neue Variante eines Artikels erstellt wird, erbt diese Variante also standardmäßig die vererbbaren Einstellungen der Hauptvariante, wenn keine davon abweichenden Daten gespeichert werden.
 
@@ -94,9 +92,7 @@ Es gibt zwei Arten von Vererbung in plentymarkets: einige Einstellungen werden e
 
 ===== Einzelvererbung
 
-
 Einzelvererbung bedeutet, dass eine Einstellung von der Hauptvariante an die Variante vererbt wird. Die folgenden Daten werden einzeln vererbt:
-
 
  * Verfügbarkeitseinstellungen
  ** Verfügbarkeit
@@ -124,10 +120,9 @@ Einzelvererbung bedeutet, dass eine Einstellung von der Hauptvariante an die Var
  ** Lademittel
  ** Packstücke
  ** Portoaufschlag 1
- ** €Portoaufschlag 2
+ ** Portoaufschlag 2
 
 ===== 1-zu-N-Vererbung
-
 
 1-zu-N-Vererbung bedeutet, dass die Variante entweder den vollständigen Datensatz für eine Einstellung vererbt oder keine dieser Einstellungen. Die folgenden Einstellungen werden in ihrer Gesamtheit vererbt:
 
@@ -151,13 +146,11 @@ Der Anwender hat die Möglichkeit, eine andere Variante des Artikels zur Hauptva
 
 ==== Artikel-ID
 
-
 Jeder Artikel erhält eine systemweit eindeutige Nummer. Anwender können beim Erstellen eines Artikels eine eigene Artikel-ID wählen. Gibt die Anwenderin bei der Artikelanlage keine Artikel-ID an, wird beim Speichern des neuen Artikels automatisch die nächste verfügbare ID vergeben. Bei der automatisch vergebenen ID handelt es sich um einen eindeutigen Auto-Increment-Wert. Systemseitig können Anwenderinnen Artikel-IDs jederzeit manuell ändern. plentymarkets rät jedoch davon ab, Artikel-IDs zu ändern, da aufgrund der Komplexität der Daten und Datenverknüpfungen Folgefehler entstehen können.
 
 Neue plentymarkets Systeme werden mit Beispielartikeln und -varianten ausgeliefert. Die Beispielartikel haben die IDs 102 bis 135.
 
 ==== Varianten-ID
-
 
 Auch jeder Variante wird bei der Erstellung eine systemweit eindeutige Nummer zugeordnet. Anders als bei der Artikel-ID handelt es sich bei der Varianten-ID um einen fortlaufenden, eindeutigen Auto-Increment-Wert, der von Anwendern nicht beeinflusst und nicht im Nachhinein geändert werden kann.
 
@@ -187,23 +180,30 @@ Artikelsets können in plentymarkets bereits erstellt, jedoch aktuell noch nicht
 
 ==== Protokollierung von Artikel- und Variantendaten
 
-
 Die Erstellung und Änderung von Artikel- und Variantendaten wird wie folgt protokolliert:
 
+[cols="1,2,2"]
 |===
-|*Daten*|*Erstellt am*|*Letzte Änderung*
+|*Daten* |*Erstellt am* |*Letzte Änderung*
 
-|Artikel| * Menü *Artikel » Artikel bearbeiten*| * Menü *Artikel » Artikel bearbeiten*
-|Varianten| * Menü *Artikel » Artikel bearbeiten*| * Menü *Artikel » Artikel bearbeiten*
+|Artikel
+a|* Menü *Artikel » Artikel bearbeiten* +
+* Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global*
+a|* Menü *Artikel » Artikel bearbeiten* +
+* Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global*
+
+|Varianten
+a|* Menü *Artikel » Artikel bearbeiten* +
+* Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: [Varianten-ID]*
+a|* Menü *Artikel » Artikel bearbeiten* +
+* Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: [Varianten-ID]*
 |===
-
 
 Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Systems plentymarkets protokolliert und kann vom Benutzer nicht im System selbst nachvollzogen werden. Auch sonstige Änderungen an Artikel- und Variantendaten werden nicht in plentymarkets protokolliert und müssen ggf. vom Anwender erfasst und dokumentiert werden. Zu diesem Zweck stehen die weiter unten beschriebenen Exporte zur Verfügung.
 
 === Preisverwaltung in plentymarkets
 
 ==== Was sind Verkaufspreise?
-
 
 In plentymarkets wird zwischen Verkaufspreisen und Preisen unterschieden. Die Verkaufspreise sind ähnlich wie Artikel Datencontainer, die es ermöglichen, die Eigenschaften, die auf einen Preis zutreffen sollen, zentral zu verwalten. Ein Verkaufspreis ist also eine Kombination aus Einstellungen und Bedingungen, unter denen eine Variante zu einem bestimmten Preis verkauft wird.
 
@@ -218,7 +218,6 @@ Im Gegensatz zu den Verkaufspreisen ist der Preis der tatsächliche monetäre Be
 Standardmäßig werden die Kombinationen aus Verkaufspreis und Preis von der Hauptvariante an die Varianten des Artikels vererbt. Das bedeutet, dass allen Varianten eines Artikels dieselben Kombinationen aus Verkaufspreis und Preis zugeordnet wird, wenn der Benutzer keine abweichenden Einstellungen an der Variante vornimmt. Sobald eine Abweichende Einstellung im Bereich Verkaufspreise der Variante vorgenommen wird, wird die Vererbung für alle Verkaufspreise aufgehoben. Wenn die Vererbung einer Variante wieder aktiviert wird, werden alle an der Variante gespeicherten Verkaufspreise und Preise durch die vererbten ersetzt.
 
 ==== Wie können Preisdaten geändert werden?
-
 
 Anwender haben verschiedene Möglichkeiten, die Preise von Varianten zu ändern:
 
@@ -235,7 +234,6 @@ Preisänderungen werden in plentymarkets nicht dokumentiert. Daher müssen Händ
 
 ==== Welche Rabatte auf Preise sind möglich?
 
-
 Die in plentymarkets gespeicherten Preise einer Variante können durch folgende weitere Einstellungen in anderen plentymarkets Modulen beeinflusst werden:
 
  * Rabatt auf Zahlungsart
@@ -247,7 +245,6 @@ Die in plentymarkets gespeicherten Preise einer Variante können durch folgende 
 === Verwaltung zentral verwalteter Einstellungen
 
 ==== Einheiten
-
 
 Einheiten dienen dazu, den Inhalt von Varianten zu definieren. Diese Einheiten werden zentral verwaltet. Diese Einheiten werden mit der Variante verknüpft und eine Menge dafür hinterlegt. Standardmäßig sind in neuen Systemen 52 Einheiten nach ISO-Code gespeichert. Anwender können jedoch im Menü *System » Artikel » Einheiten* auch eigene Einheiten erstellen.
 
@@ -270,7 +267,6 @@ Bis Version 6 von plentymarkets konnte für einen oder mehrere Attributwerte ein
 ==== Merkmale
 
 In plentymarkets werden passive Eigenschaften eines Artikels, die nicht dazu verwendet werden, Varianten eines Artikels zu bilden, als Merkmale bezeichnet. Über Merkmale lassen sich Features des Produkts abbilden, z.B. technische Details wie “Bluetooth” oder “WLAN”. Merkmale sind nicht an den Warenbestand gekoppelt sind.
-
 
 |===
 |*Merkmaltyp*|*Erläuterung*
@@ -306,7 +302,6 @@ Herstellerprovisionen können nur manuell im Menü *Einstellungen » Artikel » 
 
 ==== Preiskalkulationen
 
-
 Preiskalkulationen dienen dazu, die Preise von Varianten anhand bestimmter Kriterien automatisch zu aktualisieren. Preiskalkulationen werden automatisch auf die hinterlegten Preise einer Variante angerechnet.
 
 Preiskalkulationen werden im Menü *Einstellungen » Artikel » Preiskalkulation* gespeichert. Bei der Berechnung der Preiskalkulation können folgende an der Variante gespeicherte Daten herangezogen werden:
@@ -333,7 +328,6 @@ Für den manuellen Austausch von Artikel- und Variantendaten stehen Anwendern ve
 
 Die folgenden Datenformate sind im Sinne der GoBD von besonderer Bedeutung, da sie den Austausch von Preisdaten ermöglichen:
 
-
 |===
 |*Name des Datenformats*|*Verwendungszweck*
 
@@ -344,7 +338,6 @@ Die folgenden Datenformate sind im Sinne der GoBD von besonderer Bedeutung, da s
 |===
 
 === Backup
-
 
 Anwender können Backups der Artikel- und Variantendaten über das Menü *Einstellungen » Grundeinstellungen » Backup* exportieren und/oder eispielen. In dem Menü stehen Backups der letzten 7 Tage zum Download bereit. Die Backups werden als SQL-Dateien heruntergeladen.
 
@@ -363,7 +356,6 @@ Folgende für Artikel und Varianten relevante Daten können per Backup exportier
 *VariationSupplier* = Lieferantendaten, die bei den Varianten im Tab *Lieferant* hinterlegt sind
 
 Im https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/backup[plentymarkets Handbuch] wird beschrieben, wie Backups durchzuführen sind.
-
 
 === [_Unternehmensspezifische Informationen_]
 
