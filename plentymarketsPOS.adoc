@@ -777,8 +777,9 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 3+|*Sonstige Summen*
 
 |Zahlungsarten
-|Umsatz exklusive Stornierungen
-|Auflistung aller genutzten Zahlungsarten inkl. Summe, Anzahl der Aufträge pro Zahlungsart in Klammern
+|Umsatz exklusive Stornierungen und Retouren
+|Auflistung aller genutzten Zahlungsarten inkl. Summe, Anzahl der Aufträge pro Zahlungsart in Klammern +
+*_Hinweis:_* _Berechnungsformel am 11.12.2017 korrigiert: "und Retouren" eingefügt_
 
 |Retouren
 |Summe der Retouren
