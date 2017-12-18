@@ -782,8 +782,9 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 *_Hinweis:_* _Berechnungsformel am 11.12.2017 korrigiert: "und Retouren" eingefügt_
 
 |Retouren
-|Summe der Retouren
-|Summe der getätigten Retouren
+|Summe der retournierten Artikel
+|Anzahl der retournierten Artikel in Klammern +
+*_Hinweis:_* _Korrektur (18.12.2017): Tagesbeleg zeigt nicht die Anzahl der Retouren, sondern die Anzahl der retournierten Artikel_
 
 |Stornierungen
 |Summe der Stornierungen
