@@ -6,7 +6,6 @@ include::{includedir}/_header.adoc[]
 
 === Verwendungszweck
 
-
 Die plentymarkets App ist eine mobile App, die die folgenden Funktionen bereitstellt:
 
 * Anzeige von Kennzahlen des ERP-Systems plentymarkets
@@ -484,7 +483,9 @@ Folgende Daten werden für Gutschriften systemseitig gespeichert und auf dem Bel
 
 Einzahlungen in die Kasse, die nicht durch das Buchen von Aufträgen entstehen, werden als Einlagen über plentymarkets POS erfasst und im ERP-System plentymarkets gespeichert und archiviert. Systembedingt können Einlagen von allen Anwendern der Benutzerklasse “Admin” getätigt werden sowie von Anwendern mit der Benutzerklasse “Variabel”, für die das Recht “Einlagen und Entnahmen” aktiviert ist.
 
-Um eine Einzahlung über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Eine Einlage ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Einlagedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
+Um eine Einlage über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Bis Version 1.7.2 wurde der Grund in das Feld *Grund* eingegeben. Ab App-Version 1.7.3 ist die Eingabe des Grunds optional. In der Eingabemaske wählen Kassenbenutzer den Grund stattdessen aus einer Dropdown-Liste. In der Dropdown-Liste werden die im Menü *System » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gespeicherten Bezeichnungen angezeigt. Pro Bezeichnung kann in diesem Menü ein Buchungskonto gespeichert werden. Wenn dort keine Buchungskonten gespeichert werden oder nur ein Buchungskonto für die Bezeichnung *Einlage* gespeichert ist, werden in der Dropdown-Liste nur die Optionen *Einlage* und *Entnahme* angezeigt. In das Feld *Zusätzliche Informationen* können Kassenbenutzer optional weitere Informationen zu der Einlage eingeben.
+
+Eine Einlage ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Einlagedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
 
 Beim Erstellen eines Geschäftsvorfalls des Typs **Einlage** wird ein Beleg erstellt und im ERP-System plentymarkets im Menü *Aufträge » Dokumentenarchiv* sowie im Menü *Aufträge » POS » Kassenjournal* gespeichert. Einlagen werden außerdem im IDEA-Export berücksichtigt. Systembedingt können Einlagen nach der Erfassung nicht mehr gelöscht oder manipuliert werden.
 
@@ -505,6 +506,33 @@ Folgende Personen sind autorisiert, Einlagen durchzuführen:
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+Ab plentymarkets App Version 1.7.3 können Einlagen einem oder mehreren Erlöskonten zugeordnet werden. Die in der App angezeigten Erlöskonten werden im ERP-System plentymarkets im Menü
+*System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt. Das Konto mit der Bezeichnung *Einlage* kann nicht gelöscht werden.
+
+|===
+|Bezeichnung|Konto|Gespeichert am
+
+|Einlage (nicht löschbar)
+|
+|
+
+|
+|
+|
+
+|
+|
+|
+|===
+
+Systemseitig werden die Erlöskonten für Einlagen in der Tabelle *xxxx* und dort in folgenden Spalten gespeichert:
+
+* *xxx* -> xxxxxxx.
+* *xxx* -> xxxxxxx.
+* *xxx* -> xxxxxxx.
+* *xxx* -> xxxxxxx.
+* *xxx* -> xxxxxxx.
 
 ==== Buchungsablauf bei Entnahmen
 
@@ -731,11 +759,15 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 3+|*Barbestand*
 
 |Entnahmen
-|Summe der Entnahmen
+|Summe der Entnahmen +
+Ab App-Version 1.7.3: +
+Summe aller Entnahmen sowie Summe der Entnahmen pro Buchungskonto
 |Anzahl in Klammern
 
 |Einlagen
-|Summe der Einlagen
+|Summe der Einlagen +
+Ab App-Version 1.7.3: +
+Summe aller Einlagen sowie Summe der Einlagen pro Buchungskonto
 |Anzahl in Klammern
 
 |Anfangsbestand
@@ -781,7 +813,8 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 |Auflistung aller genutzten Zahlungsarten inkl. Summe, Anzahl der Aufträge pro Zahlungsart in Klammern +
 *_Hinweis:_* _Berechnungsformel am 11.12.2017 korrigiert: "und Retouren" eingefügt_
 
-|Retouren
+|Retouren +
+Ab App-Verson 1.7.3: Retournierte Artikel
 |Summe der retournierten Artikel
 |Anzahl der retournierten Artikel in Klammern +
 *_Hinweis:_* _Korrektur (18.12.2017): Tagesbeleg zeigt nicht die Anzahl der Retouren, sondern die Anzahl der retournierten Artikel_
@@ -823,34 +856,36 @@ Tagesberichte werden in plentymarkets POS erstellt und automatisch an das ERP-Sy
 Systemseitig werden die Daten der Tagesberichte in der Datentabelle *plenty_pos_z_report* und dort in den folgenden Spalten gespeichert:
 
  * *_posBaseId_* -> Die ID der Kasse, an der der Tagesabschluss erstellt wurde.
- * *_reportNumber_* -> Die Nummer des Tagesabschluss
+ * *_reportNumber_* -> Die Nummer des Tagesabschluss.
  * *_createdAt_* -> Das Datum und die Uhrzeit, zu der der Tagesabschluss erstellt wurde.
  * *_fromDate_* -> Das Datum und die Uhrzeit des ersten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
  * *_toDate_* -> Das Datum und die Uhrzeit des letzten Auftrages, der in dem Tagesabschluss berücksichtigt wurde.
  * *_userId_* -> Die ID des Benutzers, der den Tagesabschluss durchgeführt hat.
  * *_userRealName_* -> Der reale Name des Benutzers, der den Tagesabschluss durchgeführt hat.
- * *_aggreageteTurnover_* -> Der Gesamtbetrag, der zum Zeitpunkt des Z-Berichts vorhanden war.
- * *_turnOverVATDutyShare_* -> Der verwendete Steuersatz und Mehrwertsteueranteil des Gesamtbetrags
- * *_turnOverVATNetShare_* -> Der verwendete Steuersatz und der Nettobetrag des Gesamtbetrags
+ * *_aggregateTurnover_* -> Der Gesamtbetrag, der zum Zeitpunkt des Z-Berichts vorhanden war.
+ * *_turnOverVATDutyShare_* -> Der verwendete Steuersatz und Mehrwertsteueranteil des Gesamtbetrags.
+ * *_turnOverVATNetShare_* -> Der verwendete Steuersatz und der Nettobetrag des Gesamtbetrags.
  * *_methodOfPayments_* -> Die Beträge pro Zahlungsart.
  * *_methodOfPaymentsCount_* -> Zählung, wie oft mit welcher Zahlungsart gezahlt wurde.
  * *_returnItemsValue_* -> Der Gesamtwert der zurückgenommenen Artikel.
  * *_returnItemsCount_* -> Die Anzahl der zurückgenommenen Artikel.
  * *_rabateValue_* -> Der gesamte Rabattbetrag für diesen Zeitraum.
  * *_rabateCount_* -> Die Anzahl der gewährten Rabatte.
- * *_turnOverUser_* -> Der vom Benutzer eingetragene Betrag, welcher sich beim Tagesabschluss in der Kasse befand
+ * *_turnOverUser_* -> Der vom Benutzer eingetragene Betrag, der sich beim Tagesabschluss in der Kasse befand.
  * *_currency_* -> Die Währung
  * *_firstReceipt_* -> Die Nummer des ersten Belegs, der im Tagesabschluss berücksichtigt wurde.
- * *_astReceipt_* -> Die Nummer des letzten Beleges, der im Tagesabschluss berücksichtigt wurde.
+ * *_lastReceipt_* -> Die Nummer des letzten Beleges, der im Tagesabschluss berücksichtigt wurde.
  * *_startCashBalance_* -> Der Barbestand, der sich zu Beginn des Tages in der Kasse befand.
  * *_endCashBalance_* -> Der Barbestand, der sich zum Ende des Tages in der Kasse befand.
  * *_grandTotal_* -> Der Gesamtbetrag, der zu diesem Zeitpunkt mit der Kasse eingenommen wurde.
  * *_currentCashBalance_* -> Der Barbestand, der sich zum Zeitpunkt des Tagesabschlusses in der Kasse befinden sollte.
- * *_actualCashBalance_* ->  Der Barbestand, der sich tatsächlich zum Zeitpunkt des Tagesabschlusses in der Kasse befand.
+ * *_actualCashBalance_* -> Der Barbestand, der sich tatsächlich zum Zeitpunkt des Tagesabschlusses in der Kasse befand.
  * *_depositValue_* -> Der Gesamtbetrag, der als Einlage getätigt wurde.
  * *_depositCount_* -> Die Anzahl der Einlagen, die getätigt wurden.
+ * Ab App-Version 1.7.3: *_depositAccounts_* -> Die Buchungskonten, die den Einlagen zugeordet wurden.
  * *_withdrawlValue_* -> Der Gesamtbetrag, der aus der Kasse entnommen wurde.
  * *_withdrawlCount_* -> Die Anzahl der Entnahmen.
+ * Ab App-Version 1.7.3: *_withdrawalAccounts_* -> Die Buchungskonten, die den Entnahmen zugeordnet wurden.
  * *_cancellationOrderValue_* -> Der Gesamtwert der stornierten Artikel.
  * *_cancelationOrderCount_* -> Die Gesamtanzahl der stornierten Artikel.
 
@@ -864,7 +899,7 @@ Tagesberichte werden zu folgenden Zeiten/im folgenden Intervall erstellt:
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
-Tagesberichte werden [nur elektronisch/elektronisch erstellt und ausgedruckt].
+Tagesberichte werden [nur elektronisch erstellt/elektronisch erstellt und ausgedruckt].
 
 * Mit ausgedruckten Tagesberichten wird wie folgt verfahren:
 
@@ -882,7 +917,7 @@ Im Kassensturzbericht werden systembedingt die folgenden Informationen gespeiche
 * Soll-Kassenbestand
 * Stückelung und Menge (optional)
 * Ist-Kassenbestand
-* Differenz zwischen Soll- und Kassenbestand
+* Differenz zwischen Sollbestand und Kassenbestand
 
 Die Daten des Kassensturzberichts werden systemseitig in der Tabelle *plenty_pos_till_count* und dort in den folgenden Spalten gespeichert:
 
@@ -982,9 +1017,9 @@ Bei einem Ausfall des Kassensystems plentymarkets POS sind Mitarbeiter/-innen an
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 
-== Organisationsunterlagen
+=== Organisationsunterlagen
 
-=== Herstellerseitige Dokumentation
+==== Herstellerseitige Dokumentation
 
 Die Dokumentation des ERP-Systems plentymarkets ist online verfügbar. Dort ist der aktuelle Stand der Software dokumentiert. Ein Download der Dokumentation ist zurzeit nicht möglich. Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Dokumentation zur Verfügung.
 
@@ -995,7 +1030,7 @@ https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer[https://
 * Programmieranleitung plentymarkets POS +
 https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten]
 
-=== Grundprogrammierung
+==== Grundprogrammierung
 
 Die Grundprogrammierung der Kasse erfolgt im ERP-System plentymarkets. Für die Grundprogrammierung sind die folgenden Personen zuständig:
 
@@ -1033,7 +1068,6 @@ Die folgenden Grundeinstellungen wurden vorgenommen [_1 Tabelle pro Kasse erstel
 
 ==== Belegeinstellungen
 
-
 Die Belegeinstellungen einer Kasse werden im Menü *Einstellungen » Mandant (Shop) » Mandant öffnen » POS » Kasse öffnen » Tab: Beleg *vorgenommen. Die Einstellungen erfolgen pro Kasse.
 
 Die folgenden Belegeinstellungen wurden vorgenommen [_1 Tabelle pro Kasse erstellen_]:
@@ -1067,7 +1101,6 @@ Die Belegeinstellungen werden pro Kasse systemseitig in der Tabelle *plenty_pos_
 
 ==== Aktivierte Zahlungsarten
 
-
 Die folgenden Zahlungsarten sind für die Kasse aktiviert:
 
 |===
@@ -1080,7 +1113,6 @@ Die folgenden Zahlungsarten sind für die Kasse aktiviert:
 
 ==== Aktivierte Verkaufspreise
 
-
 Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 
 |===
@@ -1091,16 +1123,16 @@ Die folgenden Verkaufspreise sind für die Kasse aktiviert:
 ||||
 |===
 
-=== [_Unternehmensspezifische Informationen_]
+==== [_Unternehmensspezifische Informationen/plentymarkets POS_]
 
 _Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehmensspezifischen Verfahrensdokumentation eingehen sollten. Diese Liste erhebt keinen Anspruch auf Vollständigkeit._
 
-- Wo werden die aufbewahrungspflichtigen Kassenbelege (Z-Bons, Stornobelege, Registrierkassen streifen usw.) abgelegt bzw. aufbewahrt?
-- Bis zu welcher Höhe werden Geldscheine angenommen (ausländische Sorten bzw. Falschgeldprüfung etc.)?
-- Wie wird die Kasse übergeben?
-- Wer führt die Belegbearbeitung und Belegprüfung durch?
-- Wie wird die Belegbearbeitung und Belegprüfung durchgeführt?
-- Wie wird der Kassenbestand (Bargeld) verbracht?
-- Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?
-- Sind externe EC-Kartenterminals/Zahlungsdienstleister im Einsatz?
-- Werden Kartenterminals über Plugins an die Kasse angebunden? Wenn ja, welche Änderungen der hier beschriebenen Verfahren ergeben sich aus diesen Anbindungen?
+- _Wo werden die aufbewahrungspflichtigen Kassenbelege (Z-Bons, Stornobelege, Registrierkassen streifen usw.) abgelegt bzw. aufbewahrt?_
+- _Bis zu welcher Höhe werden Geldscheine angenommen (ausländische Sorten bzw. Falschgeldprüfung etc.)?_
+- _Wie wird die Kasse übergeben?_
+- _Wer führt die Belegbearbeitung und Belegprüfung durch?_
+- _Wie wird die Belegbearbeitung und Belegprüfung durchgeführt?_
+- _Wie wird der Kassenbestand (Bargeld) verbracht?_
+- _Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?_
+- _Sind externe EC-Kartenterminals/Zahlungsdienstleister im Einsatz?_
+- _Werden Kartenterminals über Plugins an die Kasse angebunden? Wenn ja, welche Änderungen der hier beschriebenen Verfahren ergeben sich aus diesen Anbindungen?_

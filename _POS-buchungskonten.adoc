@@ -1,0 +1,82 @@
+==== Erlöskonten für POS-Aufträge
+
+Wenn im plentymarkets Backend Erlöskonten gepflegt werden, werden Aufträge, die über plentymarkets POS generiert werden, anhand der folgenden Logik Erlöskonten zugewiesen:
+
+. Es wird geprüft, ob am Artikel der Variante ein Erlöskonto gespeichert ist. Wenn ein Erlöskonto am Artikel gespeichert, wird dieses Erlöskonto herangezogen.
+. Ist am Artikel kein Erlöskonto gespeichert, wird das Erlöskonto anhand der Steuersätze des Standorts der Kasse ermittelt. Dieser Steuersatz wird im Menü *System » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung » Tab: Konten » Tab: Erlöskonten » Land öffnen* gespeichert.
+. Sind am Standort-Datensatz keine Erlöskonten gespeichert, wird dem Auftrag kein Erlöskonto zugewiesen.
+
+==== Buchungskonten für weitere Kassenvorfälle
+
+Da Einlagen, Entnahmen und Kassenstürze keine Aufträge sind, greift die oben beschriebene Logik für die Zuordnung eines Erlöskontos bei diesen Kassenvorfällen nicht. Ab plentymarkets App Version 1.7.3 können daher systemseitig Buchungskonten gespeichert werden, die Einlagen, Entnahmen und Kassensturzdifferenzen zugewiesen werden. Buchungskonten für Kassenvorfälle werden im Menü
+*System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt.
+
+Systemseitig werden Buchungskonten für Kassenvorfälle in der Tabelle *plenty_accounting_posting_accounts* und dort in folgenden Spalten gespeichert:
+
+* *id* -> Die ID der Kombination aus Bezeichnung und Konto.
+* *locationId* -> xxxxxxx.
+* *type* -> xxxxxxx.
+* *position* -> Position der Kombination aus Bezeichnung und Konto
+* *subtype* -> xxxxxxx.
+* *name* -> Die Bezeichnung
+* *account* -> Das Buchungskonto
+* *deleted_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Konto gelöscht wurde. Dabei bleiben die gespeicherten Daten erhalten, die Kombination wird jedoch im ERP-System plentymarkets und in der plentymarkets App nicht mehr angezeigt. Sie kann also neuen Kassenvorfällen nicht mehr zugewiesen werden.
+* *created_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Konto erstellt wurde.
+* *updated_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Konto aktualisiert wurde.
+
+______________________________________________________
+
+===== Buchungskonten für Kassensturzdifferenzen
+
+Wenn beim Kassensturz der Ist-Kassenbestand vom Soll-Kassenbestand abweicht, muss die Differenz entweder ausgeglichen oder gebucht werden. Wenn die Differenz gebucht wird, wird der Ist-Kassenbestand als neuer Soll-Kassenbestand übernommen. Gleichzeitig wird abhängig vom Vorzeichen des Differenzbetrags entweder eine Einlage oder eine Entnahme gebucht. Gehen Sie wie unten beschrieben vor, um Buchungen, die sich aus Kassensturzdifferenzen ergeben, einem Buchungskonto zuzuweisen.
+
+[.instruction]
+Buchungskonten für Kassensturzdifferenzen speichern:
+
+. Öffnen Sie das Menü *System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung*. +
+→ Das Tab *Grundeinstellungen* wird geöffnet.
+. Wechseln Sie in das Tab *Konten*. +
+→ Das Tab *Buchungsschlüssel* wird geöffnet.
+. Wechseln Sie in das Tab *Kassenvorfälle*.
+. Geben Sie im Bereich *Entnahme* für die Bezeichnung *Kassensturz* in die Spalte *Konto* das Konto ein, auf das Entnahmen gebucht werden, die entstehen, wenn der Ist-Kassenbestand größer ist als der Soll-Kassenbestand.
+. Geben Sie im Bereich *Einlage* für die Bezeichnung *Kassensturz* in die Spalte *Konto* das Konto ein, auf das Einlagen gebucht werden, die entstehen, wenn der Soll-Kassenbestand größer ist als der Ist-Kassenbestand.
+. *Speichern* Sie die Einstellungen. +
+→ Die Buchungskonten werden gespeichert. +
+→ Einlagen oder Entnahmen, die durch Kassensturzdifferenzen entstehen, werden automatisch den gespeicherten Konten zugeordnet.
+
+
+
+
+==== Kontozuordnung im Unternehmen
+
+|===
+|Bezeichnung|Konto|Einsatzzeitraum (von/bis)
+
+2+|Entnahmen
+
+|Entnahme
+|
+|
+
+|Kassensturz
+|
+|
+
+|[_Weitere Entnahmen einfügen_]
+|
+|
+
+2+|Einlagen
+
+|Einlage
+|
+|
+
+|Kassensturz
+|
+|
+
+|[_Weitere Einlagen einfügen_]
+|
+|
+|===
