@@ -526,14 +526,6 @@ Ab plentymarkets App Version 1.7.3 können Einlagen einem oder mehreren Erlösko
 |
 |===
 
-Systemseitig werden die Erlöskonten für Einlagen in der Tabelle *xxxx* und dort in folgenden Spalten gespeichert:
-
-* *xxx* -> xxxxxxx.
-* *xxx* -> xxxxxxx.
-* *xxx* -> xxxxxxx.
-* *xxx* -> xxxxxxx.
-* *xxx* -> xxxxxxx.
-
 ==== Buchungsablauf bei Entnahmen
 
 Entnahmen aus der Kasse, die nicht durch das Buchen von Aufträgen entstehen, werden über plentymarkets POS erfasst und im ERP-System plentymarkets gespeichert und archiviert. Systembedingt können Entnahmen von allen Anwendern der Benutzerklasse “Admin” getätigt werden sowie von Anwendern mit der Benutzerklasse “Variabel”, für die das Recht “Einlagen und Entnahmen” aktiviert ist.
