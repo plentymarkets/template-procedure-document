@@ -312,7 +312,7 @@ Transportkosten = Die an der Variante gespeicherten Transportkosten werden zum Q
 Lagerkosten = Die an der Variante gespeicherten Lagerkosten werden zum Quellpreis addiert. +
 Zoll = Die an der Variante gespeicherten Zollkosten werden zum Quellpreis addiert. +
 Betriebskosten = Die an der Variante gespeicherten Betriebskosten werden zum Quellpreis addiert. +
-MwSt. = Die an der Variante gespeicherte MwSt. wird zum Quellpreis addiert.
+MwSt. = Die an der Variante gespeicherte MwSt. wird zum Quellpreis addiert. Die MwSt. der Variante wird wie im plentymarkets https://knowledge.plentymarkets.com/auftragsabwicklung/auftraege/buchhaltung#300[Handbuch] beschrieben berechnet.
 
 Über Verknüpfungen werden Preisquelle und Zusatzkosten nun mit bestimmten Verkaufspreisen verknüpft. Durch Auswahl verschiedener Kombinationen aus Mandant (Shop), Herkunft und Operator plus Operand können so sehr spezifische Preiskalkulationen erstellt werden. Änderungen, die Anwender an Preiskalkulationen vornehmen, werden nicht protokolliert. Preiskalkulationen können außerdem nur manuell im plentymarkets Backend erstellt und bearbeitet werden.
 

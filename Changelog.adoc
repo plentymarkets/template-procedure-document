@@ -1,0 +1,9 @@
+Beispiel Changelog
+[width="100%",cols="5,^5,^5,20",options="header"]
+|======================
+|Abschnitt |Name |Datum |Changelog
+|Stock     |Michael Horn |19.01.18 |Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+|Stock     |Michael Horn |11.01.18 |Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+|Stock     |Michael Horn |02.01.18 |Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+
+|======================
