@@ -495,7 +495,9 @@ Folgende Daten werden für Einlagen systemseitig gespeichert und auf dem Beleg d
 * Belegnummer
 * Art des Geschäftsvorfalls
 * Eingelegter Betrag
-* Grund für die Einlage
+* Grund für die Einlage +
+→ Ab Version 1.7.3 entspricht der Grund dem von der Kassenbenutzerin gewählten Kassenvorfall
+* Vom Kassenbenutzer manuell eingegebene Informationen zum Einlagegrund (ab 1.7.3 optional)
 * Ersteller/-in
 * ID der Kasse
 
@@ -530,7 +532,9 @@ Ab plentymarkets App Version 1.7.3 können Einlagen einem oder mehreren Erlösko
 
 Entnahmen aus der Kasse, die nicht durch das Buchen von Aufträgen entstehen, werden über plentymarkets POS erfasst und im ERP-System plentymarkets gespeichert und archiviert. Systembedingt können Entnahmen von allen Anwendern der Benutzerklasse “Admin” getätigt werden sowie von Anwendern mit der Benutzerklasse “Variabel”, für die das Recht “Einlagen und Entnahmen” aktiviert ist.
 
-Um eine Entnahme über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Eine Entnahme ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Entnahmedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
+Um eine Entnahme über plentymarkets POS zu tätigen, muss bei der Erfassung ein Grund für die Einlage angegeben werden. Ab Version 1.7.3 wählt die Kassenbenutzerin als Grund einen Kassenvorfall aus einer Dropdown-Liste. Die Vorfälle werden im Menü *System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt. Optional kann die Kassenbenutzerin weitere Informationen zur Entnahme eingeben.
+
+Eine Entnahme ist nur möglich, wenn plentymarkets POS im Online-Modus läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Entnahmedaten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
 
 Beim Erstellen eines Geschäftsvorfalls des Typs Entnahme wird ein Beleg erstellt und im ERP-System plentymarkets im Menü *Aufträge » POS » Kassenjournal* gespeichert. Einlagen werden außerdem im IDEA-Export berücksichtigt. Systembedingt können Entnahmen nach der Erfassung nicht mehr gelöscht oder manipuliert werden.
 
@@ -540,7 +544,9 @@ Folgende Daten werden für Entnahmen systemseitig gespeichert und auf dem Beleg 
 * Belegnummer
 * Art des Geschäftsvorfalls
 * Entnommener Betrag
-* Grund für die Entnahme
+* Grund für die Entnahme +
+→ Ab Version 1.7.3 entspricht der Grund dem von der Kassenbenutzerin gewählten Kassenvorfall
+* Vom Kassenbenutzer manuell eingegebene Informationen zum Entnahmegrund (ab 1.7.3 optional)
 * Ersteller/-in
 * ID der Kasse
 
@@ -551,6 +557,79 @@ Folgende Personen sind autorisiert, Entnahmen durchzuführen:
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
 * [_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
+
+==== Erlöskonten für POS-Aufträge
+
+Wenn im plentymarkets Backend Erlöskonten gepflegt werden, werden Aufträge, die über plentymarkets POS generiert werden, Erlöskonten basierend der folgenden Logik zugewiesen:
+
+. Es wird geprüft, ob am Artikel der Variante ein Erlöskonto gespeichert ist. Wenn ein Erlöskonto am Artikel gespeichert ist, wird dieses Erlöskonto herangezogen. Erlöskonten werden im Menü
+*Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global » Option: Erlöskonto* gespeichert.
+. Ist kein Erlöskonto am Artikel gespeichert, wird das Erlöskonto anhand der Steuersätze des Standorts der Kasse ermittelt. Dieser Steuersatz wird im Menü *System » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung » Tab: Konten » Tab: Erlöskonten » Land öffnen* gespeichert.
+. Sind für den Standort der Kasse keine Steuersätze gespeichert, wird das Erlöskonto anhand der Steuersätze des Standard-Standorts des Mandanten ermittelt. Dieser Steuersatz wird im Menü *System » Mandant » Mandant öffnen » Standorte » Standardstandort öffnen » Buchhaltung » Tab: Konten » Tab: Erlöskonten » Land öffnen* gespeichert.
+. Sind auch am Standardstandort keine Erlöskonten gespeichert, wird dem Auftrag kein Erlöskonto zugewiesen.
+
+==== Buchungskonten für weitere Kassenvorfälle
+
+Da Einlagen, Entnahmen und Kassenstürze keine Aufträge sind, greift die oben beschriebene Logik für die Zuordnung eines Buchungskontos bei diesen Kassenvorfällen nicht. Ab plentymarkets App Version 1.7.3 können daher systemseitig Buchungskonten gespeichert werden, die Einlagen, Entnahmen und Kassensturzdifferenzen zugewiesen werden. Die Buchungskonten für Kassenvorfälle werden im Menü *System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt. Das Verwalten der Buchungskonten wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#xxx[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#910]
+
+Systemseitig werden Buchungskonten für Kassenvorfälle in der Tabelle *plenty_accounting_posting_accounts* und dort in folgenden Spalten gespeichert:
+
+* *id* -> Die ID der Kombination aus Bezeichnung und Buchungskonto
+* *locationId* -> Die ID des Standorts
+* *type* -> xxxxxxx
+* *position* -> Die Position der Kombination aus Bezeichnung und Buchungskonto
+* *subtype* -> xxxxxxx
+* *name* -> Die Bezeichnung
+* *account* -> Das Buchungskonto
+* *deleted_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Buchungskonto gelöscht wurde. Beim Löschen bleiben die gespeicherten Daten erhalten, die Kombination wird jedoch im ERP-System plentymarkets und in der plentymarkets App nicht mehr angezeigt. Sie kann also neuen Kassenvorfällen nicht mehr zugewiesen werden.
+* *created_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Buchungskonto erstellt wurde
+* *updated_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Buchungskonto aktualisiert wurde
+
+==== Buchungskonten für Kassenvorfälle im Unternehmen
+
+Im plentymarkets ERP-System des Unternehmens sind die folgenden Buchungskonten hinterlegt.
+
+.Buchungskonten für Entnahmen
+|===
+|Bezeichnung|Buchungskonto|Einsatzzeitraum (von/bis)
+
+|Entnahme
+|
+|
+
+|Kassensturz
+|
+|
+
+|[_Weitere Entnahmevorfälle einfügen_]
+|
+|
+
+|[_Weitere Entnahmevorfälle einfügen_]
+|
+|
+|===
+
+.Buchungskonten für Einlagen
+|===
+|Bezeichnung|Buchungskonto|Einsatzzeitraum (von/bis)
+
+|Einlage
+|
+|
+
+|Kassensturz
+|
+|
+
+|[_Weitere Einlagevorfälle einfügen_]
+|
+|
+
+|[_Weitere Einlagevorfälle einfügen_]
+|
+|
+|===
 
 === Elektronische Aufbewahrung von POS Geschäftsvorfällen im Kassenjournal
 
@@ -622,7 +701,8 @@ Bei Entnahmen und Einlagen ist das Feld leer.
 
 |*Buchungstext*
 |---
-|Der bei Entnahmen und Einlagen eingegebene Grund. Bei allen anderen Geschäftsvorfällen ist das Feld leer.
+|Der bei Entnahmen und Einlagen eingegebene Grund.
+Ab Version 1.7.3 ist dies der gewählte Kassenvorfall sowie vom Kassenbenutzer optional eigegebene weitere Angaben zum Vorfall. Bei allen anderen Geschäftsvorfällen ist das Feld leer.
 |====
 
 Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann die Anzahl der angezeigten Vorfälle durch das Setzen von Filtern reduziert werden. Folgende Filtermöglichkeiten sind verfügbar:
@@ -950,7 +1030,7 @@ Das Ergebnis des Kassensturzes wird automatisch an das ERP-System plentymarkets 
 Wenn nach der Zählung des Barbestands der Ist-Kassenbestand vom Soll-Kassenbestand abweicht, sind softwareseitig in plentymarkets POS zwei Vorgehensweisen möglich:
 
 * Die Differenz wird ausgeglichen. Bei negativem Ist-Kassenbestand wird also der Differenzbetrag in die Kasse eingezahlt und manuell eine Einlage gebucht. Bei positivem Ist-Kassenbestand wird der Differenzbetrag aus der Kasse entnommen und manuell eine Entnahme gebucht.
-* Die Differenz wird gebucht, d.h., der Ist-Kassenbestand wird als neuer Soll-Kassenbestand übernommen. Im Hintergrund wird für diesen Vorgang entweder automatisch eine Einlage oder eine Entnahme mit dem Buchungstext “Differenz aus Kassensturz” gebucht. Dieser Vorgang wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#_differenz_buchen[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#_differenz_buchen]
+* Die Differenz wird gebucht, d.h., der Ist-Kassenbestand wird als neuer Soll-Kassenbestand übernommen. Im Hintergrund wird für diesen Vorgang entweder automatisch eine Einlage oder eine Entnahme mit dem Buchungstext “Differenz aus Kassensturz” gebucht. Ab Version 1.7.3 wird entweder der Kassenvorfall *Einlage* oder der Kassenvorfall *Entnahme* gespeichert. Wenn Buchungskonten gepflegt weden, werden die für diese Vorfälle hinterlegten Buchungskonten ebenfalls aufgeführt. Dieser Vorgang wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#_differenz_buchen[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#_differenz_buchen]
 
 Mitarbeiter/-innen sind angewiesen, bei Kassensturzdifferenzen wie folgt zu handeln:
 
