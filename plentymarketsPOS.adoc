@@ -570,15 +570,15 @@ Wenn im plentymarkets Backend Erlöskonten gepflegt werden, werden Aufträge, di
 
 ==== Buchungskonten für weitere Kassenvorfälle
 
-Da Einlagen, Entnahmen und Kassenstürze keine Aufträge sind, greift die oben beschriebene Logik für die Zuordnung eines Buchungskontos bei diesen Kassenvorfällen nicht. Ab plentymarkets App Version 1.7.3 können daher systemseitig Buchungskonten gespeichert werden, die Einlagen, Entnahmen und Kassensturzdifferenzen zugewiesen werden. Die Buchungskonten für Kassenvorfälle werden im Menü *System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt. Das Verwalten der Buchungskonten wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#xxx[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#910]
+Da Einlagen, Entnahmen und Kassenstürze keine Aufträge sind, greift die oben beschriebene Logik für die Zuordnung eines Buchungskontos bei diesen Kassenvorfällen nicht. Ab plentymarkets App Version 1.7.3 können daher systemseitig Buchungskonten gespeichert werden, die Einlagen, Entnahmen und Kassensturzdifferenzen zugewiesen werden. Die Buchungskonten für Kassenvorfälle werden im Menü *System » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt. Das Verwalten der Buchungskonten wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#910[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#910]
 
 Systemseitig werden Buchungskonten für Kassenvorfälle in der Tabelle *plenty_accounting_posting_accounts* und dort in folgenden Spalten gespeichert:
 
 * *id* -> Die ID der Kombination aus Bezeichnung und Buchungskonto
 * *locationId* -> Die ID des Standorts
-* *type* -> xxxxxxx
+* *type* -> Einzahlung oder Auszahlung
 * *position* -> Die Position der Kombination aus Bezeichnung und Buchungskonto
-* *subtype* -> xxxxxxx
+* *subtype* -> Standard (Standard), tillcount (Kassensturz) oder custom (zusätzliche Buchungskonten)
 * *name* -> Die Bezeichnung
 * *account* -> Das Buchungskonto
 * *deleted_at* -> Zeitpunkt (Datum/Uhrzeit), zu dem die Kombination aus Bezeichnung und Buchungskonto gelöscht wurde. Beim Löschen bleiben die gespeicherten Daten erhalten, die Kombination wird jedoch im ERP-System plentymarkets und in der plentymarkets App nicht mehr angezeigt. Sie kann also neuen Kassenvorfällen nicht mehr zugewiesen werden.
