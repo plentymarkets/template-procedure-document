@@ -4,11 +4,13 @@ include::document-purpose.adoc[]
 include::definition-plentymarkets.adoc[]
 include::tariff-structure-and-hosting.adoc[]
 include::general-description-plentymarkets-and-user-rights.adoc[]
+include::item.adoc[]
 include::order.adoc[]
-include::versandabwicklung.adoc[]
-include::online-store-flow-chart.adoc[]
 include::plentymarketsPOS.adoc[]
+include::online-store-flow-chart.adoc[]
 include::CRM.adoc[]
+include::multi-channel.adoc[]
+include::versandabwicklung.adoc[]
 include::E-Mail-Versand.adoc[]
 include::Newsletter.adoc[]
 include::Datasecurity.adoc[]
@@ -22,6 +24,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 [cols="1,2,6"]
 |===
 |Version  |Datum      |Changelog
+|V6       |21.02.2018 |Der Abschnitte Artikel und Multi-Channel wurde hinzugefügt und im Abschnitt POS wurden der Abschnitt Buchungskonten für Kassenvorfälle ergänzt.
 |V5       |24.11.2017 |In der Beschreibung der Auftragsabwicklung wurden Informationen zu den Auftragstypen Retoure, Gewährleistung etc. ergänzt. Außerdem wurden die Benutzerrechte detaillierter beschrieben sowie alle möglichen Einstellungen tabellarisch ergänzt. Die Tabellen finden sich im Anhang. Der Abschnitt Versandabwicklung wurde hinzugefügt.
 |V4       |07.11.2017 |Die Abschnitte POS und Webshop wurden hinzugefügt
 |V3       |26.09.2017 |Die Abschnitte CRM, E-Mail-Versand und Newsletter wurden hinzugefügt
