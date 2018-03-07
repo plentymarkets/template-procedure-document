@@ -1,3 +1,4 @@
+
 === Fachliche und technische Beschreibung des Moduls Artikel
 
 Die Artikelverwaltung von plentymarkets erlaubt die zentrale Verwaltung, Speicherung und Bearbeitung von Produktdaten. Produktdaten, die im System gespeichert sind, können aus verschiedenen Quellen stammen:

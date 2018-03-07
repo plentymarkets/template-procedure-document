@@ -1,3 +1,6 @@
+
+=== Fachliche und technische Beschreiung des Moduls Multi-Channel
+
 ==== Verwendungszweck
 
 Das Softwaremodul Multi-Channel dient insbesondere dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgenden Funktionen stellt das Modul bereit: +
