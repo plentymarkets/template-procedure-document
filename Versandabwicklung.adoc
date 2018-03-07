@@ -11,7 +11,6 @@ Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstle
 
 Bevor der Anwender die Schnittstelle zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren.
 
-[#200]
 ==== Lieferländer
 
 In einem neu angelegten System sind 256 Lieferländer und deren IDs im System vorhanden.  Bei der ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert, der durch das System vergeben wird. Die IDs können nicht geändert werden und die Lieferländer können nicht gelöscht werden. Dem Anwender ist es nicht möglich, eigene Lieferländer im System hinzuzufügen. Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden; der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und deren IDs sind in <<versandabwicklung#1900, *Anhang a)*>> aufgelistet.
@@ -25,14 +24,12 @@ Bild 1 zeigt einen Ausschnitt der ersten Übersichtsseite der Lieferländer in e
 .Ausschnitt der Übersichtsseite der Lieferländer
 image::assets/Uebersicht_Lieferlaender.png[]
 
-[#300]
 ==== Regionen
 
 Unter einer Region werden Lieferländer zusammengefasst, für die gemeinsame Versandkosten gelten. Im Vorfeld sollte sich der Anwender überlegen, in wie viele und in welche Regionen sich die Lieferländer sinnvoll zusammenfassen lassen. Der Grund dafür ist, dass die Versandkosten in den Versandprofilen pro Region und nicht für jedes Lieferland gespeichert werden. Ein Lieferland kann immer nur einer Region zugeordnet werden und ist für weitere Regionen nicht mehr verfügbar.
 
 In einem neu angelegten System ist die Region *Deutschland* mit ID 101 vorhanden. Es handelt sich bei der ID um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Ausgehend von ID 101 wird hochgezählt, wenn eine neue Region erstellt wird. Der Region *Deutschland* ist bereits das Lieferland Deutschland zugeordnet. Der Anwender kann den Namen ändern und dieser Region weitere Lieferländer hinzufügen. Der Anwender kann eine Region nur löschen, wenn diese in den Versandprofilen nicht mehr verwendet wird. Die Regionen, die in diesem Bereich des Systems erstellt werden, stehen dann in der Portotabelle des Versandprofils zur Verfügung.
 
-[#400]
 ==== Versanddienstleister
 
 In einem neu angelegten System sind 23 Versanddienstleister mit ID sowie der Eintrag *undefined* mit ID 99 bereits vorhanden. Es handelt sich bei der ID um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Ausgehend von ID 23 wird hochgezählt, wenn ein neuer Versanddienstleister, z.B. über ein Plugin, hinzugefügt wird. Der systeminterne Name, der Name, wie er im Warenkorb und auf der Rechnung erscheinen soll, sowie die Tracking-URL sind bereits gespeichert. Der Anwender kann die Namen sowie die Tracking-URL ändern. Außerdem kann der Anwender den Versanddienstleister löschen.
@@ -133,14 +130,12 @@ Der Anwender legt fest, welche Versandmöglichkeiten es für einen Artikel gibt,
 
 Weitere Informationen zu den Einstellungen im Versandprofil sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/auftragsabwicklung/fulfillment/versand-vorbereiten#1000[*Versand vorbereiten*, window="_blank"] zu finden.
 
-[#600]
 ===== Artikel-Portoaufschlag
 
 Portoaufschläge bieten sich für größere oder sperrige Artikel, deren Versand teuer ist, an. Der Anwender kann bis zu zwei Portoaufschläge direkt am Artikel eingeben. Aktiviert der Anwender dann die Einstellung für den Artikel-Portoaufschlag im Versandprofil wird dieser für die Versandkosten in Betracht gezogen.
 
 Für den ersten Portoaufschlag wird der am Artikel eingegebene Betrag zu den Versandkosten addiert. Für den zweiten Portoaufschlag kann der Anwender einen Betrag eingegeben, der immer ab dem zweiten Artikel wirksam wird.
 
-[#700]
 ===== Inselzuschlag
 
 Viele Versanddienstleister verlangen für den Versand in Inselregionen höhere Gebühren. Diese Kosten kann der Anwender auf seine Kunde übertragen und im Versandprofil einen Inselzuschlag für den Versand seiner Ware berechnen.
@@ -160,12 +155,10 @@ Tabelle 2 listet auf, für welche Postleitzahlenbereiche der aktivierbaren Liefe
 
 Die Postleitzahlen der Inselregionen sind systemseitig gespeichert. Der Anwender kann die  Postleitzahlenbereiche nicht ändern oder erweitern. Bei Aktivierung des Inselzuschlages erfolgt eine Berechnung nur, wenn die Postleitzahl im System als Inselregion erkannt wird.
 
-[#800]
 ===== Portotabelle
 
 In der Portotabelle speichert der Anwender die Versandkosten für das Versandprofil. Die Portoeinstellungen müssen für jede Region, die im Versandprofil verwendet werden soll, gespeichert werden. In der Portotabelle kann der Anwender auch die versanddienstleisterspezifischen Services einstellen.
 
-[#900]
 ===== Berechnungstypen
 
 Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. Tabelle 3 listet die im System verfügbaren Berechnungstypen auf.
@@ -187,17 +180,14 @@ Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anw
 
 *Beschränkungen*: Beschränkungen ermöglichen die Festlegung von Minimum- und Maximumwerten pro Versandprofil. Wenn ein Auftrag die eingegebenen Werte unter- oder überschreitet, kann das Versandprofil nicht für den Auftrag verwendet werden. Als Ausweichmöglichkeit für solche Fälle kann der Anwender ein weiteres Versandprofil erstellen, das einen an die Beschränkungen anschließenden Wertebereich bereitstellt.
 
-[#1000]
 ==== Versandkosten für Preisportale
 
 Der Anwender hat die Möglichkeit die Standardversandkosten einzustellen, die dann in Exporten zu Preisportalen ausgegeben werden können.
 
-[#1100]
 ==== Integrierte Schnittstellen
 
 In den folgenden Unterkapiteln wird aufgelistet, welche fest integrierten Schnittstellen zu Versanddienstleistern und Fulfillment-Dienstleistern bestehen.
 
-[#1200]
 ===== Integrierte Versanddienstleister
 
 Tabelle 4 listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
@@ -232,7 +222,6 @@ Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Rege
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/auftragsabwicklung/fulfillment/versand-vorbereiten#2500[*Versanddienstleister im Überblick*, window="_blank"] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
 
-[#1300]
 === Integrierte Fulfillment-Dienstleister
 
 Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnittstelle in plentymarkets:
@@ -246,7 +235,6 @@ Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Rege
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/auftragsabwicklung/fulfillment/versand-vorbereiten#4700[*Fulfillment-Dienstleister im Überblick*, window="_blank"] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
 
-[#1400]
 ==== Datenübertragung
 
 Das System überträgt ausschließlich die Daten, die in den integrierten Schnittstellen vorhanden sind, an den Versanddienstleister bzw. den Fulfillment-Dienstleister. Die Daten werden erst bei der Versandanmeldung übertragen. Das System erhält im Erfolgsfall ein Versandlabel und eine Sendungsnummer von der Schnittstelle zurück oder die nötigen Informationen werden im System gespeichert, damit der Anwender selbst ein Versandlabel erzeugen kann. Im Fehlerfall wird ein Fehlercode ausgegeben.
@@ -268,17 +256,14 @@ Die Adressdaten, sofern im Kundendatensatz gespeichert, beinhalten:
 
 Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<versandabwicklung#1700, *Zollinhaltserklärung für Sendungen ins Ausland*>>.
 
-[#1500]
 ==== Versandmöglichkeiten über Marktplätze
 
 Welche Versandmöglichkeiten an Marktplätze übergeben werden, ist von Marktplatz zu Marktplatz unterschiedlich. Bei Amazon beispielsweise wird lediglich die Lieferzeit in Tagen übermittelt. Das Versandprofil wird erst ermittelt, wenn der Auftrag im System eingeht. Bei eBay z.B. verhält sich dies anders: Hier werden eigene Versandprofile in den eBay-Rahmenbedingungen angelegt und diese enthalten die Versandservices von eBay, welche der Anwender im System wiederum mit den dort gespeicherten Versandprofilen verknüpfen muss.
 
-[#1600]
 ==== Versandpakete
 
 Der Anwender kann für seine Versandprozesse Versandpakete erstellen. Es ist möglich, die Größe selbst zu definieren oder vom System anhand der eingegebenen Artikeldaten berechnen zu lassen.
 
-[#1700]
 ==== Zollinhaltserklärung für Sendungen ins Ausland
 
 Sendungen ins Ausland müssen eine Zollinhaltserklärung, ein sogenanntes CN23-Dokument, und eine Paketkarte, ein sogenanntes CP 71-Dokument, beigelegt haben. Diese Dokumente sind wichtig für die Zollanmeldung, damit das Zollamt den Inhalt der Sendung kennt. Die folgende Informationen müssen auf der Zollinhaltserklärung vorhanden sein:
@@ -296,10 +281,8 @@ Zollinhaltserklärungen und Paketkarten für DHL-Sendungen können im System ers
 
 Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<versandabwicklung#2000, *Anhang b)*>> zu finden.
 
-[#1800]
 ==== Anhänge
 
-[#1900]
 ===== Anhang a)
 
 Tabelle 5 listet die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs auf:
@@ -570,7 +553,6 @@ Tabelle 5 listet die im System voreingestellten und für den Anwender nicht änd
 |261 |Sankt Bartholomäus
 |===
 
-[#2000]
 ===== Anhang b)
 
 Beispiel einer Paketkarte (CP 71) und einer Zollinhaltserklärung (CN 23) für DHL mit dem Lieferland Schweiz:

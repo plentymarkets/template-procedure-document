@@ -12,7 +12,6 @@ Das CRM-Modul von plentymarkets erlaubt die zentrale Verwaltung, Speicherung und
 
 Der Begriff _Kunden_ im plentymarkets CRM-Modul beinhaltet nicht nur natürliche Personen, sondern auch Firmen. Daher wird als Oberbegriff zukünftig sowohl auf der Benutzeroberfläche als auch in den Dokumentationen von plentymarkets der Begriff _Kontakt_ verwendet werden. Dies ist aktuell in der Umsetzungsphase. In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
 
-[#200]
 === Kunden-IDs
 
 Wenn ein neuer Kundendatensatz erstellt wird, erhält dieser eine ID. Die Kunden-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
@@ -69,7 +68,6 @@ Für die anderen drei Beispielkundendatensätze (IDs 101, 102 und 103) sind bere
 * Datum und Uhrzeit des letzten Logins
 * Datum und Uhrzeit des letzten Auftrags
 
-[#300]
 === Regulärer Zugang und Gastzugang
 
 In plentymarkets gibt es zwei Zugangsarten für Kundendatensätze. Diese Zugangsarten sind regulärer Zugang und Gastzugang.
@@ -94,7 +92,6 @@ Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der A
 
 Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird normalerweise ein Auftrag zugeordnet. Dem Anwender ist so nicht unbedingt bekannt, wie viele Aufträge ein bestimmter Gastkunde tatsächlich im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: beispielsweise wenn sie nach Abschluss einer Bestellung im Webshop eine weitere Bestellung aufgeben oder sich über den Link zur Kaufabwicklung wieder einloggen. Ebenfalls denkbar sind vom Anwender manuell angelegte Aufträge, die der Kunde telefonisch direkt beim Anwender erteilt, jedoch kein Kundenkonto (regulärer Zugang) anlegen möchte.
 
-[#400]
 === Kundentypen
 
 Kundentypen dienen der Einordnung und Unterscheidung von Kunden. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. Die folgenden Kundentypen sind standardmäßig vorhanden:
@@ -137,7 +134,6 @@ Der Kundentyp *Partner* dient zur Markierung von Kontakten, die z.B. Wiederverk�
 
 Es ist möglich, weitere eigene Kundentypen zu definieren und der Liste der vorhandenen Kundentypen hinzuzufügen. Ausgehend von ID 6 wird hochgezählt, wenn ein neuer Kundentyp erstellt wird. Für die Kundentypen, die der Anwender hinzugefügt, stehen dieselben Datenfelder zur Verfügung wie für die Kundentypen *Kunde*, *Interessent*, *Hersteller* und *Partner*.
 
-[#500]
 === Kundenklassen
 
 Kundenklassen ermöglichen dem Anwender, seinen Kundenstamm nach unterschiedlichen Kriterien zu unterteilen. Beispielsweise können für Kundenklassen Mindestbestellmengen definiert, unterschiedliche Rabatte zugeordnet, Zahlungsarten festgelegt und Mengenrabatte gewährt werden. Diese Einstellungen sind dann nur für die Kundenklasse wirksam. Der Anwender kann die Kundenklasse dem Kunden im Kundendatensatz zuordnen. Die Verwendung von Kundenklassen ist optional.
@@ -146,7 +142,6 @@ Ein möglicher Anwendungsfall für eine Kundenklasse wäre die Unterteilung nach
 
 In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden. Die vom Anwender erstellten Kundenklassen erhalten durch das System eine fortlaufende ID beginnend mit ID 1. Bei dieser ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert. Der Anwender kann beliebig viele Kundenklassen erstellen. Wenn ein neuer Kundendatensatz erstellt wird, ist automatisch die Kundenklasse mit der niedrigsten ID vorausgewählt. Der Anwender kann die Kundenklasse jedoch nachträglich anpassen.
 
-[#600]
 === Rabattsystem für Kundenklassen
 
 Wie im Kapitel <<CRM#1100, *Kundenklassen*>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
@@ -158,12 +153,10 @@ Wie im Kapitel <<CRM#1100, *Kundenklassen*>> beschrieben, hat der Anwender die M
 
 In den folgenden Unterkapiteln werden die Rabattmöglichkeiten erläutert.
 
-[#700]
 ==== Kundenklassenrabatt
 
 In einer Kundenklasse legt der Anwender einen Rabatt fest, der dann nur für die Kundenklasse wirksam wird. Darüber hinaus bestehen hier weitere Konfigurationsmöglichkeiten, z.B. die Aktivierung von Mengenrabatten der Verkaufspreise. Der Anwender sollte dabei beachten, dass sich je nach Konfiguration Rabatte addieren können.
 
-[#800]
 ==== Rabattstaffel auf Nettowarenwert
 
 Möchte der Anwender seinen Kunden Rabatte gewähren, wenn diese häufig und umsatzsteigernd im Webshop einkaufen, ist es möglich, Rabattwerte auf den Nettowarenwert des Auftrages festzulegen.
@@ -172,18 +165,15 @@ Die folgende Beschreibung bezieht sich auf den Verkauf über den Webshop. Für V
 
 Der Rabatt wird berechnet und im Webshop angezeigt, wenn der Kunde seinen Einkauf beendet und zur Kasse geht. Im Warenkorb wird zunächst nur der gesamte Rabattbetrag ausgewiesen. Während des Bestellvorgangs wird zusätzlich zum Gesamtrabatt der Rabatt auf die einzelnen Artikelpositionen berechnet und angezeigt.
 
-[#900]
 ==== Rabatt auf Zahlungsart
 
 Der Rabatt auf eine Zahlungsart ist eine Art Skontoumsetzung in plentymarkets. Der Anwender gewährt Kunden damit einen Rabatt auf die Verwendung einer oder mehrerer Zahlungsarten.
 
-[#1000]
 ==== Verkaufspreis als Rabatt
 
 Der Anwender kann einen mengenbezogenen Rabatt als eigenen Preis anlegen. Der Anwender legt für den Verkaufspreis fest, ab welcher Artikelmenge der rabattierte Preis gelten soll. Eine Staffelung wird durch das Anlegen entsprechender Verkaufspreise mit den gewünschten Mindestmengen realisiert. +
 Ein Kunde erhält den Rabatt, wenn er a) zu der betreffenden Kundenklasse gehört und b) mindestens die beim Verkaufspreis hinterlegte Menge bestellt.
 
-[#1100]
 === Eigenschaften
 
 Eigenschaften dienen einer näheren Charakterisierung von Kunden. In einem neu angelegten System ist keine Eigenschaft standardmäßig vorhanden, d.h. die Verwendung ist optional. Die vom Anwender erstellten Eigenschaften erhalten eine fortlaufende ID beginnend mit ID 1. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. Der Anwender kann beliebig viele Eigenschaften erstellen.
@@ -226,7 +216,6 @@ Die folgende Tabelle listet die in plentymarkets verfügbaren Typen auf. Ein Bei
 |Zur internen Nutzung des Anwenders.
 |===
 
-[#1200]
 === Im Kundendatensatz verknüpfte Daten
 
 Im Folgenden wird in tabellarischer Form erläutert, welche Daten der Anwender aus einem Kundendatensatz heraus aufrufen kann.
@@ -284,18 +273,15 @@ JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 
 Weitere Informationen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kundendaten-verwalten#1300[Kundendaten verwalten, window="_blank"] zu finden.
 
-[#1300]
 === Zahlungsarten
 
 Der Anwender kann im Kundendatensatz einstellen, dass die Zahlungsarten *Lastschrift* und *Rechnung* für den Kunden erlaubt sind. Der Anwender kann diese Zahlungsarten individuell pro Kunde zulassen, selbst wenn die Zahlungsarten global für den Webshop nicht verwendet werden.  +
 Weitere Informationen zu Zahlungsarten werden in einem anderen Bereich beschrieben.
 
-[#1400]
 === Prüfung der Bonität und Umsatzsteueridentifikationsnummer
 
 Der Anwender hat die Möglichkeit, die Bonität sowie die Umsatzsteueridentifikationsnummer des Kunden durch Anbindung an externe Services zu prüfen.
 
-[#1500]
 === Kunden sperren
 
 Der Anwender hat die Möglichkeit, Kunden zu sperren, damit diese sich nicht mehr in seinem Webshop einloggen und bestellen können. Hierbei wird der Kunde für den in seinem Kundendatensatz eingestellten Mandanten (Shop) gesperrt.
@@ -305,7 +291,6 @@ Da der Anwender festlegt, wie der Kundenlogin im Mein Konto-Bereich der Kunden e
  * mittels E-Mail-Adresse und Passwort oder
  * mittels Kunden-ID und Passwort.
 
-[#1600]
 === Unbezahlte Aufträge von Kunden einsehen
 
 Der Anwender kann eine Liste der Kunden mit unbezahlten Aufträgen aufrufen. Die Liste enthält die Anzahl der offenen Posten eines Kunden sowie die Höhe der Forderung, die sich aus den offenen Posten ergibt.
@@ -318,7 +303,6 @@ Die Liste der offenen Posten aktualisiert sich einmal täglich automatisch. Dahe
  * Kundenklasse
  * Kundentyp
 
-[#1700]
 === Zustimmung zur Speicherung von datenschutzrelevanten Informationen
 
 Welche datenschutzrelevanten Informationen im System gespeichert werden, hängt davon ab, welche Felder der Anwender als Pflichtangaben einstellt und welche Informationen der Kunde zusätzlich bei freiwillig auszufüllenden Feldern bei der Registrierung im Webshop angibt. Neben Name, Anschrift, Telefonnummer und E-Mail-Adresse, die für eine Zuordnung zu einer Person dienen können, ist z.B. noch die Speicherung der Bankdaten möglich. In Aufträgen kann z.B. noch die IP-Adresse, über die der Auftrag erstellt wurde, abgerufen wurde. Ebenso wird das Datum und die Uhrzeit des letzten Login gespeichert.
@@ -328,26 +312,22 @@ Ein möglicher Fall wäre auch, dass der Anwender beispielsweise in der Datensch
 .Beispiel der Pflichtfelder (mit * gekennzeichnet) im Webshop
 image::assets/AGB_Widerrufsrecht.png[]
 
-[#1800]
 === Speicherung von marktplatzspezifischen Kundendaten
 
 Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden in einem anderen Bereich beschrieben.
 
-[#1900]
 === Passwörter
 
 Es ist möglich, für alle im System gespeicherten regulären Kunden neue Passwörter zu generieren. Bei Gastkonten ist dies nicht möglich.
 
 Wenn sich der Kunde im Webshop des Anwenders registriert, vergibt der Kunde bei der Registrierung ein Passwort für sein Konto. Der Anwender kann selbst einstellen, welche Felder bei der Registrierung Pflichtfelder sein sollen. Die Pflichtfelder werden mit einem * gekennzeichnet. Demnach stimmt der Kunde der Eingabe seiner Daten zu, da er andernfalls den Registrierungsprozess nicht abschließen könnte.
 
-[#2000]
 === Löschung von datenschutzrelevanten Informationen
 
 Automatische Löschungen von Kundendaten wie Name, Anschrift etc. werden vom System nicht durchgeführt. Es obliegt dem Anwender, die Daten nach einer für ihn selbst definierten Zeit zu löschen. Außerdem kann der Anwender entscheiden, ob er auf Wunsch des Kunden sämtliche vom Kunden gespeicherte Daten dem Kunden beispielsweise zum Download zur Verfügung stellt.
 
 Wenn keine Verknüpfung zwischen einem Kundendatensatz und einem Auftrag besteht –  das heißt, der Auftrag ist archiviert – kann der Anwender den Kundendatensatz löschen. Denkbar wäre auch, dass der Kunde sich zwar registriert hat, jedoch nie eine Bestellung über seinen Zugang eingegangen ist; in diesem Fall kann der Anwender den Kundendatensatz ebenfalls löschen.
 
-[#2100]
 === Import und Export
 
 Der Anwender hat die Möglichkeit, Kundendaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API, window="_blank"] zur Verfügung.
@@ -379,7 +359,6 @@ Für den manuellen Austausch von Kundendaten stehen dem Anwender die folgenden D
 
 Über die link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate[Übersichtsseite der Datenformate, window="_blank"] im plentymarkets Handbuch gelangt man zu den einzelnen Datenformaten inklusive Auflistungen der vorhandenen Datenfelder und Pflichtfelder sowie ggf. Abgleichfelder und Aktionen.
 
-[#2200]
 === Backup
 
 Aktuell ist es für den Anwender nicht möglich, ein Backup der Kundendaten über das in plentymarkets dafür vorgesehene Menü einzuspielen.
