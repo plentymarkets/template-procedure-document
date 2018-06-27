@@ -443,26 +443,66 @@ Die Daten einer Stornierung mit der Herkunft POS können im ERP-System plentymar
 
 ===== Buchungsablauf bei Retouren
 
-Über plentymarkets POS erstellte Retouren werden im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht.
+Retouren können im Kassensystem plentymarkets POS auf zwei Arten erstellt werden:
 
-Die Vorgehensweise zum Retournieren von Artikeln wird im Handbuch des ERP-Systems plentymarkets beschrieben:  +
+* Als Auftrag des Typs *Retoure*, der dem Hauptauftrag zugeordnet wird (ab plentymarkets POS Version x.xx)
+* Als Auftrag des Typs *Retoure* ohne Hauptauftrag
+
+Bis plentymarkets POS Version x.xx (Release-Datum xx.07.2018) wurden über plentymarkets POS erstellte Retouren im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht. Dieses Vorgehen ist auch weiterhin möglich, wenn z.B. der Hauptauftrag nicht bekannt ist. Ab Version x.xx kann der Hauptauftrag im Kassensystem aufgerufen werden. Sowohl vollständige Retouren als auch eine Teilretoure der Auftragspositionen ist möglich. Verkaufsgutscheine können jedoch nicht retourniert werden.
+
+Die Vorgehensweise zum Retournieren von Artikeln mit und ohne Hauptauftrag wird im Handbuch des ERP-Systems plentymarkets beschrieben:  +
 https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#175
 
-Folgende Daten werden für Retouren systemseitig gespeichert und auf dem Beleg dokumentiert:
+Folgende Daten werden für Retouren auf dem Beleg dokumentiert:
 
 * Datum und Uhrzeit der Retoure
 * Art des Geschäftsvorfalls
 * Belegnummer
 * Retournierte Artikel
 * Summe der Retoure
-* Mehrwertsteuersätze
+* Mehrwertsteueranteil
 * Brutto- und Nettobetrag der Retoure
+* Belegnummer des Hauptauftrags (nur bei Zuordnung)
 * Ersteller/-in
+
+Folgende Daten werden für Retouren im ERP-System plentymarkets gespeichert:
+
+* Datum und Uhrzeit der Retoure
+* Art des Geschäftsvorfalls
+* Belegnummer
 * ID der Retoure
+* Retournierte Artikel
+* Summe der Retoure
+* Mehrwertsteueranteil
+* Brutto- und Nettobetrag der Retoure
+* Auftrags-ID und Belegnummer des Hauptauftrags (nur bei Zuordnung)
+* Ersteller/-in
+
+Die Daten einer Retoure mit der Herkunft plentymarkets POS können im ERP-System plentymarkets wie folgt angezeigt werden:
+
+* Geschäftsvorfall im Kassenjournal
+* Beleg im Dokumentenarchiv
+* Auftrag im Auftragsmodul
+* Anzeige im Tab *Aufträge* des Kunden
+* Daten für den IDEA-Export
+* Wenn die Retoure dem Hauptauftrag zugeordnet wurde, wird der Hauptauftrag in den Auftragsstatus *[_Status einfügen, der Retouren zugewiesen wird. Standardeinstellung ist *[9] Retoure*_]* gesetzt.
 
 Beim Erstellen einer Retoure wird außerdem eine Gutschrift erstellt und gespeichert.
 
-Folgende Daten werden für Gutschriften systemseitig gespeichert und auf dem Beleg dokumentiert:
+Folgende Daten werden für Gutschriften auf dem Beleg dokumentiert:
+
+* Datum und Uhrzeit der Gutschrift
+* Art des Geschäftsvorfalls
+* Belegnummer
+* Retournierte Artikel
+* Summe der Gutschrift
+* Mehrwertsteueranteil
+* Brutto- und Nettobetrag der Gutschrift
+* Ersteller/-in
+* Belegnummer der Retoure
+
+
+Folgende Daten werden für Gutschriften im ERP-System plentymarkets gespeichert:
 
 * Datum und Uhrzeit der Gutschrift
 * Art des Geschäftsvorfalls
@@ -475,6 +515,14 @@ Folgende Daten werden für Gutschriften systemseitig gespeichert und auf dem Bel
 * ID der Gutschrift
 * ID der Retoure
 * Belegnummer der Retoure
+
+Die Daten einer Gutschrift mit der Herkunft plentymarkets POS können im ERP-System plentymarkets wie folgt angezeigt werden:
+
+* Geschäftsvorfall im Kassenjournal
+* Beleg im Dokumentenarchiv
+* Auftrag im Auftragsmodul
+* Anzeige im Tab *Aufträge* des Kunden
+* Daten für den IDEA-Export
 
 ===== Buchungsablauf bei Einlagen
 
