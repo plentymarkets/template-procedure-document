@@ -365,7 +365,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
  * II
  * XI
 
-In einer Retoure kann der retournierten Variante eine Artikelstatus zugeordnet werden. Es kann ein Hinweis zur Variante sowie ein Prozentwert, der den Artikelwert der retournierten Varianten angibt, eingetragen werden. Der Grund für die Retoure kann geändert sowie Ware wieder eingebucht werden.
+In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet werden. Es kann ein Hinweis zur Variante sowie ein Prozentwert, der den Artikelwert der retournierten Varianten angibt, eingetragen werden. Der Grund für die Retoure kann geändert sowie Ware wieder eingebucht werden.
 
 |===
 |Dokument|Bearbeitungsmöglichkeiten

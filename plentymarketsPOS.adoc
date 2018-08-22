@@ -401,6 +401,8 @@ Abhängig von der <<CRM#1100, *Kundenklasse*>> des Bestandskunden, und davon, ob
 
 Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf dem Kassenbeleg noch im Auftrag separat ausgezeichnet. Das bedeutet, dass über die Kundenklasse rabattierte Artikel auch auf dem Tagesbericht nicht unter *Rabattierte Artikel* aufgeführt werden.
 
+Ab Version 1.8.1 können Artikel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen* von Rabatten an der Kasse ausgeschlossen werden. Das bedeutet, dass Kassenpersonal keinen manuellen Rabatt eingeben können. Auch Kundenklassenrabatte greifen für nicht rabattfähige Artikel nicht.
+
 ===== Buchungsablauf bei Stornierungen
 
 Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten sowie Barbestand und Belegnummernfolge nicht zu beeinträchtigen. Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine Retoure erstellt werden.
@@ -445,10 +447,10 @@ Die Daten einer Stornierung mit der Herkunft POS können im ERP-System plentymar
 
 Retouren können im Kassensystem plentymarkets POS auf zwei Arten erstellt werden:
 
-* Als Auftrag des Typs *Retoure*, der dem Hauptauftrag zugeordnet wird (ab plentymarkets POS Version x.xx)
+* Als Auftrag des Typs *Retoure*, der dem Hauptauftrag zugeordnet wird (ab plentymarkets POS Version 1.8)
 * Als Auftrag des Typs *Retoure* ohne Hauptauftrag
 
-Bis plentymarkets POS Version x.xx (Release-Datum xx.07.2018) wurden über plentymarkets POS erstellte Retouren im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht. Dieses Vorgehen ist auch weiterhin möglich, wenn z.B. der Hauptauftrag nicht bekannt ist. Ab Version x.xx kann der Hauptauftrag im Kassensystem aufgerufen werden. Sowohl vollständige Retouren als auch eine Teilretoure der Auftragspositionen ist möglich. Verkaufsgutscheine können jedoch nicht retourniert werden.
+Bis plentymarkets POS Version 1.7.x wurden über plentymarkets POS erstellte Retouren im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht. Dieses Vorgehen ist auch weiterhin möglich, wenn z.B. der Hauptauftrag nicht bekannt ist. Ab Version 1.8 kann der Hauptauftrag im Kassensystem aufgerufen werden. Sowohl vollständige Retouren als auch eine Teilretoure der Auftragspositionen ist möglich. Verkaufsgutscheine können jedoch nicht retourniert werden.
 
 Die Vorgehensweise zum Retournieren von Artikeln mit und ohne Hauptauftrag wird im Handbuch des ERP-Systems plentymarkets beschrieben:  +
 https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#175
