@@ -343,7 +343,7 @@ Systemseitig ist es möglich, Gutschein-Codes mehrmals zu verkaufen. Um dies zu 
 
 ====== Sonderfall 2: Gutscheineinlösung
 
-Im ERP-System plentymarkets können zwar Aktionsgutscheine und Verkaufsgutscheine angelegt werden. Im Kassensystem plentymarkets POS können jedoch nur Verkaufsgutscheine eingelöst werden. Zur Einlösung ist ein Gutschein-Code erforderlich, der bereits im ERP-System plentymarkets gespeichert sein muss.
+Im ERP-System plentymarkets können zwar Aktionsgutscheine und Verkaufsgutscheine angelegt werden. Im Kassensystem plentymarkets POS können jedoch nur Verkaufsgutscheine eingelöst werden. Zur Einlösung ist ein Gutschein-Code erforderlich, der bereits im ERP-System plentymarkets gespeichert sein muss. Ab Version 1.8.1  der plentymarkets App (veröffentlicht am 21.08.2018) können pro Kassiervorgang mehrere Gutscheine eingelöst werden. Die Gutscheine werden in der Reihenfolge eingelöst, in der sie eingegeben werden.
 
 Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Relevanz:
 
