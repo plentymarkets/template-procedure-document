@@ -450,9 +450,9 @@ Retouren können im Kassensystem plentymarkets POS auf zwei Arten erstellt werde
 * Als Auftrag des Typs *Retoure*, der dem Hauptauftrag zugeordnet wird (ab plentymarkets POS Version 1.8)
 * Als Auftrag des Typs *Retoure* ohne Hauptauftrag
 
-Bis plentymarkets POS Version 1.7.x wurden über plentymarkets POS erstellte Retouren im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht. Dieses Vorgehen ist auch weiterhin möglich, wenn z.B. der Hauptauftrag nicht bekannt ist. Ab Version 1.8 kann der Hauptauftrag im Kassensystem aufgerufen werden. Sowohl vollständige Retouren als auch eine Teilretoure der Auftragspositionen ist möglich. Verkaufsgutscheine können jedoch nicht retourniert werden.
+Bis plentymarkets POS Version 1.7.x wurden über plentymarkets POS erstellte Retouren im ERP-System plentymarkets als Auftrag des Typs *Retoure* ohne Hauptauftrag erstellt. Das bedeutet, dass datentechnisch keine Verbindung zwischen dem ursprünglichen Auftrag und der Retoure besteht. Dieses Vorgehen ist auch weiterhin möglich, wenn z.B. der Hauptauftrag nicht bekannt ist. Ab Version 1.8 kann der Hauptauftrag im Kassensystem aufgerufen werden. Sowohl vollständige Retouren als auch eine Teilretoure der Auftragspositionen ist möglich. Verkaufsgutscheine können jedoch nicht retourniert werden. Ab Version 1.8.1 können einmalig die gezahlten Versandkosten eines Auftrags erstattet werden. Das Kassenpersonal entscheidet pro Vorfall, ob eine Auszahlung der Versandkosten erfolgt.
 
-Die Vorgehensweise zum Retournieren von Artikeln mit und ohne Hauptauftrag wird im Handbuch des ERP-Systems plentymarkets beschrieben:  +
+Die Vorgehensweise zum Retournieren von Artikeln mit und ohne Hauptauftrag wird im Handbuch des ERP-Systems plentymarkets beschrieben: +
 https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#175
 
 Folgende Daten werden für Retouren auf dem Beleg dokumentiert:
@@ -462,9 +462,11 @@ Folgende Daten werden für Retouren auf dem Beleg dokumentiert:
 * Belegnummer
 * Retournierte Artikel
 * Summe der Retoure
+* Ausgezahlter Betrag (ab 1.8)
 * Mehrwertsteueranteil
 * Brutto- und Nettobetrag der Retoure
-* Belegnummer des Hauptauftrags (nur bei Zuordnung)
+* Auftrags-ID des Hauptauftrags (nur bei Zuordnung, ab Version 1.8)
+* Ggf. erstattete Versandkosten aus Hauptauftrag (nur bei Zuordnung, ab Version 1.8.1)
 * Ersteller/-in
 
 Folgende Daten werden für Retouren im ERP-System plentymarkets gespeichert:
@@ -475,9 +477,11 @@ Folgende Daten werden für Retouren im ERP-System plentymarkets gespeichert:
 * ID der Retoure
 * Retournierte Artikel
 * Summe der Retoure
+* Ausgezahlter Betrag (ab 1.8)
 * Mehrwertsteueranteil
 * Brutto- und Nettobetrag der Retoure
-* Auftrags-ID und Belegnummer des Hauptauftrags (nur bei Zuordnung)
+* Auftrags-ID des Hauptauftrags (nur bei Zuordnung, ab Version 1.8)
+* Ggf. erstattete Versandkosten aus Hauptauftrag (nur bei Zuordnung, ab Version 1.8.1)
 * Ersteller/-in
 
 Die Daten einer Retoure mit der Herkunft plentymarkets POS können im ERP-System plentymarkets wie folgt angezeigt werden:
@@ -497,7 +501,9 @@ Folgende Daten werden für Gutschriften auf dem Beleg dokumentiert:
 * Art des Geschäftsvorfalls
 * Belegnummer
 * Retournierte Artikel
+* Ggf. erstattete Versandkosten aus Hauptauftrag (nur bei Zuordnung, ab Version 1.8.1)
 * Summe der Gutschrift
+* Ausgezahlter Betrag (ab 1.8)
 * Mehrwertsteueranteil
 * Brutto- und Nettobetrag der Gutschrift
 * Ersteller/-in
@@ -510,7 +516,9 @@ Folgende Daten werden für Gutschriften im ERP-System plentymarkets gespeichert:
 * Art des Geschäftsvorfalls
 * Belegnummer
 * Retournierte Artikel
+* Ggf. erstattete Versandkosten aus Hauptauftrag (nur bei Zuordnung, ab Version 1.8.1)
 * Summe der Gutschrift
+* Ausgezahlter Betrag (ab 1.8)
 * Mehrwertsteuersätze
 * Brutto- und Nettobetrag der Gutschrift
 * Ersteller/-in
@@ -525,6 +533,9 @@ Die Daten einer Gutschrift mit der Herkunft plentymarkets POS können im ERP-Sys
 * Auftrag im Auftragsmodul
 * Anzeige im Tab *Aufträge* des Kunden
 * Daten für den IDEA-Export
+
+
+
 
 ===== Buchungsablauf bei Einlagen
 
