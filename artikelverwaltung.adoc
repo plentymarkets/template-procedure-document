@@ -242,7 +242,7 @@ Die in plentymarkets gespeicherten Preise einer Variante können durch folgende 
  * Rabatt auf Kundenklassen
  * Einlösen von Aktionsgutscheinen (wenn für “Aktionsgutschein” am Artikel *Möglich* oder *Nur mit Gutschein kaufbar* eingestellt ist)
 
- Ab 21.08.2018 können Artikel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen* von Rabatten an der plentymarkets POS Kasse ausgeschlossen werden. Das bedeutet, dass Kassenpersonal keinen manuellen Rabatt eingeben können. Auch Kundenklassenrabatte greifen für nicht rabattfähige Artikel nicht.
+Ab 21.08.2018 können Artikel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen* von Rabatten an der plentymarkets POS Kasse ausgeschlossen werden. Das bedeutet, dass Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte greifen für diese nicht rabattfähigen Artikel nicht.
 
 
 ==== Verwaltung zentral verwalteter Einstellungen
