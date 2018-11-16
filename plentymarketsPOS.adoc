@@ -52,9 +52,14 @@ Für die plentymarkets App sind die folgenden Zugriffsrechte verfügbar:
 |===
 |*Rechtegruppe*|*Einzelrechte*
 
-|Sichtbare Funktionen| * Alle
-|POS-Funktionen| * Preis bearbeiten
-|Sichtbare Kennzahlen| * Alle
+|Sichtbare Funktionen
+a| * Alle
+
+|POS-Funktionen
+a| * Preis bearbeiten
+
+|Sichtbare Kennzahlen
+a| * Alle
 |===
 
 Diese Benutzerrechte werden im Handbuch des ERP-Systems plentymarkets näher erläutert: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#130[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#130]
@@ -73,7 +78,7 @@ Die folgenden Mitarbeiter verfügen über uneingeschränkten Zugriff auf alle Fu
 |Mitarbeiter/-in |An Mitarbeiter/-in erteilte Rechte
 
 |[_Name, Vorname, ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_]
-|Sichtbare Funktionen
+a|Sichtbare Funktionen
 
  * Alle
  * Artikelsuche
@@ -212,52 +217,27 @@ Systemseitig werden die Kassendaten in der Tabelle *plenty_pos_base* und dort in
 
 ===== Soft- und Hardware
 
-////
-Darstellung dieser Infos noch zu klären
-////
 
-|===
-|Kasse|ID des gekoppelten mobilen Geräts|Eingesetzte Hardware|Eingesetzte Software|plentymarkets-System
-
-|[_Kassen-ID, Name der Kasse_]
-|[_ID des gekoppelten mobilen Geräts_]
-|[_Modell, Hersteller_]
-|[_Programmname, Versionsnummer, Hersteller_]
-|[_plenty-ID, Link, Mandant (Shop)_]
-
-|[_Kassen-ID, Name der Kasse_]
-|[_ID des gekoppelten mobilen Geräts_]
-|[_Modell, Hersteller_]
-|[_Programmname, Versionsnummer, Hersteller_]
-|[_plenty-ID, Link, Mandant (Shop)_]
-
-|[_Kassen-ID, Name der Kasse_]
-|[_ID des gekoppelten mobilen Geräts_]
-|[_Modell, Hersteller_]
-|[_Programmname, Versionsnummer, Hersteller_]
-|[_plenty-ID, Link, Mandant (Shop)_]
-|===
-
-////
-Alternative Darstellung
-////
+====== Soft- und Hardware der Kasse mit der ID [_ID einfügen_]
 
 Für die Kasse mit der Kassen-ID [_ID einfügen_] kommt folgende Hardware zum Einsatz: +
 
-* Tablet / Smartphone [Modell, Hersteller]
-* Belegdrucker [Modell, Hersteller]
-* Kartenterminal [Modell, Hersteller]
-* Kassenlade [Modell, Hersteller]
-* Barcodescanner [Modell, Hersteller]
-* EC-Terminal [Modell, Hersteller]
-* Sonstiges [Modell, Hersteller]
+* Tablet / Smartphone [_Modell, Hersteller einfügen_]
+* Belegdrucker [_Modell, Hersteller einfügen_]
+* Kartenterminal [_Modell, Hersteller einfügen_]
+* Kassenlade [_Modell, Hersteller einfügen_]
+* Barcodescanner [_Modell, Hersteller einfügen_]
+* EC-Terminal [_Modell, Hersteller einfügen_]
+* Sonstiges [_Modell, Hersteller einfügen_]
 
 Für die Kasse mit der Kassen-ID [_ID einfügen_] kommt folgende Software zum Einsatz:
 
-* Betriebssystem [Programmname, Versionsnummer, Hersteller]
-* ERP-System [Programmname, Versionsnummer, Hersteller]
-* Scan-Software [Programmname, Versionsnummer, Hersteller]
-* Sonstiges [Programmname, Versionsnummer, Hersteller]
+* Betriebssystem [_Programmname, Versionsnummer, Hersteller einfügen_]
+* ERP-System [_Programmname, Versionsnummer, Hersteller einfügen_]
+* Scan-Software [_Programmname, Versionsnummer, Hersteller einfügen_]
+* Sonstiges [_Programmname, Versionsnummer, Hersteller einfügen_]
+
+[_Bei mehreren Kassen die oben stehenden Listen kopieren und für alle Kassen ausfüllen_]
 
 
 ==== plentymarkets POS Geschäftsvorfälle
@@ -301,7 +281,7 @@ Folgende Daten werden für Aufträge systemseitig gespeichert und auf dem Beleg 
 * Summe der Artikel
 * Mehrwertsteuersätze
 * Brutto- und Nettobetrag des Auftrags
-* Zahlungsart
+* Zahlungsarten
 * Bei Barzahlung: Gegeben/Wechselgeld
 * Bei Kartenzahlung: Nur Gesamtbetrag
 * Ersteller/-in
@@ -311,14 +291,16 @@ Auftragsdaten mit der Herkunft POS werden im ERP-System plentymarkets wie folgt 
 * Geschäftsvorfall im Kassenjournal
 * Beleg im Dokumentenarchiv
 * Auftrag im Auftragsmodul
-* Tab “Aufträge” des Kunden
+* Im Tab “Aufträge” des Kunden
 * Daten für den IDEA-Export
 
-Eine Änderung der Kassenauftragsdaten durch plentymarkets Anwender ist nicht möglich.
+Eine Änderung der gespeicherten Kassenauftragsdaten durch plentymarkets Anwender/-innen ist nicht möglich.
 
-Bei bargeldloser Zahlung treten geringfügige Besonderheiten auf: Bei der Zahlungsart Kartenzahlung muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
-Bei der Kartenzahlung mit Miura kann, wenn es in den Einstellungen so definiert wurde, diese Bestätigung des Zahlungseingang auch automatisiert passieren.
-Außerdem wird bei der Zahlungsart Kartenzahlung der Barbestand der Kasse nicht erhöht.
+Bei bargeldloser Zahlung treten geringfügige Besonderheiten auf:
+
+* Bei der Zahlungsart Kartenzahlung muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
+* Bei der Kartenzahlung mit Miura kann, wenn es in den Einstellungen so definiert wurde, diese Bestätigung des Zahlungseingangs auch automatisiert passieren.
+* Bei der Zahlungsart *Kartenzahlung* wird der Barbestand der Kasse nicht erhöht.
 
 ====== Sonderfall 1: Gutscheinverkauf
 
@@ -326,7 +308,7 @@ Pro Gutscheinwert muss im ERP-System plentymarkets ein Gutscheinartikel mit dem 
 
 Zum Einlösen eines Gutscheins benötigen Kunden einen Gutschein-Code. Dieser Gutschein-Code kann beim Verkauf eines Gutscheins automatisch generiert werden. Alternativ können Händler auch mit eigenen Gutschein-Codes arbeiten, die entweder im Vorfeld im ERP-System plentymarkets gespeichert werden oder erst beim Verkauf im System gespeichert werden.
 
-Ab Version 6.1.2 (Release-Datum 21.11.2017) können über plentymarkets POS auch Gutscheinartikel mit dem Preis 0,00 Euro verkauft werden. Wenn Kassierer/-innen diesen Artikel zum Verkauf wählen, erfolgt eine Preisabfrage. Der Preis, den Kassierer/-innen eingeben, entspricht dann dem Gutscheinwert. Der Gutschein-Code wird automatisch generiert. Alternativ kann mit eigenen Gutschein-Codes gearbeitet werden.
+Ab Version 6.1.2 (Release-Datum 21.11.2017) können in plentymarkets POS auch Gutscheinartikel mit dem Preis 0,00 Euro aufgerufen werden. Wenn Kassierer/-innen diesen Artikel zum Verkauf wählen, erfolgt eine Preisabfrage. Der Preis, den Kassierer/-innen eingeben, entspricht dann dem Gutscheinwert. Der Gutschein-Code wird automatisch generiert. Alternativ kann mit eigenen Gutschein-Codes gearbeitet werden.
 
 Die genaue Vorgehensweise zum Verkauf von Gutscheinen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#_gutscheinverkauf_vorbereiten[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#_gutscheinverkauf_vorbereiten]
 
@@ -335,7 +317,7 @@ Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Releva
 * Beim Verkauf eines Verkaufsgutscheins erhöht sich der Umsatz nicht.
 * Verkaufte Gutscheine werden auf dem Tagesbericht separat ausgewiesen.
 * Der Barbestand erhöht sich nur, wenn der Gutschein bar bezahlt wird.
-* Beim Verkauf eines Gutscheins wird dem Kunden ein Gutschein-Code ausgehändigt. Dieser Gutschein-Code ist nicht mit dem Auftrag verknüpft.
+* Beim Verkauf eines Gutscheins wird der Kundin oder dem Kunden ein Gutschein-Code ausgehändigt. Dieser Gutschein-Code ist systemseitig nicht mit dem Auftrag verknüpft.
 
 Systemseitig ist es möglich, Gutschein-Codes mehrmals zu verkaufen. Um dies zu verhindern, sind Mitarbeiter/-innen angewiesen, beim Verkauf von Gutscheinen wie folgt vorzugehen:
 
@@ -347,7 +329,7 @@ Im ERP-System plentymarkets können zwar Aktionsgutscheine und Verkaufsgutschein
 
 Die folgenden systemseitigen Prozesse sind steuerrechtlich von besonderer Relevanz:
 
-* Der Wert des Verkaufsgutscheins wird vom zu zahlenden Betrag abgezogen.
+* Der Wert der Verkaufsgutscheine wird vom zu zahlenden Betrag abgezogen.
 * Der Umsatz erhöht sich um den eingelösten Gutscheinbetrag.
 * Auf dem Tagesbericht wird der eingelöste Gutscheinwert mit der Zahlungsart *Gutschein* ausgewiesen.
 * Der Barbestand der Kasse erhöht sich durch die Einlösung des Gutscheins nicht.
@@ -356,13 +338,13 @@ Die Vorgehensweise beim Einlösen von Gutscheinen wird im Handbuch des ERP-Syste
 
 Abweichend von dieser Beschreibung sind Mitarbeiter/-innen angewiesen, beim Einlösen von Gutscheinen wie folgt vorzugehen:
 
-* [_Beschreibung des Ablaufs im Unternehmen einfügen_]
+* [_Ggf. Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 ====== Sonderfall 3: Bestandskunden
 
 Damit POS-Aufträge korrekt in plentymarkets gespeichert werden, muss jedem Auftrag ein Kontakt zugeordnet sein. Um dieser Anforderung gerecht zu werden, wird in plentymarkets ein anonymer Standardkunde erstellt und mit der Kasse verknüpft.
 
-plentymarkets POS Aufträge werden über den Standardkunden mit den folgenden Einstellungen erstellt:
+plentymarkets POS Aufträge werden im Unternehmen über den Standard-Kundendatensatz mit den folgenden Einstellungen erstellt:
 
 [cols="1,2"]
 |====
@@ -397,9 +379,9 @@ PLZ**; +
 
 Kassierer/-innen mit den nötigen Benutzerrechten können Kassenvorgänge auch über im ERP-System plentymarkets gespeicherte Bestandskunden abwickeln, statt den Standardkunden zu wählen. Die Vorgehensweise für Kassierer/-innen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#135[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#135]
 
-Abhängig von der <<CRM#1100, *Kundenklasse*>> des Bestandskunden, und davon, ob für diese Kundenklasse ein <<CRM#600, *Rabatt*>> im ERP-System plentymarkets gespeichert ist, kann der Verkaufspreis für Bestandskunden mit bestimmten Kundenklassen niedriger sein als der Verkaufspreis für den Standardkunden.
+Abhängig von der <<CRM#1100, *Kundenklasse*>> des Bestandskunden, und davon, ob für diese Kundenklasse ein <<CRM#600, *Rabatt*>> im ERP-System plentymarkets gespeichert ist, kann der Verkaufspreis für Bestandskunden mit bestimmten Kundenklassen vom Verkaufspreis für den Standardkunden abweichen.
 
-Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf dem Kassenbeleg noch im Auftrag separat ausgezeichnet. Das bedeutet, dass über die Kundenklasse rabattierte Artikel auch auf dem Tagesbericht nicht unter *Rabattierte Artikel* aufgeführt werden.
+Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf dem Kassenbeleg noch im Auftrag separat ausgewiesen. Das bedeutet, dass über die Kundenklasse rabattierte Artikel auch auf dem Tagesbericht nicht unter *Rabattierte Artikel* aufgeführt werden.
 
 Ab Version 1.8.1 können Artikel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen* von Rabatten an der Kasse ausgeschlossen werden. Das bedeutet, dass Kassenpersonal keinen manuellen Rabatt eingeben können. Auch Kundenklassenrabatte greifen für nicht rabattfähige Artikel nicht.
 
@@ -526,7 +508,7 @@ Folgende Daten werden für Gutschriften im ERP-System plentymarkets gespeichert:
 * ID der Retoure
 * Belegnummer der Retoure
 
-Die Daten einer Gutschrift mit der Herkunft plentymarkets POS können im ERP-System plentymarkets wie folgt angezeigt werden:
+Die Daten einer Gutschrift mit der Herkunft *plentymarkets POS* können im ERP-System plentymarkets wie folgt angezeigt werden:
 
 * Geschäftsvorfall im Kassenjournal
 * Beleg im Dokumentenarchiv
@@ -574,16 +556,16 @@ Ab plentymarkets App Version 1.7.3 können Einlagen einem oder mehreren Erlösko
 |Bezeichnung|Konto|Gespeichert am
 
 |Einlage (nicht löschbar)
-|
-|
+|[_Konto einfügen_]
+|[_Datum einfügen_]
 
-|
-|
-|
+|[_Bezeichnung einfügen_]
+|[_Konto einfügen_]
+|[_Datum einfügen_]
 
-|
-|
-|
+|[_Bezeichnung einfügen_]
+|[_Konto einfügen_]
+|[_Datum einfügen_]
 |===
 
 ===== Buchungsablauf bei Entnahmen
@@ -652,20 +634,20 @@ Im plentymarkets ERP-System des Unternehmens sind die folgenden Buchungskonten h
 |Bezeichnung|Buchungskonto|Einsatzzeitraum (von/bis)
 
 |Entnahme
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 
 |Kassensturz
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 
 |[_Weitere Entnahmevorfälle einfügen_]
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 
 |[_Weitere Entnahmevorfälle einfügen_]
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 |===
 
 .Buchungskonten für Einlagen
@@ -673,23 +655,23 @@ Im plentymarkets ERP-System des Unternehmens sind die folgenden Buchungskonten h
 |Bezeichnung|Buchungskonto|Einsatzzeitraum (von/bis)
 
 |Einlage
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 
 |Kassensturz
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 
 |[_Weitere Einlagevorfälle einfügen_]
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 
 |[_Weitere Einlagevorfälle einfügen_]
-|
-|
+|[_Buchungskonto einfügen_]
+|[_Einsatzzeitraum einfügen_]
 |===
 
-==== Elektronische Aufbewahrung von POS Geschäftsvorfällen im Kassenjournal
+==== Elektronische Aufbewahrung von POS-Geschäftsvorfällen im Kassenjournal
 
 Sämtliche über plentymarkets POS generierten Geschäftsvorfälle werden in das ERP-System plentymarkets importiert. Ein Kassenbuch wird in Form eines elektronischen Kassenjournals automatisch erstellt und aktualisiert.
 
@@ -773,6 +755,10 @@ Die im Kassenjournal angezeigten Daten sind nicht veränderbar. Allerdings kann 
 |Filterung nach einer Belegnummer durch Eingabe derselben Belegnummer in die Felder **von** und **bis** +
 Filterung nach einer Abfolge von Belegnummern durch Eingabe eines Bereichs
 
+|Buchungskonto
+|Filterung nach einem Buchungskonto
+
+
 |Mandant (Shop)
 |Filterung nach einem Mandanten (Shop)
 
@@ -792,7 +778,7 @@ Aktueller Monat, Letzter Monat, Letzte 30 Tage, Letzte 3 Monate, Letzte 6 Monate
 
 |Typ
 |Filterung nach Typ des Geschäftsvorfalls. Folgende Typen sind verfügbar: +
-Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift
+Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift, Tagesabschluss
 |===
 
 
@@ -834,7 +820,7 @@ Im Unternehmen wird mit den Ausdrucken von Zwischenberichten wie folgt verfahren
 
 ===== Tagesabschlussberichte (Z-Berichte)
 
-Tagesabschlussbereichte sind GoBD-relevante Dokumente. In plentymarkets POS werden Tagesabschlussberichte manuell erstellt. Das System gibt keinen Erstellungsintervall vor.
+Tagesabschlussbereichte sind GoBD-relevante Dokumente. In plentymarkets POS werden Tagesabschlussberichte manuell erstellt. Das System gibt kein Erstellungsintervall vor.
 
 Tagesabschlussberichte werden in plentymarkets POS in einem eigenen Nummernkreis fortlaufend nummeriert. Der erste Z-Bericht der Kasse hat also die Nummer 1, der zweite die Nummer 2 usw.
 
@@ -862,7 +848,7 @@ In plentymarkets POS generierte Tagesberichte enthalten die folgenden Informatio
 
 |Erstellt von
 |---
-|Name des Benutzers, der den Tagesabschluss erstellt hat
+|Name der Person, die den Tagesabschluss erstellt hat
 
 |POS-ID
 |---
@@ -922,19 +908,24 @@ Summe aller Einlagen sowie Summe der Einlagen pro Buchungskonto
 |Summe der Aufträge ./. Summe der verkauften Gutscheine ./. Retouren ./. Stornierungen
 |Umsatz seit Inbetriebnahme der Kasse
 
-3+|*Steuerbericht*
+3+|*Steuerbericht* +
+(Mehrwertsteueranteil in EUR:)
 
 |%
 |---
-|Im ERP-System plentymarkets gespeicherte Steuersätze
-
-|Steuer
-|Steuersatz
-|Auflistung der verschiedenen Steuersätze mit abzuführender Steuer
+|Im ERP-System plentymarkets gespeicherter Steuersatz
 
 |Netto
 |Umsatzsumme ./. Betrag des Steuersatzes
+|Nettobetrag
+
+|MwSt
 |
+|Abzuführende Steuer
+
+|Brutto
+|
+|Bruttoumsatz
 
 3+|*Sonstige Summen*
 
@@ -960,6 +951,12 @@ Ab App-Verson 1.7.3: Retournierte Artikel
 |Verkaufsgutscheine
 |Summe der verkauften Gutscheine
 |Anzahl in Klammern
+
+|Umsatzneutrale Zahlungen +
+(ab App-Version 1.x.x, Release-Datum xx.xx.2018)
+|Summe der über die Kasse durchgeführte Zahlungen von Aufträgen mit anderen Herkünften (Click & Collect)
+|Anzahl in Klammern +
+*_Hinweis:_* Die Zahlungen sind kassenseitig umsatzneutral, da der Umsatz der ursprünglichen Herkunft des Auftrags zugerechnet wird.
 
 |Benutzer +
 (bis App-Version 1.6.1)
@@ -1129,7 +1126,7 @@ Der IDEA-Export besteht aus den folgenden Dateien:
 
 Nach Abschluss des Exports stehen die Dateien im Menü *Aufträge » POS » IDEA-Export* des ERP-Systems plentymarkets zum Download zur Verfügung.
 
-Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporten wie folgt zu handlen:
+Mitarbeiter/-innen sind angewiesen, bei IDEA-Exporten wie folgt zu handeln:
 
 * [_Erstellungsintervall_]
 * [_Für die Erstellung zuständige Person/-en_]
@@ -1266,3 +1263,4 @@ _Nachfolgend finden Sie weitere Fragestellungen, auf die Sie in Ihrer unternehme
 - _Wie und durch wen erfolgt die Abstimmung zwischen Haupt- und Nebenkassen bzw. mit der Finanzbuchhaltung?_
 - _Sind externe EC-Kartenterminals/Zahlungsdienstleister im Einsatz?_
 - _Werden Kartenterminals über Plugins an die Kasse angebunden? Wenn ja, welche Änderungen der hier beschriebenen Verfahren ergeben sich aus diesen Anbindungen?_
+_ _Bieten Sie Kunden an der Kasse die Möglichkeit an, Ware auf Rechnung zu kaufen? Wenn ja, welche Änderungen der hier beschriebenen Verfahren ergeben sich aus dieser Zahlungsart?_
