@@ -28,9 +28,8 @@ Zusätzlich ist die Nutzung folgender Leistungen inklusive:
   * Forensupport
   * Software-Updates
 
-Unterschiede zwischen den *STARTER*-Tarifen gibt es bei den in <<tabelle-optionen-tarifgruppe-starter>> aufgeführten Optionen. Das Modul *POS* ist immer optional und muss bei allen Tarifen separat hinzugebucht werden.
+Unterschiede zwischen den *STARTER*-Tarifen gibt es bei den in Tabelle 1 aufgeführten Optionen. Das Modul *POS* ist immer optional und muss bei allen Tarifen separat hinzugebucht werden.
 
-[[tabelle-optionen-tarifgruppe-starter]]
 .Optionen in der Tarifgruppe *STARTER*
 [cols="1,3,3,3"]
 |====
@@ -82,9 +81,8 @@ Zusätzlich ist die Nutzung folgender Leistungen inklusive:
     * Software-Updates
 
 Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
-Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<tabelle-optionen-tarifgruppe-pro>> aufgeführten maximalen Anzahlen hinzugebucht werden.
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 2 aufgeführten maximalen Anzahlen hinzugebucht werden.
 
-[[tabelle-optionen-tarifgruppe-pro]]
 .Optionen in der Tarifgruppe *PRO*
 [cols="1,3,3"]
 |====
@@ -132,10 +130,8 @@ Zusätzlich ist die Nutzung folgender Leistungen inklusive:
     * Software-Updates
 
 Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
-Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<tabelle-optionen-tarifgruppe-plus>> aufgeführten maximalen Anzahlen hinzugebucht werden.
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 3 aufgeführten maximalen Anzahlen hinzugebucht werden.
 
-
-[[tabelle-optionen-tarifgruppe-plus]]
 .Optionen in der Tarifgruppe *PLUS*
 [cols="1,3,3"]
 |====
@@ -182,11 +178,10 @@ Zusätzlich ist die Nutzung folgender Leistungen inklusive:
     * Forensupport
     * Software-Updates
 
-Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<tabelle-optionen-tarif-partner>> aufgeführten maximalen Anzahlen hinzugebucht werden.
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 4 aufgeführten maximalen Anzahlen hinzugebucht werden.
 
-[[tabelle-optionen-tarif-partner]]
 .Optionen im Tarif *plentymarkets PARTNER*
-[cols="1,3]
+[cols="1,3"]
 |====
 |Option |plentymarkets *PARTNER*
 
@@ -197,7 +192,7 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<t
 |3 inklusive / maximal 3
 
 |Mandanten
-|0 inklusive / maximal 10
+|1 inklusive / maximal 10
 
 |POS / Kassen
 |2 inklusive / maximal 2
