@@ -385,6 +385,12 @@ Kundenklassenrabatte werden direkt auf den POS-Auftrag angewendet und weder auf 
 
 Ab Version 1.8.1 können Artikel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen* von Rabatten an der Kasse ausgeschlossen werden. Das bedeutet, dass Kassenpersonal keinen manuellen Rabatt eingeben können. Auch Kundenklassenrabatte greifen für nicht rabattfähige Artikel nicht.
 
+
+====== Sonderfall 4: Zahlartenmix
+
+Ab Version 1.8.5 (Release-Datum 20.11.2018) können beim Abschließen eines Auftrags beliebig viele Zahlungsarten kombiniert werden. Die Vorgehensweise für Kassierer/-innen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#430[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#430].
+
+
 ===== Buchungsablauf bei Stornierungen
 
 Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten sowie Barbestand und Belegnummernfolge nicht zu beeinträchtigen. Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine Retoure erstellt werden.
