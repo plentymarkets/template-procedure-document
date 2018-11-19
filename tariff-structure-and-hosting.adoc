@@ -1,15 +1,208 @@
 
 == Tarifstruktur
 
-Aktuell ist plentymarkets in den Tarifen Classic und Zero verfügbar. In beiden Tarifen stehen integrale und optionale Module zur Verfügung. Integrale Module sind Module, die von Anfang an im Funktionsumfang des Systems enthalten sind. Optionale Module können zusätzlich gewählt werden und gehören dann ebenfalls zum Funktionsumfang des Systems.  Die integralen und optionalen Module unterscheiden sich je nach Tarif.
+Aktuell ist plentymarkets in den 3 Tarifgruppen *Starter*, *PRO* und *PLUS* verfügbar. Diese Tarifgruppen werden im Folgenden detailliert aufgeschlüsselt.
 
-=== Tarif Classic
+In allen Tarifen stehen integrale und optionale Module zur Verfügung. Integrale Module sind Module, die von Anfang an im Funktionsumfang des jeweiligen Systems enthalten sind. Optionale Module können zusätzlich gewählt werden und gehören dann ebenfalls zum Funktionsumfang des Systems. Die integralen und optionalen Module unterscheiden sich je nach Tarif.
 
-Folgende Module sind integral im Tarif Classic: Online-Shop, Auftragsabwicklung, CRM, Payment und Fulfillment. Optionale Module im Tarif Classic sind: Multi-Channel, POS und Warenwirtschaft.
+=== Tarifgruppe *STARTER*
 
-=== Tarif Zero
+Die Tarifgruppe *STARTER* besteht aus den Tarifen *ZERO*, *BASIC* und *ADVANCED*. Die folgenden Module sind in allen 3 Tarifen der Gruppe *STARTER* integral:
 
-Für den Tarif Zero sind integral: Online-Shop, Auftragsabwicklung, CRM, Payment, Fulfillment, Multi-Channel und Warenwirtschaft. Optional in diesem Tarif ist das Modul POS.
+  * Multi-Channel
+  * Online-Shop
+  * Auftragsabwicklung
+  * Warenwirtschaft
+  * CRM
+  * Payment
+  * Fulfillment
+  * Prozesse
+  * Cloud-Hosting
+
+Zusätzlich ist die Nutzung folgender Leistungen inklusive:
+
+  * ShopBuilder
+  * ShopBooster
+  * Facettensuche
+  * Rest-API
+  * Forensupport
+  * Software-Updates
+
+Unterschiede zwischen den *STARTER*-Tarifen gibt es bei den in <<tabelle-optionen-tarifgruppe-starter>> aufgeführten Optionen. Das Modul *POS* ist immer optional und muss bei allen Tarifen separat hinzugebucht werden.
+
+[[tabelle-optionen-tarifgruppe-starter]]
+.Optionen in der Tarifgruppe *STARTER*
+[cols="1,3,3,3"]
+|====
+|Option |ZERO |BASIC |ADVANCED
+
+|Benutzerlizenzen
+|3 inklusive / maximal 3
+|5 inklusive / maximal 5
+|10 inklusive / maximal 10
+
+|Vertriebslager
+|2 inklusive / maximal 2
+|3 inklusive / maximal 3
+|3 inklusive / maximal 10
+
+|Mandanten
+|1 inklusive / maximal 2
+|1 inklusive / maximal 3
+|1 inklusive / maximal 4
+
+|POS / Kassen
+|bis zu 3 Kassen zubuchbar
+|bis zu 5 Kassen zubuchbar
+|bis zu 10 Kassen zubuchbar
+
+|====
+
+=== Tarifgruppe *PRO*
+
+Die Tarifgruppe *PRO* besteht aus den Tarifen *CLASSIC* und *FLEX*. Die folgenden Module sind in beiden Tarifen der Gruppe *PRO* integral:
+
+  * Multi-Channel
+  * Online-Shop
+  * Auftragsabwicklung
+  * Warenwirtschaft
+  * CRM
+  * Payment
+  * Fulfillment
+  * Prozesse
+  * Cloud-Hosting
+
+Zusätzlich ist die Nutzung folgender Leistungen inklusive:
+
+    * ShopBuilder
+    * ShopBooster
+    * Facettensuche
+    * Rest-API
+    * Forensupport
+    * Software-Updates
+
+Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<tabelle-optionen-tarifgruppe-pro>> aufgeführten maximalen Anzahlen hinzugebucht werden.
+
+[[tabelle-optionen-tarifgruppe-pro]]
+.Optionen in der Tarifgruppe *PRO*
+[cols="1,3,3"]
+|====
+|Option |CLASSIC |FLEX
+
+|Benutzerlizenzen
+|20 inklusive / maximal 50
+|30 inklusive / maximal 100
+
+|Vertriebslager
+|3 inklusive / maximal 25
+|5 inklusive / maximal 40
+
+|Mandanten
+|1 inklusive / maximal 15
+|1 inklusive / maximal 30
+
+|POS / Kassen
+|bis zu 25 Kassen zubuchbar
+|bis zu 99 Kassen zubuchbar
+
+|====
+
+=== Tarifgruppe *PLUS*
+
+Die Tarifgruppe *PLUS* besteht aus den Tarifen *PLUS* und *B2B PLUS*. Die folgenden Module sind in beiden Tarifen der Gruppe *PLUS* integral:
+
+  * Multi-Channel
+  * Online-Shop
+  * Auftragsabwicklung
+  * Warenwirtschaft
+  * CRM
+  * Payment
+  * Fulfillment
+  * Prozesse
+  * Cloud-Hosting
+
+Zusätzlich ist die Nutzung folgender Leistungen inklusive:
+
+    * ShopBuilder
+    * ShopBooster
+    * Facettensuche
+    * Rest-API
+    * Forensupport
+    * Software-Updates
+
+Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<tabelle-optionen-tarifgruppe-plus>> aufgeführten maximalen Anzahlen hinzugebucht werden.
+
+
+[[tabelle-optionen-tarifgruppe-plus]]
+.Optionen in der Tarifgruppe *PLUS*
+[cols="1,3,3"]
+|====
+|Option |PLUS |B2B PLUS
+
+|Benutzerlizenzen
+|60 inklusive / maximal 200
+|1 inklusive / maximal 200
+
+|Vertriebslager
+|10 inklusive / maximal 50
+|10 inklusive / maximal 50
+
+|Mandanten
+|3 inklusive / maximal 50
+|3 inklusive / maximal 50
+
+|POS / Kassen
+|bis zu 99 Kassen zubuchbar
+|bis zu 99 Kassen zubuchbar
+
+|====
+
+=== Tarif *plentymarkets PARTNER*
+
+Der Tarif *plentymarkets PARTNER* kann nur von zertifizierten plentymarkets Partnern gebucht werden. Die folgenden Module sind im Tarif integral:
+
+  * Multi-Channel
+  * Online-Shop
+  * Auftragsabwicklung
+  * Warenwirtschaft
+  * CRM
+  * Payment
+  * Fulfillment
+  * Prozesse
+  * Cloud-Hosting
+
+Zusätzlich ist die Nutzung folgender Leistungen inklusive:
+
+    * ShopBuilder
+    * ShopBooster
+    * Facettensuche
+    * Rest-API
+    * Forensupport
+    * Software-Updates
+
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in <<tabelle-optionen-tarif-partner>> aufgeführten maximalen Anzahlen hinzugebucht werden.
+
+[[tabelle-optionen-tarif-partner]]
+.Optionen im Tarif *plentymarkets PARTNER*
+[cols="1,3]
+|====
+|Option |plentymarkets *PARTNER*
+
+|Benutzerlizenzen
+|5 inklusive / maximal 10
+
+|Vertriebslager
+|3 inklusive / maximal 3
+
+|Mandanten
+|0 inklusive / maximal 10
+
+|POS / Kassen
+|2 inklusive / maximal 2
+
+|====
 
 === Hosting-Optionen
 
@@ -18,5 +211,5 @@ Jeder Anwender muss eine der von plentymarkets angebotenen Hosting-Optionen wäh
  * AWS Dublin
  * AWS Frankfurt
  * Cluster Frankfurt
- 
+
 Nähere Erläuterungen zu den einzelnen Hosting-Optionen finden sich im Dokument Data Security.
