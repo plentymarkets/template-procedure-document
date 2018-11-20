@@ -779,7 +779,7 @@ Aktueller Monat, Letzter Monat, Letzte 30 Tage, Letzte 3 Monate, Letzte 6 Monate
 
 |Typ
 |Filterung nach Typ des Geschäftsvorfalls. Folgende Typen sind verfügbar: +
-Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift, Tagesabschluss
+Auftrag, Einlage, Entnahme, Stornierung, Retoure, Gutschrift
 |===
 
 
