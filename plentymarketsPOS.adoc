@@ -298,8 +298,7 @@ Eine Änderung der gespeicherten Kassenauftragsdaten durch plentymarkets Anwende
 
 Bei bargeldloser Zahlung treten geringfügige Besonderheiten auf:
 
-* Bei der Zahlungsart Kartenzahlung muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
-* Bei der Kartenzahlung mit Miura kann, wenn es in den Einstellungen so definiert wurde, diese Bestätigung des Zahlungseingangs auch automatisiert passieren.
+* Bei der Zahlungsart *Kartenzahlung* muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
 * Bei der Zahlungsart *Kartenzahlung* wird der Barbestand der Kasse nicht erhöht.
 
 ====== Sonderfall 1: Gutscheinverkauf
