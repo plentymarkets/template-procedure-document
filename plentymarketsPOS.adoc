@@ -298,7 +298,7 @@ Eine Änderung der gespeicherten Kassenauftragsdaten durch plentymarkets Anwende
 
 Bei bargeldloser Zahlung treten geringfügige Besonderheiten auf:
 
-* Bei der Zahlungsart *Kartenzahlung* muss kein erhaltener Betrag eingegeben werden. Kassierer/-innen bestätigen mit einem Klick auf “Betrag erhalten/Zahlung abschließen” lediglich, dass die Zahlung mit Karte erfolgt ist.
+* Ab Version 1.8.5 (Release-Datum 20.11.2018) können Kunden auch mehrere Zahlungsarten kombinieren und nur einen Teil des Auftragswerts mit Karte zahlen. Kassierer/-innen geben dann den Betrag ein, den die Kundin mit Karte bezahlen möchte. Wenn Kunden den gesamten Betrag per Karte zahlen möchten, können Kassierer/-innen den Gesamtbetrag eingeben oder direkt auf das Symbol *Kartenzahlung* tippen, um den Gesamtbetrag über das Terminal zu buchen.
 * Bei der Zahlungsart *Kartenzahlung* wird der Barbestand der Kasse nicht erhöht.
 
 ====== Sonderfall 1: Gutscheinverkauf
