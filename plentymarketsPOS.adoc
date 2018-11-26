@@ -1034,8 +1034,14 @@ Tagesberichte werden [nur elektronisch erstellt/elektronisch erstellt und ausged
 
 ====== Sonderfall 1: Zahlartenmix
 
-Ab Version 1.8.5 (Release-Datum 20.11.2018) können beim Abschließen eines Auftrags beliebig viele Zahlungsarten kombiniert werden. Die Vorgehensweise für Kassierer/-innen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#430[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#430].
-Auf dem Tagesabschlussbericht (Z-Report) werden Aufträge, die mit mehr als einer Zahlungsart bezahlt wurden, nicht separat aufgeführt. Die pro Zahlungsart in Klammern angezeigte Anzahl der Zahlungsvorgänge kann also höher sein als die Anzahl der Aufträge, die seit dem letzten Tagesabschluss erstellt wurden.
+Ab Version 1.8.5 (Release-Datum 20.11.2018) können Kunden Zahlungsarten kombinieren, um einen Auftrag zu bezahlen.
+
+Die Vorgehensweise für Kassierer/-innen wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#430[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#430].
+
+Aus der Möglichkeit, Zahlarten zu kombinieren, ergeben sich die folgenden Besonderheiten:
+
+* Bargeldzahlungen erhöhen den Barbestand erst, wenn der Auftrag abgeschlossen ist.
+* Auf dem Tagesabschlussbericht (Z-Report) werden Aufträge, die mit mehr als einer Zahlungsart bezahlt wurden, nicht separat aufgeführt. Die pro Zahlungsart in Klammern angezeigte Anzahl der Zahlungsvorgänge kann also höher sein als die Anzahl der Aufträge, die seit dem letzten Tagesabschluss erstellt wurden.
 
 ===== Kassensturzberichte
 
