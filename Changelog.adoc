@@ -8,4 +8,5 @@ Beispiel Changelog
 |POS     |Kathrin Hoffmeister |20.02.18 |Buchungskonten für Kassenvorfälle
 |Artikel |Kathrin Hoffmeister |20.02.18 |Artikelverwaltung abgeschlossen
 |POS     |Kathrin Hoffmeister |22.08.18 |Änderungen in POS-Versionen 1.8 und 1.8.1
+|POS     |Kathrin Hoffmeister |26.11.18 |POS: Zahlartenmix ab plentymarkets App Version 1.8.5
 |======================
