@@ -1042,6 +1042,7 @@ Aus der Möglichkeit, Zahlarten zu kombinieren, ergeben sich die folgenden Beson
 
 * Bargeldzahlungen erhöhen den Barbestand erst, wenn der Auftrag abgeschlossen ist.
 * Auf dem Tagesabschlussbericht (Z-Report) werden Aufträge, die mit mehr als einer Zahlungsart bezahlt wurden, nicht separat aufgeführt. Die pro Zahlungsart in Klammern angezeigte Anzahl der Zahlungsvorgänge kann also höher sein als die Anzahl der Aufträge, die seit dem letzten Tagesabschluss erstellt wurden.
+* Im Kassenjournal werden pro Auftrag die gezahlten Beträge pro Zahlart in der Spalte *Zahlungsart* aufgeführt.
 
 ===== Kassensturzberichte
 
