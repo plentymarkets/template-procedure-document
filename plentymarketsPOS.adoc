@@ -803,7 +803,7 @@ Systemseitig sind die Daten des Kassenjournals in der Datentabelle *plenty_pos_j
 
 ==== Online-Bestellungen an der Kasse abschließen (Click & Collect)
 
-Ab Version 1.8.9 der plentymarkets App können an der Kasse auch Online-Bestellungen abgeschlossen werden. Kundinnen und Kunden können Waren also auch über den Webshop bestellen und entweder im Ladengeschäft die bereits bezahlten Artikel abholen oder die bestellten Artikel im Ladengeschäft bezahlen und abholen.
+Ab Version 1.9 der plentymarkets App können an der Kasse auch Online-Bestellungen abgeschlossen werden. Kundinnen und Kunden können Waren also auch über den Webshop bestellen und entweder im Ladengeschäft die bereits bezahlten Artikel abholen oder die bestellten Artikel im Ladengeschäft bezahlen und abholen.
 
 Zahlungen, die an der Kasse getätigt werden, um einen solchen Online-Auftrag zu bezahlen, sind für die Kasse umsatzneutral. Der Umsatz wird stattdessen der Herkunft des Auftrags zugerechnet. Im Kassenjournal werden Zahlungen, die nicht umsatzrelevant für die Kasse sind, als Kassenvorfall des Typs *Zahlung* gespeichert.
 
@@ -964,7 +964,7 @@ Ab App-Verson 1.7.3: Retournierte Artikel
 |Anzahl in Klammern
 
 |Umsatzneutrale Zahlungen +
-(ab App-Version 1.8.9, Release-Datum xx.xx.2019)
+(ab App-Version 1.9, Release-Datum xx.xx.2019)
 |Summe der über die Kasse durchgeführte Zahlungen von Aufträgen mit anderen Herkünften (Click & Collect)
 |Anzahl in Klammern +
 *_Hinweis:_* Die Zahlungen sind kassenseitig umsatzneutral, da der Umsatz der ursprünglichen Herkunft des Auftrags zugerechnet wird.
