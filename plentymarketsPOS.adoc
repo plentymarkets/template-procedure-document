@@ -800,6 +800,17 @@ Systemseitig sind die Daten des Kassenjournals in der Datentabelle *plenty_pos_j
  * *_orderId_* -> Die ID des Auftrags
  * *_currentCashBalance_* -> Der Barbestand der Kasse zum gegebenen Zeitpunkt
 
+
+==== Online-Bestellungen an der Kasse abschließen (Click & Collect)
+
+Ab Version 1.9 der plentymarkets App (Release-Datum 17.01.2019) können an der Kasse auch Online-Bestellungen abgeschlossen werden. Kundinnen und Kunden können Waren also auch über den Webshop bestellen und entweder im Ladengeschäft die bereits bezahlten Artikel abholen oder die bestellten Artikel im Ladengeschäft bezahlen und abholen.
+
+Zahlungen, die an der Kasse getätigt werden, um einen solchen Online-Auftrag zu bezahlen, sind für die Kasse umsatzneutral. Der Umsatz wird stattdessen der Herkunft des Auftrags zugerechnet. Im Kassenjournal werden Zahlungen, die nicht umsatzrelevant für die Kasse sind, als Kassenvorfall des Typs *Zahlung* gespeichert.
+
+Im Handbuch des ERP-Systems plentymarkets wird beschrieben, wie Online-Bestellungen an der Kasse abgeschlossen werden: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#450[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#450] +
+
+Die nötigen Vorbereitungen und Einschränkungen werden ebenfalls dort beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#3700[https://knowledge.plentymarkets.com/omni-channel/pos/pos-einrichten#3700]
+
 ==== Speicherung und Abrufbarkeit von plentymarkets POS Geschäftsvorfällen (Berichtswesen)
 
 plentymarkets POS bietet umfassende Berichtsfunktionen. Folgende Berichte können erstellt werden:
@@ -811,7 +822,7 @@ plentymarkets POS bietet umfassende Berichtsfunktionen. Folgende Berichte könne
 
 ===== Zwischenberichte (X-Berichte)
 
-Zwischenberichte zeigen eine Auflistung der Umsätze über die Kasse seit dem letzten Tagesabschluss. In plentymarkets POS können jederzeit und beliebig viele Zwischenberichte gedruckt werden. Wie Zwischenberichte erstellt werden, wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220]  +
+Zwischenberichte zeigen eine Auflistung der Umsätze über die Kasse seit dem letzten Tagesabschluss. In plentymarkets POS können jederzeit und beliebig viele Zwischenberichte gedruckt werden. Wie Zwischenberichte erstellt werden, wird im Handbuch des ERP-Systems plentymarkets beschrieben: https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220[https://knowledge.plentymarkets.com/omni-channel/pos/pos-kassenbenutzer#220] +
 Zwischenberichte sind kein gültiger Nachweis gegenüber dem Finanzamt und werden daher weder in der plentymarkets App noch im ERP-System plentymarkets gespeichert. Sie werden daher auch keinem Nummernkreis zugeordnet.
 
 Im Unternehmen wird mit den Ausdrucken von Zwischenberichten wie folgt verfahren:
@@ -953,7 +964,7 @@ Ab App-Verson 1.7.3: Retournierte Artikel
 |Anzahl in Klammern
 
 |Umsatzneutrale Zahlungen +
-(ab App-Version 1.x.x, Release-Datum xx.xx.2018)
+(ab App-Version 1.9, Release-Datum xx.xx.2019)
 |Summe der über die Kasse durchgeführte Zahlungen von Aufträgen mit anderen Herkünften (Click & Collect)
 |Anzahl in Klammern +
 *_Hinweis:_* Die Zahlungen sind kassenseitig umsatzneutral, da der Umsatz der ursprünglichen Herkunft des Auftrags zugerechnet wird.
