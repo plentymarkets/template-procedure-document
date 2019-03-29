@@ -24,7 +24,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 [cols="1,2,6"]
 |===
 |Version  |Datum      |Changelog
-|V7       |25.03.2019 |Die Unterabschnitte Zahlartenmix und Click & Collect wurden dem Abschnitt POS hinzugefügt
+|V6.1     |25.03.2019 |Die Unterabschnitte Zahlartenmix und Click & Collect wurden dem Abschnitt POS hinzugefügt
 |V6       |07.03.2018 |Der Abschnitte Artikel und Multi-Channel wurde hinzugefügt und im Abschnitt POS wurden Buchungskonten für Kassenvorfälle ergänzt
 |V5       |24.11.2017 |In der Beschreibung der Auftragsabwicklung wurden Informationen zu den Auftragstypen Retoure, Gewährleistung etc. ergänzt. Außerdem wurden die Benutzerrechte detaillierter beschrieben sowie alle möglichen Einstellungen tabellarisch ergänzt. Die Tabellen finden sich im Anhang. Der Abschnitt Versandabwicklung wurde hinzugefügt.
 |V4       |07.11.2017 |Die Abschnitte POS und Webshop wurden hinzugefügt
