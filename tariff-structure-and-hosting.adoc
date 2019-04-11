@@ -206,6 +206,6 @@ Jeder Anwender muss *eine* der von plentymarkets angebotenen Hosting-Optionen w�
  * AWS Dublin
  * AWS Frankfurt
 
-Die Speicherung und Sicherung von Daten findet ausschließlich am ausgewählten Server-Standort statt.
+Die Speicherung und Sicherung von Daten findet ausschließlich am ausgewählten Server-Standort statt. Die Sicherung von Daten in Form von Backups findet ausdrücklich *nur* am gewählten Server-Standort und niemals an weiteren Standorten statt.
 
 Nähere Erläuterungen zu den einzelnen Hosting-Optionen finden sich im Dokument Data Security.
