@@ -201,10 +201,11 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 
 === Hosting-Optionen
 
-Jeder Anwender muss eine der von plentymarkets angebotenen Hosting-Optionen wählen. Die folgenden Hosting-Optionen stehen ihm hierbei zur Verfügung:
+Jeder Anwender muss *eine* der von plentymarkets angebotenen Hosting-Optionen wählen. Die folgenden Hosting-Optionen in Form von Server-Standorten stehen hierbei zur Verfügung:
 
  * AWS Dublin
  * AWS Frankfurt
- * Cluster Frankfurt
+
+Die Speicherung und Sicherung von Daten findet ausschließlich am ausgewählten Server-Standort statt.
 
 Nähere Erläuterungen zu den einzelnen Hosting-Optionen finden sich im Dokument Data Security.
