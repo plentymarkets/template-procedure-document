@@ -1,5 +1,5 @@
 
-=== Fachliche und technische Beschreiung des Moduls Multi-Channel
+=== Fachliche und technische Beschreibung des Moduls Multi-Channel
 
 ==== Verwendungszweck
 
@@ -14,36 +14,35 @@ Das Softwaremodul Multi-Channel dient insbesondere dem zusätzlichen Vertrieb au
 
 ==== Verfügbarkeit
 
-Aktuell ist das Softwaremodul Multi-Channel in beiden von plentymarkets angebotenen Tarifen Zero und Classic verfügbar. Im Zero Tarif ist das Softwaremodul Multi-Channel - wie auch alle anderen plentymarkets Softwaremodule - ohne zusätzlichen Gebühren inklusive. +
-Im Classic Tarif kann das Modul gegen Aufpreis hinzugebucht werden.
+Aktuell ist das Softwaremodul Multi-Channel in allen von plentymarkets angebotenen Tarifen inklusive (Starter, Pro, Plus).
 
 ==== Dokumentation
 
-Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/omni-channel/multi-channel[https://knowledge.plentymarkets.com/omni-channel/multi-channel] +
+Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte] +
 Ein Download der Dokumentation ist zurzeit nicht möglich. Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Dokumentation zur Verfügung.
 
 ==== Integrierte Kanäle
 
-Die im Modul Multi-Channel fest integrierten Online-Märkte sind über das Menü *Einstellungen » Märkte *konfigurierbar. Folgende Online-Märkte sind im Modul Multi-Channel fest integriert:
+Die im Modul Multi-Channel fest integrierten Online-Märkte sind über das Menü *System » Systemeinstellungen » Märkte* konfigurierbar. Folgende Online-Märkte sind im Modul Multi-Channel fest integriert:
 
 |===
 |Marktplatz|*In Verwendung*
 
-|Allyouneed|[_Ja/Nein_]
 |Amazon|[_Ja/Nein_]
 |bol.com|[_Ja/Nein_]
-|DaWanda|[_Ja/Nein_]
 |eBay|[_Ja/Nein_]
 |Flubit|[_Ja/Nein_]
 |Fruugo|[_Ja/Nein_]
+|GartenXXL.at|[_Ja/Nein_]
+|GartenXXL.de|[_Ja/Nein_]
 |grosshandel.eu|[_Ja/Nein_]
 |Hood|[_Ja/Nein_]
 |La Redoute|[_Ja/Nein_]
 |Mercateo|[_Ja/Nein_]
 |Neckermann.at|[_Ja/Nein_]
+|Netto|[_Ja/Nein_]
 |Otto|[_Ja/Nein_]
 |Pixmania|[_Ja/Nein_]
-|Plus.de|[_Ja/Nein_]
 |real.de|[_Ja/Nein_]
 |Restposten.de|[_Ja/Nein_]
 |ricardo.ch|[_Ja/Nein_]
@@ -53,9 +52,9 @@ Die im Modul Multi-Channel fest integrierten Online-Märkte sind über das Menü
 |===
 
 
-Jedoch sind nicht alle von plentymarkets angebotenen Online-Märkte im Modul Multi-Channel fest integriert. Diese Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einstellungen » Märkte* sichtbar und somit konfigurierbar sind.
+Jedoch sind nicht alle von plentymarkets angebotenen Online-Märkte im Modul Multi-Channel fest integriert. Diese Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar und somit konfigurierbar sind.
 
-Für einige Online-Märkte und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einstellungen » Märkte* fest integriert und konfigurierbar. Jedoch werden für diese Märkte noch die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Märkte sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
+Für einige Online-Märkte und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *System » Systemeinstellungen » Märkte* fest integriert und konfigurierbar. Jedoch werden für diese Märkte noch die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Märkte sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
 
 |===
 |Marktplatz|*In Verwendung*
@@ -104,7 +103,8 @@ Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz
 |4.04|Amazon France|Auftrag|[_Ja/Nein_]
 |4.05|Amazon Italy|Auftrag|[_Ja/Nein_]
 |4.06|Amazon Spain|Auftrag|[_Ja/Nein_]
-|4.20|Amazon B2B|Auftrag|[_Ja/Nein_]
+|4.07|Amazon Canada|Auftrag|[_Ja/Nein_]
+|4.08|Amazon Mexico|Auftrag|[_Ja/Nein_]
 |4.21|Amazon Germany B2B|Auftrag|[_Ja/Nein_]
 |4.22|Amazon UK B2B|Auftrag|[_Ja/Nein_]
 |5.00|Yatego|Auftrag|[_Ja/Nein_]
@@ -117,16 +117,18 @@ Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz
 |104.04|Amazon FBA France|Auftrag|[_Ja/Nein_]
 |104.05|Amazon FBA Italy|Auftrag|[_Ja/Nein_]
 |104.06|Amazon FBA Spain|Auftrag|[_Ja/Nein_]
-|104.20|Amazon FBA B2B|Auftrag|[_Ja/Nein_]
+|104.07|Amazon FBA Canada|Auftrag|[_Ja/Nein_]
+|104.08|Amazon FBA Mexico|Auftrag|[_Ja/Nein_]
 |104.21|Amazon FBA Germany B2B|Auftrag|[_Ja/Nein_]
 |104.22|Amazon FBA UK B2B|Auftrag|[_Ja/Nein_]
+|105.00|Zentralverkauf.de|Auftrag|[_Ja/Nein_]
 |106.00|Rakuten.de|Auftrag|[_Ja/Nein_]
-|108.00|Otto|Auftrag|[_Ja/Nein_]
+|108.00|Otto Cooperation|Auftrag|[_Ja/Nein_]
 |108.02|Otto Integration|Auftrag|[_Ja/Nein_]
 |109.00|Shopgate|Auftrag|[_Ja/Nein_]
-|110.00|Allyouneed|Auftrag|[_Ja/Nein_]
 |115.00|Restposten|Auftrag|[_Ja/Nein_]
 |116.00|Kauflux|Auftrag|[_Ja/Nein_]
+|117.00|Home24|Auftrag|[_Ja/Nein_]
 |118.00|Zalando|Auftrag|[_Ja/Nein_]
 |119.00|Neckermann.at Enterprise|Auftrag|[_Ja/Nein_]
 |120.00|Neckermann.at Cross-Docking|Auftrag|[_Ja/Nein_]
@@ -138,15 +140,17 @@ Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz
 |132.00|GartenXXL.de|Auftrag|[_Ja/Nein_]
 |137.00|Grosshandel.eu|Auftrag|[_Ja/Nein_]
 |140.00|Pixmania|Merkmal|[_Ja/Nein_]
-|143.00|Cdiscount|Auftrag|[_Ja/Nein_]
-|143.02|Cdiscount C Logistique|Auftrag|[_Ja/Nein_]
-|144.00|DaWanda|Auftrag|[_Ja/Nein_]
+|143.00|Cdiscount.com|Auftrag|[_Ja/Nein_]
+|143.02|Cdiscount.com C Logistique|Auftrag|[_Ja/Nein_]
 |145.00|Fruugo|Auftrag|[_Ja/Nein_]
 |147.00|Flubit|Auftrag|[_Ja/Nein_]
 |149.00|Mercateo|Auftrag|[_Ja/Nein_]
 |150.00|Check24|Auftrag|[_Ja/Nein_]
-|153.00|billiger.de|Auftrag|[_Ja/Nein_]
 |152.00|BOL.com|Auftrag|[_Ja/Nein_]
+|154.00|Netto|Auftrag|[_Ja/Nein_]
+|155.00|GartenXXL.at|Auftrag|[_Ja/Nein_]
+|160.00|OTTO|Auftrag|[_Ja/Nein_]
+|160.10|OTTO Cooperation|[_Ja/Nein_]
 |===
 
 Bei den aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentymarkets System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiv. Damit über Online-Märkte Artikel verkauft, Aufträge generiert und einer Herkunft zugeordnet werden können, muss die Auftragsherkunft zunächst aktiviert werden. Ohne die Aktivierung der Herkunft findet also kein Verkauf auf Online-Märkten statt.
@@ -162,20 +166,20 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |===
 |*Zahlungsart*|*Erläuterung*
 
-|Allyouneed Payments|Zahlungsart für Aufträge, die über den Marktplatz Allyouneed ins plentymarkets System kommen.
 |Amazon|Zahlungsart für Aufträge, die über den Marktplatz Amazon ins plentymarkets System kommen.
 |Amazon Payments|Zahlungsart im Webshop für Kunden, die über den Marktplatz Amazon im Webshop einkaufen.
 |Amazon Payments Advanced|Zahlungsart im Webshop für Kunden, die über den Marktplatz Amazon im Webshop einkaufen.
 |Cdiscount|Zahlungsart für Aufträge, die über den Marktplatz Cdiscount ins plentymarkets System kommen.
-|DaWanda|Zahlungsart für Aufträge, die über den Marktplatz DaWanda ins plentymarkets System kommen.
 |eBay-Rechnungskauf|Zahlungsart für Kauf auf Rechnung bei eBay.
 |Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentymarkets System kommen.
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentymarkets System kommen.
+|GartenXXL.at|Zahlungsart für den Marktplatz GartenXXL.at.
+|GartenXXL.de|Zahlungsart für den Marktplatz GartenXXL.de.
 |La Redoute Payment|Zahlungsart für Aufträge, die über den Marktplatz La Redoute ins plentymarkets System kommen.
 |Neckermann.at Payment|Zahlungsart für den Marktplatz Neckermann.at.
+|Netto|Zahlungsart für den Marktplatz Netto.
 |Otto Payment|Zahlungsart für den Marktplatz Otto.
 |PIXmania Payment|Zahlungsart für den Marktplatz PIXmania.
-|Plus.de|Zahlungsart für den Marktplatz Plus.de.
 |Rakuten|Zahlungsart für den Marktplatz Rakuten.
 |real.de Payment|Zahlungsart für den Marktplatz real.de.
 |Shopgate|Zahlungsart für den Marktplatz Shopgate.
@@ -185,7 +189,7 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 
 ==== Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Damit Preis zu den Online-Märkten übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
+Verkaufspreise werden zentral verwaltet. Damit Preise zu den Online-Märkten übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ Auktion oder Festpreis zum Verkauf angeboten. +
 Auf Listings vom Typ Auktion kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ Festpreis werden zu einem festgelegten Preis angeboten.
@@ -200,15 +204,13 @@ Daten können automatisch über Rest-API und FTP-Server oder manuell über den e
 |===
 |*Marktplatz*|*Datenaustausch*
 
-|Allyouneed|Im- und Export über Rest-API mit XML-Datei
-|Amazon|Im-und Export über Amazon MWS Webservice-API mit CSV-Datei
+|Amazon|Im- und Export über Amazon MWS Webservice-API mit CSV-Datei
 |bol.com|Export über elastischen Export +
  Import über Rest-API mit JSON
 |Cdiscount|Im- und Export über Rest-API mit XML-Datei
 |Check24|Export über elastischen Export +
  Import über FTP-Server mit XML-Datei
-|DaWanda|Im- und Export über Rest-API mit XML-Datei
-|eBay|Im-und Export über Rest-API mit XML-Dateien
+|eBay|Im- und Export über Rest-API mit XML-Dateien
 |Flubit|Im- und Export über Rest-API mit JSON
 |Fruugo|Im- und Export über Rest-API mit XML-Datei
 |grosshandel.eu|Im- und Export über SOAP-API
@@ -220,15 +222,15 @@ Daten können automatisch über Rest-API und FTP-Server oder manuell über den e
 |Mercateo|Export über FTP Server mit XML-Datei +
  Import über E-MAil
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
+|Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
 |Otto|Im- und Export über FTP-Server mit XML-Datei
 |Pixmania|Im- und Export über Rest-API mit CSV-Datei
-|Plus.de|Im- und Export über FTP-Server mit XML-Datei
 |Rakuten.de|Export über elastischen Export +
 Import über Rest-API mit JSON
 |real.de|Im- und Export über Rest-API mit CSV-Datei
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
-|Shopgate|Im-und Export über Rest-API mit CSV-Datei
+|Shopgate|Im- und Export über Rest-API mit CSV-Datei
 |Yatego|Export über FTP-Server mit CSV-Datei +
  Import über Rest-API
 |Zalando|Im- und Export über Rest-API mit XML-Datei
