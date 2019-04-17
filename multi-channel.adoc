@@ -66,6 +66,13 @@ Für einige Online-Märkte und Preissuchmaschinen, bei denen Daten über den ela
 |Kauflux|[_Ja/Nein_]
 |Rakuten.de|[_Ja/Nein_]
 |===
+
+==== Zusätzliche Marktplatz-Services
+
+Für den Marktplatz Amazon steht der Amazon-Umsatzsteuerservice VCS zur Verfügung. Mit diesem Service können Amazon-Rechnungen durch plentymarkets oder durch Amazon erzeugt werden. +
+Wenn Amazon-Rechnungen durch plentymarkets erzeugt werden, werden diese mit Daten aus plentymarkets erzeugt, automatisch zu Amazon übertragen und bei Amazon gespeichert. Wenn Rechnungen durch Amazon erzeugt werden, werden diese mit Daten aus Amazon erzeugt und bei Amazon gespeichert. In beiden Fällen können die Rechnungen nicht nachträglich geändert werden.
+
+
 ==== Auftragsherkünfte
 
 Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz ein Auftrag generiert wurde. Folgende Auftragsherkünfte sind für das Modul Multi-Channel standardmäßig in jedem plentymarkets System vorangelegt:
@@ -196,10 +203,7 @@ Auf Listings vom Typ Auktion kann geboten werden. Diese Listings werden mit eine
 
 ==== Datenaustausch
 
-
 Daten können automatisch über Rest-API und FTP-Server oder manuell über den elastischen Export ausgetauscht werden. Im API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
-
-
 
 |===
 |*Marktplatz*|*Datenaustausch*
