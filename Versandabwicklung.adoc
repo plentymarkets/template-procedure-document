@@ -128,7 +128,7 @@ Wenn mehrere Versandprofile vorhanden sind, erfolgt die Zuordnung zu einem Auftr
 
 Der Anwender legt fest, welche Versandmöglichkeiten es für einen Artikel gibt, indem er das Versandprofil anlegt und in diesem Mandanten (Shops), Herkünfte und Portotabellen – diese enthalten die Versandregionen – für den Endkunden freigibt. Wichtig hierbei ist, dass der Anwender dieses Versandprofil an den entsprechenden Artikeln verknüpft.
 
-Weitere Informationen zu den Einstellungen im Versandprofil sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/auftragsabwicklung/fulfillment/versand-vorbereiten#1000[*Versand vorbereiten*, window="_blank"] zu finden.
+Weitere Informationen zu den Einstellungen im Versandprofil sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#1000[Versand vorbereiten^] zu finden.
 
 ===== Artikel-Portoaufschlag
 
@@ -220,7 +220,7 @@ UK Mail |Nein
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Versanddienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/auftragsabwicklung/fulfillment/versand-vorbereiten#2500[*Versanddienstleister im Überblick*, window="_blank"] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#2500[Versanddienstleister im Überblick^] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
 
 === Integrierte Fulfillment-Dienstleister
 
@@ -233,7 +233,7 @@ Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnitt
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/auftragsabwicklung/fulfillment/versand-vorbereiten#4700[*Fulfillment-Dienstleister im Überblick*, window="_blank"] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#4700[Fulfillment-Dienstleister im Überblick^] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
 
 ==== Datenübertragung
 

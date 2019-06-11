@@ -16,7 +16,7 @@ Der Begriff _Kunden_ im plentymarkets CRM-Modul beinhaltet nicht nur natürliche
 
 Wenn ein neuer Kundendatensatz erstellt wird, erhält dieser eine ID. Die Kunden-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
 
-Welche Informationen im Kundendatensatz gespeichert werden können, ist im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kundendaten-verwalten#800[Kundendaten verwalten, window="_blank"] beschrieben.
+Welche Informationen im Kundendatensatz gespeichert werden können, ist im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#100[Kontakte verwalten^] beschrieben.
 
 In einem neu angelegten System sind vier Beispielkundendatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kundendatensatz erstellt wird. Der Startwert für die Kunden-IDs sowie die IDs der Kundendatensätze selbst kann nicht geändert werden.
 
@@ -271,7 +271,7 @@ JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 |Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kundendatensatz gerade geöffnet ist.
 |===
 
-Weitere Informationen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kundendaten-verwalten#1300[Kundendaten verwalten, window="_blank"] zu finden.
+Weitere Informationen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#[Kontakte verwalten^] zu finden.
 
 === Zahlungsarten
 
@@ -330,7 +330,7 @@ Wenn keine Verknüpfung zwischen einem Kundendatensatz und einem Auftrag besteht
 
 === Import und Export
 
-Der Anwender hat die Möglichkeit, Kundendaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API, window="_blank"] zur Verfügung.
+Der Anwender hat die Möglichkeit, Kundendaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
 Für den manuellen Austausch von Kundendaten stehen dem Anwender die folgenden Datenformate zur Verfügung:
 
@@ -357,7 +357,7 @@ Für den manuellen Austausch von Kundendaten stehen dem Anwender die folgenden D
 |Der Anwender kann das Datenformat verwenden, um Daten von Kunden, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
 |===
 
-Über die link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate[Übersichtsseite der Datenformate, window="_blank"] im plentymarkets Handbuch gelangt man zu den einzelnen Datenformaten inklusive Auflistungen der vorhandenen Datenfelder und Pflichtfelder sowie ggf. Abgleichfelder und Aktionen.
+Über die link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate[Übersichtsseite der Datenformate^] im plentymarkets Handbuch gelangt man zu den einzelnen Datenformaten inklusive Auflistungen der vorhandenen Datenfelder und Pflichtfelder sowie ggf. Abgleichfelder und Aktionen.
 
 === Backup
 
