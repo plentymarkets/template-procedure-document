@@ -3,12 +3,13 @@
 
 [[tabelle-rest-berechtigungen]]
 .Verfügbare REST-Berechtigungen
-[cols="1,1,1,1,1,1,1"]
+[cols="1,1,1,1,1,1,1,1"]
 |====
 
-|Hauptbereich |Unterebene 1 | Unterebene 2 |Unterebene 3 |Unterebebe 4 |Unterebene 5 |Unterebene 6
+|Hauptbereich |Unterebene 1 | Unterebene 2 |Unterebene 3 |Unterebene 4 |Unterebene 5 |Unterebene 6 |Unterebene 7
 
 |Artikel
+|
 |
 |
 |
@@ -23,6 +24,7 @@
 |
 |
 |
+|
 
 
 |
@@ -32,9 +34,11 @@
 |
 |
 |
+|
 
 |
 |Artikelbearbeitung
+|
 |
 |
 |
@@ -48,10 +52,12 @@
 |
 |
 |
+|
 
 |
 |
 |Artikel anzeigen
+|
 |
 |
 |
@@ -64,10 +70,12 @@
 |
 |
 |
+|
 
 |
 |
 |Artikel löschen
+|
 |
 |
 |
@@ -80,12 +88,14 @@
 |
 |
 |
+|
 
 |
 |
 |
 |
 |Artikelbild aktualisieren
+|
 |
 |
 
@@ -96,12 +106,14 @@
 |Artikelbild anzeigen
 |
 |
+|
 
 |
 |
 |
 |
 |Artikelbild erstellen
+|
 |
 |
 
@@ -112,6 +124,7 @@
 |Artikelbild löschen
 |
 |
+|
 
 |
 |
@@ -119,6 +132,7 @@
 |
 |
 |Artikelbildname
+|
 |
 
 |
@@ -128,6 +142,7 @@
 |
 |
 |Artikelbildname aktualisieren
+|
 
 |
 |
@@ -136,6 +151,7 @@
 |
 |
 |Artikelbildname anzeigen
+|
 
 |
 |
@@ -144,6 +160,7 @@
 |
 |
 |Artikelbildname erstellen
+|
 
 |
 |
@@ -152,6 +169,7 @@
 |
 |
 |Artikelbildname löschen
+|
 
 |
 |
@@ -159,6 +177,7 @@
 |
 |
 |Verfügbarkeit
+|
 |
 
 |
@@ -168,6 +187,7 @@
 |
 |
 |Verfügbarkeit aktivieren
+|
 
 |
 |
@@ -176,6 +196,7 @@
 |
 |
 |Verfügbarkeit aktualisieren
+|
 
 |
 |
@@ -184,6 +205,7 @@
 |
 |
 |Verfügbarkeit anzeigen
+|
 
 |
 |
@@ -192,11 +214,13 @@
 |
 |
 |Verfügbarkeit deaktivieren
+|
 
 |
 |
 |
 |Cross-Selling
+|
 |
 |
 |
@@ -208,12 +232,14 @@
 |Cross-Selling-Artikel aktivieren
 |
 |
+|
 
 |
 |
 |
 |
 |Cross-Selling-Artikel deaktivieren
+|
 |
 |
 
@@ -224,11 +250,13 @@
 |Cross-Selling-Verknüpfung anzeigen
 |
 |
+|
 
 |
 |
 |
 |Seriennummer
+|
 |
 |
 |
@@ -240,12 +268,14 @@
 |Seriennummer aktualisieren
 |
 |
+|
 
 |
 |
 |
 |
 |Seriennummer anzeigen
+|
 |
 |
 
@@ -256,12 +286,14 @@
 |Seriennummer erstellen
 |
 |
+|
 
 |
 |
 |
 |
 |Seriennummer löschen
+|
 |
 |
 
@@ -273,12 +305,14 @@
 |
 |
 |
+|
 
 |
 |
 |
 |
 |Set aktualisieren
+|
 |
 |
 
@@ -289,12 +323,14 @@
 |Set anzeigen
 |
 |
+|
 
 |
 |
 |
 |
 |Set erstellen
+|
 |
 |
 
@@ -305,11 +341,13 @@
 |Set löschen
 |
 |
+|
 
 |
 |
 |
 |Variante
+|
 |
 |
 |
@@ -321,6 +359,7 @@
 |Artikelpaket
 |
 |
+|
 
 |
 |
@@ -328,6 +367,7 @@
 |
 |
 |Artikelpaket aktualisieren
+|
 |
 
 |
@@ -337,6 +377,7 @@
 |
 |Artikelpaket anzeigen
 |
+|
 
 |
 |
@@ -344,6 +385,7 @@
 |
 |
 |Artikelpaket erstellen
+|
 |
 
 |
@@ -353,12 +395,14 @@
 |
 |Artikelpaket löschen
 |
+|
 
 |
 |
 |
 |
 |Artikeltext
+|
 |
 |
 
@@ -369,6 +413,7 @@
 |
 |Artikeltext aktualisieren
 |
+|
 
 |
 |
@@ -376,6 +421,7 @@
 |
 |
 |Artikeltext anzeigen
+|
 |
 
 |
@@ -385,6 +431,7 @@
 |
 |Artikeltext erstellen
 |
+|
 
 |
 |
@@ -392,6 +439,7 @@
 |
 |
 |Artikeltext löschen
+|
 |
 
 
@@ -402,6 +450,7 @@
 |Attribut bearbeiten
 |
 |
+|
 
 |
 |
@@ -409,6 +458,7 @@
 |
 |
 |value_set
+|
 |
 
 |
@@ -418,12 +468,14 @@
 |
 |
 |show
+|
 
 |
 |
 |
 |
 |Barcode-Code
+|
 |
 |
 
@@ -434,6 +486,7 @@
 |
 |Code aktualisieren
 |
+|
 
 |
 |
@@ -441,6 +494,7 @@
 |
 |
 |Code anzeigen
+|
 |
 
 |
@@ -450,6 +504,7 @@
 |
 |Code erstellen
 |
+|
 
 |
 |
@@ -458,12 +513,14 @@
 |
 |Code löschen
 |
+|
 
 |
 |
 |
 |
 |Bestandskorrektur
+|
 |
 |
 
@@ -474,12 +531,14 @@
 |Einkaufspreis
 |
 |
+|
 
 |
 |
 |
 |
 |Kategorie
+|
 |
 |
 
@@ -490,6 +549,7 @@
 |
 |Kategorie aktivieren
 |
+|
 
 |
 |
@@ -497,6 +557,7 @@
 |
 |
 |Kategorie deaktivieren
+|
 |
 
 |
@@ -506,6 +567,7 @@
 |
 |Kategorieverknüpfung aktualisieren
 |
+|
 
 |
 |
@@ -514,12 +576,14 @@
 |
 |Kategorieverknüpfung anzeigen
 |
+|
 
 |
 |
 |
 |
 |Lagerdaten
+|
 |
 |
 
@@ -530,6 +594,7 @@
 |
 |Lagerdaten aktualisieren
 |
+|
 
 |
 |
@@ -537,6 +602,7 @@
 |
 |
 |Lagerdaten anzeigen
+|
 |
 
 |
@@ -546,6 +612,7 @@
 |
 |Lagerdaten erstellen
 |
+|
 
 |
 |
@@ -553,6 +620,7 @@
 |
 |
 |Lagerdaten löschen
+|
 |
 
 
@@ -565,6 +633,7 @@
 |Lieferantendaten
 |
 |
+|
 
 
 |
@@ -574,6 +643,7 @@
 |
 |Lieferantendaten aktualisieren
 |
+|
 
 |
 |
@@ -581,6 +651,7 @@
 |
 |
 |Lieferantendaten anzeigen
+|
 |
 
 |
@@ -590,6 +661,7 @@
 |
 |Lieferantendaten erstellen
 |
+|
 
 |
 |
@@ -597,6 +669,7 @@
 |
 |
 |Lieferantendaten löschen
+|
 |
 
 
@@ -608,6 +681,7 @@
 |Mandant
 |
 |
+|
 
 |
 |
@@ -615,6 +689,7 @@
 |
 |
 |Mandant aktivieren
+|
 |
 
 |
@@ -624,6 +699,7 @@
 |
 |Mandant deaktivieren
 |
+|
 
 |
 |
@@ -632,6 +708,7 @@
 |
 |Mandantenverknüpfung aktualisieren
 |
+|
 
 |
 |
@@ -639,6 +716,7 @@
 |
 |
 |Mandantenverknüpfung anzeigen
+|
 |
 
 
@@ -651,6 +729,7 @@
 |Marktplatz
 |
 |
+|
 
 |
 |
@@ -658,6 +737,7 @@
 |
 |
 |ASIN/ePID
+|
 |
 
 |
@@ -667,6 +747,7 @@
 |
 |
 |ASIN/ePID aktualisieren
+|
 
 |
 |
@@ -675,6 +756,7 @@
 |
 |
 |ASIN/ePID anzeigen
+|
 
 |
 |
@@ -683,6 +765,7 @@
 |
 |
 |ASIN/ePID erstellen
+|
 
 |
 |
@@ -691,6 +774,7 @@
 |
 |
 |ASIN/ePID löschen
+|
 
 |
 |
@@ -698,6 +782,7 @@
 |
 |
 |Marktplatz aktivieren
+|
 |
 
 |
@@ -707,13 +792,14 @@
 |
 |Marktplatz deaktivieren
 |
-
+|
 |
 |
 |
 |
 |
 |Marktplatzverknüpfung aktualisieren
+|
 |
 
 |
@@ -722,6 +808,7 @@
 |
 |
 |Marktplatzverknüpfung anzeigen
+|
 |
 
 
@@ -733,6 +820,7 @@
 |Merkmal
 |
 |
+|
 
 |
 |
@@ -740,6 +828,7 @@
 |
 |
 |Eigenschaftswerte
+|
 |
 
 |
@@ -749,6 +838,7 @@
 |
 |
 |Eigenschaftswert aktualisieren
+|
 
 |
 |
@@ -757,6 +847,7 @@
 |
 |
 |Eigenschaftswert anzeigen
+|
 
 |
 |
@@ -765,6 +856,44 @@
 |
 |
 |Eigenschaftswert des Typs Text
+|
+
+|
+|
+|
+|
+|
+|
+|
+|Eigenschaftswert des Typs Text aktualisieren
+
+
+|
+|
+|
+|
+|
+|
+|
+|Eigenschaftswert des Typs Text anzeigen
+
+|
+|
+|
+|
+|
+|
+|
+|Eigenschaftswert des Typs Text erstellen
+
+|
+|
+|
+|
+|
+|
+|
+|Eigenschaftswert des Typs Text löschen
 
 |
 |
@@ -773,6 +902,7 @@
 |
 |
 |Eigenschaftswert erstellen
+|
 
 |
 |
@@ -781,6 +911,7 @@
 |
 |
 |Eigenschaftswert löschen
+|
 
 |
 |
@@ -788,6 +919,7 @@
 |
 |
 |Merkmal aktivieren
+|
 |
 
 |
@@ -797,6 +929,7 @@
 |
 |Merkmal deaktivieren
 |
+|
 
 |
 |
@@ -804,6 +937,7 @@
 |
 |
 |Merkmalverknüpfung aktualisieren
+|
 |
 
 |
@@ -813,12 +947,14 @@
 |
 |Merkmalverknüpfung anzeigen
 |
+|
 
 |
 |
 |
 |
 |Preis
+|
 |
 |
 
@@ -829,6 +965,7 @@
 |
 |Preis aktualisieren
 |
+|
 
 |
 |
@@ -836,6 +973,7 @@
 |
 |
 |Preis anzeigen
+|
 |
 
 |
@@ -845,6 +983,7 @@
 |
 |Preis erstellen
 |
+|
 
 |
 |
@@ -853,12 +992,14 @@
 |
 |Preis löschen
 |
+|
 
 |
 |
 |
 |
 |Standardkategorie
+|
 |
 |
 
@@ -869,6 +1010,7 @@
 |
 |Standardkategorie aktivieren
 |
+|
 
 |
 |
@@ -876,6 +1018,7 @@
 |
 |
 |Standardkategorie deaktivieren
+|
 |
 
 |
@@ -885,6 +1028,7 @@
 |
 |Standardkategorieverknüpfung aktualisieren
 |
+|
 
 |
 |
@@ -893,12 +1037,14 @@
 |
 |Standardkategorieverknüpfung anzeigen
 |
+|
 
 |
 |
 |
 |
 |Variante aktualisieren
+|
 |
 |
 
@@ -909,12 +1055,14 @@
 |Variante anzeigen
 |
 |
+|
 
 |
 |
 |
 |
 |Variante erstellen
+|
 |
 |
 
@@ -925,12 +1073,14 @@
 |Variante löschen
 |
 |
+|
 
 |
 |
 |
 |
 |Zusätzliche SKU
+|
 |
 |
 
@@ -941,6 +1091,7 @@
 |
 |Zusätzliche SKU aktualisieren
 |
+|
 
 |
 |
@@ -948,6 +1099,7 @@
 |
 |
 |Zusätzliche SKU anzeigen
+|
 |
 
 |
@@ -957,6 +1109,7 @@
 |
 |Zusätzliche SKU erstellen
 |
+|
 
 |
 |
@@ -965,12 +1118,14 @@
 |
 |Zusätzliche SKU löschen
 |
+|
 
 
 
 
 |
 |Artikeletikett
+|
 |
 |
 |
@@ -984,6 +1139,7 @@
 |
 |
 |
+|
 
 |
 |
@@ -992,10 +1148,12 @@
 |
 |
 |
+|
 
 |
 |
 |Artikeletikett generieren
+|
 |
 |
 |
@@ -1009,10 +1167,12 @@
 |
 |
 |
+|
 
 |
 |
 |Attribut aktualisieren
+|
 |
 |
 |
@@ -1025,10 +1185,12 @@
 |
 |
 |
+|
 
 |
 |
 |Attribut erstellen
+|
 |
 |
 |
@@ -1041,10 +1203,12 @@
 |
 |
 |
+|
 
 |
 |
 |Attributname
+|
 |
 |
 |
@@ -1057,11 +1221,13 @@
 |
 |
 |
+|
 
 |
 |
 |
 |Attributname anzeigen
+|
 |
 |
 |
@@ -1073,11 +1239,13 @@
 |
 |
 |
+|
 
 |
 |
 |
 |Attributname löschen
+|
 |
 |
 |
@@ -1090,11 +1258,13 @@
 |
 |
 |
+|
 
 |
 |
 |
 |Attributverknüpfung aktivieren
+|
 |
 |
 |
@@ -1106,11 +1276,13 @@
 |
 |
 |
+|
 
 |
 |
 |
 |Attributverknüpfung anzeigen
+|
 |
 |
 |
@@ -1122,10 +1294,12 @@
 |
 |
 |
+|
 
 |
 |
 |Attributwert
+|
 |
 |
 |
@@ -1138,11 +1312,13 @@
 |
 |
 |
+|
 
 |
 |
 |
 |Attributwert anzeigen
+|
 |
 |
 |
@@ -1154,11 +1330,13 @@
 |
 |
 |
+|
 
 |
 |
 |
 |Attributwert löschen
+|
 |
 |
 |
@@ -1170,12 +1348,14 @@
 |
 |
 |
+|
 
 |
 |
 |
 |
 |Attributwertname aktualisieren
+|
 |
 |
 
@@ -1186,12 +1366,14 @@
 |Attributwertname anzeigen
 |
 |
+|
 
 |
 |
 |
 |
 |Attributwertname erstellen
+|
 |
 |
 
@@ -1202,10 +1384,12 @@
 |Attributwertname löschen
 |
 |
+|
 
 |
 |
 |config
+|
 |
 |
 |
@@ -1219,6 +1403,52 @@
 |
 |
 |
+|
+
+|
+|
+|Barcode aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Barcode anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Barcode bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Barcode erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Barcode löschen
+|
+|
+|
+|
+|
 
 |
 |Bild
@@ -1227,9 +1457,56 @@
 |
 |
 |
+|
+
+|
+|
+|Einstellungen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Einstellungen bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Größe
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Größe bearbeiten
+|
+|
+|
+|
 
 |
 |Digital
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
 |
 |
 |
@@ -1243,6 +1520,97 @@
 |
 |
 |
+|
+
+|
+|
+|Einheit aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Einheit anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Einheit bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Einheit erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Einheit löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Einheitenname
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Einheitenname aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Einheitenname anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Einheitenname erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Einheitenname löschen
+|
+|
+|
+|
 
 |
 |Einstellungen
@@ -1251,9 +1619,31 @@
 |
 |
 |
+|
+
+|
+|
+|Einstellungen bearbeiten
+|
+|
+|
+|
+|
+
 
 |
 |Freitextfeld
+|
+|
+|
+|
+|
+|
+
+
+|
+|
+|Freitextfeld bearbeiten
 |
 |
 |
@@ -1267,10 +1657,165 @@
 |
 |
 |
+|
+
+|
+|
+|GTIN bearbeiten
+|
+|
+|
+|
+|
 
 |
 |Hersteller
 |
+|
+|
+|
+|
+|
+
+|
+|
+|Externer Hersteller
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Externen Hersteller aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Externen Hersteller anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Externen Hersteller anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Externen Hersteller erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Externen Hersteller löschen
+|
+|
+|
+|
+
+|
+|
+|Hersteller aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Hersteller anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Hersteller bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Hersteller erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Hersteller löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Herstellerprovision
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Herstellerprovision aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Herstellerprovision anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Herstellerprovision erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Herstellerprovision löschen
 |
 |
 |
@@ -1283,9 +1828,57 @@
 |
 |
 |
+|
+
+|
+|
+|Inhalt anzeigen
+|
+|
+|
+|
+|
+
 
 |
 |Kategorie
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Kategorie aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Kategorie anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Kategorie erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Kategorie löschen
 |
 |
 |
@@ -1299,9 +1892,29 @@
 |
 |
 |
+|
+
+|
+|
+|Lionbridge anzeigen
+|
+|
+|
+|
+|
 
 |
 |Markierung
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Markierung bearbeiten
 |
 |
 |
@@ -1315,9 +1928,290 @@
 |
 |
 |
+|
+
+|
+|
+|Auswahl
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl löschen
+|
+|
+|
+|
+
+|
+|
+|Marktplatzmerkmal
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Marktplatzmerkmal aktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Marktplatzmerkmal aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Marktplatzmerkmal anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Marktplatzmerkmal deaktivieren
+|
+|
+|
+|
+
+|
+|
+|Merkmal aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Merkmal anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Merkmal bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Merkmal erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Merkmal löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Merkmalgruppe
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalgruppe aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalgruppe anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalgruppe erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalgruppe löschen
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalgruppenname
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Merkmalgruppenname aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Merkmalgruppenname anzeigen
+|
+|
+|
+
+|
+|
+|
+|
+|Merkmalgruppenname erstellen
+|
+|
+|
+
+|
+|
+|
+|
+|Merkmalgruppenname löschen
+|
+|
+|
+
+|
+|
+|Merkmalname
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalnamen aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalnamen anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalnamen erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Merkmalnamen löschen
+|
+|
+|
+|
 
 |
 |Preiskalkulation
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Preiskalkulation bearbeiten
 |
 |
 |
@@ -1331,11 +2225,112 @@
 |
 |
 |
+|
+
+|
+|
+|Sets aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Sets anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Sets erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Sets löschen
+|
+|
+|
+|
+|
 
 |
 |Suche
 |
 |
+|
+|
+|
+|
+
+|
+|
+|Backend
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Backend-Suche bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Frontend
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Sprache
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Sprache bearbeiten
+|
+|
+|
+
+|
+|
+|
+|Sucheinstellungen
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Frontend-Suche bearbeiten
 |
 |
 |
@@ -1347,9 +2342,2238 @@
 |
 |
 |
+|
+
+|
+|
+|Verfügbarkeit bearbeiten
+|
+|
+|
+|
+|
 
 |
 |Verkaufspreis
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Herkunft
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Herkunft aktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Herkunft anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Herkunft deaktivieren
+|
+|
+|
+|
+
+|
+|
+|Konto
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Konto aktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Konto anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Konto deaktivieren
+|
+|
+|
+|
+
+|
+|
+|Kundenklasse
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Kundenklasse anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Kundenklasse deaktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Kundenklasse erstellen
+|
+|
+|
+|
+
+
+|
+|
+|Land
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Land aktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Land anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Land deaktivieren
+|
+|
+|
+|
+
+
+|
+|
+|Mandant
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Mandanten aktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Mandanten anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Mandanten löschen
+|
+|
+|
+|
+
+|
+|
+|Name
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Namen aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Namen anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Namen erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Namen löschen
+|
+|
+|
+|
+
+|
+|
+|Verkaufspreis aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Verkaufspreis anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Verkaufspreis bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Verkaufspreis erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Verkaufspreis löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Währung
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Währung aktivieren
+|
+|
+|
+|
+
+|
+|
+|
+|Währung anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Währung deaktivieren
+|
+|
+|
+|
+
+|Assistenten
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Assistent anzeigen
+|
+|
+|
+|
+|
+|
+
+|
+|Datensatz für Assistenten
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Datensatz abschließen
+|
+|
+|
+|
+|
+
+|
+|
+|Datensatz aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Datensatz anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Datensatz erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Datensatz löschen
+|
+|
+|
+|
+|
+
+|Aufträge
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Aufträge wiederherstellen
+|
+|
+|
+|
+|
+|
+
+|
+|Aufträge aktualisieren
+|
+|
+|
+|
+|
+|
+
+|
+|Aufträge anzeigen
+|
+|
+|
+|
+|
+|
+
+|
+|Aufträge erstellen
+|
+|
+|
+|
+|
+|
+
+|
+|Aufträge löschen
+|
+|
+|
+|
+|
+|
+
+|
+|Auftragsadressen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsadressen aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsadressen anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsadressen erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsadressen löschen
+|
+|
+|
+|
+|
+
+|
+|Auftragseigenschaften
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Typen für Auftragseigenschaften
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaftstyp aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaftstyp löschen
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaftstyp erstellen
+|
+|
+|
+|
+
+|
+|Auftragseinstellungen
+|
+|
+|
+|
+|
+|
+
+|
+|Auftragsposition
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Datumsangaben für Auftragspositionen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Datumsangabe aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Datumsangabe anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Datumsangabe erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Datumsangabe löschen
+|
+|
+|
+|
+
+|
+|
+|Deckungsbeitrag
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Deckungsbeitrag anzeigen
+|
+|
+|
+|
+
+|
+|
+|Eigenschaften von Auftragspositionen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaft aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaft anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaft erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Eigenschaft löschen
+|
+|
+|
+|
+
+|
+|
+|Transaktionen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Transaktionen aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Transaktionen anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Transaktionen erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Transaktionen löschen
+|
+|
+|
+|
+
+|
+|Auftragsstatus
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsstatus aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsstatus anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsstatus erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragsstatus löschen
+|
+|
+|
+|
+|
+
+|
+|Bestellungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bestellung aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Bestellung anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Bestellung erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Bestellungseinstellungen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Einstellungen aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Einstellungen anzeigen
+|
+|
+|
+|
+
+|
+|Buchung
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Buchung erstellen
+|
+|
+|
+|
+|
+
+|
+|Dokumente
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Dokument anlegen
+|
+|
+|
+|
+|
+
+|
+|
+|Dokument anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Dokument löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Dokumenteinstellungen
+|
+|
+|
+|
+|
+
+|
+|Ereignisse
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Ereigniseinstellungen
+|
+|
+|
+|
+|
+
+|
+|Fulfillment
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Menü anzeigen
+|
+|
+|
+|
+|
+
+|
+|Inkasso-Übergabe
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Inkasso-Übergabe anzeigen
+|
+|
+|
+|
+|
+
+|
+|Referenzen für Auftragsrelationen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Referenz aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Referenz anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Referenz erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Referenz löschen
+|
+|
+|
+|
+|
+
+|
+|Sammelauftrag
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Sammelauftrag anzeigen
+|
+|
+|
+|
+|
+
+|
+|Scheduler
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Scheduler anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Schedulereinstellungen
+|
+|
+|
+|
+|
+
+|
+|Seriennummern im Auftrag
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Seriennummern anzeigen
+|
+|
+|
+|
+|
+
+|
+|Versand
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Pakettyp
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Pakettyp anzeigen
+|
+|
+|
+|
+
+|
+|
+|Retourenlabel
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Retourendienstleister
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Retourendienstleister aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Retourendienstleister anlegen
+|
+|
+|
+
+|
+|
+|
+|
+|Retourendienstleister anzeigen
+|
+|
+|
+
+|
+|
+|
+|
+|Retourendienstleister löschen
+|
+|
+|
+
+|
+|
+|
+|Retourenlabel aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Retourenlabel anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Retourenlabel erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Retourenlabel löschen
+|
+|
+|
+|
+
+|
+|
+|Versandeinstellungen
+|
+|
+|
+|
+|
+
+|
+|
+|Versandpaket
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Artikel im Versandpaket
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaket aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaket anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaket erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaket löschen
+|
+|
+|
+|
+
+|
+|
+|Versandpaletten
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaletten aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaletten erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Versandpaletten löschen
+|
+|
+|
+|
+
+|
+|Warenausgang buchen
+|
+|
+|
+|
+|
+|
+
+|
+|Warenausgang der Auftragsposition zurücksetzen
+|
+|
+|
+|
+|
+|
+
+|
+|Warenausgang zurücksetzen
+|
+|
+|
+|
+|
+|
+
+|
+|Zahlung
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Zahlungseinstellungen
+|
+|
+|
+|
+|
+
+|
+|
+|Zahlungsverkehr anzeigen
+|
+|
+|
+|
+|
+
+|Authorisierung
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Berechtigungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Berechtigungen von Benutzern
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Berechtigungen eines Benutzers bearbeiten
+|
+|
+|
+|
+
+|
+|Rollen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Rollen konfigurieren
+|
+|
+|
+|
+|
+
+|
+|
+|user
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Rollen eines Benutzers bearbeiten
+|
+|
+|
+|
+
+|Benutzer
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Benutzer konfigurieren
+|
+|
+|
+|
+|
+|
+
+|Blog
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Blog aktualisieren
+|
+|
+|
+|
+|
+|
+
+|
+|Blog anzeigen
+|
+|
+|
+|
+|
+|
+
+|
+|Blog erstellen
+|
+|
+|
+|
+|
+|
+
+|
+|Blog löschen
+|
+|
+|
+|
+|
+|
+
+|Buchhaltung
+|
+|
+|
+|
+|
+|
+|
+
+|
+|config
+|
+|
+|
+|
+|
+|
+
+|
+|Standort
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Buchungsschlüssel
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Buchungsschlüssel anzeigen
+|
+|
+|
+|
+
+|
+|
+|Debitorenkonten
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Debitorenkonten anzeigen
+|
+|
+|
+|
+
+|
+|
+|Erlöskonten
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Erlöskonten anzeigen
+|
+|
+|
+|
+
+|
+|
+|Standort aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Standort anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Standort erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Standort löschen
+|
+|
+|
+|
+|
+
+|certification
+|
+|
+|
+|
+|
+|
+|
+
+|
+|config
+|
+|
+|
+|
+|
+|
+
+|client
+|
+|
+|
+|
+|
+|
+|
+
+|
+|contests
+|
+|
+|
+|
+|
+|
+
+|
+|domains
+|
+|
+|
+|
+|
+|
+
+|
+|feedback
+|
+|
+|
+|
+|
+|
+
+|
+|ftp
+|
+|
+|
+|
+|
+|
+
+|
+|gifts
+|
+|
+|
+|
+|
+|
+
+|
+|language_packages
+|
+|
+|
+|
+|
+|
+
+|
+|live_shopping
+|
+|
+|
+|
+|
+|
+
+|
+|services
+|
+|
+|
+|
+|
+|
+
+|
+|settings
+|
+|
+|
+|
+|
+|
+
+|
+|shop
+|
+|
+|
+|
+|
+|
+
+|
+|ssl
+|
+|
+|
+|
+|
+|
+
+|
+|statistics
+|
+|
+|
+|
+|
+|
+
+|
+|version
+|
+|
+|
+|
+|
+|
+
+|CMS
+|
+|
+|
+|
+|
+|
+|
+
+|CRM
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Adress-Layout
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Adress-Layout aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Adress-Layout anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Adress-Layout bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Adress-Layout erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Adress-Layout löschen
+|
+|
+|
+|
+|
+
+|
+|Adresse
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Adresse aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Adresse anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Adresse erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Adresse löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Adresstyp
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Adresstyp aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Adresstyp anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Adresstyp erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Adresstyp löschen
+|
+|
+|
+|
+
+|
+|
+|Typ der Adressoption
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Typ der Adressoption aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Typ der Adressoption anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Typ der Adressoption erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Typ der Adressoption löschen
+|
+|
+|
+|
+
+|
+|Auftragszusammenfassung
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragszusammenfassung aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragszusammenfassung anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragszusammenfassung erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Auftragszusammenfassung löschen
+|
+|
+|
+|
+|
+
+
+
+|
+|Bankdaten
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bankdaten aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Bankdaten anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Bankdaten bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Bankdaten erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Bankdaten löschen
+|
+|
+|
+|
+|
+
+|
+|E-Mail
+|
+|
+|
+|
+|
+|
+
+|
+|
+|E-Mail-Einstellungen bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Eigenschaft
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Event
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Event aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Event anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Event erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Event löschen
+|
+|
+|
+|
+|
+
+|
+|Firma
+|
+|
+|
+|
+|
+|
+
+|
+|Kampagne
+|
+|
+|
+|
+|
+|
+
+|
+|Kontakt
+|
+|
+|
+|
+|
+|
+
+|
+|Kontaktklasse
+|
+|
+|
+|
+|
+|
+
+|
+|Messenger
+|
+|
+|
+|
+|
+|
+
+|
+|Newsletter
+|
+|
+|
+|
+|
+|
+
+|
+|Passwort
+|
+|
+|
+|
+|
+|
+
+|
+|Serviceeinheiten
+|
+|
+|
+|
+|
+|
+
+|
+|Ticket
+|
+|
+|
+|
+|
+|
+
+|
+|Typ
+|
+|
+|
+|
+|
+|
+
+|
+|Umsatzsteuer-ID
+|
 |
 |
 |
