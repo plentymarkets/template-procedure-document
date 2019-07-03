@@ -3,7 +3,7 @@
 
 Um Newsletter an die Kunden zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.
 
-Der Anwender kann den im System integrierten Newsletter-Dienst nutzen oder seine Newsletter über die externen Anbieter Newsletter2Go und CleverReach versenden. Generell besteht die Möglichkeit, Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[plentyMarketplace^] zu finden.
+Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine Newsletter über den externen Anbieter CleverReach versenden oder einen Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[plentyMarketplace^] zu finden.
 
 Der Anwender kann bestimmte Ereignisse in seinem System einstellen. Wenn dieses Ereignis eintritt, resultiert daraus eine Aktion, d.h. der Newsletter wird dann automatisiert über das System an die Kunden bzw. Interessenten, die sich z.B. im Webshop für den Newsletter angemeldet haben, versendet.
 
@@ -60,29 +60,9 @@ plentymarkets überträgt die folgenden Daten an CleverReach, sofern der Newslet
  * E-Mail-Adresse
  * Zeitpunkt der letzten Bestellung
 
-===== Newsletter2Go
-
-Möchte der Anwender die Newsletter an seine Kunden über Newsletter2Go versenden, muss er sich zunächst über die Website von Newsletter2Go registrieren.
-
-Im System ist eine Schnittstelle vorhanden, die eingerichtet werden muss, wenn es sich um Neuregistrierungen bei Newsletter2Go handelt. Wenn der Anwender bereits bei Newsletter2Go registriert ist, muss er lediglich einen eigenen Benutzer für das plentymarkets System einrichten und Einstellungen bei Newsletter2Go vornehmen, damit der Zugriff auf die newsletter-relevanten Daten erfolgen kann. Wenn der Anwender die Benutzerklasse *Newsletter2Go* wählt, sind alle benötigten Berechtigungen bereits aktiviert. Bei Verwendung einer anderen Benutzerklasse müssen die Berechtigungen unter Umständen angepasst werden. Anschließend muss der Anwender sich über das System mit dem im Vorfeld erstellten Newsletter2Go-Konto verbinden.
-
-Weitere Informationen zu den Benutzerklassen sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten[Benutzer verwalten^] zu finden.
-
-Newsletter2Go ruft die folgenden Daten von plentymarkets ab, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
-
- * Kunden-ID, sofern vorhanden
- * Vorname
- * Nachname
- * E-Mail-Adresse
- * Geschlecht
- * Geburtstag
- * Zeitpunkt der Newsletter-Anmeldung
- * Zeitpunkt der Bestätigung des Newsletter-Bezugs
- * Sprache
-
 ==== Import und Export
 
-Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] sowie die SOAP-API zur Verfügung.
+Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
 Für den manuellen Austausch von Newsletterdaten steht dem Anwender das Datenformat *CustomerNewsletter* im Rahmen der Dynamischen Imports/-Exports zur Verfügung. Der Anwender kann das Datenformat verwenden, um Daten von Kunden bzw. Interessenten, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
 
