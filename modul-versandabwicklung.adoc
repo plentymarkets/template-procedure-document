@@ -3,19 +3,19 @@
 
 Für die Versandabwicklung bietet das plentymarkets System für verschiedene Versanddienstleister und Fulfillment-Dienstleister direkte Anbindungen über eine integrierte Schnittstelle oder auch über Polling-Formate an. Eine Polling-Datei wird benötigt, wenn keine direkte Schnittstelle zu der Software des Versanddienstleisters besteht. Der Anwender generiert die Polling-Datei, die die anzumeldenden Aufträge enthält, und lädt diese in der Software des Versanddienstleisters hoch, um die Versandanmeldung anzustoßen.
 
-Außerdem besteht die Möglichkeit, andere Versanddienstleister und Fulfillment-Dienstleister über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com/[plentyMarketplace] zu finden.
+Außerdem besteht die Möglichkeit, andere Versanddienstleister und Fulfillment-Dienstleister über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com/[plentyMarketplace^] zu finden.
 
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<versandabwicklung#1200, *In plentymarkets integrierte Versanddienstleister*>> und <<versandabwicklung#1300, *In plentymarkets integrierte Fulfillment-Dienstleister*>>.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<modul-versandabwicklung#1200, In plentymarkets integrierte Versanddienstleister>> und <<modul-versandabwicklung#1300, In plentymarkets integrierte Fulfillment-Dienstleister>>.
 
 Bevor der Anwender die Schnittstelle zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren.
 
 ==== Lieferländer
 
-In einem neu angelegten System sind 256 Lieferländer und deren IDs im System vorhanden.  Bei der ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert, der durch das System vergeben wird. Die IDs können nicht geändert werden und die Lieferländer können nicht gelöscht werden. Dem Anwender ist es nicht möglich, eigene Lieferländer im System hinzuzufügen. Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden; der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und deren IDs sind in <<versandabwicklung#1900, *Anhang a)*>> aufgelistet.
+In einem neu angelegten System sind 259 Lieferländer bzw. Lieferregionen im System vorhanden. Jedes Lieferland ist mit einer ID versehen. Bei der ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert, der durch das System vergeben wird. Die IDs können nicht geändert werden und die Lieferländer können nicht gelöscht werden. Dem Anwender ist es nicht möglich, eigene Lieferländer im System hinzuzufügen. Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden. Der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und -regionen und deren IDs sind in <<modul-versandabwicklung#1900, Anhang a)>> aufgelistet.
 
-In einem neu angelegten System sind die Lieferländer *Deutschland (ID 1)* und *United Kingdom (ID 12)* bereits aktiviert. Für das Lieferland Deutschland ist das Lager *ALLE* und die Sprache *de* standardmäßig ausgewählt; für das Lieferland United Kingdom ist das Lager *KS Sales* und die Sprache *en* standardmäßig ausgewählt. Das gewählte Lager ist dem Lieferland als Hauptlager zugeordnet und wird z.B. in Aufträgen automatisch eingestellt. Wenn die Einstellung *ALLE* gewählt wurde, werden alle Lager dem Lieferland zugeordnet; in diesem Fall wird für Aufträge automatisch das Lager mit der kleinsten ID gewählt.
+In einem neu angelegten System sind die Lieferländer *Deutschland (ID 1)* und *United Kingdom (ID 12)* bereits aktiviert. Für das Lieferland Deutschland ist das Lager *ALLE* und die Sprache *de* standardmäßig ausgewählt; für das Lieferland United Kingdom ist das Lager *KS Sales* und die Sprache *en* standardmäßig ausgewählt. Das gewählte Lager ist dem Lieferland als Hauptlager zugeordnet und wird z.B. in Aufträgen automatisch eingestellt. Wenn die Einstellung *ALLE* gewählt wurde, werden alle Lager dem Lieferland zugeordnet. In diesem Fall wird für Aufträge automatisch das Lager mit der kleinsten ID gewählt.
 
 Der Anwender kann die Lieferländer bei Bedarf deaktivieren, den Webshop-Namen anpassen und die Lagerauswahl ändern. Die restlichen Lieferländer sind nicht automatisch aktiv. Sie sind lediglich bereits mit dem Standardnamen angelegt und verfügen über eine ID. Damit der Anwender seine Artikel in die gewünschten Lieferländer liefern kann, muss er die Lieferländer im Vorfeld aktivieren.
 
@@ -36,11 +36,14 @@ In einem neu angelegten System sind 23 Versanddienstleister mit ID sowie der Ein
 
 Versanddienstleister, die der Anwender in diesem Bereich der Software erstellt, sind bei Erstellung des Versandprofils dann wählbar. Das bedeutet, dass kein Versandprofil erstellt werden kann, ohne zuvor den Versanddienstleister erstellt zu haben.
 
-Tabelle 1 listet die standardmäßig in plentymarkets vorhandenen Versanddiensleister mit deren ID auf.
+In <<tabelle-versanddienstleister-ids>> werden die standardmäßig in plentymarkets vorhandenen Versanddiensleister mit IDs aufgelistet.
 
+[[tabelle-versanddienstleister-ids]]
 .Versanddienstleister mit deren IDs
-|===
-|*ID* |*Versanddienstleister*
+[cols="1,3"]
+|====
+
+|ID |Versanddienstleister
 
 |1
 |Selbstabholer
@@ -111,7 +114,7 @@ Tabelle 1 listet die standardmäßig in plentymarkets vorhandenen Versanddiensle
 |99
 |undefined
 
-|===
+|====
 
 [#500]
 ==== Versandprofil
@@ -140,18 +143,21 @@ Für den ersten Portoaufschlag wird der am Artikel eingegebene Betrag zu den Ver
 
 Viele Versanddienstleister verlangen für den Versand in Inselregionen höhere Gebühren. Diese Kosten kann der Anwender auf seine Kunde übertragen und im Versandprofil einen Inselzuschlag für den Versand seiner Ware berechnen.
 
-Tabelle 2 listet auf, für welche Postleitzahlenbereiche der aktivierbaren Lieferländer der Inselzuschlag eingestellt werden kann:
+In <<tabelle-postleitzahlen-inselregionen>> ist aufgelistet, für welche Postleitzahlenbereiche der aktivierbaren Lieferländer der Inselzuschlag eingestellt werden kann.
 
+[[tabelle-postleitzahlen-inselregionen]]
 .Postleitzahlen von Inselregionen
-|===
-|*ID des Lieferlandes* |*Name des Lieferlandes*|*Postleitzahl, Postleitzahlenbereich(e)*
+[cols="1,3,3"]
+|====
+|ID des Lieferlandes |Name des Lieferlandes|Postleitzahl, Postleitzahlenbereich(e)
+
 |1 |Deutschland |18565, 25846-25849, 25859, 25863, 25869, 25929-25956, 25938, 25960-25999, 26453-26460, 26462-26486, 26533-26546, 26548, 26557-26579, 26737-26757, 27483
 |10 |Frankreich |2000-20999
 |15 |Italien |8010-8100 , 9010-9049 , 9070-9100, 9124, 9126, 9170
 |21 |Niederlande |1156AA-1156ZZ, 1791AA-1797ZZ, 8881AA-8884ZZ, 8891AA-8897ZZ, 8899AA-8899ZZ, 9161AA-9164ZZ, 9166AA-9166ZZ
 |65 |Spanien |07000-07079, 07081-07999, 20086, 35000-35079, 35081-35999, 38000-38079, 38000-38079, 38081
 |255 |Helgoland |27498
-|===
+|====
 
 Die Postleitzahlen der Inselregionen sind systemseitig gespeichert. Der Anwender kann die  Postleitzahlenbereiche nicht ändern oder erweitern. Bei Aktivierung des Inselzuschlages erfolgt eine Berechnung nur, wenn die Postleitzahl im System als Inselregion erkannt wird.
 
@@ -161,10 +167,14 @@ In der Portotabelle speichert der Anwender die Versandkosten für das Versandpro
 
 ===== Berechnungstypen
 
-Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. Tabelle 3 listet die im System verfügbaren Berechnungstypen auf.
+Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. In <<tabelle-mögliche-berechnungstypen-versandkosten>> werden die im System verfügbaren Berechnungstypen aufgelistet.
 
+[[tabelle-mögliche-berechnungstypen-versandkosten]]
 .Mögliche Berechnungstypen für die Versandkosten
-|===
+[cols="1,3"]
+|====
+
+
 |*Berechnungstyp* |*Verwendungszweck*
 |Pauschal |Die vom Anwender eingegebenen Versandkosten stellen die Gesamtsumme dar; d.h. unabhängig davon, wie viele Artikel der Kunde kauft, er bezahlt nur die eingegebenen Versandkosten.
 |Gewichtsabhängig |Die vom Anwender eingegebenen Versandkosten ermöglichen eine Staffelung der Portokosten nach dem Gewicht der im Auftrag enthaltenen Artikel.
@@ -172,7 +182,7 @@ Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anw
 |Mengenabhängig |Die vom Anwender eingegebenen Versandkosten ermöglichen eine Staffelung der Portokosten nach Stückzahlen der Artikel.
 |Preisabhängig |Die vom Anwender eingegebenen Versandkosten ermöglichen eine Staffelung der Portokosten nach Warenwert der Artikel bzw. Warenwert des Auftrags.
 |Artikelporto |Die vom Anwender eingegebenen Versandkosten sind abhängig von der Anzahl der Artikel. Je nachdem, welcher Betrag für jeden weiteren Artikel eingegeben wurde, erhöhen sich die Versandkosten für jeden weiteren Artikel um diesen Betrag.
-|===
+|====
 
 *Maximalwerte*: Wird der maximal hinterlegte Wert (Volumen, Gewicht, Preis, Menge) überschritten, können keine Versandkosten ermittelt werden. Daher sollte der Anwender darauf achten, immer ein ausreichend hohes Maximum einzustellen.
 
@@ -190,11 +200,14 @@ In den folgenden Unterkapiteln wird aufgelistet, welche fest integrierten Schnit
 
 ===== Integrierte Versanddienstleister
 
-Tabelle 4 listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
+In <<tabelle-liste-integrierte-versanddienstleister>> werden die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, aufgelistet.
 
+[[tabelle-liste-integrierte-versanddienstleister]]
 .Liste der in plentymarkets integrierten Versanddienstleister
-|===
-|*Versanddienstleister* |*Fest integrierte Schnittstelle*|*Weitere “Unterschnittstellen”*|*Polling-Datei*
+[cols="1,3,3,3"]
+|====
+|Versanddienstleister |Fest integrierte Schnittstelle|Weitere “Unterschnittstellen”|Polling-Datei
+
 |c.b.c. logistics |Ja |Nein |Nein
 |Deutsche Post |Nein |Nein | Internetmarke
 |DHL |Ja |DHL Freight +
@@ -216,7 +229,7 @@ UK Mail |Nein
 |Parcelforce Worldwide |Nein |Nein |Parcelforce Worldwide
 |Swiss Post |Ja |Nein |Nein
 |UPS |Ja |Nein | UPS Worldship
-|===
+|====
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Versanddienstleister registrieren.
 
@@ -254,7 +267,7 @@ Die Adressdaten, sofern im Kundendatensatz gespeichert, beinhalten:
  * Postnummer (bei DHL)
  * Packstation/Postfiliale (bei DHL)
 
-Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<versandabwicklung#1700, *Zollinhaltserklärung für Sendungen ins Ausland*>>.
+Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<modul-versandabwicklung#1700, Zollinhaltserklärung für Sendungen ins Ausland>>.
 
 ==== Versandmöglichkeiten über Marktplätze
 
@@ -279,17 +292,20 @@ Aktuell kann der Anwender Zollinhaltserklärungen und Paketkarten ausschließlic
 
 Zollinhaltserklärungen und Paketkarten für DHL-Sendungen können im System erst generiert werden, wenn der Auftrag bei DHL angemeldet und eine Rechnung erzeugt wurde.
 
-Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<versandabwicklung#2000, *Anhang b)*>> zu finden.
+Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<modul-versandabwicklung#2000, Anhang b)>> zu finden.
 
 ==== Anhänge
 
 ===== Anhang a)
 
-Tabelle 5 listet die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs auf:
+In <<tabelle-lieferlaender-mit-id>> sind die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs aufgelistet.
 
+[[tabelle-lieferlaender-mit-id]]
 .Lieferländer mit ID
-|===
-|*ID* |*Name*
+[cols="1,3"]
+|====
+|ID |Name
+
 |1 |Germany
 |2 |Austria
 |3 |Belgium
@@ -551,7 +567,10 @@ Tabelle 5 listet die im System voreingestellten und für den Anwender nicht änd
 |259 |Sint Maarten
 |260 |BES-Inseln
 |261 |Sankt Bartholomäus
-|===
+|262 |Livigno
+|263 |Campione d'Italia
+|264 |Luganer See von Ponte Tresa bis Porto Ceresio (IT)
+|====
 
 ===== Anhang b)
 
