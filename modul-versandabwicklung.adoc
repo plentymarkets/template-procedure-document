@@ -1,9 +1,9 @@
 
 === Fachliche und technische Beschreibung Versandabwicklung
 
-Für die Versandabwicklung bietet das plentymarkets System für verschiedene Versanddienstleister und Fulfillment-Dienstleister direkte Anbindungen über eine integrierte Schnittstelle oder auch über Polling-Formate an. Eine Polling-Datei wird benötigt, wenn keine direkte Schnittstelle zu der Software des Versanddienstleisters besteht. Der Anwender generiert die Polling-Datei, die die anzumeldenden Aufträge enthält, und lädt diese in der Software des Versanddienstleisters hoch, um die Versandanmeldung anzustoßen.
+Für die Versandabwicklung bietet das plentymarkets System für verschiedene Versanddienstleister und Fulfillment-Dienstleister Anbindungen über ein Plugin, über eine integrierte Schnittstelle oder auch über Polling-Formate an. Eine Polling-Datei wird benötigt, wenn keine direkte Schnittstelle zu der Software des Versanddienstleisters besteht. Der Anwender generiert die Polling-Datei, die die anzumeldenden Aufträge enthält, und lädt diese in der Software des Versanddienstleisters hoch, um die Versandanmeldung anzustoßen.
 
-Außerdem besteht die Möglichkeit, andere Versanddienstleister und Fulfillment-Dienstleister über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com/[plentyMarketplace^] zu finden.
+Eine Übersicht über vorhandene Plugins für Versanddienstleister- und Fulfillment-Dienstleister ist auf dem link:https://marketplace.plentymarkets.com/plugins/integration[plentyMarketplace^] zu finden.
 
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
@@ -32,7 +32,7 @@ In einem neu angelegten System ist die Region *Deutschland* mit ID 101 vorhanden
 
 ==== Versanddienstleister
 
-In einem neu angelegten System sind 23 Versanddienstleister mit ID sowie der Eintrag *undefined* mit ID 99 bereits vorhanden. Es handelt sich bei der ID um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Ausgehend von ID 23 wird hochgezählt, wenn ein neuer Versanddienstleister, z.B. über ein Plugin, hinzugefügt wird. Der systeminterne Name, der Name, wie er im Warenkorb und auf der Rechnung erscheinen soll, sowie die Tracking-URL sind bereits gespeichert. Der Anwender kann die Namen sowie die Tracking-URL ändern. Außerdem kann der Anwender den Versanddienstleister löschen.
+In einem neu angelegten System sind 23 Versanddienstleister mit ID sowie der Eintrag *Sonstiges* mit ID 99 bereits vorhanden. Es handelt sich bei der ID um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Ausgehend von ID 23 wird hochgezählt, wenn ein neuer Versanddienstleister, z.B. über ein Plugin, hinzugefügt wird. Der systeminterne Name, der Name, wie er im Warenkorb und auf der Rechnung erscheinen soll, sowie die Tracking-URL sind bereits gespeichert. Der Anwender kann die Namen sowie die Tracking-URL ändern. Außerdem kann der Anwender den Versanddienstleister löschen.
 
 Versanddienstleister, die der Anwender in diesem Bereich der Software erstellt, sind bei Erstellung des Versandprofils dann wählbar. Das bedeutet, dass kein Versandprofil erstellt werden kann, ohne zuvor den Versanddienstleister erstellt zu haben.
 
@@ -99,6 +99,9 @@ In <<tabelle-versanddienstleister-ids>> werden die standardmäßig in plentymark
 |18
 |Royal Mail
 
+|19
+|Amazon Prime
+
 |20
 |c.b.c. logistics
 
@@ -112,7 +115,10 @@ In <<tabelle-versanddienstleister-ids>> werden die standardmäßig in plentymark
 |Parcelforce Worldwide
 
 |99
-|undefined
+|Sonstiges
+
+|
+|DHL Shipping (Versenden)
 
 |====
 
@@ -173,7 +179,6 @@ Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anw
 .Mögliche Berechnungstypen für die Versandkosten
 [cols="1,3"]
 |====
-
 
 |*Berechnungstyp* |*Verwendungszweck*
 |Pauschal |Die vom Anwender eingegebenen Versandkosten stellen die Gesamtsumme dar; d.h. unabhängig davon, wie viele Artikel der Kunde kauft, er bezahlt nur die eingegebenen Versandkosten.
