@@ -10,10 +10,9 @@ Das CRM-Modul von plentymarkets erlaubt das Verwalten, Speichern und Bearbeiten 
  * dynamischer Import
  * manuelles Erstellen im Backend durch den Anwender
 
-
 Im plentymarkets CRM-Modul beinhaltet der Begriff _Kontakt_ nicht nur natürliche Personen, sondern auch Firmen. In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
 
-=== Kunden-IDs
+=== Kontakt-IDs
 
 Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
 
@@ -67,7 +66,7 @@ Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Ku
 Für die anderen drei Beispielkontaktdatensätze (IDs 101, 102 und 103) sind bereits Bewegungsdaten gespeichert. Bewegungsdaten beinhalten die folgenden Informationen:
 
 * Datum und Uhrzeit der Registrierung im Webshop des Anwenders
-* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<CRM#300, *Regulärer Zugang und Gastzugang*>>)
+* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<modul-crm#300, *Regulärer Zugang und Gastzugang*>>)
 * Datum und Uhrzeit der letzten Aktualisierung des Kontaktdatensatzes
 * Datum und Uhrzeit des letzten Logins
 * Datum und Uhrzeit des letzten Auftrags
@@ -151,7 +150,7 @@ In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden.
 
 === Rabattsystem für Kundenklassen
 
-Wie im Kapitel <<CRM#1100, *Kundenklassen*>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
+Wie im Kapitel <<modul-crm#1100, *Kundenklassen*>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
 
  * Kundenklassenrabatt
  * Rabatt auf den Nettowarenwert
@@ -237,11 +236,26 @@ Im <<tabelle-verknuepfte-daten-kontaktdatensatz>> wird aufgelistet, welche Daten
 
 |*Im Kontaktdatensatz verknüpfte Informationen*|*Kurzbeschreibung*
 
+|Adressen
+|Der Anwender kann mehrere Lieferanschriften pro Kunde eingeben und diese Lieferanschriften dann pro Auftrag individuell zuordnen. Es werden auch die Lieferanschriften, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt.
+
 |Eigenschaften
 |Die Eigenschaften, die für die Kunden erstellt wurden, kann der Anwender speichern bzw. diese werden im Kontaktdatensatz angezeigt, wenn der Kunde Informationen im Webshop eingetragen hat.
 
-|Notizen
-|Es ist möglich, zu jedem Kunden Notizen zu speichern. Notizen werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Notizen können gelöscht werden.
+|Aufträge
+|Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht des Kunden öffnen.
+
+|Scheduler
+|Über den Scheduler werden Abonnements des Kunden angezeigt. Der Scheduler ist im Tarif Zero integraler Bestandteil. Im Tarif Classic ist der Scheduler optional und kann hinzugebucht werden.
+
+|Neue Karte
+|Öffnet das Menü *Start » Boards*.
+
+|Tickets
+|Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
+
+|Messenger
+|Es ist möglich, zu jedem Kunden Nachrichten im Messenger zu versenden. Notizen werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten können gelöscht werden.
 
 |Dokumente
 |Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
@@ -250,38 +264,24 @@ JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 |Konto
 |Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
 
-|Lieferanschriften
-|Der Anwender kann mehrere Lieferanschriften pro Kunde eingeben und diese Lieferanschriften dann pro Auftrag individuell zuordnen. Es werden auch die Lieferanschriften, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt.
-
-|Aufträge
-|Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht des Kunden öffnen.
-
-|Scheduler
-|Über den Scheduler werden Abonnements des Kunden angezeigt. Der Scheduler ist im Tarif Zero integraler Bestandteil. Im Tarif Classic ist der Scheduler optional und kann hinzugebucht werden.
-
-|Tickets
-|Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
+|Bankdaten
+|Der Anwender kann die Bankdaten des Kunden eingeben und diese bei Bedarf löschen.
 
 |Events
 |Ein Event kann ein Kundenanruf oder eine E-Mail an den Kunden sein. Der Anwender kann z.B. die Dauer des Telefonats eingeben, eine Information zum Vorgang wählen und einen Kommentar zum Event speichern. Es ist auch möglich, kostenpflichtige Events einzutragen und diese abzurechnen.
 
+|Zugangsdaten
+|*Neues Passwort:* Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
+*Login-URL:*
+Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
+
+|Provision & Kostenstellen
+|*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
+*Kostenstellen*: Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
+
 |Statistik
 |Der Anwender kann kundenspezifische Statistiken erstellen und so bestimmte Daten speziell für diesen Kunden auswerten, z.B. den Gesamtumsatzverlauf des Kunden in einem bestimmten Zeitraum. Bestehende Statistiken können auch durch den Anwender bearbeitet werden.
 
-|Bankdaten
-|Der Anwender kann die Bankdaten des Kunden eingeben und diese bei Bedarf löschen.
-
-|Neues Passwort
-|Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt.
-
-|Login-URL
-|Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
-
-|Kostenstellen
-|Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
-
-|Provision
-|Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist.
 |====
 
 Weitere Informationen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#[Kontakte verwalten^] zu finden.
@@ -293,7 +293,9 @@ Weitere Informationen zu Zahlungsarten werden in einem anderen Bereich beschrieb
 
 === Prüfung der Bonität und Umsatzsteueridentifikationsnummer
 
-Der Anwender hat die Möglichkeit, die Bonität sowie die Umsatzsteueridentifikationsnummer des Kunden durch Anbindung an externe Services zu prüfen.
+Der Anwender hat die Möglichkeit, die Bonität sowie die Umsatzsteueridentifikationsnummer des Kunden durch Anbindung an externe Services über Plugins zu prüfen.
+
+Weitere Informationen sind im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] zu finden.
 
 === Kunden sperren
 
@@ -345,38 +347,7 @@ Wenn keine Verknüpfung zwischen einem Kontaktdatensatz und einem Auftrag besteh
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
-Für den manuellen Austausch von Kontaktdaten stehen dem Anwender die folgenden Datenformate zur Verfügung:
-
-In <<tabelle-datenformate-kontaktdaten>> wird aufgelistet, welche Datenformate für den manuellen Austausch von Kontaktdaten dem Anwender zur Verfügung stehen.
-
-
-[[tabelle-datenformate-kontaktdaten]]
-.Verfügbare Datenformate zu Kontaktdaten
-[cols="1,3"]
-|====
-
-|*Name des Datenformats* |*Verwendungszweck*
-
-|*Customer*
-|Der Anwender kann das Datenformat verwenden, um Kundenstammdaten zu exportieren, zu bearbeiten und zu importieren.
-
-|*CustomerSet*
-|Der Anwender kann das Datenformat verwenden, um neue Kontaktdatensätze zu erstellen.
-
-|*CustomerNote*
-|Der Anwender kann das Datenformat verwenden, um Notizen, die im Kontaktdatensatz erstellt wurden, zu exportieren, zu bearbeiten und zu importieren.
-
-|*CustomerProperty*
-|Der Anwender kann das Datenformat verwenden, um gespeicherte <<CRM#1100, *Kundeneigenschaften*>> zu exportieren, zu bearbeiten und zu importieren.
-
-|*CustomerPropertyLink*
-|Der Anwender kann das Datenformat verwenden, um <<CRM#1100, *Kundeneigenschaften*>> und die für die Kunden eingegebenen Werte zu exportieren, zu bearbeiten und zu importieren.
-
-|*CustomerNewsletter*
-|Der Anwender kann das Datenformat verwenden, um Daten von Kunden, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
-|====
-
-Über die link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate[Übersichtsseite der Datenformate^] im plentymarkets Handbuch gelangt man zu den einzelnen Datenformaten inklusive Auflistungen der vorhandenen Datenfelder und Pflichtfelder sowie ggf. Abgleichfelder und Aktionen.
+Für den manuellen Austausch von Kontaktdaten stehen dem Anwender der link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[ElasticSync^] für den Import und der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
 
 === Backup
 
