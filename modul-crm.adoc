@@ -1,3 +1,4 @@
+<<<<
 
 === Fachliche und technische Beschreibung des Moduls CRM
 
@@ -24,31 +25,27 @@ In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 
 
 [[tabelle-beispielkontaktdatensaetze]]
 .Beispielkontaktdatensätze
-[cols="1,3,3,3,3"]
+[cols="1,3,3,3"]
 
 |====
-|ID |Bewertung |Typ |Name |Aufträge
+|ID |Typ |Firma / Name |Aufträge
 
 |100
-|0 von 5
 |Kunde
 |Barverkauf
 |0
 
 |101
-|5 von 5
 |Partner
 |plentymarkets GmbH
 |1
 
 |102
-|3 von 5
 |Kunde
 |Joseph Waits
-|2
+|1
 
 |103
-|3 von 5
 |Lieferant
 |Michael Wilford
 |0
@@ -56,10 +53,11 @@ In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 
 
 Öffnet der Anwender einen Kontaktdatensatz sind weitere Informationen sichtbar. Dazu gehören z.B. Firmenname, Adresse, E-Mail-Adresse, Telefonnummer und USt-IdNr. Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das plentymarkets Kassensystem im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
 
-Bild 1 zeigt die Kontaktübersicht mit den bereits im System vorhandenen Beispielkontaktdatensätzen.
+<<bild-uebersicht-kontaktdatensaetze>> zeigt die Kontaktübersicht mit den bereits im System vorhandenen Beispielkontaktdatensätzen.
 
+[[bild-uebersicht-kontaktdatensaetze]]
 .Übersicht der Beispielkontaktdatensätze in einem neu angelegten System
-image::assets/Uebersicht-Beispielkundendatensaetze.png[]
+image::assets/Uebersicht-Kontaktdatensaetze.png[]
 
 Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
 
@@ -91,7 +89,7 @@ Ob ein Kontaktdatensatz im System erstellt wird, hängt zudem vom verwendeten We
 
 *Auftragszuordnung bei regulären Zugängen und Gastzugängen*
 
-Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kuontaktübersicht zu sehen (siehe Bild 1 in Kapitel <<modul-crm#200, Kontakt-IDs>>).
+Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kuontaktübersicht zu sehen (siehe <<bild-uebersicht-kontaktdatensaetze>> in Kapitel <<modul-crm#200, Kontakt-IDs>>).
 
 Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird normalerweise ein Auftrag zugeordnet. Dem Anwender ist so nicht unbedingt bekannt, wie viele Aufträge ein bestimmter Gastkunde tatsächlich im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: beispielsweise wenn sie nach Abschluss einer Bestellung im Webshop eine weitere Bestellung aufgeben oder sich über den Link zur Kaufabwicklung wieder einloggen. Ebenfalls denkbar sind vom Anwender manuell angelegte Aufträge, die der Kontakt telefonisch direkt beim Anwender erteilt, jedoch kein Kundenkonto (regulärer Zugang) anlegen möchte.
 
