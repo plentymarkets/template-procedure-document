@@ -1,3 +1,4 @@
+<<<<
 
 === Fachliche und technische Beschreibung des Moduls Newsletter
 
