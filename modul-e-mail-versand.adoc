@@ -96,7 +96,7 @@ Voraussetzung hierbei ist, dass die potenziellen Käufer bei ihrem Besuch im Web
 
 Neben dem Verknüpfen von E-Mail-Vorlagen mit Ereignissen besteht die Möglichkeit, Ereignisaktionen einzurichten: Der Anwender definiert ein Ereignis, setzt Filter und legt Aktionen fest, die dann vom System automatisch im Ereignisfall ausgeführt werden. Beispielsweise kann der E-Mail-Versand eines Gutscheins ausgelöst werden, wenn der Kunde eine bestimmte Anzahl an Aufträgen generiert hat.
 
-Weitere Informationen zu Ereignisaktionen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/basics/automatisierung/ereignisaktionen[*Ereignisaktionen*, window="_blank"] zu finden.
+Weitere Informationen zu Ereignisaktionen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] zu finden.
 
 ==== Gesendete E-Mails einsehen
 
