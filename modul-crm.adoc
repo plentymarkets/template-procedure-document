@@ -78,7 +78,7 @@ Bei einem regulären Zugang handelt es sich um einen Bestandskunden, der sich in
 Gastzugang bedeutet, dass sich der Kontakt nicht registriert hat und als Gast bestellt hat. +
 Ein Passwort ist nicht vorhanden; der Gastkunde kann sich daher nicht in den Mein Konto-Bereich einloggen. Es ist möglich, dass mehrere Kontaktdatensätze, die die identischen Daten des Gastkunden enthalten, im System gespeichert werden. Bei regulären Zugängen findet eine Überprüfung statt. Der Anwender legt fest, ob die Überprüfung anhand der E-Mail-Adresse oder zusätzlich anhand der Anschrift erfolgt.
 
-Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird. Beispielsweise werden aktuell Kontaktdatensätze, die durch Amazon-Aufträge erstellt werden, als regulärer Zugang gespeichert; Kontaktdatensätze, die durch eBay-Aufträge erstellt werden, erhalten hingegen die Zugangsart *Gastzugang*.
+Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird. Beispielsweise werden aktuell Kontaktdatensätze, die durch Amazon-Aufträge erstellt werden, als regulärer Zugang gespeichert; Datensätze, die durch eBay-Aufträge erstellt werden, erhalten hingegen die Zugangsart *Gastzugang*.
 
 Welche Zugangsart für Kontaktdatensätze, die von anderen in plentymarkets integrierten Marktplätze importiert wurden, vergeben wird, wird in einem anderen Bereich beschrieben.
 
@@ -95,14 +95,14 @@ Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird normaler
 
 === Typen
 
-Typen dienen der Einordnung und Unterscheidung von Kontakten. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. In <<tabelle-fest-integrierte-kundentypen>> werden die standardmäßig vorhandenen Typen und deren IDs aufgelistet.
+Typen dienen der Einordnung und Unterscheidung von Kontakten. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. In <<tabelle-fest-integrierte-typen>> werden die standardmäßig vorhandenen Typen und deren IDs aufgelistet.
 
-[[tabelle-fest-integrierte-kundentypen]]
-.Fest integrierte Kundentypen und deren IDs
+[[tabelle-fest-integrierte-typen]]
+.Fest integrierte Typen und deren IDs
 [cols="1,3"]
 |====
 
-|*ID* |*Kundentyp*
+|*ID* |*Typ*
 
 |1
 |Kunde
@@ -232,52 +232,57 @@ Im <<tabelle-verknuepfte-daten-kontaktdatensatz>> wird aufgelistet, welche Daten
 [cols="1,3"]
 |====
 
-|*Im Kontaktdatensatz verknüpfte Informationen*|*Kurzbeschreibung*
+|*Im Kontaktdatensatz verknüpfte Informationen* |*Kurzbeschreibung*
 
-|Adressen
-|Der Anwender kann mehrere Lieferanschriften pro Kunde eingeben und diese Lieferanschriften dann pro Auftrag individuell zuordnen. Es werden auch die Lieferanschriften, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt.
+|*Adressen* / +
+*Neue Adresse*
+|Der Anwender kann mehrere Liefer- und Rechnungsadressen pro Kontakt eingeben und diese Lieferanschriften dann pro Auftrag individuell zuordnen. Es werden auch die Lieferadressen, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt. Der Anwender kann jeweils eine Lieferadresse und eine Rechnungsadresse als primär definieren.
 
-|Eigenschaften
+|*Eigenschaften*
 |Die Eigenschaften, die für die Kunden erstellt wurden, kann der Anwender speichern bzw. diese werden im Kontaktdatensatz angezeigt, wenn der Kunde Informationen im Webshop eingetragen hat.
 
-|Aufträge
-|Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht des Kunden öffnen.
+|*Aufträge* / +
+*Neuer Auftrag* / +
+*Neues Angebot* / +
+*Neuer Sammelauftrag*
+|Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht des Kontakts öffnen und neue Aufträge bzw. Angebote und Sammelaufträge manuell erstellen.
 
-|Scheduler
+|*Scheduler*
 |Über den Scheduler werden Abonnements des Kunden angezeigt. Der Scheduler ist im Tarif Zero integraler Bestandteil. Im Tarif Classic ist der Scheduler optional und kann hinzugebucht werden.
 
-|Neue Karte
-|Öffnet das Menü *Start » Boards*.
-
-|Tickets
+|*Tickets* / +
+*Neues Ticket*
 |Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
 
-|Messenger
+|*Neue Karte*
+|Öffnet das Menü *Start » Boards*.
+
+|*Messenger*
 |Es ist möglich, zu jedem Kunden Nachrichten im Messenger zu versenden. Notizen werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten können gelöscht werden.
 
-|Dokumente
+|*Dokumente*
 |Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
 JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 
-|Konto
+|*Konto*
 |Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
 
-|Bankdaten
+|*Bankdaten*
 |Der Anwender kann die Bankdaten des Kunden eingeben und diese bei Bedarf löschen.
 
-|Events
+|*Events*
 |Ein Event kann ein Kundenanruf oder eine E-Mail an den Kunden sein. Der Anwender kann z.B. die Dauer des Telefonats eingeben, eine Information zum Vorgang wählen und einen Kommentar zum Event speichern. Es ist auch möglich, kostenpflichtige Events einzutragen und diese abzurechnen.
 
-|Zugangsdaten
+|*Zugangsdaten*
 |*Neues Passwort:* Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
 *Login-URL:*
 Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
 
-|Provision & Kostenstellen
+|*Provision & Kostenstellen*
 |*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
 *Kostenstellen*: Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
 
-|Statistik
+|*Statistik*
 |Der Anwender kann kundenspezifische Statistiken erstellen und so bestimmte Daten speziell für diesen Kunden auswerten, z.B. den Gesamtumsatzverlauf des Kunden in einem bestimmten Zeitraum. Bestehende Statistiken können auch durch den Anwender bearbeitet werden.
 
 |====
