@@ -3,7 +3,7 @@
 
 ==== Verwendungszweck
 
-Das Softwaremodul Multi-Channel dient insbesondere dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgenden Funktionen stellt das Modul bereit: +
+Das Softwaremodul Multi-Channel dient insbesondere dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgende Funktionen stellt das Modul bereit: +
  * Schnittstellen-Zugriff auf Online-Märkte und Preisportale +
  * Bestandsabgleich +
  * Produktdatenaustausch +
@@ -18,12 +18,12 @@ Aktuell ist das Softwaremodul Multi-Channel in allen von plentymarkets angeboten
 
 ==== Dokumentation
 
-Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte] +
-Ein Download der Dokumentation ist zurzeit nicht möglich. Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Dokumentation zur Verfügung.
+Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte]. Ein Download der Dokumentation ist zurzeit nicht möglich. +
+Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Verfahrensdokumentation zur Verfügung.
 
 ==== Integrierte Kanäle
 
-Die im Modul Multi-Channel fest integrierten Online-Märkte sind über das Menü *System » Systemeinstellungen » Märkte* konfigurierbar. Folgende Online-Märkte sind im Modul Multi-Channel fest integriert:
+Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü *System » Systemeinstellungen » Märkte* eingerichtet. Folgende Online-Marktplätze sind im Modul Multi-Channel fest integriert:
 
 |===
 |Marktplatz|*In Verwendung*
@@ -51,10 +51,9 @@ Die im Modul Multi-Channel fest integrierten Online-Märkte sind über das Menü
 |Zalando|[_Ja/Nein_]
 |===
 
+Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar sind und somit eingerichtet werden können.
 
-Jedoch sind nicht alle von plentymarkets angebotenen Online-Märkte im Modul Multi-Channel fest integriert. Diese Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar und somit konfigurierbar sind.
-
-Für einige Online-Märkte und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *System » Systemeinstellungen » Märkte* fest integriert und konfigurierbar. Jedoch werden für diese Märkte noch die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Märkte sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
+Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *System » Systemeinstellungen » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
 
 |===
 |Marktplatz|*In Verwendung*
@@ -160,46 +159,48 @@ Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz
 |160.10|OTTO Cooperation|[_Ja/Nein_]
 |===
 
-Bei den aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentymarkets System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiv. Damit über Online-Märkte Artikel verkauft, Aufträge generiert und einer Herkunft zugeordnet werden können, muss die Auftragsherkunft zunächst aktiviert werden. Ohne die Aktivierung der Herkunft findet also kein Verkauf auf Online-Märkten statt.
+Bei den aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentymarkets System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiviert. Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer Herkunft zugeordnet werden können, muss die Auftragsherkunft zunächst aktiviert werden. Ohne die Aktivierung der Herkunft findet also kein Verkauf auf Online-Marktplätzen statt.
 
 ==== Verkauf über Multi-Channel
 
-Um Artikel über das Modul Multi-Channel zu verkaufen, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien und Merkmal mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden.
+Um Artikel über das Modul Multi-Channel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien und Merkmale mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden.
 
 ==== Marktplatz-Zahlungsarten
 
-Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Zahlungsarten der Marktplätze werden in der Regel nicht vollständig eingerichtet, sondern lediglich aktiviert. Ohne eine Aktivierung kann es zu Problemen bei der Zahlungsabwicklung kommen. Eine Übersicht finden Sie in der nachfolgenden Tabelle.
+Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Zahlungsarten der Marktplätze werden in der Regel nicht vollständig eingerichtet, sondern lediglich aktiviert. Ohne eine Aktivierung kann es zu Problemen bei der Zahlungsabwicklung kommen. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
 
 |===
 |*Zahlungsart*|*Erläuterung*
 
 |Amazon|Zahlungsart für Aufträge, die über den Marktplatz Amazon ins plentymarkets System kommen.
-|Amazon Payments|Zahlungsart im Webshop für Kunden, die über den Marktplatz Amazon im Webshop einkaufen.
-|Amazon Payments Advanced|Zahlungsart im Webshop für Kunden, die über den Marktplatz Amazon im Webshop einkaufen.
+|BOL.com|Zahlungsart für den Marktplatz bol.com.
 |Cdiscount|Zahlungsart für Aufträge, die über den Marktplatz Cdiscount ins plentymarkets System kommen.
+|Check24|Zahlungsart für den Marktplatz Check24.
 |eBay-Rechnungskauf|Zahlungsart für Kauf auf Rechnung bei eBay.
 |Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentymarkets System kommen.
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentymarkets System kommen.
 |GartenXXL.at|Zahlungsart für den Marktplatz GartenXXL.at.
 |GartenXXL.de|Zahlungsart für den Marktplatz GartenXXL.de.
+|idealo Direktkauf|Zahlungsart für den Marktplatz idealo Direktkauf.
 |La Redoute Payment|Zahlungsart für Aufträge, die über den Marktplatz La Redoute ins plentymarkets System kommen.
 |Neckermann.at Payment|Zahlungsart für den Marktplatz Neckermann.at.
 |Netto|Zahlungsart für den Marktplatz Netto.
-|Otto Payment|Zahlungsart für den Marktplatz Otto.
+|Otto Payment|Zahlungsart für die Schnittstellen Otto Cooperation und Otto Integration.
+|OTTO Direktversand|Zahlungsart für die Schnittstelle Otto Direktversand.
 |PIXmania Payment|Zahlungsart für den Marktplatz PIXmania.
 |Rakuten|Zahlungsart für den Marktplatz Rakuten.
 |real.de Payment|Zahlungsart für den Marktplatz real.de.
-|Shopgate|Zahlungsart für den Marktplatz Shopgate.
+|Shopgate Payment|Zahlungsart für den Marktplatz Shopgate.
 |Yatego Rechnung|Zahlungsart für den Marktplatz Yatego.
 |Zalando Payment|Zahlungsart für den Marktplatz Zalando.
 |===
 
 ==== Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Damit Preise zu den Online-Märkten übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
+Verkaufspreise werden zentral verwaltet. Damit Preise zu den Online-Marktplätzen übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
 
-Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ Auktion oder Festpreis zum Verkauf angeboten. +
-Auf Listings vom Typ Auktion kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ Festpreis werden zu einem festgelegten Preis angeboten.
+Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
+Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten.
 
 ==== Datenaustausch
 
@@ -227,8 +228,8 @@ Daten können automatisch über Rest-API und FTP-Server oder manuell über den e
  Import über E-MAil
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
 |Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
-|Otto|Im- und Export über FTP-Server mit XML-Datei
-|Pixmania|Im- und Export über Rest-API mit CSV-Datei
+|OTTO|Im- und Export über FTP-Server mit XML-Datei
+|PIXmania|Im- und Export über Rest-API mit CSV-Datei
 |Rakuten.de|Export über elastischen Export +
 Import über Rest-API mit JSON
 |real.de|Im- und Export über Rest-API mit CSV-Datei
