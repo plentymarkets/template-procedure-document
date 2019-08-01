@@ -2,7 +2,7 @@
 
 === Fachliche und technische Beschreibung des Moduls Newsletter
 
-Um Newsletter an die Kunden zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.
+Um Newsletter an Kontakte zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.
 
 Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine Newsletter über den externen Anbieter CleverReach versenden oder einen Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[plentyMarketplace^] zu finden.
 
@@ -25,7 +25,7 @@ Das System bietet dem Anwender die Möglichkeit, die Double-Opt-In-Methode zu ve
 
 Aktuell kann der Anwender durch das Setzen des Hakens im Kundendatensatz den Newsletter-Bezug für den Kunden aktivieren. Daraufhin wird der Kundendatensatz im Newsletter-Ordner mit der niedrigsten ID gespeichert und der Kunde erhält eine E-Mail mit dem Bestätigungslink.
 
-Wenn der Anwender die Double-Opt-In-Methode verwenden möchte, kann er für die im System vorhandenen Ereignisse *Newsletter Opt-In* und *Bestätigung Newsletter-Opt-In* je eine E-Mail-Vorlagen erstellen und diese mit den Ereignissen verknüpfen.
+Wenn der Anwender die Double-Opt-In-Methode verwenden möchte, kann er für die im System vorhandenen Ereignisse *Newsletter Opt-In* und *Bestätigung Newsletter-Opt-In* je eine E-Mail-Vorlage erstellen und diese mit den Ereignissen verknüpfen.
 
 Tritt das Ereignis ein, dass der Kunde sich für den Bezug des Newsletters im Webshop angemeldet hat, versendet das System automatisch die mit dem Ereignis *Newsletter Opt-In* verknüpfte E-Mail-Vorlage an den Kunden. Diese E-Mail-Vorlage sollte den Bestätigungslink, den der Kunde anklicken muss, um die Newsletter-Anmeldung abzuschließen, enthalten. Sobald der Kunde den Bestätigungslink anklickt, wird die mit dem Ereignis *Bestätigung Newsletter-Opt-In* verknüpfte E-Mail-Vorlage an den Kunden gesendet. Diese E-Mail-Vorlage sollte einen Text zur Bestätigung der erfolgreichen Newsletter-Anmeldung enthalten.
 
@@ -44,7 +44,7 @@ Beim Erstellen des ersten Ordners schlägt das System die ID 1 vor. Beim Erstell
 
 ==== Externe Newsletter-Anbieter
 
-Neben dem im System verfügbaren internen Newsletter-Dienst hat der Anwender die Möglichkeit seine Newsletter über CleverReach und Newsletter2Go zu versenden.
+Neben dem im System verfügbaren internen Newsletter-Dienst hat der Anwender die Möglichkeit seine Newsletter über CleverReach zu versenden.
 
 ===== CleverReach
 
@@ -65,8 +65,12 @@ plentymarkets überträgt die folgenden Daten an CleverReach, sofern der Newslet
 
 Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
-Für den manuellen Austausch von Newsletterdaten steht dem Anwender das Datenformat *CustomerNewsletter* im Rahmen der Dynamischen Imports/-Exports zur Verfügung. Der Anwender kann das Datenformat verwenden, um Daten von Kunden bzw. Interessenten, die für den Bezug von Newslettern eingetragen sind, zu exportieren, zu bearbeiten und zu importieren.
+Für den manuellen Austausch von Newsletter-Daten stehen dem Anwender die folgenden Formate zur Verfügung:
 
-Auf der Seite link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate/customernewsletter[CustomerNewsletter^] im plentymarkets Handbuch ist eine Auflistung der vorhandenen Datenfelder sowie der Pflichtfelder zu finden.
+* Für den Import der Sync-Typ *Newsletter-Empfänger* im ElasticSync
+
+* Für den Export das Datenformat *Newsletter-Empfänger* im Elastischen Export
+
+Weitere Informationen sind im plentymarkets Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Daten mit ElasticSync importieren^] und link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Datenformate mit FormatDesigner erstellen^].
 
 *Hinweis*: Dieselbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.
