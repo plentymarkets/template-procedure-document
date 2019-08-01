@@ -64,34 +64,31 @@ Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Ku
 Für die anderen drei Beispielkontaktdatensätze (IDs 101, 102 und 103) sind bereits Bewegungsdaten gespeichert. Bewegungsdaten beinhalten die folgenden Informationen:
 
 * Datum und Uhrzeit der Registrierung im Webshop des Anwenders
-* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<modul-crm#300, *Regulärer Zugang und Gastzugang*>>)
+* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<modul-crm#300, Regulärer Zugang und Gastzugang>>)
 * Datum und Uhrzeit der letzten Aktualisierung des Kontaktdatensatzes
 * Datum und Uhrzeit des letzten Logins
 * Datum und Uhrzeit des letzten Auftrags
 
 === Regulärer Zugang und Gastzugang
 
-In plentymarkets gibt es zwei Zugangsarten für Kontaktdatensätze. Diese Zugangsarten sind regulärer Zugang und Gastzugang.
+In plentymarkets gibt es zwei Zugangsarten, wenn eine Bestellung (Auftrag) im System angelegt wird.
 
-Bei einem regulären Zugang handelt es sich um einen Bestandskunden, der sich in der Vergangenheit im Webshop des Anwenders registriert hat und sich regelmäßig mit seinen Daten einloggt. Die reguläre Zugangsart wird außerdem auch gespeichert, wenn der Anwender einen neuen Kontaktdatensatz manuell, z.B während eines Telefonats mit einem Interessenten, erstellt.
+* Bei einem regulären Zugang handelt es sich um einen Bestandskunden, der sich in der Vergangenheit im Webshop des Anwenders registriert hat und sich regelmäßig mit seinen Daten einloggt. Die reguläre Zugangsart wird außerdem auch gespeichert, wenn der Anwender einen neuen Kontaktdatensatz manuell, z.B während eines Telefonats mit einem Interessenten, erstellt.
 
-Gastzugang bedeutet, dass sich der Kontakt nicht registriert hat und als Gast bestellt hat. +
-Ein Passwort ist nicht vorhanden; der Gastkunde kann sich daher nicht in den Mein Konto-Bereich einloggen. Es ist möglich, dass mehrere Kontaktdatensätze, die die identischen Daten des Gastkunden enthalten, im System gespeichert werden. Bei regulären Zugängen findet eine Überprüfung statt. Der Anwender legt fest, ob die Überprüfung anhand der E-Mail-Adresse oder zusätzlich anhand der Anschrift erfolgt.
+* Gastzugang bedeutet, dass sich der Kontakt nicht registriert hat und als Gast bestellt hat. Ein Passwort ist nicht vorhanden; der Gastkunde kann sich daher nicht in den Mein Konto-Bereich einloggen. Es ist möglich, dass mehrere Datensätze, die die identischen Daten des Gastkunden enthalten, im System gespeichert werden. Bei regulären Zugängen findet eine Überprüfung statt. Der Anwender legt fest, ob die Überprüfung anhand der E-Mail-Adresse oder zusätzlich anhand der Anschrift erfolgt.
 
-Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird. Beispielsweise werden aktuell Kontaktdatensätze, die durch Amazon-Aufträge erstellt werden, als regulärer Zugang gespeichert; Datensätze, die durch eBay-Aufträge erstellt werden, erhalten hingegen die Zugangsart *Gastzugang*.
-
-Welche Zugangsart für Kontaktdatensätze, die von anderen in plentymarkets integrierten Marktplätze importiert wurden, vergeben wird, wird in einem anderen Bereich beschrieben.
+Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird.
 
 Ob ein Kontaktdatensatz im System erstellt wird, hängt zudem vom verwendeten Webshop Callisto oder Ceres ab:
 
- * Webshop Callisto →  bei Gastbestellungen wird ein Kontaktdatensatz erstellt
- * Webshop Ceres →  bei Gastbestellungen wird kein Datensatz erstellt. Lediglich die E-Mail-Adresse des Gastzugangs wird in der Session gespeichert. Eine Session dauert in der Regel so lange, bis der Bestellvorgang komplett abgeschlossen und damit im System eingegangen und gespeichert ist.
+ * Webshop Callisto: Bei Gastbestellungen wird ein Kontaktdatensatz erstellt.
+ * Webshop Ceres: Bei Gastbestellungen wird kein Datensatz erstellt. Lediglich die E-Mail-Adresse des Gastzugangs wird in der Session gespeichert. Eine Session dauert in der Regel so lange, bis der Bestellvorgang komplett abgeschlossen und damit im System eingegangen und gespeichert ist.
 
 *Auftragszuordnung bei regulären Zugängen und Gastzugängen*
 
-Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kuontaktübersicht zu sehen (siehe <<bild-uebersicht-kontaktdatensaetze>> in Kapitel <<modul-crm#200, Kontakt-IDs>>).
+Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kontaktübersicht zu sehen (siehe <<bild-uebersicht-kontaktdatensaetze>> in Kapitel <<modul-crm#200, Kontakt-IDs>>).
 
-Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird normalerweise ein Auftrag zugeordnet. Dem Anwender ist so nicht unbedingt bekannt, wie viele Aufträge ein bestimmter Gastkunde tatsächlich im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: beispielsweise wenn sie nach Abschluss einer Bestellung im Webshop eine weitere Bestellung aufgeben oder sich über den Link zur Kaufabwicklung wieder einloggen. Ebenfalls denkbar sind vom Anwender manuell angelegte Aufträge, die der Kontakt telefonisch direkt beim Anwender erteilt, jedoch kein Kundenkonto (regulärer Zugang) anlegen möchte.
+Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auftrag zugeordnet und die Adresse gespeichert. Über die Schnellsuche kann der Anwender sehen, wie viele Aufträge ein bestimmter Gastkunde im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: Wenn der Kunde seine Bestellung reklamiert, wird ggf. eine Gutschrift angelegt.
 
 === Typen
 
@@ -144,11 +141,11 @@ Kundenklassen ermöglichen dem Anwender, seinen Kundenstamm nach unterschiedlich
 
 Ein möglicher Anwendungsfall für eine Kundenklasse wäre die Unterteilung nach Endkunden (B2C) und Händlern (B2B). Diese Unterteilung ist sinnvoll, wenn erwünscht ist, dass die Verkaufspreise im Webshop den B2C-Kunden als Bruttopreise, den B2B-Kunden jedoch als Nettopreise angezeigt werden. Ein weiterer Anwendungsfall kann beispielsweise eine VIP-Kundenklasse für Kunden, die regelmäßig und umsatzsteigernd im Webshop bestellen, sein, um für diese Kundenklasse eigene Verkaufspreise festzulegen.
 
-In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden. Die vom Anwender erstellten Kundenklassen erhalten durch das System eine fortlaufende ID beginnend mit ID 1. Bei dieser ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert. Der Anwender kann beliebig viele Kundenklassen erstellen. Wenn ein neuer Kontaktdatensatz erstellt wird, ist automatisch die Kundenklasse mit der niedrigsten ID vorausgewählt. Der Anwender kann die Kundenklasse jedoch nachträglich anpassen.
+In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden. Die vom Anwender erstellten Kundenklassen erhalten durch das System eine fortlaufende, eindeutige ID beginnend mit ID 1. Der Anwender kann beliebig viele Kundenklassen erstellen.
 
 === Rabattsystem für Kundenklassen
 
-Wie im Kapitel <<modul-crm#1100, *Kundenklassen*>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
+Wie im Kapitel <<modul-crm#1100, Kundenklassen>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
 
  * Kundenklassenrabatt
  * Rabatt auf den Nettowarenwert
@@ -180,7 +177,7 @@ Ein Kunde erhält den Rabatt, wenn er a) zu der betreffenden Kundenklasse gehör
 
 === Eigenschaften
 
-Eigenschaften dienen einer näheren Charakterisierung von Kunden. In einem neu angelegten System ist keine Eigenschaft standardmäßig vorhanden, d.h. die Verwendung ist optional. Die vom Anwender erstellten Eigenschaften erhalten eine fortlaufende ID beginnend mit ID 1. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. Der Anwender kann beliebig viele Eigenschaften erstellen.
+Eigenschaften dienen einer näheren Charakterisierung von Kunden. In einem neu angelegten System ist keine Eigenschaft standardmäßig vorhanden, d.h. die Verwendung ist optional. Die vom Anwender erstellten Eigenschaften erhalten eine fortlaufende, eindeutige ID beginnend mit ID 1. Die ID wird durch das System vergeben und kann nicht geändert werden. Der Anwender kann beliebig viele Eigenschaften erstellen.
 
 Für die spätere Verwendung der Eigenschaften gibt es zwei Möglichkeiten: Der Anwender kann die Informationen entweder im Bestellvorgang oder in der Kundenregistrierung von seinen Kunden abfragen oder der Anwender nutzt die Eigenschaften, um selbst Informationen zu den Kunden im Kontaktdatensatz zu speichern.
 
@@ -258,7 +255,7 @@ Im <<tabelle-verknuepfte-daten-kontaktdatensatz>> wird aufgelistet, welche Daten
 |Öffnet das Menü *Start » Boards*.
 
 |*Messenger*
-|Es ist möglich, zu jedem Kunden Nachrichten im Messenger zu versenden. Notizen werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten können gelöscht werden.
+|Es ist möglich, zu jedem Kunden Nachrichten im Messenger zu versenden. Nachrichten werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten können gelöscht werden.
 
 |*Dokumente*
 |Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
@@ -323,7 +320,7 @@ Die Liste der offenen Posten aktualisiert sich einmal täglich automatisch. Dahe
 
 === Zustimmung zur Speicherung von datenschutzrelevanten Informationen
 
-Welche datenschutzrelevanten Informationen im System gespeichert werden, hängt davon ab, welche Felder der Anwender als Pflichtangaben einstellt und welche Informationen der Kunde zusätzlich bei freiwillig auszufüllenden Feldern bei der Registrierung im Webshop angibt. Neben Name, Anschrift, Telefonnummer und E-Mail-Adresse, die für eine Zuordnung zu einer Person dienen können, ist z.B. noch die Speicherung der Bankdaten möglich. In Aufträgen kann z.B. noch die IP-Adresse, über die der Auftrag erstellt wurde, abgerufen wurde. Ebenso wird das Datum und die Uhrzeit des letzten Login gespeichert.
+Welche datenschutzrelevanten Informationen im System gespeichert werden, hängt davon ab, welche Felder der Anwender als Pflichtangaben einstellt und welche Informationen der Kunde zusätzlich bei freiwillig auszufüllenden Feldern bei der Registrierung im Webshop angibt. Neben Name, Anschrift, Telefonnummer und E-Mail-Adresse, die für eine Zuordnung zu einer Person dienen können, ist z.B. noch die Speicherung der Bankdaten möglich. In Aufträgen kann z.B. noch die IP-Adresse, über die der Auftrag erstellt wurde, abgerufen werden. Ebenso wird das Datum und die Uhrzeit des letzten Login gespeichert.
 
 Ein möglicher Fall wäre auch, dass der Anwender beispielsweise in der Datenschutzerklärung beschreibt, in welcher Form und für welche Dauer die Daten des Kunden gespeichert werden und dass die Daten nicht an Dritte weitergegeben werden. Außerdem legt der Anwender in seinem Webshop fest, dass das Lesen der Datenschutzerklärung und die anschließende Zustimmung zwingend notwendig ist. Das bedeutet, der Kunde muss während der Registrierung im Webshop eine Checkbox aktivieren und stimmt somit bewusst der Speicherung seiner Daten zu.
 
@@ -336,21 +333,30 @@ Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drit
 
 === Passwörter
 
-Es ist möglich, für alle im System gespeicherten regulären Kunden neue Passwörter zu generieren. Bei Gastkonten ist dies nicht möglich.
-
-Wenn sich der Kunde im Webshop des Anwenders registriert, vergibt der Kunde bei der Registrierung ein Passwort für sein Konto. Der Anwender kann selbst einstellen, welche Felder bei der Registrierung Pflichtfelder sein sollen. Die Pflichtfelder werden mit einem * gekennzeichnet. Demnach stimmt der Kunde der Eingabe seiner Daten zu, da er andernfalls den Registrierungsprozess nicht abschließen könnte.
+Es ist möglich, für alle im System gespeicherten regulären Kunden neue Passwörter zu generieren. Bei Gastkonten ist dies nicht möglich. Wenn sich der Kunde im Webshop des Anwenders registriert, vergibt der Kunde bei der Registrierung ein Passwort für sein Konto.
 
 === Löschung von datenschutzrelevanten Informationen
 
-Automatische Löschungen von Kundendaten wie Name, Anschrift etc. werden vom System nicht durchgeführt. Es obliegt dem Anwender, die Daten nach einer für ihn selbst definierten Zeit zu löschen. Außerdem kann der Anwender entscheiden, ob er auf Wunsch des Kunden sämtliche vom Kunden gespeicherte Daten dem Kunden beispielsweise zum Download zur Verfügung stellt.
+Automatische Löschungen von Kundendaten wie Name, Anschrift etc. werden vom System nicht durchgeführt. Der Anwender entscheidet aktiv, ob die Daten nach einer für ihn selbst definierten Zeit  gelöscht werden.
 
 Wenn keine Verknüpfung zwischen einem Kontaktdatensatz und einem Auftrag besteht –  das heißt, der Auftrag ist archiviert – kann der Anwender den Kontaktdatensatz löschen. Denkbar wäre auch, dass der Kunde sich zwar registriert hat, jedoch nie eine Bestellung über seinen Zugang eingegangen ist; in diesem Fall kann der Anwender den Kontaktdatensatz ebenfalls löschen.
+
+[.subhead]
+Anonymisierung von Kundendaten
+
+Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dieser Person hergestellt werden kann, indem er Datensätze anonymisiert. Das Anonymisieren der Daten ist nur bei einem Kontaktdatensatz möglich, nicht bei einem Gastzugang. Des Weiteren können nur Datensätze anonymisiert werden, deren verknüpfte Aufträge sich nicht im Archiv befinden.
+
 
 === Import und Export
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
 Für den manuellen Austausch von Kontaktdaten stehen dem Anwender der link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[ElasticSync^] für den Import und der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
+
+[.subhead]
+Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
+
+Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden gespeicherte Daten zum Download zur Verfügung stellen.
 
 === Backup
 
