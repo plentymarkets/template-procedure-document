@@ -1,9 +1,11 @@
 
+<<<<
+
 === Fachliche und technische Beschreibung E-Mail-Versand
 
 plentymarkets selbst ist kein E-Mail-Provider und bietet auch keine Services eines E-Mail-Providers an. Der Anwender bestimmt, welchen Anbieter er mit dem plentymarkets System für den Versand seiner E-Mails verknüpft.
 
-Alle E-Mails, die über das System versendet werden, basieren auf E-Mail-Vorlagen, die der Anwender einrichten muss. Einige E-Mail-Vorlagen sind zwar bereits im System vorhanden – diese kann der Anwender allerdings hinsichtlich seines eigenen Bedarfs anpassen; die Signatur beispielsweise muss der Anwender anpassen, da standardmäßig eine Mustersignatur eingestellt ist. Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen.
+Alle E-Mails, die über das System versendet werden, basieren auf E-Mail-Vorlagen, die der Anwender einrichten muss. Einige E-Mail-Vorlagen sind zwar bereits im System vorhanden – diese kann der Anwender allerdings hinsichtlich seines eigenen Bedarfs anpassen. Die Signatur beispielsweise muss der Anwender anpassen, da standardmäßig eine Mustersignatur eingestellt ist. Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen.
 
 Die E-Mail-Vorlagen können mit bestimmten Ereignissen, z.B. wenn eine neue Bestellung im Webshop des Anwenders eingeht oder wenn ein Kunde den Newsletter abonniert hat, verknüpft werden, damit das System automatisch E-Mails aus den Vorlagen erstellt und diese an die Kunden des Anwenders versendet. Ein weiteres Szenario wäre, dass der Anwender z.B. seine Mitarbeiter im Lager informiert, damit diese die Ware für den Versand vorbereiten. Das passende Ereignis dazu könnte der Zahlungseingang durch den Kunden sein.
 
@@ -186,6 +188,6 @@ Weitere Informationen zu Ereignisaktionen sind im plentymarkets Handbuch auf der
 
 ==== Gesendete E-Mails einsehen
 
-Der Anwender hat zum einen die Möglichkeit, alle E-Mail-Vorlagen, die er an einen bestimmten Kunden gesendet hat, einzusehen. Voraussetzung dafür ist, dass die E-Mail-Vorlagen mit einer eindeutigen Kunden-ID verknüpft sind.
+Der Anwender hat zum einen die Möglichkeit, alle E-Mail-Vorlagen, die er an einen bestimmten Kunden gesendet hat, einzusehen. Voraussetzung dafür ist, dass die E-Mail-Vorlagen mit einer eindeutigen Kontakt-ID verknüpft sind.
 
 Außerdem kann der Anwender eine Statistik erstellen, um anzeigen zu lassen, welche E-Mail-Vorlagen wie häufig in einem bestimmten Zeitraum an alle seine Kunden versendet wurden.
