@@ -51,7 +51,7 @@ Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü
 |Zalando|[_Ja/Nein_]
 |===
 
-Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar sind und somit eingerichtet werden können.
+Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins sind im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] erhältlich.
 
 Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *System » Systemeinstellungen » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
 
@@ -59,7 +59,7 @@ Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über de
 |Marktplatz|*In Verwendung*
 
 |Cdiscount|[_Ja/Nein_]
-|Check24|[_Ja/Nein_]
+|CHECK24|[_Ja/Nein_]
 |Google Shopping|[_Ja/Nein_]
 |idealo Direktkauf|[_Ja/Nein_]
 |Kauflux|[_Ja/Nein_]
@@ -151,7 +151,7 @@ Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz
 |145.00|Fruugo|Auftrag|[_Ja/Nein_]
 |147.00|Flubit|Auftrag|[_Ja/Nein_]
 |149.00|Mercateo|Auftrag|[_Ja/Nein_]
-|150.00|Check24|Auftrag|[_Ja/Nein_]
+|150.00|CHECK24|Auftrag|[_Ja/Nein_]
 |152.00|BOL.com|Auftrag|[_Ja/Nein_]
 |154.00|Netto|Auftrag|[_Ja/Nein_]
 |155.00|GartenXXL.at|Auftrag|[_Ja/Nein_]
@@ -175,7 +175,7 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |Amazon|Zahlungsart für Aufträge, die über den Marktplatz Amazon ins plentymarkets System kommen.
 |BOL.com|Zahlungsart für den Marktplatz bol.com.
 |Cdiscount|Zahlungsart für Aufträge, die über den Marktplatz Cdiscount ins plentymarkets System kommen.
-|Check24|Zahlungsart für den Marktplatz Check24.
+|CHECK24|Zahlungsart für den Marktplatz CHECK24.
 |eBay-Rechnungskauf|Zahlungsart für Kauf auf Rechnung bei eBay.
 |Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentymarkets System kommen.
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentymarkets System kommen.
@@ -204,39 +204,39 @@ Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit ei
 
 ==== Datenaustausch
 
-Daten können automatisch über Rest-API und FTP-Server oder manuell über den elastischen Export ausgetauscht werden. Im API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
+Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über ElasticSync und den elastischen Export mit den Schnittstellen ausgetauscht werden. Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
 |===
 |*Marktplatz*|*Datenaustausch*
 
-|Amazon|Im- und Export über Amazon MWS Webservice-API mit CSV-Datei
+|Amazon|Im- und Export über Amazon MWS Webservice-API mit CSV- und XML-Dateien
 |bol.com|Export über elastischen Export +
- Import über Rest-API mit JSON
-|Cdiscount|Im- und Export über Rest-API mit XML-Datei
-|Check24|Export über elastischen Export +
+ Import über REST-API mit JSON
+|Cdiscount|Im- und Export über SOAP-API mit XML-Datei
+|CHECK24|Export über elastischen Export +
  Import über FTP-Server mit XML-Datei
-|eBay|Im- und Export über Rest-API mit XML-Dateien
-|Flubit|Im- und Export über Rest-API mit JSON
-|Fruugo|Im- und Export über Rest-API mit XML-Datei
+|eBay|Im- und Export über REST-API mit XML-Dateien
+|Flubit|Im- und Export über REST-API mit JSON
+|Fruugo|Im- und Export über REST-API mit XML-Datei
 |grosshandel.eu|Im- und Export über SOAP-API
-|Hood|Im- und Export über Rest-API mit XML-Dateien
-|idealo Direktkauf|Export über elastischen Export
+|Hood|Im- und Export über REST-API mit XML-Dateien
+|idealo|Export über elastischen Export und REST-API mit JSON
 |Kauflux|Export über elastischen Export +
- Import über Rest-API mit XML-Datei
+ Import über REST-API mit XML-Datei
 |La Redoute|Im- und Export über SOAP-API mit XML-Datei
 |Mercateo|Export über FTP Server mit XML-Datei +
  Import über E-MAil
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
 |Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
 |OTTO|Im- und Export über FTP-Server mit XML-Datei
-|PIXmania|Im- und Export über Rest-API mit CSV-Datei
+|PIXmania|Im- und Export über REST-API mit CSV-Datei
 |Rakuten.de|Export über elastischen Export +
-Import über Rest-API mit JSON
-|real.de|Im- und Export über Rest-API mit CSV-Datei
+Import über REST-API mit JSON
+|real.de|Im- und Export über REST-API mit CSV-Datei
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
-|Shopgate|Im- und Export über Rest-API mit CSV-Datei
+|Shopgate|Im- und Export über REST-API mit CSV-Datei
 |Yatego|Export über FTP-Server mit CSV-Datei +
- Import über Rest-API
-|Zalando|Im- und Export über Rest-API mit XML-Datei
+ Import über REST-API
+|Zalando|Im- und Export über REST-API mit XML-Datei
 |===
