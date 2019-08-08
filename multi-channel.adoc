@@ -69,8 +69,9 @@ Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über de
 ==== Zusätzliche Marktplatz-Services
 
 Für den Marktplatz Amazon steht der Amazon-Umsatzsteuerservice VCS zur Verfügung. Mit diesem Service können Amazon-Rechnungen durch plentymarkets oder durch Amazon erzeugt werden. +
-Wenn Amazon-Rechnungen durch plentymarkets erzeugt werden, werden diese mit Daten aus plentymarkets erzeugt, automatisch zu Amazon übertragen und bei Amazon gespeichert. Wenn Rechnungen durch Amazon erzeugt werden, werden diese mit Daten aus Amazon erzeugt und bei Amazon gespeichert. In beiden Fällen können die Rechnungen nicht nachträglich geändert werden.
+Wenn Amazon-Rechnungen durch plentymarkets erzeugt werden, werden diese mit Daten von Amazon erzeugt, automatisch zu Amazon übertragen und bei Amazon gespeichert. Wenn Rechnungen durch Amazon erzeugt werden, werden diese mit Daten von Amazon erzeugt und bei Amazon gespeichert. In beiden Fällen können die Rechnungen nicht nachträglich geändert werden.
 
+Weiterhin steht der Amazon-Service Multi-Channel zur Verfügung, womit Aufträge von externen Verkaufskanälen über Amazon abgewickelt werden können.
 
 ==== Auftragsherkünfte
 
@@ -163,7 +164,7 @@ Bei den aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, d
 
 ==== Verkauf über Multi-Channel
 
-Um Artikel über das Modul Multi-Channel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien und Merkmale mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden.
+Um Artikel über das Modul Multi-Channel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden.
 
 ==== Marktplatz-Zahlungsarten
 
@@ -224,7 +225,7 @@ Daten können in plentymarkets automatisch über REST-API und FTP-Server oder ma
 |Kauflux|Export über elastischen Export +
  Import über REST-API mit XML-Datei
 |La Redoute|Im- und Export über SOAP-API mit XML-Datei
-|Mercateo|Export über FTP Server mit XML-Datei +
+|Mercateo|Export über FTP-Server mit XML-Datei +
  Import über E-MAil
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
 |Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
