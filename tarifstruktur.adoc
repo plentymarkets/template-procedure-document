@@ -73,12 +73,12 @@ Die Tarifgruppe *PRO* besteht aus den Tarifen *CLASSIC* und *FLEX*. Die folgende
 
 Zusätzlich ist die Nutzung folgender Leistungen inklusive:
 
-    * ShopBuilder
-    * ShopBooster
-    * Facettensuche
-    * Rest-API
-    * Forensupport
-    * Software-Updates
+  * ShopBuilder
+  * ShopBooster
+  * Facettensuche
+  * Rest-API
+  * Forensupport
+  * Software-Updates
 
 Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
 Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 2 aufgeführten maximalen Anzahlen hinzugebucht werden.
@@ -105,6 +105,15 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 |bis zu 99 Kassen zubuchbar
 
 |====
+
+In der Tarifgruppe Classic können zusätzlich Auftragspakete gebucht werden. Folgende Auftragspakete stehen zu Verfügung:
+
+  * 500 Aufträge
+  * 5.000 Aufträge
+  * 10.000 Aufträge
+  * 50.000 Aufträge
+
+Auftragspakete können für einen Zeitraum von 3 Monaten, 6 Monaten oder 12 Monaten gebucht und beliebig kombiniert werden.
 
 === Tarifgruppe *PLUS*
 
@@ -199,6 +208,8 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 
 |====
 
+Partner können außerdem Plugins und Dienstleistungen auf plentyMarketplace anbieten.
+
 === Hosting-Optionen
 
 Jeder Anwender muss *eine* der von plentymarkets angebotenen Hosting-Optionen wählen. Die folgenden Hosting-Optionen in Form von Server-Standorten stehen hierbei zur Verfügung:
@@ -208,4 +219,4 @@ Jeder Anwender muss *eine* der von plentymarkets angebotenen Hosting-Optionen w�
 
 Die Speicherung und Sicherung von Daten findet ausschließlich am ausgewählten Server-Standort statt. Die Sicherung von Daten in Form von Backups findet ausdrücklich *nur* am gewählten Server-Standort und niemals an weiteren Standorten statt.
 
-Nähere Erläuterungen zu den einzelnen Hosting-Optionen finden sich im Dokument Data Security.
+Weitere Informationen zu den einzelnen Hosting-Optionen werden im Kapitel <<Datasecurity, Speicherkonzept, Löschkonzept, Aufbau, Sicherheitsarchitektur AWS Cloud>> beschrieben.
