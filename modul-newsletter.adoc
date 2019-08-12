@@ -89,3 +89,4 @@ Für den manuellen Austausch von Newsletterdaten steht dem Anwender das Datenfor
 Auf der Seite link:https://knowledge.plentymarkets.com/basics/datenaustausch/datenformate/customernewsletter[CustomerNewsletter^] im plentymarkets Handbuch ist eine Auflistung der vorhandenen Datenfelder sowie der Pflichtfelder zu finden.
 
 *Hinweis*: Dieselbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.
+
