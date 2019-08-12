@@ -257,7 +257,7 @@ Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Rege
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#2500[Versanddienstleister im Überblick^] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
 
-=== Integrierte Fulfillment-Dienstleister
+===== Integrierte Fulfillment-Dienstleister
 
 Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnittstelle in plentymarkets:
 
