@@ -17,7 +17,7 @@ Im plentymarkets CRM-Modul beinhaltet der Begriff _Kontakt_ nicht nur natürlich
 
 Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
 
-Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#100[Kontakte verwalten^] beschrieben.
+Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#100[Kontakte verwalten^] beschrieben.
 
 In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
 
@@ -284,7 +284,7 @@ Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zu
 
 |====
 
-Weitere Informationen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#[Kontakte verwalten^] zu finden.
+Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#[Kontakte verwalten^] zu finden.
 
 === Zahlungsarten
 
@@ -333,7 +333,14 @@ Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drit
 
 === Passwörter
 
-Es ist möglich, für alle im System gespeicherten regulären Kunden neue Passwörter zu generieren. Bei Gastkonten ist dies nicht möglich. Wenn sich der Kunde im Webshop des Anwenders registriert, vergibt der Kunde bei der Registrierung ein Passwort für sein Konto.
+Es ist möglich, für jeden im System gespeicherten regulären Kunden ein neues Passwort zu generieren. Bei Gastkonten ist dies nicht möglich, da diese sich nicht im Webshop des Anwenders registrieren und daher auch nicht über ein Passwort verfügen. Wenn sich der Kunde im Webshop des Anwenders registriert, vergibt der Kunde bei der Registrierung ein Passwort für sein Konto.
+
+Es gibt zwei Möglichkeiten zur Passwortänderung:
+
+1. Der Anwender vergibt manuell ein neues Passwort im Kontaktdatenssatz und teilt dem Kunden dieses mit.
+2. Der Anwender verschickt manuell eine E-Mail an den Kunden, die einen Link zur Passwortänderung enthält. Diese E-Mail erhält der Kunde auch, wenn er im Webshop des Anwenders auf "Passwort vergessen" klickt.
+
+Es wird ein Hash des Passworts mit dem Passwort-Hashing-Verfahren _bcrypt_ in der Datenbank gespeichert. Die Passwörter können nicht entschlüsselt werden.
 
 === Löschung von datenschutzrelevanten Informationen
 
@@ -344,7 +351,17 @@ Wenn keine Verknüpfung zwischen einem Kontaktdatensatz und einem Auftrag besteh
 [.subhead]
 Anonymisierung von Kundendaten
 
-Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dieser Person hergestellt werden kann, indem er Datensätze anonymisiert. Das Anonymisieren der Daten ist nur bei einem Kontaktdatensatz möglich, nicht bei einem Gastzugang. Des Weiteren können nur Datensätze anonymisiert werden, deren verknüpfte Aufträge sich nicht im Archiv befinden.
+Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dieser Person hergestellt werden kann, indem er Datensätze anonymisiert. Das Anonymisieren der Daten ist nur bei einem Kontaktdatensatz möglich, nicht bei einem Gastzugang. Des Weiteren können nur Datensätze anonymisiert werden, deren verknüpfte Aufträge sich nicht im Archiv befinden. Wenn der Anwender den Auftrag gelöscht hat – manuell über das Backend, über die Datenbereinigung im Backend oder per REST-API – befindet sich der Auftrag im Archiv. Es erfolgt keine automatische Löschung bzw. Archivierung des Auftrags seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern.
+
+[.subhead]
+Löschung von Kundendaten
+
+Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen, Tickets oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/daten/datenbereinigung[Datenbereinigung^] zu finden.
+
+[.subhead]
+Aufbewahrungspflicht
+
+Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen Daten zu sichern und diese ggf. nach Ablauf der Aufbewahrungsfrist selbstständig zu löschen. Eine systemseitige Erinnerungsfunktion o.ä. für das Löschen von Daten ist in plentymarkets nicht vorhanden.
 
 
 === Import und Export
