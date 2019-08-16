@@ -6,6 +6,16 @@ Für die Versandabwicklung bietet das plentymarkets System für verschiedene Ver
 
 Eine Übersicht über vorhandene (sowohl intern als auch extern entwickelte) Plugins für Versanddienstleister- und Fulfillment-Dienstleister ist auf dem link:https://marketplace.plentymarkets.com/plugins/integration[plentyMarketplace^] zu finden.
 
+Im Tab _Support_ jedes Plugins ist beschrieben, welcher Ansprechpartner für Rückfragen kontaktiert werden kann.
+
+plentymarkets übernimmt den Support für die folgenden Versanddienstleister- bzw. Fulfillment-Dienstleister-Plugins:
+
+* DHL Shipping (Versenden)
+* DHL Wunschpaket
+* eBay Fulfillment
+* DPD Versand Services
+* DPD UK
+
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<modul-versandabwicklung#1200, In plentymarkets integrierte Versanddienstleister>> und <<modul-versandabwicklung#1300, In plentymarkets integrierte Fulfillment-Dienstleister>>.
@@ -140,9 +150,9 @@ Außerdem kann der Anwender festlegen, für welche eBay-Konten und Listing-Typen
 
 Wenn mehrere Versandprofile vorhanden sind, erfolgt die Zuordnung zu einem Auftrag anhand der Kategorie, die der Anwender eingestellt hat. Die niedrigste Kategorie eines Versandprofils hat immer Vorrang. Dies ermöglicht eine zusätzliche Priorisierung der Versandprofile im Warenkorb. Darüberhinaus hat der Anwender die Möglichkeit, im System ein Standardversandprofil festzulegen.
 
-Der Anwender legt fest, welche Versandmöglichkeiten es für einen Artikel gibt, indem er das Versandprofil anlegt und in diesem Mandanten (Shops), Herkünfte und Portotabellen – diese enthalten die Versandregionen – für den Endkunden freigibt. Wichtig hierbei ist, dass der Anwender dieses Versandprofil an den entsprechenden Artikeln verknüpft.
+Der Anwender legt fest, welche Versandmöglichkeiten es für einen Artikel gibt, indem er das Versandprofil anlegt und in diesem Mandanten (Shops), Herkünfte und Portotabellen – diese enthalten die Versandregionen – für den Endkunden freigibt. Wichtig hierbei ist, dass der Anwender dieses Versandprofil an den entsprechenden Artikeln verknüpft, damit diese Versandbedingungen dem Kunden im Webshop des Anwenders angezeigt werden.
 
-Weitere Informationen zu den Einstellungen im Versandprofil sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#1000[Versand vorbereiten^] zu finden.
+Weitere Informationen zu den Einstellungen im Versandprofil sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#1000[Versand vorbereiten^] zu finden.
 
 ===== Artikel-Portoaufschlag
 
@@ -163,7 +173,7 @@ In <<tabelle-postleitzahlen-inselregionen>> ist aufgelistet, für welche Postlei
 |ID des Lieferlandes |Name des Lieferlandes|Postleitzahl, Postleitzahlenbereich(e)
 
 |1 |Deutschland |18565, 25846-25849, 25859, 25863, 25869, 25929-25956, 25938, 25960-25999, 26453-26460, 26462-26486, 26533-26546, 26548, 26557-26579, 26737-26757, 27483
-|10 |Frankreich |2000-20999
+|10 |Frankreich |20000-20999
 |15 |Italien |8010-8100 , 9010-9049 , 9070-9100, 9124, 9126, 9170
 |21 |Niederlande |1156AA-1156ZZ, 1791AA-1797ZZ, 8881AA-8884ZZ, 8891AA-8897ZZ, 8899AA-8899ZZ, 9161AA-9164ZZ, 9166AA-9166ZZ
 |65 |Spanien |07000-07079, 07081-07999, 20086, 35000-35079, 35081-35999, 38000-38079, 38000-38079, 38081
@@ -171,6 +181,8 @@ In <<tabelle-postleitzahlen-inselregionen>> ist aufgelistet, für welche Postlei
 |====
 
 Die Postleitzahlen der Inselregionen sind systemseitig gespeichert. Der Anwender kann die  Postleitzahlenbereiche nicht ändern oder erweitern. Bei Aktivierung des Inselzuschlages erfolgt eine Berechnung nur, wenn die Postleitzahl im System als Inselregion erkannt wird.
+
+*_Beispiel:_* Der Anwender versendet mit DHL und hat Versandkosten von 5,99 Euro. Als Inselzuschlag hat der Anwender 10,00 Euro gespeichert. Wenn nun ein Kunde im Webshop des Anwenders Ware bestellt und als Lieferadresse "Norderney" angibt, erkennt das System die Kombination aus Postleitzahl und Land als "Inselregion". Dem Kunden wird im Webshop im Checkout demnach ein Versandkostenbetrag von 15,99 Euro angezeigt.
 
 ===== Portotabelle
 
@@ -255,7 +267,7 @@ UK Mail |Nein
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Versanddienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#2500[Versanddienstleister im Überblick^] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#2500[Versanddienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
 
 ===== Integrierte Fulfillment-Dienstleister
 
@@ -268,7 +280,7 @@ Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnitt
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#4700[Fulfillment-Dienstleister im Überblick^] des plentymarkets Handbuchs zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#4700[Fulfillment-Dienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
 
 ==== Datenübertragung
 
@@ -314,7 +326,7 @@ Aktuell kann der Anwender Zollinhaltserklärungen und Paketkarten ausschließlic
 
 Zollinhaltserklärungen und Paketkarten für DHL-Sendungen können im System erst generiert werden, wenn der Auftrag bei DHL angemeldet und eine Rechnung erzeugt wurde.
 
-Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<modul-versandabwicklung#2000, Anhang b)>> zu finden.
+Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<modul-versandabwicklung#_anhang_b), Anhang b)>> zu finden.
 
 ==== Anhänge
 
