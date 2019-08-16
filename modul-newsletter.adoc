@@ -8,7 +8,7 @@ Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine New
 
 Der Anwender kann bestimmte Ereignisse in seinem System einstellen. Wenn dieses Ereignis eintritt, resultiert daraus eine Aktion, d.h. der Newsletter wird dann automatisiert über das System an die Kunden bzw. Interessenten, die sich z.B. im Webshop für den Newsletter angemeldet haben, versendet.
 
-Alle Informationen zum Newsletter-Versand sind im plentymarkets Handbuch auf der Seite https://knowledge.plentymarkets.com/crm/newsletter-versenden[Newsletter versenden^] zu finden.
+Alle Informationen zum Newsletter-Versand sind im Handbuch auf der Seite https://knowledge.plentymarkets.com/crm/newsletter-versenden[Newsletter versenden^] zu finden.
 
 ==== Häufigkeit des Newsletter-Versands
 
@@ -48,7 +48,7 @@ Neben dem im System verfügbaren internen Newsletter-Dienst hat der Anwender die
 
 ===== CleverReach
 
-Möchte der Anwender die Newsletter an seine Kunden über CleverReach versenden, muss er sich zunächst über die Website von CleverReach registrieren. Im Anschluss daran muss er die Schnittstelle im System einrichten, damit die Daten zu CleverReach übertragen werden können.
+Möchte der Anwender die Newsletter an seine Kunden über die externe Schnittstelle CleverReach versenden, muss er sich zunächst über die Website von CleverReach registrieren. Im Anschluss daran muss er die Schnittstelle im System einrichten, damit die Daten zu CleverReach übertragen werden können.
 
 plentymarkets überträgt die folgenden Daten an CleverReach, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
 
@@ -71,6 +71,6 @@ Für den manuellen Austausch von Newsletter-Daten stehen dem Anwender die folgen
 
 * Für den Export das Datenformat *Newsletter-Empfänger* im Elastischen Export
 
-Weitere Informationen sind im plentymarkets Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Daten mit ElasticSync importieren^] und link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Datenformate mit FormatDesigner erstellen^].
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Daten mit ElasticSync importieren^] und link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Datenformate mit FormatDesigner erstellen^] zu finden.
 
 *Hinweis*: Dieselbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.
