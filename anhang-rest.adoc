@@ -5639,7 +5639,7 @@
 
 |
 |
-|delete
+|Nachricht aktualisieren
 |
 |
 |
@@ -5666,7 +5666,7 @@
 
 |
 |
-|update
+|Nachricht löschen
 |
 |
 |
@@ -6093,7 +6093,7 @@
 |
 
 |
-|backup
+|Backup
 |
 |
 |
@@ -6103,7 +6103,7 @@
 
 |
 |
-|config
+|Backup bearbeiten
 |
 |
 |
@@ -6111,17 +6111,8 @@
 |
 
 |
-|data_exchange
+|Datenaustausch
 |
-|
-|
-|
-|
-|
-
-|
-|
-|export
 |
 |
 |
@@ -6130,79 +6121,7 @@
 
 |
 |
-|
-|catalog
-|
-|
-|
-|
-
-|
-|
-|
-|
-|show
-|
-|
-|
-
-|
-|
-|
-|dynamic
-|
-|
-|
-|
-
-|
-|
-|
-|
-|show
-|
-|
-|
-
-|
-|
-|
-|elastic
-|
-|
-|
-|
-
-|
-|
-|
-|
-|show
-|
-|
-|
-
-|
-|
-|
-|special
-|
-|
-|
-|
-
-|
-|
-|
-|
-|show
-|
-|
-|
-
-|
-|
-|import
+|Export
 |
 |
 |
@@ -6212,7 +6131,7 @@
 |
 |
 |
-|dynamic
+|Dynamischer Export
 |
 |
 |
@@ -6222,7 +6141,88 @@
 |
 |
 |
-|show
+|Dynamischen Export anzeigen
+|
+|
+|
+
+|
+|
+|
+|Elastischer Export
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Elastischen Export anzeigen
+|
+|
+|
+
+|
+|
+|
+|Katalog
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Katalog anzeigen
+|
+|
+|
+
+|
+|
+|
+|Spezialexport
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Spezialexport anzeigen
+|
+|
+|
+
+|
+|
+|Import
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Dynamischer Import
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Dynamischen Import anzeigen
 |
 |
 |
@@ -6246,7 +6246,25 @@
 |
 
 |
-|Export Data
+|Druckverlauf
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Druckverlauf anzeigen
+|
+|
+|
+|
+|
+
+|
+|Export
 |
 |
 |
@@ -6346,7 +6364,7 @@
 |
 
 |
-|import
+|Import
 |
 |
 |
@@ -6356,7 +6374,7 @@
 
 |
 |
-|ebay_listings
+|eBay-Listings
 |
 |
 |
@@ -6364,52 +6382,7 @@
 |
 
 |
-|log
-|
-|
-|
-|
-|
-|
-
-|
-|
-|api
-|
-|
-|
-|
-|
-
-|
-|
-|
-|config
-|
-|
-|
-|
-
-|
-|
-|
-|show
-|
-|
-|
-|
-
-|
-|
-|show
-|
-|
-|
-|
-|
-
-|
-|migration
+|Log
 |
 |
 |
@@ -6419,16 +6392,7 @@
 
 |
 |
-|config
-|
-|
-|
-|
-|
-
-|
-|print_history
-|
+|API-Log
 |
 |
 |
@@ -6437,12 +6401,49 @@
 
 |
 |
-|show
+|
+|API-Log anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|API-Log bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Log anzeigen
 |
 |
 |
 |
 |
+
+|
+|Migration
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Migration bearbeiten
+|
+|
+|
+|
+|
+
 
 |
 |Report
@@ -6481,7 +6482,7 @@
 |
 
 |
-|status
+|Status
 |
 |
 |
@@ -6491,7 +6492,7 @@
 
 |
 |
-|show
+|Status anzeigen
 |
 |
 |
@@ -6634,42 +6635,6 @@
 |
 
 
-|
-|debitor
-|
-|
-|
-|
-|
-|
-
-|Datenbereinigung
-|
-|
-|
-|
-|
-|
-|
-
-|
-|Konfiguration anzeigen
-|
-|
-|
-|
-|
-|
-
-|
-|Konfiguration speichern
-|
-|
-|
-|
-|
-|
-
 |Editoren
 |
 |
@@ -6698,7 +6663,7 @@
 |
 
 |
-|Kommentare anzeigen
+|Kommentar anzeigen
 |
 |
 |
@@ -6707,7 +6672,7 @@
 |
 
 |
-|Kommentare erstellen
+|Kommentar erstellen
 |
 |
 |
@@ -6716,7 +6681,7 @@
 |
 
 |
-|Kommentare löschen
+|Kommentar löschen
 |
 |
 |
@@ -6724,17 +6689,8 @@
 |
 |
 
-|language
+|Markierung
 |
-|
-|
-|
-|
-|
-|
-
-|
-|locales
 |
 |
 |
@@ -6743,8 +6699,26 @@
 |
 
 |
+|Markierung aktualisieren
 |
-|config
+|
+|
+|
+|
+|
+
+|
+|Markierung anzeigen
+|
+|
+|
+|
+|
+|
+
+|
+|Markierung löschen
+|
 |
 |
 |
@@ -8659,6 +8633,60 @@
 |
 |
 
+|pim
+|
+|
+|
+|
+|
+|
+|
+
+|
+|variation
+|
+|
+|
+|
+|
+|
+
+|
+|
+|create
+|
+|
+|
+|
+|
+
+|
+|
+|delete
+|
+|
+|
+|
+|
+
+|
+|
+|show
+|
+|
+|
+|
+|
+
+|
+|
+|update
+|
+|
+|
+|
+|
+
 |plentyApp
 |
 |
@@ -9858,6 +9886,7 @@
 |
 |
 
+|
 |Tag
 |
 |
@@ -9865,8 +9894,8 @@
 |
 |
 |
-|
 
+|
 |
 |Tag aktualisieren
 |
@@ -9874,8 +9903,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |Tag anzeigen
 |
@@ -9883,8 +9913,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |Tag erstellen
 |
@@ -9892,8 +9923,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |Tag löschen
 |
@@ -9901,8 +9933,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |Tag-Verknüpfung
 |
@@ -9910,8 +9943,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |
 |Tag-Verknüpfung aktualisieren
@@ -9919,8 +9953,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |
 |Tag-Verknüpfung anzeigen
@@ -9928,8 +9963,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |
 |Tag-Verknüpfung erstellen
@@ -9937,8 +9973,9 @@
 |
 |
 |
-|
 
+
+|
 |
 |
 |Tag-Verknüpfung löschen
@@ -9946,7 +9983,7 @@
 |
 |
 |
-|
+
 
 |Warenbestände
 |
