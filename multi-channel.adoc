@@ -18,7 +18,7 @@ Aktuell ist das Softwaremodul Multi-Channel in allen von plentymarkets angeboten
 
 ==== Dokumentation
 
-Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte]. Ein Download der Dokumentation ist zurzeit nicht möglich. +
+Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte]. Die Dokumentation der Marktplatz- und Preisportal-Plugins kann im jeweiligen Plugin im link:https://marketplace.plentymarkets.com/plugins/channels/marktplaetze[plentyMarketplace^] angesehen werden. Ein Download der Dokumentation ist zurzeit nicht möglich. +
 Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Verfahrensdokumentation zur Verfügung.
 
 ==== Integrierte Kanäle
@@ -51,7 +51,7 @@ Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü
 |Zalando|[_Ja/Nein_]
 |===
 
-Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins sind im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] erhältlich.
+Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
 
 Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *System » Systemeinstellungen » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
 
@@ -198,10 +198,11 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 
 ==== Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Damit Preise zu den Online-Marktplätzen übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
+Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<artikelverwaltung#, Preisverwaltung in plentymarkets>>. Es können unterschiedliche Preise an verschiedene Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
-Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten.
+Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten. +
+Ob ein Listing einen Festpreis hat oder in einer Auktion angeboten werden soll, kann in plentymarkets im Listing eingestellt werden.
 
 ==== Datenaustausch
 
