@@ -1,9 +1,11 @@
 
+<<<<
+
 === Fachliche und technische Beschreibung E-Mail-Versand
 
 plentymarkets selbst ist kein E-Mail-Provider und bietet auch keine Services eines E-Mail-Providers an. Der Anwender bestimmt, welchen Anbieter er mit dem plentymarkets System für den Versand seiner E-Mails verknüpft.
 
-Alle E-Mails, die über das System versendet werden, basieren auf E-Mail-Vorlagen, die der Anwender einrichten muss. Einige E-Mail-Vorlagen sind zwar bereits im System vorhanden – diese kann der Anwender allerdings hinsichtlich seines eigenen Bedarfs anpassen; die Signatur beispielsweise muss der Anwender anpassen, da standardmäßig eine Mustersignatur eingestellt ist. Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen.
+Alle E-Mails, die über das System versendet werden, basieren auf E-Mail-Vorlagen, die der Anwender einrichten muss. Einige E-Mail-Vorlagen sind zwar bereits im System vorhanden – diese kann der Anwender allerdings hinsichtlich seines eigenen Bedarfs anpassen. Die Signatur beispielsweise muss der Anwender anpassen, da standardmäßig eine Mustersignatur eingestellt ist. Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen.
 
 Die E-Mail-Vorlagen können mit bestimmten Ereignissen, z.B. wenn eine neue Bestellung im Webshop des Anwenders eingeht oder wenn ein Kunde den Newsletter abonniert hat, verknüpft werden, damit das System automatisch E-Mails aus den Vorlagen erstellt und diese an die Kunden des Anwenders versendet. Ein weiteres Szenario wäre, dass der Anwender z.B. seine Mitarbeiter im Lager informiert, damit diese die Ware für den Versand vorbereiten. Das passende Ereignis dazu könnte der Zahlungseingang durch den Kunden sein.
 
@@ -29,9 +31,12 @@ Die Namen der Ordner können nicht geändert werden und die Ordner können nicht
 
 Der Ordner *Allgemeine E-Mail-Vorlagen* enthält bereits 12 E-Mail-Vorlagen, die in der folgenden Tabelle aufgelistet sind. Jede E-Mail-Vorlage besitzt eine ID, die vom System vergeben wird. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann. Der Anwender kann jedoch den Namen der Vorlagen sowie deren Inhalt ändern.
 
+[[tabelle-vorkonfigurierte-e-mail-vorlagen]]
 .Vorkonfigurierte E-Mail-Vorlagen
-|===
-|*ID* |*Name der E-Mail-Vorlage*
+[cols="1,3"]
+|====
+|ID |Name der E-Mail-Vorlage
+
 |4 |Auftrag: Rechnung PDF-Anhang
 |5 |Auftrag: Versandbestätigung
 |6 |Ebay: Disputprozess
@@ -44,8 +49,7 @@ Der Ordner *Allgemeine E-Mail-Vorlagen* enthält bereits 12 E-Mail-Vorlagen, die
 |23 |Ebay: Eingangsbestätigung mit Bankdaten ohne Checkout
 |25 |Ebay: Eingangsbestätigung Bestellung
 |26 |Webshop: Eingangsbestätigung Bestellung
-|===
-
+|====
 
 Der Ordner *Meine E-Mail-Vorlagen* dient dazu, E-Mail-Vorlagen nur für den eigenen Benutzer zugänglich zu machen.
 
@@ -59,47 +63,133 @@ Der Anwender kann einen großen Teil seiner Routineaufgaben wie z.B. das Versend
 
 Der Anwender hat die Möglichkeit, bestimmte Ereignisse mit einer E-Mail-Vorlage zu verknüpfen. Bei Eintritt des Ereignisses wird die verknüpfte E-Mail-Vorlage automatisch vom System an den Kunden versendet.
 
-Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse, die der Anwender mit zuvor erstellten E-Mail-Vorlagen verknüpfen kann, als auch deren Verwendungszweck auf. Die Namen der Ereignisse können nicht geändert werden.
+In <<tabelle-vorkonfigurierte-ereignisse-e-mail-vorlage>> werden sowohl die im System bereits verfügbaren Ereignisse, die der Anwender mit zuvor erstellten E-Mail-Vorlagen verknüpfen kann, als auch deren Verwendungszweck aufgelistet. Die Namen der Ereignisse können nicht geändert werden.
 
+[[tabelle-vorkonfigurierte-ereignisse-e-mail-vorlage]]
 .Vorkonfigurierte Ereignisse, die mit einer E-Mail-Vorlage verknüpft werden können
-|===
-|*Name des Ereignisses*|*Verwendungszweck*
-|Neue Bestellung über den Webshop |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang im Webshop abgeschlossen wurde.
-|Neue Bestellung über eBay |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei eBay abgeschlossen wurde.
-|Neue Bestellung über Amazon |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Amazon abgeschlossen wurde.
-|Neue Bestellung über Amazon FBA |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Amazon FBA abgeschlossen wurde.
-|Neue Bestellung über Yatego |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Yatego abgeschlossen wurde.
-|Neue Bestellung über Kauflux |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Kauflux abgeschlossen wurde.
-|Neue Bestellung über Mercateo |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Mercateo abgeschlossen wurde.
-|Neue Bestellung über PIXmania |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei PIXmania abgeschlossen wurde.
-|Neue Bestellung über ricardo |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei ricardo abgeschlossen wurde.
-|Neue Bestellung über real.de |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei real.de abgeschlossen wurde.
-|Neue Bestellung über Rakuten |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Rakuten abgeschlossen wurde.
-|Neue Bestellung über sonstige Schnittstelle |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang über eine Schnittstelle abgeschlossen wurde.
-|Sende Kunde E-Mail zur Passwortänderung |Sendet Kunden eine E-Mail mit einem Link zum neuen Passwort, der aktiv bestätigt werden muss. Die Template-Funktion +{% Link_ChangePassword() %}+ muss in der E-Mail-Vorlage enthalten sein.
-|Newsletter Opt-In |Sendet Kunden eine E-Mail, wenn diese sich für den Newsletter angemeldet haben. Die E-Mail-Vorlage sollte den Bestätigungslink, den die Kunden anklicken müssen, um die Newsletter-Anmeldung abzuschließen, enthalten.
-|Bestätigung Newsletter-Opt-In |Sendet Kunden eine E-Mail als Bestätigung, sobald diese den Bestätigungslink, der mit der E-Mail-Vorlage für das Ereignis *Newsletter Opt-In* verschickt wurde, aktiviert haben.
-|Erinnerung bei Kaufabbruch |Sendet Kunden eine E-Mail als Erinnerung, dass ein oder mehrere Artikel im Warenkorb liegen, der Kaufvorgang jedoch nicht abgeschlossen wurde. Die E-Mail-Vorlage sollte den Link zum Warenkorb enthalten, damit die Kunden diesen aufrufen und die Bestellung abschließen können. Dazu an die URL des Webshops den Suffix */basket/* anfügen (Beispiel: +https://www.meinshop.de/basket/+). +
+[cols="1,3,3"]
+|====
+|Name des Ereignisses |Verwendungszweck |Voreingestellte E-Mail-Vorlagen
+
+|Neue Bestellung über den Webshop
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang im Webshop abgeschlossen wurde.
+|Webshop: Eingangsbestätigung Bestellung
+
+|Neue Bestellung über eBay
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei eBay abgeschlossen wurde.
+|Ebay: Eingangsbestätigung Bestellung
+
+|Neue Bestellung über Amazon
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Amazon abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über Amazon FBA
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Amazon FBA abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über Yatego
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Yatego abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über Kauflux
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Kauflux abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über Mercateo
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Mercateo abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über PIXmania
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei PIXmania abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über ricardo
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei ricardo abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über real.de
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei real.de abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über Rakuten
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Rakuten abgeschlossen wurde.
+|kein Versand
+
+|Neue Bestellung über sonstige Schnittstelle
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang über eine Schnittstelle abgeschlossen wurde.
+|kein Versand
+
+|Sende Kunde E-Mail zur Passwortänderung
+|Sendet Kunden eine E-Mail mit einem Link zum neuen Passwort, der aktiv bestätigt werden muss. Die Template-Funktion *+{% Link_ChangePassword() %}+* muss in der E-Mail-Vorlage enthalten sein.
+|Webshop: Neues Passwort
+
+|Bestätigung der Passwortänderung
+|Sendet Kunden eine E-Mail zur Bestätigung der Passwortänderung.
+|kein Versand
+
+|Kunde möchte E-Mail-Adresse ändern
+|ohne Funktion
+|kein Versand
+
+|Newsletter Opt-In
+|Sendet Kunden eine E-Mail, wenn diese sich für den Newsletter angemeldet haben. Die E-Mail-Vorlage sollte den Bestätigungslink, den die Kunden anklicken müssen, um die Newsletter-Anmeldung abzuschließen, enthalten.
+|kein Versand
+
+|Bestätigung Newsletter-Opt-In
+|Sendet Kunden eine E-Mail als Bestätigung, sobald diese den Bestätigungslink, der mit der E-Mail-Vorlage für das Ereignis *Newsletter Opt-In* verschickt wurde, aktiviert haben.
+|Webshop: Newsletteranmeldung
+
+|Erinnerung bei Kaufabbruch
+|Sendet Kunden eine E-Mail als Erinnerung, dass ein oder mehrere Artikel im Warenkorb liegen, der Kaufvorgang jedoch nicht abgeschlossen wurde. Die E-Mail-Vorlage sollte den Link zum Warenkorb enthalten, damit die Kunden diesen aufrufen und die Bestellung abschließen können. Dazu an die URL des Webshops den Suffix */basket/* anfügen (Beispiel: +https://www.meinshop.de/basket/+). +
 Voraussetzung hierbei ist, dass die potenziellen Käufer bei ihrem Besuch im Webshop angemeldet und eingeloggt waren, da andernfalls die E-Mail-Adresse nicht vorliegt und der automatische Versand der E-Mail-Vorlage daher nicht funktionieren kann. +
 *_Wichtig:_* Diese Art von E-Mail-Versand kann aufgrund der fehlenden vorherigen Einwilligung als unzulässiger Spam gelten. Der Anwender sollte sich daher von einem kundigen Fachanwalt beraten lassen.
-|Kundenregistrierung |Sendet Kunden eine E-Mail, wenn diese sich neu im Webshop registriert haben.
-|Tell-A-Friend |Sendet eine E-Mail mit einem Link zu einem Artikel aus dem Webshop als Empfehlung an eine E-Mail-Adresse, die der Kunde im Webshop in das Tell-A-Friend-Formular eingetragen hat. +
+|kein Versand
+
+|Kundenregistrierung
+|Sendet Kunden eine E-Mail, wenn diese sich neu im Webshop registriert haben.
+|kein Versand
+
+|Tell-A-Friend
+|Sendet eine E-Mail mit einem Link zu einem Artikel aus dem Webshop als Empfehlung an eine E-Mail-Adresse, die der Kunde im Webshop in das Tell-A-Friend-Formular eingetragen hat. +
 *_Wichtig:_* Diese Art von E-Mail-Versand kann aufgrund der fehlenden vorherigen Einwilligung als unzulässiger Spam gelten. Der Anwender sollte sich daher von einem kundigen Fachwanwalt beraten lassen.
-|Neuer Scheduler-Auftrag |Sendet eine E-Mail, wenn das eingestellte Intervall für ein “Abo” erreicht wird.
-|Gewinnspielanmeldung |Sendet Kunden, die sich zum Gewinnspiel angemeldet haben, eine E-Mail als Bestätigung.
-|Serviceeinheiten |Sendet eine E-Mail, wenn auf das “Kundenkonto” ein weiteres Event gebucht wurde.
-|Forum-Benachrichtigung |Sendet Kunden eine E-Mail, sobald eine Benachrichtigung im systeminternen Forum vorliegt.
-|Benachrichtigung bei verfügbarem Artikel |Sendet Kunden eine E-Mail mit dem Hinweis, dass ein bestimmter Artikel wieder verfügbar ist. Der Kunde hat zuvor seine E-Mail-Adresse direkt bei dem nicht lieferbaren Artikel eingetragen.
-|===
+|kein Versand
+
+|Neuer Scheduler-Auftrag
+|Sendet eine E-Mail, wenn das eingestellte Intervall für ein “Abo” erreicht wird.
+|kein Versand
+
+|Gewinnspielanmeldung
+|Sendet Kunden, die sich zum Gewinnspiel angemeldet haben, eine E-Mail als Bestätigung.
+|kein Versand
+
+|Serviceeinheiten
+|Sendet eine E-Mail, wenn auf das “Kundenkonto” ein weiteres Event gebucht wurde.
+|kein Versand
+
+|Änderung eines Scheduler-Auftrags
+|Sendet Kunden eine E-Mail zur Änderung des Scheduler-Auftrags.
+|kein Versand
+
+|Forum-Benachrichtigung
+|Sendet Kunden eine E-Mail, sobald eine Benachrichtigung im systeminternen Forum vorliegt.
+|kein Versand
+
+|Benachrichtigung bei verfügbarem Artikel
+|Sendet Kunden eine E-Mail mit dem Hinweis, dass ein bestimmter Artikel wieder verfügbar ist. Der Kunde hat zuvor seine E-Mail-Adresse direkt bei dem nicht lieferbaren Artikel eingetragen.
+|kein Versand
+
+|====
 
 ===== E-Mail-Versand über Ereignisaktionen automatisieren
 
 Neben dem Verknüpfen von E-Mail-Vorlagen mit Ereignissen besteht die Möglichkeit, Ereignisaktionen einzurichten: Der Anwender definiert ein Ereignis, setzt Filter und legt Aktionen fest, die dann vom System automatisch im Ereignisfall ausgeführt werden. Beispielsweise kann der E-Mail-Versand eines Gutscheins ausgelöst werden, wenn der Kunde eine bestimmte Anzahl an Aufträgen generiert hat.
 
-Weitere Informationen zu Ereignisaktionen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] zu finden.
+Weitere Informationen zu Ereignisaktionen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] zu finden.
 
 ==== Gesendete E-Mails einsehen
 
-Der Anwender hat zum einen die Möglichkeit, alle E-Mail-Vorlagen, die er an einen bestimmten Kunden gesendet hat, einzusehen. Voraussetzung dafür ist, dass die E-Mail-Vorlagen mit einer eindeutigen Kunden-ID verknüpft sind.
+Der Anwender hat zum einen die Möglichkeit, alle E-Mails, die er an einen Kunden zu einem bestimmten Auftrag gesendet hat, einzusehen.
 
 Außerdem kann der Anwender eine Statistik erstellen, um anzeigen zu lassen, welche E-Mail-Vorlagen wie häufig in einem bestimmten Zeitraum an alle seine Kunden versendet wurden.
+
+Eine automatische E-Mail-Archivierung ist systemseitig nicht vorhanden.

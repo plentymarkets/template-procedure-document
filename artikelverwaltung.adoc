@@ -163,8 +163,8 @@ Das Menü *Artikel » Artikel bearbeiten* bietet eine Übersicht aller Artikel- 
 
 Artikel können auf verschiedene Arten erstellt und bearbeitet werden:
 
- * Manuell über das Menü https://knowledge.plentymarkets.com/artikel/artikel-verwalten#20[*Artikel » Artikel bearbeiten]*
- * Per dynamischem Import im Menü https://knowledge.plentymarkets.com/basics/datenaustausch/daten-importieren[*Daten » Dynamischer Import]*** **
+ * Manuell über das Menü https://knowledge.plentymarkets.com/artikel/artikel-verwalten#20[*Artikel » Artikel bearbeiten*]
+ * Per dynamischem Import im Menü https://knowledge.plentymarkets.com/basics/datenaustausch/daten-importieren[*Daten » Dynamischer Import*]
  * Per SOAP-API
  * Per REST-API
  * Plugins
