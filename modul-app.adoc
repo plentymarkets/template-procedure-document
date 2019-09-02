@@ -1,3 +1,5 @@
+<<<<
+
 === Fachliche und technische Beschreibung plentymarkets App
 
 Die plentymarkets App erlaubt Ihnen auch von unterwegs einen sicheren Zugriff auf Daten Ihres plentymarkets ERP-Systems. Die App enthält u.a. die folgenden Funktionen:

@@ -1,3 +1,5 @@
+<<<<
+
 === Fachliche und technische Beschreibung des Moduls Artikel
 Artikeldaten werden in plentymarkets zentral verwaltet. Das heißt, dass Händler ihre Produktdaten im plentymarkets-ERP-System einpflegen. Daraufhin können sie ihre Ware auf diversen <<modul-multichannel#, Marktplätzen>>, im eigenen <<modul-webshop#, Webshop>> und im <<modul-pos#, stationären Laden>> verkaufen.
 

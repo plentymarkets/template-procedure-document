@@ -1,3 +1,5 @@
+<<<<
+
 === Fachliche und technische Beschreibung plentymarkets POS
 
 plentymarkets POS ist eine Funktion der plentymarkets App, die für den stationären Verkauf von Waren und/oder Dienstleistungen entwickelt wurde. plentymarkets POS ist ein mobiles, App-basiertes Kassensystem. Im Sinne der GoBD ist plentymarkets POS ein Vorsystem der elektronischen Buchhaltung.
