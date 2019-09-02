@@ -1,0 +1,88 @@
+<<<
+=== Fachliche und technische Beschreibung plentymarkets App
+
+Die plentymarkets App erlaubt Ihnen auch von unterwegs einen sicheren Zugriff auf Daten Ihres plentymarkets ERP-Systems. Die App enthält u.a. die folgenden Funktionen:
+
+* Anzeige von Kennzahlen des ERP-Systems plentymarkets
+* Artikel-, Kunden- und Auftragssuche
+* Picklistenanzeige
+* Kommissionierung
+* Einbuchung/Umbuchung/Verräumen
+* Inventar
+* <<modul-pos#, Kassensystem plentymarkets POS>>
+
+[TIP]
+.Ergänzen Sie Ihre eigenen Firmendaten
+====
+Dieses Kapitel enthält eine Mischung aus rein informativen Texten über die plentymarkets App und aus Textblöcken, in denen Sie Informationen selbst ergänzen müssen. Gehen Sie dieses Kapitel sorgfältig durch und ergänzen Sie alle GoBD-relevante Informationen zu Ihrer eigenen Firma.
+====
+
+==== Systemvoraussetzungen und Betrieb
+
+Die plentymarkets App wird in folgenden App-Stores kostenlos bereitgestellt:
+
+** iOS: https://itunes.apple.com/de/app/plentymarkets/id957702618?mt=8[https://itunes.apple.com/de/app/plentymarkets/id957702618?mt=8^]
+** Android: https://play.google.com/store/apps/details?id=eu.plentymarkets.mobile[https://play.google.com/store/apps/details?id=eu.plentymarkets.mobile^]
+
+Versionen der plentymarkets App sind durch Versionsnummern gekennzeichnet. Änderungen an der Software werden sowohl in den Changelogs der App-Stores als auch im plentymarkets Forum veröffentlicht.
+
+** https://forum.plentymarkets.com/c/changelog/changelog-app[https://forum.plentymarkets.com/c/changelog/changelog-app]
+
+===== Hardware
+
+Die plentymarkets App läuft auf mobilen Endgeräten mit folgenden Systemvoraussetzungen:
+
+* Android-Geräte mit OS-Version ab 4.2.2
+* iOS-Geräte (iPad, iPhone, iPod) mit OS-Version ab 8
+
+Die App wird ohne eigene Hardware ausgeliefert. Je nach Anwendungsfall werden aber link:https://knowledge.plentymarkets.com/app/installation#100[unterschiedliche Endgeräte^] empfohlen.
+
+Ergänzen Sie <<tabelle-app-hardware>>. Hier werden die unternehmenseigenen Tablets, Smartphones und sonstigen mobilen Endgeräte aufgelistet, auf denen die plentymarkets App installiert wurde.
+
+[[tabelle-app-hardware]]
+.Eingesetzte Hardware
+|===
+|Gerätetyp|Modellnummer|Hersteller
+
+|{nbsp}
+|{nbsp}
+|{nbsp}
+
+|{nbsp}
+|{nbsp}
+|{nbsp}
+
+|{nbsp}
+|{nbsp}
+|{nbsp}
+|===
+
+[TIP]
+.Zusätzliche Hard- und Software für plentymarkets POS
+====
+Werden die POS-Funktionen der plentymarkets App genutzt, kommen möglicherweise weitere Hard- und Software-Lösungen zum Einsatz. <<modul-pos#, Ergänzen Sie auch in diesem Kapitel>> die Auflistungen.
+====
+
+==== Zugang zur App
+
+===== Anmeldung
+
+Die plentymarkets App ist nur in Kombination mit einem gebuchten plentymarkets ERP-System funktionsfähig. Das heißt, dass Sie bei der Erstanmeldung die Login-Daten Ihres plentymarkets ERP-Systems eingeben müssen. Diese Login-Daten bestehen aus:
+
+* Basis-URL des plentymarkets ERP-Systems
+* Benutzer
+* Passwort
+
+Optional kann die App so eingerichtet werden, dass Anwender sich später mit einer link:https://knowledge.plentymarkets.com/app/installation#900[App-PIN^] einloggen können. Die App-PIN besteht aus 4 bis 12 Ziffern.
+
+===== Zugriffsrechte
+
+Sollen weitere Mitarbeiter die plentymarkets App nutzen, müssen sie ebenfalls Zugangsdaten haben. In welchem Umfang Benutzer die App verwenden können, wird über die link:https://knowledge.plentymarkets.com/basics/admin-aufgaben/benutzer-verwalten[Benutzerverwaltung] des ERP-Systems plentymarkets gesteuert. Benutzerkonten werden im Menü *Einrichtung » Einstellungen » Benutzer » Konten* erstellt.
+
+Admin-Benutzer haben uneingeschränkten Zugriff auf die plentymarkets App. Ergänzen Sie die Liste der Admin-Benutzer im <<modul-benutzer-benutzerrechte#, Kapitel zur Benutzerrechte>> und geben Sie somit an, welche Mitarbeiter über uneingeschränkten Zugriff auf alle Funktionen der plentymarkets App verfügen. Dies umfasst auch uneingeschränkten Zugriff auf alle Funktionen der Kassensoftware plentymarkets POS.
+
+Für alle anderen Benutzerklassen müssen die link:https://knowledge.plentymarkets.com/app/installation#800[Rechte pro Benutzer^] oder pro Benutzerrolle definiert werden. Die Zugriffsrechte für die plentymarkets App werden im Menü *Einrichtung » Einstellungen » Benutzer » Konten » Konto öffnen » Tab: Mobile* definiert. Ergänzen Sie die Liste der Backend-Benutzer im <<modul-benutzer-benutzerrechte#, Kapitel zur Benutzerrechte>> und geben Sie somit an, welche Mitarbeiter über eingeschränkten Zugriff auf die Funktionen der plentymarkets App verfügen.
+
+===== App-Funktionen
+
+Die App beinhaltet eine Reihe nützlicher Funktionen, die im link:https://knowledge.plentymarkets.com/app/funktionen[plentymarkets Benutzerhandbuch^] beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentymarkets POS zu. Die Kasse wird <<modul-pos#, in einem separaten Kapitel beschrieben>>.
