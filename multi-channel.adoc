@@ -3,14 +3,14 @@
 
 ==== Verwendungszweck
 
-Das Softwaremodul Multi-Channel dient insbesondere dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgende Funktionen stellt das Modul bereit: +
+Das Softwaremodul Multi-Channel dient dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgende Funktionen stellt das Modul bereit: +
  * Schnittstellen-Zugriff auf Online-Märkte und Preisportale +
- * Bestandsabgleich +
- * Produktdatenaustausch +
- * Auftragsimport +
- * Übermittlung von Zahlungs- und Versandbestätigungen +
- * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail +
- * Empfang von Kundennachrichten an zentraler Stelle +
+ * Bestandsabgleich über automatische Prozesse mit zeitlich festlegten Intervallen +
+ * Produktdatenaustausch über automatische Prozesse mit zeitlich festlegten Intervallen +
+ * Auftragsimport über automatische Prozesse mit zeitlich festlegten Intervallen +
+ * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen +
+ * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^] +
+ * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentymarkets.com/crm/ticketsystem-nutzen[Ticketsystem^] +
 
 ==== Verfügbarkeit
 
@@ -19,41 +19,43 @@ Aktuell ist das Softwaremodul Multi-Channel in allen von plentymarkets angeboten
 ==== Dokumentation
 
 Die Dokumentation des Moduls Multi-Channel ist über die folgende URL erreichbar: https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte]. Die Dokumentation der Marktplatz- und Preisportal-Plugins kann im jeweiligen Plugin im link:https://marketplace.plentymarkets.com/plugins/channels/marktplaetze[plentyMarketplace^] angesehen werden. Ein Download der Dokumentation ist zurzeit nicht möglich. +
-Auf Anfrage stellt die plentymarkets GmbH prüfenden Finanzbehörden ältere Versionen der Verfahrensdokumentation zur Verfügung.
+Auf Anfrage stellt die plentysystems AG prüfenden Finanzbehörden ältere Versionen der Verfahrensdokumentation zur Verfügung.
 
 ==== Integrierte Kanäle
 
-Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü *System » Systemeinstellungen » Märkte* eingerichtet. Folgende Online-Marktplätze sind im Modul Multi-Channel fest integriert:
+Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü *Einrichtung » Märkte* eingerichtet. Folgende Online-Marktplätze sind im Modul Multi-Channel fest integriert:
 
 |===
-|Marktplatz|*In Verwendung*
+|*Marktplatz*|*In Verwendung*|*Hinweis*
 
-|Amazon|[_Ja/Nein_]
-|bol.com|[_Ja/Nein_]
-|eBay|[_Ja/Nein_]
-|Flubit|[_Ja/Nein_]
-|Fruugo|[_Ja/Nein_]
-|GartenXXL.at|[_Ja/Nein_]
-|GartenXXL.de|[_Ja/Nein_]
-|grosshandel.eu|*Hinweis:* Die Schnittstelle wird von grosshandel.eu überarbeitet und kann momentan nicht genutzt werden.
-|Hood|[_Ja/Nein_]
-|La Redoute|[_Ja/Nein_]
-|Mercateo|[_Ja/Nein_]
-|Neckermann.at|[_Ja/Nein_]
-|Netto|[_Ja/Nein_]
-|Otto|[_Ja/Nein_]
-|Pixmania|[_Ja/Nein_]
-|real.de|[_Ja/Nein_]
-|Restposten.de|*Hinweis:* Die Schnittstelle wird von Restposten.de überarbeitet und kann momentan nicht genutzt werden.
-|ricardo.ch|[_Ja/Nein_]
-|Shopgate|[_Ja/Nein_]
-|Yatego|[_Ja/Nein_]
-|Zalando|[_Ja/Nein_]
+|Amazon|[_Ja/Nein_]|
+|bol.com|[_Ja/Nein_]|
+|eBay|[_Ja/Nein_]|
+|Flubit|[_Ja/Nein_]|
+|Fruugo|[_Ja/Nein_]|
+|GartenXXL.at|[_Ja/Nein_]|
+|GartenXXL.de|[_Ja/Nein_]|
+|GoogleShopping DE|[_Ja/Nein_]|Veraltete Schnittstelle, die nicht mehr verwendet wird.
+|GoogleShopping Int.|[_Ja/Nein_]|
+|grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
+|Hood|[_Ja/Nein_]|
+|La Redoute|[_Ja/Nein_]|Veraltete Schnittstelle, die momentan nicht genutzt werden kann.
+|Mercateo|[_Ja/Nein_]|
+|Neckermann.at|[_Ja/Nein_]|
+|Netto|[_Ja/Nein_]|
+|OTTO|[_Ja/Nein_]|Der Marktplatz OTTO verfügt über drei Schnittstellen: *Direktversand*, *Cooperation* und *Integration*, die sich im Auftragsimport unterscheiden. Weitere Informationen zu den verschiedenen Schnittstellen finden sie auf der link:https://knowledge.plentymarkets.com/maerkte/otto[OTTO-Handbuchseite^].
+|Pixmania|[_Ja/Nein_]|
+|real.de|[_Ja/Nein_]|
+|Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
+|ricardo.ch|[_Ja/Nein_]|
+|Shopgate|[_Ja/Nein_]|
+|Yatego|[_Ja/Nein_]|
+|Zalando|[_Ja/Nein_]|
 |===
 
-Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als Plugins zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *System » Systemeinstellungen » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
+Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul Multi-Channel fest integriert. Weitere Märkte stehen in plentymarkets als link:https://knowledge.plentymarkets.com/plugins/neue-plugins[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
 
-Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *System » Systemeinstellungen » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
+Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einrichtung » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul Multi-Channel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig:
 
 |===
 |Marktplatz|*In Verwendung*
@@ -75,98 +77,103 @@ Weiterhin steht der Amazon-Service Multi-Channel zur Verfügung, womit Aufträge
 
 ==== Auftragsherkünfte
 
-Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz ein Auftrag generiert wurde. Folgende Auftragsherkünfte sind für das Modul Multi-Channel standardmäßig in jedem plentymarkets System vorangelegt:
+Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz ein Auftrag generiert wurde. Eine Übersicht zu den Auftragsherkünften, die standardmäßig in jedem plentymarkets System vorhanden sind, ist im Kapitel <<Fachliche und technische Beschreibung des Moduls Auftragsabwicklung>> der Verfahrensdokumentation verfügbar. Bei den dort aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentymarkets System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiviert. +
 
+Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer Herkunft zugeordnet werden können, muss die Auftragsherkunft zunächst aktiviert werden. Ohne die Aktivierung der Herkunft findet also kein Verkauf auf Online-Marktplätzen statt.
+
+////
 |===
-|*ID*|*Name*|*Verwendung*|*In Verwendung*
+|*ID*|*Name*|*Verwendung*|*In Verwendung*|*Hinweis*
 
-|2.00|eBay|Filter|[_Ja/Nein_]
-|2.01|eBay United States|Auftrag|[_Ja/Nein_]
-|2.02|eBay Canada (English)|Auftrag|[_Ja/Nein_]
-|2.03|eBay UK|Auftrag|[_Ja/Nein_]
-|2.04|eBay Australia|Auftrag|[_Ja/Nein_]
-|2.05|eBay Austria|Auftrag|[_Ja/Nein_]
-|2.06|eBay Belgium (French)|Auftrag|[_Ja/Nein_]
-|2.07|eBay France|Auftrag|[_Ja/Nein_]
-|2.08|eBay Germany|Auftrag|[_Ja/Nein_]
-|2.09|eBay Motors|Auftrag|[_Ja/Nein_]
-|2.10|eBay Italy|Auftrag|[_Ja/Nein_]
-|2.11|eBay Belgium (Dutch)|Auftrag|[_Ja/Nein_]
-|2.12|eBay Netherlands|Auftrag|[_Ja/Nein_]
-|2.13|eBay Spain|Auftrag|[_Ja/Nein_]
-|2.14|eBay Switzerland|Auftrag|[_Ja/Nein_]
-|2.15|eBay Hong Kong|Auftrag|[_Ja/Nein_]
-|2.16|eBay India|Auftrag|[_Ja/Nein_]
-|2.17|eBay Ireland|Auftrag|[_Ja/Nein_]
-|2.18|eBay Malaysia|Auftrag|[_Ja/Nein_]
-|2.19|eBay Canada (French)|Auftrag|[_Ja/Nein_]
-|2.20|eBay Philippines|Auftrag|[_Ja/Nein_]
-|2.21|eBay Poland|Auftrag|[_Ja/Nein_]
-|2.22|eBay Singapore|Auftrag|[_Ja/Nein_]
-|4.00|Amazon |Filter|[_Ja/Nein_]
-|4.01|Amazon Germany|Auftrag|[_Ja/Nein_]
-|4.02|Amazon UK|Auftrag|[_Ja/Nein_]
-|4.03|Amazon USA|Auftrag|[_Ja/Nein_]
-|4.04|Amazon France|Auftrag|[_Ja/Nein_]
-|4.05|Amazon Italy|Auftrag|[_Ja/Nein_]
-|4.06|Amazon Spain|Auftrag|[_Ja/Nein_]
-|4.07|Amazon Canada|Auftrag|[_Ja/Nein_]
-|4.08|Amazon Mexico|Auftrag|[_Ja/Nein_]
-|4.21|Amazon Germany B2B|Auftrag|[_Ja/Nein_]
-|4.22|Amazon UK B2B|Auftrag|[_Ja/Nein_]
-|5.00|Yatego|Auftrag|[_Ja/Nein_]
-|101.00|Ricardo|Auftrag|[_Ja/Nein_]
-|102.00|real.de|Auftrag|[_Ja/Nein_]
-|104.00|Amazon FBA|Filter|[_Ja/Nein_]
-|104.01|Amazon FBA Germany|Auftrag|[_Ja/Nein_]
-|104.02|Amazon FBA UK|Auftrag|[_Ja/Nein_]
-|104.03|Amazon FBA USA|Auftrag|[_Ja/Nein_]
-|104.04|Amazon FBA France|Auftrag|[_Ja/Nein_]
-|104.05|Amazon FBA Italy|Auftrag|[_Ja/Nein_]
-|104.06|Amazon FBA Spain|Auftrag|[_Ja/Nein_]
-|104.07|Amazon FBA Canada|Auftrag|[_Ja/Nein_]
-|104.08|Amazon FBA Mexico|Auftrag|[_Ja/Nein_]
-|104.21|Amazon FBA Germany B2B|Auftrag|[_Ja/Nein_]
-|104.22|Amazon FBA UK B2B|Auftrag|[_Ja/Nein_]
-|105.00|Zentralverkauf.de|Auftrag|[_Ja/Nein_]
-|106.00|Rakuten.de|Auftrag|[_Ja/Nein_]
-|108.00|Otto Cooperation|Auftrag|[_Ja/Nein_]
-|108.02|Otto Integration|Auftrag|[_Ja/Nein_]
-|109.00|Shopgate|Auftrag|[_Ja/Nein_]
-|115.00|Restposten|Auftrag|[_Ja/Nein_]
-|116.00|Kauflux|Auftrag|[_Ja/Nein_]
-|117.00|Home24|Auftrag|[_Ja/Nein_]
-|118.00|Zalando|Auftrag|[_Ja/Nein_]
-|119.00|Neckermann.at Enterprise|Auftrag|[_Ja/Nein_]
-|120.00|Neckermann.at Cross-Docking|Auftrag|[_Ja/Nein_]
-|121.00|Idealo|Auftrag|[_Ja/Nein_]
-|121.02|Idealo Direktkauf|Auftrag|[_Ja/Nein_]
-|122.00|La Redoute|Auftrag|[_Ja/Nein_]
-|125.00|Hood|Auftrag|[_Ja/Nein_]
-|131.00|Plus.de|Auftrag|[_Ja/Nein_]
-|132.00|GartenXXL.de|Auftrag|[_Ja/Nein_]
-|137.00|Grosshandel.eu|Auftrag|[_Ja/Nein_]
-|140.00|Pixmania|Merkmal|[_Ja/Nein_]
-|143.00|Cdiscount.com|Auftrag|[_Ja/Nein_]
-|143.02|Cdiscount.com C Logistique|Auftrag|[_Ja/Nein_]
-|145.00|Fruugo|Auftrag|[_Ja/Nein_]
-|147.00|Flubit|Auftrag|[_Ja/Nein_]
-|149.00|Mercateo|Auftrag|[_Ja/Nein_]
-|150.00|CHECK24|Auftrag|[_Ja/Nein_]
-|152.00|BOL.com|Auftrag|[_Ja/Nein_]
-|154.00|Netto|Auftrag|[_Ja/Nein_]
-|155.00|GartenXXL.at|Auftrag|[_Ja/Nein_]
-|160.00|OTTO|Auftrag|[_Ja/Nein_]
-|160.10|OTTO Cooperation|[_Ja/Nein_]
+|2.00|eBay|Filter|[_Ja/Nein_]|
+|2.01|eBay United States|Auftrag|[_Ja/Nein_]|
+|2.02|eBay Canada (English)|Auftrag|[_Ja/Nein_]|
+|2.03|eBay UK|Auftrag|[_Ja/Nein_]|
+|2.04|eBay Australia|Auftrag|[_Ja/Nein_]|
+|2.05|eBay Austria|Auftrag|[_Ja/Nein_]|
+|2.06|eBay Belgium (French)|Auftrag|[_Ja/Nein_]|
+|2.07|eBay France|Auftrag|[_Ja/Nein_]|
+|2.08|eBay Germany|Auftrag|[_Ja/Nein_]|
+|2.09|eBay Motors|Auftrag|[_Ja/Nein_]|
+|2.10|eBay Italy|Auftrag|[_Ja/Nein_]|
+|2.11|eBay Belgium (Dutch)|Auftrag|[_Ja/Nein_]|
+|2.12|eBay Netherlands|Auftrag|[_Ja/Nein_]|
+|2.13|eBay Spain|Auftrag|[_Ja/Nein_]|
+|2.14|eBay Switzerland|Auftrag|[_Ja/Nein_]|
+|2.15|eBay Hong Kong|Auftrag|[_Ja/Nein_]|
+|2.16|eBay India|Auftrag|[_Ja/Nein_]|
+|2.17|eBay Ireland|Auftrag|[_Ja/Nein_]|
+|2.18|eBay Malaysia|Auftrag|[_Ja/Nein_]|
+|2.19|eBay Canada (French)|Auftrag|[_Ja/Nein_]|
+|2.20|eBay Philippines|Auftrag|[_Ja/Nein_]|
+|2.21|eBay Poland|Auftrag|[_Ja/Nein_]|
+|2.22|eBay Singapore|Auftrag|[_Ja/Nein_]|
+|4.00|Amazon |Filter|[_Ja/Nein_]|
+|4.01|Amazon Germany|Auftrag|[_Ja/Nein_]|
+|4.02|Amazon UK|Auftrag|[_Ja/Nein_]|
+|4.03|Amazon USA|Auftrag|[_Ja/Nein_]|
+|4.04|Amazon France|Auftrag|[_Ja/Nein_]|
+|4.05|Amazon Italy|Auftrag|[_Ja/Nein_]|
+|4.06|Amazon Spain|Auftrag|[_Ja/Nein_]|
+|4.07|Amazon Canada|Auftrag|[_Ja/Nein_]|
+|4.08|Amazon Mexico|Auftrag|[_Ja/Nein_]|
+|4.21|Amazon Germany B2B|Auftrag|[_Ja/Nein_]|
+|4.22|Amazon UK B2B|Auftrag|[_Ja/Nein_]|
+|5.00|Yatego|Auftrag|[_Ja/Nein_]|
+|6.00|Kelkoo|Auftrag|[_Ja/Nein_]|
+|7.00|GoogleProducts|[_Ja/Nein_]|
+|101.00|Ricardo|Auftrag|[_Ja/Nein_]|
+|102.00|real.de|Auftrag|[_Ja/Nein_]|
+|104.00|Amazon FBA|Filter|[_Ja/Nein_]|
+|104.01|Amazon FBA Germany|Auftrag|[_Ja/Nein_]|
+|104.02|Amazon FBA UK|Auftrag|[_Ja/Nein_]|
+|104.03|Amazon FBA USA|Auftrag|[_Ja/Nein_]|
+|104.04|Amazon FBA France|Auftrag|[_Ja/Nein_]|
+|104.05|Amazon FBA Italy|Auftrag|[_Ja/Nein_]|
+|104.06|Amazon FBA Spain|Auftrag|[_Ja/Nein_]|
+|104.07|Amazon FBA Canada|Auftrag|[_Ja/Nein_]|
+|104.08|Amazon FBA Mexico|Auftrag|[_Ja/Nein_]|
+|104.21|Amazon FBA Germany B2B|Auftrag|[_Ja/Nein_]|
+|104.22|Amazon FBA UK B2B|Auftrag|[_Ja/Nein_]|
+|105.00|Zentralverkauf.de|Auftrag|[_Ja/Nein_]|Marktplatz geschlossen seit 31.01.2014
+|106.00|Rakuten.de|Auftrag|[_Ja/Nein_]|
+|
+|108.00|Otto Cooperation|Auftrag|[_Ja/Nein_]|
+|108.02|Otto Integration|Auftrag|[_Ja/Nein_]|
+|109.00|Shopgate|Auftrag|[_Ja/Nein_]|
+|115.00|Restposten|Auftrag|[_Ja/Nein_]|
+|116.00|Kauflux|Auftrag|[_Ja/Nein_]|
+|117.00|Home24|Auftrag|[_Ja/Nein_]|
+|118.00|Zalando|Auftrag|[_Ja/Nein_]|
+|119.00|Neckermann.at Enterprise|Auftrag|[_Ja/Nein_]|
+|120.00|Neckermann.at Cross-Docking|Auftrag|[_Ja/Nein_]|
+|121.00|Idealo|Auftrag|[_Ja/Nein_]|
+|121.02|Idealo Direktkauf|Auftrag|[_Ja/Nein_]|
+|122.00|La Redoute|Auftrag|[_Ja/Nein_]|
+|125.00|Hood|Auftrag|[_Ja/Nein_]|
+|131.00|Plus.de|Auftrag|[_Ja/Nein_]|
+|132.00|GartenXXL.de|Auftrag|[_Ja/Nein_]|
+|137.00|Grosshandel.eu|Auftrag|[_Ja/Nein_]|
+|140.00|Pixmania|Merkmal|[_Ja/Nein_]|
+|143.00|Cdiscount.com|Auftrag|[_Ja/Nein_]|
+|143.02|Cdiscount.com C Logistique|Auftrag|[_Ja/Nein_]|
+|145.00|Fruugo|Auftrag|[_Ja/Nein_]|
+|147.00|Flubit|Auftrag|[_Ja/Nein_]|
+|149.00|Mercateo|Auftrag|[_Ja/Nein_]|
+|150.00|CHECK24|Auftrag|[_Ja/Nein_]|
+|152.00|BOL.com|Auftrag|[_Ja/Nein_]|
+|154.00|Netto|Auftrag|[_Ja/Nein_]|
+|155.00|GartenXXL.at|Auftrag|[_Ja/Nein_]|
+|160.00|OTTO|Auftrag|[_Ja/Nein_]|
+|160.10|OTTO Cooperation|[_Ja/Nein_]|
 |===
-
-Bei den aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentymarkets System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiviert. Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer Herkunft zugeordnet werden können, muss die Auftragsherkunft zunächst aktiviert werden. Ohne die Aktivierung der Herkunft findet also kein Verkauf auf Online-Marktplätzen statt.
+////
 
 ==== Verkauf über Multi-Channel
 
 Um Artikel über das Modul Multi-Channel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden. +
 
-Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stronierungen, Retouren etc. an die Schnittstelle gesendet werden.
+Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
 
 ==== Marktplatz-Zahlungsarten
 
@@ -176,31 +183,31 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |*Zahlungsart*|*Erläuterung*
 
 |Amazon|Zahlungsart für Aufträge, die über den Marktplatz Amazon ins plentymarkets System kommen.
-|BOL.com|Zahlungsart für den Marktplatz bol.com.
+|BOL.com|Zahlungsart für Aufträge, die über den Marktplatz bol.com ins plentymarkets System kommen.
 |Cdiscount|Zahlungsart für Aufträge, die über den Marktplatz Cdiscount ins plentymarkets System kommen.
-|CHECK24|Zahlungsart für den Marktplatz CHECK24.
+|CHECK24|Zahlungsart für Aufträge, die über den Marktplatz CHECK24 ins plentymarkets System kommen.
 |eBay-Rechnungskauf|Zahlungsart für Kauf auf Rechnung bei eBay.
 |Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentymarkets System kommen.
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentymarkets System kommen.
-|GartenXXL.at|Zahlungsart für den Marktplatz GartenXXL.at.
-|GartenXXL.de|Zahlungsart für den Marktplatz GartenXXL.de.
-|idealo Direktkauf|Zahlungsart für den Marktplatz idealo Direktkauf.
-|La Redoute Payment|Zahlungsart für Aufträge, die über den Marktplatz La Redoute ins plentymarkets System kommen.
-|Neckermann.at Payment|Zahlungsart für den Marktplatz Neckermann.at.
-|Netto|Zahlungsart für den Marktplatz Netto.
-|Otto Payment|Zahlungsart für die Schnittstellen Otto Cooperation und Otto Integration.
-|OTTO Direktversand|Zahlungsart für die Schnittstelle Otto Direktversand.
-|PIXmania Payment|Zahlungsart für den Marktplatz PIXmania.
-|Rakuten|Zahlungsart für den Marktplatz Rakuten.
-|real.de Payment|Zahlungsart für den Marktplatz real.de.
-|Shopgate Payment|Zahlungsart für den Marktplatz Shopgate.
-|Yatego Rechnung|Zahlungsart für den Marktplatz Yatego.
-|Zalando Payment|Zahlungsart für den Marktplatz Zalando.
+|GartenXXL.at|Zahlungsart für Aufträge, die über den Marktplatz GartenXXL.at ins plentymarkets System kommen.
+|GartenXXL.de|Zahlungsart für Aufträge, die über den Marktplatz GartenXXL.de ins plentymarkets System kommen.
+|idealo Direktkauf|Zahlungsart für Aufträge, die über den Marktplatz idealo Direktkauf ins plentymarkets System kommen.
+|Neckermann.at Payment|Zahlungsart für Aufträge, die über den Marktplatz Neckermann.at ins plentymarkets System kommen.
+|Netto|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentymarkets System kommen.
+|Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation und OTTO Integration.
+|OTTO Direktversand|Zahlungsart für die Schnittstelle OTTO Direktversand.
+|PIXmania Payment|Zahlungsart für Aufträge, die über den Marktplatz PIXmania ins plentymarkets System kommen.
+|Rakuten|Zahlungsart für Aufträge, die über den Marktplatz Rakuten ins plentymarkets System kommen.
+|real.de Payment|Zahlungsart für Aufträge, die über den Marktplatz real.de ins plentymarkets System kommen.
+|Shopgate Payment|Zahlungsart für Aufträge, die über den Marktplatz Shopgate ins plentymarkets System kommen.
+|Yatego Rechnung|Zahlungsart für Aufträge, die über den Marktplatz Yatego ins plentymarkets System kommen.
+|Zalando Payment|Zahlungsart für Aufträge, die über den Marktplatz Zalando ins plentymarkets System kommen.
 |===
 
 ==== Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<artikelverwaltung#, Preisverwaltung in plentymarkets>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#870[Verkaufspreise verwalten^] des plentymarkets Handbuchs. In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
+Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<artikelverwaltung#, Preisverwaltung in plentymarkets>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#870[Verkaufspreise verwalten^] des plentymarkets Handbuchs. +
+In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
 Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten. +
@@ -222,6 +229,7 @@ Daten können in plentymarkets automatisch über REST-API und FTP-Server oder ma
 |eBay|Im- und Export über REST-API mit XML-Dateien
 |Flubit|Im- und Export über REST-API mit JSON
 |Fruugo|Im- und Export über REST-API mit XML-Datei
+|GoogleShopping Int.|Export über elastischen Export
 |grosshandel.eu|Im- und Export über SOAP-API
 |Hood|Im- und Export über REST-API mit XML-Dateien
 |idealo|Export über elastischen Export und REST-API mit JSON
@@ -229,7 +237,7 @@ Daten können in plentymarkets automatisch über REST-API und FTP-Server oder ma
  Import über REST-API mit XML-Datei
 |La Redoute|Im- und Export über SOAP-API mit XML-Datei
 |Mercateo|Export über FTP-Server mit XML-Datei +
- Import über E-MAil
+ Import über E-Mail
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
 |Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
 |OTTO|Im- und Export über FTP-Server mit XML-Datei
@@ -244,3 +252,8 @@ Import über REST-API mit JSON
  Import über REST-API
 |Zalando|Im- und Export über REST-API mit XML-Datei
 |===
+
+[.subhead]
+Welche Daten werden mit den Schnittstellen ausgetauscht?
+
+plentymarkets überträgt Artikeldaten (z.B. Bestand, Preise, Produktinformationen) und Lieferdaten an die Online-Marktplätze. Auftragsdaten und Kundendaten werden von den Marktplätzen ins plentymarkets System importiert.
