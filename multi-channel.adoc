@@ -35,7 +35,7 @@ Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü
 |Fruugo|[_Ja/Nein_]
 |GartenXXL.at|[_Ja/Nein_]
 |GartenXXL.de|[_Ja/Nein_]
-|grosshandel.eu|[_Ja/Nein_]
+|grosshandel.eu|*Hinweis:* Die Schnittstelle wird von grosshandel.eu überarbeitet und kann momentan nicht genutzt werden.
 |Hood|[_Ja/Nein_]
 |La Redoute|[_Ja/Nein_]
 |Mercateo|[_Ja/Nein_]
@@ -44,7 +44,7 @@ Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü
 |Otto|[_Ja/Nein_]
 |Pixmania|[_Ja/Nein_]
 |real.de|[_Ja/Nein_]
-|Restposten.de|[_Ja/Nein_]
+|Restposten.de|*Hinweis:* Die Schnittstelle wird von Restposten.de überarbeitet und kann momentan nicht genutzt werden.
 |ricardo.ch|[_Ja/Nein_]
 |Shopgate|[_Ja/Nein_]
 |Yatego|[_Ja/Nein_]
@@ -164,7 +164,9 @@ Bei den aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, d
 
 ==== Verkauf über Multi-Channel
 
-Um Artikel über das Modul Multi-Channel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden.
+Um Artikel über das Modul Multi-Channel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden. +
+
+Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stronierungen, Retouren etc. an die Schnittstelle gesendet werden.
 
 ==== Marktplatz-Zahlungsarten
 
@@ -198,11 +200,11 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 
 ==== Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<artikelverwaltung#, Preisverwaltung in plentymarkets>>. Es können unterschiedliche Preise an verschiedene Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übermittelt werden können, müssen sie zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet.
+Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<artikelverwaltung#, Preisverwaltung in plentymarkets>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#870[Verkaufspreise verwalten^] des plentymarkets Handbuchs. In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
 Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten. +
-Ob ein Listing einen Festpreis hat oder in einer Auktion angeboten werden soll, kann in plentymarkets im Listing eingestellt werden.
+Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, wird im Artikel oder im Listing in plentymarkets eingestellt.
 
 ==== Datenaustausch
 
