@@ -171,4 +171,5 @@ Import über REST-API mit JSON
 
 ===== Welche Daten werden mit den Schnittstellen ausgetauscht?
 
-plentymarkets überträgt Artikeldaten (z.B. Bestand, Preise, Produktinformationen) und Lieferdaten an die Online-Marktplätze. Auftragsdaten und Kundendaten werden von den Marktplätzen ins plentymarkets System importiert. Kundendaten können im plentymarkets System manuell angepasst werden.
+plentymarkets überträgt Artikeldaten (z.B. Bestand, Preise, Produktinformationen) und Lieferdaten an die Online-Marktplätze. Auftragsdaten und Kundendaten werden von den Marktplätzen ins plentymarkets System importiert.
+//Kundendaten können im plentymarkets System manuell angepasst werden.
