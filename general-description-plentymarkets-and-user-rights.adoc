@@ -98,73 +98,67 @@ Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle
 
 *_Hinweis_*: Die dort aufgeführten Sichtbarkeiten werden bald in das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer » Tab: Ressourcen* umgezogen.
 
-===== Menü
 
-Mit Berechtigungen für Menüs wird festgelegt, welche Menüs ein Benutzer sehen und öffnen kann. Außerdem lässt sich zum Teil festlegen, welche Bearbeitungsmöglichkeiten der Benutzer im Menü hat. +
-Eine Tabelle mit allen Menüberechtigungen befindet sich im Anhang.
+==== Menü und REST-API-Rechte verwalten
 
-===== REST-API-Berechtigungen
+Mit den Rechten wird festgelegt, welche Berechtigungen (REST-Rechte) ein Benutzer hat und welche Menüs und Plugins er sehen und öffnen kann. Außerdem kann bestimmt werden, welche Bearbeitungsmöglichkeiten der Benutzer im Menü haben soll.
 
-Mithilfe der Berechtigungen für die REST-API wird festgelegt, welche Daten ein Benutzer per REST abrufen, bearbeiten, hinzufügen oder löschen kann. Neben den Berechtigungen ist auch eine Authentifizierung für die Arbeit mit REST notwendig. Eine Tabelle mit allen REST-Berechtigungen befindet sich im Anhang.
+===== Berechtigungen
 
+In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen benötigt werden.
 
-===== SOAP-Berechtigungen
-
-Mithilfe der Berechtigungen für die SOAP-API wird festgelegt, welche Abrufe, auch Calls genannt, ein Benutzer ausführen kann. Was die Calls bewirken, ist in der SOAP-Dokumentation beschrieben. Neben den Berechtigungen ist auch eine Authentifizierung für die Arbeit mit SOAP notwendig. Eine Tabelle mit allen SOAP-Berechtigungen befindet sich im Anhang.
-
-===== Mobile-Berechtigungen
-
-Mithilfe der Mobile-Berechtigungen wird festgelegt, was ein Benutzer in der plentymarkets-App sieht und worauf er zugreifen kann. Die Berechtigungen für Mobile sind in die folgenden 3 Abschnitte unterteilt: +
-
-* Sichtbare Funktionen
-* POS-Funktionen
-* Sichtbare Kennzahlen
-
-====== Sichtbare Funktionen
-
-Mit den Berechtigungen für sichtbare Funktionen wird festgelegt, welche Funktionen der Benutzer sieht. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
-
-* Artikelsuche
+* Artikel
 * Aufträge
-* Picklisten
-* Umbuchung
-* Konten
+* Authorisierung
+* Blog
+* Buchhaltung
+* CMS
+* CRM
+* Daten
+* Editoren
+* Einrichtung
+* Kommentare
+* Kunde
+* Listing
+* Markierung
+* Märkte
+* PIM
+* plentyApp
+* plentybase
+* Plugins
 * POS
-* Kundensuche
+* Prozesse
+* Service
+* Service-Center
+* Stammdaten
+* Start
+* System
+* Warenbestände
+* Zahlenformat
+* Zertifizierung
 
-====== POS-Funktionen
+===== Menü-Sichtbarkeiten
 
-Mit den Berechtigungen für POS-Funktionen wird festgelegt, welche Kassen-Funktionen der Benutzer ausführen darf. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
+In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet. Dort können die für den Benutzer sichtbaren Bereiche gewählt werden. Die REST-Rechte für die Menüpunkte werden automatisch gesetzt.
 
-* Preis bearbeiten
-* Artikelposition umbenennen
-* Rabatt gewähren
-* Kassieren
-* Kasse sperren
-* Zwischenbericht
-* Tagesabschluss
-* Artikel Synchronisation
-* Aufträge hochladen
-* Retoure anlegen
-* Kunde auswählen
-* Stornierung
-
-====== Sichtbare Kennzahlen
-
-Mit den Berechtigungen für sichtbare Kennzahlen wird festgelegt, welche Kennzahlen der Benutzer sieht. Folgende Berechtigungen können in diesem Abschnitt gewählt werden:
-
+* Start
+* Artikel
+* Listings
+* Waren
+* CRM
 * Aufträge
-* Durchschnittliche Aufträge
-* Neue Kunden
-* Unbezahlte Aufträge
-* Unzugeordnete Zahlungen
-* Neue Artikel
-* Umsatz
-* Durchschnittlicher Umsatz
-* Verkaufte Artikel
-* Durchschnittlich verkaufte Artikel
-* Artikel pro Auftrag
-* Aktive Listings
-* Gestartete Listings
-* Wareneingänge
-* Meldebestand
+* Daten
+* CMS
+* Plugins
+* Prozesse
+* Einrichtung
+* Support
+
+===== Plugins
+
+In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwaltet. Zunächst werden nur die Plugins mit ihren einzelnen Einträgen, jedoch ohne die korrekte Route, angezeigt.
+
+* EBICS
+* PayPal
+* FormatDesigner
+* DHLShipping
