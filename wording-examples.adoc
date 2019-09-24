@@ -18,18 +18,14 @@ plentymarkets wird in unserem Unternehmen insbesondere zum Verkauf von … sowie
 
 Die Benutzer dienen der Zuordnung von Zugriffsrechten sowie der Nachvollziehbarkeit von Änderungen im System.
 
-Die folgende Tabelle zeigt welche Benutzer im System eingerichtet sind oder waren, welcher Benutzerklasse sie angehören und über welche Rechte sie verfügen.
+Die folgende Tabelle zeigt, welche Benutzer im System eingerichtet sind oder waren, welchem Benutzerzugang sie angehören und über welche Rechte sie verfügen.
 
 
 |===
-|Benutzername|Benutzerklasse|Benutzerrechte|Gültigkeit
+|Benutzername|Benutzerzugang|Benutzerrechte|Gültigkeit
 
 |Xxx Xxx|Admin| * alle|01.01.2015 - aktuell
-|Xxx Xxx|Variabel| * alle Lager|31.12.2013 - 01.09.2016
+|Xxx Xxx|Backend| * alle Lager|31.12.2013 - 01.09.2016
 ||||
 ||||
 |===
-
-
-
-
