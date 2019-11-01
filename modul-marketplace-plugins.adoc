@@ -19,7 +19,7 @@ Je nach Anbieter ist es möglich, Plugins für einen Zeitraum von 30 Tagen koste
 
 Einzelheiten zu den Arten von angebotenen Plugins sowie den verschiedenen Kaufoptionen sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/neue-plugins#marketplace-plugins-kaufen[Plugins dem System hinzufügen^] beschrieben. Einzelheiten zur Implementierung des verschiedenen Modelle sind auf der Entwicklerseite https://developers.plentymarkets.com/marketplace/plugin-pricing-models[Plugin pricing models^] und dem zugehörigen Tutorial https://developers.plentymarkets.com/tutorials/marketplace-subscriptions[Marketplace subscription plugins^] beschrieben.
 
-Wenn ein Plugin erworben wird, wird von plentymarkets automatisch ein Auftrag an der entsprechenden Kunden-ID hinterlegt (siehe Kapitel <<modul-crm#kunden-ids, Kunden-IDs>>). Sind einer Kunden-ID mehrere plentymarkets Systeme zugeordnet, steht das Plugin in all diesen Systemen zu Verfügung.
+Wenn ein Plugin erworben wird, wird von plentymarkets automatisch ein Auftrag an der entsprechenden Kunden-ID hinterlegt (siehe Kapitel <<modul-crm, Kontakt-IDs>>). Sind einer Kunden-ID mehrere plentymarkets Systeme zugeordnet, steht das Plugin in all diesen Systemen zu Verfügung.
 
 Eine Liste aller auf plentyMarketplace angebotenen Plugins ist im Anhang plentyMarketplace-Plugins aufgeführt.
 
