@@ -7,7 +7,7 @@ In allen Tarifen stehen integrale und optionale Module zur Verfügung. Integrale
 
 === Tarifgruppe *STARTER*
 
-Die Tarifgruppe *STARTER* besteht aus den Tarifen *ZERO*, *BASIC* und *ADVANCED*. Die folgenden Module sind in allen 3 Tarifen der Gruppe *STARTER* integral:
+Die Tarifgruppe *STARTER* besteht aus dem Tarif *BASIC*. In diesem Tarif sind die folgenden Module integral:
 
   * Multi-Channel
   * Online-Shop
@@ -28,32 +28,28 @@ Zusätzlich ist die Nutzung folgender Leistungen inklusive:
   * Forensupport
   * Software-Updates
 
-Unterschiede zwischen den *STARTER*-Tarifen gibt es bei den in Tabelle 1 aufgeführten Optionen. Das Modul *POS* ist immer optional und muss bei allen Tarifen separat hinzugebucht werden.
+Das Modul *POS* ist immer optional und muss separat hinzugebucht werden. +
+Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 1 aufgeführten maximalen Anzahlen hinzugebucht werden.
 
 .Optionen in der Tarifgruppe *STARTER*
 [cols="1,3,3,3"]
 |====
-|Option |ZERO |BASIC |ADVANCED
+|Option |BASIC
+
+|Laufzeit
+|1 Monat
 
 |Benutzerlizenzen
-|3 inklusive / maximal 3
 |5 inklusive / maximal 5
-|10 inklusive / maximal 10
 
 |Vertriebslager
-|2 inklusive / maximal 2
 |3 inklusive / maximal 3
-|3 inklusive / maximal 10
 
 |Mandanten
-|1 inklusive / maximal 2
 |1 inklusive / maximal 3
-|1 inklusive / maximal 4
 
 |POS / Kassen
-|bis zu 3 Kassen zubuchbar
 |bis zu 5 Kassen zubuchbar
-|bis zu 10 Kassen zubuchbar
 
 |====
 
@@ -87,6 +83,10 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 [cols="1,3,3"]
 |====
 |Option |CLASSIC |FLEX
+
+|Laufzeit
+|3-12 Monate
+|6 Monate
 
 |Benutzerlizenzen
 |20 inklusive / maximal 50
@@ -131,12 +131,12 @@ Die Tarifgruppe *PLUS* besteht aus den Tarifen *PLUS* und *B2B PLUS*. Die folgen
 
 Zusätzlich ist die Nutzung folgender Leistungen inklusive:
 
-    * ShopBuilder
-    * ShopBooster
-    * Facettensuche
-    * Rest-API
-    * Forensupport
-    * Software-Updates
+  * ShopBuilder
+  * ShopBooster
+  * Facettensuche
+  * Rest-API
+  * Forensupport
+  * Software-Updates
 
 Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
 Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 3 aufgeführten maximalen Anzahlen hinzugebucht werden.
