@@ -6238,6 +6238,24 @@
 
 |
 |
+|Datenbereinigung aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Datenbereinigung anzeigen
+|
+|
+|
+|
+|
+
+|
+|
 |Datenbereinigung bearbeiten
 |
 |
@@ -6500,52 +6518,7 @@
 |
 
 |
-|Sync Daten-Log
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log löschen
-|
-|
-|
-|
-|
-
-|
-|Sync-Daten
+|Sync
 |
 |
 |
@@ -6634,6 +6607,50 @@
 |
 |
 
+|
+|Sync Daten-Log
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log löschen
+|
+|
+|
+|
+|
 
 |Editoren
 |
