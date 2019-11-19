@@ -8759,7 +8759,7 @@
 |
 
 |
-|plentymarket_place
+|plentyMarketplace
 |
 |
 |
@@ -8769,7 +8769,7 @@
 
 |
 |
-|show
+|plentyMarketplace anzeigen
 |
 |
 |
