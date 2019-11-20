@@ -1,15 +1,30 @@
 [tabelle-changelog]]
 .Changelog mit Angabe des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
-[cols="1,1,3"]
+[cols="2,1,3"]
 |====
 
 |*Bereich* |*Datum* |*Kurzbeschreibung*
 
-|POS     |16.01.2019 |POS: Click & Collect ab plentymarkets App Version 1.9
-|POS      |26.11.2018 |POS: Zahlartenmix ab plentymarkets App Version 1.8.5
-|POS      |22.08.2018 |Änderungen in POS-Versionen 1.8 und 1.8.1
+|REST-Berechtigungen |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Marketplace-Plugins |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Datenimport mit ElasticSync |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Warenwirtschaft |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|POS |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Cloud |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|App |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Artikel |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|CRM |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|E-Mail-Versand |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Cloud |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Newsletter |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Versandabwicklung |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Multi-Channel |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Order |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Tarifstruktur |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|POS |16.01.2019 |POS: Click & Collect ab plentymarkets App Version 1.9
+|POS |26.11.2018 |POS: Zahlartenmix ab plentymarkets App Version 1.8.5
+|POS |22.08.2018 |Änderungen in POS-Versionen 1.8 und 1.8.1
 |Artikel |20.02.2018 |Artikelverwaltung abgeschlossen
-|POS      |20.02.2018 |Buchungskonten für Kassenvorfälle
-|Stock     |19.01.2018 |Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+|POS |20.02.2018 |Buchungskonten für Kassenvorfälle
 
 |====
