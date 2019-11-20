@@ -115,7 +115,7 @@ Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Syst
 
 ===== Preise
 ====== Was sind Verkaufspreise?
-In plentymarkets wird zwischen Verkaufspreisen und Preisen unterschieden. Die Verkaufspreise sind ähnlich wie Artikel Datencontainer. Sie ermöglichen das zentrale Verwalten von Bedingungen, die auf Preise zutreffen sollen. Verkaufspreise bestimmen also link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#870[in welchen Situationen^] eine Variante zu einem bestimmten Preis verkauft wird.
+In plentymarkets wird zwischen Verkaufspreisen und Preisen unterschieden. Die Verkaufspreise sind ähnlich wie Artikel Datencontainer. Sie ermöglichen das zentrale Verwalten von Bedingungen, die auf Preise zutreffen sollen. Verkaufspreise bestimmen also link:https://knowledge.plentymarkets.com/artikel/einstellungen/preise[in welchen Situationen^] eine Variante zu einem bestimmten Preis verkauft wird.
 
 Verkaufspreise gehören zu den zentral gespeicherten <<Die plentymarkets Artikelstruktur, Systemeinstellungen>>. Nach der Erstellung im Menü *Einrichtung » Artikel » Verkaufspreise* werden Verkaufspreise mit einzelnen Artikeln verknüpft.
 
@@ -172,7 +172,7 @@ Wenn die Preiskalkulation mit einer Variante verknüpft wird, wird außerdem die
 In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 
 * bestimmten Kundenklassen einen günstigeren Preis anzubieten.
-* die Artikel einer bestimmten link:https://knowledge.plentymarkets.com/artikel/kategorien-verwalten#_kategorierabatte_speichern[Kategorie^] zu vergünstigen.
+* die Artikel einer bestimmten link:https://knowledge.plentymarkets.com/artikel/einstellungen/kategorien#1530[Kategorie^] zu vergünstigen.
 * bestimmte Zahlungsarten attraktiver zu machen.
 * beschädigte Ware manuell link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#140[an der Kasse im stationären Laden^] zu vergünstigen.
 * werbliche Aktionen durchzuführen, z.B. 20% auf alles außer Tiernahrung. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/auftraege/gutscheine[Aktionsgutscheinen^] durchgeführt.
@@ -180,7 +180,7 @@ In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verw
 Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* mit der Option link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#40[Aktionsgutschein/POS-Rabatt^] von Rabatten an der plentymarkets POS Kasse ausgeschlossen werden. Das bedeutet, dass das Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte und Aktionsrabatte sind für diese nicht rabattfähigen Artikel ungültig.
 
 ===== Kategorien
-In plentymarkets können link:https://knowledge.plentymarkets.com/artikel/kategorien-verwalten[Kategorien^] sowohl im Sinne von _Warengruppen_ als auch im Sinne von den _Content-Seiten_ eines Webshops verstanden werden. In diesem Kapitel sind mit Kategorien Warengruppen gemeint. Sie dienen dazu, Produkte übersichtlich zu gruppieren.
+In plentymarkets können link:https://knowledge.plentymarkets.com/artikel/einstellungen/kategorien[Kategorien^] sowohl im Sinne von _Warengruppen_ als auch im Sinne von den _Content-Seiten_ eines Webshops verstanden werden. In diesem Kapitel sind mit Kategorien Warengruppen gemeint. Sie dienen dazu, Produkte übersichtlich zu gruppieren.
 
 Varianten können beliebig vielen Kategorien zugeordnet werden. Allerdings muss bereits bei der Erstellung einer neuen Variante eine Standardkategorie festgelegt werden. Diese Standardkategorie kann jederzeit geändert werden, allerdings ist es nicht möglich, Varianten ohne Standardkategorie zu pflegen.
 
@@ -196,7 +196,7 @@ Einheiten gehören zu den zentral gespeicherten <<Die plentymarkets Artikelstruk
 Standardmäßig sind 52 Einheiten nach ISO-Code in plentymarkets-Systemen gespeichert. Anwender können jedoch im Menü *Einrichtung » Artikel » Einheiten* auch eigene Einheiten erstellen.
 
 ===== Attribute
-link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#390[Attribute^] gehören zu den zentral gespeicherten <<Die plentymarkets Artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
+link:https://knowledge.plentymarkets.com/artikel/einstellungen/attribute[Attribute^] gehören zu den zentral gespeicherten <<Die plentymarkets Artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
 
 * Produkte zu charakterisieren.
 * verschiedene <<Wie werden Varianten gebildet?, Varianten eines Artikels>> zu bilden.
