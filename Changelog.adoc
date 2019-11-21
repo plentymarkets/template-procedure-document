@@ -9,6 +9,7 @@
 |Marketplace-Plugins |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
 |Datenimport mit ElasticSync |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
 |Warenwirtschaft |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Benutzer und Benutzerrechte |Geändert: Dieser Bereich wurde überarbeitet.
 |POS |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
 |Cloud |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
 |App |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
