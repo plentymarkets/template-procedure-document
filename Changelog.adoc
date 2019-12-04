@@ -5,23 +5,23 @@
 
 |*Bereich* |*Datum* |*Kurzbeschreibung*
 
-|REST-Berechtigungen |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
-|Marketplace-Plugins |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
-|Datenimport mit ElasticSync |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
-|Warenwirtschaft |29.11.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
-|Benutzer und Benutzerrechte |Geändert: Dieser Bereich wurde überarbeitet.
-|POS |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Cloud |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|App |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Artikel |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|CRM |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|E-Mail-Versand |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Cloud |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Newsletter |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Versandabwicklung |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Multi-Channel |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Order |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
-|Tarifstruktur |29.11.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|REST-Berechtigungen |05.12.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Marketplace-Plugins |05.12.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Datenimport mit ElasticSync |05.12.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Warenwirtschaft |05.12.2019 |Neu: Dieser Bereich wurde neu hinzugefügt.
+|Benutzer und Benutzerrechte |05.12.2019|Geändert: Dieser Bereich wurde überarbeitet.
+|POS |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Cloud |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|App |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Artikel |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|CRM |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|E-Mail-Versand |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Cloud |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Newsletter |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Versandabwicklung |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Multi-Channel |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Order |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|Tarifstruktur |05.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
 |POS |16.01.2019 |POS: Click & Collect ab plentymarkets App Version 1.9
 |POS |26.11.2018 |POS: Zahlartenmix ab plentymarkets App Version 1.8.5
 |POS |22.08.2018 |Änderungen in POS-Versionen 1.8 und 1.8.1
