@@ -1,4 +1,4 @@
-<<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *System » Systemeinstellungen » Einstellungen » Benutzer » Rechte » Benutzer » Benutzer öffnen » Bereich: Berechtigungen* gewählt werden.
+<<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer » Benutzer öffnen » Bereich: Berechtigungen* gewählt werden.
 
 
 [[tabelle-rest-berechtigungen]]
@@ -1707,15 +1707,6 @@
 |
 |
 |
-|Externen Hersteller anzeigen
-|
-|
-|
-|
-
-|
-|
-|
 |Externen Hersteller erstellen
 |
 |
@@ -2670,78 +2661,6 @@
 |
 |
 
-|Assistenten
-|
-|
-|
-|
-|
-|
-|
-
-|
-|Assistent anzeigen
-|
-|
-|
-|
-|
-|
-
-|
-|Datensatz für Assistenten
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Datensatz abschließen
-|
-|
-|
-|
-|
-
-|
-|
-|Datensatz aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Datensatz anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Datensatz erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Datensatz löschen
-|
-|
-|
-|
-|
-
 |Aufträge
 |
 |
@@ -3566,6 +3485,42 @@
 |
 |Artikel im Versandpaket
 |
+|
+|
+|
+
+|
+|
+|
+|
+|Artikel im Versandpaket aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Artikel im Versandpaket anzeigen
+|
+|
+|
+
+|
+|
+|
+|
+|Artikel im Versandpaket erstellen
+|
+|
+|
+
+|
+|
+|
+|
+|Artikel im Versandpaket löschen
 |
 |
 |
@@ -5841,6 +5796,15 @@
 |
 
 |
+|
+|Serviceeinheit anzeigen
+|
+|
+|
+|
+|
+
+|
 |Ticket
 |
 |
@@ -6238,6 +6202,24 @@
 
 |
 |
+|Datenbereinigung aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Datenbereinigung anzeigen
+|
+|
+|
+|
+|
+
+|
+|
 |Datenbereinigung bearbeiten
 |
 |
@@ -6500,52 +6482,7 @@
 |
 
 |
-|Sync Daten-Log
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Sync-Log löschen
-|
-|
-|
-|
-|
-
-|
-|Sync-Daten
+|Sync
 |
 |
 |
@@ -6634,6 +6571,50 @@
 |
 |
 
+|
+|Sync Daten-Log
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Sync-Log löschen
+|
+|
+|
+|
+|
 
 |Editoren
 |
@@ -6648,6 +6629,744 @@
 |Editoren bearbeiten
 |
 |
+|
+|
+|
+|
+
+|Einrichtung
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Assistenten
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Assistent anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Datensatz für Assistenten
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Datensatz abschließen
+|
+|
+|
+|
+
+|
+|
+|
+|Datensatz aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Datensatz anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Datensatz erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Datensatz löschen
+|
+|
+|
+|
+
+|
+|Eigenschaft
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Amazon-Eigenschaftsverknüpfung
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Amazon-Eigenschaftsverknüpfung aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Amazon-Eigenschaftsverknüpfung anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Amazon-Eigenschaftsverknüpfung erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Amazon-Eigenschaftsverknüpfung löschen
+|
+|
+|
+|
+
+|
+|
+|Auswahl
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Auswahl löschen
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Eigenschaft löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Gruppe
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Gruppe aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Gruppe anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Gruppe erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Gruppe löschen
+|
+|
+|
+|
+
+|
+|
+|
+|Gruppenoption
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Gruppenoption aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Gruppenoption anzeigen
+|
+|
+|
+
+|
+|
+|
+|
+|Gruppenoption erstellen
+|
+|
+|
+
+|
+|
+|
+|
+|Gruppenoption löschen
+|
+|
+|
+
+|
+|
+|Markt
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Markt aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Markt anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Markt erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Markt löschen
+|
+|
+|
+|
+
+|
+|
+|Name
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Name aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Name anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Name erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Name löschen
+|
+|
+|
+|
+
+|
+|
+|Option
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Option aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Option anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Option erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Option löschen
+|
+|
+|
+|
+
+|
+|
+|Verfügbarkeit
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Verfügbarkeit aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Verfügbarkeit anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Verfügbarkeit erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Verfügbarkeit löschen
+|
+|
+|
+|
+
+|
+|
+|Verknüpfung
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Aufpreis
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Aufpreis aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Aufpreis anzeigen
+|
+|
+|
+
+|
+|
+|
+|
+|Aufpreis erstellen
+|
+|
+|
+
+|
+|
+|
+|
+|Aufpreis löschen
+|
+|
+|
+
+|
+|
+|
+|Verknüpfung aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Verknüpfung anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Verknüpfung erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Verknüpfung löschen
+|
+|
+|
+|
+
+|
+|
+|
+|Verknüpfungswert
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Verknüpfungswert aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Verknüpfungswert anzeigen
+|
+|
+|
+
+|
+|
+|
+|
+|Verknüpfungswert erstellen
+|
+|
+|
+
+|
+|
+|
+|
+|Verknüpfungswert löschen
+|
+|
+|
+
+|
+|Sprache
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Sprachumgebung
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Sprachumgebung konfigurieren
+|
+|
+|
+|
+
+|
+|Tag
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Tag aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Tag anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Tag erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Tag löschen
+|
+|
+|
+|
+|
+
+|
+|
+|Tag-Verknüpfung
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Tag-Verknüpfung aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Tag-Verknüpfung anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Tag-Verknüpfung erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Tag-Verknüpfung löschen
 |
 |
 |
@@ -6682,42 +7401,6 @@
 
 |
 |Kommentar löschen
-|
-|
-|
-|
-|
-|
-
-|Markierung
-|
-|
-|
-|
-|
-|
-|
-
-|
-|Markierung aktualisieren
-|
-|
-|
-|
-|
-|
-
-|
-|Markierung anzeigen
-|
-|
-|
-|
-|
-|
-
-|
-|Markierung löschen
 |
 |
 |
@@ -7229,6 +7912,42 @@
 |
 |
 
+|Markierung
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Markierung aktualisieren
+|
+|
+|
+|
+|
+|
+
+|
+|Markierung anzeigen
+|
+|
+|
+|
+|
+|
+
+|
+|Markierung löschen
+|
+|
+|
+|
+|
+|
+
 |Märkte
 |
 |
@@ -7342,6 +8061,24 @@
 |
 |
 |Bearbeiten
+|
+|
+|
+
+|
+|
+|ean_to_asin
+|
+|
+|
+|
+|
+
+|
+|
+|
+|config
+|
 |
 |
 |
@@ -8733,7 +9470,7 @@
 |
 
 |
-|plentymarket_place
+|plentyMarketplace
 |
 |
 |
@@ -8743,7 +9480,7 @@
 
 |
 |
-|show
+|plentyMarketplace anzeigen
 |
 |
 |
@@ -8789,6 +9526,33 @@
 |
 |
 |Plugin-Dateien löschen
+|
+|
+|
+|
+|
+
+|
+|Plugin-Konfigurationen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Plugin-Konfigurationen aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Plugin-Konfigurationen anzeigen
 |
 |
 |
@@ -9236,754 +10000,6 @@
 |
 |
 |
-
-|System
-|
-|
-|
-|
-|
-|
-|
-
-|
-|Assistenten
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Assistent anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Datensatz für Assistenten
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Datensatz abschließen
-|
-|
-|
-|
-
-|
-|
-|
-|Datensatz aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Datensatz anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Datensatz erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Datensatz löschen
-|
-|
-|
-|
-
-|
-|Eigenschaft
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Amazon-Eigenschaftsverknüpfung
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Amazon-Eigenschaftsverknüpfung aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Amazon-Eigenschaftsverknüpfung anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Amazon-Eigenschaftsverknüpfung erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Amazon-Eigenschaftsverknüpfung löschen
-|
-|
-|
-|
-
-|
-|
-|Auswahl
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Auswahl aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Auswahl anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Auswahl erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Auswahl löschen
-|
-|
-|
-|
-
-|
-|
-|Eigenschaft aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Eigenschaft anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Eigenschaft erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Eigenschaft löschen
-|
-|
-|
-|
-|
-
-|
-|
-|Gruppe
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Gruppe löschen
-|
-|
-|
-|
-
-|
-|
-|
-|Gruppe aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Gruppe anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Gruppe erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Gruppenoption
-|
-|
-|
-|
-
-|
-|
-|
-|
-|Gruppenoption aktualisieren
-|
-|
-|
-
-|
-|
-|
-|
-|Gruppenoption anzeigen
-|
-|
-|
-
-|
-|
-|
-|
-|Gruppenoption erstellen
-|
-|
-|
-
-|
-|
-|
-|
-|Gruppenoption löschen
-|
-|
-|
-
-|
-|
-|Markt
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Markt aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Markt anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Markt erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Markt löschen
-|
-|
-|
-|
-
-|
-|
-|Name
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Name aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Name anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Name erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Name löschen
-|
-|
-|
-|
-
-|
-|
-|Option
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Option aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Option anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Option erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Option löschen
-|
-|
-|
-|
-
-|
-|
-|Verfügbarkeit
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Verfügbarkeit aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Verfügbarkeit anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Verfügbarkeit erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Verfügbarkeit löschen
-|
-|
-|
-|
-
-
-|
-|
-|Verknüpfung
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Aufpreis
-|
-|
-|
-|
-
-|
-|
-|
-|
-|Aufpreis aktualisieren
-|
-|
-|
-
-|
-|
-|
-|
-|Aufpreis anzeigen
-|
-|
-|
-
-|
-|
-|
-|
-|Aufpreis erstellen
-|
-|
-|
-
-|
-|
-|
-|
-|Aufpreis löschen
-|
-|
-|
-
-|
-|
-|
-|Verknüpfung aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Verknüpfung anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Verknüpfung erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Verknüpfung löschen
-|
-|
-|
-|
-
-|
-|
-|
-|Verknüpfungswert
-|
-|
-|
-|
-
-|
-|
-|
-|
-|Verknüpfungswert aktualisieren
-|
-|
-|
-
-|
-|
-|
-|
-|Verknüpfungswert anzeigen
-|
-|
-|
-
-|
-|
-|
-|
-|Verknüpfungswert erstellen
-|
-|
-|
-
-|
-|
-|
-|
-|Verknüpfungswert löschen
-|
-|
-|
-
-|
-|Sprache
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Sprachumgebung
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Sprachumgebung konfigurieren
-|
-|
-|
-|
-
-|
-|Tag
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Tag aktualisieren
-|
-|
-|
-|
-|
-
-
-|
-|
-|Tag anzeigen
-|
-|
-|
-|
-|
-
-
-|
-|
-|Tag erstellen
-|
-|
-|
-|
-|
-
-
-|
-|
-|Tag löschen
-|
-|
-|
-|
-|
-
-
-|
-|
-|Tag-Verknüpfung
-|
-|
-|
-|
-|
-
-
-|
-|
-|
-|Tag-Verknüpfung aktualisieren
-|
-|
-|
-|
-
-
-|
-|
-|
-|Tag-Verknüpfung anzeigen
-|
-|
-|
-|
-
-
-|
-|
-|
-|Tag-Verknüpfung erstellen
-|
-|
-|
-|
-
-
-|
-|
-|
-|Tag-Verknüpfung löschen
-|
-|
-|
-|
-
 
 |Warenbestände
 |

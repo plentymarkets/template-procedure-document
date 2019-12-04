@@ -172,12 +172,43 @@ In <<tabelle-postleitzahlen-inselregionen>> ist aufgelistet, für welche Postlei
 |====
 |ID des Lieferlandes |Name des Lieferlandes|Postleitzahl, Postleitzahlenbereich(e)
 
-|1 |Deutschland |18565, 25846-25849, 25859, 25863, 25869, 25929-25956, 25938, 25960-25999, 26453-26460, 26462-26486, 26533-26546, 26548, 26557-26579, 26737-26757, 27483
-|10 |Frankreich |20000-20999
-|15 |Italien |8010-8100 , 9010-9049 , 9070-9100, 9124, 9126, 9170
-|21 |Niederlande |1156AA-1156ZZ, 1791AA-1797ZZ, 8881AA-8884ZZ, 8891AA-8897ZZ, 8899AA-8899ZZ, 9161AA-9164ZZ, 9166AA-9166ZZ
-|65 |Spanien |07000-07079, 07081-07999, 20086, 35000-35079, 35081-35999, 38000-38079, 38000-38079, 38081
-|255 |Helgoland |27498
+|1
+|Deutschland
+|18565, 25845, 25846-25849, 25859, 25863, 25869, 25929-25956, 25938-25942, 25946-25949, 25952-25955, 25960-25999, 26453-26460, 26462-26486, 26533-26546, 26548, 26557-26579, 26737-26757, 27483
+
+|7
+|Dänemark
+|4592
+
+|10
+|Frankreich
+|20000-20999
+
+|12
+|United Kingdom
+|Nordirland: BT1-82, BT92-94 +
+Kanalinseln Guernsey und Jersey: GY1-9, JE1-4 +
+Isle of Man: IM1-9 +
+Orkney Inseln: KW1-17 +
+Shetland Inseln: ZE1-3 +
+Hebriden und Schottisches Hochland: HS1-9, IV1-28, IV36, IV40-56, IV63, KA27-28, PA41-78, PH19-26, PH31-44
+
+|15
+|Italien
+|8010-8100, 9010-9049, 9070-9100, 9124, 9126, 9170, 25050, 58010
+
+|21
+|Niederlande
+|1156AA-1156ZZ, 1791AA-1797ZZ, 8881AA-8884ZZ, 8891AA-8897ZZ, 8899AA-8899ZZ, 9161AA-9164ZZ, 9166AA-9166ZZ
+
+|65
+|Spanien
+|07000-07079, 07081-07999, 20086, 35000-35079, 35081-35999, 38000-38079, 38000-38079, 38081
+
+|255
+|Helgoland
+|27498
+
 |====
 
 Die Postleitzahlen der Inselregionen sind systemseitig gespeichert. Der Anwender kann die  Postleitzahlenbereiche nicht ändern oder erweitern. Bei Aktivierung des Inselzuschlages erfolgt eine Berechnung nur, wenn die Postleitzahl im System als Inselregion erkannt wird.
