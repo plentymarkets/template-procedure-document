@@ -156,9 +156,13 @@ In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet
 
 ===== Plugins
 
-In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwaltet. Zunächst werden nur die Plugins mit ihren einzelnen Einträgen, jedoch ohne die korrekte Route, angezeigt.
+In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwaltet. Zunächst werden nur die Plugins mit ihren einzelnen Einträgen, jedoch ohne die korrekte Route, angezeigt. Die hier aufgelisteten Plugins dienen lediglich als Beispiel.
 
 * EBICS
 * PayPal
 * FormatDesigner
 * DHLShipping
+
+===== REST-Rechte
+
+Eine Auflistung aller verfügbaren REST-Rechte ist in <<anhang-rest#, diesem Kapitel>> zu finden.
