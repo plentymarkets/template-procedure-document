@@ -22,6 +22,7 @@
 |V6.2|Multi-Channel |06.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
 |V6.2|Order |06.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
 |V6.2|Tarifstruktur |06.12.2019 |Geändert: Dieser Bereich wurde überarbeitet.
+|V6.2|Gutscheine |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.
 |V6.1|POS |16.01.2019 |Neu: Click & Collect ab plentymarkets App Version 1.9.
 |V6.1|POS |26.11.2018 |Neu: Zahlartenmix ab plentymarkets App Version 1.8.5.
 |V6.1|POS |22.08.2018 |Geändert: Anpassungen in POS-Versionen 1.8 und 1.8.1.
