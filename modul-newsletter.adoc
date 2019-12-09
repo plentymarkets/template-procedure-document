@@ -1,5 +1,3 @@
-<<<<
-
 === Fachliche und technische Beschreibung des Moduls Newsletter
 
 Um Newsletter an Kontakte zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.

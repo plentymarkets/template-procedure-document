@@ -1,5 +1,3 @@
-<<<<
-
 === Fachliche und technische Beschreibung plentymarkets POS
 
 plentymarkets POS ist eine Funktion der plentymarkets App, die für den stationären Verkauf von Waren und/oder Dienstleistungen entwickelt wurde. plentymarkets POS ist ein mobiles, App-basiertes Kassensystem. Im Sinne der GoBD ist plentymarkets POS ein Vorsystem der elektronischen Buchhaltung.
@@ -742,7 +740,7 @@ Ergänzen Sie <<tabelle-daten-kassenjournal>>. Für jeden Geschäftsvorfall sind
 
 [[tabelle-daten-kassenjournal]]
 .Daten im Kassenjournal
-[cols="1,2,3"]
+[cols="2,2,3"]
 |====
 |*Daten*|*Berechnungsformel*|*Erläuterung*
 
@@ -845,7 +843,7 @@ Ergänzen Sie <<tabelle-pos-tagesberichte>>. In plentymarkets POS generierte Tag
 
 [[tabelle-pos-tagesberichte]]
 .Tagesberichte
-[cols="1,2,2"]
+[cols="1,1,1"]
 |====
 |*Tagesberichtdaten*|*Berechnungsformel*|*Erläuterung*
 

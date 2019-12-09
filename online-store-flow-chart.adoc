@@ -1,4 +1,3 @@
-
 === Fachliche und technische Beschreibung des Moduls Webshop
 
 image::assets/Flow-chart-online-store.png[]

@@ -208,7 +208,8 @@ Es wird vom Löschen der Warenbestände in dieser Form abgeraten, da dies nicht 
 ====
 
 ===== Lager löschen
-Das Löschen eines Lagers löscht alle Bestände, Warenbewegungen, Lagerorte und Dimensionen des Lagers. +
+Das Löschen eines Lagers löscht alle Bestände, Warenbewegungen, Lagerorte und Dimensionen des Lagers.
+
 *_Hinweis_*: Das Löschen des Lagers löscht auch die Warenbewegungen. Sie können somit nicht wiederhergestellt werden, was nicht GoBD-konform ist.
 
 

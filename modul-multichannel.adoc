@@ -1,16 +1,16 @@
-
 === Fachliche und technische Beschreibung des Moduls Multi-Channel
 
 ==== Verwendungszweck
 
-Das Softwaremodul Multi-Channel dient dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgende Funktionen stellt das Modul bereit: +
- * Schnittstellen-Zugriff auf Online-Märkte und Preisportale +
- * Bestandsabgleich über automatische Prozesse mit zeitlich festlegten Intervallen +
- * Produktdatenaustausch über automatische Prozesse mit zeitlich festlegten Intervallen +
- * Auftragsimport über automatische Prozesse mit zeitlich festlegten Intervallen +
- * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen +
- * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^] +
- * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentymarkets.com/crm/ticketsystem-nutzen[Ticketsystem^] +
+Das Softwaremodul Multi-Channel dient dem zusätzlichen Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten. Folgende Funktionen stellt das Modul bereit:
+
+ * Schnittstellen-Zugriff auf Online-Märkte und Preisportale
+ * Bestandsabgleich über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Produktdatenaustausch über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Auftragsimport über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^]
+ * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentymarkets.com/crm/ticketsystem-nutzen[Ticketsystem^]
 
 ==== Verfügbarkeit
 
