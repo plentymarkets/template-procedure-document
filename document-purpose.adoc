@@ -1,4 +1,3 @@
-
 == Zweck dieses Dokuments
 
 Die Beschreibungen in diesem Dokument dienen den Anwendern der Software plentymarkets lediglich als Grundlage zur Erstellung ihrer Verfahrensdokumentation. Die konkrete Vorgehensweise bei der täglichen Arbeit liegt im Ermessen des Anwenders und muss durch ihn genau beschrieben werden.

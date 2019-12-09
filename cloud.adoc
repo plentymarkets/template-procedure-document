@@ -1,5 +1,3 @@
-<<<<
-
 == AWS Cloud: Aufbau, Sicherheitsarchitektur, Speicherkonzept, Löschkonzept
 
 === AWS Aufbau

@@ -1,8 +1,6 @@
-<<<<
-
 === Fachliche und technische Beschreibung des Moduls Gutscheine
 
-== Gutscheine
+==== Gutscheine
 
 In plentymarkets sind link:https://knowledge.plentymarkets.com/auftraege/gutscheine[Gutscheine^] im Sinne von _Geschenkgutscheinen_ zu verstehen. Es handelt sich dann um einen Gutschein, wenn der Inhaber diesen zur Einlösung gegen Gegenstände oder Dienstleistungen verwenden kann.
 
@@ -23,7 +21,7 @@ Zum Einlösen eines Gutscheins benötigt der Kunde lediglich seinen Gutschein-Co
 * Der Wert der Gutscheine wird vom zu zahlenden Betrag abgezogen.
 * Der Umsatz erhöht sich um den eingelösten Gutscheinbetrag.
 
-== Rabatte und Preisnachlässe
+==== Rabatte und Preisnachlässe
 
 In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 

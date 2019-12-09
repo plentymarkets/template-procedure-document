@@ -1,5 +1,3 @@
-<<<<
-
 === Fachliche und technische Beschreibung Versandabwicklung
 
 Für die Versandabwicklung bietet das plentymarkets System für verschiedene Versanddienstleister und Fulfillment-Dienstleister Anbindungen über ein Plugin, über eine integrierte Schnittstelle oder auch über Polling-Formate an. Eine Polling-Datei wird benötigt, wenn keine direkte Schnittstelle zu der Software des Versanddienstleisters besteht. Der Anwender generiert die Polling-Datei, die die anzumeldenden Aufträge enthält, und lädt diese in der Software des Versanddienstleisters hoch, um die Versandanmeldung anzustoßen.
@@ -270,7 +268,7 @@ In <<tabelle-liste-integrierte-versanddienstleister>> werden die Versanddienstle
 
 [[tabelle-liste-integrierte-versanddienstleister]]
 .Liste der in plentymarkets integrierten Versanddienstleister
-[cols="1,3,3,3"]
+[cols="3,1,3,3"]
 |====
 |Versanddienstleister |Fest integrierte Schnittstelle|Weitere “Unterschnittstellen”|Polling-Datei
 

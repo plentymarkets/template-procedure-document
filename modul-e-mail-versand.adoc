@@ -1,6 +1,3 @@
-
-<<<<
-
 === Fachliche und technische Beschreibung E-Mail-Versand
 
 plentymarkets selbst ist kein E-Mail-Provider und bietet auch keine Services eines E-Mail-Providers an. Der Anwender bestimmt, welchen Anbieter er mit dem plentymarkets System für den Versand seiner E-Mails verknüpft.

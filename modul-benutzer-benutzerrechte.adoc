@@ -1,6 +1,3 @@
-
-<<<<
-
 === Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
 Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Berechtigungen. +
@@ -157,4 +154,4 @@ In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwalte
 
 ===== REST-Rechte
 
-Eine Auflistung aller verfügbaren REST-Rechte ist in <<anhang-rest#, diesem Kapitel>> zu finden.
+Eine Auflistung aller verfügbaren REST-Rechte ist im <<anhang_rest-berechtigungen#, Anhang: REST-Berechtigungen>> zu finden.

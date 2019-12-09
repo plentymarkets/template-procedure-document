@@ -1,4 +1,3 @@
-
 === Fachliche und technische Beschreibung des Moduls Auftragsabwicklung
 
 Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bearbeitung und Abwicklung von Aufträgen, die aus verschiedenen Kanälen stammen. Für ein generelles Verständnis der Abwicklung von Aufträgen in plentymarkets sind folgende Punkte wichtig: +
@@ -15,6 +14,8 @@ Für alle Herkünfte gilt also, dass sie deaktiviert oder aktiviert werden müss
 
 Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde. Einige Herkünfte sind bereits standardmäßig im System gespeichert und andere können noch eigens hinzugefügt werden. Die eigenen können später auch wieder gelöscht werden. Das Löschen einer eigenen Herkunft löscht jedoch nicht die Herkunftsinformation in einem Auftrag., sonder bewirkt lediglich, dass zukünftig kein Auftrag mehr über diesen Kanal generiert werden kann. In den Informationen eines Auftrags bleibt konkret die ID der Herkunft gespeichert. Folgende Herkünfte sind standardmäßig in jedem plentymarkets System vorangelegt:
 
+[[tabelle-systemherkünfte]]
+.Systemherkünfte
 |===
 |ID|Name|Verwendung|Erstellung|Entfernt|Kommentar
 
@@ -131,8 +132,12 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 |204.00|Amazon B2B|Auftrag|07.09.2016|14.09.2016|
 |204.01|Amazon Germany B2B|Auftrag|07.09.2016|14.09.2016|
 |===
-Tabelle 1: Systemherkünfte +
-NOTE: *Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.
+
+[NOTE]
+.Einschränkungen
+====
+Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.
+====
 
 Bei den oben aufgeführten Herkünften handelt es sich um Systemherkünfte. Systemherkünfte deshalb, weil sie bei Auslieferung eines plentymarkets Systems bereits angelegt sind und nicht gelöscht werden können. Die Systemherkünfte sind jedoch nicht automatisch aktiv. Sie sind lediglich bereits namentlich angelegt und verfügen über eine ID. Damit über eine Herkunft tatsächlich Aufträge generiert werden können und diese Herkunft einem Auftrag auch zugeordnet werden kann, muss sie mindestens aktiviert werden, aber bei vielen Systemherkünften sind noch weitere Einstellungen notwendig. +
 Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.  +
@@ -220,6 +225,8 @@ Teilen eines Auftrags bedeutet, dass Artikelpositionen gewählt werden und ein n
 Das Erstellen von Lieferaufträgen bedeutet, dass im Funktionsumfang reduzierte Aufträge erstellt werden. Ein Lieferauftrag dient dem Versand von Waren aus unterschiedlichen Lagern oder mit unterschiedlicher Verfügbarkeit. Ein Lieferauftrag ist fest mit dem Auftrag, in dem er erstellt wurde, verbunden. Der ursprüngliche Auftrag wird in diesem Zusammenhang auch häufig Hauptauftrag genannt. In einem Lieferauftrag ist es z.B. nicht möglich eine Rechnung zu erstellen, da er nur dem Versand dient und die Rechnung die gesamte Bestellung berücksichtigt. Welche Funktionen genau in einem Lieferauftrag zur Verfügung stehen, wird später detailliert erläutert.
 Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbeitung stark eingeschränkt. Die folgende Tabelle zeigt, welche Bearbeitungsmöglichkeiten bestehen, nachdem das aufgeführte Dokument im Auftrag erzeugt wurde.
 
+[[tabelle-bearbeitungsmoeglichkeiten-auftrag-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten im Auftrag nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
@@ -233,7 +240,6 @@ Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbe
 |Rücksendeschein|Das Erzeugen eines Rücksendescheins sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
 |===
-Tabelle 2: Bearbeitungsmöglichkeiten im Auftrag nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Angebot
 
@@ -246,6 +252,8 @@ Der Auftragstyp Angebot dient der Unterbreitung von Angeboten an Kunden. Der Fun
 
 Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokuments hat auch beim Angebot Einfluss auf die Bearbeitungsmöglichkeiten. Die folgende Tabelle listet auf, welche Bearbeitungsmöglichkeiten nach dem Erzeugen des jeweiligen Dokuments zur Verfügung stehen.
 
+[[tabelle-bearbeitungsmoeglichkeiten-angebot-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten im Angebot nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
@@ -254,7 +262,6 @@ Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokume
 |Angebot|Das Erzeugen eines Angebotsdokuments sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
 |===
-Tabelle 3: Bearbeitungsmöglichkeiten im Angebot nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Vorbestellung
 
@@ -267,6 +274,8 @@ Bei einer Vorbestellung kann kein Warenausgang gebucht werden und sie kann nicht
 
 Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokuments hat auch bei einer Vorbestellung Einfluss auf die Bearbeitungsmöglichkeiten. Die folgende Tabelle listet auf, welche Bearbeitungsmöglichkeiten nach dem Erzeugen des jeweiligen Dokuments zur Verfügung stehen.
 
+[[tabelle-bearbeitungsmoeglichkeiten-vorbestellung-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten in einer Vorbestellung nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
@@ -304,6 +313,8 @@ Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftrags
 Die Mehrheit dieser Möglichkeiten sind relevant für den Versand von Ware und da eine Gutschrift nicht für den Versand gedacht ist, stehen sie in diesem Auftragstyp nicht zur Verfügung. +
 Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt werden können und welche Einschränkung durch das Erzeugen entstehen:
 
+[[tabelle-bearbeitungsmoeglichkeiten-gutschrift-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten in einer Gutschrift nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
@@ -311,7 +322,6 @@ Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt wer
 |Korrekturbeleg|Das Erzeugen eines Korrekturbelegs sorgt nicht für Einschränkungen.
 |Stornobeleg Gutschrift|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Gutschrift erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Gutschrift gesperrt wurden, zur Verfügung.
 |===
-Tabelle 5: Bearbeitungsmöglichkeiten in einer Gutschrift nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Gewährleistung
 
@@ -324,6 +334,8 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
  * I
  * II
 
+[[tabelle-bearbeitungsmoeglichkeiten-gewaehrleistung-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten in einer Gewährleistung nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
@@ -337,7 +349,6 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
 |Rücksendeschein|Das Erzeugen eines Rücksendescheins sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
 |===
-Tabelle 6: Bearbeitungsmöglichkeiten in einer Gewährleistung nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Retoure
 
@@ -366,18 +377,21 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
 
 In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet werden. Es kann ein Hinweis zur Variante sowie ein Prozentwert, der den Artikelwert der retournierten Varianten angibt, eingetragen werden. Der Grund für die Retoure kann geändert sowie Ware wieder eingebucht werden.
 
+[[tabelle-bearbeitungsmoeglichkeiten-retoure-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten in einer Retoure nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
 |Rücksendeschein|Das Erzeugen eines Rücksendescheins sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
 |===
-Tabelle 7: Bearbeitungsmöglichkeiten in einer Retoure nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Reparatur
 
 Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden können. Eine Reparatur kann nur aus einem Auftrag vom Typ Retoure heraus erstellt werden. Es handelt sich also um einen Auftrag, der der Retoure untergeordnet ist und in den nur Artikel, die bereits als retourniert erfasst wurden, übernommen werden können. Eine Reparatur kann nur manuell angelegt werden, da bei jedem Artikel geprüft werden muss, ob er repariert und somit in eine Reparatur übernommen werden kann.
 
+[[tabelle-bearbeitungsmoeglichkeiten-reparatur-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten in einer Reparatur nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
@@ -392,7 +406,6 @@ Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden 
 |Reparaturschein|Das Erzeugen eines Reparaturscheins sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
 |===
-Tabelle 8: Bearbeitungsmöglichkeiten in einer Reparatur nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Sammelauftrag
 
@@ -409,13 +422,14 @@ In einem Sammelauftrag können folgende Dokumente erstellt werden:
  * Rechnung und
  * Mahnung.
 
+[[tabelle-bearbeitungsmoeglichkeiten-sammelauftrag-nach-erzeugen]]
+.Bearbeitungsmöglichkeiten in einem Sammelauftrag nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Mahnung|Inhalte werden ergänzt
 |===
-Tabelle 9: Bearbeitungsmöglichkeiten in einem Sammelauftrag nach dem Erzeugen eines Dokuments
 
 ===== Auftragstyp Sammelgutschrift
 

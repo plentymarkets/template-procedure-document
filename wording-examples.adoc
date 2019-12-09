@@ -24,8 +24,8 @@ Die folgende Tabelle zeigt, welche Benutzer im System eingerichtet sind oder war
 |===
 |Benutzername|Benutzerzugang|Benutzerrechte|Gültigkeit
 
-|Xxx Xxx|Admin| * alle|01.01.2015 - aktuell
-|Xxx Xxx|Backend| * alle Lager|31.12.2013 - 01.09.2016
+|Xxx Xxx|Admin| * alle|01.01.2019 - aktuell
+|Xxx Xxx|Backend| * alle Lager|31.12.2016 - 01.09.2019
 ||||
 ||||
 |===
