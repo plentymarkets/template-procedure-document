@@ -16,7 +16,7 @@ plentymarkets übernimmt den Support für die folgenden Versanddienstleister- bz
 
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<modul-versandabwicklung#1200, In plentymarkets integrierte Versanddienstleister>> und <<modul-versandabwicklung#1300, In plentymarkets integrierte Fulfillment-Dienstleister>>.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<integrierte_versanddienstleister, Integrierte Versanddienstleister>> und <<integrierte_fulfillment_dienstleister, Integrierte Fulfillment-Dienstleister>>.
 
 Bevor der Anwender eine der in plentymarkets angebotenen Schnittstellen zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren.
 
@@ -26,7 +26,7 @@ In einem neu angelegten System sind 259 Lieferländer bzw. Lieferregionen im Sys
 
 Die IDs können nicht geändert werden und die Lieferländer können nicht gelöscht werden. Dem Anwender ist es nicht möglich, eigene Lieferländer im System hinzuzufügen.
 
-Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden. Der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und -regionen und deren IDs sind in <<modul-versandabwicklung#1900, Anhang a)>> aufgelistet.
+Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden. Der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und -regionen und deren IDs sind in <<anhang_lieferlaender_mit_id, Anhang: Lieferländer mit ID>> aufgelistet.
 
 In einem neu angelegten System sind die Lieferländer *Deutschland (ID 1)* und *United Kingdom (ID 12)* bereits aktiviert. Für das Lieferland Deutschland ist das Lager *ALLE* und die Sprache *de* standardmäßig ausgewählt; für das Lieferland United Kingdom ist das Lager *KS Sales* und die Sprache *en* standardmäßig ausgewählt. Das gewählte Lager ist dem Lieferland als Hauptlager zugeordnet und wird z.B. in Aufträgen automatisch eingestellt. Wenn die Einstellung *ALLE* gewählt wurde, werden alle Lager dem Lieferland zugeordnet. In diesem Fall wird für Aufträge automatisch das Lager mit der kleinsten ID gewählt.
 
@@ -35,7 +35,7 @@ Der Anwender kann die Lieferländer bei Bedarf deaktivieren, den Webshop-Namen a
 <<bild-uebersicht-lieferlaender>> zeigt einen Ausschnitt der ersten Übersichtsseite der Lieferländer in einem neu angelegten System.
 
 [[bild-uebersicht-lieferlaender]]
-.Ausschnitt der Übersichtsseite der Lieferländer
+.Bildausschnitt der Übersichtsseite der Lieferländer
 image::assets/Uebersicht_Lieferlaender.png[]
 
 ==== Regionen
@@ -219,10 +219,10 @@ In der Portotabelle speichert der Anwender die Versandkosten für das Versandpro
 
 ===== Berechnungstypen
 
-Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. In <<tabelle-mögliche-berechnungstypen-versandkosten>> werden die im System verfügbaren Berechnungstypen aufgelistet.
+Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der Tabelle aufgeführt. In <<tabelle-moegliche-berechnungstypen-versandkosten>> werden die im System verfügbaren Berechnungstypen aufgelistet.
 
 
-[[tabelle-mögliche-berechnungstypen-versandkosten]]
+[[tabelle-moegliche-berechnungstypen-versandkosten]]
 .Mögliche Berechnungstypen für die Versandkosten
 [cols="1,3"]
 |====
@@ -330,7 +330,7 @@ Die Adressdaten, sofern im Kundendatensatz gespeichert, beinhalten:
  * Postnummer (bei DHL)
  * Packstation/Postfiliale (bei DHL)
 
-Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<modul-versandabwicklung#1700, Zollinhaltserklärung für Sendungen ins Ausland>>.
+Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<zollinhaltserklärung_für_sendungen_ins_ausland, Zollinhaltserklärung für Sendungen ins Ausland>>.
 
 ==== Versandmöglichkeiten über Marktplätze
 
@@ -355,11 +355,12 @@ Aktuell kann der Anwender Zollinhaltserklärungen und Paketkarten ausschließlic
 
 Zollinhaltserklärungen und Paketkarten für DHL-Sendungen können im System erst generiert werden, wenn der Auftrag bei DHL angemeldet und eine Rechnung erzeugt wurde.
 
-Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<modul-versandabwicklung#_anhang_b), Anhang b)>> zu finden.
+Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<anhang_dhl_paketkarte_und_zollinhaltserklärung, Anhang: DHL Paketkarte und Zollinhaltserklärung>> zu finden.
 
 ==== Anhänge
 
-===== Anhang a)
+
+===== Anhang: Lieferländer mit ID
 
 In <<tabelle-lieferlaender-mit-id>> sind die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs aufgelistet.
 
@@ -635,7 +636,7 @@ In <<tabelle-lieferlaender-mit-id>> sind die im System voreingestellten und für
 |264 |Luganer See von Ponte Tresa bis Porto Ceresio (IT)
 |====
 
-===== Anhang b)
+===== Anhang: DHL Paketkarte und Zollinhaltserklärung
 
 Beispiel einer Paketkarte (CP 71) (siehe <<bild-dhl-paketkarte>> und einer Zollinhaltserklärung (CN 23) <<bild-dhl-zollinhaltserklaerung>> für DHL mit dem Lieferland Schweiz:
 
