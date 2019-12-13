@@ -12,7 +12,7 @@ Das CRM-Modul von plentymarkets erlaubt das Verwalten, Speichern und Bearbeiten 
 Im plentymarkets CRM-Modul beinhaltet der Begriff _Kontakt_ nicht nur natürliche Personen, sondern auch Firmen. In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
 
 
-=== Kontakt-IDs
+==== Kontakt-IDs
 
 Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
 
@@ -89,7 +89,7 @@ Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der A
 
 Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auftrag zugeordnet und die Adresse gespeichert. Über die Schnellsuche kann der Anwender sehen, wie viele Aufträge ein bestimmter Gastkunde im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: Wenn der Kunde seine Bestellung reklamiert, wird ggf. eine Gutschrift angelegt.
 
-=== Typen
+==== Typen
 
 Typen dienen der Einordnung und Unterscheidung von Kontakten. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. In <<tabelle-fest-integrierte-typen>> werden die standardmäßig vorhandenen Typen und deren IDs aufgelistet.
 
