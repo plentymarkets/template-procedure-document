@@ -1,7 +1,8 @@
 === Fachliche und technische Beschreibung des Moduls Auftragsabwicklung
 
-Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bearbeitung und Abwicklung von Aufträgen, die aus verschiedenen Kanälen stammen. Für ein generelles Verständnis der Abwicklung von Aufträgen in plentymarkets sind folgende Punkte wichtig: +
-plentymarkets unterscheidet verschiedene Auftragstypen und Auftragsherkünfte. Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Folgende Auftragstypen gibt es in plentymarkets:
+Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bearbeitung und Abwicklung von Aufträgen, die aus verschiedenen Kanälen stammen.
+Dabei unterscheidet plentymarkets zwischen verschiedenen Auftragstypen und verschiedenen Auftragsherkünften. Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde.
+Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in den folgenden Abschnitten erläutert.
 
 ==== Auftragsherkünfte
 
@@ -11,8 +12,7 @@ Systemherkünfte sind bei Auslieferung eines plentymarkets Systems bereits angel
 Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.
 Für alle Herkünfte gilt also, dass sie deaktiviert oder aktiviert werden müssen. Welche Schritte genau zur Einrichtung einer Herkunft notwendig sind, unterscheidet sich von Herkunft zu Herkunft und wird in den Beschreibungen der Module Multi-Channel, POS, Online-Shop sowie in den Plugin-Beschreibungen erläutert.
 
-
-Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde. Einige Herkünfte sind bereits standardmäßig im System gespeichert und andere können noch eigens hinzugefügt werden. Die eigenen können später auch wieder gelöscht werden. Das Löschen einer eigenen Herkunft löscht jedoch nicht die Herkunftsinformation in einem Auftrag., sonder bewirkt lediglich, dass zukünftig kein Auftrag mehr über diesen Kanal generiert werden kann. In den Informationen eines Auftrags bleibt konkret die ID der Herkunft gespeichert. Folgende Herkünfte sind standardmäßig in jedem plentymarkets System vorangelegt:
+Folgende Herkünfte sind standardmäßig in jedem plentymarkets System vorangelegt:
 
 [[tabelle-systemherkünfte]]
 .Systemherkünfte
@@ -139,87 +139,97 @@ Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auf
 Die Auftragsherkunft ist noch im System hinterlegt, aber es findet kein Datenaustausch mehr statt. Es ist nicht mehr möglich Daten/Artikel über die Schnittstelle zu senden.
 ====
 
-Bei den oben aufgeführten Herkünften handelt es sich um Systemherkünfte. Systemherkünfte deshalb, weil sie bei Auslieferung eines plentymarkets Systems bereits angelegt sind und nicht gelöscht werden können. Die Systemherkünfte sind jedoch nicht automatisch aktiv. Sie sind lediglich bereits namentlich angelegt und verfügen über eine ID. Damit über eine Herkunft tatsächlich Aufträge generiert werden können und diese Herkunft einem Auftrag auch zugeordnet werden kann, muss sie mindestens aktiviert werden, aber bei vielen Systemherkünften sind noch weitere Einstellungen notwendig. +
-Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.  +
-Für alle Herkünfte gilt also, dass sie aktiviert werden müssen und keine Herkunft ohne Wunsch des Anwenders zur Verfügung steht. Welche Schritte genau zur Einrichtung einer Herkunft notwendig sind, unterscheidet sich von Herkunft zu Herkunft und wird in den Beschreibungen der Module Multi-Channel, POS, Online-Shop sowie in den Plugin-Beschreibungen erläutert.
-
-Zunächst folgt eine kurze exemplarische Beschreibung der Auftragsabwicklung. Für diese Kurzbeschreibung nehmen wir an, dass die Ware vorrätig ist, der Kunde im Shop gekauft hat und alle Angaben des Kunden korrekt sind.
+==== Auftragstypen
 
 Die verschiedenen Auftragstypen verfügen in der Auftragsübersicht im System über unterschiedliche Einstellungen und somit über unterschiedliche Bearbeitungsmöglichkeiten. Generell gilt, dass ein Auftrag beim Erstellen im System eine ID erhält, die unabhängig vom Auftragstyp hochgezählt wird. Die Auftrags-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen sogenannten Auto-Increment-Wert. In einem neu angelegten System sind 2 Beispielaufträge mit den IDs 101 und 102 vorhanden. Ausgehend von der ID 102 wird hochgezählt. Der Startwert für die Auftrags-IDs kann nicht vom Anwender geändert werden, dies geht nur gebührenpflichtig über plentymarkets. +
 Zudem wird Aufträgen ein Status zugeordnet. Der verfügbare Statusbereich liegt zwischen 1 und 19.9999, je vier Nachkommastellen sind erlaubt. Einige Status sind im System voreingestellt, eine Übersicht dazu findet sich im https://knowledge.plentymarkets.com/basics/interne-IDs#120[Handbuch]. Es können im verfügbaren Statusbereich Status manuell hinzugefügt und geändert werden.
 
+Folgende Auftragstypen gibt es in plentymarkets. Auf jeden Auftragstyp wird weiter unten einzeln näher eingegangen:
+
+* Auftrag
+* Angebot
+* Gewährleistung
+* Gutschrift
+* Lieferauftrag
+* Reparatur
+* Retoure
+* Sammelauftrag
+* Sammelgutschrift
+* Vorbestellung
+
+Zunächst folgt eine kurze exemplarische Beschreibung der Auftragsabwicklung. Für diese Kurzbeschreibung nehmen wir an, dass die Ware vorrätig ist, der Kunde im Shop gekauft hat und alle Angaben des Kunden korrekt sind.
+
+Die Bestellung geht als Auftrag ins System ein und erhält eine Auftrags-ID. Da die Artikel, die der Kunde bestellt hat, vorrätig sind, wartet der Auftrag nur auf eine Zahlungszuweisung, um für den Versand freigegeben zu werden. Der Kunde zahlt und die Zahlung wird anhand der Aufztrags-ID dem Auftrag zugeordnet.
+Das versandfertige Paket wird einem Versanddienstleister übergeben und dem Kunden zugestellt. Der Kunde ist mit der Ware zufrieden, weshalb weder eine Retoure erfolgt noch andere nachträgliche Schritte notwendig sind.
+
 In dem oben beschriebenen Fall muss der Anwender von plentymarkets während der Abwicklung kaum eingreifen, da weder der Kunde eine Änderung wünscht noch auf Seiten des Anwenders Verzögerungen oder Probleme auftreten. Da jedoch nicht jeder Auftrag so unproblematisch ausgeliefert wird, gibt es viele Einstellungen und Bearbeitungsmöglichkeiten, die ein Eingreifen ermöglichen. In welchen Fällen der Anwender tatsächlich in die Abwicklung eingreift und welche Schritte er ausführt, liegt in seinem Ermessen. In der fachlichen und technischen Beschreibung der Auftragsabwicklung wird nachfolgend nur aufgeführt, was geändert werden kann. Die Schritte und Einstellungen, die gewählt oder geklickt werden müssen, damit die Änderung erfolgt, werden wiederum im Handbuch ausführlich beschrieben.
-
-==== Auftragstypen
-
-
-Die Aufträge der verschiedenen Auftragstypen verfügen über unterschiedliche Einstellungen und somit über unterschiedliche Bearbeitungsmöglichkeiten. Generell gilt, dass ein Auftrag beim Erstellen im System eine ID erhält, die unabhängig vom Auftragstyp hochgezählt wird. Die Auftrags-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen sogenannten Auto-Increment-Wert. In einem neu angelegten System sind 2 Beispielaufträge mit den IDs 101 und 102 vorhanden. Ausgehend von der ID 102 wird hochgezählt. Der Startwert für die Auftrags-IDs kann nicht geändert werden.
 
 ===== Auftragstyp Auftrag
 
-Der Auftragstyp Auftrag dient zum Erfassen und Abwickeln von Kundenbestellungen. Der Kanal, über den der Auftrag generiert wurde, wird als Herkunft in den Auftragsdaten gespeichert. Wie oben erwähnt, wird Aufträgen außerdem ein Status zugeordnet. Da mithilfe der Auftragsstatus der Fortschritt der Abwicklung abgebildet werden soll, sind auch einige Systemautomatismen mit den Status verknüpft.  +
-Aufträge werden bei Eingang in ein plentymarkets System zunächst auf Status 3 gesetzt, diese Statuszuordnung ist ein Systemautomatismus. In Ausnahmefällen, z.B. bei der Systemherkunft Amazon, kann ein Auftrag bei Eingang automatisch auf Status 1 gesetzt werden. +
+Der Auftragstyp Auftrag dient zum Erfassen und Abwickeln von Kundenbestellungen. Der Kanal, über den der Auftrag generiert wurde, wird als Herkunft in den Auftragsdaten gespeichert. Wie oben erwähnt, wird Aufträgen außerdem ein Status zugeordnet. Da mithilfe der Auftragsstatus der Fortschritt der Abwicklung abgebildet werden soll, sind auch einige Systemautomatismen mit den Status verknüpft. +
+Aufträge werden bei Eingang in ein plentymarkets System zunächst auf Status 3 gesetzt, diese Statuszuordnung ist ein Systemautomatismus. In Ausnahmefällen, z.B. bei der Systemherkunft Amazon, kann ein Auftrag bei Eingang automatisch auf Status 1 gesetzt werden.
+
 Anschließend kann der Anwender den Auftrag bearbeiten. Er kann dem Kunden eine Empfangsbestätigung senden. Er kann weitere Artikel, z.B. Gratisproben, hinzufügen. Er könnte dem Kunden einen Rabatt einräumen. Er kann die Rechnungsadresse, die Lieferanschrift, die Versandart sowie die Artikelpositionen ändern. Wie die Absprache mit dem Kunden bei Änderungen am Auftrag erfolgt, ist dabei Sache des Anwenders. Wenn einem Auftrag eine Zahlung zugeordnet werden konnte, erfolgt ein weiterer Statuswechsel. Auf welchen Status der Auftrag wechselt, hängt davon ab, ob der Auftrag unter-, über- oder vollständig bezahlt ist. Wenn ein Auftrag unterbezahlt ist, wird er automatisch auf Status 3.3 gesetzt. Wenn ein Auftrag überbezahlt ist, wird er automatisch auf Status 3.2 gesetzt. Wenn ein Auftrag vollständig bezahlt ist und das Modul Warenwirtschaft nicht verwendet wird, wechselt der Auftrag auf Status 5. Status 5 bedeutet, dass der Auftrag für den Versand freigegeben wurde. Dieser Status eignet sich also, um Picklisten oder Ähnliches zu erstellen. +
 Ein vom System angestoßener automatischer Statuswechsel auf Status 5 erfolgt auch für einige Zahlungsarten, bei denen ein Warten auf die Zahlung nicht sinnvoll ist. Zu diesen Zahlungsarten gehören z.B. Kauf auf Rechnung, Lastschrift oder Zahlung per Nachnahme. Eine Liste der Zahlungsarten findet sich im https://knowledge.plentymarkets.com/payment[Handbuch]. +
 Wenn das Modul Warenwirtschaft genutzt wird, haben die Einstellungen zur Bestandsführung zusätzlich Einfluss auf den automatischen Statuswechsel, sodass daraus ein anderes Verhalten resultieren kann.
 
 Was ein eingeloggter Benutzer von plentymarkets letztendlich in der Abwicklung eines Auftrags vom Typ Auftrag bearbeiten kann, hängt von seinen Benutzerrechten ab. Die folgende Beschreibung orientiert sich an einem Benutzer mit vollen Bearbeitungsrechten. Bei einem solchen Benutzer hängen die Bearbeitungsmöglichkeiten in einem Auftrag vom Fortschritt der Abwicklung und von der Herkunft ab. Insbesondere das Erzeugen von Dokumenten sorgt für systemseitige Einschränkungen der Bearbeitungsmöglichkeiten, die der Benutzer nicht umgehen kann. Nachdem ein Dokument erzeugt wurde, werden die Einstellungen eingeschränkt, die bearbeitet werden können. Welche Einstellungen noch bearbeitbar sind, hängt wiederum von dem Typ des Dokuments ab. Bei Aufträgen mit einer automatisch zugeordneten Herkunft ist die Herkunft ab dem Moment der Auftragsanlage, also bevor ein Dokument erzeugt wurde, nicht mehr änderbar. Bei Aufträgen mit einer manuell zugeordneten Herkunft ist die Herkunft auch nach Auftragsanlage noch änderbar. Bis das erste Dokument erzeugt wurde, können folgende Angaben ergänzt oder geändert werden:
 
- . die Rechnungsadresse,
- . die Lieferadresse,
- . die Auftragspositionen,
- . die Bankdaten des Kunden,
- . das Eingabedatum mit Eingabeuhrzeit des Auftrags,
- . das Auftragsgewicht,
- . die Markierung,
- . die Mahnstufe,
- . die Kundennotizen,
- . die Auftragsnotizen,
- . der Status eines Auftrags,
- . der Auftragstyp,
- . der Eigner des Auftrags,
- . die Herkunft, wenn es eine manuell zugeordnete Herkunft ist,
- . die Sprache des Auftrags,
- . das Lager des Auftrags,
- . der Warenausgang kann gebucht werden,
- . das Versanddatum,
- . das Rückgabedatum,
- . die Auftragswährung samt Umrechnungskurs,
- . die Zahlungsart,
- . das Zahlungsziel,
- . der Versanddienstleister,
- . das Versandprofil,
- . die externe Auftragsnummer,
- . das Zeichen des Kunden,
- . die Anzahl der Pakete,
- . die Paketnummern,
- . der Rabatt pro Artikelposition.
+ * Rechnungsadresse
+ * Lieferadresse
+ * Auftragspositionen
+ * Bankdaten des Kunden
+ * Eingabedatum mit Eingabeuhrzeit des Auftrags
+ * Auftragsgewicht
+ * Markierung
+ * Mahnstufe
+ * Kundennotizen
+ * Auftragsnotizen
+ * Status eines Auftrags
+ * Auftragstyp
+ * Eigner des Auftrags
+ * Herkunft, wenn es eine manuell zugeordnete Herkunft ist
+ * Sprache des Auftrags
+ * Lager des Auftrags
+ * Warenausgang kann gebucht werden
+ * Versanddatum
+ * Rückgabedatum
+ * Auftragswährung samt Umrechnungskurs
+ * Zahlungsart
+ * Zahlungsziel
+ * Versanddienstleister
+ * Versandprofil
+ * externe Auftragsnummer
+ * Zeichen des Kunden
+ * Anzahl der Pakete
+ * Paketnummern
+ * Rabatt pro Artikelposition
 
 Weitere Bearbeitungsmöglichkeiten, die zur Verfügung stehen, wenn noch kein Dokument erzeugt wurde, sind:
 
- . das Kopieren eines Auftrags,
- . das Teilen eines Auftrags,
- . das Löschen eines Auftrags,
- . das Gruppieren von Aufträgen,
- . das Zuordnen von Lagerorten,
- . das Lösen von Lagerortzuordnungen,
- . das Versenden von E-Mails,
- . das Zuordnen und Zurücksetzen von Zahlungen,
- . das Erstellen von Belegen,
- . das Erstellen von Artikeletiketten für die Varianten im Auftrag
- . und das Erstellen von Lieferaufträgen für den Auftrag.
+ * Kopieren eines Auftrags
+ * Teilen eines Auftrags
+ * Löschen eines Auftrags
+ * Gruppieren von Aufträgen
+ * Zuordnen von Lagerorten
+ * Lösen von Lagerortzuordnungen
+ * Versenden von E-Mails
+ * Zuordnen und Zurücksetzen von Zahlungen
+ * Erstellen von Belegen
+ * Erstellen von Artikeletiketten für die Varianten im Auftrag
+ * Erstellen von Lieferaufträgen für den Auftrag
 
 Das Erstellen eines Belegs, auch Dokument genannt, führt zu Einschränkungen der Bearbeitungsmöglichkeiten. Die Einschränkungen unterscheiden sich je nach Dokument, das erzeugt wurde. Die Dokumente, die in einem Auftrag vom Typ Auftrag erstellt werden können, werden in Tabelle 2 zusammen mit den Bearbeitungsmöglichkeiten aufgeführt.
 Zunächst werden jedoch noch einige andere Bearbeitungsmöglichkeiten kurz erläutert, wie das Gruppieren und Teilen von Aufträgen.
 Gruppieren bedeutet, dass mindestens zwei Aufträge zu einem neuen Auftrag zusammengefasst werden, wobei die eigentlichen Aufträge gelöscht werden. Der gruppierte Auftrag erhält eine neue Auftrags-ID.
 Gruppiert werden können Aufträge jedoch nur unter folgenden Bedingungen:
 
- * die Rechnungsanschrift ist gleich,
- * die Lieferanschrift ist gleich,
- * die Herkunft ist gleich,
- * der Auftragstyp aller Aufträge ist vom Typ _Auftrag_,
- * es wurde kein Rechnungsdokument erzeugt und
- * die Aufträge haben keine untergeordneten Aufträge anderer Auftragstypen.
+ * Rechnungsanschrift ist gleich
+ * Lieferanschrift ist gleich
+ * Herkunft ist gleich
+ * Auftragstyp aller Aufträge ist vom Typ _Auftrag_
+ * es wurde kein Rechnungsdokument erzeugt
+ * die Aufträge haben keine untergeordneten Aufträge anderer Auftragstypen
 
 Teilen eines Auftrags bedeutet, dass Artikelpositionen gewählt werden und ein neuer Auftrag angelegt wird, der diese Artikelpositionen enthält. Der neu angelegte Auftrag kann wiederum geteilt werden, wenn er mehr als eine Artikelposition enthält. Der ursprüngliche Auftrag bleibt erhalten, lediglich die gewählten Artikelpositionen werden aus dem Auftrag entfernt. Für jeden geteilten Auftrag stehen alle Bearbeitungsmöglichkeiten zur Verfügung.
 Das Erstellen von Lieferaufträgen bedeutet, dass im Funktionsumfang reduzierte Aufträge erstellt werden. Ein Lieferauftrag dient dem Versand von Waren aus unterschiedlichen Lagern oder mit unterschiedlicher Verfügbarkeit. Ein Lieferauftrag ist fest mit dem Auftrag, in dem er erstellt wurde, verbunden. Der ursprüngliche Auftrag wird in diesem Zusammenhang auch häufig Hauptauftrag genannt. In einem Lieferauftrag ist es z.B. nicht möglich eine Rechnung zu erstellen, da er nur dem Versand dient und die Rechnung die gesamte Bestellung berücksichtigt. Welche Funktionen genau in einem Lieferauftrag zur Verfügung stehen, wird später detailliert erläutert.
@@ -239,38 +249,48 @@ Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbe
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
 |Rücksendeschein|Das Erzeugen eines Rücksendescheins sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
+|Proformarechnung|Das Erzeugen einer Proformarechnung sorgt nicht für Einschränkungen.
 |===
 
 ===== Auftragstyp Angebot
 
-Der Auftragstyp Angebot dient der Unterbreitung von Angeboten an Kunden. Der Funktionsumfang oder die Bearbeitungsmöglichkeiten des Angebots sind geringer als beim Auftrag. So kann z.B. bei einem Angebot kein Warenausgang gebucht werden und es kann nicht in Lieferaufträge geteilt werden, weil dieser Auftragstyp nicht für den Versand vorgesehen ist. Aus diesem Grund können auch keine Paketnummern, kein Versanddatum und kein Rückgabedatum eingetragen werden sowie keine Lagerorte zugeordnet oder wieder gelöst werden. Aus den Aufzählungen oben sind also folgende Punkte nicht möglich: Q, R, S, BB, V, VI, XI. Außerdem ist die Anzahl der Dokumente, die in einem Angebot erzeugt werden können geringer. Vier unterschiedliche Dokumente können erzeugt werden. Diese Dokumente sind:
+Der Auftragstyp Angebot dient der Unterbreitung von Angeboten an Kunden. Der Funktionsumfang oder die Bearbeitungsmöglichkeiten des Angebots sind geringer als beim Auftrag. So kann z.B. bei einem Angebot kein Warenausgang gebucht werden und es kann nicht in Lieferaufträge geteilt werden, weil dieser Auftragstyp nicht für den Versand vorgesehen ist. Aus diesem Grund können auch keine Paketnummern, kein Versanddatum und kein Rückgabedatum eingetragen werden sowie keine Lagerorte zugeordnet oder wieder gelöst werden. Aus den Aufzählungen oben sind also folgende Punkte nicht möglich:
 
- * Rechnung,
- * Auftragsbestätigung,
- * Angebot und
- * Stornobeleg
+* Buchung des Warenausgangs
+* Eintragen des Versanddatums
+* Eintragen des Rückgabedatums
+* Eintragen der Paketnummern
+* Zuordnen von Lagerorten
+* Lösen von Lagerortzuordnungen
+* Erstellung von Lieferaufträgen
 
-Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokuments hat auch beim Angebot Einfluss auf die Bearbeitungsmöglichkeiten. Die folgende Tabelle listet auf, welche Bearbeitungsmöglichkeiten nach dem Erzeugen des jeweiligen Dokuments zur Verfügung stehen.
+Außerdem ist die Anzahl der Dokumente, die in einem Angebot erzeugt werden können geringer. Zwei unterschiedliche Dokumente können erzeugt werden. Diese Dokumente sind:
 
-[[tabelle-bearbeitungsmoeglichkeiten-angebot-nach-erzeugen]]
-.Bearbeitungsmöglichkeiten im Angebot nach dem Erzeugen eines Dokuments
-|===
-|Dokument|Bearbeitungsmöglichkeiten
+ * Auftragsbestätigung
+ * Angebot
 
-|Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
-|Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Angebot|Das Erzeugen eines Angebotsdokuments sorgt nicht für Einschränkungen.
-|Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
-|===
+Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines der beiden oben genannten Dokumente hat keinen Einfluss auf die Bearbeitungsmöglichkeiten. Wird aus dem Auftragstyp Angebot ein Auftrag generiert, bleibt das Angebot separat bestehen. Im generierten Auftrag stehen dann alle diesem Auftragstyp zugeordneten Bearbeitungsmöglichkeiten zur Verfügung. Die Verbindung von Angebot und dem daraus generierten Auftrag bleibt bestehen und ist im System nachvollziehbar.
 
 ===== Auftragstyp Vorbestellung
 
 Der Auftragstyp Vorbestellung dient zum Erfassen von Bestellungen, bei denen das Erscheinungs- oder Verfügbarkeitsdatum der Ware in der Zukunft liegt. Vorbestellungen können manuell erfasst werden oder neue Aufträge des Typs Auftrag, die z.B. Artikel mit einem Erscheinungsdatum in der Zukunft erhalten, können automatisiert in Vorbestellungen umgewandelt werden.  +
-Bei einer Vorbestellung kann kein Warenausgang gebucht werden und sie kann nicht in Lieferaufträge geteilt werden, weil dieser Auftragstyp nicht für den Versand vorgesehen ist. Aus diesem Grund können auch keine Paketnummern, kein Versanddatum und kein Rückgabedatum eingetragen werden sowie keine Lagerorte zugeordnet oder wieder gelöst werden. Aus den Aufzählungen oben sind also folgende Punkte nicht möglich: Q, R, S, BB, V, VI, XI. Außerdem ist die Anzahl der Dokumente, die in einer Vorbestellung erzeugt werden können geringer. Folgende Dokumente können erzeugt werden:
+Bei einer Vorbestellung kann kein Warenausgang gebucht werden und sie kann nicht in Lieferaufträge geteilt werden, weil dieser Auftragstyp nicht für den Versand vorgesehen ist. Aus diesem Grund können auch keine Paketnummern, kein Versanddatum und kein Rückgabedatum eingetragen werden sowie keine Lagerorte zugeordnet oder wieder gelöst werden.
+Aus den Aufzählungen oben sind also folgende Punkte nicht möglich:
 
- * Rechnung,
- * Auftragsbestätigung und
- * Stornobeleg.
+* Buchung des Warenausgangs
+* Eintragen des Versanddatums
+* Eintragen des Rückgabedatums
+* Eintragen der Paktenummern
+* Zuordnen von Lagerorten
+* Lösen von Lagerortzuordnungen
+* Erstellung von Lieferaufträgen
+
+Außerdem ist die Anzahl der Dokumente, die in einer Vorbestellung erzeugt werden können geringer. Folgende Dokumente können erzeugt werden:
+
+ * Rechnung
+ * Proformarechnung
+ * Auftragsbestätigung
+ * Stornobeleg
 
 Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokuments hat auch bei einer Vorbestellung Einfluss auf die Bearbeitungsmöglichkeiten. Die folgende Tabelle listet auf, welche Bearbeitungsmöglichkeiten nach dem Erzeugen des jeweiligen Dokuments zur Verfügung stehen.
 
@@ -280,6 +300,7 @@ Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokume
 |Dokument|Bearbeitungsmöglichkeiten
 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
+|Proformarechnung|Das Erzeugen einer Proformarechnung sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
 |===
@@ -298,17 +319,17 @@ Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen 
 Bei all diesen Typen kann eine Rückzahlung notwendig werden, deshalb kann bei Ihnen eine Gutschrift erstellt werden. +
 Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftragsstatus 11. Alle Varianten, die im Auftrag enthalten sind, zu dem die Gutschrift erzeugt wird, werden zunächst vollständig in die Gutschrift übernommen. Die Varianten können anschließend z.B. aus der Gutschrift entfernt werden. Generell stehen in einem Auftrag des Typs Gutschrift folgende Bearbeitungsmöglichkeiten nicht zur Verfügung:
 
- * L - kein Ändern des Auftragstyps
- * Q - kein Buchen eines Warenausgang
- * R - kein Eingabefeld für ein Versanddatum
- * S - kein Eingabefeld für ein Rückgabedatum
- * AA - kein Eingabefeld für die Paketanzahl
- * BB - kein Eingabefeld für Paketnummern
- * I - kein Kopieren des Auftrags
- * II - kein Teilen des Auftrags
- * V - kein Zuordnen von Lagerorten
- * VI - kein Lösen von Lagerorten
- * XI - kein Erstellen von Lieferaufträgen
+ * Ändern des Auftragstyps
+ * Buchen eines Warenausgang
+ * Eingabefeld für ein Versanddatum
+ * Eingabefeld für ein Rückgabedatum
+ * Eingabefeld für die Paketanzahl
+ * Eingabefeld für Paketnummern
+ * Kopieren des Auftrags
+ * Teilen des Auftrags
+ * Zuordnen von Lagerorten
+ * Lösen von Lagerorten
+ * Erstellen von Lieferaufträgen
 
 Die Mehrheit dieser Möglichkeiten sind relevant für den Versand von Ware und da eine Gutschrift nicht für den Versand gedacht ist, stehen sie in diesem Auftragstyp nicht zur Verfügung. +
 Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt werden können und welche Einschränkung durch das Erzeugen entstehen:
@@ -329,10 +350,10 @@ Der Auftragstyp Gewährleistung dient zum Erfassen und Abwickeln von Artikeln, b
 Eine Gewährleistung kann nur manuell erstellt werden. Eine Gewährleistung ist ein untergeordneter Auftragstyp, d.h. er ist einem anderen Auftrag eines anderen Typs zugeordnet und kann nur aus einem bereits bestehenden Auftrag heraus erstellt werden. Eine Gewährleistung kann aus einem Auftrag des Typs Auftrag oder des Typs Retoure erstellt werden. Beim Erzeugen einer Gewährleistung muss der Anwender wählen, welche Varianten aus dem übergeordneten Auftrag in die Gewährleistung übernommen werden sollen. Erst nachdem die Wahl durch Speichern bestätigt wurde, wird der Auftrag des Typs Gewährleistung erzeugt. Eine Gewährleistung wird automatisch auf Status 5 gesetzt beim Erzeugen. +
 In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Mahnstufe zu wählen. Eine Änderung des Auftragstyps ist ebenfalls nicht möglich. Außerdem kann der Auftrag nicht kopiert oder geteilt werden. Damit sind folgende Punkte aus der Aufzählung unter Auftrag nicht möglich:
 
- * H
- * L
- * I
- * II
+ * Wählen der Mahnstufe
+ * Änderung des Auftragstyps
+ * Kopieren eines Auftrags
+ * Teilen eines Auftrags
 
 [[tabelle-bearbeitungsmoeglichkeiten-gewaehrleistung-nach-erzeugen]]
 .Bearbeitungsmöglichkeiten in einer Gewährleistung nach dem Erzeugen eines Dokuments
@@ -356,24 +377,24 @@ Der Auftragstyp Retoure dient zum Erfassen von retournierten Artikeln. Eine Reto
 Beim manuellen Erzeugen einer Retoure muss der Anwender wählen, welche Varianten aus dem übergeordneten Auftrag in die Retoure übernommen werden sollen. Außerdem kann ein Status und ein Grund für die Retoure ausgewählt werden sowie eine Paketnummer eingetragen werden. Status 9 ist vorausgewählt. Erst nachdem die Wahl durch Speichern bestätigt wurde, wird der Auftrag des Typs Retoure erzeugt. +
 In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Mahnstufe zu wählen. Eine Änderung des Auftragstyps ist ebenfalls nicht möglich. Außerdem kann der Auftrag nicht kopiert oder geteilt werden. Weiterhin sind alle Bearbeitungsmöglichkeiten, die im Zusammenhang mit dem Versand oder Zahlungen stehen nicht möglich. Damit sind folgende Punkte aus der Aufzählung unter Auftrag nicht möglich:
 
- * H
- * L
- * Q
- * R
- * S
- * T
- * U
- * V
- * W
- * X
- * Y
- * Z
- * AA
- * BB
- * CC
- * I
- * II
- * XI
+ * Wählen der Mahnstufe
+ * Änderung des Auftragstyps
+ * Buchung des Warenausgangs
+ * Eintragen des Versanddatums
+ * Eintragen des Rückgabedatums
+ * Änderung der Auftragswährung samt Umrechnungskurs
+ * Änderung der Zahlungsart
+ * Änderung des Zahlungsziels
+ * Änderung des Versanddienstleisters
+ * Änderung des Versandprofils
+ * Änderung der externen Auftragsnummer
+ * Änderung des Zeichens der Kunden
+ * Änderung der Anzahl der Pakete
+ * Änderung der Paktenummnern
+ * Einstellen des Rabatts pro Artikelposition
+ * Kopieren eines Auftrags
+ * Teilen eines Auftrags
+ * Löschen eines Auftrags
 
 In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet werden. Es kann ein Hinweis zur Variante sowie ein Prozentwert, der den Artikelwert der retournierten Varianten angibt, eingetragen werden. Der Grund für die Retoure kann geändert sowie Ware wieder eingebucht werden.
 
@@ -405,6 +426,7 @@ Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden 
 |Rücksendeschein|Das Erzeugen eines Rücksendescheins sorgt nicht für Einschränkungen.
 |Reparaturschein|Das Erzeugen eines Reparaturscheins sorgt nicht für Einschränkungen.
 |Stornobeleg|Ein Stornobeleg kann nur erzeugt werden, wenn bereits eine Rechnung erzeugt wurde. Durch das Erzeugen des Stornobelegs stehen wieder alle Bearbeitungsmöglichkeiten, die durch das Erzeugen einer Rechnung gesperrt wurden, zur Verfügung.
+|Proformarechnung|Das Erzeugen einer Proformarechnung sorgt nicht für Einschränkungen.
 |===
 
 ===== Auftragstyp Sammelauftrag
@@ -419,8 +441,8 @@ Die Aufträge, die in einen Sammelauftrag übernommen werden, können durch den 
 Der Sammelauftrag selbst wird automatisch beim Erstellen auf Status 1 gesetzt. +
 In einem Sammelauftrag können folgende Dokumente erstellt werden:
 
- * Rechnung und
- * Mahnung.
+ * Rechnung
+ * Mahnung
 
 [[tabelle-bearbeitungsmoeglichkeiten-sammelauftrag-nach-erzeugen]]
 .Bearbeitungsmöglichkeiten in einem Sammelauftrag nach dem Erzeugen eines Dokuments
@@ -428,7 +450,7 @@ In einem Sammelauftrag können folgende Dokumente erstellt werden:
 |Dokument|Bearbeitungsmöglichkeiten
 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
-|Mahnung|Inhalte werden ergänzt
+|Mahnung|Inhalte werden ergänzt.
 |===
 
 ===== Auftragstyp Sammelgutschrift
