@@ -7,7 +7,7 @@ In plentymarkets wird der Datenimport mit ElasticSync durchgeführt. Ein Import 
 plentymarkets stellt verschiedene Sync-Typen zur Verfügung, mit denen ausgewählte Daten importiert werden können. Je nach Typ müssen bestimmte Datensätze vorhanden sein. Es gibt jeweils Abgleich- und Zuordnungsfelder, die für den Datenimport verwendet werden können.
 
 Ein neuer Sync kann im Menü *Daten » ElasticSync* erstellt werden.
-Die verschiedenen Sync-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch] unter *Daten » Daten importieren » Sync-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Sync-Typ für welche Importdaten zur Verfügung steht.
+Die verschiedenen Sync-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch^] unter *Daten » Daten importieren » Sync-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Sync-Typ für welche Importdaten zur Verfügung steht.
 
 [[sync-typen]]
 .Sync-Typen in plentymarkets
