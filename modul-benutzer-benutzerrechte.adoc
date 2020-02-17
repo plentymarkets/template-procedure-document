@@ -11,7 +11,7 @@ Folgende Benutzerzugänge gibt es in plentymarkets:
  * Backend
  * REST-API
 
-Jeder Benutzerzugang ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch beschrieben: https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90[https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90] +
+Jeder Benutzerzugang ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#90[Benutzerkonten verwalten^] beschrieben. +
 Außerdem können optional Benutzerrollen angelegt werden. Mithilfe von Benutzerrollen lassen sich Rechte für mehrere Benutzer gleichzeitig vergeben. Die Benutzer müssen dafür der Rolle zugeordnet werden.
 
 ===== Benutzerzugang Admin
@@ -27,8 +27,7 @@ Der Benutzerzugang Backend verfügt standardmäßig über keine Rechte und biete
 Für den Benutzerzugang REST-API können im Benutzerkonto REST-Calls freigeschaltet werden. Diese werden einzeln aktiviert. *Achtung*: Nutzern mit diesem Benutzerzugang wird der Zugriff auf das Backend verweigert.
 
 Standardmäßig sind jedoch keine Zugriffsrechte für REST aktiviert. Es besteht lediglich die Möglichkeit, einem Benutzer des Zugangs REST-API per REST Zugriff auf Daten des Systems zu gewähren. Ein REST-API-Benutzer hat keinen Zugriff auf Daten über die Softwareoberfläche. +
-Eine detaillierte Beschreibung der REST-Schnittstelle findet sich unter folgender Adresse: +
-https://developers.plentymarkets.com/[https://developers.plentymarkets.com/]
+Eine detaillierte Beschreibung der REST-Schnittstelle findet sich auf der link:https://developers.plentymarkets.com/[Developers-Seite^]. +
 
 ==== Rechte vergeben
 
@@ -66,6 +65,7 @@ Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle
 
 [[tabelle-sichtbarkeiten]]
 .Sichtbarkeiten in plentymarkets
+[cols="1,3"]
 |====
 |*Sichtbarkeiten* |*Erläuterung*
 

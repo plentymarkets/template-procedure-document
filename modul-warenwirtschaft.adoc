@@ -19,7 +19,7 @@ Zu der in plentymarkets integrierten Warenwirtschaft gehören die folgenden Aufg
 * Inventur vornehmen
 * Waren ausbuchen
 
-Ausführliche Beschreibungen zu den Inhalten und Abläufen der hier genannten Aufgabenfelder sind außerdem im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch] im Bereich Warenwirtschaft zu finden.
+Ausführliche Beschreibungen zu den Inhalten und Abläufen der hier genannten Aufgabenfelder sind außerdem im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch^] im Bereich Warenwirtschaft zu finden.
 
 
 ===== Verantwortungsträger im Modul Warenwirtschaft
@@ -28,7 +28,7 @@ Bei den Prozessen, die im Bereich Warenwirtschaft ablaufen, liegt die Verantwort
 
 ==== Lager einrichten
 Für ein funktionierendes Lager wird zunächst mindestens ein Lager, ein Lieferant und Warenbestand benötigt. Dabei spielen auch Lagerorte und Dimensionen eine Rolle. Lagerorte sind die konkreten Ablageplätze, an denen die Artikel im Lager liegen. Um Lagerorte zu generieren wird mindestens eine Dimension benötigt. Aufgebaut werden Lager aus Dimensionen, die komplett frei definierbar sind. Dies können beispielsweise Hallen, Regale und Böden sein. Alle Dimensionen zusammen bilden schließlich das Layout des Lagers. Lagerorte sind in plentymarkets allerdings keine Dimension. +
-Nähere Informationen zum Einrichten eines Lagers sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/lager-einrichten[Lager einrichten] aufgeführt.
+Nähere Informationen zum Einrichten eines Lagers sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/lager-einrichten[Lager einrichten^] aufgeführt.
 
 ==== Lagertypen in plentymarkets
 plentymarkets stellt verschiedene Lagertypen bereit, die je nach Zweck gewählt werden können. Beim Anlegen von Lagern wird empfohlen, von vornherein ein Vertriebslager und ein Reparaturlager einzurichten.
@@ -109,7 +109,7 @@ Der Import von Warenbestand kann auch über das Backend im Menü *Waren » Neuer
 ===== Import über die App
 
 Zum Import von Warenbestand kann außerdem die plentymarkets App verwendet werden. Voraussetzung dafür ist, dass der Anwender die Berechtigung zum Einbuchen von Ware hat. Benutzerkonten mit Admin-Rechten haben standardmäßig Berechtigungen, um Einbuchungen über die App vorzunehmen. Personen ohne Admin-Rechte müssen diese Berechtigungen allerdings erteilt bekommen. Dies gilt auch für das Vornehmen weiterer Einstellungen zum Einbuchen von Ware. Folglich sollte immer darauf geachtet werden, dass alle notwendigen Rechte vorhanden sind bzw. erteilt wurden. Um den Import-Vorgang zu beschleunigen, können Lagerorte gelabelt werden. Dies ermöglicht das Scannen des Ziellagerort-Labels. +
-Weitere Informationen zum Warenimport über die plentymarkets App gibt es im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/app/funktionen/lagerverwaltung/einbuchen-umbuchen[Ware einbuchen und umbuchen].
+Weitere Informationen zum Warenimport über die plentymarkets App gibt es im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/app/funktionen/lagerverwaltung/einbuchen-umbuchen[Ware einbuchen und umbuchen^].
 
 
 ==== Warenbestand umbuchen
@@ -150,10 +150,10 @@ Die Umbuchung in ein Lager ohne MHD und Charge ist möglich. Die Chargeninformat
 
 Auch die plentymarkets App bietet die Möglichkeit, Warenbestand umzubuchen. Dazu ist es zunächst erforderlich, dass Benutzer die nötigen Berechtigungen haben. Lediglich Benutzerkonten mit Admin-Rechten haben standardmäßig die Berechtigung, Umbuchungen über die App vorzunehmen. Mit Umbuchungsvorlagen und App-Einstellungen kann der Umbuchungsvorgang an die spezifischen Lagergegebenheiten angepasst werden. Es können beliebig viele Vorlagen für das Umbuchen erstellt werden, über die die Felder und Felderanordnung definiert wird, die Benutzern beim Umbuchen in der App angezeigt werden
 Wird keine Vorlage erstellt, wird automatisch die Standardvorlage gewählt. Der Benutzer kann weitere Einstellungen vornehmen, um den Umbuchungsvorgang zu personalisieren.
-Hardware-Empfehlungen für das Umbuchen von Ware über die plentymarkets App sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/schnelleinstieg/systemvoraussetzungen[Systemvoraussetzungen] aufgeführt.
+Hardware-Empfehlungen für das Umbuchen von Ware über die plentymarkets App sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/schnelleinstieg/systemvoraussetzungen[Systemvoraussetzungen^] aufgeführt.
 
 
-Falls Sie *Warenbestand korrigieren* möchten, finden Sie dazu im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-pratices[Best Practices: Bestand umbuchen/korrigieren/löschen] nähere Informationen.
+Falls Sie *Warenbestand korrigieren* möchten, finden Sie dazu im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-pratices[Best Practices: Bestand umbuchen/korrigieren/löschen^] nähere Informationen.
 
 
 ==== Warenbestand ausbuchen
@@ -183,7 +183,7 @@ Wird ein Auftrag erst nach dem Warenausgang widerrufen bzw. stellt der Kunde fes
 ===== Gewährleistungen
 Die Vorgehensweise bei Gewährleistungen ist der Vorgehensweise bei Retouren ähnlich. In beiden Fällen erhält man Waren eines Auftrags zurück, bei dem der Warenausgang gebucht ist. Bei einer Gewährleistung ist der Artikel meist defekt. In diesem Fall erwartet der Kunde einen Ersatzartikel oder die Erstattung des Rechnungsbetrags (Gutschrift). Da der Artikel bei Gewährleistungen meist defekt ist, wird der retournierte Artikel im Regelfall nicht wieder eingebucht. Jedoch ist häufig eine zweite Lieferung mit eigener Auftrags-ID und eigenem Warenausgang notwendig. +
 
-Weitere Informationen zum Thema Ausbuchen von Warenbestand sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/waren-ausbuchen[Waren ausbuchen] vorhanden.
+Weitere Informationen zum Thema Ausbuchen von Warenbestand sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/waren-ausbuchen[Waren ausbuchen^] vorhanden.
 
 ==== Lageraufbau
 
@@ -231,17 +231,17 @@ Die Inventur per Datenaustausch erfolgt in mehreren Schritten. Zunächst werden 
 In den Einstellungen eines Lagers gibt es die Option *Inventur-Modus aktiv*. Damit kann der Warenbestand eines Lagers für die Dauer der Inventur eingefroren werden. Einfrieren bedeutet, dass der physische Bestand, der für Varianten gespeichert ist, unverändert bleibt und keine Warenbewegungen registriert oder Warenberechnungen durchgeführt werden.
 Die Inventur im Inventur-Modus erfolgt am besten in vier Schritten. Zunächst wird der Inventur-Modus aktiviert. Dann wird der aktuelle Bestand exportiert. Anschließend werden alle Warenbestände geleert und neu eingebucht. Dank des Einfrierens der Bestände werden im Inventur-Modus weder die geleerten Bestände noch die neuen Bestände an Varianten übertragen. Wenn alle Inventurbestände ins System eingebucht und der Inventur-Modus deaktiviert wurde, werden die neuen Bestände an die Varianten übertragen. Der zuvor eingefrorene Bestand wird also überschrieben. Der reservierte Bestand wird auch im Inventur-Modus korrekt geführt. Beim Eingang neuer Aufträge erfolgt also eine Reservierung.
 
-Weitere Informationen zu den bisher genannten Inventurvorgängen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/inventur-vornehmen[Inventur vornehmen] vorhanden.
+Weitere Informationen zu den bisher genannten Inventurvorgängen sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/inventur-vornehmen[Inventur vornehmen^] vorhanden.
 
 ===== Inventur mit der plentymarkets App durchführen
 
-Eine Inventur der Ware kann auch über die plentymarkets App durchgeführt werden. Wie das geht und welche Einstellungen im Voraus konfiguriert werden müssen, kann auf der Handbuchseite link:https://knowledge.plentymarkets.com/app/funktionen/lagerverwaltung/inventur[Inventur durchführen] nachgelesen werden.
+Eine Inventur der Ware kann auch über die plentymarkets App durchgeführt werden. Wie das geht und welche Einstellungen im Voraus konfiguriert werden müssen, kann auf der Handbuchseite link:https://knowledge.plentymarkets.com/app/funktionen/lagerverwaltung/inventur[Inventur durchführen^] nachgelesen werden.
 
 ===== Warenbestand täglich sichern
 
-Außerdem gibt es die Möglichkeit, den Warenbestand täglich zu sichern und somit ein Daten-Backup zu erstellen, was es ermöglicht, den Warenbestand zu einem beliebigen Zeitpunkt zu ermitteln. Was dafür zu tun ist, wird im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-practices-warenbestand[Best Practices: Warenbestand täglich sichern] erklärt.
+Außerdem gibt es die Möglichkeit, den Warenbestand täglich zu sichern und somit ein Daten-Backup zu erstellen, was es ermöglicht, den Warenbestand zu einem beliebigen Zeitpunkt zu ermitteln. Was dafür zu tun ist, wird im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-practices-warenbestand[Best Practices: Warenbestand täglich sichern^] erklärt.
 
 ==== Daten-Backup
 
 Anwender können Backups im Menü *Einrichtung » Einstellungen » Daten » Backup* für die verschiedensten Bereiche erstellen und/oder einspielen. Um ein Backup für Lagerorte im System einzuspielen, muss der Typ Warehouse gewählt werden.
-Im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/daten/backup[Datenbank-Backup durchführen] wird der Vorgang näher beschreiben.
+Im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/daten/backup[Datenbank-Backup durchführen^] wird der Vorgang näher beschreiben.
