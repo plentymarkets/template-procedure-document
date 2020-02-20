@@ -153,7 +153,7 @@ Wird keine Vorlage erstellt, wird automatisch die Standardvorlage gewählt. Der 
 Hardware-Empfehlungen für das Umbuchen von Ware über die plentymarkets App sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/schnelleinstieg/systemvoraussetzungen[Systemvoraussetzungen^] aufgeführt.
 
 
-Falls Sie *Warenbestand korrigieren* möchten, finden Sie dazu im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-pratices[Best Practices: Bestand umbuchen/korrigieren/löschen^] nähere Informationen.
+Falls Sie *Warenbestand korrigieren* möchten, finden Sie dazu im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-pratices[Praxisbeispiel: Bestand umbuchen/korrigieren/löschen^] nähere Informationen.
 
 
 ==== Warenbestand ausbuchen
@@ -239,7 +239,7 @@ Eine Inventur der Ware kann auch über die plentymarkets App durchgeführt werde
 
 ===== Warenbestand täglich sichern
 
-Außerdem gibt es die Möglichkeit, den Warenbestand täglich zu sichern und somit ein Daten-Backup zu erstellen, was es ermöglicht, den Warenbestand zu einem beliebigen Zeitpunkt zu ermitteln. Was dafür zu tun ist, wird im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-practices-warenbestand[Best Practices: Warenbestand täglich sichern^] erklärt.
+Außerdem gibt es die Möglichkeit, den Warenbestand täglich zu sichern und somit ein Daten-Backup zu erstellen, was es ermöglicht, den Warenbestand zu einem beliebigen Zeitpunkt zu ermitteln. Was dafür zu tun ist, wird im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-practices-warenbestand[Praxisbeispiel: Warenbestand täglich sichern^] erklärt.
 
 ==== Daten-Backup
 
