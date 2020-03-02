@@ -146,11 +146,6 @@ Voraussetzung hierbei ist, dass die potenziellen Käufer bei ihrem Besuch im Web
 |Sendet Kunden eine E-Mail, wenn diese sich neu im Webshop registriert haben.
 |kein Versand
 
-|Tell-A-Friend
-|Sendet eine E-Mail mit einem Link zu einem Artikel aus dem Webshop als Empfehlung an eine E-Mail-Adresse, die der Kunde im Webshop in das Tell-A-Friend-Formular eingetragen hat. +
-*_Wichtig:_* Diese Art von E-Mail-Versand kann aufgrund der fehlenden vorherigen Einwilligung als unzulässiger Spam gelten. Der Anwender sollte sich daher von einem kundigen Fachwanwalt beraten lassen.
-|kein Versand
-
 |Neuer Scheduler-Auftrag
 |Sendet eine E-Mail, wenn das eingestellte Intervall für ein “Abo” erreicht wird.
 |kein Versand

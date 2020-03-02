@@ -16,7 +16,7 @@ plentymarkets übernimmt den Support für die folgenden Versanddienstleister- bz
 
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<integrierte_versanddienstleister, Integrierte Versanddienstleister>> und <<integrierte_fulfillment_dienstleister, Integrierte Fulfillment-Dienstleister>>.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<Integrierte Versanddienstleister, Integrierte Versanddienstleister>> und <<Integrierte Fulfillment-Dienstleister, Integrierte Fulfillment-Dienstleister>>.
 
 Bevor der Anwender eine der in plentymarkets angebotenen Schnittstellen zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren.
 
@@ -26,7 +26,7 @@ In einem neu angelegten System sind 259 Lieferländer bzw. Lieferregionen im Sys
 
 Die IDs können nicht geändert werden und die Lieferländer können nicht gelöscht werden. Dem Anwender ist es nicht möglich, eigene Lieferländer im System hinzuzufügen.
 
-Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden. Der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und -regionen und deren IDs sind in <<anhang_lieferlaender_mit_id, Anhang: Lieferländer mit ID>> aufgelistet.
+Die IDs 111, 157, 167, 251 und 257 sind nicht vergeben. Der Standardname kann nicht geändert werden. Der Anwender kann jedoch den Namen, wie er im Webshop seinen Kunden angezeigt werden soll, anpassen. Die Lieferländer und -regionen und deren IDs sind in <<Anhang Lieferländer mit ID, Anhang Lieferländer mit ID>> aufgelistet.
 
 In einem neu angelegten System sind die Lieferländer *Deutschland (ID 1)* und *United Kingdom (ID 12)* bereits aktiviert. Für das Lieferland Deutschland ist das Lager *ALLE* und die Sprache *de* standardmäßig ausgewählt; für das Lieferland United Kingdom ist das Lager *KS Sales* und die Sprache *en* standardmäßig ausgewählt. Das gewählte Lager ist dem Lieferland als Hauptlager zugeordnet und wird z.B. in Aufträgen automatisch eingestellt. Wenn die Einstellung *ALLE* gewählt wurde, werden alle Lager dem Lieferland zugeordnet. In diesem Fall wird für Aufträge automatisch das Lager mit der kleinsten ID gewählt.
 
@@ -135,7 +135,6 @@ In <<tabelle-versanddienstleister-ids>> werden die standardmäßig in plentymark
 
 |====
 
-[#500]
 ==== Versandprofil
 
 Im Versandprofil stellt der Anwender die Versandmöglichkeiten ein, die seine Kunden in der Kaufabwicklung wählen können oder die der Webshop bestimmten Auftragsarten automatisch zuweist.
@@ -330,7 +329,7 @@ Die Adressdaten, sofern im Kundendatensatz gespeichert, beinhalten:
  * Postnummer (bei DHL)
  * Packstation/Postfiliale (bei DHL)
 
-Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<zollinhaltserklärung_für_sendungen_ins_ausland, Zollinhaltserklärung für Sendungen ins Ausland>>.
+Für Sendungen ins Ausland, die mit DHL versendet werden, werden weitere Daten zu den Artikeln übertragen. Siehe Kapitel <<Zollinhaltserklärung für Sendungen ins Ausland, Zollinhaltserklärung für Sendungen ins Ausland>>.
 
 ==== Versandmöglichkeiten über Marktplätze
 
@@ -355,12 +354,12 @@ Aktuell kann der Anwender Zollinhaltserklärungen und Paketkarten ausschließlic
 
 Zollinhaltserklärungen und Paketkarten für DHL-Sendungen können im System erst generiert werden, wenn der Auftrag bei DHL angemeldet und eine Rechnung erzeugt wurde.
 
-Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<anhang_dhl_paketkarte_und_zollinhaltserklärung, Anhang: DHL Paketkarte und Zollinhaltserklärung>> zu finden.
+Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<Anhang DHL Paketkarte und Zollinhaltserklärung, Anhang DHL Paketkarte und Zollinhaltserklärung>> zu finden.
 
 ==== Anhänge
 
 
-===== Anhang: Lieferländer mit ID
+===== Anhang Lieferländer mit ID
 
 In <<tabelle-lieferlaender-mit-id>> sind die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs aufgelistet.
 
@@ -636,7 +635,7 @@ In <<tabelle-lieferlaender-mit-id>> sind die im System voreingestellten und für
 |264 |Luganer See von Ponte Tresa bis Porto Ceresio (IT)
 |====
 
-===== Anhang: DHL Paketkarte und Zollinhaltserklärung
+===== Anhang DHL Paketkarte und Zollinhaltserklärung
 
 Beispiel einer Paketkarte (CP 71) (siehe <<bild-dhl-paketkarte>> und einer Zollinhaltserklärung (CN 23) <<bild-dhl-zollinhaltserklaerung>> für DHL mit dem Lieferland Schweiz:
 
