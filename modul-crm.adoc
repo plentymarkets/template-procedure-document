@@ -11,7 +11,6 @@ Das CRM-Modul von plentymarkets erlaubt das Verwalten, Speichern und Bearbeiten 
 
 Im plentymarkets CRM-Modul beinhaltet der Begriff _Kontakt_ nicht nur natürliche Personen, sondern auch Firmen. In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
 
-
 ==== Kontakt-IDs
 
 Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
@@ -63,7 +62,7 @@ Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Ku
 Für die anderen drei Beispielkontaktdatensätze (IDs 101, 102 und 103) sind bereits Bewegungsdaten gespeichert. Bewegungsdaten beinhalten die folgenden Informationen:
 
 * Datum und Uhrzeit der Registrierung im Webshop des Anwenders
-* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<regulaerer_zugang_und_gastzugang, Regulärer Zugang und Gastzugang>>)
+* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<Regulärer Zugang und Gastzugang, Regulärer Zugang und Gastzugang>>)
 * Datum und Uhrzeit der letzten Aktualisierung des Kontaktdatensatzes
 * Datum und Uhrzeit des letzten Logins
 * Datum und Uhrzeit des letzten Auftrags
@@ -85,7 +84,7 @@ Ob ein Kontaktdatensatz im System erstellt wird, hängt zudem vom verwendeten We
 
 *Auftragszuordnung bei regulären Zugängen und Gastzugängen*
 
-Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kontaktübersicht zu sehen (siehe <<bild-uebersicht-kontaktdatensaetze>> in Kapitel <<kontakt_ids, Kontakt-IDs>>).
+Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kontaktübersicht zu sehen (siehe <<bild-uebersicht-kontaktdatensaetze>> im Kapitel <<Kontakt-IDs, Kontakt-IDs>>).
 
 Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auftrag zugeordnet und die Adresse gespeichert. Über die Schnellsuche kann der Anwender sehen, wie viele Aufträge ein bestimmter Gastkunde im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: Wenn der Kunde seine Bestellung reklamiert, wird ggf. eine Gutschrift angelegt.
 
@@ -144,7 +143,7 @@ In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden.
 
 ==== Rabattsystem für Kundenklassen
 
-Wie im Kapitel <<kundenklassen, Kundenklassen>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
+Wie im Kapitel <<Kundenklassen, Kundenklassen>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
 
  * Kundenklassenrabatt
  * Rabatt auf den Nettowarenwert
@@ -347,7 +346,6 @@ Automatische Löschungen von Kundendaten wie Name, Anschrift etc. werden vom Sys
 
 Wenn keine Verknüpfung zwischen einem Kontaktdatensatz und einem Auftrag besteht –  das heißt, der Auftrag ist archiviert – kann der Anwender den Kontaktdatensatz löschen. Denkbar wäre auch, dass der Kunde sich zwar registriert hat, jedoch nie eine Bestellung über seinen Zugang eingegangen ist; in diesem Fall kann der Anwender den Kontaktdatensatz ebenfalls löschen.
 
-
 [.subhead]
 Anonymisierung von Kundendaten
 
@@ -363,8 +361,7 @@ Aufbewahrungspflicht
 
 Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen Daten zu sichern und diese ggf. nach Ablauf der Aufbewahrungsfrist selbstständig zu löschen. Eine systemseitige Erinnerungsfunktion o.ä. für das Löschen von Daten ist in plentymarkets nicht vorhanden.
 
-
-=== Import und Export
+==== Import und Export
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
@@ -378,3 +375,7 @@ Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden gespeicherte Daten
 ==== Backup
 
 Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentymarkets dafür vorgesehene Menü einzuspielen.
+
+==== Änderungshistorie
+
+Über die link:https://knowledge.plentymarkets.com/daten/aenderungshistorie[Änderungshistorie^] kann der Anwender nachverfolgen, welcher Benutzer im System zu welchem Zeitpunkt welche Änderung an einem Datensatz vorgenommen hat.

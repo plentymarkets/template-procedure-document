@@ -2,7 +2,7 @@
 
 Um Newsletter an Kontakte zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentymarkets speichern oder einen externen Newsletter-Anbieter mit plentymarkets verknüpfen.
 
-Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine Newsletter über den externen Anbieter CleverReach versenden oder einen Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Plugins sind auf dem link:https://marketplace.plentymarkets.com[plentyMarketplace^] zu finden.
+Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine Newsletter über den externen Anbieter CleverReach versenden oder einen Newsletter-Anbieter über ein Plugin anzubinden. Weitere Informationen zu Newsletter-Plugins sind auf dem link:https://marketplace.plentymarkets.com/plugins/sales/marketing[plentyMarketplace^] zu finden.
 
 Der Anwender kann bestimmte Ereignisse in seinem System einstellen. Wenn dieses Ereignis eintritt, resultiert daraus eine Aktion, d.h. der Newsletter wird dann automatisiert über das System an die Kunden bzw. Interessenten, die sich z.B. im Webshop für den Newsletter angemeldet haben, versendet.
 
@@ -27,7 +27,6 @@ Wenn der Anwender die Double-Opt-In-Methode verwenden möchte, kann er für die 
 
 Tritt das Ereignis ein, dass der Kunde sich für den Bezug des Newsletters im Webshop angemeldet hat, versendet das System automatisch die mit dem Ereignis *Newsletter Opt-In* verknüpfte E-Mail-Vorlage an den Kunden. Diese E-Mail-Vorlage sollte den Bestätigungslink, den der Kunde anklicken muss, um die Newsletter-Anmeldung abzuschließen, enthalten. Sobald der Kunde den Bestätigungslink anklickt, wird die mit dem Ereignis *Bestätigung Newsletter-Opt-In* verknüpfte E-Mail-Vorlage an den Kunden gesendet. Diese E-Mail-Vorlage sollte einen Text zur Bestätigung der erfolgreichen Newsletter-Anmeldung enthalten.
 
-
 ==== Integrierter Newsletter-Dienst
 
 Der Anwender muss die Zugangsdaten des E-Mail-Postfachs, aus dem er die Newsletter versenden möchte, speichern, damit das System E-Mails von dieser E-Mail-Adresse versenden kann.
@@ -42,7 +41,7 @@ Beim Erstellen des ersten Ordners schlägt das System die ID 1 vor. Beim Erstell
 
 ==== Externe Newsletter-Anbieter
 
-Neben dem im System verfügbaren internen Newsletter-Dienst hat der Anwender die Möglichkeit seine Newsletter über CleverReach zu versenden.
+Neben dem im System verfügbaren internen Newsletter-Dienst und dem Angebot von Newsletter-Plugins im link:https://marketplace.plentymarkets.com/plugins/sales/marketing[plentyMarketplace^] hat der Anwender die Möglichkeit seine Newsletter über CleverReach zu versenden.
 
 ===== CleverReach
 
