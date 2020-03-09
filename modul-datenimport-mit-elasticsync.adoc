@@ -92,7 +92,8 @@ Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Impo
 Als Quelle stehen die Optionen *Manueller Upload*, *FTP*, *SFTP* oder *HTTPS* zur Verfügung.
 Je nach gewählter Option werden weitere Einstellungen sichtbar.
 
-Über den Abgleich wird sichergestellt, dass die Daten identifiziert und korrekt übernommen werden. Sind die Daten einmal im System, werden die gleichen Daten bei erneuter Verarbeitung ignoriert, d.h. im System ändert sich nichts. Falls während des Imports ein Fehler auftritt, ist dieser im Menü unter *Daten » Logs* aufgeführt. Dort elasticSyncId als Referenztyp wählen und nach der id filtern.
+Über den Abgleich wird sichergestellt, dass die Daten identifiziert und korrekt übernommen werden. Sind die Daten einmal im System, werden die gleichen Daten bei erneuter Verarbeitung ignoriert, d.h. im System ändert sich nichts. Falls während des Imports ein Fehler auftritt, ist dieser im Menü unter *Daten » Logs* aufgeführt. Dort elasticSyncId als Referenztyp wählen und nach der ID filtern.
+Alternativ können Fehler, die während des Importvorgangs aufgetreten sind, auch im Menü *Daten » Import* eingesehen werden.
 Wurde der Import gestartet, ist kein Abbruch mehr möglich.
 
 Es gibt die folgenden Anforderungen an die Dateien: +
