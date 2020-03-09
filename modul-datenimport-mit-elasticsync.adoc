@@ -154,10 +154,6 @@ Search pattern: /^(\w+), (\w+)$/ +
 Replace pattern: $2 $1 +
 Result: “Max Mustermann”
 
-// Logs/Report (noch nicht fertig)
-// In der Übersicht eines Syncs steht ein Report zur Verfügung/im Menü Daten » Logs mit Klick auf die Schaltfläche Logs aufgerufen werden kann. Er ist eine Art internes Kontrollsystem von plentymarkets und zeigt die importierten Zeilen des Syncs und die Erfolgs- und Fehlermeldungen an, die mit Klick auf die Spalte Nachricht eingesehen werden können. Um bestimmte Sync-Daten abzurufen, kann ein Filter verwendet werden.
-
-
 ==== Import von Massendaten
 Die Queue sorgt dafür, dass auch große Datenmengen importiert werden können. Noch vor dem Import wird die Importdatei in Pakete zerlegt und anschließend in sogenannten Jobs abgearbeitet. Ein Job besteht aus 750 Zeilen einer CSV-Datei. Jedoch werden auch Importdateien, die weniger als 750 Zeilen enthalten, zu einem Job. Wird ein Sync gestartet, wird die CSV-Datei in die entsprechenden Jobs aufgeteilt und in die Queue eingereiht. In der Queue werden neue Jobs ständig abgerufen und die Syncs werden abgearbeitet. Dabei gibt es zwei verschiedene Status. Der Status *Offene Jobs* bedeutet, dass es Jobs gibt, die sich noch in der Queue befinden und darauf warten, abgearbeitet zu werden. *Abgeschlossene Jobs* hingegen wurden bereits bearbeitet und die Daten dementsprechend importiert.
 
