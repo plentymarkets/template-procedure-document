@@ -159,3 +159,8 @@ Result: “Max Mustermann”
 
 ==== Import von Massendaten
 Die Queue sorgt dafür, dass auch große Datenmengen importiert werden können. Noch vor dem Import wird die Importdatei in Pakete zerlegt und anschließend in sogenannten Jobs abgearbeitet. Ein Job besteht aus 750 Zeilen einer CSV-Datei. Jedoch werden auch Importdateien, die weniger als 750 Zeilen enthalten, zu einem Job. Wird ein Sync gestartet, wird die CSV-Datei in die entsprechenden Jobs aufgeteilt und in die Queue eingereiht. In der Queue werden neue Jobs ständig abgerufen und die Syncs werden abgearbeitet. Dabei gibt es zwei verschiedene Status. Der Status *Offene Jobs* bedeutet, dass es Jobs gibt, die sich noch in der Queue befinden und darauf warten, abgearbeitet zu werden. *Abgeschlossene Jobs* hingegen wurden bereits bearbeitet und die Daten dementsprechend importiert.
+
+==== Status von Syncs einsehen
+
+Im Menü *Daten » Status* können Informationen zum Status von importierten Syncs eingesehen werden. Die Übersicht enthält Details zum Fortschritt der Sync-Jobs sowie zu eventuellen Fehlern, die während des Importvorgangs aufgetreten sind. Die Importe können bis zu 7 Tage zurückverfolgt werden.
+In der Detailansicht werden dem Nutzer die konkreten Fehlermeldungen sowie Angaben zu Herkunft und Art des Fehlers zur Verfügung gestellt. Anhand der Fehlermeldungen kann die CSV-Datei entsprechend abgeändert und der Import anschließend erneut gestartet werden.
