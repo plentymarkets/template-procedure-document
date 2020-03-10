@@ -46,6 +46,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
 |OTTO|[_Ja/Nein_]|Der Marktplatz OTTO verfügt über drei Schnittstellen: *Direktversand*, *Cooperation* und *Integration*, die sich im Auftragsimport unterscheiden. Weitere Informationen zu den verschiedenen Schnittstellen finden sie auf der link:https://knowledge.plentymarkets.com/maerkte/otto/otto-interface[OTTO-Handbuchseite^].
+|OTTO market|[_Ja/Nein_]|
 |Pixmania|[_Ja/Nein_]|
 |real.de|[_Ja/Nein_]|
 |Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
@@ -157,6 +158,7 @@ Daten können in plentymarkets automatisch über REST-API und FTP-Server oder ma
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
 |Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
 |OTTO|Im- und Export über FTP-Server mit XML-Datei
+|OTTO market|Im- und Export über REST-API mit JSON
 |PIXmania|Im- und Export über REST-API mit CSV-Datei
 |Rakuten.de|Export über elastischen Export +
 Import über REST-API mit JSON
