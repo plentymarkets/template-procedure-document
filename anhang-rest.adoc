@@ -5271,7 +5271,70 @@
 
 |
 |
+|Automatischen Versand bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
 |E-Mail-Einstellungen bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|HTML-Design bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Infodienst bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Newsletter bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Signatur bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Vorlagen bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Zugangsdaten bearbeiten
 |
 |
 |
