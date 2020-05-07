@@ -5,6 +5,8 @@
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+
+|V6.3 |POS |07.05.2020 |Geändert: Dieser Bereich wurde durch Informationen zur Kassensicherungsverordnung ergänzt.
 |V6.2|REST-Berechtigungen |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.
 |V6.2|Marketplace-Plugins |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.
 |V6.2|Datenimport mit ElasticSync |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.

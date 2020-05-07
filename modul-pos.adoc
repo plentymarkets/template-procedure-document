@@ -1085,6 +1085,66 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 * [_Speicherort für heruntergeladene IDEA-Exporte_]
 * [_Sonstiges_]
 
+==== Umgang mit den Vorgaben der Kassensicherungsverordnung
+
+==== Export von Daten der technischen Sicherheitseinrichtung
+
+Im Rahmen der Kassensicherungsverordnung (KassenSichV) müssen Kassensysteme mit einer Technischen Sicherheitseinrichtung (im Folgenden mit TSE abgekürzt) ausgestattet sein. Die TSE erstellt verschlüsselte Signaturen für alle Kassenvorgänge und speichert diese unveränderlich im base64-Format ab.
+
+In plentymarkets werden TSE-Exporte über die plentymarkets App generiert. link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#700[Im Benutzerhandbuch^] wird Nutzern empfohlen, täglich nach Durchführung des Tagesabschlusses jeweils einen TSE-Export zu erstellen. Benutzer werden in der App gewarnt, wenn der Speicher der TSE-Einheit ausgelastet ist, und zur Durchführung eines Exports aufgefordert, damit der Speicherplatz wieder freigegeben werden kann.
+
+Die über die Schaltfläche Export erstellen und hochladen erstellten Exportdateien werden automatisch in das plentymarkets Backend übertragen. Während der Übertragung können die Dateien weder vom plentymarkets System, noch von Nutzern verändert werden. Im plentymarkets Backend sind ausschließlich Exportdateien vorhanden, die zuvor über die Schaltfläche Export erstellen und hochladen erzeugt wurden.
+
+Wird die Herausgabe der generierten Exportdateien, beispielsweise im Fall einer Prüfung durch die Finanzbehörden, notwendig, laden Nutzer die Exportdateien im Menü *Aufträge » POS » TSE-Export* herunter.
+Systembenutzer des Typs Backend müssen über die entsprechenden Zugriffsrechte für das Menü verfügen. Beim Herunterladen der Exportdateien im Menü *Aufträge » POS » TSE-Export* können Nutzer den Zeitraum der herunterzuladenden Dateien eingrenzen. 
+
+Der TSE-Export wird in plentymarkets stets im Standard-Archivformat .tar bereitgestellt und als .zip-Datei heruntergeladen. TSE-Exportdateien setzen sich aus .log-Dateien zusammen. Die Software plentymarkets nimmt keine Änderungen an den Inhalten der Exportdateien vor. Daten, Strukturen und sonstige Inhalte innerhalb der Exportdateien sind weder durch den Systembenutzer noch durch weitere Dritte bearbeit- oder veränderbar, sondern werden wie von der TSE übermittelt bereitgestellt.
+
+Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter bei TSE-Exporten handeln:
+
+* [_Erstellungsintervall_]
+* [_Für die Erstellung zuständige Person_]
+* [_Speicherort für heruntergeladene TSE-Exporte_]
+* [_Sonstiges_]
+
+==== Export von Daten gemäß DSFinV-K
+
+Mithilfe des sogenannten DSFinV-K-Exportes wird das Erstellen und Herunterladen GoBD-konformer Datenexporte gemäß der Digitalen Schnittstelle der Finanzverwaltung für Kassensysteme (DSFinV-K) ermöglicht. Nutzer erzeugen DSFinV-K-Exporte im plentymarkets Backend im Menü *Aufträge » POS » DSFinV-K-Export*.
+
+Systembenutzer des Typs Backend müssen über die entsprechenden Zugriffsrechte für das Menü verfügen. Beim Herunterladen der Exportdateien im Menü *Aufträge » POS » DSFinV-K-Export* können Nutzer den Zeitraum der herunterzuladenden Dateien auf jeweils ein ausgewähltes Jahr pro Exportdatei eingrenzen. Zusätzlich muss ein Mandant ausgewählt werden, für den der Export für das betreffende Jahr erstellt wird.
+
+Nach dem Anstoßen des DSFinV-K-Exportes durch den Nutzer im Menü *Aufträge » POS » DSFinV-K-Export* wird die Exportdatei über Nacht generiert. Je nach Startzeit des Exports kann die Generierung 24 Stunden dauern. Anschließend wird der DSFinV-K-Export im selben Menü stets im Standard-Archivformat .tar bereitgestellt und kann anschließend durch den Nutzer heruntergeladen werden. DSFinV-K-Exportdateien setzen sich aus .csv-Dateien zusammen. Die Software plentymarkets nimmt keine Änderungen an den Inhalten der Exportdateien vor.
+
+Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter bei DSFinV-K-Exporten handeln:
+
+* [_Erstellungsintervall_]
+* [_Für die Erstellung zuständige Person_]
+* [_Speicherort für heruntergeladene DSFinV-K-Exporte_]
+* [_Sonstiges_]
+
+
+==== Informationen zur Signierung von Kassenvorgangsdaten
+
+Im Kassenbereich werden alle umsatzrelevanten Vorgänge signiert. Zu den umsatzrelevanten Vorgängen zählen Aufträge, Stornierungen, Retouren und Gutschriften. Die Daten zu Zahlung, Brutto-Steuerumsätzen und Transaktionstyp sind in der Signatur enthalten. In plentymarkets besteht der Transaktionstyp immer aus dem Typ Beleg.
+
+Aufträge externer Herkünfte wie Click & Collect werden als sogenannter “Sonstiger Vorgang” signiert. Die Zahlungen werden wie bei einem herkömmlichen umsatzrelevanten Vorgang signiert (s.o.). Der Datensatz sieht dann vor der anschließenden base64-Verschlüsselung beispielsweise wie folgt aus: 
+
+* 10.00:Bar_5.00:Bar:CHF_5.00:Bar:USD_64.30:Unbar
+
+In diesem Beispiel werden Zahlungen, die mit Bargeld an der Kasse getätigt wurden, inklusive des Betrags als “Bar” bezeichnet. “Unbar” kennzeichnet bargeldlose Zahlungsvorgänge wie EC-Karten, Kreditkarten oder Gutscheineinlösungen.
+
+Einlagen und Entnahmen in der Kasse werden ebenfalls als “Sonstiger Vorgang” signiert. 
+Daten der Journaleinträge für Einlagen und Entnahmen werden im base64-Format verschlüsselt und dann signiert.
+
+==== Verfahren bei Ausfall der technischen Sicherheitseinrichtung
+
+Kommt es zu einem Ausfall der technischen Sicherheitseinrichtung, sind Kassiervorgänge weiterhin ohne Einschränkung möglich. Belege, die im Zeitraum des Ausfalls erstellt werden, werden vom System automatisch mit dem Vermerk Technische Sicherheitseinrichtung ausgefallen signiert. Das Kassenpersonal ist verpflichtet, Start- und Endzeitpunkt der Störung zusätzlich separat zu dokumentieren.
+
+Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter bei einem Ausfall der technischen Sicherheitseinrichtung handeln:
+
+* [_Beschreibung des Ablaufs im Unternehmen einfügen_]
+
+
 ==== Verfahren bei Ausfall von plentymarkets POS
 
 Kommt es zu einem Ausfall der Internetverbindung, ist eine Verbindung zum ERP-System plentymarkets ebenfalls nicht möglich.
