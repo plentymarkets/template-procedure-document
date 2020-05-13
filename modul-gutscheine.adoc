@@ -6,7 +6,7 @@ In plentymarkets sind link:https://knowledge.plentymarkets.com/auftraege/gutsche
 
 Es handelt sich _nicht_ um einen Gutschein, wenn der Inhaber lediglich zu einem Preisnachlass beim Erwerb von Gegenständen oder Dienstleistungen berechtigt wird.
 
-plentymarkets unterstützt die sogenannten Mehrzweck-Gutscheine (in plentymarkets Verkaufsgutscheine genannt). Das heißt, dass die Mehrwertsteuer zu dem Zeitpunkt erhoben wird, zu dem die Gegenstände oder Dienstleistungen geliefert bzw. erbracht werden. Diese Gutscheinart kann in plentymarkets sowohl verkauft als auch eingelöst werden.
+plentymarkets unterstützt die sogenannten Mehrzweckgutscheine. Das heißt, dass die Mehrwertsteuer zu dem Zeitpunkt erhoben wird, zu dem die Gegenstände oder Dienstleistungen geliefert bzw. erbracht werden. Diese Gutscheinart kann in plentymarkets sowohl verkauft als auch eingelöst werden.
 
 Hierfür sind einige Vorbereitungen im ERP-System plentymarkets nötig:
 
@@ -28,7 +28,7 @@ In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verw
 * Bestandskunden einen günstigeren Preis als Standardkunden anzubieten.
 * werbliche Aktionen durchzuführen, z.B. 20% auf alles außer Tiernahrung. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/auftraege/gutscheine[Aktionsgutscheinen^] durchgeführt.
 
-plentymarkets Händler können Bestandskunden einen anderen Preis anbieten als Standardkunden. Solche Rabatte hängen von der link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#15[Kundenklasse] des Bestandskunden ab, und davon, ob für diese Kundenklasse ein link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatt] im ERP-System plentymarkets gespeichert ist.
+plentymarkets Händler können Bestandskunden einen anderen Preis anbieten als Standardkunden. Solche Rabatte hängen von der link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#15[Kundenklasse^] des Bestandskunden ab, und davon, ob für diese Kundenklasse ein link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatt^] im ERP-System plentymarkets gespeichert ist.
 
 Kundenklassenrabatte werden direkt auf den Auftrag angewendet, jedoch nicht separat im Auftrag ausgewiesen.
 
