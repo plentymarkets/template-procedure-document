@@ -2,7 +2,9 @@
 
 Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bearbeitung und Abwicklung von Aufträgen, die aus verschiedenen Kanälen stammen.
 Dabei unterscheidet plentymarkets zwischen verschiedenen Auftragstypen und verschiedenen Auftragsherkünften. Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde.
-Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in den folgenden Abschnitten erläutert.
+Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in eigenen Unterkapiteln erläutert.
+
+Die Auftragsabwicklung ist eng verknüpft mit dem Bereich Buchhaltung und allen Aspekten, die mit dem Modul Zahlungen und Zahlungsverkehr zusammenhängen.
 
 ==== Auftragsherkünfte
 
@@ -236,6 +238,7 @@ Das Erstellen von Lieferaufträgen bedeutet, dass im Funktionsumfang reduzierte 
 Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbeitung stark eingeschränkt. Die folgende Tabelle zeigt, welche Bearbeitungsmöglichkeiten bestehen, nachdem das aufgeführte Dokument im Auftrag erzeugt wurde.
 
 [[tabelle-bearbeitungsmoeglichkeiten-auftrag-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten im Auftrag nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -295,6 +298,7 @@ Außerdem ist die Anzahl der Dokumente, die in einer Vorbestellung erzeugt werde
 Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokuments hat auch bei einer Vorbestellung Einfluss auf die Bearbeitungsmöglichkeiten. Die folgende Tabelle listet auf, welche Bearbeitungsmöglichkeiten nach dem Erzeugen des jeweiligen Dokuments zur Verfügung stehen.
 
 [[tabelle-bearbeitungsmoeglichkeiten-vorbestellung-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Vorbestellung nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -335,6 +339,7 @@ Die Mehrheit dieser Möglichkeiten sind relevant für den Versand von Ware und d
 Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt werden können und welche Einschränkung durch das Erzeugen entstehen:
 
 [[tabelle-bearbeitungsmoeglichkeiten-gutschrift-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Gutschrift nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -356,6 +361,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
  * Teilen eines Auftrags
 
 [[tabelle-bearbeitungsmoeglichkeiten-gewaehrleistung-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Gewährleistung nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -399,6 +405,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
 In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet werden. Es kann ein Hinweis zur Variante sowie ein Prozentwert, der den Artikelwert der retournierten Varianten angibt, eingetragen werden. Der Grund für die Retoure kann geändert sowie Ware wieder eingebucht werden.
 
 [[tabelle-bearbeitungsmoeglichkeiten-retoure-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Retoure nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -412,6 +419,7 @@ In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet we
 Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden können. Eine Reparatur kann nur aus einem Auftrag vom Typ Retoure heraus erstellt werden. Es handelt sich also um einen Auftrag, der der Retoure untergeordnet ist und in den nur Artikel, die bereits als retourniert erfasst wurden, übernommen werden können. Eine Reparatur kann nur manuell angelegt werden, da bei jedem Artikel geprüft werden muss, ob er repariert und somit in eine Reparatur übernommen werden kann.
 
 [[tabelle-bearbeitungsmoeglichkeiten-reparatur-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Reparatur nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -445,6 +453,7 @@ In einem Sammelauftrag können folgende Dokumente erstellt werden:
  * Mahnung
 
 [[tabelle-bearbeitungsmoeglichkeiten-sammelauftrag-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einem Sammelauftrag nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -469,3 +478,86 @@ Beim automatisierten Teilen werden auf einmal alle Artikelpositionen anhand eine
  * Lager und Netto-Warenbestand
 
 Das automatisierte Teilen kann wiederum manuell durch den Anwender oder automatisiert angestoßen werden. Automatisiert angestoßen bedeutet, dass der Anwender einen  Zeitpunkt, zu dem ein Auftrag in Lieferaufträge geteilt wird, bestimmt. Die Funktion, die hierzu genutzt werden kann, nennt sich Ereignisaktion. Die allgemeine Funktionsweise von Ereignisaktionen wird an anderer Stelle beschrieben.
+
+==== Buchhaltung
+
+Buchhaltung ist kein eigenständiges Modul im Backend des plentymarktes Systems. Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatztsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Kapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung der Software entscheiden.
+
+===== Grundeinstellungen
+
+Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standort gewählt. Als Grundeinstellung sind dies gewählte Einstellungen, die für den jeweiligen Bereich Bestand haben, d.h. zum Beispiel vorausgwählt sind und somit auf Benutzeroberflächen in anderen Bereichen des Systems Auswirkungen haben. Die Einstellungen finden sich im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchaltung* im Tab *Grundeinstellungen*.
+
+[[tabelle-grundeinstellungen-buchhaltung]]
+[cols="1,3"]
+.Mandanten- und standortabhängige Grundeinstellungen Buchhaltung
+|===
+|Einstellung|Erläuterung
+
+|*Umsatzsteuer-ID*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. Diese Einstellung gilt nur für Lieferungen innerhalb der EU, für Standorte außerhalb der EU hat sie keine Auswirkung. +
+*Brutto-Rechnung*: Alle Rechnungen für innergemeinschaftliche Lieferungen werden brutto ausgestellt. +
+*Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteur-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
+Liegt die Leferadresse des Kunden im selben Land, wie der Standort, wird für den Auftzrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatztsuer-ID um europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstelleung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktiviewren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Liefewradresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-AUslandsssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
+|*Ausfuhrlieferung*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
+*Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese EInstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
+*Brutto-Rechnung*: DIe Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzstuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
+|*Umssatzsteuer der Versandkosten auf Rechnung ausweisen*|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
+|*Kleinunternehmer (nur Deutschland)*|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
+|*Anzahl Nachkommastellen bei Preisen*|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
+Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt duchgeführt werden.
+|*Nur Gesamtpreis runden*|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Karft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
+Bei 2 Nachkommastellen hat das Aktivieren der Option keine Auswirkungen, da bereits der Einzelpreis gerundet wird. +
+Bei 4 Nachkommastellen werden ohne Aktivieren dieser Option die Summen der Auftragspositionen gerundet.
+|===
+
+*Zum Hintergrund der Preisberechnung bei plentymarkets:*
+Die Preisberechnung in Aufträgen beruht auf dem Bruttopreis der Varianten. Ausgehend von diesem Bruttopreis wird der Nettopreis der Varianten für den Auftrag errechnet. Die Auftragspositionsnummern errechnen sich durch Multiplikation der Einzelpreise mit der gekauften Anzahl. Die Bruttosumme einer Auftragsposition errechnet sich also aus dem Bruttoeinzelpreis multipliziert der Anzahl. +
+Die Nettosumme einer Auftragsposition errechnet sich aus dem errechneten und auf 4 oder 2 Nachkommastellen gerundeten Nettoeinzelpreis multipliziert mit der gekauften Anzahl. Die Nachkommastellen des Einzelpreises werden durch die oben erläuterten Einstellungen in der Buchhaltung bestimmt. Der Umsatzsteuerbetrag für eine Auftragsposition ist die Differenz aus Bruttosumme minus Nettosumme. +
+
+Mithilfe der oben erläuterten Einstellungen lassen sich demzufolge folgende Resultate erzielen:
+
+* Gerundete Einzelpreise
+* Gerundete Auftragspositionssummen
+* Gerundete Gesamtbeträge
+
+===== Umsatzsteuereinstellungen
+
+Umsatzsteuereinstellungen werden für jeden Standort separat angelegt, sie sind also standortabhängig im System. Standorte sind notwendig für Firmensitze oder Versandländer. In plentymarkets wird zwischen Standorten und Liferländer, in denen man steurpflichtig ist, unterschieden. Ein Standort ist sozusagen ein Firmensitz. +
+Standardmäßig sind 2 Standorte, Deutschland und United Kingdom, als Beispiele im System voreingerichtet. Für den Produktivbetrieb müssen jedoch eigene Standorte angelegt werden. Benötigt wird mindestens ein Standort. Weitere Standorte werden benötigt, wenn Niederlassungen in anderen Ländern bestehen. +
+Das System unterscheidet bei Standortländern zwischen Mitgliedsländern der EU und anderen Ländern. Wenn daher ein Standort eingerichtet wird, der nicht in der EU liegt, wird jede Lieferung in ein anderes Land als Ausfuhrlieferung betrachtet. Wenn ein Standort in der EU liegt, wird zwischen innergemeinschaftlichen Leferungen und Ausfuhrlieferungen unterschieden. +
+Zu den umsatzsteuerrelevanten Grundeinstellungen zählen Festlegungen zum Umgang mit Ausfuhrlieferungen und zur Anzeige der Umsatzsteuer von Versandkosten. Für EU-Standorte muss außerdem festgelegt werden, wie sich das System bei einer Umsatzsteuer-ID am Auftrag verhält.
+
+Mindestens eine Steuerkonfiguration muss im System hinzugefügt werden, mit dieser kann auch in verschiedene Länder versendet werden. Sobald die Lieferschwelle für ein Land überschritten wird, muss eine weitere Steuerkonfiguration hinzugefügt werden, damit die Steuerabgaben korrekt berechnet werden können. Standorte werden für Firmensitze hinzugefügt, das Land des Standortes wird mit den entsprechenden Steuerkonfigurationen für die korrekte Abrechnung hinzugefügt. Erst wenn Händler in weiteren Ländern steuerpflichtig werden, weil sie die Lieferschwelle überschritten haben, werden für einen Standort weitere Länder mit Steuerkonfigurationen hinzugefügt.
+
+Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchaltung* im Tab *Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
+
+[[tabelle-einstellungen-umsatzsteuersätze]]
+[cols="1,3"]
+.Umsatzsteuersatzkonfiguration
+|===
+|Einstellung|Erläuterung
+
+|*Land*|Hier wird das Land gewählt, in dem der Anwender steuerpflichtig ist. Das Land kann nachträglich nicht verändert werden.
+
+|*Steuersatz A in %* +
+*Steuersatz B in %* +
+*Steuersatz C in %* +
+*Steuersatz D in %* |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder estehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur düe die Buchhaltungssoftware Xero relevant.
+
+|*Gültig ab*|Das Datum, ab dem die Steuersätze gelten sollen.
+
+|*Ungültig ab*|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Leiferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
+
+|*Nur für digitale Artikel*|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll.
+
+|*Differenzbesteuerung*|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuerdatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
+Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betzrag der differenzbesteurten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
+
+|===
+
+===== Zolltarifnummern
+
+===== Buchungsschlüssel, Debitorenkonten...
+
+===== Export
+
+===== Auftragsdokumente
