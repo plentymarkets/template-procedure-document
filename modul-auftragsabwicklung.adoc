@@ -479,6 +479,8 @@ Beim automatisierten Teilen werden auf einmal alle Artikelpositionen anhand eine
 
 Das automatisierte Teilen kann wiederum manuell durch den Anwender oder automatisiert angestoßen werden. Automatisiert angestoßen bedeutet, dass der Anwender einen  Zeitpunkt, zu dem ein Auftrag in Lieferaufträge geteilt wird, bestimmt. Die Funktion, die hierzu genutzt werden kann, nennt sich Ereignisaktion. Die allgemeine Funktionsweise von Ereignisaktionen wird an anderer Stelle beschrieben.
 
+==== Auftragsdokumente / steuerrelevante Dokumente
+
 ==== Buchhaltung
 
 Buchhaltung ist kein eigenständiges Modul im Backend des plentymarktes Systems. Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatztsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Kapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung der Software entscheiden.
@@ -547,7 +549,8 @@ Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant 
 
 |*Ungültig ab*|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Leiferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
 
-|*Nur für digitale Artikel*|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll.
+|*Nur für digitale Artikel*|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
+Wenn für ein Lieferland bereits ein Steuersatz vorhanden ist, z.B. weil die Lieferschwelle überschritten wurde, muss kein weiterer Steuersatz nur für digitale Artikel angelegt werden, da der vorhandene Steuersatz verwendet wird.
 
 |*Differenzbesteuerung*|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuerdatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
 Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betzrag der differenzbesteurten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
@@ -556,8 +559,39 @@ Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, be
 
 ===== Zolltarifnummern
 
-===== Buchungsschlüssel, Debitorenkonten...
+Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen ElasticSync Import befüllen.
+
+===== Debitoren- und Erlöskonten
+
+In plentymarktes kann gewählt werden, anhand weches Kriteriums Forderungen Debitorenkonten zugeordnet werden. Es kann zum Beispiel der Nachname eines Debitors oder das Lieferland für die Zuordnung genutzt werden. Das Kriterium muss festgelegt werden, bevor die Konten eingetragen werden. Eingerichtet wird ein Debitorenkonto im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Debitorenkonten*. Folgende Einstellungsmöglichkeiten ergeben sich dort:
+
+[[tabelle-einstellungen-debitorenkonten]]
+[cols="1,3"]
+.Einstellungen für Debitorenkonten
+|===
+|Einstellung|Erläuterung
+
+|*Standard-Debitorenkonto*|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debotorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Damzu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
+
+|*Speichere Debitorenkonto am Kundenstammdatensatz*|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkotno hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
+
+|*Automatische Vergabe von Debitorenkonten nach*|Aus einer Dropdwon-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
+*Anfangsbuchstabe*: Debitorenkonto wird anhand der Anfangsbuchstaben von Kundendaten zugeordnet. Welche Kundendaten und in welcher Reihenfolge berücksichtigt werden, werden in einer zwieten Dropdown-Liste bestimmt. +
+Die Reihenfolge *Firma, Nachname, Vorname* sorft dafür, dass zuerst der Firmenname berücksichtigt wird. Wenn kein Firmenname eingetragen wurde, wird der Nachname berücksichtigt usw. +
+*Zahlungsart*: Das Debitorenkonto wird anhand der Zahlungsart eines Auftrages zugeordnet. +
+*Lieferland*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet. +
+*Lieferland, für Inland jedoch Zahlungsart*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Loeferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
+
+|*Anfangsbuchstaben (A-Z bzw. 0-9 Debitorenkonto)*|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
+
+|*Lieferländer*|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Lieferländern vergeben werden sollen.
+
+|*Zahlungsarten*|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Zahlungsarten vergeben werden sollen.
+
+|===
+
+Des Weiteren sind Erlöskonten einzurichten, um die Umsatzerlöse einem Konto zuzuordnen. Es besteht die Möglichkeit, für steuerpflichtige Erlöse pro Steuersatz ein Erlöskonto anzugeben sowie für umsatzsteuerfreie Erlöse. Die Einrichtung von Erlöskonten für steuerpflichtige Erlöse erfolgt ebenfalls im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Erlöskonten*. Erlöskonten für umsatzsteuerfreie Erlöse sind einzurichten unter im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Umsatzsteuerfreie Erlöse*.
 
 ===== Export
 
-===== Auftragsdokumente
+plentymarkets bietet die Möglichkeit, Buchhaltungsdaten zu exportieren und so an eine Buchhaltungs-Software zu übergeben. Beim Export werden Debitorenkonten, Erlöskonten und Buchhungsschlüssel gemäß den vom Anwender gewählten Einstellungen vergeben. Im Menü *Daten » Spezialexport* kann ein Datenformat ausgewählt und zum Beispiel ein Export vom Tyo *Finanzbuchhaltung* oder *Collmex-Buchhaltung* vorgenommen werden.
