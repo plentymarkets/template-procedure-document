@@ -171,9 +171,11 @@ In dem oben beschriebenen Fall muss der Anwender von plentymarkets während der 
 Der Auftragstyp Auftrag dient zum Erfassen und Abwickeln von Kundenbestellungen. Der Kanal, über den der Auftrag generiert wurde, wird als Herkunft in den Auftragsdaten gespeichert. Wie oben erwähnt, wird Aufträgen außerdem ein Status zugeordnet. Da mithilfe der Auftragsstatus der Fortschritt der Abwicklung abgebildet werden soll, sind auch einige Systemautomatismen mit den Status verknüpft. +
 Aufträge werden bei Eingang in ein plentymarkets System zunächst auf Status 3 gesetzt, diese Statuszuordnung ist ein Systemautomatismus. In Ausnahmefällen, z.B. bei der Systemherkunft Amazon, kann ein Auftrag bei Eingang automatisch auf Status 1 gesetzt werden.
 
-Anschließend kann der Anwender den Auftrag bearbeiten. Er kann dem Kunden eine Empfangsbestätigung senden. Er kann weitere Artikel, z.B. Gratisproben, hinzufügen. Er könnte dem Kunden einen Rabatt einräumen. Er kann die Rechnungsadresse, die Lieferanschrift, die Versandart sowie die Artikelpositionen ändern. Wie die Absprache mit dem Kunden bei Änderungen am Auftrag erfolgt, ist dabei Sache des Anwenders. Wenn einem Auftrag eine Zahlung zugeordnet werden konnte, erfolgt ein weiterer Statuswechsel. Auf welchen Status der Auftrag wechselt, hängt davon ab, ob der Auftrag unter-, über- oder vollständig bezahlt ist. Wenn ein Auftrag unterbezahlt ist, wird er automatisch auf Status 3.3 gesetzt. Wenn ein Auftrag überbezahlt ist, wird er automatisch auf Status 3.2 gesetzt. Wenn ein Auftrag vollständig bezahlt ist und das Modul Warenwirtschaft nicht verwendet wird, wechselt der Auftrag auf Status 5. Status 5 bedeutet, dass der Auftrag für den Versand freigegeben wurde. Dieser Status eignet sich also, um Picklisten oder Ähnliches zu erstellen. +
+Anschließend kann der Anwender den Auftrag bearbeiten. Er kann dem Kunden eine Empfangsbestätigung senden. Er kann weitere Artikel, z.B. Gratisproben, hinzufügen. Er könnte dem Kunden einen Rabatt einräumen. Er kann die Rechnungsadresse, die Lieferanschrift, die Versandart sowie die Artikelpositionen ändern. Wie die Absprache mit dem Kunden bei Änderungen am Auftrag erfolgt, ist dabei Sache des Anwenders. +
+Wenn einem Auftrag eine Zahlung zugeordnet werden konnte, sollte eine Rechnung erstellt werden. Geschieht dies nicht, wird am Auftrag eine Warnung angezeigt, dass eine Zahlung aber keine Rechnung existiert. Zudem erfolgt bei Zahlungszuordnung ein weiterer Statuswechsel. Auf welchen Status der Auftrag wechselt, hängt davon ab, ob der Auftrag unter-, über- oder vollständig bezahlt ist. Wenn ein Auftrag unterbezahlt ist, wird er automatisch auf Status 3.3 gesetzt. Wenn ein Auftrag überbezahlt ist, wird er automatisch auf Status 3.2 gesetzt. Wenn ein Auftrag vollständig bezahlt ist und das Modul Warenwirtschaft nicht verwendet wird, wechselt der Auftrag auf Status 5. Status 5 bedeutet, dass der Auftrag für den Versand freigegeben wurde. Dieser Status eignet sich also, um Picklisten oder Ähnliches zu erstellen. +
 Ein vom System angestoßener automatischer Statuswechsel auf Status 5 erfolgt auch für einige Zahlungsarten, bei denen ein Warten auf die Zahlung nicht sinnvoll ist. Zu diesen Zahlungsarten gehören z.B. Kauf auf Rechnung, Lastschrift oder Zahlung per Nachnahme. Eine Liste der Zahlungsarten findet sich im https://knowledge.plentymarkets.com/payment[Handbuch]. +
 Wenn das Modul Warenwirtschaft genutzt wird, haben die Einstellungen zur Bestandsführung zusätzlich Einfluss auf den automatischen Statuswechsel, sodass daraus ein anderes Verhalten resultieren kann.
+
 
 Was ein eingeloggter Benutzer von plentymarkets letztendlich in der Abwicklung eines Auftrags vom Typ Auftrag bearbeiten kann, hängt von seinen Benutzerrechten ab. Die folgende Beschreibung orientiert sich an einem Benutzer mit vollen Bearbeitungsrechten. Bei einem solchen Benutzer hängen die Bearbeitungsmöglichkeiten in einem Auftrag vom Fortschritt der Abwicklung und von der Herkunft ab. Insbesondere das Erzeugen von Dokumenten sorgt für systemseitige Einschränkungen der Bearbeitungsmöglichkeiten, die der Benutzer nicht umgehen kann. Nachdem ein Dokument erzeugt wurde, werden die Einstellungen eingeschränkt, die bearbeitet werden können. Welche Einstellungen noch bearbeitbar sind, hängt wiederum von dem Typ des Dokuments ab. Bei Aufträgen mit einer automatisch zugeordneten Herkunft ist die Herkunft ab dem Moment der Auftragsanlage, also bevor ein Dokument erzeugt wurde, nicht mehr änderbar. Bei Aufträgen mit einer manuell zugeordneten Herkunft ist die Herkunft auch nach Auftragsanlage noch änderbar. Bis das erste Dokument erzeugt wurde, können folgende Angaben ergänzt oder geändert werden:
 
@@ -313,7 +315,7 @@ Tabelle 4: Bearbeitungsmöglichkeiten in einer Vorbestellung nach dem Erzeugen e
 ===== Auftragstyp Gutschrift
 
 Der Auftragstyp Gutschrift dient zur Rückzahlung von Beträgen an Kunden. Es handelt sich hierbei also um eine Gutschrift, wie sie im allgemeinen Sprachgebrauch verstanden wird, und nicht um eine buchhalterische Gutschrift. +
-Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen Auftrag eines anderen Typs zugeordnet und kann nur aus einem bereits bestehenden Auftrag heraus erstellt werden. In Aufträgen der folgenden Auftragstypen können Gutschriften erstellt werden:
+Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen Auftrag eines anderen Typs zugeordnet und kann nur aus einem bereits bestehenden Auftrag heraus erstellt werden. Gutschriften selbst kann daher auch keine Soll-Zahlung zugewiesen werden. In Aufträgen der folgenden Auftragstypen können Gutschriften erstellt werden:
 
  * Auftrag
  * Retoure
@@ -321,7 +323,8 @@ Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen 
  * Gewährleistung
 
 Bei all diesen Typen kann eine Rückzahlung notwendig werden, deshalb kann bei Ihnen eine Gutschrift erstellt werden. +
-Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftragsstatus 11. Alle Varianten, die im Auftrag enthalten sind, zu dem die Gutschrift erzeugt wird, werden zunächst vollständig in die Gutschrift übernommen. Die Varianten können anschließend z.B. aus der Gutschrift entfernt werden. Generell stehen in einem Auftrag des Typs Gutschrift folgende Bearbeitungsmöglichkeiten nicht zur Verfügung:
+Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftragsstatus 11. Alle Varianten, die im Auftrag enthalten sind, zu dem die Gutschrift erzeugt wird, werden zunächst vollständig in die Gutschrift übernommen. Die Varianten können anschließend z.B. aus der Gutschrift entfernt werden. Wenn keine dafür notwendigen Gutschrift-Dokumente vom Anwender erstellt wurden, wird im System eine entsprechende Warnung an der Gutschrift angezeigt.
+Generell stehen in einem Auftrag des Typs Gutschrift folgende Bearbeitungsmöglichkeiten nicht zur Verfügung:
 
  * Ändern des Auftragstyps
  * Buchen eines Warenausgang
@@ -479,7 +482,92 @@ Beim automatisierten Teilen werden auf einmal alle Artikelpositionen anhand eine
 
 Das automatisierte Teilen kann wiederum manuell durch den Anwender oder automatisiert angestoßen werden. Automatisiert angestoßen bedeutet, dass der Anwender einen  Zeitpunkt, zu dem ein Auftrag in Lieferaufträge geteilt wird, bestimmt. Die Funktion, die hierzu genutzt werden kann, nennt sich Ereignisaktion. Die allgemeine Funktionsweise von Ereignisaktionen wird an anderer Stelle beschrieben.
 
-==== Auftragsdokumente / steuerrelevante Dokumente
+==== Auftragsdokumente
+
+In plentymarkets gibt es einige Dokumente, die im Zusammenhang mit der Auftragsabwicklung eingerichtet, erstellt und versendet werden können. Für jedes Dokument, das er nutzen möchte, muss der Anwender eine Vorlage erstellen. Die Gestaltung dieser Vorlage (z.B. Sprache, Schriftart, Seitenränder) steht dem Anwender frei, es gibt jedoch einige Pflichtelemente, die bei der Einrichtung einer Dokumentenvorlage einzufügen sind (siehe <<tabelle-dokumente-pflichtelemente>>). Das System stellt auch eine Standard-Dokumentenvorlage zur Verfügung, die vom Anwender genutzt werden kann. +
+Sobald für einen Auftrag steuerrelevante Dokumente (wie z.B. eine Rechnung oder Stornobelege) erzeugt wurden, kann dieser Auftrag nicht mehr gelöscht werden.
+
+Folgende Dokumente sind in plentymarkets erstellbar:
+
+* Rechnung
+* Sammelrechnung
+* Lieferschein
+* Gutschriften
+* Korrekturbelege
+* Mahnung
+* Stornobeleg Mahnung
+* Rücksendeschein
+* Gelangensbestätigung
+* SEPA-Lastschriftmandant
+* Adressetikett
+* Pickliste
+* Lager-Pickliste
+* Packliste
+
+Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
+
+[[tabelle-dokumente-pflichtelemente]]
+.Pflichtelemente eines Dokuments
+[cols="1,3"]
+|====
+|Einstellung |Erläuterung
+
+| *Adressfeld*
+|Positioniert das Feld, in dem die Anschrift des Kunden angezeigt wird.
+
+| *Dokumentname/-nummer*
+|Namen eintragen, beispielsweise *Rechnung* oder *Rechnungs-Nr.*
+
+| *Datum*
+|Aktuelles Datum des Dokuments
+
+| *Bestelldatum*
+|Datum der Bestellung
+
+| *Währung*
+|Namen eintragen. Die eigentliche Währung wird aus den Grundeinstellungen übernommen (siehe oben).
+
+| *Auftrags-ID*
+|Auftrags-ID einer Bestellung
+
+| *Auftrags-ID (2)*
+|Bei Retouren, Gutschriften und Lieferaufträgen wird die Auftrags-ID des Hauptauftrags ausgegeben.
+
+| *Kunden-ID*
+|Kunden-ID des Käufers
+
+| *Herkunft*
+|Auftragsherkunft der Bestellung
+
+| *Zeichen Kunde*
+|Zeigt an, was im gleichnamigen Feld in der Auftragseinstellung hinterlegt wurde.
+
+| *Kundenklasse*
+|ID der Kundenklasse
+
+| *Auftragseigner*
+|Gibt den Namen des Auftragseigners aus, d.h. den Namen des für den Auftrag verantwortlichen Mitarbeiters.
+
+| *FiBu-Konto*
+|Zeigt den Debitor an, der in den Kundendaten unter Debitoren-Konto eingetragen ist.
+
+| *Eigene Kundennummer*
+|Gibt die Kundennummer aus plentymarkets aus (nicht die ID).
+
+| *USt.-IdNr.*
+|Umsatzsteuer-Identifizierungsnummer des Kunden
+
+| *Eigene USt-IdNr.*
+|Gibt die Umsatzsteuer-ID des Händlers aus.
+
+| *ID Pickliste*
+|Wenn eine Pickliste generiert wird, erhält diese Pickliste eine ID. Bei allen Aufträgen, die sich auf dieser Pickliste befinden, wird die Pickliste-ID hinterlegt. Mit der Option ID Pickliste kann diese ID auf dem PDF-Dokument ausgegeben werden. Sinnvoll z.B. bei Lieferscheinen.
+
+| *Seitenzahl*
+|Gibt die Seitenzahl im Dokument pro Seite aus.
+|====
+
+Auftragsdokumente unterliegen einer Aufbewahrungspflicht. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders.
 
 ==== Buchhaltung
 
