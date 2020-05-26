@@ -569,6 +569,12 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 
 Auftragsdokumente unterliegen einer Aufbewahrungspflicht. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders.
 
+*Achtung:* Anstatt Dokumente in plentymarkets zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet anstatt in plentymarkets erstellt, ist es danach nicht mehr möglich den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentymarkets heraus) im System zu erstellen. Auf diese Art und Weise wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
+
+===== Stornobelege
+
+Einmal erstellte Dokumente können nicht einfach gelsöcht werden. Stattdessen muss im System erst ein Stornobeleg erstellt werden. Beispiel: Mahnung (see what Steven answers)
+
 ==== Buchhaltung
 
 Buchhaltung ist kein eigenständiges Modul im Backend des plentymarktes Systems. Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatztsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Kapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung der Software entscheiden.
@@ -683,3 +689,9 @@ Des Weiteren sind Erlöskonten einzurichten, um die Umsatzerlöse einem Konto zu
 ===== Export
 
 plentymarkets bietet die Möglichkeit, Buchhaltungsdaten zu exportieren und so an eine Buchhaltungs-Software zu übergeben. Beim Export werden Debitorenkonten, Erlöskonten und Buchhungsschlüssel gemäß den vom Anwender gewählten Einstellungen vergeben. Im Menü *Daten » Spezialexport* kann ein Datenformat ausgewählt und zum Beispiel ein Export vom Tyo *Finanzbuchhaltung* oder *Collmex-Buchhaltung* vorgenommen werden.
+
+==== Zahlungsverkehr
+
+Eingang von Zahlungen im System; Zahlungsmethoden (Plugins, Integrationen...)
+
+Bearbeitungsmöglichkeiten (Zuordnung zu Aufträgen, lösen, teilen, löschen)
