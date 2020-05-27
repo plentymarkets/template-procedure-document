@@ -248,7 +248,8 @@ Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbe
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |Adressetikett|Das Erzeugen eines Adressetiketts im Auftrag hat keine Auswirkungen auf den Auftrag.
 |Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
@@ -372,7 +373,8 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |Adressetikett|Das Erzeugen eines Adressetiketts hat keine Auswirkungen auf die Gewährleistung.
 |Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
@@ -430,7 +432,8 @@ Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |Adressetikett|Das Erzeugen eines Adressetiketts hat keine Auswirkungen auf die Reparatur.
 |Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
@@ -462,7 +465,8 @@ In einem Sammelauftrag können folgende Dokumente erstellt werden:
 |Dokument|Bearbeitungsmöglichkeiten
 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
-|Mahnung|Inhalte werden ergänzt.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |===
 
 ===== Auftragstyp Sammelgutschrift
@@ -567,13 +571,16 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 |Gibt die Seitenzahl im Dokument pro Seite aus.
 |====
 
-Auftragsdokumente unterliegen einer Aufbewahrungspflicht. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders.
+Auftragsdokumente unterliegen einer *Aufbewahrungspflicht*. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders.
 
-*Achtung:* Anstatt Dokumente in plentymarkets zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet anstatt in plentymarkets erstellt, ist es danach nicht mehr möglich den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentymarkets heraus) im System zu erstellen. Auf diese Art und Weise wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
+*Zu beachten:* Anstatt Dokumente in plentymarkets zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann vom System nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet und nicht im System erstellt, ist es danach nicht mehr möglich den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentymarkets heraus) im System zu erstellen. Auf diese Art und Weise wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
 
 ===== Stornobelege
 
-Einmal erstellte Dokumente können nicht einfach gelsöcht werden. Stattdessen muss im System erst ein Stornobeleg erstellt werden. Beispiel: Mahnung (see what Steven answers)
+Erstellte steuerrelevante Dokumente (wie z.B. Rechnungen oder Mahnungen) können nicht einfach gelöscht werden. Stattdessen muss im System erst ein Stornobeleg erstellt werden. Zudem ist es bei steuerrelevanten Dokumenten auch nicht möglich, das gleiche Dokument mehrmals zu erstellen. Wenn also z.B. schon eine Rechnung (intern oder extern erstellt) existiert, kann keine weitere erstellt werden. Die oben erwähnte Aufbewahrungspflicht gilt auch für Stornobelege.
+
+*Besonderheit Mahnungen und Stornobeleg Mahnung:* Eine Mahnung kann nur erstellt werden, wenn bereits eine gültige Rechnung existiert. Daher ist es auch nur möglich eine Rechnung zu stornieren, wenn vorher eventuell bestehende Mahnungen storniert werden. Dafür gibt es einen eigenen Dokumententyp, den Stornobeleg Mahnung. +
+Im System stehen dem Anwender 4 Mahnstufen zur Verfügung. Für jede Mahnstufe muss eine neue Mahnung mit eigenen Mahngebühren erstellt werden. Diese Mahngebühren für die verschiedenen Mahnstufen werden vom Anwender festgelegt, sie liegen dementsprechend in seinem Ermessen.
 
 ==== Buchhaltung
 
