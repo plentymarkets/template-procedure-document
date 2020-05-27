@@ -699,6 +699,33 @@ plentymarkets bietet die Möglichkeit, Buchhaltungsdaten zu exportieren und so a
 
 ==== Zahlungsverkehr
 
-Eingang von Zahlungen im System; Zahlungsmethoden (Plugins, Integrationen...)
+Zahlungen gehen bei plentymarkets entweder automatisch im System ein oder werden manuell eingebucht. Der automatische Zahlungseingang erfolgt bei Nutzung von Payment Plugins. plentymarkets ermöglicht die Integration verschiedener Zahlungsarten über Plugins (weitere Informationen zu Plugins und dem plentyMarketplace sind im Kapitel <<modul-marketplace-plugins#, Fachliche und technische Beschreibung des Moduls Plugins>> zu finden.). Welche Plugins Anwender integrieren und welche Zahlungsarten sie ihren Kunden zur Verfügung stellen, entscheiden Anwender selber. Die Zahlungsarten-Plugins werden zum Teil von plentymarkets selbst entwickelt und zur Verfügung gestellt, oft in Zusammenarbeit mit verschiedenen Zahlungsanbietern. Welche Voraussetzungen diese Zahlungsanbieter von Anwendern verlangen, damit ein Plugin genutzt werden kann (z.B. die Eröffnung eines Geschäftskontos), liegt dabei im Ermessen der Anbieter selber. Einige Zahlungsanbieter leiten Kunden zur Abwicklung des Zahlungsvorgangs auf eigene Seiten weiter. Bei anderen Providern werden die Zahlungsdaten im Shop des Anwenders entgegengenommen und im Hintergrund an den Provider weitergeleitet. In beiden Fällen erhält plentymarkets nach erfolgter Zahlung eine Rückmeldung des Anbieters und vermerkt den Zahlungseingang direkt im Auftrag. Manuell importiert werden z.B. Bankbuchungen für Zahlungen, die unabhängig von einem Zahlungsanbieter ablaufen.
 
-Bearbeitungsmöglichkeiten (Zuordnung zu Aufträgen, lösen, teilen, löschen)
+Bei diesen Bankbuchungen, die z.B. bei Überweisungen auf ein Konto des Anwenders entstehen, müssen die auf diesem Konto gebuchten Zahlungen an das System gemeldet und den Aufträgen korrekt zugeordnet werden. Der Import der Bankbuchungsdateien ins System findet durch den Anwender im CSV-Format statt. Werden Datensätze bei diesem Import doppelt eingelesen, werde diese doppelten Datensätze verworfen. Im Anschluss an den Import wird ein Durchlauf mit automatischer Zuordnung der Zahlungen zu Aufträgen gestartet.
+
+Zahlungen können auch manuell eingebucht werden, z.B. wenn eine Barzahlung stattgefunden hat. Die manuelle Buchung findet direkt am zugehörigen Auftrag statt. Eingegeben werden müssen die Paramter Betrag, Haben/Soll, Währung, Wechselkurs (bei Bedarf), Verwendungszweck und Zahlungseingang (Datum). Im System werden manuell gebuchte Zahlungseingänge durch das Symbol *Manuelle Buchung* gekennzeichnet.
+
+Wie weiter oben erwähnt, werden in plentymarkets Zahlungen Aufträgen über eine unscharfe Suche automatisch zugeordnet. Wenn die Zuordnung fehlschlägt, können Zahlungen Aufträgen manuell zugeordnet werden. Zahlungseingänge werden in einem eigenen Bereich im Backend verwaltet (Menü: *Aufträge » Zahlungsverkehr*), hier sind unzugeordnete Zahlungeingänge durch einen grünen Pfeil gekennzeichnet. In diesem Bereich kann der Anwender auch für jede Zahlung, die ins System kommt, alle relevanten Informationen einsehen (z.B. Buchungsdaten, Zahlungsart, wann eine Zahlung eingegangen ist usw.). +
+Zur Verwaltung von Zahlungen können Grundeinstellungen vorgenommen werden. Es sind Standardeinstellungen dafür im System vorhanden, es liegt aber beim Anwender, ob er diese übernimmt oder die folgenden Grundeinstellungen anpasst:
+
+[[tabelle-grundeinstellungen-zahlungseingang]]
+.Grundeinstellungen für Zahlungseingänge vornehmen
+[cols="1,3"]
+|====
+|Einstellung |Erläuterung
+
+|*Übereinstimmung für automatische Zuordnung*
+|Der Anwender kann zwischen *0.7* (nicht so genaue Übereinstimmung zur Zuordnung nötig) und *1.0* (genaue Übereinstimmung nötig) wählen. Ist dieser Wert höher eingestellt, kann das Problem auftreten, dass Zahlungen nicht zugeordnet werden können. Daher ist in der *Standard-Einstellung* ein Wert von *0,75* eingestellt.
+
+|*Zahlungskulanz*
+|Damit z.B. interne Nachkommabeträge (ab der dritten Nachkommastelle) nicht zu falschen Buchungen führen, sollte ein *Mindestbetrag* von *0,01* eingetragen sein (Standard-Einstellung). Wenn z.B. *0,05* eingestellt ist, werden Fehlbeträge bis 5 Cent trotzdem als korrekte Buchung behandelt.
+
+|*Kundenbankdaten importieren*
+|Der Anwender kann wählen, ob die *Bankdaten* des Kunden beim Zahlungseingang *importiert* und in den jeweiligen *Kundendaten* hinterlegt werden sollen oder nicht. +
+*_Wichtig:_* Da Bankdaten nur mit Zustimmung des Kunden importiert und gespeichert werden dürfen, ist hier standardmäßig *Nein* voreingestellt.
+
+|====
+
+Neben der Zuordnung zu einem Auftrag stehen den Anwendern im Zahlungsverkehr-Menü noch die Bearbeitungsmöglichkeiten *teilen einer Zahlung* (der Betrag der Zahlung wird auf mehrere ausgewählte Aufträge aufgeteilt) und *löschen einer Zahlung* (muss in einer Abfrage vom Anwender bestätigt werden) zur Verfügung. Darüber hinaus können einem Auftrag zugeordnete Zahlungen von diesem auch wieder *gelöst* und danach neu zugeordnet werden. Neben dieser manuellen Zuordnung von Zahlungen kann eine automatische Zuordnung über die Gruppenfunktion stattfinden. Dabei werden Zahlungen vom System automatisch nach einer vom Anwender festgelegten Übereinstimmungsrate zugeordnet.
+
+Es gibt Fälle, in denen Zahlungen in der Übersicht keinen Aufträgen mehr zugeordnet werden können. Das sind zum Beispiel Vormerkposten, zu denen die eigentliche Zahlung bereits gebucht wurde. Die Zahlungen werden in der Übersicht mit *Nicht verbuchbare Zahlung* gekennzeichnet.
