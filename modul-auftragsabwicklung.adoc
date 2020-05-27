@@ -4,7 +4,7 @@ Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bear
 Dabei unterscheidet plentymarkets zwischen verschiedenen Auftragstypen und verschiedenen Auftragsherkünften. Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde.
 Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in eigenen Unterkapiteln erläutert.
 
-Die Auftragsabwicklung ist eng verknüpft mit dem Bereich Buchhaltung und allen Aspekten, die mit dem Modul Zahlungen und Zahlungsverkehr zusammenhängen.
+Die Auftragsabwicklung ist eng verknüpft mit dem Bereich Buchhaltung und allen Aspekten, die mit dem Bereich Zahlungen und Zahlungsverkehr zusammenhängen.
 
 ==== Auftragsherkünfte
 
@@ -502,7 +502,7 @@ Folgende Dokumente sind in plentymarkets erstellbar:
 * Stornobeleg Mahnung
 * Rücksendeschein
 * Gelangensbestätigung
-* SEPA-Lastschriftmandant
+* SEPA-Lastschriftmandat
 * Adressetikett
 * Pickliste
 * Lager-Pickliste
@@ -520,7 +520,7 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 |Positioniert das Feld, in dem die Anschrift des Kunden angezeigt wird.
 
 | *Dokumentname/-nummer*
-|Namen eintragen, beispielsweise *Rechnung* oder *Rechnungs-Nr.*
+|Namen muss eingetragen werden, beispielsweise *Rechnung* oder *Rechnungs-Nr.*
 
 | *Datum*
 |Aktuelles Datum des Dokuments
@@ -529,25 +529,25 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 |Datum der Bestellung
 
 | *Währung*
-|Namen eintragen. Die eigentliche Währung wird aus den Grundeinstellungen übernommen (siehe oben).
+|Name muss eintragen werden. Die eigentliche Währung wird aus den Grundeinstellungen übernommen (siehe oben).
 
 | *Auftrags-ID*
-|Auftrags-ID einer Bestellung
+|Die Auftrags-ID einer Bestellung wird angezeigt.
 
 | *Auftrags-ID (2)*
 |Bei Retouren, Gutschriften und Lieferaufträgen wird die Auftrags-ID des Hauptauftrags ausgegeben.
 
 | *Kunden-ID*
-|Kunden-ID des Käufers
+|Kunden-ID des Käufers wird angezeigt.
 
 | *Herkunft*
-|Auftragsherkunft der Bestellung
+|Auftragsherkunft der Bestellung wird angezeigt.
 
 | *Zeichen Kunde*
 |Zeigt an, was im gleichnamigen Feld in der Auftragseinstellung hinterlegt wurde.
 
 | *Kundenklasse*
-|ID der Kundenklasse
+|ID der Kundenklasse wird angezeigt.
 
 | *Auftragseigner*
 |Gibt den Namen des Auftragseigners aus, d.h. den Namen des für den Auftrag verantwortlichen Mitarbeiters.
@@ -559,7 +559,7 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 |Gibt die Kundennummer aus plentymarkets aus (nicht die ID).
 
 | *USt.-IdNr.*
-|Umsatzsteuer-Identifizierungsnummer des Kunden
+|Umsatzsteuer-Identifizierungsnummer des Kunden wird angezeigt.
 
 | *Eigene USt-IdNr.*
 |Gibt die Umsatzsteuer-ID des Händlers aus.
@@ -584,11 +584,11 @@ Im System stehen dem Anwender 4 Mahnstufen zur Verfügung. Für jede Mahnstufe m
 
 ==== Buchhaltung
 
-Buchhaltung ist kein eigenständiges Modul im Backend des plentymarktes Systems. Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatztsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Kapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung der Software entscheiden.
+Buchhaltung ist kein eigenständiges Modul im Backend des plentymarktes Systems. Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatzsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Unterkapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung entscheiden.
 
 ===== Grundeinstellungen
 
-Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standort gewählt. Als Grundeinstellung sind dies gewählte Einstellungen, die für den jeweiligen Bereich Bestand haben, d.h. zum Beispiel vorausgwählt sind und somit auf Benutzeroberflächen in anderen Bereichen des Systems Auswirkungen haben. Die Einstellungen finden sich im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchaltung* im Tab *Grundeinstellungen*.
+Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standort gewählt. Als Grundeinstellung sind dies gewählte Einstellungen, die für den jeweiligen Bereich Bestand haben, d.h. zum Beispiel vorausgewählt sind und somit auf Benutzeroberflächen in anderen Bereichen des Systems Auswirkungen haben. Die Einstellungen finden sich im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Grundeinstellungen*.
 
 [[tabelle-grundeinstellungen-buchhaltung]]
 [cols="1,3"]
@@ -598,16 +598,16 @@ Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standor
 
 |*Umsatzsteuer-ID*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. Diese Einstellung gilt nur für Lieferungen innerhalb der EU, für Standorte außerhalb der EU hat sie keine Auswirkung. +
 *Brutto-Rechnung*: Alle Rechnungen für innergemeinschaftliche Lieferungen werden brutto ausgestellt. +
-*Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteur-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
-Liegt die Leferadresse des Kunden im selben Land, wie der Standort, wird für den Auftzrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatztsuer-ID um europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstelleung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktiviewren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Liefewradresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-AUslandsssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
+*Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteuer-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
+Liegt die Lieferadresse des Kunden im selben Land, wie der Standort, wird für den Auftrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatzsteuer-ID im europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstellung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktivieren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Lieferadresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-Auslandssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
 |*Ausfuhrlieferung*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
 *Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese EInstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
-*Brutto-Rechnung*: DIe Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzstuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
+*Brutto-Rechnung*: Die Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzsteuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
 |*Umssatzsteuer der Versandkosten auf Rechnung ausweisen*|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
 |*Kleinunternehmer (nur Deutschland)*|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
 |*Anzahl Nachkommastellen bei Preisen*|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
-Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt duchgeführt werden.
-|*Nur Gesamtpreis runden*|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Karft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
+Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt durchgeführt werden.
+|*Nur Gesamtpreis runden*|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
 Bei 2 Nachkommastellen hat das Aktivieren der Option keine Auswirkungen, da bereits der Einzelpreis gerundet wird. +
 Bei 4 Nachkommastellen werden ohne Aktivieren dieser Option die Summen der Auftragspositionen gerundet.
 |===
@@ -624,14 +624,14 @@ Mithilfe der oben erläuterten Einstellungen lassen sich demzufolge folgende Res
 
 ===== Umsatzsteuereinstellungen
 
-Umsatzsteuereinstellungen werden für jeden Standort separat angelegt, sie sind also standortabhängig im System. Standorte sind notwendig für Firmensitze oder Versandländer. In plentymarkets wird zwischen Standorten und Liferländer, in denen man steurpflichtig ist, unterschieden. Ein Standort ist sozusagen ein Firmensitz. +
+Umsatzsteuereinstellungen werden für jeden Standort separat angelegt, sie sind also standortabhängig im System. Standorte sind notwendig für Firmensitze oder Versandländer. In plentymarkets wird zwischen Standorten und Lieferländer, in denen man steuerpflichtig ist, unterschieden. Ein Standort ist sozusagen ein Firmensitz. +
 Standardmäßig sind 2 Standorte, Deutschland und United Kingdom, als Beispiele im System voreingerichtet. Für den Produktivbetrieb müssen jedoch eigene Standorte angelegt werden. Benötigt wird mindestens ein Standort. Weitere Standorte werden benötigt, wenn Niederlassungen in anderen Ländern bestehen. +
-Das System unterscheidet bei Standortländern zwischen Mitgliedsländern der EU und anderen Ländern. Wenn daher ein Standort eingerichtet wird, der nicht in der EU liegt, wird jede Lieferung in ein anderes Land als Ausfuhrlieferung betrachtet. Wenn ein Standort in der EU liegt, wird zwischen innergemeinschaftlichen Leferungen und Ausfuhrlieferungen unterschieden. +
+Das System unterscheidet bei Standortländern zwischen Mitgliedsländern der EU und anderen Ländern. Wenn daher ein Standort eingerichtet wird, der nicht in der EU liegt, wird jede Lieferung in ein anderes Land als Ausfuhrlieferung betrachtet. Wenn ein Standort in der EU liegt, wird zwischen innergemeinschaftlichen Lieferungen und Ausfuhrlieferungen unterschieden. +
 Zu den umsatzsteuerrelevanten Grundeinstellungen zählen Festlegungen zum Umgang mit Ausfuhrlieferungen und zur Anzeige der Umsatzsteuer von Versandkosten. Für EU-Standorte muss außerdem festgelegt werden, wie sich das System bei einer Umsatzsteuer-ID am Auftrag verhält.
 
 Mindestens eine Steuerkonfiguration muss im System hinzugefügt werden, mit dieser kann auch in verschiedene Länder versendet werden. Sobald die Lieferschwelle für ein Land überschritten wird, muss eine weitere Steuerkonfiguration hinzugefügt werden, damit die Steuerabgaben korrekt berechnet werden können. Standorte werden für Firmensitze hinzugefügt, das Land des Standortes wird mit den entsprechenden Steuerkonfigurationen für die korrekte Abrechnung hinzugefügt. Erst wenn Händler in weiteren Ländern steuerpflichtig werden, weil sie die Lieferschwelle überschritten haben, werden für einen Standort weitere Länder mit Steuerkonfigurationen hinzugefügt.
 
-Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchaltung* im Tab *Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
+Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
 
 [[tabelle-einstellungen-umsatzsteuersätze]]
 [cols="1,3"]
@@ -644,17 +644,17 @@ Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant 
 |*Steuersatz A in %* +
 *Steuersatz B in %* +
 *Steuersatz C in %* +
-*Steuersatz D in %* |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder estehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur düe die Buchhaltungssoftware Xero relevant.
+*Steuersatz D in %* |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
 
 |*Gültig ab*|Das Datum, ab dem die Steuersätze gelten sollen.
 
-|*Ungültig ab*|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Leiferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
+|*Ungültig ab*|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Lieferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
 
 |*Nur für digitale Artikel*|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
 Wenn für ein Lieferland bereits ein Steuersatz vorhanden ist, z.B. weil die Lieferschwelle überschritten wurde, muss kein weiterer Steuersatz nur für digitale Artikel angelegt werden, da der vorhandene Steuersatz verwendet wird.
 
-|*Differenzbesteuerung*|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuerdatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
-Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betzrag der differenzbesteurten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
+|*Differenzbesteuerung*|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuersatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
+Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betrag der differenzbesteuerten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
 
 |===
 
@@ -664,7 +664,7 @@ Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur
 
 ===== Debitoren- und Erlöskonten
 
-In plentymarktes kann gewählt werden, anhand weches Kriteriums Forderungen Debitorenkonten zugeordnet werden. Es kann zum Beispiel der Nachname eines Debitors oder das Lieferland für die Zuordnung genutzt werden. Das Kriterium muss festgelegt werden, bevor die Konten eingetragen werden. Eingerichtet wird ein Debitorenkonto im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Debitorenkonten*. Folgende Einstellungsmöglichkeiten ergeben sich dort:
+In plentymarktes kann gewählt werden, anhand welches Kriteriums Forderungen Debitorenkonten zugeordnet werden. Es kann zum Beispiel der Nachname eines Debitors oder das Lieferland für die Zuordnung genutzt werden. Das Kriterium muss festgelegt werden, bevor die Konten eingetragen werden. Eingerichtet wird ein Debitorenkonto im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Debitorenkonten*. Folgende Einstellungsmöglichkeiten ergeben sich dort:
 
 [[tabelle-einstellungen-debitorenkonten]]
 [cols="1,3"]
@@ -672,16 +672,16 @@ In plentymarktes kann gewählt werden, anhand weches Kriteriums Forderungen Debi
 |===
 |Einstellung|Erläuterung
 
-|*Standard-Debitorenkonto*|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debotorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Damzu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
+|*Standard-Debitorenkonto*|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debitorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Dazu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
 
-|*Speichere Debitorenkonto am Kundenstammdatensatz*|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkotno hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
+|*Speichere Debitorenkonto am Kundenstammdatensatz*|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkonto hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
 
-|*Automatische Vergabe von Debitorenkonten nach*|Aus einer Dropdwon-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
-*Anfangsbuchstabe*: Debitorenkonto wird anhand der Anfangsbuchstaben von Kundendaten zugeordnet. Welche Kundendaten und in welcher Reihenfolge berücksichtigt werden, werden in einer zwieten Dropdown-Liste bestimmt. +
-Die Reihenfolge *Firma, Nachname, Vorname* sorft dafür, dass zuerst der Firmenname berücksichtigt wird. Wenn kein Firmenname eingetragen wurde, wird der Nachname berücksichtigt usw. +
+|*Automatische Vergabe von Debitorenkonten nach*|Aus einer Dropdown-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
+*Anfangsbuchstabe*: Debitorenkonto wird anhand der Anfangsbuchstaben von Kundendaten zugeordnet. Welche Kundendaten und in welcher Reihenfolge berücksichtigt werden, werden in einer zweiten Dropdown-Liste bestimmt. +
+Die Reihenfolge *Firma, Nachname, Vorname* sorgt dafür, dass zuerst der Firmenname berücksichtigt wird. Wenn kein Firmenname eingetragen wurde, wird der Nachname berücksichtigt usw. +
 *Zahlungsart*: Das Debitorenkonto wird anhand der Zahlungsart eines Auftrages zugeordnet. +
 *Lieferland*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet. +
-*Lieferland, für Inland jedoch Zahlungsart*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Loeferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
+*Lieferland, für Inland jedoch Zahlungsart*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Lieferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
 
 |*Anfangsbuchstaben (A-Z bzw. 0-9 Debitorenkonto)*|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
 
@@ -695,7 +695,7 @@ Des Weiteren sind Erlöskonten einzurichten, um die Umsatzerlöse einem Konto zu
 
 ===== Export
 
-plentymarkets bietet die Möglichkeit, Buchhaltungsdaten zu exportieren und so an eine Buchhaltungs-Software zu übergeben. Beim Export werden Debitorenkonten, Erlöskonten und Buchhungsschlüssel gemäß den vom Anwender gewählten Einstellungen vergeben. Im Menü *Daten » Spezialexport* kann ein Datenformat ausgewählt und zum Beispiel ein Export vom Tyo *Finanzbuchhaltung* oder *Collmex-Buchhaltung* vorgenommen werden.
+plentymarkets bietet die Möglichkeit, Buchhaltungsdaten zu exportieren und so an eine Buchhaltungs-Software zu übergeben. Beim Export werden Debitorenkonten, Erlöskonten und Buchungsschlüssel gemäß den vom Anwender gewählten Einstellungen vergeben. Im Menü *Daten » Spezialexport* kann ein Datenformat ausgewählt und zum Beispiel ein Export vom Typ *Finanzbuchhaltung* oder *Collmex-Buchhaltung* vorgenommen werden.
 
 ==== Zahlungsverkehr
 
@@ -703,9 +703,9 @@ Zahlungen gehen bei plentymarkets entweder automatisch im System ein oder werden
 
 Bei diesen Bankbuchungen, die z.B. bei Überweisungen auf ein Konto des Anwenders entstehen, müssen die auf diesem Konto gebuchten Zahlungen an das System gemeldet und den Aufträgen korrekt zugeordnet werden. Der Import der Bankbuchungsdateien ins System findet durch den Anwender im CSV-Format statt. Werden Datensätze bei diesem Import doppelt eingelesen, werde diese doppelten Datensätze verworfen. Im Anschluss an den Import wird ein Durchlauf mit automatischer Zuordnung der Zahlungen zu Aufträgen gestartet.
 
-Zahlungen können auch manuell eingebucht werden, z.B. wenn eine Barzahlung stattgefunden hat. Die manuelle Buchung findet direkt am zugehörigen Auftrag statt. Eingegeben werden müssen die Paramter Betrag, Haben/Soll, Währung, Wechselkurs (bei Bedarf), Verwendungszweck und Zahlungseingang (Datum). Im System werden manuell gebuchte Zahlungseingänge durch das Symbol *Manuelle Buchung* gekennzeichnet.
+Zahlungen können auch manuell eingebucht werden, z.B. wenn eine Barzahlung stattgefunden hat. Die manuelle Buchung findet direkt am zugehörigen Auftrag statt. Eingegeben werden müssen die Parameter Betrag, Haben/Soll, Währung, Wechselkurs (bei Bedarf), Verwendungszweck und Zahlungseingang (Datum). Im System werden manuell gebuchte Zahlungseingänge durch das Symbol *Manuelle Buchung* gekennzeichnet.
 
-Wie weiter oben erwähnt, werden in plentymarkets Zahlungen Aufträgen über eine unscharfe Suche automatisch zugeordnet. Wenn die Zuordnung fehlschlägt, können Zahlungen Aufträgen manuell zugeordnet werden. Zahlungseingänge werden in einem eigenen Bereich im Backend verwaltet (Menü: *Aufträge » Zahlungsverkehr*), hier sind unzugeordnete Zahlungeingänge durch einen grünen Pfeil gekennzeichnet. In diesem Bereich kann der Anwender auch für jede Zahlung, die ins System kommt, alle relevanten Informationen einsehen (z.B. Buchungsdaten, Zahlungsart, wann eine Zahlung eingegangen ist usw.). +
+Wie weiter oben erwähnt, werden in plentymarkets Zahlungen Aufträgen über eine unscharfe Suche automatisch zugeordnet. Wenn die Zuordnung fehlschlägt, können Zahlungen Aufträgen manuell zugeordnet werden. Zahlungseingänge werden in einem eigenen Bereich im Backend verwaltet (Menü: *Aufträge » Zahlungsverkehr*), hier sind unzugeordnete Zahlungseingänge durch einen grünen Pfeil gekennzeichnet. In diesem Bereich kann der Anwender auch für jede Zahlung, die ins System kommt, alle relevanten Informationen einsehen (z.B. Buchungsdaten, Zahlungsart, wann eine Zahlung eingegangen ist usw.). +
 Zur Verwaltung von Zahlungen können Grundeinstellungen vorgenommen werden. Es sind Standardeinstellungen dafür im System vorhanden, es liegt aber beim Anwender, ob er diese übernimmt oder die folgenden Grundeinstellungen anpasst:
 
 [[tabelle-grundeinstellungen-zahlungseingang]]
@@ -726,6 +726,6 @@ Zur Verwaltung von Zahlungen können Grundeinstellungen vorgenommen werden. Es s
 
 |====
 
-Neben der Zuordnung zu einem Auftrag stehen den Anwendern im Zahlungsverkehr-Menü noch die Bearbeitungsmöglichkeiten *teilen einer Zahlung* (der Betrag der Zahlung wird auf mehrere ausgewählte Aufträge aufgeteilt) und *löschen einer Zahlung* (muss in einer Abfrage vom Anwender bestätigt werden) zur Verfügung. Darüber hinaus können einem Auftrag zugeordnete Zahlungen von diesem auch wieder *gelöst* und danach neu zugeordnet werden. Neben dieser manuellen Zuordnung von Zahlungen kann eine automatische Zuordnung über die Gruppenfunktion stattfinden. Dabei werden Zahlungen vom System automatisch nach einer vom Anwender festgelegten Übereinstimmungsrate zugeordnet.
+Neben der Zuordnung zu einem Auftrag stehen den Anwendern im Zahlungsverkehr-Menü noch die Bearbeitungsmöglichkeiten *teilen einer Zahlung* (der Betrag der Zahlung wird auf mehrere ausgewählte Aufträge aufgeteilt) und *löschen einer Zahlung* (muss in einer Abfrage vom Anwender bestätigt werden und ist nur möglich, wenn die Zahlung unzugeordnet ist) zur Verfügung. Darüber hinaus können einem Auftrag zugeordnete Zahlungen von diesem auch wieder *gelöst* und danach neu zugeordnet werden. Neben dieser manuellen Zuordnung von Zahlungen kann eine automatische Zuordnung über die Gruppenfunktion stattfinden. Dabei werden Zahlungen vom System automatisch nach einer vom Anwender festgelegten Übereinstimmungsrate zugeordnet.
 
 Es gibt Fälle, in denen Zahlungen in der Übersicht keinen Aufträgen mehr zugeordnet werden können. Das sind zum Beispiel Vormerkposten, zu denen die eigentliche Zahlung bereits gebucht wurde. Die Zahlungen werden in der Übersicht mit *Nicht verbuchbare Zahlung* gekennzeichnet.
