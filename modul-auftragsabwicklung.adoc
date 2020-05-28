@@ -2,9 +2,7 @@
 
 Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bearbeitung und Abwicklung von Aufträgen, die aus verschiedenen Kanälen stammen.
 Dabei unterscheidet plentymarkets zwischen verschiedenen Auftragstypen und verschiedenen Auftragsherkünften. Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde.
-Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in eigenen Unterkapiteln erläutert.
-
-Die Auftragsabwicklung ist eng verknüpft mit dem Bereich Buchhaltung und allen Aspekten, die mit dem Bereich Zahlungen und Zahlungsverkehr zusammenhängen.
+Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in eigenen Unterkapiteln erläutert. Des Weiteren werden die Bereiche Auftragsdokumente, Buchhaltung und Zahlungsverkehr in diesem Abschnitt behandelt.
 
 ==== Auftragsherkünfte
 
@@ -401,7 +399,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
  * Änderung der externen Auftragsnummer
  * Änderung des Zeichens der Kunden
  * Änderung der Anzahl der Pakete
- * Änderung der Paktenummnern
+ * Änderung der Paketnummnern
  * Einstellen des Rabatts pro Artikelposition
  * Kopieren eines Auftrags
  * Teilen eines Auftrags
@@ -573,7 +571,7 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 
 Auftragsdokumente unterliegen einer *Aufbewahrungspflicht*. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders.
 
-*Zu beachten:* Anstatt Dokumente in plentymarkets zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann vom System nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet und nicht im System erstellt, ist es danach nicht mehr möglich den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentymarkets heraus) im System zu erstellen. Auf diese Art und Weise wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
+*Zu beachten:* Anstatt Dokumente in plentymarkets zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann vom System nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet und nicht im System erstellt, ist es danach nicht mehr möglich den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentymarkets heraus) im System zu erstellen. So wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
 
 ===== Stornobelege
 
@@ -584,7 +582,7 @@ Im System stehen dem Anwender 4 Mahnstufen zur Verfügung. Für jede Mahnstufe m
 
 ==== Buchhaltung
 
-Buchhaltung ist kein eigenständiges Modul im Backend des plentymarktes Systems. Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatzsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Unterkapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung entscheiden.
+Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatzsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Unterkapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung entscheiden.
 
 ===== Grundeinstellungen
 
@@ -601,9 +599,9 @@ Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standor
 *Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteuer-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
 Liegt die Lieferadresse des Kunden im selben Land, wie der Standort, wird für den Auftrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatzsteuer-ID im europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstellung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktivieren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Lieferadresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-Auslandssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
 |*Ausfuhrlieferung*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
-*Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese EInstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
+*Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese Einstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
 *Brutto-Rechnung*: Die Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzsteuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
-|*Umssatzsteuer der Versandkosten auf Rechnung ausweisen*|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
+|*Umsatzsteuer der Versandkosten auf Rechnung ausweisen*|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
 |*Kleinunternehmer (nur Deutschland)*|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
 |*Anzahl Nachkommastellen bei Preisen*|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
 Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt durchgeführt werden.
@@ -660,7 +658,7 @@ Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, be
 
 ===== Zolltarifnummern
 
-Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen ElasticSync Import befüllen.
+Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen ElasticSync Import befüllt werden.
 
 ===== Debitoren- und Erlöskonten
 
