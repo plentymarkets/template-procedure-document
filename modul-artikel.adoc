@@ -203,7 +203,7 @@ Im Menü *Einrichtung » Artikel » Attribute* können beliebig viele Attribute 
 
 [[tabelle-attribute]]
 .Attribute und Attributwerte
-[cols="1,1"]
+[cols="1,3"]
 |===
 |Beispiel: Attribut|Beispiel: Attributwerte
 

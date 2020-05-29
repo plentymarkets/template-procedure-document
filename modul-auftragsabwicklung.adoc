@@ -514,58 +514,58 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 |====
 |Einstellung |Erläuterung
 
-| *Adressfeld*
+| Adressfeld
 |Positioniert das Feld, in dem die Anschrift des Kunden angezeigt wird.
 
-| *Dokumentname/-nummer*
+| Dokumentname/-nummer
 |Namen muss eingetragen werden, beispielsweise *Rechnung* oder *Rechnungs-Nr.*
 
-| *Datum*
+| Datum
 |Aktuelles Datum des Dokuments
 
-| *Bestelldatum*
+| Bestelldatum
 |Datum der Bestellung
 
-| *Währung*
+| Währung
 |Name muss eintragen werden. Die eigentliche Währung wird aus den Grundeinstellungen übernommen (siehe oben).
 
-| *Auftrags-ID*
+| Auftrags-ID
 |Die Auftrags-ID einer Bestellung wird angezeigt.
 
-| *Auftrags-ID (2)*
+| Auftrags-ID (2)
 |Bei Retouren, Gutschriften und Lieferaufträgen wird die Auftrags-ID des Hauptauftrags ausgegeben.
 
-| *Kunden-ID*
+| Kunden-ID
 |Kunden-ID des Käufers wird angezeigt.
 
-| *Herkunft*
+| Herkunft
 |Auftragsherkunft der Bestellung wird angezeigt.
 
-| *Zeichen Kunde*
+| Zeichen Kunde
 |Zeigt an, was im gleichnamigen Feld in der Auftragseinstellung hinterlegt wurde.
 
-| *Kundenklasse*
+| Kundenklasse
 |ID der Kundenklasse wird angezeigt.
 
-| *Auftragseigner*
+| Auftragseigner
 |Gibt den Namen des Auftragseigners aus, d.h. den Namen des für den Auftrag verantwortlichen Mitarbeiters.
 
-| *FiBu-Konto*
+| FiBu-Konto
 |Zeigt den Debitor an, der in den Kundendaten unter Debitoren-Konto eingetragen ist.
 
-| *Eigene Kundennummer*
+| Eigene Kundennummer
 |Gibt die Kundennummer aus plentymarkets aus (nicht die ID).
 
-| *USt.-IdNr.*
+| USt.-IdNr.
 |Umsatzsteuer-Identifizierungsnummer des Kunden wird angezeigt.
 
-| *Eigene USt-IdNr.*
+| Eigene USt-IdNr.
 |Gibt die Umsatzsteuer-ID des Händlers aus.
 
-| *ID Pickliste*
+| ID Pickliste
 |Wenn eine Pickliste generiert wird, erhält diese Pickliste eine ID. Bei allen Aufträgen, die sich auf dieser Pickliste befinden, wird die Pickliste-ID hinterlegt. Mit der Option ID Pickliste kann diese ID auf dem PDF-Dokument ausgegeben werden. Sinnvoll z.B. bei Lieferscheinen.
 
-| *Seitenzahl*
+| Seitenzahl
 |Gibt die Seitenzahl im Dokument pro Seite aus.
 |====
 
@@ -594,18 +594,18 @@ Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standor
 |===
 |Einstellung|Erläuterung
 
-|*Umsatzsteuer-ID*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. Diese Einstellung gilt nur für Lieferungen innerhalb der EU, für Standorte außerhalb der EU hat sie keine Auswirkung. +
+|Umsatzsteuer-ID|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. Diese Einstellung gilt nur für Lieferungen innerhalb der EU, für Standorte außerhalb der EU hat sie keine Auswirkung. +
 *Brutto-Rechnung*: Alle Rechnungen für innergemeinschaftliche Lieferungen werden brutto ausgestellt. +
 *Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteuer-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
 Liegt die Lieferadresse des Kunden im selben Land, wie der Standort, wird für den Auftrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatzsteuer-ID im europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstellung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktivieren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Lieferadresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-Auslandssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
-|*Ausfuhrlieferung*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
+|Ausfuhrlieferung|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
 *Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese Einstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
 *Brutto-Rechnung*: Die Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzsteuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
-|*Umsatzsteuer der Versandkosten auf Rechnung ausweisen*|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
-|*Kleinunternehmer (nur Deutschland)*|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
-|*Anzahl Nachkommastellen bei Preisen*|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
+|Umsatzsteuer der Versandkosten auf Rechnung ausweisen|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
+|Kleinunternehmer (nur Deutschland)|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
+|Anzahl Nachkommastellen bei Preisen|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
 Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt durchgeführt werden.
-|*Nur Gesamtpreis runden*|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
+|Nur Gesamtpreis runden|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
 Bei 2 Nachkommastellen hat das Aktivieren der Option keine Auswirkungen, da bereits der Einzelpreis gerundet wird. +
 Bei 4 Nachkommastellen werden ohne Aktivieren dieser Option die Summen der Auftragspositionen gerundet.
 |===
@@ -637,21 +637,21 @@ Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant 
 |===
 |Einstellung|Erläuterung
 
-|*Land*|Hier wird das Land gewählt, in dem der Anwender steuerpflichtig ist. Das Land kann nachträglich nicht verändert werden.
+|Land|Hier wird das Land gewählt, in dem der Anwender steuerpflichtig ist. Das Land kann nachträglich nicht verändert werden.
 
-|*Steuersatz A in %* +
-*Steuersatz B in %* +
-*Steuersatz C in %* +
-*Steuersatz D in %* |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
+|Steuersatz A in % +
+Steuersatz B in % +
+Steuersatz C in % +
+Steuersatz D in % |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
 
-|*Gültig ab*|Das Datum, ab dem die Steuersätze gelten sollen.
+|Gültig ab|Das Datum, ab dem die Steuersätze gelten sollen.
 
-|*Ungültig ab*|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Lieferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
+|Ungültig ab|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Lieferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
 
-|*Nur für digitale Artikel*|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
+|Nur für digitale Artikel|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
 Wenn für ein Lieferland bereits ein Steuersatz vorhanden ist, z.B. weil die Lieferschwelle überschritten wurde, muss kein weiterer Steuersatz nur für digitale Artikel angelegt werden, da der vorhandene Steuersatz verwendet wird.
 
-|*Differenzbesteuerung*|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuersatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
+|Differenzbesteuerung|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuersatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
 Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betrag der differenzbesteuerten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
 
 |===
@@ -670,22 +670,22 @@ In plentymarktes kann gewählt werden, anhand welches Kriteriums Forderungen Deb
 |===
 |Einstellung|Erläuterung
 
-|*Standard-Debitorenkonto*|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debitorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Dazu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
+|Standard-Debitorenkonto|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debitorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Dazu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
 
-|*Speichere Debitorenkonto am Kundenstammdatensatz*|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkonto hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
+|Speichere Debitorenkonto am Kundenstammdatensatz|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkonto hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
 
-|*Automatische Vergabe von Debitorenkonten nach*|Aus einer Dropdown-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
+|Automatische Vergabe von Debitorenkonten nach|Aus einer Dropdown-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
 *Anfangsbuchstabe*: Debitorenkonto wird anhand der Anfangsbuchstaben von Kundendaten zugeordnet. Welche Kundendaten und in welcher Reihenfolge berücksichtigt werden, werden in einer zweiten Dropdown-Liste bestimmt. +
 Die Reihenfolge *Firma, Nachname, Vorname* sorgt dafür, dass zuerst der Firmenname berücksichtigt wird. Wenn kein Firmenname eingetragen wurde, wird der Nachname berücksichtigt usw. +
 *Zahlungsart*: Das Debitorenkonto wird anhand der Zahlungsart eines Auftrages zugeordnet. +
 *Lieferland*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet. +
 *Lieferland, für Inland jedoch Zahlungsart*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Lieferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
 
-|*Anfangsbuchstaben (A-Z bzw. 0-9 Debitorenkonto)*|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
+|Anfangsbuchstaben (A-Z bzw. 0-9 Debitorenkonto)|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
 
-|*Lieferländer*|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Lieferländern vergeben werden sollen.
+|Lieferländer|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Lieferländern vergeben werden sollen.
 
-|*Zahlungsarten*|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Zahlungsarten vergeben werden sollen.
+|Zahlungsarten|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Zahlungsarten vergeben werden sollen.
 
 |===
 
@@ -712,13 +712,13 @@ Zur Verwaltung von Zahlungen können Grundeinstellungen vorgenommen werden. Es s
 |====
 |Einstellung |Erläuterung
 
-|*Übereinstimmung für automatische Zuordnung*
+|Übereinstimmung für automatische Zuordnung
 |Der Anwender kann zwischen *0.7* (nicht so genaue Übereinstimmung zur Zuordnung nötig) und *1.0* (genaue Übereinstimmung nötig) wählen. Ist dieser Wert höher eingestellt, kann das Problem auftreten, dass Zahlungen nicht zugeordnet werden können. Daher ist in der *Standard-Einstellung* ein Wert von *0,75* eingestellt.
 
-|*Zahlungskulanz*
+|Zahlungskulanz
 |Damit z.B. interne Nachkommabeträge (ab der dritten Nachkommastelle) nicht zu falschen Buchungen führen, sollte ein *Mindestbetrag* von *0,01* eingetragen sein (Standard-Einstellung). Wenn z.B. *0,05* eingestellt ist, werden Fehlbeträge bis 5 Cent trotzdem als korrekte Buchung behandelt.
 
-|*Kundenbankdaten importieren*
+|Kundenbankdaten importieren
 |Der Anwender kann wählen, ob die *Bankdaten* des Kunden beim Zahlungseingang *importiert* und in den jeweiligen *Kundendaten* hinterlegt werden sollen oder nicht. +
 *_Wichtig:_* Da Bankdaten nur mit Zustimmung des Kunden importiert und gespeichert werden dürfen, ist hier standardmäßig *Nein* voreingestellt.
 
