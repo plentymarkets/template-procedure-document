@@ -69,19 +69,19 @@ Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle
 |====
 |*Sichtbarkeiten* |*Erläuterung*
 
-|*Lager*
+|Lager
 |Die Lager sind einzeln wählbar unterteilt nach Lagertypen.
 
-|*Sichtbare Auftragsstatus*
+|Sichtbare Auftragsstatus
 |Die Auftragsstatus sind einzeln wählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle eigenen.
 
-|*Setzbare Auftragsstatus*
+|Setzbare Auftragsstatus
 |Die Auftragsstatus sind einzeln wählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle durch den Anwender eingetragenen Status.
 
-|*Mandanten*
+|Mandanten
 |Die Mandanten sind einzeln wählbar.
 
-|*Ticketstatus*
+|Ticketstatus
 |Die Ticketstatus sind einzeln wählbar. Zur Auswahl stehen alle durch den Anwender angelegten Ticketstatus.
 |====
 

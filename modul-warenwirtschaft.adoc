@@ -35,27 +35,27 @@ plentymarkets stellt verschiedene Lagertypen bereit, die je nach Zweck gewählt 
 
 [[lagertypen-in-plentymarkets]]
 .Lagertypen in plentymarkets
-[cols=”1,3”]
+[cols="1,3"]
 |====
 
 |*Lagertyp* |*Erläuterung*
 
-|*Vertrieb*
+|Vertrieb
 |Standardlager. Lager für den Verkauf mit den entsprechenden Automatismen wie Bestandsreservierung und Statuswechsel bei Aufträgen.
 
-|*Reparatur*
+|Reparatur
 |Lager für Retourenartikel. Dieses Lager ist für Lager des Typs Vertrieb als Zugeordnetes Reparaturlager wählbar.
 
-|*Vorrat*
+|Vorrat
 |Lager für Artikel, die auf Vorrat liegen.
 
-|*Umschlag*
+|Umschlag
 |Kurzfristiges Lager für die Zuordnung der Artikel zur Zieladresse bei der Umladung von einem Transportmittel auf ein anderes.
 
-|*Verteiler*
+|Verteiler
 |Auslieferungslager
 
-|*Sonstiges*
+|Sonstiges
 |Sonderlager
 |====
 
@@ -69,24 +69,24 @@ In plentymarkets wird zwischen verschiedenen Arten von Warenbeständen unterschi
 
 [[bestandsbegriffe-in-plentymarkets]]
 .Bestandsbegriffe in plentymarkets
-[cols=”1,3”]
+[cols="1,3"]
 |====
 
 |*Begriff* |*Erläuterung*
 
-|*Physischer Warenbestand*
+|Physischer Warenbestand
 |Menge der Artikel, die sich tatsächlich im Lager befinden.
 
-|*Reservierter Warenbestand*
+|Reservierter Warenbestand
 |Menge der Artikel, für die eine Reservierung vorliegt. Eine Reservierung liegt vor, wenn ein offener Auftrag oder eine Gewährleistung besteht. Der Bestand bleibt reserviert, bis der Warenausgang gebucht oder der Auftrag oder die Gewährleistung storniert wird. Der reservierte Bestand ist eine Teilmenge des physischen Warenbestands, denn der Bestand befindet sich noch im Lager, wurde aber schon verkauft. Wenn ein Warenausgang gebucht wird, wird die Reservierung aufgehoben und die gebuchte Menge vom physischen Warenbestand abgezogen.
 
-|*Reserviert für Listings*
+|Reserviert für Listings
 |Menge der Artikel, die aktuell mit einem Listing auf Märkten eingestellt sind. Da Listings rechtlich als verbindliche Angebote an potentielle Käufer gelten, ist es sinnvoll, die in Listings angebotene Ware auch ohne konkreten Auftrag zu reservieren. Andernfalls werden eventuell mehr Artikel verkauft, als im Warenbestand vorhanden sind. In plentymarkets kann jeder für sich entscheiden, ob Artikel aus aktiven Listings als reservierte Bestände geführt werden sollen oder nicht. Bestand, der für Listings reserviert ist, wird separat vom für Aufträge reservierten Bestand geführt. Wenn kein Bestand für Listings reserviert wird, ist die eingestellte Menge Teil des Netto-Bestands und steht deshalb für den Verkauf zur Verfügung.
 
-|*Netto-Warenbestand*
+|Netto-Warenbestand
 |Menge der Artikel, die zum Verkauf zur Verfügung steht. Der Netto-Warenbestand ist eine Teilmenge des physischen Bestands. Wenn vom physischen Warenbestand alle Reservierungen abgezogen werden, ergibt sich der Netto-Bestand. Wird beim Kauf eines Artikels eine Bestellmenge eingetragen, die den Nettobestand überschreitet, erhält der Käufer einen Warnhinweis mit der Information, dass sich die Lieferung verzögert.
 
-|*Bestellte Ware*
+|Bestellte Ware
 |Menge der beim Lieferanten bestellten, aber noch nicht gelieferten bzw. eingebuchten Artikel. Mit dem Buchen des Wareneingangs gehen diese Artikel dann in den physischen Warenbestand über.
 |====
 
@@ -128,19 +128,19 @@ Auch mit MHD/Charge können Varianten in andere Lager umgebucht werden. Bei dies
 
 [[beschraenkungen-beim-umbuchen-mit-mhd-charge]]
 .Beschränkungen beim Umbuchen mit MHD/Charge
-[cols=”1,3”]
+[cols="1,3"]
 |====
 
 |*Beschränkung für* |*Erläuterung*
-|*MHD und Charge*
+|MHD und Charge
 |Umbuchung in ein Lager mit Charge oder MHD ist möglich. Bei der Umbuchung gehen MHD- oder Chargeninformationen jedoch verloren. +
 Umbuchung in ein Lager ohne MHD und Charge ist möglich. Bei der Umbuchung gehen MHD- und Chargeninformationen jedoch verloren.
 
-|*MHD*
+|MHD
 |Die Umbuchung in ein Lager mit Charge ist nicht möglich. +
 Die Umbuchung in ein Lager ohne MHD und Charge ist möglich. Die MHD-Informationen gehen jedoch verloren.
 
-|*Charge*
+|Charge
 |Die Umbuchung in ein Lager mit MHD ist nicht möglich. +
 Die Umbuchung in ein Lager ohne MHD und Charge ist möglich. Die Chargeninformationen gehen jedoch verloren.
 |====
