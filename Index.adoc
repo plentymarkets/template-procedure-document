@@ -6,6 +6,14 @@
 include::document-purpose.adoc[]
 
 <<<
+
+== Changelog
+
+NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
+
+include::Changelog.adoc[]
+
+<<<
     
 include::allgemeine-beschreibung-plentymarkets.adoc[]
 
@@ -84,9 +92,3 @@ include::wording-examples.adoc[]
 <<<
 
 include::anhang-rest.adoc[]
-
-== Changelog
-
-NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
-
-include::Changelog.adoc[]
