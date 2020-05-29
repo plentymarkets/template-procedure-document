@@ -2,7 +2,7 @@
 
 Die Auftragsabwicklung als ein Modul von plentymarkets erlaubt die zentrale Bearbeitung und Abwicklung von Aufträgen, die aus verschiedenen Kanälen stammen.
 Dabei unterscheidet plentymarkets zwischen verschiedenen Auftragstypen und verschiedenen Auftragsherkünften. Die Auftragsherkünfte dienen dazu, zu kennzeichnen, über welchen Kanal ein Auftrag generiert wurde.
-Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in den folgenden Abschnitten erläutert.
+Die Auftragstypen dienen dazu, verschiedene Geschäftsvorfälle abzubilden. Beide Aspekte werden in eigenen Unterkapiteln erläutert. Des Weiteren werden die Bereiche Auftragsdokumente, Buchhaltung und Zahlungsverkehr in diesem Abschnitt behandelt.
 
 ==== Auftragsherkünfte
 
@@ -169,9 +169,11 @@ In dem oben beschriebenen Fall muss der Anwender von plentymarkets während der 
 Der Auftragstyp Auftrag dient zum Erfassen und Abwickeln von Kundenbestellungen. Der Kanal, über den der Auftrag generiert wurde, wird als Herkunft in den Auftragsdaten gespeichert. Wie oben erwähnt, wird Aufträgen außerdem ein Status zugeordnet. Da mithilfe der Auftragsstatus der Fortschritt der Abwicklung abgebildet werden soll, sind auch einige Systemautomatismen mit den Status verknüpft. +
 Aufträge werden bei Eingang in ein plentymarkets System zunächst auf Status 3 gesetzt, diese Statuszuordnung ist ein Systemautomatismus. In Ausnahmefällen, z.B. bei der Systemherkunft Amazon, kann ein Auftrag bei Eingang automatisch auf Status 1 gesetzt werden.
 
-Anschließend kann der Anwender den Auftrag bearbeiten. Er kann dem Kunden eine Empfangsbestätigung senden. Er kann weitere Artikel, z.B. Gratisproben, hinzufügen. Er könnte dem Kunden einen Rabatt einräumen. Er kann die Rechnungsadresse, die Lieferanschrift, die Versandart sowie die Artikelpositionen ändern. Wie die Absprache mit dem Kunden bei Änderungen am Auftrag erfolgt, ist dabei Sache des Anwenders. Wenn einem Auftrag eine Zahlung zugeordnet werden konnte, erfolgt ein weiterer Statuswechsel. Auf welchen Status der Auftrag wechselt, hängt davon ab, ob der Auftrag unter-, über- oder vollständig bezahlt ist. Wenn ein Auftrag unterbezahlt ist, wird er automatisch auf Status 3.3 gesetzt. Wenn ein Auftrag überbezahlt ist, wird er automatisch auf Status 3.2 gesetzt. Wenn ein Auftrag vollständig bezahlt ist und das Modul Warenwirtschaft nicht verwendet wird, wechselt der Auftrag auf Status 5. Status 5 bedeutet, dass der Auftrag für den Versand freigegeben wurde. Dieser Status eignet sich also, um Picklisten oder Ähnliches zu erstellen. +
+Anschließend kann der Anwender den Auftrag bearbeiten. Er kann dem Kunden eine Empfangsbestätigung senden. Er kann weitere Artikel, z.B. Gratisproben, hinzufügen. Er könnte dem Kunden einen Rabatt einräumen. Er kann die Rechnungsadresse, die Lieferanschrift, die Versandart sowie die Artikelpositionen ändern. Wie die Absprache mit dem Kunden bei Änderungen am Auftrag erfolgt, ist dabei Sache des Anwenders. +
+Wenn einem Auftrag eine Zahlung zugeordnet werden konnte, sollte eine Rechnung erstellt werden. Geschieht dies nicht, wird am Auftrag eine Warnung angezeigt, dass eine Zahlung aber keine Rechnung existiert. Zudem erfolgt bei Zahlungszuordnung ein weiterer Statuswechsel. Auf welchen Status der Auftrag wechselt, hängt davon ab, ob der Auftrag unter-, über- oder vollständig bezahlt ist. Wenn ein Auftrag unterbezahlt ist, wird er automatisch auf Status 3.3 gesetzt. Wenn ein Auftrag überbezahlt ist, wird er automatisch auf Status 3.2 gesetzt. Wenn ein Auftrag vollständig bezahlt ist und das Modul Warenwirtschaft nicht verwendet wird, wechselt der Auftrag auf Status 5. Status 5 bedeutet, dass der Auftrag für den Versand freigegeben wurde. Dieser Status eignet sich also, um Picklisten oder Ähnliches zu erstellen. +
 Ein vom System angestoßener automatischer Statuswechsel auf Status 5 erfolgt auch für einige Zahlungsarten, bei denen ein Warten auf die Zahlung nicht sinnvoll ist. Zu diesen Zahlungsarten gehören z.B. Kauf auf Rechnung, Lastschrift oder Zahlung per Nachnahme. Eine Liste der Zahlungsarten findet sich im https://knowledge.plentymarkets.com/payment[Handbuch]. +
 Wenn das Modul Warenwirtschaft genutzt wird, haben die Einstellungen zur Bestandsführung zusätzlich Einfluss auf den automatischen Statuswechsel, sodass daraus ein anderes Verhalten resultieren kann.
+
 
 Was ein eingeloggter Benutzer von plentymarkets letztendlich in der Abwicklung eines Auftrags vom Typ Auftrag bearbeiten kann, hängt von seinen Benutzerrechten ab. Die folgende Beschreibung orientiert sich an einem Benutzer mit vollen Bearbeitungsrechten. Bei einem solchen Benutzer hängen die Bearbeitungsmöglichkeiten in einem Auftrag vom Fortschritt der Abwicklung und von der Herkunft ab. Insbesondere das Erzeugen von Dokumenten sorgt für systemseitige Einschränkungen der Bearbeitungsmöglichkeiten, die der Benutzer nicht umgehen kann. Nachdem ein Dokument erzeugt wurde, werden die Einstellungen eingeschränkt, die bearbeitet werden können. Welche Einstellungen noch bearbeitbar sind, hängt wiederum von dem Typ des Dokuments ab. Bei Aufträgen mit einer automatisch zugeordneten Herkunft ist die Herkunft ab dem Moment der Auftragsanlage, also bevor ein Dokument erzeugt wurde, nicht mehr änderbar. Bei Aufträgen mit einer manuell zugeordneten Herkunft ist die Herkunft auch nach Auftragsanlage noch änderbar. Bis das erste Dokument erzeugt wurde, können folgende Angaben ergänzt oder geändert werden:
 
@@ -236,6 +238,7 @@ Das Erstellen von Lieferaufträgen bedeutet, dass im Funktionsumfang reduzierte 
 Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbeitung stark eingeschränkt. Die folgende Tabelle zeigt, welche Bearbeitungsmöglichkeiten bestehen, nachdem das aufgeführte Dokument im Auftrag erzeugt wurde.
 
 [[tabelle-bearbeitungsmoeglichkeiten-auftrag-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten im Auftrag nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -243,7 +246,8 @@ Wenn bereits ein Dokument, wie z.B. eine Rechnung, erzeugt wurde, ist die Bearbe
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |Adressetikett|Das Erzeugen eines Adressetiketts im Auftrag hat keine Auswirkungen auf den Auftrag.
 |Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
@@ -295,6 +299,7 @@ Außerdem ist die Anzahl der Dokumente, die in einer Vorbestellung erzeugt werde
 Die weiteren Funktionen gleichen denen eines Auftrags. Das Erzeugen eines Dokuments hat auch bei einer Vorbestellung Einfluss auf die Bearbeitungsmöglichkeiten. Die folgende Tabelle listet auf, welche Bearbeitungsmöglichkeiten nach dem Erzeugen des jeweiligen Dokuments zur Verfügung stehen.
 
 [[tabelle-bearbeitungsmoeglichkeiten-vorbestellung-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Vorbestellung nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -309,7 +314,7 @@ Tabelle 4: Bearbeitungsmöglichkeiten in einer Vorbestellung nach dem Erzeugen e
 ===== Auftragstyp Gutschrift
 
 Der Auftragstyp Gutschrift dient zur Rückzahlung von Beträgen an Kunden. Es handelt sich hierbei also um eine Gutschrift, wie sie im allgemeinen Sprachgebrauch verstanden wird, und nicht um eine buchhalterische Gutschrift. +
-Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen Auftrag eines anderen Typs zugeordnet und kann nur aus einem bereits bestehenden Auftrag heraus erstellt werden. In Aufträgen der folgenden Auftragstypen können Gutschriften erstellt werden:
+Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen Auftrag eines anderen Typs zugeordnet und kann nur aus einem bereits bestehenden Auftrag heraus erstellt werden. Gutschriften selbst kann daher auch keine Soll-Zahlung zugewiesen werden. In Aufträgen der folgenden Auftragstypen können Gutschriften erstellt werden:
 
  * Auftrag
  * Retoure
@@ -317,7 +322,8 @@ Eine Gutschrift ist ein untergeordneter Auftragstyp, d.h. sie ist einem anderen 
  * Gewährleistung
 
 Bei all diesen Typen kann eine Rückzahlung notwendig werden, deshalb kann bei Ihnen eine Gutschrift erstellt werden. +
-Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftragsstatus 11. Alle Varianten, die im Auftrag enthalten sind, zu dem die Gutschrift erzeugt wird, werden zunächst vollständig in die Gutschrift übernommen. Die Varianten können anschließend z.B. aus der Gutschrift entfernt werden. Generell stehen in einem Auftrag des Typs Gutschrift folgende Bearbeitungsmöglichkeiten nicht zur Verfügung:
+Der Standardstatus, den eine Gutschrift nach dem Erstellen erhält, ist Auftragsstatus 11. Alle Varianten, die im Auftrag enthalten sind, zu dem die Gutschrift erzeugt wird, werden zunächst vollständig in die Gutschrift übernommen. Die Varianten können anschließend z.B. aus der Gutschrift entfernt werden. Wenn keine dafür notwendigen Gutschrift-Dokumente vom Anwender erstellt wurden, wird im System eine entsprechende Warnung an der Gutschrift angezeigt.
+Generell stehen in einem Auftrag des Typs Gutschrift folgende Bearbeitungsmöglichkeiten nicht zur Verfügung:
 
  * Ändern des Auftragstyps
  * Buchen eines Warenausgang
@@ -335,6 +341,7 @@ Die Mehrheit dieser Möglichkeiten sind relevant für den Versand von Ware und d
 Die folgende Tabelle führt auf welche Dokumente in einer Gutschrift erzeugt werden können und welche Einschränkung durch das Erzeugen entstehen:
 
 [[tabelle-bearbeitungsmoeglichkeiten-gutschrift-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Gutschrift nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -356,6 +363,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
  * Teilen eines Auftrags
 
 [[tabelle-bearbeitungsmoeglichkeiten-gewaehrleistung-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Gewährleistung nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -363,7 +371,8 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |Adressetikett|Das Erzeugen eines Adressetiketts hat keine Auswirkungen auf die Gewährleistung.
 |Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
@@ -390,7 +399,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
  * Änderung der externen Auftragsnummer
  * Änderung des Zeichens der Kunden
  * Änderung der Anzahl der Pakete
- * Änderung der Paktenummnern
+ * Änderung der Paketnummnern
  * Einstellen des Rabatts pro Artikelposition
  * Kopieren eines Auftrags
  * Teilen eines Auftrags
@@ -399,6 +408,7 @@ In einem Auftrag des Typs Gewährleistung ist es generell nicht möglich eine Ma
 In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet werden. Es kann ein Hinweis zur Variante sowie ein Prozentwert, der den Artikelwert der retournierten Varianten angibt, eingetragen werden. Der Grund für die Retoure kann geändert sowie Ware wieder eingebucht werden.
 
 [[tabelle-bearbeitungsmoeglichkeiten-retoure-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Retoure nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -412,6 +422,7 @@ In einer Retoure kann der retournierten Variante ein Artikelstatus zugeordnet we
 Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden können. Eine Reparatur kann nur aus einem Auftrag vom Typ Retoure heraus erstellt werden. Es handelt sich also um einen Auftrag, der der Retoure untergeordnet ist und in den nur Artikel, die bereits als retourniert erfasst wurden, übernommen werden können. Eine Reparatur kann nur manuell angelegt werden, da bei jedem Artikel geprüft werden muss, ob er repariert und somit in eine Reparatur übernommen werden kann.
 
 [[tabelle-bearbeitungsmoeglichkeiten-reparatur-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einer Reparatur nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
@@ -419,7 +430,8 @@ Der Auftragstyp Reparatur dient zum Erfassen von Artikeln, die repariert werden 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
 |Lieferschein|Das Erzeugen eines Lieferscheins sorgt nicht für Einschränkungen.
 |Auftragsbestätigung|Das Erzeugen einer Auftragsbestätigung sorgt nicht für Einschränkungen.
-|Mahnung|Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |Adressetikett|Das Erzeugen eines Adressetiketts hat keine Auswirkungen auf die Reparatur.
 |Gelangensbestätigung|Das Erzeugen einer Gelangensbestätigung sorgt nicht für Einschränkungen.
 |Abhollieferung|Das Erzeugen eines Abhollieferscheins sorgt nicht für Einschränkungen.
@@ -445,12 +457,14 @@ In einem Sammelauftrag können folgende Dokumente erstellt werden:
  * Mahnung
 
 [[tabelle-bearbeitungsmoeglichkeiten-sammelauftrag-nach-erzeugen]]
+[cols="1,3"]
 .Bearbeitungsmöglichkeiten in einem Sammelauftrag nach dem Erzeugen eines Dokuments
 |===
 |Dokument|Bearbeitungsmöglichkeiten
 
 |Rechnung|Nach dem Erzeugen sind viele Bearbeitungsmöglichkeiten gesperrt.
-|Mahnung|Inhalte werden ergänzt.
+|Mahnung|Eine Mahnung kann nur erzeugt werden, wenn eine gültige Rechnung existiert. Das Erzeugen einer Mahnung sorgt nicht für Einschränkungen.
+|Stornobeleg Mahnung|Ein Stornobeleg Mahnung kann nur erzeugt werden, wenn eine gültige Mahnung existiert. Das Erzeugen eines Stornobelegs Mahnung sorgt nicht für Einschränkungen.
 |===
 
 ===== Auftragstyp Sammelgutschrift
@@ -469,3 +483,247 @@ Beim automatisierten Teilen werden auf einmal alle Artikelpositionen anhand eine
  * Lager und Netto-Warenbestand
 
 Das automatisierte Teilen kann wiederum manuell durch den Anwender oder automatisiert angestoßen werden. Automatisiert angestoßen bedeutet, dass der Anwender einen  Zeitpunkt, zu dem ein Auftrag in Lieferaufträge geteilt wird, bestimmt. Die Funktion, die hierzu genutzt werden kann, nennt sich Ereignisaktion. Die allgemeine Funktionsweise von Ereignisaktionen wird an anderer Stelle beschrieben.
+
+==== Auftragsdokumente
+
+In plentymarkets gibt es einige Dokumente, die im Zusammenhang mit der Auftragsabwicklung eingerichtet, erstellt und versendet werden können. Für jedes Dokument, das er nutzen möchte, muss der Anwender eine Vorlage erstellen. Die Gestaltung dieser Vorlage (z.B. Sprache, Schriftart, Seitenränder) steht dem Anwender frei, es gibt jedoch einige Pflichtelemente, die bei der Einrichtung einer Dokumentenvorlage einzufügen sind (siehe <<tabelle-dokumente-pflichtelemente>>). Das System stellt auch eine Standard-Dokumentenvorlage zur Verfügung, die vom Anwender genutzt werden kann. +
+Sobald für einen Auftrag steuerrelevante Dokumente (wie z.B. eine Rechnung oder Stornobelege) erzeugt wurden, kann dieser Auftrag nicht mehr gelöscht werden.
+
+Folgende Dokumente sind in plentymarkets erstellbar:
+
+* Rechnung
+* Sammelrechnung
+* Lieferschein
+* Gutschriften
+* Korrekturbelege
+* Mahnung
+* Stornobeleg Mahnung
+* Rücksendeschein
+* Gelangensbestätigung
+* SEPA-Lastschriftmandat
+* Adressetikett
+* Pickliste
+* Lager-Pickliste
+* Packliste
+
+Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
+
+[[tabelle-dokumente-pflichtelemente]]
+.Pflichtelemente eines Dokuments
+[cols="1,3"]
+|====
+|Einstellung |Erläuterung
+
+| *Adressfeld*
+|Positioniert das Feld, in dem die Anschrift des Kunden angezeigt wird.
+
+| *Dokumentname/-nummer*
+|Namen muss eingetragen werden, beispielsweise *Rechnung* oder *Rechnungs-Nr.*
+
+| *Datum*
+|Aktuelles Datum des Dokuments
+
+| *Bestelldatum*
+|Datum der Bestellung
+
+| *Währung*
+|Name muss eintragen werden. Die eigentliche Währung wird aus den Grundeinstellungen übernommen (siehe oben).
+
+| *Auftrags-ID*
+|Die Auftrags-ID einer Bestellung wird angezeigt.
+
+| *Auftrags-ID (2)*
+|Bei Retouren, Gutschriften und Lieferaufträgen wird die Auftrags-ID des Hauptauftrags ausgegeben.
+
+| *Kunden-ID*
+|Kunden-ID des Käufers wird angezeigt.
+
+| *Herkunft*
+|Auftragsherkunft der Bestellung wird angezeigt.
+
+| *Zeichen Kunde*
+|Zeigt an, was im gleichnamigen Feld in der Auftragseinstellung hinterlegt wurde.
+
+| *Kundenklasse*
+|ID der Kundenklasse wird angezeigt.
+
+| *Auftragseigner*
+|Gibt den Namen des Auftragseigners aus, d.h. den Namen des für den Auftrag verantwortlichen Mitarbeiters.
+
+| *FiBu-Konto*
+|Zeigt den Debitor an, der in den Kundendaten unter Debitoren-Konto eingetragen ist.
+
+| *Eigene Kundennummer*
+|Gibt die Kundennummer aus plentymarkets aus (nicht die ID).
+
+| *USt.-IdNr.*
+|Umsatzsteuer-Identifizierungsnummer des Kunden wird angezeigt.
+
+| *Eigene USt-IdNr.*
+|Gibt die Umsatzsteuer-ID des Händlers aus.
+
+| *ID Pickliste*
+|Wenn eine Pickliste generiert wird, erhält diese Pickliste eine ID. Bei allen Aufträgen, die sich auf dieser Pickliste befinden, wird die Pickliste-ID hinterlegt. Mit der Option ID Pickliste kann diese ID auf dem PDF-Dokument ausgegeben werden. Sinnvoll z.B. bei Lieferscheinen.
+
+| *Seitenzahl*
+|Gibt die Seitenzahl im Dokument pro Seite aus.
+|====
+
+Auftragsdokumente unterliegen einer *Aufbewahrungspflicht*. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders.
+
+*Zu beachten:* Anstatt Dokumente in plentymarkets zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann vom System nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet und nicht im System erstellt, ist es danach nicht mehr möglich den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentymarkets heraus) im System zu erstellen. So wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
+
+===== Stornobelege
+
+Erstellte steuerrelevante Dokumente (wie z.B. Rechnungen oder Mahnungen) können nicht einfach gelöscht werden. Stattdessen muss im System erst ein Stornobeleg erstellt werden. Zudem ist es bei steuerrelevanten Dokumenten auch nicht möglich, das gleiche Dokument mehrmals zu erstellen. Wenn also z.B. schon eine Rechnung (intern oder extern erstellt) existiert, kann keine weitere erstellt werden. Die oben erwähnte Aufbewahrungspflicht gilt auch für Stornobelege.
+
+*Besonderheit Mahnungen und Stornobeleg Mahnung:* Eine Mahnung kann nur erstellt werden, wenn bereits eine gültige Rechnung existiert. Daher ist es auch nur möglich eine Rechnung zu stornieren, wenn vorher eventuell bestehende Mahnungen storniert werden. Dafür gibt es einen eigenen Dokumententyp, den Stornobeleg Mahnung. +
+Im System stehen dem Anwender 4 Mahnstufen zur Verfügung. Für jede Mahnstufe muss eine neue Mahnung mit eigenen Mahngebühren erstellt werden. Diese Mahngebühren für die verschiedenen Mahnstufen werden vom Anwender festgelegt, sie liegen dementsprechend in seinem Ermessen.
+
+==== Buchhaltung
+
+Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatzsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Unterkapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung entscheiden.
+
+===== Grundeinstellungen
+
+Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standort gewählt. Als Grundeinstellung sind dies gewählte Einstellungen, die für den jeweiligen Bereich Bestand haben, d.h. zum Beispiel vorausgewählt sind und somit auf Benutzeroberflächen in anderen Bereichen des Systems Auswirkungen haben. Die Einstellungen finden sich im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Grundeinstellungen*.
+
+[[tabelle-grundeinstellungen-buchhaltung]]
+[cols="1,3"]
+.Mandanten- und standortabhängige Grundeinstellungen Buchhaltung
+|===
+|Einstellung|Erläuterung
+
+|*Umsatzsteuer-ID*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. Diese Einstellung gilt nur für Lieferungen innerhalb der EU, für Standorte außerhalb der EU hat sie keine Auswirkung. +
+*Brutto-Rechnung*: Alle Rechnungen für innergemeinschaftliche Lieferungen werden brutto ausgestellt. +
+*Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteuer-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
+Liegt die Lieferadresse des Kunden im selben Land, wie der Standort, wird für den Auftrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatzsteuer-ID im europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstellung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktivieren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Lieferadresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-Auslandssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
+|*Ausfuhrlieferung*|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
+*Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese Einstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
+*Brutto-Rechnung*: Die Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzsteuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
+|*Umsatzsteuer der Versandkosten auf Rechnung ausweisen*|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
+|*Kleinunternehmer (nur Deutschland)*|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
+|*Anzahl Nachkommastellen bei Preisen*|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
+Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt durchgeführt werden.
+|*Nur Gesamtpreis runden*|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
+Bei 2 Nachkommastellen hat das Aktivieren der Option keine Auswirkungen, da bereits der Einzelpreis gerundet wird. +
+Bei 4 Nachkommastellen werden ohne Aktivieren dieser Option die Summen der Auftragspositionen gerundet.
+|===
+
+*Zum Hintergrund der Preisberechnung bei plentymarkets:*
+Die Preisberechnung in Aufträgen beruht auf dem Bruttopreis der Varianten. Ausgehend von diesem Bruttopreis wird der Nettopreis der Varianten für den Auftrag errechnet. Die Auftragspositionsnummern errechnen sich durch Multiplikation der Einzelpreise mit der gekauften Anzahl. Die Bruttosumme einer Auftragsposition errechnet sich also aus dem Bruttoeinzelpreis multipliziert der Anzahl. +
+Die Nettosumme einer Auftragsposition errechnet sich aus dem errechneten und auf 4 oder 2 Nachkommastellen gerundeten Nettoeinzelpreis multipliziert mit der gekauften Anzahl. Die Nachkommastellen des Einzelpreises werden durch die oben erläuterten Einstellungen in der Buchhaltung bestimmt. Der Umsatzsteuerbetrag für eine Auftragsposition ist die Differenz aus Bruttosumme minus Nettosumme. +
+
+Mithilfe der oben erläuterten Einstellungen lassen sich demzufolge folgende Resultate erzielen:
+
+* Gerundete Einzelpreise
+* Gerundete Auftragspositionssummen
+* Gerundete Gesamtbeträge
+
+===== Umsatzsteuereinstellungen
+
+Umsatzsteuereinstellungen werden für jeden Standort separat angelegt, sie sind also standortabhängig im System. Standorte sind notwendig für Firmensitze oder Versandländer. In plentymarkets wird zwischen Standorten und Lieferländer, in denen man steuerpflichtig ist, unterschieden. Ein Standort ist sozusagen ein Firmensitz. +
+Standardmäßig sind 2 Standorte, Deutschland und United Kingdom, als Beispiele im System voreingerichtet. Für den Produktivbetrieb müssen jedoch eigene Standorte angelegt werden. Benötigt wird mindestens ein Standort. Weitere Standorte werden benötigt, wenn Niederlassungen in anderen Ländern bestehen. +
+Das System unterscheidet bei Standortländern zwischen Mitgliedsländern der EU und anderen Ländern. Wenn daher ein Standort eingerichtet wird, der nicht in der EU liegt, wird jede Lieferung in ein anderes Land als Ausfuhrlieferung betrachtet. Wenn ein Standort in der EU liegt, wird zwischen innergemeinschaftlichen Lieferungen und Ausfuhrlieferungen unterschieden. +
+Zu den umsatzsteuerrelevanten Grundeinstellungen zählen Festlegungen zum Umgang mit Ausfuhrlieferungen und zur Anzeige der Umsatzsteuer von Versandkosten. Für EU-Standorte muss außerdem festgelegt werden, wie sich das System bei einer Umsatzsteuer-ID am Auftrag verhält.
+
+Mindestens eine Steuerkonfiguration muss im System hinzugefügt werden, mit dieser kann auch in verschiedene Länder versendet werden. Sobald die Lieferschwelle für ein Land überschritten wird, muss eine weitere Steuerkonfiguration hinzugefügt werden, damit die Steuerabgaben korrekt berechnet werden können. Standorte werden für Firmensitze hinzugefügt, das Land des Standortes wird mit den entsprechenden Steuerkonfigurationen für die korrekte Abrechnung hinzugefügt. Erst wenn Händler in weiteren Ländern steuerpflichtig werden, weil sie die Lieferschwelle überschritten haben, werden für einen Standort weitere Länder mit Steuerkonfigurationen hinzugefügt.
+
+Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
+
+[[tabelle-einstellungen-umsatzsteuersätze]]
+[cols="1,3"]
+.Umsatzsteuersatzkonfiguration
+|===
+|Einstellung|Erläuterung
+
+|*Land*|Hier wird das Land gewählt, in dem der Anwender steuerpflichtig ist. Das Land kann nachträglich nicht verändert werden.
+
+|*Steuersatz A in %* +
+*Steuersatz B in %* +
+*Steuersatz C in %* +
+*Steuersatz D in %* |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
+
+|*Gültig ab*|Das Datum, ab dem die Steuersätze gelten sollen.
+
+|*Ungültig ab*|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Lieferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
+
+|*Nur für digitale Artikel*|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
+Wenn für ein Lieferland bereits ein Steuersatz vorhanden ist, z.B. weil die Lieferschwelle überschritten wurde, muss kein weiterer Steuersatz nur für digitale Artikel angelegt werden, da der vorhandene Steuersatz verwendet wird.
+
+|*Differenzbesteuerung*|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuersatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
+Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betrag der differenzbesteuerten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
+
+|===
+
+===== Zolltarifnummern
+
+Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen ElasticSync Import befüllt werden.
+
+===== Debitoren- und Erlöskonten
+
+In plentymarktes kann gewählt werden, anhand welches Kriteriums Forderungen Debitorenkonten zugeordnet werden. Es kann zum Beispiel der Nachname eines Debitors oder das Lieferland für die Zuordnung genutzt werden. Das Kriterium muss festgelegt werden, bevor die Konten eingetragen werden. Eingerichtet wird ein Debitorenkonto im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Debitorenkonten*. Folgende Einstellungsmöglichkeiten ergeben sich dort:
+
+[[tabelle-einstellungen-debitorenkonten]]
+[cols="1,3"]
+.Einstellungen für Debitorenkonten
+|===
+|Einstellung|Erläuterung
+
+|*Standard-Debitorenkonto*|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debitorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Dazu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
+
+|*Speichere Debitorenkonto am Kundenstammdatensatz*|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkonto hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
+
+|*Automatische Vergabe von Debitorenkonten nach*|Aus einer Dropdown-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
+*Anfangsbuchstabe*: Debitorenkonto wird anhand der Anfangsbuchstaben von Kundendaten zugeordnet. Welche Kundendaten und in welcher Reihenfolge berücksichtigt werden, werden in einer zweiten Dropdown-Liste bestimmt. +
+Die Reihenfolge *Firma, Nachname, Vorname* sorgt dafür, dass zuerst der Firmenname berücksichtigt wird. Wenn kein Firmenname eingetragen wurde, wird der Nachname berücksichtigt usw. +
+*Zahlungsart*: Das Debitorenkonto wird anhand der Zahlungsart eines Auftrages zugeordnet. +
+*Lieferland*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet. +
+*Lieferland, für Inland jedoch Zahlungsart*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Lieferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
+
+|*Anfangsbuchstaben (A-Z bzw. 0-9 Debitorenkonto)*|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
+
+|*Lieferländer*|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Lieferländern vergeben werden sollen.
+
+|*Zahlungsarten*|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Zahlungsarten vergeben werden sollen.
+
+|===
+
+Des Weiteren sind Erlöskonten einzurichten, um die Umsatzerlöse einem Konto zuzuordnen. Es besteht die Möglichkeit, für steuerpflichtige Erlöse pro Steuersatz ein Erlöskonto anzugeben sowie für umsatzsteuerfreie Erlöse. Die Einrichtung von Erlöskonten für steuerpflichtige Erlöse erfolgt ebenfalls im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Erlöskonten*. Erlöskonten für umsatzsteuerfreie Erlöse sind einzurichten unter im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Umsatzsteuerfreie Erlöse*.
+
+===== Export
+
+plentymarkets bietet die Möglichkeit, Buchhaltungsdaten zu exportieren und so an eine Buchhaltungs-Software zu übergeben. Beim Export werden Debitorenkonten, Erlöskonten und Buchungsschlüssel gemäß den vom Anwender gewählten Einstellungen vergeben. Im Menü *Daten » Spezialexport* kann ein Datenformat ausgewählt und zum Beispiel ein Export vom Typ *Finanzbuchhaltung* oder *Collmex-Buchhaltung* vorgenommen werden.
+
+==== Zahlungsverkehr
+
+Zahlungen gehen bei plentymarkets entweder automatisch im System ein oder werden manuell eingebucht. Der automatische Zahlungseingang erfolgt bei Nutzung von Payment Plugins. plentymarkets ermöglicht die Integration verschiedener Zahlungsarten über Plugins (weitere Informationen zu Plugins und dem plentyMarketplace sind im Kapitel <<modul-marketplace-plugins#, Fachliche und technische Beschreibung des Moduls Plugins>> zu finden.). Welche Plugins Anwender integrieren und welche Zahlungsarten sie ihren Kunden zur Verfügung stellen, entscheiden Anwender selber. Die Zahlungsarten-Plugins werden zum Teil von plentymarkets selbst entwickelt und zur Verfügung gestellt, oft in Zusammenarbeit mit verschiedenen Zahlungsanbietern. Welche Voraussetzungen diese Zahlungsanbieter von Anwendern verlangen, damit ein Plugin genutzt werden kann (z.B. die Eröffnung eines Geschäftskontos), liegt dabei im Ermessen der Anbieter selber. Einige Zahlungsanbieter leiten Kunden zur Abwicklung des Zahlungsvorgangs auf eigene Seiten weiter. Bei anderen Providern werden die Zahlungsdaten im Shop des Anwenders entgegengenommen und im Hintergrund an den Provider weitergeleitet. In beiden Fällen erhält plentymarkets nach erfolgter Zahlung eine Rückmeldung des Anbieters und vermerkt den Zahlungseingang direkt im Auftrag. Manuell importiert werden z.B. Bankbuchungen für Zahlungen, die unabhängig von einem Zahlungsanbieter ablaufen.
+
+Bei diesen Bankbuchungen, die z.B. bei Überweisungen auf ein Konto des Anwenders entstehen, müssen die auf diesem Konto gebuchten Zahlungen an das System gemeldet und den Aufträgen korrekt zugeordnet werden. Der Import der Bankbuchungsdateien ins System findet durch den Anwender im CSV-Format statt. Werden Datensätze bei diesem Import doppelt eingelesen, werde diese doppelten Datensätze verworfen. Im Anschluss an den Import wird ein Durchlauf mit automatischer Zuordnung der Zahlungen zu Aufträgen gestartet.
+
+Zahlungen können auch manuell eingebucht werden, z.B. wenn eine Barzahlung stattgefunden hat. Die manuelle Buchung findet direkt am zugehörigen Auftrag statt. Eingegeben werden müssen die Parameter Betrag, Haben/Soll, Währung, Wechselkurs (bei Bedarf), Verwendungszweck und Zahlungseingang (Datum). Im System werden manuell gebuchte Zahlungseingänge durch das Symbol *Manuelle Buchung* gekennzeichnet.
+
+Wie weiter oben erwähnt, werden in plentymarkets Zahlungen Aufträgen über eine unscharfe Suche automatisch zugeordnet. Wenn die Zuordnung fehlschlägt, können Zahlungen Aufträgen manuell zugeordnet werden. Zahlungseingänge werden in einem eigenen Bereich im Backend verwaltet (Menü: *Aufträge » Zahlungsverkehr*), hier sind unzugeordnete Zahlungseingänge durch einen grünen Pfeil gekennzeichnet. In diesem Bereich kann der Anwender auch für jede Zahlung, die ins System kommt, alle relevanten Informationen einsehen (z.B. Buchungsdaten, Zahlungsart, wann eine Zahlung eingegangen ist usw.). +
+Zur Verwaltung von Zahlungen können Grundeinstellungen vorgenommen werden. Es sind Standardeinstellungen dafür im System vorhanden, es liegt aber beim Anwender, ob er diese übernimmt oder die folgenden Grundeinstellungen anpasst:
+
+[[tabelle-grundeinstellungen-zahlungseingang]]
+.Grundeinstellungen für Zahlungseingänge vornehmen
+[cols="1,3"]
+|====
+|Einstellung |Erläuterung
+
+|*Übereinstimmung für automatische Zuordnung*
+|Der Anwender kann zwischen *0.7* (nicht so genaue Übereinstimmung zur Zuordnung nötig) und *1.0* (genaue Übereinstimmung nötig) wählen. Ist dieser Wert höher eingestellt, kann das Problem auftreten, dass Zahlungen nicht zugeordnet werden können. Daher ist in der *Standard-Einstellung* ein Wert von *0,75* eingestellt.
+
+|*Zahlungskulanz*
+|Damit z.B. interne Nachkommabeträge (ab der dritten Nachkommastelle) nicht zu falschen Buchungen führen, sollte ein *Mindestbetrag* von *0,01* eingetragen sein (Standard-Einstellung). Wenn z.B. *0,05* eingestellt ist, werden Fehlbeträge bis 5 Cent trotzdem als korrekte Buchung behandelt.
+
+|*Kundenbankdaten importieren*
+|Der Anwender kann wählen, ob die *Bankdaten* des Kunden beim Zahlungseingang *importiert* und in den jeweiligen *Kundendaten* hinterlegt werden sollen oder nicht. +
+*_Wichtig:_* Da Bankdaten nur mit Zustimmung des Kunden importiert und gespeichert werden dürfen, ist hier standardmäßig *Nein* voreingestellt.
+
+|====
+
+Neben der Zuordnung zu einem Auftrag stehen den Anwendern im Zahlungsverkehr-Menü noch die Bearbeitungsmöglichkeiten *teilen einer Zahlung* (der Betrag der Zahlung wird auf mehrere ausgewählte Aufträge aufgeteilt) und *löschen einer Zahlung* (muss in einer Abfrage vom Anwender bestätigt werden und ist nur möglich, wenn die Zahlung unzugeordnet ist) zur Verfügung. Darüber hinaus können einem Auftrag zugeordnete Zahlungen von diesem auch wieder *gelöst* und danach neu zugeordnet werden. Neben dieser manuellen Zuordnung von Zahlungen kann eine automatische Zuordnung über die Gruppenfunktion stattfinden. Dabei werden Zahlungen vom System automatisch nach einer vom Anwender festgelegten Übereinstimmungsrate zugeordnet.
+
+Es gibt Fälle, in denen Zahlungen in der Übersicht keinen Aufträgen mehr zugeordnet werden können. Das sind zum Beispiel Vormerkposten, zu denen die eigentliche Zahlung bereits gebucht wurde. Die Zahlungen werden in der Übersicht mit *Nicht verbuchbare Zahlung* gekennzeichnet.
