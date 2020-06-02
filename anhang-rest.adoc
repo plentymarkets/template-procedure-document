@@ -1,7 +1,7 @@
 [#anhang_rest-berechtigungen]
 == Anhang: REST-Berechtigungen
 
-<<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer » Benutzer öffnen » Bereich: Berechtigungen* gewählt werden.
+<<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
 
 [[tabelle-rest-berechtigungen]]
 .Verfügbare REST-Berechtigungen
@@ -31,7 +31,7 @@
 
 |
 |
-|Aktion bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -39,17 +39,8 @@
 |
 
 |
-|Artikelbearbeitung
+|Artikel
 |
-|
-|
-|
-|
-|
-
-|
-|
-|Artikel aktualisieren
 |
 |
 |
@@ -58,7 +49,7 @@
 
 |
 |
-|Artikel anzeigen
+|Aktualisieren
 |
 |
 |
@@ -67,21 +58,14 @@
 
 |
 |
-|Artikel erstellen
+|Anzeigen
 |
 |
 |
 |
 |
 
-|
-|
-|Artikel löschen
-|
-|
-|
-|
-|
+
 
 |
 |
@@ -96,7 +80,7 @@
 |
 |
 |
-|Artikelbild aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -105,7 +89,7 @@
 |
 |
 |
-|Artikelbild anzeigen
+|Anzeigen
 |
 |
 |
@@ -114,7 +98,7 @@
 |
 |
 |
-|Artikelbild erstellen
+|Erstellen
 |
 |
 |
@@ -123,7 +107,7 @@
 |
 |
 |
-|Artikelbild löschen
+|Löschen
 |
 |
 |
@@ -143,7 +127,7 @@
 |
 |
 |
-|Artikelbildname aktualisieren
+|Aktualisieren
 |
 
 |
@@ -152,7 +136,7 @@
 |
 |
 |
-|Artikelbildname anzeigen
+|Anzeigen
 |
 
 |
@@ -161,7 +145,7 @@
 |
 |
 |
-|Artikelbildname erstellen
+|Erstellen
 |
 
 |
@@ -170,7 +154,7 @@
 |
 |
 |
-|Artikelbildname löschen
+|Löschen
 |
 
 |
@@ -188,7 +172,7 @@
 |
 |
 |
-|Verfügbarkeit aktivieren
+|Aktivieren
 |
 
 |
@@ -197,7 +181,7 @@
 |
 |
 |
-|Verfügbarkeit aktualisieren
+|Aktualisieren
 |
 
 |
@@ -206,7 +190,7 @@
 |
 |
 |
-|Verfügbarkeit anzeigen
+|Anzeigen
 |
 
 |
@@ -215,7 +199,7 @@
 |
 |
 |
-|Verfügbarkeit deaktivieren
+|Deaktivieren
 |
 
 |
@@ -231,7 +215,7 @@
 |
 |
 |
-|Cross-Selling-Artikel aktivieren
+|Aktivieren
 |
 |
 |
@@ -240,7 +224,7 @@
 |
 |
 |
-|Cross-Selling-Artikel deaktivieren
+|Deaktivieren
 |
 |
 |
@@ -249,7 +233,25 @@
 |
 |
 |
-|Cross-Selling-Verknüpfung anzeigen
+|Anzeigen
+|
+|
+|
+
+|
+|
+|
+|Erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Löschen
+|
 |
 |
 |
@@ -267,7 +269,7 @@
 |
 |
 |
-|Seriennummer aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -276,7 +278,7 @@
 |
 |
 |
-|Seriennummer anzeigen
+|Anzeigen
 |
 |
 |
@@ -285,7 +287,7 @@
 |
 |
 |
-|Seriennummer erstellen
+|Erstellen
 |
 |
 |
@@ -294,7 +296,7 @@
 |
 |
 |
-|Seriennummer löschen
+|Löschen
 |
 |
 |
@@ -313,7 +315,7 @@
 |
 |
 |
-|Set aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -322,7 +324,7 @@
 |
 |
 |
-|Set anzeigen
+|Anzeigen
 |
 |
 |
@@ -331,7 +333,7 @@
 |
 |
 |
-|Set erstellen
+|Erstellen
 |
 |
 |
@@ -340,7 +342,7 @@
 |
 |
 |
-|Set löschen
+|Löschen
 |
 |
 |
@@ -358,6 +360,26 @@
 |
 |
 |
+|Aktualisieren
+|
+|
+|
+
+|
+|
+|
+|
+|Anzeigen
+|
+|
+|
+
+
+
+|
+|
+|
+|
 |Artikelpaket
 |
 |
@@ -368,7 +390,7 @@
 |
 |
 |
-|Artikelpaket aktualisieren
+|Aktualisieren
 |
 |
 
@@ -377,7 +399,7 @@
 |
 |
 |
-|Artikelpaket anzeigen
+|Anzeigen
 |
 |
 
@@ -386,7 +408,7 @@
 |
 |
 |
-|Artikelpaket erstellen
+|Erstellen
 |
 |
 
@@ -395,7 +417,7 @@
 |
 |
 |
-|Artikelpaket löschen
+|Löschen
 |
 |
 
@@ -413,7 +435,7 @@
 |
 |
 |
-|Artikeltext aktualisieren
+|Aktualisieren
 |
 |
 
@@ -422,7 +444,7 @@
 |
 |
 |
-|Artikeltext anzeigen
+|Anzeigen
 |
 |
 
@@ -431,7 +453,7 @@
 |
 |
 |
-|Artikeltext erstellen
+|Erstellen
 |
 |
 
@@ -440,7 +462,7 @@
 |
 |
 |
-|Artikeltext löschen
+|Löschen
 |
 |
 
@@ -449,34 +471,7 @@
 |
 |
 |
-|Attribut bearbeiten
-|
-|
-|
-
-|
-|
-|
-|
-|
-|value_set
-|
-|
-
-|
-|
-|
-|
-|
-|
-|show
-|
-
-|
-|
-|
-|
-|Barcode-Code
+|Attribut
 |
 |
 |
@@ -486,7 +481,7 @@
 |
 |
 |
-|Code aktualisieren
+|Wert
 |
 |
 
@@ -495,7 +490,16 @@
 |
 |
 |
-|Code anzeigen
+|
+|Anzeigen
+|
+
+|
+|
+|
+|
+|Barcode
+|
 |
 |
 
@@ -504,7 +508,7 @@
 |
 |
 |
-|Code erstellen
+|Aktualisieren
 |
 |
 
@@ -513,7 +517,25 @@
 |
 |
 |
-|Code löschen
+|Anzeigen
+|
+|
+
+|
+|
+|
+|
+|
+|Erstellen
+|
+|
+
+|
+|
+|
+|
+|
+|Löschen
 |
 |
 
@@ -539,6 +561,15 @@
 |
 |
 |
+|Erstellen
+|
+|
+|
+
+|
+|
+|
+|
 |Kategorie
 |
 |
@@ -549,7 +580,7 @@
 |
 |
 |
-|Kategorie aktivieren
+|Aktivieren
 |
 |
 
@@ -558,7 +589,7 @@
 |
 |
 |
-|Kategorie deaktivieren
+|Aktualisieren
 |
 |
 
@@ -567,7 +598,7 @@
 |
 |
 |
-|Kategorieverknüpfung aktualisieren
+|Anzeigen
 |
 |
 
@@ -576,7 +607,7 @@
 |
 |
 |
-|Kategorieverknüpfung anzeigen
+|Deaktivieren
 |
 |
 
@@ -594,7 +625,7 @@
 |
 |
 |
-|Lagerdaten aktualisieren
+|Aktualisieren
 |
 |
 
@@ -603,7 +634,7 @@
 |
 |
 |
-|Lagerdaten anzeigen
+|Anzeigen
 |
 |
 
@@ -612,7 +643,7 @@
 |
 |
 |
-|Lagerdaten erstellen
+|Erstellen
 |
 |
 
@@ -621,7 +652,7 @@
 |
 |
 |
-|Lagerdaten löschen
+|Löschen
 |
 |
 
@@ -643,7 +674,7 @@
 |
 |
 |
-|Lieferantendaten aktualisieren
+|Aktualisieren
 |
 |
 
@@ -652,7 +683,7 @@
 |
 |
 |
-|Lieferantendaten anzeigen
+|Anzeigen
 |
 |
 
@@ -661,7 +692,7 @@
 |
 |
 |
-|Lieferantendaten erstellen
+|Erstellen
 |
 |
 
@@ -670,11 +701,18 @@
 |
 |
 |
-|Lieferantendaten löschen
+|Löschen
 |
 |
 
-
+|
+|
+|
+|
+|Löschen
+|
+|
+|
 
 |
 |
@@ -690,7 +728,7 @@
 |
 |
 |
-|Mandant aktivieren
+|Aktivieren
 |
 |
 
@@ -699,7 +737,7 @@
 |
 |
 |
-|Mandant deaktivieren
+|Aktualisieren
 |
 |
 
@@ -708,7 +746,7 @@
 |
 |
 |
-|Mandantenverknüpfung aktualisieren
+|Anzeigen
 |
 |
 
@@ -717,10 +755,9 @@
 |
 |
 |
-|Mandantenverknüpfung anzeigen
+|Deaktivieren
 |
 |
-
 
 
 
@@ -738,6 +775,34 @@
 |
 |
 |
+|Aktivieren
+|
+|
+
+|
+|
+|
+|
+|
+|Aktualisieren
+|
+|
+
+|
+|
+|
+|
+|
+|Anzeigen
+|
+|
+
+
+|
+|
+|
+|
+|
 |ASIN/ePID
 |
 |
@@ -748,7 +813,7 @@
 |
 |
 |
-|ASIN/ePID aktualisieren
+|Aktualisieren
 |
 
 |
@@ -757,7 +822,7 @@
 |
 |
 |
-|ASIN/ePID anzeigen
+|Anzeigen
 |
 
 |
@@ -766,7 +831,7 @@
 |
 |
 |
-|ASIN/ePID erstellen
+|Erstellen
 |
 
 |
@@ -775,41 +840,16 @@
 |
 |
 |
-|ASIN/ePID löschen
+|Löschen
 |
+
 
 |
 |
 |
 |
 |
-|Marktplatz aktivieren
-|
-|
-
-|
-|
-|
-|
-|
-|Marktplatz deaktivieren
-|
-|
-|
-|
-|
-|
-|
-|Marktplatzverknüpfung aktualisieren
-|
-|
-
-|
-|
-|
-|
-|
-|Marktplatzverknüpfung anzeigen
+|Deaktivieren
 |
 |
 
@@ -829,6 +869,44 @@
 |
 |
 |
+|Aktivieren
+|
+|
+
+|
+|
+|
+|
+|
+|Aktualisieren
+|
+|
+
+|
+|
+|
+|
+|
+|Anzeigen
+|
+|
+
+|
+|
+|
+|
+|
+|Deaktivieren
+|
+|
+
+
+
+|
+|
+|
+|
+|
 |Eigenschaftswerte
 |
 |
@@ -839,7 +917,7 @@
 |
 |
 |
-|Eigenschaftswert aktualisieren
+|Aktualisieren
 |
 
 |
@@ -848,7 +926,7 @@
 |
 |
 |
-|Eigenschaftswert anzeigen
+|Anzeigen
 |
 
 |
@@ -857,7 +935,25 @@
 |
 |
 |
-|Eigenschaftswert des Typs Text
+|Erstellen
+|
+
+|
+|
+|
+|
+|
+|
+|Löschen
+|
+
+|
+|
+|
+|
+|
+|
+|Text
 |
 
 |
@@ -867,7 +963,7 @@
 |
 |
 |
-|Eigenschaftswert des Typs Text aktualisieren
+|Aktualisieren
 
 
 |
@@ -877,7 +973,7 @@
 |
 |
 |
-|Eigenschaftswert des Typs Text anzeigen
+|Anzeigen
 
 |
 |
@@ -886,7 +982,7 @@
 |
 |
 |
-|Eigenschaftswert des Typs Text erstellen
+|Erstellen
 
 |
 |
@@ -895,61 +991,11 @@
 |
 |
 |
-|Eigenschaftswert des Typs Text löschen
+|Löschen
 
-|
-|
-|
-|
-|
-|
-|Eigenschaftswert erstellen
-|
 
-|
-|
-|
-|
-|
-|
-|Eigenschaftswert löschen
-|
 
-|
-|
-|
-|
-|
-|Merkmal aktivieren
-|
-|
 
-|
-|
-|
-|
-|
-|Merkmal deaktivieren
-|
-|
-
-|
-|
-|
-|
-|
-|Merkmalverknüpfung aktualisieren
-|
-|
-
-|
-|
-|
-|
-|
-|Merkmalverknüpfung anzeigen
-|
-|
 
 |
 |
@@ -965,7 +1011,7 @@
 |
 |
 |
-|Preis aktualisieren
+|Aktualisieren
 |
 |
 
@@ -974,7 +1020,7 @@
 |
 |
 |
-|Preis anzeigen
+|Anzeigen
 |
 |
 
@@ -983,7 +1029,7 @@
 |
 |
 |
-|Preis erstellen
+|Erstellen
 |
 |
 
@@ -992,7 +1038,7 @@
 |
 |
 |
-|Preis löschen
+|Löschen
 |
 |
 
@@ -1010,7 +1056,7 @@
 |
 |
 |
-|Standardkategorie aktivieren
+|Aktivieren
 |
 |
 
@@ -1019,7 +1065,7 @@
 |
 |
 |
-|Standardkategorie deaktivieren
+|Deaktivieren
 |
 |
 
@@ -1028,7 +1074,7 @@
 |
 |
 |
-|Standardkategorieverknüpfung aktualisieren
+|Aktualisieren
 |
 |
 
@@ -1037,45 +1083,11 @@
 |
 |
 |
-|Standardkategorieverknüpfung anzeigen
+|Anzeigen
 |
 |
 
-|
-|
-|
-|
-|Variante aktualisieren
-|
-|
-|
 
-|
-|
-|
-|
-|Variante anzeigen
-|
-|
-|
-
-|
-|
-|
-|
-|Variante erstellen
-|
-|
-|
-
-|
-|
-|
-|
-|Variante löschen
-|
-|
-|
 
 |
 |
@@ -1091,7 +1103,7 @@
 |
 |
 |
-|Zusätzliche SKU aktualisieren
+|Aktualisieren
 |
 |
 
@@ -1100,7 +1112,7 @@
 |
 |
 |
-|Zusätzliche SKU anzeigen
+|Anzeigen
 |
 |
 
@@ -1109,7 +1121,7 @@
 |
 |
 |
-|Zusätzliche SKU erstellen
+|Erstellen
 |
 |
 
@@ -1118,7 +1130,7 @@
 |
 |
 |
-|Zusätzliche SKU löschen
+|Löschen
 |
 |
 
@@ -1136,7 +1148,7 @@
 
 |
 |
-|Artikeletikett anzeigen
+|Anzeigen
 |
 |
 |
@@ -1145,7 +1157,7 @@
 
 |
 |
-|Artikeletikett bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1154,13 +1166,57 @@
 
 |
 |
-|Artikeletikett generieren
+|Erstellen
 |
 |
 |
 |
 |
 
+|
+|Artikelsets
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
+|
+|
+|
+|
 
 |
 |Attribut
@@ -1173,7 +1229,7 @@
 
 |
 |
-|Attribut aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1182,30 +1238,14 @@
 
 |
 |
-|Attribut anzeigen
+|Anzeigen
 |
 |
 |
 |
 |
 
-|
-|
-|Attribut erstellen
-|
-|
-|
-|
-|
 
-|
-|
-|Attribut löschen
-|
-|
-|
-|
-|
 
 |
 |
@@ -1219,7 +1259,7 @@
 |
 |
 |
-|Attributname aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1228,7 +1268,7 @@
 |
 |
 |
-|Attributname anzeigen
+|Anzeigen
 |
 |
 |
@@ -1237,7 +1277,7 @@
 |
 |
 |
-|Attributname erstellen
+|Erstellen
 |
 |
 |
@@ -1246,7 +1286,7 @@
 |
 |
 |
-|Attributname löschen
+|Löschen
 |
 |
 |
@@ -1265,7 +1305,7 @@
 |
 |
 |
-|Attributverknüpfung aktivieren
+|Aktivieren
 |
 |
 |
@@ -1274,7 +1314,7 @@
 |
 |
 |
-|Attributverknüpfung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1283,7 +1323,7 @@
 |
 |
 |
-|Attributverknüpfung anzeigen
+|Anzeigen
 |
 |
 |
@@ -1292,7 +1332,7 @@
 |
 |
 |
-|Attributverknüpfung deaktivieren
+|Deaktivieren
 |
 |
 |
@@ -1310,7 +1350,7 @@
 |
 |
 |
-|Attributwert aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1319,29 +1359,13 @@
 |
 |
 |
-|Attributwert anzeigen
+|Anzeigen
 |
 |
 |
 |
 
-|
-|
-|
-|Attributwert erstellen
-|
-|
-|
-|
 
-|
-|
-|
-|Attributwert löschen
-|
-|
-|
-|
 
 |
 |
@@ -1356,7 +1380,7 @@
 |
 |
 |
-|Attributwertname aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1365,7 +1389,7 @@
 |
 |
 |
-|Attributwertname anzeigen
+|Anzeigen
 |
 |
 |
@@ -1374,7 +1398,7 @@
 |
 |
 |
-|Attributwertname erstellen
+|Erstellen
 |
 |
 |
@@ -1383,20 +1407,55 @@
 |
 |
 |
-|Attributwertname löschen
+|Löschen
 |
 |
 |
 
 |
 |
-|config
+|
+|Erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Löschen
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
 |
 |
 |
 |
 |
 
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
+|
+|
+|
+|
 
 |
 |Barcode
@@ -1409,7 +1468,7 @@
 
 |
 |
-|Barcode aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1418,7 +1477,7 @@
 
 |
 |
-|Barcode anzeigen
+|Anzeigen
 |
 |
 |
@@ -1427,7 +1486,7 @@
 
 |
 |
-|Barcode bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1436,7 +1495,7 @@
 
 |
 |
-|Barcode erstellen
+|Erstellen
 |
 |
 |
@@ -1445,7 +1504,7 @@
 
 |
 |
-|Barcode löschen
+|Löschen
 |
 |
 |
@@ -1473,7 +1532,7 @@
 |
 |
 |
-|Einstellungen bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1491,7 +1550,7 @@
 |
 |
 |
-|Größe bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1526,7 +1585,7 @@
 
 |
 |
-|Einheit aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1535,7 +1594,7 @@
 
 |
 |
-|Einheit anzeigen
+|Anzeigen
 |
 |
 |
@@ -1544,30 +1603,14 @@
 
 |
 |
-|Einheit bearbeiten
+|Bearbeiten
 |
 |
 |
 |
 |
 
-|
-|
-|Einheit erstellen
-|
-|
-|
-|
-|
 
-|
-|
-|Einheit löschen
-|
-|
-|
-|
-|
 
 |
 |
@@ -1581,7 +1624,7 @@
 |
 |
 |
-|Einheitenname aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1590,7 +1633,7 @@
 |
 |
 |
-|Einheitenname anzeigen
+|Anzeigen
 |
 |
 |
@@ -1599,7 +1642,7 @@
 |
 |
 |
-|Einheitenname erstellen
+|Erstellen
 |
 |
 |
@@ -1608,7 +1651,25 @@
 |
 |
 |
-|Einheitenname löschen
+|Löschen
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
 |
 |
 |
@@ -1625,7 +1686,7 @@
 
 |
 |
-|Einstellungen bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1645,7 +1706,7 @@
 
 |
 |
-|Freitextfeld bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1663,7 +1724,7 @@
 
 |
 |
-|GTIN bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1673,6 +1734,44 @@
 |
 |Hersteller
 |
+|
+|
+|
+|
+|
+
+
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
 |
 |
 |
@@ -1691,7 +1790,7 @@
 |
 |
 |
-|Externen Hersteller aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1700,7 +1799,7 @@
 |
 |
 |
-|Externen Hersteller anzeigen
+|Anzeigen
 |
 |
 |
@@ -1709,7 +1808,7 @@
 |
 |
 |
-|Externen Hersteller erstellen
+|Erstellen
 |
 |
 |
@@ -1718,56 +1817,13 @@
 |
 |
 |
-|Externen Hersteller löschen
+|Löschen
 |
 |
 |
 |
 
-|
-|
-|Hersteller aktualisieren
-|
-|
-|
-|
-|
 
-|
-|
-|Hersteller anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Hersteller bearbeiten
-|
-|
-|
-|
-|
-
-|
-|
-|Hersteller erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Hersteller löschen
-|
-|
-|
-|
-|
 
 |
 |
@@ -1781,7 +1837,7 @@
 |
 |
 |
-|Herstellerprovision aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1790,7 +1846,7 @@
 |
 |
 |
-|Herstellerprovision anzeigen
+|Anzeigen
 |
 |
 |
@@ -1799,7 +1855,7 @@
 |
 |
 |
-|Herstellerprovision erstellen
+|Erstellen
 |
 |
 |
@@ -1808,7 +1864,16 @@
 |
 |
 |
-|Herstellerprovision löschen
+|Löschen
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
 |
 |
 |
@@ -1825,7 +1890,7 @@
 
 |
 |
-|Inhalt anzeigen
+|Anzeigen
 |
 |
 |
@@ -1844,7 +1909,7 @@
 
 |
 |
-|Kategorie aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1853,7 +1918,7 @@
 
 |
 |
-|Kategorie anzeigen
+|Anzeigen
 |
 |
 |
@@ -1862,7 +1927,7 @@
 
 |
 |
-|Kategorie erstellen
+|Erstellen
 |
 |
 |
@@ -1871,7 +1936,7 @@
 
 |
 |
-|Kategorie löschen
+|Löschen
 |
 |
 |
@@ -1889,7 +1954,7 @@
 
 |
 |
-|Lionbridge anzeigen
+|Anzeigen
 |
 |
 |
@@ -1907,7 +1972,7 @@
 
 |
 |
-|Markierung bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -1917,6 +1982,24 @@
 |
 |Merkmal
 |
+|
+|
+|
+|
+|
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
 |
 |
 |
@@ -1935,7 +2018,7 @@
 |
 |
 |
-|Auswahl aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1944,7 +2027,7 @@
 |
 |
 |
-|Auswahl anzeigen
+|Anzeigen
 |
 |
 |
@@ -1953,7 +2036,7 @@
 |
 |
 |
-|Auswahl erstellen
+|Erstellen
 |
 |
 |
@@ -1962,7 +2045,34 @@
 |
 |
 |
-|Auswahl löschen
+|Löschen
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
 |
 |
 |
@@ -1980,7 +2090,7 @@
 |
 |
 |
-|Marktplatzmerkmal aktivieren
+|Aktivieren
 |
 |
 |
@@ -1989,7 +2099,7 @@
 |
 |
 |
-|Marktplatzmerkmal aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -1998,7 +2108,7 @@
 |
 |
 |
-|Marktplatzmerkmal anzeigen
+|Anzeigen
 |
 |
 |
@@ -2007,56 +2117,13 @@
 |
 |
 |
-|Marktplatzmerkmal deaktivieren
+|Deaktivieren
 |
 |
 |
 |
 
-|
-|
-|Merkmal aktualisieren
-|
-|
-|
-|
-|
 
-|
-|
-|Merkmal anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Merkmal bearbeiten
-|
-|
-|
-|
-|
-
-|
-|
-|Merkmal erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Merkmal löschen
-|
-|
-|
-|
-|
 
 |
 |
@@ -2070,7 +2137,7 @@
 |
 |
 |
-|Merkmalgruppe aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2079,7 +2146,7 @@
 |
 |
 |
-|Merkmalgruppe anzeigen
+|Anzeigen
 |
 |
 |
@@ -2088,7 +2155,7 @@
 |
 |
 |
-|Merkmalgruppe erstellen
+|Erstellen
 |
 |
 |
@@ -2097,7 +2164,7 @@
 |
 |
 |
-|Merkmalgruppe löschen
+|Löschen
 |
 |
 |
@@ -2116,7 +2183,7 @@
 |
 |
 |
-|Merkmalgruppenname aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2125,7 +2192,7 @@
 |
 |
 |
-|Merkmalgruppenname anzeigen
+|Anzeigen
 |
 |
 |
@@ -2134,7 +2201,7 @@
 |
 |
 |
-|Merkmalgruppenname erstellen
+|Erstellen
 |
 |
 |
@@ -2143,7 +2210,7 @@
 |
 |
 |
-|Merkmalgruppenname löschen
+|Löschen
 |
 |
 |
@@ -2160,7 +2227,7 @@
 |
 |
 |
-|Merkmalnamen aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2169,7 +2236,7 @@
 |
 |
 |
-|Merkmalnamen anzeigen
+|Anzeigen
 |
 |
 |
@@ -2178,7 +2245,7 @@
 |
 |
 |
-|Merkmalnamen erstellen
+|Erstellen
 |
 |
 |
@@ -2187,7 +2254,25 @@
 |
 |
 |
-|Merkmalnamen löschen
+|Löschen
+|
+|
+|
+|
+
+|
+|Packstück
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
 |
 |
 |
@@ -2204,57 +2289,14 @@
 
 |
 |
-|Preiskalkulation bearbeiten
+|Bearbeiten
 |
 |
 |
 |
 |
 
-|
-|Sets
-|
-|
-|
-|
-|
-|
 
-|
-|
-|Sets aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Sets anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Sets erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Sets löschen
-|
-|
-|
-|
-|
 
 |
 |Suche
@@ -2277,7 +2319,7 @@
 |
 |
 |
-|Backend-Suche bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -2295,6 +2337,24 @@
 |
 |
 |
+|Einstellungen
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+
+|
+|
+|
 |Sprache
 |
 |
@@ -2305,28 +2365,12 @@
 |
 |
 |
-|Sprache bearbeiten
+|Bearbeiten
 |
 |
 |
 
-|
-|
-|
-|Sucheinstellungen
-|
-|
-|
-|
 
-|
-|
-|
-|
-|Frontend-Suche bearbeiten
-|
-|
-|
 
 |
 |Verfügbarkeit
@@ -2339,7 +2383,7 @@
 
 |
 |
-|Verfügbarkeit bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -2349,6 +2393,42 @@
 |
 |Verkaufspreis
 |
+|
+|
+|
+|
+|
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
 |
 |
 |
@@ -2367,7 +2447,7 @@
 |
 |
 |
-|Herkunft aktivieren
+|Aktivieren
 |
 |
 |
@@ -2376,7 +2456,7 @@
 |
 |
 |
-|Herkunft anzeigen
+|Anzeigen
 |
 |
 |
@@ -2385,7 +2465,7 @@
 |
 |
 |
-|Herkunft deaktivieren
+|Deaktivieren
 |
 |
 |
@@ -2403,7 +2483,7 @@
 |
 |
 |
-|Konto aktivieren
+|Aktivieren
 |
 |
 |
@@ -2412,7 +2492,7 @@
 |
 |
 |
-|Konto anzeigen
+|Anzeigen
 |
 |
 |
@@ -2421,7 +2501,7 @@
 |
 |
 |
-|Konto deaktivieren
+|Deaktivieren
 |
 |
 |
@@ -2439,7 +2519,7 @@
 |
 |
 |
-|Kundenklasse anzeigen
+|Aktivieren
 |
 |
 |
@@ -2448,7 +2528,7 @@
 |
 |
 |
-|Kundenklasse deaktivieren
+|Anzeigen
 |
 |
 |
@@ -2457,7 +2537,7 @@
 |
 |
 |
-|Kundenklasse erstellen
+|Deaktivieren
 |
 |
 |
@@ -2476,7 +2556,7 @@
 |
 |
 |
-|Land aktivieren
+|Aktivieren
 |
 |
 |
@@ -2485,7 +2565,7 @@
 |
 |
 |
-|Land anzeigen
+|Anzeigen
 |
 |
 |
@@ -2494,12 +2574,20 @@
 |
 |
 |
-|Land deaktivieren
+|Deaktivieren
 |
 |
 |
 |
 
+|
+|
+|Löschen
+|
+|
+|
+|
+|
 
 |
 |
@@ -2513,7 +2601,7 @@
 |
 |
 |
-|Mandanten aktivieren
+|Aktivieren
 |
 |
 |
@@ -2522,7 +2610,7 @@
 |
 |
 |
-|Mandanten anzeigen
+|Anzeigen
 |
 |
 |
@@ -2531,7 +2619,7 @@
 |
 |
 |
-|Mandanten löschen
+|Löschen
 |
 |
 |
@@ -2549,7 +2637,7 @@
 |
 |
 |
-|Namen aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2558,7 +2646,7 @@
 |
 |
 |
-|Namen anzeigen
+|Anzeigen
 |
 |
 |
@@ -2567,7 +2655,7 @@
 |
 |
 |
-|Namen erstellen
+|Erstellen
 |
 |
 |
@@ -2576,56 +2664,12 @@
 |
 |
 |
-|Namen löschen
+|Löschen
 |
 |
 |
 |
 
-|
-|
-|Verkaufspreis aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Verkaufspreis anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Verkaufspreis bearbeiten
-|
-|
-|
-|
-|
-
-|
-|
-|Verkaufspreis erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Verkaufspreis löschen
-|
-|
-|
-|
-|
 
 |
 |
@@ -2639,7 +2683,7 @@
 |
 |
 |
-|Währung aktivieren
+|Aktivieren
 |
 |
 |
@@ -2648,7 +2692,7 @@
 |
 |
 |
-|Währung anzeigen
+|Anzeigen
 |
 |
 |
@@ -2657,7 +2701,7 @@
 |
 |
 |
-|Währung deaktivieren
+|Deaktivieren
 |
 |
 |
@@ -2673,7 +2717,7 @@
 |
 
 |
-|Aufträge wiederherstellen
+|Aktualisieren
 |
 |
 |
@@ -2682,7 +2726,7 @@
 |
 
 |
-|Aufträge aktualisieren
+|Anzeigen
 |
 |
 |
@@ -2691,7 +2735,7 @@
 |
 
 |
-|Aufträge anzeigen
+|Auftrag wiederherstellen
 |
 |
 |
@@ -2699,23 +2743,7 @@
 |
 |
 
-|
-|Aufträge erstellen
-|
-|
-|
-|
-|
-|
 
-|
-|Aufträge löschen
-|
-|
-|
-|
-|
-|
 
 |
 |Auftragsadressen
@@ -2728,7 +2756,7 @@
 
 |
 |
-|Auftragsadressen aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2737,7 +2765,7 @@
 
 |
 |
-|Auftragsadressen anzeigen
+|Anzeigen
 |
 |
 |
@@ -2746,7 +2774,7 @@
 
 |
 |
-|Auftragsadressen erstellen
+|Erstellen
 |
 |
 |
@@ -2755,7 +2783,7 @@
 
 |
 |
-|Auftragsadressen löschen
+|Löschen
 |
 |
 |
@@ -2773,7 +2801,7 @@
 
 |
 |
-|Eigenschaft aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2782,7 +2810,7 @@
 
 |
 |
-|Eigenschaft anzeigen
+|Anzeigen
 |
 |
 |
@@ -2791,7 +2819,7 @@
 
 |
 |
-|Eigenschaft erstellen
+|Erstellen
 |
 |
 |
@@ -2800,7 +2828,7 @@
 
 |
 |
-|Eigenschaft löschen
+|Löschen
 |
 |
 |
@@ -2819,7 +2847,7 @@
 |
 |
 |
-|Eigenschaftstyp aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2828,7 +2856,7 @@
 |
 |
 |
-|Eigenschaftstyp löschen
+|Erstellen
 |
 |
 |
@@ -2837,7 +2865,7 @@
 |
 |
 |
-|Eigenschaftstyp erstellen
+|Löschen
 |
 |
 |
@@ -2863,7 +2891,7 @@
 
 |
 |
-|Datumsangaben für Auftragspositionen
+|Datumsangaben
 |
 |
 |
@@ -2873,7 +2901,7 @@
 |
 |
 |
-|Datumsangabe aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2882,7 +2910,7 @@
 |
 |
 |
-|Datumsangabe anzeigen
+|Anzeigen
 |
 |
 |
@@ -2891,7 +2919,7 @@
 |
 |
 |
-|Datumsangabe erstellen
+|Erstellen
 |
 |
 |
@@ -2900,7 +2928,7 @@
 |
 |
 |
-|Datumsangabe löschen
+|Löschen
 |
 |
 |
@@ -2918,7 +2946,7 @@
 |
 |
 |
-|Deckungsbeitrag anzeigen
+|Anzeigen
 |
 |
 |
@@ -2926,17 +2954,8 @@
 
 |
 |
-|Eigenschaften von Auftragspositionen
+|Eigenschaften
 |
-|
-|
-|
-|
-
-|
-|
-|
-|Eigenschaft aktualisieren
 |
 |
 |
@@ -2945,7 +2964,7 @@
 |
 |
 |
-|Eigenschaft anzeigen
+|Aktualisieren
 |
 |
 |
@@ -2954,7 +2973,7 @@
 |
 |
 |
-|Eigenschaft erstellen
+|Anzeigen
 |
 |
 |
@@ -2963,7 +2982,16 @@
 |
 |
 |
-|Eigenschaft löschen
+|Erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Löschen
 |
 |
 |
@@ -2981,7 +3009,7 @@
 |
 |
 |
-|Transaktionen aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -2990,7 +3018,7 @@
 |
 |
 |
-|Transaktionen anzeigen
+|Anzeigen
 |
 |
 |
@@ -2999,7 +3027,7 @@
 |
 |
 |
-|Transaktionen erstellen
+|Erstellen
 |
 |
 |
@@ -3008,7 +3036,7 @@
 |
 |
 |
-|Transaktionen löschen
+|Löschen
 |
 |
 |
@@ -3025,7 +3053,7 @@
 
 |
 |
-|Auftragsstatus aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3034,7 +3062,7 @@
 
 |
 |
-|Auftragsstatus anzeigen
+|Anzeigen
 |
 |
 |
@@ -3043,7 +3071,7 @@
 
 |
 |
-|Auftragsstatus erstellen
+|Erstellen
 |
 |
 |
@@ -3052,7 +3080,7 @@
 
 |
 |
-|Auftragsstatus löschen
+|Löschen
 |
 |
 |
@@ -3070,7 +3098,7 @@
 
 |
 |
-|Bestellung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3079,21 +3107,14 @@
 
 |
 |
-|Bestellung anzeigen
+|Anzeigen
 |
 |
 |
 |
 |
 
-|
-|
-|Bestellung erstellen
-|
-|
-|
-|
-|
+
 
 |
 |
@@ -3107,7 +3128,7 @@
 |
 |
 |
-|Einstellungen aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3116,7 +3137,16 @@
 |
 |
 |
-|Einstellungen anzeigen
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
 |
 |
 |
@@ -3133,7 +3163,7 @@
 
 |
 |
-|Buchung erstellen
+|Erstellen
 |
 |
 |
@@ -3151,7 +3181,7 @@
 
 |
 |
-|Dokument anlegen
+|Anlegen
 |
 |
 |
@@ -3160,16 +3190,7 @@
 
 |
 |
-|Dokument anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Dokument löschen
+|Anzeigen
 |
 |
 |
@@ -3184,6 +3205,17 @@
 |
 |
 |
+
+|
+|
+|Löschen
+|
+|
+|
+|
+|
+
+
 
 |
 |Ereignisse
@@ -3232,7 +3264,7 @@
 
 |
 |
-|Inkasso-Übergabe anzeigen
+|Anzeigen
 |
 |
 |
@@ -3250,7 +3282,7 @@
 
 |
 |
-|Referenz aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3259,7 +3291,7 @@
 
 |
 |
-|Referenz anzeigen
+|Anzeigen
 |
 |
 |
@@ -3268,7 +3300,7 @@
 
 |
 |
-|Referenz erstellen
+|Erstellen
 |
 |
 |
@@ -3277,7 +3309,7 @@
 
 |
 |
-|Referenz löschen
+|Löschen
 |
 |
 |
@@ -3295,7 +3327,7 @@
 
 |
 |
-|Sammelauftrag anzeigen
+|Anzeigen
 |
 |
 |
@@ -3313,7 +3345,7 @@
 
 |
 |
-|Scheduler anzeigen
+|Anzeigen
 |
 |
 |
@@ -3340,7 +3372,7 @@
 
 |
 |
-|Seriennummern anzeigen
+|Anzeigen
 |
 |
 |
@@ -3368,7 +3400,7 @@
 |
 |
 |
-|Pakettyp anzeigen
+|Anzeigen
 |
 |
 |
@@ -3386,6 +3418,43 @@
 |
 |
 |
+|Aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Erstellen
+|
+|
+|
+|
+
+|
+|
+|
+|Löschen
+|
+|
+|
+|
+
+
+|
+|
+|
 |Retourendienstleister
 |
 |
@@ -3396,7 +3465,7 @@
 |
 |
 |
-|Retourendienstleister aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3405,7 +3474,7 @@
 |
 |
 |
-|Retourendienstleister anlegen
+|Anlegen
 |
 |
 |
@@ -3414,7 +3483,7 @@
 |
 |
 |
-|Retourendienstleister anzeigen
+|Anzeigen
 |
 |
 |
@@ -3423,46 +3492,11 @@
 |
 |
 |
-|Retourendienstleister löschen
+|Löschen
 |
 |
 |
 
-|
-|
-|
-|Retourenlabel aktualisieren
-|
-|
-|
-|
-
-|
-|
-|
-|Retourenlabel anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Retourenlabel erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Retourenlabel löschen
-|
-|
-|
-|
 
 |
 |
@@ -3485,6 +3519,24 @@
 |
 |
 |
+|Aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|
 |Artikel im Versandpaket
 |
 |
@@ -3495,7 +3547,7 @@
 |
 |
 |
-|Artikel im Versandpaket aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3504,7 +3556,7 @@
 |
 |
 |
-|Artikel im Versandpaket anzeigen
+|Anzeigen
 |
 |
 |
@@ -3513,7 +3565,7 @@
 |
 |
 |
-|Artikel im Versandpaket erstellen
+|Erstellen
 |
 |
 |
@@ -3522,24 +3574,17 @@
 |
 |
 |
-|Artikel im Versandpaket löschen
+|Löschen
 |
 |
 |
 
-|
-|
-|
-|Versandpaket aktualisieren
-|
-|
-|
-|
+
 
 |
 |
 |
-|Versandpaket anzeigen
+|Erstellen
 |
 |
 |
@@ -3548,16 +3593,7 @@
 |
 |
 |
-|Versandpaket erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Versandpaket löschen
+|Löschen
 |
 |
 |
@@ -3575,7 +3611,7 @@
 |
 |
 |
-|Versandpaletten aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3584,7 +3620,7 @@
 |
 |
 |
-|Versandpaletten erstellen
+|Erstellen
 |
 |
 |
@@ -3593,7 +3629,7 @@
 |
 |
 |
-|Versandpaletten löschen
+|Löschen
 |
 |
 |
@@ -3683,7 +3719,7 @@
 |
 |
 |
-|Berechtigungen eines Benutzers bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -3700,7 +3736,7 @@
 
 |
 |
-|Rollen konfigurieren
+|Konfigurieren
 |
 |
 |
@@ -3709,7 +3745,7 @@
 
 |
 |
-|user
+|Rollen eines Benutzers
 |
 |
 |
@@ -3719,7 +3755,7 @@
 |
 |
 |
-|Rollen eines Benutzers bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -3735,7 +3771,7 @@
 |
 
 |
-|Benutzer konfigurieren
+|Konfigurieren
 |
 |
 |
@@ -3753,7 +3789,7 @@
 |
 
 |
-|Blog aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -3762,7 +3798,7 @@
 |
 
 |
-|Blog anzeigen
+|Anzeigen
 |
 |
 |
@@ -3771,7 +3807,7 @@
 |
 
 |
-|Blog erstellen
+|Erstellen
 |
 |
 |
@@ -3780,7 +3816,7 @@
 |
 
 |
-|Blog löschen
+|Löschen
 |
 |
 |
@@ -3798,7 +3834,7 @@
 |
 
 |
-|config
+|Bearbeiten
 |
 |
 |
@@ -3817,6 +3853,24 @@
 
 |
 |
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
 |Buchungsschlüssel
 |
 |
@@ -3827,7 +3881,7 @@
 |
 |
 |
-|Buchungsschlüssel anzeigen
+|Anzeigen
 |
 |
 |
@@ -3845,7 +3899,7 @@
 |
 |
 |
-|Debitorenkonten anzeigen
+|Anzeigen
 |
 |
 |
@@ -3863,583 +3917,17 @@
 |
 |
 |
-|Erlöskonten anzeigen
+|Anzeigen
 |
 |
 |
 |
 
-|
-|
-|Standort aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Standort anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Standort erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Standort löschen
-|
-|
-|
-|
-|
-
-|certification
-|
-|
-|
-|
-|
-|
-|
-
-|
-|config
-|
-|
-|
-|
-|
-|
-
-|client
-|
-|
-|
-|
-|
-|
-|
-
-|
-|contests
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Gewinnspiel bearbeiten
-|
-|
-|
-|
-|
-
-|
-|domains
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Domains bearbeiten
-|
-|
-|
-|
-|
-
-|
-|feedback
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Feedback bearbeiten
-|
-|
-|
-|
-|
-
-|
-|ftp
-|
-|
-|
-|
-|
-|
-
-|
-|
-|FTP-Einstellungen bearbeiten
-|
-|
-|
-|
-|
-
-|
-|gifts
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Geschenkeservice bearbeiten
-|
-|
-|
-|
-|
-
-|
-|language_packages
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Sprachpakete bearbeiten
-|
-|
-|
-|
-|
-
-|
-|live_shopping
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Live-Shopping bearbeiten
-|
-|
-|
-|
-|
-
-|
-|services
-|
-|
-|
-|
-|
-|
-
-|
-|
-|bitly
-|
-|
-|
-|
-|
-
-|
-|
-|
-|bit.ly-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|clipster
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Cliplister-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|dropbox
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Dropbox-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|facebook
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Facebook-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|facetsearch
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Facettensuche bearbeiten
-|
-|
-|
-|
-
-|
-|
-|familycard
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Familienkarte bearbeiten
-|
-|
-|
-|
-
-|
-|
-|lionbridge
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Lionbridge-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|picalike
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Picalike-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|testberichte
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Testberichte.de-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|twitter
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Twitter-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|settings
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Einstellungen bearbeiten
-|
-|
-|
-|
-|
-
-|
-|shop
-|
-|
-|
-|
-|
-|
-
-|
-|
-|affiliate
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Affiliates bearbeiten
-|
-|
-|
-|
-
-|
-|
-|category
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Kategorieeinstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|content_cache
-|
-|
-|
-|
-|
-
-|
-|
-|
-|ShopBooster bearbeiten
-|
-|
-|
-|
-
-|
-|
-|Mandantenspezifische Einstellungen
-|
-|
-|
-|
-|
-
-|
-|
-|modules
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Module bearbeiten
-|
-|
-|
-|
-
-|
-|
-|my_account
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Mein Konto bearbeiten
-|
-|
-|
-|
-
-
-|
-|
-|order_process
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Bestellvorgang bearbeiten
-|
-|
-|
-|
-
-|
-|
-|seo
-|
-|
-|
-|
-|
-
-|
-|
-|
-|SEO-Einstellungen bearbeiten
-|
-|
-|
-|
-
-|
-|
-|services
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Services bearbeiten
-|
-|
-|
-|
 
-|
-|ssl
-|
-|
-|
-|
-|
-|
 
 |
 |
-|SSL-Einstellungen bearbeiten
+|Erstellen
 |
 |
 |
@@ -4447,40 +3935,16 @@
 |
 
 |
-|statistics
 |
+|Löschen
 |
 |
 |
 |
 |
 
-|
-|
-|Statistik bearbeiten
-|
-|
-|
-|
-|
 
-|
-|version
-|
-|
-|
-|
-|
-|
 
-|
-|
-|Versionseinstellungen bearbeiten
-|
-|
-|
-|
-|
 
 |CMS
 |
@@ -4492,7 +3956,7 @@
 |
 
 |
-|container_links
+|Alt
 |
 |
 |
@@ -4502,16 +3966,7 @@
 
 |
 |
-|Container-Verknüpfungen anzeigen
-|
-|
-|
-|
-|
-
-|
-|documents
-|
+|Blog
 |
 |
 |
@@ -4520,7 +3975,153 @@
 
 |
 |
-|Dokumente anzeigen
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|Feedback
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|Konstanten
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|Suchen und Ersetzen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|Termine
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+
+
+|
+|
+|Webspace (alt)
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|Artikelgalerie
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Container-Verknüpfungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|Dokumente
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
 |
 |
 |
@@ -4538,7 +4139,7 @@
 
 |
 |
-|Feedback aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -4547,7 +4148,7 @@
 
 |
 |
-|Feedback anzeigen
+|Anzeigen
 |
 |
 |
@@ -4556,21 +4157,14 @@
 
 |
 |
-|Feedback erstellen
+|Erstellen
 |
 |
 |
 |
 |
 
-|
-|
-|Feedback löschen
-|
-|
-|
-|
-|
+
 
 |
 |
@@ -4584,7 +4178,7 @@
 |
 |
 |
-|Bewertung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -4593,7 +4187,7 @@
 |
 |
 |
-|Bewertung erstellen
+|Erstellen
 |
 |
 |
@@ -4602,7 +4196,7 @@
 |
 |
 |
-|Bewertung löschen
+|Löschen
 |
 |
 |
@@ -4620,7 +4214,7 @@
 |
 |
 |
-|Kommentar aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -4629,7 +4223,7 @@
 |
 |
 |
-|Kommentar erstellen
+|Erstellen
 |
 |
 |
@@ -4638,7 +4232,7 @@
 |
 |
 |
-|Kommentar löschen
+|Löschen
 |
 |
 |
@@ -4646,16 +4240,7 @@
 
 |
 |
-|Feedbacks migrieren
-|
-|
-|
-|
-|
-
-|
-|form
-|
+|Löschen
 |
 |
 |
@@ -4664,7 +4249,7 @@
 
 |
 |
-|Formulare bearbeiten
+|Migrieren
 |
 |
 |
@@ -4672,7 +4257,7 @@
 |
 
 |
-|item_gallery
+|Formulare
 |
 |
 |
@@ -4682,33 +4267,17 @@
 
 |
 |
-|Artikelgalerie bearbeiten
+|Bearbeiten
 |
 |
 |
 |
 |
 
-|
-|multilingual
-|
-|
-|
-|
-|
-|
+
 
 |
-|
-|Mehrsprachigkeit anzeigen
-|
-|
-|
-|
-|
-
-|
-|old
+|Mehrsprachigkeit
 |
 |
 |
@@ -4718,112 +4287,13 @@
 
 |
 |
-|appointment
+|Anzeigen
 |
 |
 |
 |
 |
 
-|
-|
-|
-|Termine anzeigen
-|
-|
-|
-|
-
-
-|
-|
-|blog
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Blog anzeigen
-|
-|
-|
-|
-
-|
-|
-|constants
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Konstanten anzeigen
-|
-|
-|
-|
-
-|
-|
-|feedback
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Feedback anzeigen
-|
-|
-|
-|
-
-|
-|
-|search_and_replace
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Suchen & Ersetzen anzeigen
-|
-|
-|
-|
-
-|
-|
-|webspace
-|
-|
-|
-|
-|
-
-|
-|
-|
-|Webspace (alt) anzeigen
-|
-|
-|
-|
 
 
 |
@@ -4837,7 +4307,7 @@
 
 |
 |
-|Rechtliche Angaben speichern
+|Speichern
 |
 |
 |
@@ -4845,25 +4315,7 @@
 |
 
 |
-|rss
-|
-|
-|
-|
-|
-|
-
-|
-|
-|RSS bearbeiten
-|
-|
-|
-|
-|
-
-|
-|shopbuilder
+|RSS
 |
 |
 |
@@ -4873,7 +4325,25 @@
 
 |
 |
-|ShopBuilder anzeigen
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|ShopBuilder
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
 |
 |
 |
@@ -4912,7 +4382,7 @@
 |
 |
 |
-|Design-Einstellungen aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -4921,13 +4391,13 @@
 |
 |
 |
-|Design-Einstellungen kopieren
+|Kopieren
 |
 |
 |
 
 |
-|webspace
+|Webspace
 |
 |
 |
@@ -4937,7 +4407,7 @@
 
 |
 |
-|Webspace anzeigen
+|Anzeigen
 |
 |
 |
@@ -4964,7 +4434,7 @@
 
 |
 |
-|Adress-Layout aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -4973,7 +4443,7 @@
 
 |
 |
-|Adress-Layout anzeigen
+|Anzeigen
 |
 |
 |
@@ -4982,7 +4452,7 @@
 
 |
 |
-|Adress-Layout bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -4991,7 +4461,7 @@
 
 |
 |
-|Adress-Layout erstellen
+|Erstellen
 |
 |
 |
@@ -5000,7 +4470,7 @@
 
 |
 |
-|Adress-Layout löschen
+|Löschen
 |
 |
 |
@@ -5010,42 +4480,6 @@
 |
 |Adresse
 |
-|
-|
-|
-|
-|
-
-|
-|
-|Adresse aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Adresse anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Adresse erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Adresse löschen
 |
 |
 |
@@ -5064,7 +4498,7 @@
 |
 |
 |
-|Adresstyp aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5073,7 +4507,7 @@
 |
 |
 |
-|Adresstyp anzeigen
+|Anzeigen
 |
 |
 |
@@ -5082,7 +4516,7 @@
 |
 |
 |
-|Adresstyp erstellen
+|Erstellen
 |
 |
 |
@@ -5091,11 +4525,49 @@
 |
 |
 |
-|Adresstyp löschen
+|Löschen
 |
 |
 |
 |
+
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
+|
+|
+|
+|
+
 
 |
 |
@@ -5109,7 +4581,7 @@
 |
 |
 |
-|Typ der Adressoption aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5118,7 +4590,7 @@
 |
 |
 |
-|Typ der Adressoption anzeigen
+|Anzeigen
 |
 |
 |
@@ -5127,7 +4599,7 @@
 |
 |
 |
-|Typ der Adressoption erstellen
+|Erstellen
 |
 |
 |
@@ -5136,7 +4608,7 @@
 |
 |
 |
-|Typ der Adressoption löschen
+|Löschen
 |
 |
 |
@@ -5153,7 +4625,7 @@
 
 |
 |
-|Auftragszusammenfassung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5162,7 +4634,7 @@
 
 |
 |
-|Auftragszusammenfassung anzeigen
+|Anzeigen
 |
 |
 |
@@ -5171,7 +4643,7 @@
 
 |
 |
-|Auftragszusammenfassung erstellen
+|Erstellen
 |
 |
 |
@@ -5180,7 +4652,7 @@
 
 |
 |
-|Auftragszusammenfassung löschen
+|Löschen
 |
 |
 |
@@ -5199,7 +4671,7 @@
 
 |
 |
-|Bankdaten aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5208,7 +4680,7 @@
 
 |
 |
-|Bankdaten anzeigen
+|Anzeigen
 |
 |
 |
@@ -5217,7 +4689,7 @@
 
 |
 |
-|Bankdaten bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -5226,7 +4698,7 @@
 
 |
 |
-|Bankdaten erstellen
+|Erstellen
 |
 |
 |
@@ -5235,30 +4707,14 @@
 
 |
 |
-|Bankdaten löschen
+|Löschen
 |
 |
 |
 |
 |
 
-|
-|debitor
-|
-|
-|
-|
-|
-|
 
-|
-|
-|show
-|
-|
-|
-|
-|
 
 |
 |E-Mail
@@ -5271,7 +4727,7 @@
 
 |
 |
-|Automatischen Versand bearbeiten
+|Automatischer Versand bearbeiten
 |
 |
 |
@@ -5352,7 +4808,7 @@
 
 |
 |
-|Eigenschaft bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -5370,7 +4826,7 @@
 
 |
 |
-|Event aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5379,7 +4835,7 @@
 
 |
 |
-|Event anzeigen
+|Anzeigen
 |
 |
 |
@@ -5388,7 +4844,7 @@
 
 |
 |
-|Event erstellen
+|Erstellen
 |
 |
 |
@@ -5397,7 +4853,7 @@
 
 |
 |
-|Event löschen
+|Löschen
 |
 |
 |
@@ -5415,7 +4871,7 @@
 
 |
 |
-|Firma aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5424,7 +4880,7 @@
 
 |
 |
-|Firma anzeigen
+|Anzeigen
 |
 |
 |
@@ -5433,7 +4889,7 @@
 
 |
 |
-|Firma erstellen
+|Erstellen
 |
 |
 |
@@ -5442,7 +4898,7 @@
 
 |
 |
-|Firma löschen
+|Löschen
 |
 |
 |
@@ -5452,6 +4908,24 @@
 |
 |Kampagne
 |
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
 |
 |
 |
@@ -5470,7 +4944,7 @@
 |
 |
 |
-|Code anzeigen
+|Anzeigen
 |
 |
 |
@@ -5479,7 +4953,7 @@
 |
 |
 |
-|Code erstellen
+|Erstellen
 |
 |
 |
@@ -5488,7 +4962,7 @@
 |
 |
 |
-|Code löschen
+|Löschen
 |
 |
 |
@@ -5497,7 +4971,7 @@
 
 |
 |
-|Kampagne anzeigen
+|Erstellen
 |
 |
 |
@@ -5506,25 +4980,7 @@
 
 |
 |
-|Kampagne bearbeiten
-|
-|
-|
-|
-|
-
-|
-|
-|Kampagne erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Kampagne löschen
+|Löschen
 |
 |
 |
@@ -5542,7 +4998,7 @@
 
 |
 |
-|Kontakt aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5551,7 +5007,7 @@
 
 |
 |
-|Kontakt anonymisieren
+|Anonymisieren
 |
 |
 |
@@ -5560,7 +5016,7 @@
 
 |
 |
-|Kontakt anzeigen
+|Anzeigen
 |
 |
 |
@@ -5569,7 +5025,7 @@
 
 |
 |
-|Kontakt erstellen
+|Erstellen
 |
 |
 |
@@ -5578,7 +5034,7 @@
 
 |
 |
-|Kontakt löschen
+|Löschen
 |
 |
 |
@@ -5597,7 +5053,7 @@
 |
 |
 |
-|Typ der Kontaktoption aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5606,7 +5062,7 @@
 |
 |
 |
-|Typ der Kontaktoption anzeigen
+|Anzeigen
 |
 |
 |
@@ -5615,7 +5071,7 @@
 |
 |
 |
-|Typ der Kontaktoption erstellen
+|Erstellen
 |
 |
 |
@@ -5624,7 +5080,7 @@
 |
 |
 |
-|Typ der Kontaktoption löschen
+|Löschen
 |
 |
 |
@@ -5641,7 +5097,7 @@
 
 |
 |
-|Kontaktklasse bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -5649,17 +5105,8 @@
 |
 
 |
-|Messenger
+|Nachricht
 |
-|
-|
-|
-|
-|
-
-|
-|
-|Nachricht aktualisieren
 |
 |
 |
@@ -5668,7 +5115,7 @@
 
 |
 |
-|Nachricht anzeigen
+|Aktualisieren
 |
 |
 |
@@ -5677,7 +5124,7 @@
 
 |
 |
-|Nachricht erstellen
+|Anzeigen
 |
 |
 |
@@ -5686,7 +5133,16 @@
 
 |
 |
-|Nachricht löschen
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
 |
 |
 |
@@ -5705,7 +5161,7 @@
 
 |
 |
-|Newsletter anzeigen
+|Anzeigen
 |
 |
 |
@@ -5714,7 +5170,7 @@
 
 |
 |
-|Newsletter bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -5723,7 +5179,7 @@
 
 |
 |
-|Newsletter erstellen
+|Erstellen
 |
 |
 |
@@ -5732,7 +5188,7 @@
 
 |
 |
-|Newsletter löschen
+|Löschen
 |
 |
 |
@@ -5751,7 +5207,7 @@
 |
 |
 |
-|Newsletter-Empfänger aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5760,7 +5216,7 @@
 |
 |
 |
-|Newsletter-Empfänger anzeigen
+|Anzeigen
 |
 |
 |
@@ -5769,7 +5225,7 @@
 |
 |
 |
-|Newsletter-Empfänger löschen
+|Löschen
 |
 |
 |
@@ -5789,7 +5245,7 @@
 |
 |
 |
-|Newsletter-Ordner aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5800,7 +5256,7 @@
 |
 |
 |
-|Newsletter-Ordner anzeigen
+|Anzeigen
 |
 |
 |
@@ -5809,7 +5265,7 @@
 |
 |
 |
-|Newsletter-Ordner erstellen
+|Erstellen
 |
 |
 |
@@ -5818,7 +5274,7 @@
 |
 |
 |
-|Newsletter-Ordner löschen
+|Löschen
 |
 |
 |
@@ -5835,7 +5291,25 @@
 
 |
 |
-|Passwort bearbeiten
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Schuldner
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
 |
 |
 |
@@ -5853,7 +5327,7 @@
 
 |
 |
-|Serviceeinheit bearbeiten
+|Anzeigen
 |
 |
 |
@@ -5862,12 +5336,14 @@
 
 |
 |
-|Serviceeinheit anzeigen
+|Bearbeiten
 |
 |
 |
 |
 |
+
+
 
 |
 |Ticket
@@ -5889,7 +5365,7 @@
 
 |
 |
-|Ticket anzeigen
+|Anzeigen
 |
 |
 |
@@ -5898,7 +5374,7 @@
 
 |
 |
-|Ticket bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -5907,7 +5383,7 @@
 
 |
 |
-|Ticket erstellen
+|Erstellen
 |
 |
 |
@@ -5916,7 +5392,7 @@
 
 |
 |
-|Ticket löschen
+|Löschen
 |
 |
 |
@@ -5935,7 +5411,7 @@
 |
 |
 |
-|Ticket-Rolle aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5944,7 +5420,7 @@
 |
 |
 |
-|Ticket-Rolle anzeigen
+|Anzeigen
 |
 |
 |
@@ -5953,7 +5429,7 @@
 |
 |
 |
-|Ticket-Rolle erstellen
+|Erstellen
 |
 |
 |
@@ -5971,7 +5447,7 @@
 |
 |
 |
-|Ticket-Status aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -5980,7 +5456,7 @@
 |
 |
 |
-|Ticket-Status anzeigen
+|Anzeigen
 |
 |
 |
@@ -5989,7 +5465,7 @@
 |
 |
 |
-|Ticket-Status erstellen
+|Erstellen
 |
 |
 |
@@ -6007,7 +5483,7 @@
 |
 |
 |
-|Ticket-Typ aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6016,7 +5492,7 @@
 |
 |
 |
-|Ticket-Typ anzeigen
+|Anzeigen
 |
 |
 |
@@ -6025,7 +5501,7 @@
 |
 |
 |
-|Ticket-Typ erstellen
+|Erstellen
 |
 |
 |
@@ -6053,7 +5529,7 @@
 |
 |
 |
-|Interne Ticketnachricht anzeigen
+|Anzeigen
 |
 |
 |
@@ -6071,7 +5547,7 @@
 |
 |
 |
-|Öffentliche Ticketnachricht anzeigen
+|Anzeigen
 |
 |
 |
@@ -6087,7 +5563,7 @@
 
 |
 |
-|Typ bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6105,7 +5581,7 @@
 
 |
 |
-|Umsatzsteuer-ID bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6132,7 +5608,7 @@
 
 |
 |
-|Backup bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6170,7 +5646,7 @@
 |
 |
 |
-|Dynamischen Export anzeigen
+|Anzeigen
 |
 |
 |
@@ -6188,7 +5664,7 @@
 |
 |
 |
-|Elastischen Export anzeigen
+|Anzeigen
 |
 |
 |
@@ -6206,7 +5682,7 @@
 |
 |
 |
-|Katalog anzeigen
+|Anzeigen
 |
 |
 |
@@ -6224,7 +5700,7 @@
 |
 |
 |
-|Spezialexport anzeigen
+|Anzeigen
 |
 |
 |
@@ -6251,7 +5727,7 @@
 |
 |
 |
-|Dynamischen Import anzeigen
+|Anzeigen
 |
 |
 |
@@ -6267,7 +5743,7 @@
 
 |
 |
-|Datenbereinigung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6276,7 +5752,7 @@
 
 |
 |
-|Datenbereinigung anzeigen
+|Anzeigen
 |
 |
 |
@@ -6285,7 +5761,7 @@
 
 |
 |
-|Datenbereinigung bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6303,7 +5779,7 @@
 
 |
 |
-|Druckverlauf anzeigen
+|Anzeigen
 |
 |
 |
@@ -6331,7 +5807,7 @@
 |
 |
 |
-|Export aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6340,7 +5816,7 @@
 |
 |
 |
-|Export anzeigen
+|Anzeigen
 |
 |
 |
@@ -6349,7 +5825,7 @@
 |
 |
 |
-|Export erstellen
+|Erstellen
 |
 |
 |
@@ -6358,7 +5834,7 @@
 |
 |
 |
-|Export löschen
+|Löschen
 |
 |
 |
@@ -6367,7 +5843,7 @@
 |
 |
 |
-|Export suchen
+|Suchen
 |
 |
 |
@@ -6385,7 +5861,7 @@
 
 |
 |
-|Gelöschte Logs anzeigen
+|Anzeigen
 |
 |
 |
@@ -6403,7 +5879,7 @@
 
 |
 |
-|Historie anzeigen
+|Anzeigen
 |
 |
 |
@@ -6439,6 +5915,15 @@
 
 |
 |
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
 |API-Log
 |
 |
@@ -6449,7 +5934,7 @@
 |
 |
 |
-|API-Log anzeigen
+|Anzeigen
 |
 |
 |
@@ -6458,20 +5943,13 @@
 |
 |
 |
-|API-Log bearbeiten
+|Bearbeiten
 |
 |
 |
 |
 
-|
-|
-|Log anzeigen
-|
-|
-|
-|
-|
+
 
 |
 |Migration
@@ -6484,7 +5962,7 @@
 
 |
 |
-|Migration bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6513,7 +5991,7 @@
 |
 |
 |
-|Rohdaten anzeigen
+|Anzeigen
 |
 |
 |
@@ -6522,7 +6000,7 @@
 |
 |
 |
-|Rohdaten bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6539,7 +6017,7 @@
 
 |
 |
-|Status anzeigen
+|Anzeigen
 |
 |
 |
@@ -6557,7 +6035,7 @@
 
 |
 |
-|Sync aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6566,7 +6044,7 @@
 
 |
 |
-|Sync anzeigen
+|Anzeigen
 |
 |
 |
@@ -6575,7 +6053,7 @@
 
 |
 |
-|Sync erstellen
+|Erstellen
 |
 |
 |
@@ -6584,7 +6062,7 @@
 
 |
 |
-|Sync löschen
+|Löschen
 |
 |
 |
@@ -6603,7 +6081,7 @@
 |
 |
 |
-|Zuordnung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6612,7 +6090,7 @@
 |
 |
 |
-|Zuordnung anzeigen
+|Anzeigen
 |
 |
 |
@@ -6621,7 +6099,7 @@
 |
 |
 |
-|Zuordnung erstellen
+|Erstellen
 |
 |
 |
@@ -6630,7 +6108,7 @@
 |
 |
 |
-|Zuordnung löschen
+|Löschen
 |
 |
 |
@@ -6647,7 +6125,7 @@
 
 |
 |
-|Sync-Log aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6656,7 +6134,7 @@
 
 |
 |
-|Sync-Log anzeigen
+|Anzeigen
 |
 |
 |
@@ -6665,7 +6143,7 @@
 
 |
 |
-|Sync-Log erstellen
+|Erstellen
 |
 |
 |
@@ -6674,7 +6152,7 @@
 
 |
 |
-|Sync-Log löschen
+|Löschen
 |
 |
 |
@@ -6691,7 +6169,7 @@
 |
 
 |
-|Editoren bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -6719,7 +6197,7 @@
 
 |
 |
-|Assistent anzeigen
+|Anzeigen
 |
 |
 |
@@ -6728,7 +6206,7 @@
 
 |
 |
-|Datensatz für Assistenten
+|Datensatz
 |
 |
 |
@@ -6738,7 +6216,7 @@
 |
 |
 |
-|Datensatz abschließen
+|Abschließen
 |
 |
 |
@@ -6747,7 +6225,7 @@
 |
 |
 |
-|Datensatz aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6756,7 +6234,7 @@
 |
 |
 |
-|Datensatz anzeigen
+|Anzeigen
 |
 |
 |
@@ -6765,7 +6243,7 @@
 |
 |
 |
-|Datensatz erstellen
+|Erstellen
 |
 |
 |
@@ -6774,7 +6252,7 @@
 |
 |
 |
-|Datensatz löschen
+|Löschen
 |
 |
 |
@@ -6791,6 +6269,16 @@
 
 |
 |
+|Aktualisieren
+|
+|
+|
+|
+|
+
+
+|
+|
 |Amazon-Eigenschaftsverknüpfung
 |
 |
@@ -6801,7 +6289,7 @@
 |
 |
 |
-|Amazon-Eigenschaftsverknüpfung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6810,7 +6298,7 @@
 |
 |
 |
-|Amazon-Eigenschaftsverknüpfung anzeigen
+|Anzeigen
 |
 |
 |
@@ -6819,7 +6307,7 @@
 |
 |
 |
-|Amazon-Eigenschaftsverknüpfung erstellen
+|Erstellen
 |
 |
 |
@@ -6828,7 +6316,16 @@
 |
 |
 |
-|Amazon-Eigenschaftsverknüpfung löschen
+|Löschen
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
 |
 |
 |
@@ -6846,7 +6343,7 @@
 |
 |
 |
-|Auswahl aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6855,7 +6352,7 @@
 |
 |
 |
-|Auswahl anzeigen
+|Anzeigen
 |
 |
 |
@@ -6864,7 +6361,7 @@
 |
 |
 |
-|Auswahl erstellen
+|Erstellen
 |
 |
 |
@@ -6873,7 +6370,7 @@
 |
 |
 |
-|Auswahl löschen
+|Löschen
 |
 |
 |
@@ -6881,39 +6378,16 @@
 
 |
 |
-|Eigenschaft aktualisieren
+|Erstellen
 |
 |
 |
 |
 |
 
-|
-|
-|Eigenschaft anzeigen
-|
-|
-|
-|
-|
 
-|
-|
-|Eigenschaft erstellen
-|
-|
-|
-|
-|
 
-|
-|
-|Eigenschaft löschen
-|
-|
-|
-|
-|
+
 
 |
 |
@@ -6927,7 +6401,7 @@
 |
 |
 |
-|Gruppe aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6936,7 +6410,7 @@
 |
 |
 |
-|Gruppe anzeigen
+|Anzeigen
 |
 |
 |
@@ -6945,20 +6419,13 @@
 |
 |
 |
-|Gruppe erstellen
+|Erstellen
 |
 |
 |
 |
 
-|
-|
-|
-|Gruppe löschen
-|
-|
-|
-|
+
 
 |
 |
@@ -6973,7 +6440,7 @@
 |
 |
 |
-|Gruppenoption aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -6982,7 +6449,7 @@
 |
 |
 |
-|Gruppenoption anzeigen
+|Anzeigen
 |
 |
 |
@@ -6991,7 +6458,7 @@
 |
 |
 |
-|Gruppenoption erstellen
+|Erstellen
 |
 |
 |
@@ -7000,7 +6467,25 @@
 |
 |
 |
-|Gruppenoption löschen
+|Löschen
+|
+|
+|
+
+|
+|
+|
+|Löschen
+|
+|
+|
+|
+
+|
+|
+|Löschen
+|
+|
 |
 |
 |
@@ -7017,7 +6502,7 @@
 |
 |
 |
-|Markt aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7026,7 +6511,7 @@
 |
 |
 |
-|Markt anzeigen
+|Anzeigen
 |
 |
 |
@@ -7035,7 +6520,7 @@
 |
 |
 |
-|Markt erstellen
+|Erstellen
 |
 |
 |
@@ -7044,7 +6529,7 @@
 |
 |
 |
-|Markt löschen
+|Löschen
 |
 |
 |
@@ -7062,7 +6547,7 @@
 |
 |
 |
-|Name aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7071,7 +6556,7 @@
 |
 |
 |
-|Name anzeigen
+|Anzeigen
 |
 |
 |
@@ -7080,7 +6565,7 @@
 |
 |
 |
-|Name erstellen
+|Erstellen
 |
 |
 |
@@ -7089,7 +6574,7 @@
 |
 |
 |
-|Name löschen
+|Löschen
 |
 |
 |
@@ -7107,7 +6592,7 @@
 |
 |
 |
-|Option aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7116,7 +6601,7 @@
 |
 |
 |
-|Option anzeigen
+|Anzeigen
 |
 |
 |
@@ -7125,7 +6610,7 @@
 |
 |
 |
-|Option erstellen
+|Erstellen
 |
 |
 |
@@ -7134,7 +6619,7 @@
 |
 |
 |
-|Option löschen
+|Löschen
 |
 |
 |
@@ -7152,7 +6637,7 @@
 |
 |
 |
-|Verfügbarkeit aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7161,7 +6646,7 @@
 |
 |
 |
-|Verfügbarkeit anzeigen
+|Anzeigen
 |
 |
 |
@@ -7170,7 +6655,7 @@
 |
 |
 |
-|Verfügbarkeit erstellen
+|Erstellen
 |
 |
 |
@@ -7179,7 +6664,7 @@
 |
 |
 |
-|Verfügbarkeit löschen
+|Löschen
 |
 |
 |
@@ -7189,6 +6674,24 @@
 |
 |Verknüpfung
 |
+|
+|
+|
+|
+
+|
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
 |
 |
 |
@@ -7207,7 +6710,7 @@
 |
 |
 |
-|Aufpreis aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7216,7 +6719,7 @@
 |
 |
 |
-|Aufpreis anzeigen
+|Anzeigen
 |
 |
 |
@@ -7225,7 +6728,7 @@
 |
 |
 |
-|Aufpreis erstellen
+|Erstellen
 |
 |
 |
@@ -7234,24 +6737,17 @@
 |
 |
 |
-|Aufpreis löschen
+|Löschen
 |
 |
 |
 
-|
-|
-|
-|Verknüpfung aktualisieren
-|
-|
-|
-|
+
 
 |
 |
 |
-|Verknüpfung anzeigen
+|Erstellen
 |
 |
 |
@@ -7260,16 +6756,7 @@
 |
 |
 |
-|Verknüpfung erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Verknüpfung löschen
+|Löschen
 |
 |
 |
@@ -7288,7 +6775,7 @@
 |
 |
 |
-|Verknüpfungswert aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7297,7 +6784,7 @@
 |
 |
 |
-|Verknüpfungswert anzeigen
+|Anzeigen
 |
 |
 |
@@ -7306,7 +6793,7 @@
 |
 |
 |
-|Verknüpfungswert erstellen
+|Erstellen
 |
 |
 |
@@ -7315,7 +6802,7 @@
 |
 |
 |
-|Verknüpfungswert löschen
+|Löschen
 |
 |
 |
@@ -7341,7 +6828,7 @@
 |
 |
 |
-|Sprachumgebung konfigurieren
+|Konfigurieren
 |
 |
 |
@@ -7358,7 +6845,7 @@
 
 |
 |
-|Tag aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7367,7 +6854,7 @@
 
 |
 |
-|Tag anzeigen
+|Anzeigen
 |
 |
 |
@@ -7376,7 +6863,7 @@
 
 |
 |
-|Tag erstellen
+|Erstellen
 |
 |
 |
@@ -7385,7 +6872,7 @@
 
 |
 |
-|Tag löschen
+|Löschen
 |
 |
 |
@@ -7404,7 +6891,7 @@
 |
 |
 |
-|Tag-Verknüpfung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7413,7 +6900,7 @@
 |
 |
 |
-|Tag-Verknüpfung anzeigen
+|Anzeigen
 |
 |
 |
@@ -7422,7 +6909,7 @@
 |
 |
 |
-|Tag-Verknüpfung erstellen
+|Erstellen
 |
 |
 |
@@ -7431,7 +6918,7 @@
 |
 |
 |
-|Tag-Verknüpfung löschen
+|Löschen
 |
 |
 |
@@ -7447,7 +6934,7 @@
 |
 
 |
-|Kommentar anzeigen
+|Anzeigen
 |
 |
 |
@@ -7456,7 +6943,7 @@
 |
 
 |
-|Kommentar erstellen
+|Erstellen
 |
 |
 |
@@ -7465,7 +6952,7 @@
 |
 
 |
-|Kommentar löschen
+|Löschen
 |
 |
 |
@@ -7475,6 +6962,24 @@
 
 |Listing
 |
+|
+|
+|
+|
+|
+|
+
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+|
+
+|
+|Anzeigen
 |
 |
 |
@@ -7493,7 +6998,7 @@
 
 |
 |
-|Bestandsabhängigkeit anzeigen
+|Anzeigen
 |
 |
 |
@@ -7512,6 +7017,15 @@
 |
 |
 |Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Erstellen
+|
 |
 |
 |
@@ -7547,7 +7061,7 @@
 
 |
 |
-|Layout-Vorlage anzeigen
+|Anzeigen
 |
 |
 |
@@ -7556,7 +7070,7 @@
 
 |
 |
-|Layout-Vorlage erstellen
+|Erstellen
 |
 |
 |
@@ -7565,7 +7079,7 @@
 
 |
 |
-|Layout-Vorlage löschen
+|Löschen
 |
 |
 |
@@ -7583,48 +7097,16 @@
 
 |
 |
-|Einstellungen
+|Bearbeiten
 |
 |
 |
 |
 |
 
-|
-|Listing aktualisieren
-|
-|
-|
-|
-|
-|
 
-|
-|Listing anzeigen
-|
-|
-|
-|
-|
-|
 
-|
-|Listing erstellen
-|
-|
-|
-|
-|
-|
 
-|
-|Listing löschen
-|
-|
-|
-|
-|
-|
 
 |
 |Listing-Typ
@@ -7637,7 +7119,16 @@
 
 |
 |
-|Listing-Typ anzeigen
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|Löschen
+|
 |
 |
 |
@@ -7665,7 +7156,7 @@
 |
 |
 |
-|Aktive Listings aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7674,7 +7165,7 @@
 |
 |
 |
-|Aktive Listings anzeigen
+|Anzeigen
 |
 |
 |
@@ -7683,7 +7174,7 @@
 |
 |
 |
-|Aktive Listings beenden
+|Beenden
 |
 |
 |
@@ -7692,11 +7183,48 @@
 |
 |
 |
-|Aktive Listings wiedereinstellen
+|Wiedereinstellen
 |
 |
 |
 |
+
+|
+|
+|Aktivieren
+|
+|
+|
+|
+|
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
 
 |
 |
@@ -7710,51 +7238,16 @@
 |
 |
 |
-|Informationen anzeigen
+|Anzeigen
 |
 |
 |
 |
 
-|
-|
-|Market-Listing aktivieren
-|
-|
-|
-|
-|
 
 |
 |
-|Market-Listing aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Market-Listing anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Market-Listing erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Market-Listing löschen
+|Löschen
 |
 |
 |
@@ -7773,7 +7266,7 @@
 |
 |
 |
-|Merkmale aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7782,7 +7275,7 @@
 |
 |
 |
-|Merkmale anzeigen
+|Anzeigen
 |
 |
 |
@@ -7791,7 +7284,7 @@
 |
 |
 |
-|Merkmale löschen
+|Löschen
 |
 |
 |
@@ -7809,7 +7302,7 @@
 |
 |
 |
-|Text aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7818,7 +7311,7 @@
 |
 |
 |
-|Text anzeigen
+|Anzeigen
 |
 |
 |
@@ -7827,7 +7320,7 @@
 |
 |
 |
-|Text erstellen
+|Erstellen
 |
 |
 |
@@ -7836,7 +7329,7 @@
 |
 |
 |
-|Text löschen
+|Löschen
 |
 |
 |
@@ -7853,7 +7346,7 @@
 
 |
 |
-|Optionenvorlage aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7862,7 +7355,7 @@
 
 |
 |
-|Optionenvorlage anzeigen
+|Anzeigen
 |
 |
 |
@@ -7871,7 +7364,7 @@
 
 |
 |
-|Optionenvorlage erstellen
+|Erstellen
 |
 |
 |
@@ -7880,7 +7373,7 @@
 
 |
 |
-|Optionenvorlage löschen
+|Löschen
 |
 |
 |
@@ -7916,7 +7409,7 @@
 
 |
 |
-|Versandprofil anzeigen
+|Anzeigen
 |
 |
 |
@@ -7970,12 +7463,614 @@
 
 |
 |
-|Zukünftige Listings anzeigen
+|Anzeigen
 |
 |
 |
 |
 |
+
+
+
+
+|Mandant
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Dienste
+|
+|
+|
+|
+|
+|
+
+|
+|
+|bit.ly
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Cliplister
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Dropbox
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Facebook
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Facettensuche
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Familienkarte
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Lionbridge
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Picalike
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Testberichte.de
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Twitter
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|Domains
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Domains bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Einstellungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Feedback
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|FTP-Einstellungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+
+|
+|Geschenkeservice
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Gewinnspiele
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Live-Shopping
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Mandantenspezifische Einstellungen
+|
+|
+|
+|
+|
+|
+
+
+
+
+|
+|
+|Affiliate
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|
+|Bestellvorgang
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Kategorieeinstellungen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Mein Konto
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Module
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|SEO-Einstellungen
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Services
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|ShopBooster
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+|
+|
+|Zolltarifnummern
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+
+
+|
+|Sprachpakete
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|SSL-Einstellungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Statistik
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+|
+|Versionseinstellungen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+
+
+
+
+
+
+
+
+
 
 |Markierung
 |
@@ -7987,7 +8082,7 @@
 |
 
 |
-|Markierung aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -7996,7 +8091,7 @@
 |
 
 |
-|Markierung anzeigen
+|Anzeigen
 |
 |
 |
@@ -8005,7 +8100,7 @@
 |
 
 |
-|Markierung löschen
+|Löschen
 |
 |
 |
@@ -8026,6 +8121,24 @@
 |Amazon
 |
 |
+|
+|
+|
+|
+
+|
+|
+|ASIN-Verknüpfung
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
 |
 |
 |
@@ -8130,23 +8243,7 @@
 |
 |
 
-|
-|
-|ean_to_asin
-|
-|
-|
-|
-|
 
-|
-|
-|
-|config
-|
-|
-|
-|
 
 |
 |
@@ -8223,7 +8320,7 @@
 |
 |
 |
-|Konfiguration anzeigen
+|Anzeigen
 |
 |
 |
@@ -8232,7 +8329,7 @@
 |
 |
 |
-|Konfiguration speichern/ändern
+|Speichern/ändern
 |
 |
 |
@@ -8250,7 +8347,7 @@
 |
 |
 |
-|Versandstatus aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -8259,7 +8356,7 @@
 |
 |
 |
-|Versandstatus anzeigen
+|Anzeigen
 |
 |
 |
@@ -8268,7 +8365,7 @@
 |
 |
 |
-|Versandstatus löschen
+|Löschen
 |
 |
 |
@@ -8277,7 +8374,7 @@
 |
 |
 |
-|Versandstatus speichern
+|Speichern
 |
 |
 |
@@ -8358,7 +8455,7 @@
 |
 |
 |
-|eBay-Kategorie anzeigen
+|Anzeigen
 |
 |
 |
@@ -8376,7 +8473,7 @@
 |
 |
 |
-|eBay-Merkmal anzeigen
+|Anzeigen
 |
 |
 |
@@ -8394,7 +8491,7 @@
 |
 |
 |
-|Rücknamebedingungen anzeigen
+|Anzeigen
 |
 |
 |
@@ -8412,7 +8509,7 @@
 |
 |
 |
-|Versandbedingungen anzeigen
+|Anzeigen
 |
 |
 |
@@ -8430,7 +8527,7 @@
 |
 |
 |
-|Zahlungsbedingungen anzeigen
+|Anzeigen
 |
 |
 |
@@ -8466,7 +8563,25 @@
 |
 |
 |
-|config
+|Aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
+|
+|
+|
+|
+
+|
+|
+|
+|Bearbeiten
 |
 |
 |
@@ -8485,7 +8600,7 @@
 |
 |
 |
-|eBay-Produkt aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -8494,7 +8609,7 @@
 |
 |
 |
-|eBay-Produkt anzeigen
+|Anzeigen
 |
 |
 |
@@ -8503,7 +8618,7 @@
 |
 |
 |
-|eBay-Produkt erstellen
+|Erstellen
 |
 |
 |
@@ -8512,24 +8627,17 @@
 |
 |
 |
-|eBay-Produkt löschen
+|Löschen
 |
 |
 |
 
-|
-|
-|
-|ePID-Verknüpfung aktualisieren
-|
-|
-|
-|
+
 
 |
 |
 |
-|ePID-Verknüpfung anzeigen
+|Erstellen
 |
 |
 |
@@ -8538,16 +8646,7 @@
 |
 |
 |
-|ePID-Verknüpfung erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|ePID-Verknüpfung löschen
+|Löschen
 |
 |
 |
@@ -8557,6 +8656,26 @@
 |
 |Fahrzeugverwendungsliste
 |
+|
+|
+|
+|
+
+
+
+|
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+
+|
+|
+|
+|Anzeigen
 |
 |
 |
@@ -8574,7 +8693,7 @@
 |
 |
 |
-|Fahrzeugverwendungsliste aktualisieren
+|Erstellen
 |
 |
 |
@@ -8583,25 +8702,7 @@
 |
 |
 |
-|Fahrzeugverwendungsliste anzeigen
-|
-|
-|
-|
-
-|
-|
-|
-|Fahrzeugverwendungsliste erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Fahrzeugverwendungsliste löschen
+|Löschen
 |
 |
 |
@@ -9383,7 +9484,7 @@
 
 |
 |
-|Zugangsdaten aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -9392,7 +9493,7 @@
 
 |
 |
-|Zugangsdaten anzeigen
+|Anzeigen
 |
 |
 |
@@ -9401,7 +9502,7 @@
 
 |
 |
-|Zugangsdaten erstellen
+|Erstellen
 |
 |
 |
@@ -9410,32 +9511,17 @@
 
 |
 |
-|Zugangsdaten löschen
+|Löschen
 |
 |
 |
 |
 |
 
-|number_format
-|
-|
-|
-|
-|
-|
-|
 
-|
-|config
-|
-|
-|
-|
-|
-|
 
-|pim
+
+|plentyApp-Einstellungen
 |
 |
 |
@@ -9445,7 +9531,7 @@
 |
 
 |
-|variation
+|Bearbeiten
 |
 |
 |
@@ -9453,43 +9539,7 @@
 |
 |
 
-|
-|
-|create
-|
-|
-|
-|
-|
-
-|
-|
-|delete
-|
-|
-|
-|
-|
-
-|
-|
-|show
-|
-|
-|
-|
-|
-
-|
-|
-|update
-|
-|
-|
-|
-|
-
-|plentyApp
+|plentyBase-Einstellungen
 |
 |
 |
@@ -9499,25 +9549,7 @@
 |
 
 |
-|plentyApp-Einstellungen bearbeiten
-|
-|
-|
-|
-|
-|
-
-|plentyBase
-|
-|
-|
-|
-|
-|
-|
-
-|
-|plentyBase-Einstellungen bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -9535,6 +9567,87 @@
 |
 
 |
+|Aktualisieren
+|
+|
+|
+|
+|
+|
+
+|
+|Anzeigen
+|
+|
+|
+|
+|
+|
+
+|
+|Bereitstellen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|In Productive bereitstellen
+|
+|
+|
+|
+|
+
+|
+|
+|In Stage bereitstellen
+|
+|
+|
+|
+|
+
+|
+|Erstellen
+|
+|
+|
+|
+|
+|
+
+|
+|Konfigurationen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
 |plentyMarketplace
 |
 |
@@ -9545,7 +9658,7 @@
 
 |
 |
-|plentyMarketplace anzeigen
+|Anzeigen
 |
 |
 |
@@ -9563,7 +9676,7 @@
 
 |
 |
-|Plugin-Dateien aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -9572,7 +9685,7 @@
 
 |
 |
-|Plugin-Dateien anzeigen
+|Anzeigen
 |
 |
 |
@@ -9581,7 +9694,7 @@
 
 |
 |
-|Plugin-Dateien hochladen
+|Hochladen
 |
 |
 |
@@ -9590,94 +9703,13 @@
 
 |
 |
-|Plugin-Dateien löschen
+|Löschen
 |
 |
 |
 |
 |
 
-|
-|Plugin-Konfigurationen
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Plugin-Konfigurationen aktualisieren
-|
-|
-|
-|
-|
-
-|
-|
-|Plugin-Konfigurationen anzeigen
-|
-|
-|
-|
-|
-
-|
-|Plugins aktualisieren
-|
-|
-|
-|
-|
-|
-
-|
-|Plugins anzeigen
-|
-|
-|
-|
-|
-|
-
-|
-|Plugins bereitstellen
-|
-|
-|
-|
-|
-|
-
-|
-|
-|Plugins in Productive bereitstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Plugins in Stage bereitstellen
-|
-|
-|
-|
-|
-
-
-|
-|Plugins erstellen
-|
-|
-|
-|
-|
-|
 
 |
 |Versionierung
@@ -9710,6 +9742,15 @@
 |
 |
 |
+|Anzeigen
+|
+|
+|
+
+|
+|
+|
+|
 |Branches
 |
 |
@@ -9720,7 +9761,7 @@
 |
 |
 |
-|Branches anfordern
+|Anfordern
 |
 |
 
@@ -9729,25 +9770,7 @@
 |
 |
 |
-|Branches anzeigen
-|
-|
-
-|
-|
-|
-|
-|
-|Branches pullen
-|
-|
-
-|
-|
-|
-|
-|
-|Branches pushen
+|Anzeigen
 |
 |
 
@@ -9766,7 +9789,7 @@
 |
 |
 |
-|Commits anzeigen
+|Anzeigen
 |
 
 |
@@ -9785,7 +9808,7 @@
 |
 |
 |
-|Unterschiede anzeigen
+|Anzeigen
 
 |
 |
@@ -9800,7 +9823,30 @@
 |
 |
 |
-|Repositories anzeigen
+|
+|Pullen
+|
+|
+
+|
+|
+|
+|
+|
+|Pushen
+|
+|
+
+
+
+
+
+
+|
+|
+|
+|
+|Erstellen
 |
 |
 |
@@ -9809,16 +9855,7 @@
 |
 |
 |
-|Repositories erstellen
-|
-|
-|
-
-|
-|
-|
-|
-|Repositories löschen
+|Löschen
 |
 |
 |
@@ -9837,13 +9874,67 @@
 |
 |
 |
-|Einstellungen anzeigen
+|Anzeigen
 |
 |
 
 |POS
 |
 |
+|
+|
+|
+|
+|
+
+|
+|Einstellungen bearbeiten
+|
+|
+|
+|
+|
+|
+
+|
+|Favoriten
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Aktualisieren
+|
+|
+|
+|
+|
+
+|
+|
+|Anzeigen
+|
+|
+|
+|
+|
+
+|
+|
+|Erstellen
+|
+|
+|
+|
+|
+
+|
+|
+|Löschen
 |
 |
 |
@@ -9886,59 +9977,9 @@
 |
 |
 
-|
-|POS-Einstellungen bearbeiten
-|
-|
-|
-|
-|
-|
 
-|
-|POS-Favoriten
-|
-|
-|
-|
-|
-|
 
-|
-|
-|Favoriten aktualisieren
-|
-|
-|
-|
-|
 
-|
-|
-|Favoriten anzeigen
-|
-|
-|
-|
-|
-
-|
-|
-|Favoriten erstellen
-|
-|
-|
-|
-|
-
-|
-|
-|Favoriten löschen
-|
-|
-|
-|
-|
 
 |Prozesse
 |
@@ -9950,7 +9991,7 @@
 |
 
 |
-|Prozesse anzeigen
+|Anzeigen
 |
 |
 |
@@ -9959,10 +10000,218 @@
 |
 
 |
-|Prozesse bearbeiten
+|Bearbeiten
 |
 |
 |
+|
+|
+|
+
+
+|Report
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Kennzahlen
+|
+|
+|
+|
+|
+|
+
+|
+|
+|Aufträge
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Aufträge
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|
+|Global
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|
+|Global pro System
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|Messenger
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Nachrichten
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|
+|Nachrichten pro Benutzer
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|Plugins
+|
+|
+|
+|
+|
+
+|
+|
+|
+|Installierte Plugins
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|
+|Installierte Plugins pro Autor
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|
+|Veröffentlichte Plugins
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
+|
+|
+|
+
+|
+|
+|
+|Veröffentlichte Plugins pro Autor
+|
+|
+|
+|
+
+|
+|
+|
+|
+|Konfigurieren
 |
 |
 |
@@ -9987,7 +10236,7 @@
 
 |
 |
-|Hotline anzeigen
+|Anzeigen
 |
 |
 |
@@ -10076,6 +10325,15 @@
 |
 
 |
+|Anzeigen
+|
+|
+|
+|
+|
+|
+
+|
 |Auftragsbezogene Rückstandsliste
 |
 |
@@ -10086,7 +10344,7 @@
 
 |
 |
-|Auftragsbezogene Rückstandsliste anzeigen
+|Anzeigen
 |
 |
 |
@@ -10094,7 +10352,7 @@
 |
 
 |
-|Bestände anzeigen
+|Bearbeiten
 |
 |
 |
@@ -10123,7 +10381,7 @@
 |
 |
 |
-|Mention bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -10140,7 +10398,7 @@
 
 |
 |
-|Lager bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -10159,7 +10417,7 @@
 |
 |
 |
-|Lageradresse löschen
+|Aktualisieren
 |
 |
 |
@@ -10168,7 +10426,7 @@
 |
 |
 |
-|Lageradresse aktualisieren
+|Anzeigen
 |
 |
 |
@@ -10177,7 +10435,7 @@
 |
 |
 |
-|Lageradresse anzeigen
+|Erstellen
 |
 |
 |
@@ -10186,11 +10444,13 @@
 |
 |
 |
-|Lageradresse erstellen
+|Löschen
 |
 |
 |
 |
+
+
 
 |
 |
@@ -10204,7 +10464,7 @@
 |
 |
 |
-|Lagerort aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -10213,7 +10473,7 @@
 |
 |
 |
-|Lagerort anzeigen
+|Anzeigen
 |
 |
 |
@@ -10222,16 +10482,7 @@
 |
 |
 |
-|Lagerort erstellen
-|
-|
-|
-|
-
-|
-|
-|
-|Lagerort löschen
+|Erstellen
 |
 |
 |
@@ -10250,7 +10501,7 @@
 |
 |
 |
-|Lagerortdimension aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -10259,7 +10510,7 @@
 |
 |
 |
-|Lagerortdimension anzeigen
+|Anzeigen
 |
 |
 |
@@ -10268,7 +10519,7 @@
 |
 |
 |
-|Lagerortdimension erstellen
+|Erstellen
 |
 |
 |
@@ -10277,7 +10528,7 @@
 |
 |
 |
-|Lagerortdimension löschen
+|Löschen
 |
 |
 |
@@ -10295,7 +10546,7 @@
 |
 |
 |
-|Lagerortebene aktualisieren
+|Aktualisieren
 |
 |
 |
@@ -10304,7 +10555,7 @@
 |
 |
 |
-|Lagerortebene anzeigen
+|Anzeigen
 |
 |
 |
@@ -10313,7 +10564,7 @@
 |
 |
 |
-|Lagerortebene erstellen
+|Erstellen
 |
 |
 |
@@ -10322,10 +10573,21 @@
 |
 |
 |
-|Lagerortebene löschen
+|Löschen
 |
 |
 |
+
+
+|
+|
+|
+|Löschen
+|
+|
+|
+|
+
 
 
 |
@@ -10339,7 +10601,7 @@
 
 |
 |
-|Lagerort-Verwaltung anzeigen
+|Anzeigen
 |
 |
 |
@@ -10357,7 +10619,7 @@
 
 |
 |
-|Nachbestellung anzeigen
+|Anzeigen
 |
 |
 |
@@ -10366,7 +10628,7 @@
 
 |
 |
-|Nachbestellung bearbeiten
+|Bearbeiten
 |
 |
 |
@@ -10385,7 +10647,7 @@
 
 |
 |
-|Neuen Wareneingang anzeigen
+|Anzeigen
 |
 |
 |
@@ -10403,7 +10665,7 @@
 
 |
 |
-|Retoure anzeigen
+|Anzeigen
 |
 |
 |
@@ -10421,21 +10683,14 @@
 
 |
 |
-|Rückstandsliste anzeigen
+|Anzeigen
 |
 |
 |
 |
 |
 
-|
-|Warenbestände bearbeiten
-|
-|
-|
-|
-|
-|
+
 
 |
 |Wareneingänge
@@ -10448,13 +10703,48 @@
 
 |
 |
-|Wareneingänge anzeigen
+|Anzeigen
 |
 |
 |
 |
 |
 
+|Zahlenformat
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+|
+
+|Zertifizierung
+|
+|
+|
+|
+|
+|
+|
+
+|
+|Bearbeiten
+|
+|
+|
+|
+|
+|
 
 
 |====
