@@ -197,24 +197,24 @@ Für jede Eigenschaft muss der Anwender einen Typen wählen. Der Typ legt fest, 
 [cols="1,3"]
 |====
 
-|Typ |Beispiel
+|*Typ* |*Beispiel*
 
-|*Zahl*
+|Zahl
 |Der Anwender möchte von seinem Kunden wissen, in welchem Jahr der Kunde geboren ist.
 
-|*Auswahl*
+|Auswahl
 |Der Anwender möchte von seinem Kunden wissen, auf welchem Weg er den Produktkatalog zugestellt bekommen möchte. Der Anwender gibt seinem Kunden eine Vorauswahl an Antworten vor, aus welcher der Kunde wählen kann, z.B.:
 
-|*Text einzeilig*
+|Text einzeilig
 |Ein bestehender Kunde hat einen neuen Kunden geworben. Der Anwender möchte von seinem neuen Kunden wissen, wie die Kundennummer des bestehenden Kunden lautet.
 
-|*Text mehrzeilig*
+|Text mehrzeilig
 |Der Anwender möchte von seinem Kunden abfragen, wie der Kunde auf seinen Webshop aufmerksam geworden ist.
 
-|*Datum*
+|Datum
 |Der Anwender möchte das Geburtsdatum des Kunden wissen.
 
-|*Kundentyp*
+|Kundentyp
 |Zur internen Nutzung des Anwenders.
 |====
 
@@ -227,57 +227,57 @@ Im <<tabelle-verknuepfte-daten-kontaktdatensatz>> wird aufgelistet, welche Daten
 [cols="1,3"]
 |====
 
-|Im Kontaktdatensatz verknüpfte Informationen |Kurzbeschreibung
+|*Im Kontaktdatensatz verknüpfte Informationen* |*Kurzbeschreibung*
 
-|*Adressen* / +
-*Neue Adresse*
+|Adressen / +
+Neue Adresse
 |Der Anwender kann mehrere Liefer- und Rechnungsadressen pro Kontakt eingeben und diese Lieferanschriften dann pro Auftrag individuell zuordnen. Es werden auch die Lieferadressen, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt. Der Anwender kann jeweils eine Lieferadresse und eine Rechnungsadresse als primär definieren.
 
-|*Eigenschaften*
+|Eigenschaften
 |Die Eigenschaften, die für die Kunden erstellt wurden, kann der Anwender speichern bzw. diese werden im Kontaktdatensatz angezeigt, wenn der Kunde Informationen im Webshop eingetragen hat.
 
-|*Aufträge* / +
-*Neuer Auftrag* / +
-*Neues Angebot* / +
-*Neuer Sammelauftrag*
+|Aufträge / +
+Neuer Auftrag / +
+Neues Angebot / +
+Neuer Sammelauftrag
 |Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht des Kontakts öffnen und neue Aufträge bzw. Angebote und Sammelaufträge manuell erstellen.
 
-|*Scheduler*
+|Scheduler
 |Über den Scheduler werden Abonnements des Kunden angezeigt. Der Scheduler ist im Tarif Zero integraler Bestandteil. Im Tarif Classic ist der Scheduler optional und kann hinzugebucht werden.
 
-|*Tickets* / +
-*Neues Ticket*
+|Tickets / +
+Neues Ticket
 |Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
 
-|*Neue Karte*
+|Neue Karte
 |Öffnet das Menü *Start » Boards*.
 
-|*Messenger*
+|Messenger
 |Es ist möglich, zu jedem Kunden Nachrichten im Messenger zu versenden. Nachrichten werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten können gelöscht werden.
 
-|*Dokumente*
+|Dokumente
 |Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
 JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 
-|*Konto*
+|Konto
 |Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
 
-|*Bankdaten*
+|Bankdaten
 |Der Anwender kann die Bankdaten des Kunden eingeben und diese bei Bedarf löschen.
 
-|*Events*
+|Events
 |Ein Event kann ein Kundenanruf oder eine E-Mail an den Kunden sein. Der Anwender kann z.B. die Dauer des Telefonats eingeben, eine Information zum Vorgang wählen und einen Kommentar zum Event speichern. Es ist auch möglich, kostenpflichtige Events einzutragen und diese abzurechnen.
 
-|*Zugangsdaten*
+|Zugangsdaten
 |*Neues Passwort:* Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
 *Login-URL:*
 Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
 
-|*Provision & Kostenstellen*
+|Provision & Kostenstellen
 |*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
 *Kostenstellen*: Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
 
-|*Statistik*
+|Statistik
 |Der Anwender kann kundenspezifische Statistiken erstellen und so bestimmte Daten speziell für diesen Kunden auswerten, z.B. den Gesamtumsatzverlauf des Kunden in einem bestimmten Zeitraum. Bestehende Statistiken können auch durch den Anwender bearbeitet werden.
 
 |====

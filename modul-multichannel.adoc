@@ -27,6 +27,8 @@ Die im Modul Multi-Channel fest integrierten Online-Marktplätze werden im Menü
 
 Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentymarkets verkaufen.
 
+[[online-marktplätze]]
+.Online-Marktplätze
 |===
 |*Marktplatz*|*In Verwendung*|*Hinweis*
 
@@ -62,6 +64,9 @@ Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über de
 
 Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentymarkets verkaufen.
 
+[[online-marktplätze-verkauf]]
+.Verkauf auf Online-Marktplätzen
+[cols="1,3"]
 |===
 |Marktplatz|*In Verwendung*
 
@@ -96,6 +101,9 @@ Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarket
 
 Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Zahlungsarten der Marktplätze werden in der Regel nicht vollständig eingerichtet, sondern lediglich aktiviert. Ohne eine Aktivierung kann es zu Problemen bei der Zahlungsabwicklung kommen. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
 
+[[marktplatz-zahlungsarten]]
+.Marktplatz-Zahlungsarten
+[cols="1,3"]
 |===
 |*Zahlungsart*|*Erläuterung*
 
@@ -134,6 +142,9 @@ Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, 
 
 Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über ElasticSync und den elastischen Export mit den Schnittstellen ausgetauscht werden. Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
+[[datenaustausch-markplätze]]
+.Datenaustausch mit Marktplätzen
+[cols="1,3"]
 |===
 |*Marktplatz*|*Datenaustausch*
 
