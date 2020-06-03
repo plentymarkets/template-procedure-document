@@ -36,9 +36,9 @@ Die plentymarkets App läuft auf mobilen Endgeräten mit folgenden Systemvorauss
 
 Die App wird ohne eigene Hardware ausgeliefert. Je nach Anwendungsfall werden aber link:https://knowledge.plentymarkets.com/app/installation#100[unterschiedliche Endgeräte^] empfohlen.
 
-Ergänzen Sie <<tabelle-app-hardware>>. Hier werden die unternehmenseigenen Tablets, Smartphones und sonstigen mobilen Endgeräte aufgelistet, auf denen die plentymarkets App installiert wurde.
+Ergänzen Sie <<tabelle-app-hardware-vorlage>>. Hier werden die unternehmenseigenen Tablets, Smartphones und sonstigen mobilen Endgeräte aufgelistet, auf denen die plentymarkets App installiert wurde.
 
-[[tabelle-app-hardware]]
+[[tabelle-app-hardware-vorlage]]
 .Eingesetzte Hardware
 |===
 |Gerätetyp|Modellnummer|Hersteller
