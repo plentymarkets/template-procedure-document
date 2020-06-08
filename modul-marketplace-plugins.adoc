@@ -6,8 +6,7 @@ Plugins können über verschiedene Quellen im System eingebunden werden:
 
     * https://marketplace.plentymarkets.com/[plentyMarketplace^]
     * Git
-    * https://marketplace.plentymarkets.com/plugins/integration/plentyDrive_5091[plentyDrive^]
-    * https://forum.plentymarkets.com/t/plentydevtool-download/542301[plentyDevTool (Beta)^]
+    * https://forum.plentymarkets.com/t/plentydevtool-download/542301[plentyDevTool]
 
 Nach dem Einbinden müssen Plugins in einem Plugin-Set installiert, aktiviert und bereitgestellt werden, damit ihr Code ausgeführt wird. Weitere Informationen zu Plugin-Sets sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/plugin-sets[Plugins und Plugin-Sets^] beschrieben.
 
@@ -29,9 +28,9 @@ Plugins können dem System über Git-Dienste wie GitHub und Bitbucket hinzugefü
 
 Wenn ein Plugin über Git eingebunden wird, werden die zugehörigen Dateien auf AWS (siehe Kapitel <<Datasecurity, Speicherkonzept, Löschkonzept, Aufbau, Sicherheitsarchitektur AWS Cloud>>) in einem Unterverzeichnis gespeichert.
 
-== plentyDrive und plentyDevTool
+== plentyDevTool
 
-Es ist möglich, dem System ein lokales Verzeichnis als Plugin hinzuzufügen. Hierfür muss entweder die Software plentyDrive oder die Software plentyDevTool (Beta) verwendet werden. Das Verzeichnis, das hinzugefügt werden soll, muss eine https://developers.plentymarkets.com/marketplace/plugin-requirements#marketplace-pluginjson[valide Plugin-JSON^] enthalten.
+Es ist möglich, dem System ein lokales Verzeichnis als Plugin hinzuzufügen. Hierfür muss die Software plentyDevTool verwendet werden. Das Verzeichnis, das hinzugefügt werden soll, muss eine https://developers.plentymarkets.com/marketplace/plugin-requirements#marketplace-pluginjson[valide Plugin-JSON^] enthalten.
 
 Wenn ein lokales Plugin eingebunden wird, werden die zugehörigen Dateien auf AWS in einem Unterverzeichnis gespeichert.
 
