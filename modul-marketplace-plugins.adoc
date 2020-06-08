@@ -1,4 +1,4 @@
-=== Fachliche und technische Beschreibung des Moduls Plugins
+= Fachliche und technische Beschreibung des Moduls Plugins
 
 Mit dem Plugin-Modul ist es möglich, das plentymarkets System um zusätzliche Funktionen zu erweitern und individuell zu gestalten. Bei Plugins handelt es sich um Erweiterungen des plentymarkets Systems. So ist es etwa möglich, neue Zahlungsarten zu einem Webshop oder eine neue Schnittstelle zum Backend hinzuzufügen.
 
@@ -11,7 +11,7 @@ Plugins können über verschiedene Quellen im System eingebunden werden:
 
 Nach dem Einbinden müssen Plugins in einem Plugin-Set installiert, aktiviert und bereitgestellt werden, damit ihr Code ausgeführt wird. Weitere Informationen zu Plugin-Sets sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/plugin-sets[Plugins und Plugin-Sets^] beschrieben.
 
-==== plentyMarketplace
+== plentyMarketplace
 
 Auf plentyMarketplace können Plugins entweder entgeltlich oder unentgeltlich erworben werden. Diese Plugins wurden entweder von plentysystems oder Drittanbietern entwickelt. 
 
@@ -23,19 +23,19 @@ Wenn ein Plugin erworben wird, wird von plentymarkets automatisch ein Auftrag an
 
 Eine Liste aller auf plentyMarketplace angebotenen Plugins ist im Anhang plentyMarketplace-Plugins aufgeführt.
 
-==== Git
+== Git
 
 Plugins können dem System über Git-Dienste wie GitHub und Bitbucket hinzugefügt werden. Das Repository, das hinzugefügt werden soll, muss eine https://developers.plentymarkets.com/marketplace/plugin-requirements#marketplace-pluginjson[valide Plugin-JSON^] enthalten.
 
 Wenn ein Plugin über Git eingebunden wird, werden die zugehörigen Dateien auf AWS (siehe Kapitel <<Datasecurity, Speicherkonzept, Löschkonzept, Aufbau, Sicherheitsarchitektur AWS Cloud>>) in einem Unterverzeichnis gespeichert.
 
-==== plentyDrive und plentyDevTool
+== plentyDrive und plentyDevTool
 
 Es ist möglich, dem System ein lokales Verzeichnis als Plugin hinzuzufügen. Hierfür muss entweder die Software plentyDrive oder die Software plentyDevTool (Beta) verwendet werden. Das Verzeichnis, das hinzugefügt werden soll, muss eine https://developers.plentymarkets.com/marketplace/plugin-requirements#marketplace-pluginjson[valide Plugin-JSON^] enthalten.
 
 Wenn ein lokales Plugin eingebunden wird, werden die zugehörigen Dateien auf AWS in einem Unterverzeichnis gespeichert.
 
-==== Plugins installieren, aktivieren und bereitstellen
+== Plugins installieren, aktivieren und bereitstellen
 
 Bevor sie verwendet werden können, müssen Plugins vom Anwender installiert, aktiviert und bereitgestellt werden.
 
@@ -53,7 +53,7 @@ Wenn ein Plugin-Set bereitgestellt wird, werden folgenden Schritte ausgeführt:
     * *Datenbanken migrieren*: Wenn ein aktives Plugin eine Datenbank verwendet, wird eine Migration durchgeführt.
     * *Konfigurationen bereinigen*: Die verfügbaren Konfigurationen aller Plugins werden mit den in der Datenbank gespeicherten Daten verglichen. Gibt es Abweichungen, werden die Konfigurationen entsprechend aktualisiert.
 
-==== Konfiguration
+== Konfiguration
 
 Teilweise müssen Einstellungen für Plugins vorgenommen oder Verknüpfungen mit Containern angelegt werden. Einzelheiten zum Einrichten von Einstellungen und Verknüpfungen sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/plugins[Plugins einrichten^] beschrieben.
 
