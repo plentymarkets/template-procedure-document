@@ -218,4 +218,4 @@ Jeder Anwender muss *eine* der von plentymarkets angebotenen Hosting-Optionen w�
 
 Die Speicherung und Sicherung von Daten findet ausschließlich am ausgewählten Server-Standort statt. Die Sicherung von Daten in Form von Backups findet ausdrücklich *nur* am gewählten Server-Standort und niemals an weiteren Standorten statt.
 
-Weitere Informationen zu den einzelnen Hosting-Optionen werden im Kapitel <<Datasecurity, Speicherkonzept, Löschkonzept, Aufbau, Sicherheitsarchitektur AWS Cloud>> beschrieben.
+Weitere Informationen zu den einzelnen Hosting-Optionen werden im Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>> beschrieben.
