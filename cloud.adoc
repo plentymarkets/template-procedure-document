@@ -1,33 +1,35 @@
-== AWS Cloud: Aufbau, Sicherheitsarchitektur, Speicherkonzept, Löschkonzept
+= AWS Cloud: Aufbau, Sicherheitsarchitektur, Speicherkonzept, Löschkonzept
 
-=== AWS Aufbau
+== AWS Aufbau
 
-==== Allgemeines
+=== Allgemeines
 
 image::assets/AWS-Aufbau.png[]
 
 _Bild 1: Aufbau AWS_
 
-==== Serverstandorte AWS Cloud
+=== Serverstandorte AWS Cloud
 Die Standorte "Amazon Frankfurt" sowie "Amazon Dublin" stehen zur Auswahl. Dementsprechend werden die Daten ausschließlich an dem jeweiligen Standort gespeichert.
 
-=== Sicherheitsarchitektur
+Weitere Informationen zu den einzelnen Server-Standorten werden im Kapitel <<#_hosting_optionen, Hosting-Optionen>> beschrieben.
 
-==== Allgemeines
+== Sicherheitsarchitektur
+
+=== Allgemeines
 plentymarkets ist durch den TÜV "Geprüfte Cloud-Sicherheit" zertifiziert. Die Sicherheitsarchitektur entspricht dem aktuellen Stand der Technik.
 
 Bei weiteren Fragen zum Thema Sicherheitsarchitektur, setzen Sie sich mit der Cloud Hosting Abteilung der plentysystems AG in Verbindung: it@plentymarkets.com
 
-=== Speicherkonzept DB / NFS / S3
+== Speicherkonzept DB / NFS / S3
 
-==== Datenbankserver
+=== Datenbankserver
 
-===== Allgemeines
+==== Allgemeines
 Viele relevante Daten eines plentymarkets Kundensystems werden in Datenbankstrukturen abgelegt. Hierzu wird MariaDB (MySQL Fork) genutzt. Alle Datenbank-Server sind redundant im Master-Master Betrieb aufgestellt. Ein Zugriff auf die Datenbank-Server ist lediglich innerhalb des Clusters möglich. Ein Zugriff von außerhalb ist nicht möglich.
 
-===== Welche Daten werden wie gespeichert?
+==== Welche Daten werden wie gespeichert?
 
-====== Systemdaten
+===== Systemdaten
 Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt in einer eigenen Datenbank. Hier werden Daten gespeichert wie:
 
 * Kundenname, Anschrift etc.
@@ -38,7 +40,7 @@ Die Speicherung systembezogener Daten eines plentymarkets Kundensystems erfolgt 
 
 Der Zugriff eines Kundensystems ist nur auf die dazugehörige Datenbank möglich. Ein Zugriff auf "fremde" Datenbanken ist aufgrund der Rechtevergabe nicht möglich.
 
-====== Kundendaten
+===== Kundendaten
 Die eigentlichen Kundendaten und einige Kundensystemdaten werden in einer zentralen Datenbank gespeichert, auf die nur das Mastersystem von plentymarkets zugreifen kann. Diese Daten werden zur Verwaltung der Kundensystem genutzt.
 
 Die eigentlichen Kundendaten umfassen z.B.:
@@ -54,31 +56,31 @@ Die Kundensystemdaten umfassen z.B.:
 * IP-Adressen
 * Speicherort für DB und NFS etc.
 
-===== Verschlüsselung
+==== Verschlüsselung
 Eine generelle Verschlüsselung der Datenbanken besteht nicht. Lediglich Tabellenspalten mit Passwörtern werden als HASH gespeichert.
 
-==== NFS-SERVER
+=== NFS-SERVER
 
-===== Allgemeines
+==== Allgemeines
 Andere Daten eines plentymarkets Kundensystems werden in Filestrukturen abgelegt. Hierzu wird das Netzwerkprotokoll NFS genutzt. Alle NFS-Server sind redundant aufgestellt. Ein Zugriff auf die NFS-Server ist lediglich innerhalb des Clusters möglich. Ein Zugriff von Außerhalb ist nicht möglich.
 
-===== Welche Daten werden wie gespeichert?
+==== Welche Daten werden wie gespeichert?
 
-====== Systemdaten
+===== Systemdaten
 Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf NFS-Servern. Hier werden z.B. Daten wie
 Konfigurations-Dateien für das Kundensystem selbst gespeichert.
 
 Der Zugriff eines Kundensystems ist nur auf das dazugehörige Kundenverzeichnis möglich. Ein Zugriff auf ein "fremdes" Kundenverzeichnis ist aufgrund der Struktur und Rechtevergabe nicht möglich.
 
-====== Kundendaten
+===== Kundendaten
 Einige kundenbezogene Daten aus der Datenbank werden in eine oder mehrere Dateien auf dem NFS-Server geschrieben. Diese werden in dem jeweiligen Kundeverzeichnis abgelegt.
 
-==== Amazon S3
+=== Amazon S3
 
-===== Allgemeines
+==== Allgemeines
 Andere Daten eines plentymarkets Kundensystems werden in Filestrukturen abgelegt. Hierzu wird der Amazon S3 Dienst genutzt. Alle S3-Server sind redundant aufgestellt. Ein Zugriff auf die S3-Server ist lediglich innerhalb der Cloud möglich. Ein Zugriff von außerhalb ist nicht möglich.
 
-===== Welche Daten werden wie gespeichert?
+==== Welche Daten werden wie gespeichert?
 Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Amazon S3-Servern. Hier werden Daten gespeichert wie:
 
 * Layoutdateien zu dem Onlineshop (Bilder, CSS etc.) (Public)
@@ -86,20 +88,20 @@ Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Ama
 
 Der Zugriff eines Kundensystems ist nur auf die dazugehörige Kundenbuckets möglich. Ein Zugriff auf ein "fremdes" Kundenbuckets ist aufgrund der Struktur und Rechtevergabe nicht möglich.
 
-==== Amazon CloudFront
+=== Amazon CloudFront
 Um die Ausfallsicherheit und die Auslieferungszeit von statischen Inhalten wie z.B. Bildern, CSS, JS und PDF-Dateien weiter zu verbessern werden diese über der Amazon CloudFront Dienst (CDN) ausgeliefert.
 
-==== Backup-Server
+=== Backup-Server
 Alle oben genannten Kernsysteme sind wie erwähnt redundant ausgelegt. Zusätzlich werden alle Datenbank- und NFS-Daten auf 4 Backup-Servern gesichert. Die Datenbank-Daten werden täglich, die NFS-Daten werden einmal wöchentlich (Sonntagnacht) gesichert.
 
-==== Recovery
+=== Recovery
 Kunden haben die Möglichkeit, link:https://knowledge.plentymarkets.com/daten/backup[Backups^] selbstständig im Menü *Einrichtung » Einstellungen » Daten » Backup* wieder einzuspielen. Bei Bedarf spielt die Administration Backups oder Teile von Backups wieder ein.
 
-=== Löschkonzept DB / NFS / S3
+== Löschkonzept DB / NFS / S3
 
-==== Systemdaten
+=== Systemdaten
 Systemdaten (Datenbank, NFS-Daten und S3-Daten) werden 30 Tage nach Ablauf des Vertrages des plentymarkets Systems zur Löschung freigegeben. Hierbei hat der Kunde 30 Tage nach Ablauf Zeit seinen Vertrag zu reaktivieren, ohne das dass System aufwändig wiederhergestellt werden muss.
 Im Anschluss werden alle Systemdaten auf den Backup-Servern gesichert, und anschließend von den Produktiv-Servern gelöscht. Die gesicherten Daten werden weitere 30 Tage aufbewahrt und anschließend endgültig gelöscht. Dabei findet keine sichere Löschung der Daten statt. Allerdings wird der freigewordenen Speicherplatz sofort mit neuen Daten überschrieben, sodass Systemdaten nicht wiederhergestellt werden können.
 
-==== Kundendaten
+=== Kundendaten
 Löschungen von Kundendaten (Name, Anschrift etc.) werden aktuell nicht durchgeführt.
