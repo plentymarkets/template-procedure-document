@@ -1,0 +1,22 @@
+@startuml TreeStyle
+
+' Usage:
+' [plantuml, format=png, opts="inline"]
+' ----
+' !include styles/tree-style.iuml
+' legend
+' Root
+' |_ Element 1
+'   |_ Element 1.1
+'   |_ Element 1.2
+' |_ Element 2
+'   |_ Element 2.1
+' end legend
+' ----
+
+skinparam Legend {
+	BackgroundColor transparent
+	BorderColor transparent
+	FontName "Noto Serif", "DejaVu Serif", serif
+	FontSize 17
+}
