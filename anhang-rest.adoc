@@ -1,5 +1,4 @@
-[#anhang_rest-berechtigungen]
-== Anhang: REST-Berechtigungen
+= Anhang: REST-Berechtigungen
 
 <<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
 
