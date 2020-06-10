@@ -2,6 +2,75 @@
 
 <<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
 
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+Rechtebereich Artikel
+Artikel
+|_ Aktionen
+  |_ Bearbeiten
+|_ Artikel
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Artikelbild
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+    |_ Artikelbildname
+      |_ Aktualisieren
+      |_ Anzeigen
+      |_ Erstellen
+      |_ Löschen
+    |_ Verfügbarkeit
+      |_ Aktualisieren
+      |_ Anzeigen
+      |_ Erstellen
+      |_ Löschen
+  |_ Cross-Selling
+    |_ Aktivieren
+    |_ Deaktivieren
+    |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+  |_ Seriennummer
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Set
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Variante
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Artikelpaket
+|_ Artikeletikett
+|_ Artikelsets
+|_ Attribut
+|_ Barcode
+|_ Bild
+|_ Digital
+|_ Einheit
+|_ Einstellungen
+|_ Freitextfeld
+|_ GTIN
+|_ Hersteller
+|_ Inhalt
+|_ Kategorie
+|_ Lionbridge
+|_ Markierung
+|_ Merkmal
+|_ Packstück
+|_ Preiskalkulation
+|_ Suche
+|_ Verfügbarkeit
+|_ Verkaufspreis
+
+----
+
 [[tabelle-rest-berechtigungen]]
 .Verfügbare REST-Berechtigungen
 [cols="1,1,1,1,1,1,1,1"]
