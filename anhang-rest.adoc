@@ -51,27 +51,623 @@ Artikel
     |_ Aktualisieren
     |_ Anzeigen
     |_ Artikelpaket
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Artikeltext
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Attribut
+     |_ Wert
+      |_ Anzeigen
+    |_ Barcode
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Bestandskorrektur
+    |_ Einkaufspreis
+    |_ Erstellen
+    |_ Kategorie
+     |_ Aktivieren
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Deaktivieren
+    |_ Lagerdaten
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Lieferantendaten
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Löschen
+    |_ Mandant
+     |_ Aktivieren
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Deaktivieren
+    |_ Marktplatz
+     |_ Aktivieren
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ ASIN/ePID
+      |_ Aktualisieren
+      |_ Anzeigen
+      |_ Erstellen
+      |_ Löschen
+     |_ Deaktivieren
+    |_ Merkmal
+     |_ Aktivieren
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Deaktivieren
+     |_ Eigenschaftswerte
+      |_ Aktualisieren
+      |_ Anzeigen
+      |_ Erstellen
+      |_ Löschen
+      |_ Text
+       |_ Aktualisieren
+       |_ Anzeigen
+       |_ Erstellen
+       |_ Löschen
+    |_ Preis
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Standardkategorie
+     |_ Aktivieren
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Deaktivieren
+    Zusätzliche SKU
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
 |_ Artikeletikett
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
 |_ Artikelsets
-|_ Attribut
+ |_ Aktualisieren
+ |_ Erstellen
+ |_ Löschen
+ |_ Attribut
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Attributname
+   |_ Aktualisieren
+   |_ Anzeigen
+   |_ Erstellen
+   |_ Löschen
+  |_ Attributverknüpfung
+   |_ Aktivieren
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Deaktivieren
+  |_ Attributwert
+   |_ Aktualisieren
+   |_ Anzeigen
+    |_ Attributwertname
+     |_ Aktualisieren
+     |_ Anzeigen
+     |_ Erstellen
+     |_ Löschen
+    |_ Erstellen
+    |_ Löschen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Löschen
 |_ Barcode
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Löschen
 |_ Bild
+ |_ Einstellungen
+  |_ Bearbeiten
+ |_ Größe
+  |_ Bearbeiten
 |_ Digital
+ |_ Bearbeiten
 |_ Einheit
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Einheitenname
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Erstellen
+ |_ Löschen
 |_ Einstellungen
+ |_ Bearbeiten
 |_ Freitextfeld
+ |_ Bearbeiten
 |_ GTIN
+ |_ Bearbeiten
 |_ Hersteller
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Externer Hersteller
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Herstellerprovision
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Löschen
 |_ Inhalt
+ |_ Anzeigen
 |_ Kategorie
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
 |_ Lionbridge
+ |_ Anzeigen
 |_ Markierung
+ |_ Bearbeiten
 |_ Merkmal
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Auswahl
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Löschen
+ |_ Marktplatzmerkmal
+  |_Aktivieren
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Deaktivieren
+ |_  Merkmalgruppe
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+  |_ Merkmalgruppenname
+   |_ Aktualisieren
+   |_ Anzeigen
+   |_ Erstellen
+   |_ Löschen
+ |_ Merkmalname
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
 |_ Packstück
+ |_ Anzeigen
 |_ Preiskalkulation
+ |_ Bearbeiten
 |_ Suche
+ |_ Backend
+  |_ Bearbeiten
+ |_ Frontend
+  |_ Einstellungen
+   |_ Bearbeiten
+  |_ Sprache
+   |_ Bearbeiten
 |_ Verfügbarkeit
+ |_ Bearbeiten
 |_ Verkaufspreis
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Herkunft
+  |_ Aktivieren
+  |_ Anzeigen
+  |_ Deaktivieren
+ |_ Konto
+  |_ Aktivieren
+  |_ Anzeigen
+  |_ Deaktivieren
+ |_ Kundenklasse
+  |_ Aktivieren
+  |_ Anzeigen
+  |_ Deaktivieren
+ |_ Land
+  |_ Aktivieren
+  |_ Anzeigen
+  |_ Deaktivieren
+ |_ Löschen
+ |_ Mandant
+  |_ Aktivieren
+  |_ Anzeigen
+  |_ Löschen
+ |_ Name
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Währung
+  |_ Aktivieren
+  |_ Anzeigen
+  |_ Deaktivieren
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Aufträge
+|_ Aktualisieren
+|_ Anzeigen
+|_ Auftrag wiederherstellen
+|_ Auftragsadressen
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Auftragseigenschaften
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+ |_ Typen für Auftragseigenschaften
+  |_ Aktualisieren
+  |_ Erstellen
+  |_ Löschen
+|_ Auftragseinstellungen
+|_ Auftragspositionen
+ |_ Datumsangaben
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Deckungsbeitrag
+  |_ Anzeigen
+ |_ Eigenschaften
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Transaktionen
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+|_ Auftragsstatus
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Bestellungen
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bestellungseinstellungen
+  |_ Aktualisieren
+  |_ Anzeigen
+ |_ Erstellen
+|_ Buchung
+ |_ Erstellen
+|_ Dokumente
+ |_ Anlegen
+ |_ Anzeigen
+ |_ Dokumenteinstellungen
+ |_ Löschen
+|_ Ereignisse
+ |_ Ereigniseinstellungen
+|_ Fulfillment
+ |_ Menü anzeigen
+|_ Inkasso-Übergabe
+ |_ Anzeigen
+|_ Referenzen für Auftragsrelationen
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Sammelauftrag
+ |_ Anzeigen
+|_ Scheduler
+ |_ Anzeigen
+ |_ Schedulereinstellungen
+|_ Seriennummern im Auftrag
+ |_ Anzeigen
+|_ Versand
+ |_ Pakettyp
+  |_ Anzeigen
+ |_ Retourenlabel
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+  |_ Retourendienstleister
+   |_ Aktualisieren
+   |_ Anlegen
+   |_ Anzeigen
+   |_ Löschen
+ |_ Versandeinstellungen
+ |_ Versandpaket
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Artikel im Versandpaket
+   |_ Aktualisieren
+   |_ Anzeigen
+   |_ Erstellen
+   |_ Löschen
+  |_ Erstellen
+  |_ Löschen
+ |_ Versandpaletten
+  |_ Aktualisieren
+  |_ Erstellen
+  |_ Löschen
+|_ Warenausgang buchen
+|_ Warenausgang der Auftragsposition zurücksetzen
+|_ Warenausgang zurücksetzen
+|_ Zahlung
+ |_ Zahlungseinstellungen
+ |_ Zahlungsverkehr anzeigen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Authorisierung
+|_ Berechtigungen
+ |_ Berechtigungen von Benutzern
+  |_ Bearbeiten
+|_ Rollen
+ |_ Konfigurieren
+ |_ Rollen eines Benutzers
+  |_ Bearbeiten
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Benutzer
+|_ Konfigurieren
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Blog
+|_ Aktualisieren
+|_ Anzeigen
+|_ Erstellen
+|_ Löschen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Buchhaltung
+|_ Bearbeiten
+|_ Standort
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Buchungsschlüssel
+  |_ Anzeigen
+ |_ Debitorenkonten
+  |_ Anzeigen
+ |_ Erlöskonten
+  |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+CMS
+|_ Alt
+ |_ Blog
+   |_ Anzeigen
+ |_ Feedback
+   |_ Anzeigen
+ |_ Konstanten
+   |_ Anzeigen
+ |_ Suchen und Ersetzen
+   |_ Anzeigen
+ |_ Termine
+   |_ Anzeigen
+ |_ Webspace (alt)
+  |_ Anzeigen
+|_ Artikelgalerie
+  |_ Bearbeiten
+|_ Container-Verknüpfungen
+  |_ Anzeigen
+|_ Dokumente
+  |_ Anzeigen
+|_ Feedbacks
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Feedback-Bewertungen
+  |_ Aktualisieren
+  |_ Erstellen
+  |_ Löschen
+ |_ Feedback-Kommentare
+  |_ Aktualisieren
+  |_ Erstellen
+  |_ Löschen
+ |_ Löschen
+ |_ Migrieren
+|_ Formulare
+ |_ Bearbeiten
+|_ Mehrsprachigkeit
+ |_ Anzeigen
+|_ Rechtliche Angaben
+ |_ Speichern
+|_ RSS
+ |_ Bearbeiten
+|_ ShopBuilder
+ |_ Anzeigen
+|_ Templates
+ |_ Designs
+  |_ Design-Einstellungen
+   |_ Aktualisieren
+   |_ Kopieren
+|_ Webspace
+ |_ Anzeigen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+CRM
+|_ Adress-Layout
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Löschen
+|_ Adresse
+ |_ Adresstyp
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+ |_ Typ der Adressoption
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+|_ Auftragszusammenfassung
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Bankdaten
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Löschen
+|_ E-Mail
+ |_ Automatischer Versand bearbeiten
+ |_ E-Mail-Einstellungen bearbeiten
+ |_ HTML-Design bearbeiten
+ |_ Infodienst bearbeiten
+ |_ Newsletter bearbeiten
+ |_ Signatur bearbeiten
+ |_ Vorlagen bearbeiten
+ |_ Zugangsdaten bearbeiten
+|_ Eigenschaft
+ |_ Bearbeiten
+|_ Event
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Firma
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Kampagne
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Code
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+ |_ Erstellen
+ |_ Löschen
+|_ Löschen
+|_ Kontakt
+ |_ Aktualisieren
+ |_ Anonymisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+ |_ Typ der Kontaktoption
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+|_ Kontaktklasse
+ |_ Bearbeiten
+|_ Nachricht
+ |_ Aktualisieren
+ |_ Anzeigen
+ |_ Erstellen
+ |_ Löschen
+|_ Newsletter
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Löschen
+ |_ Newsletter-Empfänger
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Löschen
+ |_ Newsletter-Ordner
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+|_ Passwort
+ |_ Bearbeiten
+|_ Schuldner
+ |_ Anzeigen
+|_ Serviceeinheiten
+ |_ Anzeigen
+ |_ Bearbeiten
+|_ Ticket
+ |_ Ticket aktualisieren
+ |_ Anzeigen
+ |_ Bearbeiten
+ |_ Erstellen
+ |_ Löschen
+ |_ Ticket-Rolle
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+ |_ Ticket-Status
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+ |_ Ticket-Typ
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+ |_ Ticket-Nachricht
+  |_ Interne Ticke-Nachricht
+   |_ Anzeigen
+  |_ Öffentliche Ticket-Nachricht
+   |_ Anzeigen
+|_ Typ
+ |_ Bearbeiten
+|_ Umsatzsteuer-ID
+ |_ Bearbeiten
 end legend
 ----
 
