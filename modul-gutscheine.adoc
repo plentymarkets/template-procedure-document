@@ -1,6 +1,6 @@
-=== Fachliche und technische Beschreibung des Moduls Gutscheine
+= Fachliche und technische Beschreibung des Moduls Gutscheine
 
-==== Gutscheine
+== Gutscheine
 
 In plentymarkets gibt es zwei Gutscheintypen (Gutschein und Voucher) sowie zwei Gutscheinarten (Aktionsgutschein und Mehrzweckgutschein).
 
@@ -18,14 +18,14 @@ Hierfür sind einige Vorbereitungen im ERP-System plentymarkets nötig:
 * Diese Artikel erhalten den Mehrwertsteuersatz 0%.
 * Der Artikelpreis entspricht jeweils dem Gutscheinwert.
 
-Beim Verkauf eines Gutscheins erhält der Kunde einen Gutschein-Code. Dieser Gutschein-Code ist systemseitig mit dem Auftrag verknüpft. Der Gutschein-Code kann automatisch generiert werden. Alternativ können Händler auch mit eigenen Gutschein-Codes arbeiten, die entweder im Vorfeld im ERP-System plentymarkets gespeichert werden oder erst beim Verkauf im System gespeichert werden. Es ist technisch möglich, Gutschein-Codes mehrmals zu verkaufen.
+Beim Verkauf eines Gutscheins erhält der Kunde einen Gutschein-Code. Dieser Gutschein-Code ist systemseitig mit dem Auftrag verknüpft. Der Gutschein-Code kann automatisch generiert werden. Alternativ können Händler auch mit eigenen Gutschein-Codes arbeiten, die entweder im Vorfeld im ERP-System plentymarkets gespeichert werden oder erst beim Verkauf im System gespeichert werden. Es ist technisch möglich, Gutschein-Codes mehrmals zu verkaufen. Diese Entscheidung ist vom Anwender zu treffen und im System einzustellen.
 
 Zum Einlösen eines Gutscheins benötigt der Kunde lediglich seinen Gutschein-Code. Beim Einlösen eines Gutscheins geschieht folgendes:
 
 * Der Wert des Gutscheins wird vom zu zahlenden Betrag abgezogen.
 * Der Umsatz erhöht sich um den eingelösten Gutscheinbetrag.
 
-==== Rabatte und Preisnachlässe
+== Rabatte und Preisnachlässe
 
 In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 
