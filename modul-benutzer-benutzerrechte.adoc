@@ -1,9 +1,9 @@
-=== Fachliche und technische Beschreibung Benutzer und Benutzerrechte
+= Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
 Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Berechtigungen. +
 Die Benutzerrechte eines Benutzer in plentymarkets hängen zunächst von seinem Benutzerzugang ab. Jedem Benutzer muss ein Benutzerzugang zugeordnet werden. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
 
-==== Benutzerzugänge
+== Benutzerzugänge
 
 Folgende Benutzerzugänge gibt es in plentymarkets:
 
@@ -11,25 +11,25 @@ Folgende Benutzerzugänge gibt es in plentymarkets:
  * Backend
  * REST-API
 
-Jeder Benutzerzugang ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/basics/arbeiten-mit-plentymarkets/benutzer-verwalten#105[Benutzerkonten verwalten^] beschrieben. +
+Jeder Benutzerzugang ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/business-entscheidungen/benutzerkonten-zugaenge#105[Benutzerkonten und Zugänge^] beschrieben. +
 Außerdem können optional Benutzerrollen angelegt werden. Mithilfe von Benutzerrollen lassen sich Rechte für mehrere Benutzer gleichzeitig vergeben. Die Benutzer müssen dafür der Rolle zugeordnet werden.
 
-===== Benutzerzugang Admin
+=== Benutzerzugang Admin
 
 Der Benutzerzugang Admin verfügt über alle Rechte und dient zur Verwaltung des Systems. Benutzern dieses Zugangs können keine Rechte zusätzlich gewährt oder verwehrt werden. Sie verfügen pauschal über alle Rechte.
 
-===== Benutzerzugang Backend
+=== Benutzerzugang Backend
 
 Der Benutzerzugang Backend verfügt standardmäßig über keine Rechte und bietet die größte Möglichkeit der individuellen Zuordnung von Rechten, die im Tab Berechtigung freitgeschaltet werden können.
 
-===== Benutzerzugang REST-API
+=== Benutzerzugang REST-API
 
 Für den Benutzerzugang REST-API können im Benutzerkonto REST-Calls freigeschaltet werden. Diese werden einzeln aktiviert. *Achtung*: Nutzern mit diesem Benutzerzugang wird der Zugriff auf das Backend verweigert.
 
 Standardmäßig sind jedoch keine Zugriffsrechte für REST aktiviert. Es besteht lediglich die Möglichkeit, einem Benutzer des Zugangs REST-API per REST Zugriff auf Daten des Systems zu gewähren. Ein REST-API-Benutzer hat keinen Zugriff auf Daten über die Softwareoberfläche. +
 Eine detaillierte Beschreibung der REST-Schnittstelle befindet sich in der link:https://developers.plentymarkets.com/[Entwicklerdokumentation^]. +
 
-==== Rechte vergeben
+== Rechte vergeben
 
 Die Benutzerrechte in plentymarkets sind in die folgenden Bereiche unterteilt:
 
@@ -41,7 +41,7 @@ Die Bereiche Berechtigungen und Menü-Sichtbarkeiten sind verknüpft, wodurch di
 
 Beim Vergeben von Berechtigungen gilt generell, dass das Aktivieren einer Berechtigung einer übergeordneten Ebene alle darunter liegenden Berechtigungen aktiviert. Das Entfernen einer Berechtigung einer übergeordneten Ebene entfernt analog alle darunter einsortieren Berechtigungen.
 
-==== Liste der Admin- und Backend-Benutzer
+== Liste der Admin- und Backend-Benutzer
 
 Ergänzen Sie in der folgenden Tabelle, welche Personen über welchen Zugriff verfügen.
 
@@ -57,7 +57,7 @@ Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion i
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 3: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_)
 
-===== Berechtigungen
+=== Berechtigungen
 
 Mithilfe der Berechtigungen wird festgelegt welche tatsächlichen Daten ein Benutzer sieht. +
 Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle aufgeführt und erläutert sind.
@@ -88,11 +88,11 @@ Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle
 *_Hinweis_*: Die dort aufgeführten Sichtbarkeiten werden bald in das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer » Tab: Ressourcen* umgezogen.
 
 
-==== Menü und REST-API-Rechte verwalten
+== Menü und REST-API-Rechte verwalten
 
 Mit den Rechten wird festgelegt, welche Berechtigungen (REST-Rechte) ein Benutzer hat und welche Menüs und Plugins er sehen und öffnen kann. Außerdem kann bestimmt werden, welche Bearbeitungsmöglichkeiten der Benutzer im Menü haben soll.
 
-===== Berechtigungen
+=== Berechtigungen
 
 In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen benötigt werden.
 
@@ -126,7 +126,7 @@ In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen 
 * Zahlenformat
 * Zertifizierung
 
-===== Menü-Sichtbarkeiten
+=== Menü-Sichtbarkeiten
 
 In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet. Dort können die für den Benutzer sichtbaren Bereiche gewählt werden. Die REST-Rechte für die Menüpunkte werden automatisch gesetzt.
 
@@ -143,7 +143,7 @@ In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet
 * Einrichtung
 * Support
 
-===== Plugins
+=== Plugins
 
 In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwaltet. Zunächst werden nur die Plugins mit ihren einzelnen Einträgen, jedoch ohne die korrekte Route, angezeigt. Die hier aufgelisteten Plugins dienen lediglich als Beispiel.
 
@@ -152,6 +152,6 @@ In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwalte
 * FormatDesigner
 * DHLShipping
 
-===== REST-Rechte
+=== REST-Rechte
 
-Eine Auflistung aller verfügbaren REST-Rechte ist im <<anhang_rest-berechtigungen#, Anhang: REST-Berechtigungen>> zu finden.
+Eine Auflistung aller verfügbaren REST-Rechte ist im <<#_anhang_rest-berechtigungen, Anhang: REST-Berechtigungen>> zu finden.
