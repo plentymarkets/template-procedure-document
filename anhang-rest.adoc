@@ -1,6 +1,6 @@
 = Anhang: REST-Berechtigungen
 
-<<tabelle-rest-berechtigungen>> listet die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
+Die folgenden Diagramme listen die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
 
 == Artikel
 
@@ -47,6 +47,14 @@ Artikel
     |_ Anzeigen
     |_ Erstellen
     |_ Löschen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikel
   |_ Variante
     |_ Aktualisieren
     |_ Anzeigen
@@ -132,6 +140,14 @@ Artikel
      |_ Anzeigen
      |_ Erstellen
      |_ Löschen
+end legend
+----     
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikel
 |_ Artikeletikett
  |_ Anzeigen
  |_ Bearbeiten
@@ -305,6 +321,10 @@ Artikel
 end legend
 ----
 
+== Aufträge
+
+In diesem Bereich werden die Berechtigungen für den Bereich Aufträge beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -420,6 +440,10 @@ Aufträge
 end legend
 ----
 
+== Authorisierung
+
+In diesem Bereich werden die Berechtigungen für den Bereich Authorisierung beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -435,6 +459,10 @@ Authorisierung
 end legend
 ----
 
+== Benutzer
+
+In diesem Bereich werden die Berechtigungen für den Bereich Benutzer beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -443,6 +471,10 @@ Benutzer
 |_ Konfigurieren
 end legend
 ----
+
+== Blog
+
+In diesem Bereich werden die Berechtigungen für den Bereich Blog beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -455,6 +487,10 @@ Blog
 |_ Löschen
 end legend
 ----
+
+== Buchhaltung
+
+In diesem Bereich werden die Berechtigungen für den Bereich Buchhaltung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -475,6 +511,10 @@ Buchhaltung
  |_ Löschen
 end legend
 ----
+
+== CMS
+
+In diesem Bereich werden die Berechtigungen für den Bereich CMS beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -533,6 +573,10 @@ CMS
  |_ Anzeigen
 end legend
 ----
+
+== CRM
+
+In diesem Bereich werden die Berechtigungen für den Bereich CRM beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -671,6 +715,10 @@ CRM
 end legend
 ----
 
+== Daten
+
+In diesem Bereich werden die Berechtigungen für den Bereich Daten beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -741,6 +789,10 @@ Daten
 end legend
 ----
 
+== Editoren
+
+In diesem Bereich werden die Berechtigungen für den Bereich Editoren beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -749,6 +801,10 @@ Editoren
 |_ Bearbeiten
 end legend
 ----
+
+== Einrichtung
+
+In diesem Bereich werden die Berechtigungen für den Bereich Einrichtung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -839,6 +895,10 @@ Einrichtung
 end legend
 ----
 
+== Kommentare
+
+In diesem Bereich werden die Berechtigungen für den Bereich Kommentare beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -850,6 +910,11 @@ Kommentare
 end legend
 ----
 
+== Listing
+
+In diesem Bereich werden die Berechtigungen für den Bereich Listing beschrieben.
+
+[plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
@@ -911,6 +976,10 @@ Listing
  |_ Anzeigen
 end legend
 ----
+
+== Mandant
+
+In diesem Bereich werden die Berechtigungen für den Bereich Mandant beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -984,6 +1053,10 @@ Mandant
 end legend
 ----
 
+== Markierung
+
+In diesem Bereich werden die Berechtigungen für den Bereich Markierung beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -994,6 +1067,10 @@ Markierung
 |_ Löschen
 end legend
 ----
+
+== Märkte
+
+In diesem Bereich werden die Berechtigungen für den Bereich Märkte beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1158,6 +1235,10 @@ Märkte
 end legend
 ----
 
+== plentyApp-Einstellungen
+
+In diesem Bereich werden die Berechtigungen für den Bereich plentyApp-Einstellungen beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1167,6 +1248,10 @@ plentyApp-Einstellungen
 end legend
 ----
 
+== plentyBase-Einstellungen
+
+In diesem Bereich werden die Berechtigungen für den Bereich plentyBase-Einstellungen beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1175,6 +1260,10 @@ plentyBase-Einstellungen
 |_ Bearbeiten
 end legend
 ----
+
+== Plugins
+
+In diesem Bereich werden die Berechtigungen für den Bereich Plugins beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1218,6 +1307,10 @@ Plugins
 end legend
 ----
 
+== POS
+
+In diesem Bereich werden die Berechtigungen für den Bereich POS beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1236,6 +1329,10 @@ POS
 end legend
 ----
 
+== Prozesse
+
+In diesem Bereich werden die Berechtigungen für den Bereich Prozesse beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1245,6 +1342,10 @@ Prozesse
 |_ Bearbeiten
 end legend
 ----
+
+== Report
+
+In diesem Bereich werden die Berechtigungen für den Bereich Report beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1276,6 +1377,10 @@ Report
 end legend
 ----
 
+== Service
+
+In diesem Bereich werden die Berechtigungen für den Bereich Service beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1286,6 +1391,10 @@ Service
 end legend
 ----
 
+== Service-Center
+
+In diesem Bereich werden die Berechtigungen für den Bereich Service-Center beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1293,6 +1402,10 @@ legend
 Service-Center
 end legend
 ----
+
+== Stammdaten
+
+In diesem Bereich werden die Berechtigungen für den Bereich Stammdaten beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1302,6 +1415,10 @@ Stammdaten
 |_ Bearbeiten
 end legend
 ----
+
+== Start
+
+In diesem Bereich werden die Berechtigungen für den Bereich Start beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1314,6 +1431,10 @@ Start
 |_ Kalender
 end legend
 ----
+
+== Warenbestände
+
+In diesem Bereich werden die Berechtigungen für den Bereich Warenbestände beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1365,6 +1486,10 @@ Warenbestände
 end legend
 ----
 
+== Zahlenformat
+
+In diesem Bereich werden die Berechtigungen für den Bereich Zahlenformat beschrieben.
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1373,6 +1498,10 @@ Zahlenformat
 |_ Bearbeiten
 end legend
 ----
+
+== Zertifizierung
+
+In diesem Bereich werden die Berechtigungen für den Bereich Zertifizierung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
