@@ -4,7 +4,7 @@ Die folgenden Diagramme listen die verfügbaren REST-Berechtigungen für Benutze
 
 == Artikel
 
-In diesem Bereich werden die Berechtigungen für den Bereich Artikel beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Artikel beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -141,7 +141,7 @@ Artikel
      |_ Erstellen
      |_ Löschen
 end legend
-----     
+----
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -205,6 +205,14 @@ Artikel
   |_ Löschen
  |_ Erstellen
  |_ Löschen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikel
 |_ Einstellungen
  |_ Bearbeiten
 |_ Freitextfeld
@@ -269,6 +277,14 @@ Artikel
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikel
 |_ Packstück
  |_ Anzeigen
 |_ Preiskalkulation
@@ -323,7 +339,7 @@ end legend
 
 == Aufträge
 
-In diesem Bereich werden die Berechtigungen für den Bereich Aufträge beschrieben.
+In diesem Abaschnitt werden die Berechtigungen für den Bereich Aufträge beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -380,6 +396,14 @@ Aufträge
  |_ Erstellen
 |_ Buchung
  |_ Erstellen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Aufträge
 |_ Dokumente
  |_ Anlegen
  |_ Anzeigen
@@ -442,7 +466,7 @@ end legend
 
 == Authorisierung
 
-In diesem Bereich werden die Berechtigungen für den Bereich Authorisierung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Authorisierung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -461,7 +485,7 @@ end legend
 
 == Benutzer
 
-In diesem Bereich werden die Berechtigungen für den Bereich Benutzer beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Benutzer beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -474,7 +498,7 @@ end legend
 
 == Blog
 
-In diesem Bereich werden die Berechtigungen für den Bereich Blog beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Blog beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -490,7 +514,7 @@ end legend
 
 == Buchhaltung
 
-In diesem Bereich werden die Berechtigungen für den Bereich Buchhaltung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Buchhaltung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -514,7 +538,7 @@ end legend
 
 == CMS
 
-In diesem Bereich werden die Berechtigungen für den Bereich CMS beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich CMS beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -576,7 +600,7 @@ end legend
 
 == CRM
 
-In diesem Bereich werden die Berechtigungen für den Bereich CRM beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich CRM beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -646,6 +670,14 @@ CRM
  |_ Erstellen
  |_ Löschen
 |_ Löschen
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+CRM
 |_ Kontakt
  |_ Aktualisieren
  |_ Anonymisieren
@@ -717,7 +749,7 @@ end legend
 
 == Daten
 
-In diesem Bereich werden die Berechtigungen für den Bereich Daten beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Daten beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -791,7 +823,7 @@ end legend
 
 == Editoren
 
-In diesem Bereich werden die Berechtigungen für den Bereich Editoren beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Editoren beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -804,7 +836,7 @@ end legend
 
 == Einrichtung
 
-In diesem Bereich werden die Berechtigungen für den Bereich Einrichtung beschrieben.
+In diesem Abaschnitt werden die Berechtigungen für den Bereich Einrichtung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -897,7 +929,7 @@ end legend
 
 == Kommentare
 
-In diesem Bereich werden die Berechtigungen für den Bereich Kommentare beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Kommentare beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -912,7 +944,7 @@ end legend
 
 == Listing
 
-In diesem Bereich werden die Berechtigungen für den Bereich Listing beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Listing beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -979,7 +1011,7 @@ end legend
 
 == Mandant
 
-In diesem Bereich werden die Berechtigungen für den Bereich Mandant beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Mandant beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1055,7 +1087,7 @@ end legend
 
 == Markierung
 
-In diesem Bereich werden die Berechtigungen für den Bereich Markierung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Markierung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1070,7 +1102,7 @@ end legend
 
 == Märkte
 
-In diesem Bereich werden die Berechtigungen für den Bereich Märkte beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Märkte beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1150,6 +1182,14 @@ Märkte
   |_ Bearbeiten
  |_ Second Chance Offer
   |_ Bearbeiten
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Märkte
 |_ Flubit
  |_ Bearbeiten
 |_ Fruugo
@@ -1201,6 +1241,14 @@ Märkte
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
+end legend
+----
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Märkte
 |_ Rakuten.de
  |_ Bearbeiten
 |_ real.de
@@ -1237,7 +1285,7 @@ end legend
 
 == plentyApp-Einstellungen
 
-In diesem Bereich werden die Berechtigungen für den Bereich plentyApp-Einstellungen beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich plentyApp-Einstellungen beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1250,7 +1298,7 @@ end legend
 
 == plentyBase-Einstellungen
 
-In diesem Bereich werden die Berechtigungen für den Bereich plentyBase-Einstellungen beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBase-Einstellungen beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1263,7 +1311,7 @@ end legend
 
 == Plugins
 
-In diesem Bereich werden die Berechtigungen für den Bereich Plugins beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Plugins beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1309,7 +1357,7 @@ end legend
 
 == POS
 
-In diesem Bereich werden die Berechtigungen für den Bereich POS beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich POS beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1331,7 +1379,7 @@ end legend
 
 == Prozesse
 
-In diesem Bereich werden die Berechtigungen für den Bereich Prozesse beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Prozesse beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1345,7 +1393,7 @@ end legend
 
 == Report
 
-In diesem Bereich werden die Berechtigungen für den Bereich Report beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Report beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1379,7 +1427,7 @@ end legend
 
 == Service
 
-In diesem Bereich werden die Berechtigungen für den Bereich Service beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Service beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1393,7 +1441,7 @@ end legend
 
 == Service-Center
 
-In diesem Bereich werden die Berechtigungen für den Bereich Service-Center beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Service-Center beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1405,7 +1453,7 @@ end legend
 
 == Stammdaten
 
-In diesem Bereich werden die Berechtigungen für den Bereich Stammdaten beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Stammdaten beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1418,7 +1466,7 @@ end legend
 
 == Start
 
-In diesem Bereich werden die Berechtigungen für den Bereich Start beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Start beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1434,7 +1482,7 @@ end legend
 
 == Warenbestände
 
-In diesem Bereich werden die Berechtigungen für den Bereich Warenbestände beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Warenbestände beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1488,7 +1536,7 @@ end legend
 
 == Zahlenformat
 
-In diesem Bereich werden die Berechtigungen für den Bereich Zahlenformat beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Zahlenformat beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1501,7 +1549,7 @@ end legend
 
 == Zertifizierung
 
-In diesem Bereich werden die Berechtigungen für den Bereich Zertifizierung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Zertifizierung beschrieben.
 
 [plantuml, format=png, opts="inline"]
 ----
