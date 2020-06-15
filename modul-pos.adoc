@@ -6,7 +6,7 @@ plentymarkets POS dient zur exakten Einzelerfassung und Dokumentation sämtliche
 
 Eine softwareseitige Erfassung von Geschäftsvorfällen kann im ERP-System plentymarkets nicht unterdrückt werden. Eine Belegerstellung, ohne dass dabei die vereinnahmten Beträge erfasst werden, ist technisch nicht möglich.
 
-<<Speicherung und Abrufbarkeit von plentymarkets POS Berichten, Umfangreiche Berichtsoptionen>> ermöglichen außerdem eine detaillierte Visualisierung der Kassenvorgänge.
+<<#_speicherung_und_abrufbarkeit_von_plentymarkets_pos_berichten, Umfangreiche Berichtsoptionen>> ermöglichen außerdem eine detaillierte Visualisierung der Kassenvorgänge.
 
 [TIP]
 .Ergänzen Sie Ihre eigenen Firmendaten
@@ -294,7 +294,7 @@ Ergänzen Sie <<tabelle-pos-plugin-zahlungsarten>>. Die folgenden über Plugin a
 
 === Verkaufspreise
 
-<<modul-artikel#, Verkaufspreise>> werden im Menü *Einrichtung » Artikel » Verkaufspreise* erstellt und für beliebig viele Herkünfte aktiviert.
+<<#_fachliche_und_technische_beschreibung_des_moduls_artikel, Verkaufspreise>> werden im Menü *Einrichtung » Artikel » Verkaufspreise* erstellt und für beliebig viele Herkünfte aktiviert.
 
 Ergänzen Sie <<tabelle-pos-verkaufspreise>>. Die folgenden Verkaufspreise sind für die Kasse aktiviert [_1 Tabelle pro Kasse erstellen_]:
 
@@ -349,22 +349,22 @@ Ort
 |
 |====
 
-Kassierer mit den nötigen link:https://knowledge.plentymarkets.com/basics/admin-aufgaben/benutzer-verwalten[Benutzerrechten^] können Kassenvorgänge auch über sogenannte link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#135[Bestandskunden] abwickeln, statt den Standardkunden zu wählen. Somit können auch link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#26[Kundenklassenrabatte] vergeben werden.
+Kassierer mit den nötigen link:https://knowledge.plentymarkets.com/business-entscheidungen/benutzerkonten-zugaenge#105[Benutzerrechten^] können Kassenvorgänge auch über sogenannte link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#135[Bestandskunden] abwickeln, statt den Standardkunden zu wählen. Somit können auch link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#26[Kundenklassenrabatte] vergeben werden.
 
 
 == plentymarkets POS Geschäftsvorfälle
 
 In plentymarkets POS werden Geschäftsvorfälle einzeln, vollständig und unveränderbar aufgezeichnet. Die folgenden Arten von Geschäftsvorfällen können über plentymarkets POS erstellt und im ERP-System plentymarkets weiter verarbeitet werden:
 
-* <<Aufträge, Aufträge>>
-* <<Stornierungen, Stornierungen>>
-* <<Retouren, Retouren/Gutschriften>>
-* <<Einlagen, Einlagen>>
-* <<Entnahmen, Entnahmen>>
+* <<#_aufträge, Aufträge>>
+* <<#_stornierungen, Stornierungen>>
+* <<#_retouren, Retouren/Gutschriften>>
+* <<#_einlagen, Einlagen>>
+* <<#_entnahmen, Entnahmen>>
 
 Geschäftsvorfälle sind jederzeit über das link:https://knowledge.plentymarkets.com/pos/pos-einrichten#400[Kassenjournal^] des ERP-Systems plentymarkets verfügbar und über den link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[IDEA-Export^] maschinell auslesbar.
 
-Zudem werden für alle über plentymarkets POS erstellten Geschäftsvorfälle automatisch <<Speicherung und Abrufbarkeit von plentymarkets POS Berichte, Belege>> erstellt und link:https://knowledge.plentymarkets.com/auftraege/dokumentenarchiv[im Dokumentenarchiv gespeichert^]. Diese Belege werden zur eindeutigen Kennzeichnung mit einer fortlaufenden Nummer versehen. Die Belegnummern setzen sich aus der ID der Kasse (vierstellig, ggf. mit führenden Nullen) und der Vorgangsnummer zusammen. Der erste Beleg der Kasse mit der ID 1 lautet also z.B. 0001-1.
+Zudem werden für alle über plentymarkets POS erstellten Geschäftsvorfälle automatisch <<#_speicherung-und- abrufbarkeit-von-plentymarkets-pos-berichten, Belege>> erstellt und link:https://knowledge.plentymarkets.com/auftraege/dokumentenarchiv[im Dokumentenarchiv gespeichert^]. Diese Belege werden zur eindeutigen Kennzeichnung mit einer fortlaufenden Nummer versehen. Die Belegnummern setzen sich aus der ID der Kasse (vierstellig, ggf. mit führenden Nullen) und der Vorgangsnummer zusammen. Der erste Beleg der Kasse mit der ID 1 lautet also z.B. 0001-1.
 
 === Aufträge
 
@@ -381,7 +381,7 @@ Während der Auftragserfassung können Kassierer je nach Benutzerrechten folgend
 * Rabatt auf gesamten Auftragswert gewähren
 * Gutscheine einlösen
 
-Diese Daten werden auf dem mobilen Endgerät zwischengespeichert, um die <<Verfahren bei Ausfall von plentymarkets POS, Ausfallsicherheit>> zu gewährleisten. Nach Abschluss des Auftrags können diese Daten nicht mehr geändert werden.
+Diese Daten werden auf dem mobilen Endgerät zwischengespeichert, um die <<#_verfahren_bei_ ausfall_von_plentymarkets_pos, Ausfallsicherheit>> zu gewährleisten. Nach Abschluss des Auftrags können diese Daten nicht mehr geändert werden.
 
 
 == Speicherung
@@ -486,7 +486,7 @@ Zahlungen, die an der Kasse getätigt werden, um einen solchen Online-Auftrag zu
 
 Stornierungen können nur über plentymarkets POS vorgenommen werden. Eine Stornierung über das ERP-System plentymarkets ist nicht möglich, um die Integrität des Berichtswesens zu gewährleisten sowie Barbestand und Belegnummernfolge nicht zu beeinträchtigen.
 
-Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine <<Retouren, Retoure>> erstellt werden.
+Stornierbar sind nur abgeschlossene POS-Aufträge, die seit dem letzten Tagesabschluss über die Kasse erstellt wurden. Eine Stornierung ist nicht mehr möglich, nachdem ein Tagesabschluss für die Kasse generiert wurde. Danach muss eine <<#_retouren, Retoure>> erstellt werden.
 
 Wenn der zu stornierende Auftrag mit Karte bezahlt wurde, können Kassierer bei der Stornierung des Auftrags wählen, ob der stornierte Betrag zurück auf das Konto der Kartenzahlung gebucht oder bar ausgezahlt werden soll.
 
@@ -512,7 +512,7 @@ Die Daten einer Stornierung mit der Herkunft POS werden an den folgenden Stellen
 * link:https://knowledge.plentymarkets.com/auftraege/dokumentenarchiv[Beleg im Dokumentenarchiv^]
 * link:https://knowledge.plentymarkets.com/auftraege/auftraege-verwalten#1300[Auftrag in der Auftragsübersicht^]
 * link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#990[Auftrag im Kundendatensatz^]
-* link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[Daten für den IDEA-Export^]
+* link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#300[Daten für den IDEA-Export^]
 
 Diese Daten bestehen aus:
 
@@ -553,7 +553,7 @@ Die Daten einer Retoure mit der Herkunft POS werden an den folgenden Stellen in 
 * link:https://knowledge.plentymarkets.com/auftraege/dokumentenarchiv[Beleg im Dokumentenarchiv^]
 * link:https://knowledge.plentymarkets.com/auftraege/auftraege-verwalten#1300[Auftrag in der Auftragsübersicht^]
 * link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#990[Auftrag im Kundendatensatz^]
-* link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[Daten für den IDEA-Export^]
+* link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#300[Daten für den IDEA-Export^]
 
 
 Auf dem Beleg bestehen diese Daten aus:
@@ -593,7 +593,7 @@ Beim Erstellen einer Retoure wird außerdem eine Gutschrift erstellt und gespeic
 * link:https://knowledge.plentymarkets.com/auftraege/dokumentenarchiv[Beleg im Dokumentenarchiv^]
 * link:https://knowledge.plentymarkets.com/auftraege/auftraege-verwalten#1300[Auftrag in der Auftragsübersicht^]
 * link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#990[Auftrag im Kundendatensatz^]
-* link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[Daten für den IDEA-Export^]
+* link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#300[Daten für den IDEA-Export^]
 
 Auf dem Beleg bestehen diese Daten aus:
 
@@ -632,16 +632,16 @@ link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#180[Einlagen und
 
 === Buchungsablauf
 
-Während der Einlage/Entnahme wird ein Grund für die Buchung gewählt. Die Gründe "Einlage" und "Entnahme" sind standardmäßig in plentymarkets verfügbar und können nicht gelöscht werden. Anwender können jedoch weitere Gründe im Voraus ergänzen. Pro Grund kann auch ein <<Buchungskonten für weitere Kassenvorfälle, Buchungskonto>> gespeichert werden. Somit ist es möglich, Beträge auf bestimmte Konten zu buchen.
+Während der Einlage/Entnahme wird ein Grund für die Buchung gewählt. Die Gründe "Einlage" und "Entnahme" sind standardmäßig in plentymarkets verfügbar und können nicht gelöscht werden. Anwender können jedoch weitere Gründe im Voraus ergänzen. Pro Grund kann auch ein <<#_buchungskonten_für_weitere_kassenvorfälle, Buchungskonto>> gespeichert werden. Somit ist es möglich, Beträge auf bestimmte Konten zu buchen.
 
-Einlagen und Entnahmen sind nur möglich, wenn plentymarkets POS im <<Verfahren bei Ausfall von plentymarkets POS, Online-Modus>> läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Daten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
+Einlagen und Entnahmen sind nur möglich, wenn plentymarkets POS im <<#_verfahren_bei_ausfall_von_plentymarkets_pos, Online-Modus>> läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Daten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
 
 === Speicherung
 
 Die Daten einer Einlage/Entnahme werden an den folgenden Stellen in plentymarkets gespeichert:
 
 * link:https://knowledge.plentymarkets.com/pos/pos-einrichten#400[Geschäftsvorfall im Kassenjournal^]
-* link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[Daten für den IDEA-Export^]
+* link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#300[Daten für den IDEA-Export^]
 
 Diese Daten bestehen aus:
 
