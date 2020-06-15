@@ -218,7 +218,7 @@ In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verw
 * beschädigte Ware manuell link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#140[an der Kasse im stationären Laden^] zu vergünstigen.
 * werbliche Aktionen durchzuführen, z.B. 20% auf alles außer Tiernahrung. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/auftraege/gutscheine[Aktionsgutscheinen^] durchgeführt.
 
-Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* mit der Option link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#40[Aktionsgutschein/POS-Rabatt^] von Rabatten an der plentymarkets POS Kasse ausgeschlossen werden. Das bedeutet, dass das Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte und Aktionsrabatte sind für diese nicht rabattfähigen Artikel ungültig.
+Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* mit der Option link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#40[Aktionsgutschein/POS-Rabatt^] von Rabatten an der plentyPOS Kasse ausgeschlossen werden. Das bedeutet, dass das Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte und Aktionsrabatte sind für diese nicht rabattfähigen Artikel ungültig.
 
 === Kategorien
 //Inhalt geprüft am 08.06.2020 - anpassen wenn Limits da sind
