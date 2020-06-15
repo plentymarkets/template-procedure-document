@@ -8,7 +8,7 @@ Die plentymarkets App erlaubt Ihnen auch von unterwegs einen sicheren Zugriff au
 * Kommissionierung
 * Einbuchung/Umbuchung/Verräumen
 * Inventar
-* <<modul-pos#, Kassensystem plentymarkets POS>>
+* <<#_fachliche_und_technische_beschreibung_plentypos, Kassensystem plentyPOS>>
 
 [TIP]
 .Ergänzen Sie Ihre eigenen Firmendaten
@@ -57,9 +57,9 @@ Ergänzen Sie <<tabelle-app-hardware-vorlage>>. Hier werden die unternehmenseige
 |===
 
 [TIP]
-.Zusätzliche Hard- und Software für plentymarkets POS
+.Zusätzliche Hard- und Software für plentyPOS
 ====
-Werden die POS-Funktionen der plentymarkets App genutzt, kommen möglicherweise weitere Hard- und Software-Lösungen zum Einsatz. <<modul-pos#, Ergänzen Sie auch in diesem Kapitel>> die Auflistungen.
+Werden die POS-Funktionen der plentymarkets App genutzt, kommen möglicherweise weitere Hard- und Software-Lösungen zum Einsatz. <<#_fachliche_und_technische_beschreibung_plentypos, Ergänzen Sie auch in diesem Kapitel>> die Auflistungen.
 ====
 
 == Zugang zur App
@@ -76,12 +76,12 @@ Optional kann die App so eingerichtet werden, dass Anwender sich später mit ein
 
 === Zugriffsrechte
 
-Sollen weitere Mitarbeiter die plentymarkets App nutzen, müssen sie ebenfalls Zugangsdaten haben. In welchem Umfang Benutzer die App verwenden können, wird über die link:https://knowledge.plentymarkets.com/basics/admin-aufgaben/benutzer-verwalten[Benutzerverwaltung] des ERP-Systems plentymarkets gesteuert. Benutzerkonten werden im Menü *Einrichtung » Einstellungen » Benutzer » Konten* erstellt.
+Sollen weitere Mitarbeiter die plentymarkets App nutzen, müssen sie ebenfalls Zugangsdaten haben. In welchem Umfang Benutzer die App verwenden können, wird über die link:https://knowledge.plentymarkets.com/business-entscheidungen/benutzerkonten-zugaenge#125[Benutzerverwaltung] des ERP-Systems plentymarkets gesteuert. Benutzerkonten werden im Menü *Einrichtung » Einstellungen » Benutzer » Konten* erstellt.
 
-Admin-Benutzer haben uneingeschränkten Zugriff auf die plentymarkets App. Ergänzen Sie die Liste der Admin-Benutzer im <<modul-benutzer-benutzerrechte#, Kapitel zur Benutzerrechte>> und geben Sie somit an, welche Mitarbeiter über uneingeschränkten Zugriff auf alle Funktionen der plentymarkets App verfügen. Dies umfasst auch uneingeschränkten Zugriff auf alle Funktionen der Kassensoftware plentymarkets POS.
+Admin-Benutzer haben uneingeschränkten Zugriff auf die plentymarkets App. Ergänzen Sie die Liste der Admin-Benutzer im <<#_fachliche_und_technische_beschreibung_benutzer_und_benutzerrechte, Kapitel zu Benutzerrechten>> und geben Sie somit an, welche Mitarbeiter über uneingeschränkten Zugriff auf alle Funktionen der plentymarkets App verfügen. Dies umfasst auch uneingeschränkten Zugriff auf alle Funktionen der Kassensoftware plentyPOS.
 
-Für alle anderen Benutzerklassen müssen die link:https://knowledge.plentymarkets.com/app/installation#800[Rechte pro Benutzer^] oder pro Benutzerrolle definiert werden. Die Zugriffsrechte für die plentymarkets App werden im Menü *Einrichtung » Einstellungen » Benutzer » Konten » Konto öffnen » Tab: Mobile* definiert. Ergänzen Sie die Liste der Backend-Benutzer im <<modul-benutzer-benutzerrechte#, Kapitel zur Benutzerrechte>> und geben Sie somit an, welche Mitarbeiter über eingeschränkten Zugriff auf die Funktionen der plentymarkets App verfügen.
+Für alle anderen Benutzerklassen müssen die link:https://knowledge.plentymarkets.com/app/installation#800[Rechte pro Benutzer^] oder pro Benutzerrolle definiert werden. Die Zugriffsrechte für die plentymarkets App werden im Menü *Einrichtung » Einstellungen » Benutzer » Konten » Konto öffnen » Tab: Mobile* definiert. Ergänzen Sie die Liste der Backend-Benutzer im <<#_fachliche_und_technische_beschreibung_benutzer_und_benutzerrechte, Kapitel zu Benutzerrechten>> und geben Sie somit an, welche Mitarbeiter über eingeschränkten Zugriff auf die Funktionen der plentymarkets App verfügen.
 
 == App-Funktionen
 
-Die App beinhaltet eine Reihe nützlicher Funktionen, die im link:https://knowledge.plentymarkets.com/app/funktionen[plentymarkets Benutzerhandbuch^] beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentymarkets POS zu. Die Kasse wird <<modul-pos#, in einem separaten Kapitel beschrieben>>.
+Die App beinhaltet eine Reihe nützlicher Funktionen, die im link:https://knowledge.plentymarkets.com/app/funktionen[plentymarkets Benutzerhandbuch^] beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentyPOS zu. Die Kasse wird <<#_fachliche_und_technische_Beschreibung_plentypos, in einem separaten Kapitel beschrieben>>.
