@@ -84,4 +84,4 @@ Für alle anderen Benutzerklassen müssen die link:https://knowledge.plentymarke
 
 == App-Funktionen
 
-Die App beinhaltet eine Reihe nützlicher Funktionen, die im link:https://knowledge.plentymarkets.com/app/funktionen[plentymarkets Benutzerhandbuch^] beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentyPOS zu. Die Kasse wird <<#_fachliche_und_technische_Beschreibung_plentypos, in einem separaten Kapitel beschrieben>>.
+Die App beinhaltet eine Reihe nützlicher Funktionen, die im link:https://knowledge.plentymarkets.com/app/funktionen[plentymarkets Benutzerhandbuch^] beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentyPOS zu. Die Kasse wird <<#_fachliche_und_technische_beschreibung_plentypos, in einem separaten Kapitel beschrieben>>.
