@@ -2,6 +2,19 @@
 
 plentymarkets ist eine modular aufgebaute und Plugin-fähige Software für den Handel mit Sachgütern, digitalen Gütern und immateriellen Gütern. plentymarkets ist ein Produkt der plentymarkets GmbH und wird ausschließlich im SaaSA-Modell angeboten. Die Software verfügt über integrale und optionale Module. plentymarkets wird in verschiedenen Tarifen angeboten. Je nach Tarif unterscheiden sich die integralen und optionalen Module.
 
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Root
+|_ Element 1
+  |_ Element 1.1
+  |_ Element 1.2
+|_ Element 2
+  |_ Element 2.1
+end legend
+----
+
 Folgende Module sind verfügbar: Artikel, Auftragsabwicklung, CRM (Kundenkontakt / Beziehungsmanagement), Payment (Zahlungsanbindungen / Zahlungszuordnung), Fulfillment (Versandanbindungen), Online-Shop, Multi-Channel (Online-Marktplatz- und Vergleichsportalanbindungen), Warenwirtschaft und POS (Kassensystem für stationären Handel).
 
 plentymarkets dient insbesondere der Verwaltung und Abwicklung von Daten und Arbeitsabläufen, die im Zusammenhang mit dem Handel von Sachgütern, digitalen Gütern und immateriellen Gütern stehen. Hierbei kommen die genannten Module zum Einsatz. Die Vorteile beim Einsatz von plentymarkets liegen insbesondere darin, dass Artikelinformationen zentral in plentymarkets erfasst und verwaltet werden und von hier aus an verschiedene Kanäle für den Verkauf übermittelt werden. Des Weiteren liegen Vorteile darin, dass – unabhängig davon, über welchen Kanal ein Artikel verkauft wurde – nach dem Verkauf eine Übermittlung der Auftrags- und Kundendaten an das plentymarkets System des Anwenders erfolgt, sodass die anschließende Abwicklung wieder zentral im plentymarkets System des Anwenders erfolgt. Ein weiterer Vorteil liegt in der Möglichkeit, diese Abwicklung bis zu einem hohen Grad zu automatisieren.
