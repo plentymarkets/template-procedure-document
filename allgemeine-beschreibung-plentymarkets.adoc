@@ -1,6 +1,6 @@
-== Allgemeine fachliche Beschreibung der Software plentymarkets
+= Allgemeine fachliche Beschreibung der Software plentymarkets
 
-plentymarkets ist eine modular aufgebaute und Plugin-fähige Software für den Handel mit Sachgütern, digitalen Gütern und immateriellen Gütern. plentymarkets ist ein Produkt der plentymarkets GmbH und wird ausschließlich im SaaSA-Modell angeboten. Die Software verfügt über integrale und optionale Module. plentymarkets wird in verschiedenen Tarifen angeboten. Je nach Tarif unterscheiden sich die integralen und optionalen Module.
+plentymarkets ist eine modular aufgebaute und Plugin-fähige Software für den Handel mit Sachgütern, digitalen Gütern und immateriellen Gütern. plentymarkets ist ein Produkt der plentysystems AG und wird ausschließlich im SaaSA-Modell angeboten. Die Software verfügt über integrale und optionale Module. plentymarkets wird in verschiedenen Tarifen angeboten. Je nach Tarif unterscheiden sich die integralen und optionalen Module.
 
 Folgende Module sind verfügbar: Artikel, Auftragsabwicklung, CRM (Kundenkontakt / Beziehungsmanagement), Payment (Zahlungsanbindungen / Zahlungszuordnung), Fulfillment (Versandanbindungen), Online-Shop, Multi-Channel (Online-Marktplatz- und Vergleichsportalanbindungen), Warenwirtschaft und POS (Kassensystem für stationären Handel).
 
