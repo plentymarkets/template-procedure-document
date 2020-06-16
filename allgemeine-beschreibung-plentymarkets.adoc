@@ -12,3 +12,5 @@ Der Grad der Automatisierung wird durch den Anwender selbst bestimmt und untersc
 Einige Aktionen erfolgen jedoch auch automatisch durch das System und können nicht durch den Anwender beeinflusst werden. Hierbei handelt es sich um sogenannte Systemautomatismen. Welche Systemautomatismen es gibt, wird später im Text erläutert.
 
 Bei Bestellung eines plentymarkets Systems erhält der Anwender Login-Daten, mit denen er sich als Benutzer in sein System einloggen kann. Was Benutzer sind und was sie dürfen, wird zunächst beschrieben. Anschließend werden die Module einzeln genauer beschrieben.
+
+//TODO: Hinweisbox o.ä. auf Glossar

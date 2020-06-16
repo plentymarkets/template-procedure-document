@@ -636,6 +636,8 @@ Während der Einlage/Entnahme wird ein Grund für die Buchung gewählt. Die Grü
 
 Einlagen und Entnahmen sind nur möglich, wenn plentyPOS im <<#_verfahren_bei_ausfall_von_plentypos, Online-Modus>> läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Daten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
 
+//TODO: ab App Version 1.10.1 sind Einlagen und Entnahmen offlinefähig. Mit Team klären, ob es damit getan ist, zu sagen, dass die Daten auf dem mobilen Endgerät zwischengespeichert werden, bis erneut eine Verbindung zum plentymarkets System besteht.
+
 === Speicherung
 
 Die Daten einer Einlage/Entnahme werden an den folgenden Stellen in plentymarkets gespeichert:
