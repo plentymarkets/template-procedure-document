@@ -47,12 +47,11 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch origin master
           git add ./Index.pdf
           git commit -m "Update PDF" ./Index.pdf
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.CREATE_PDF_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
