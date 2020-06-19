@@ -47,6 +47,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git fetch origin master
           git add ./Index.pdf
           git commit -m "Update PDF" ./Index.pdf
 
