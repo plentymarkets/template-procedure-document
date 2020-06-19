@@ -29,31 +29,35 @@ jobs:
             
       - name: Install Asciidoctor
         steps:
+          - uses: actions/checkout@v2
           - run: gem install asciidoctor
 
       - name: Install Asciidoctor-PDF
         steps:
+          - uses: actions/checkout@v2
           - run: gem install asciidoctor-pdf
 
       - name: Install Asciidoctor-Diagrams
         steps:
+          - uses: actions/checkout@v2
           - run: gem install asciidoctor-diagrams
 
       - name: Install text hyphenation
         steps:
+          - uses: actions/checkout@v2
           - run: gem install text-hyphen
 
   create-pdf:
     name: Create PDF
     runs-on: macos-latest
     steps:
-      - name: Execute main
+      - uses: actions/checkout@v2
         run: ruby main.rb
 
   cleanup:
     name: Clean up repo
     runs-on: macos-latest
     steps:
-      - name: Remove images
+      - uses: actions/checkout@v2
         run: rm -rf .asciidoctor/diagram
 
