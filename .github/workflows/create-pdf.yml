@@ -28,16 +28,20 @@ jobs:
               architecture: 'x64' # defaults to 'x64'
             
       - name: Install Asciidoctor
-        run: gem install asciidoctor
+        steps:
+          run: gem install asciidoctor
 
       - name: Install Asciidoctor-PDF
-        run: gem install asciidoctor-pdf
+        steps:
+          run: gem install asciidoctor-pdf
 
       - name: Install Asciidoctor-Diagrams
-        run: gem install asciidoctor-diagrams
+        steps:
+          run: gem install asciidoctor-diagrams
 
       - name: Install text hyphenation
-        run: gem install text-hyphen
+        steps:
+          run: gem install text-hyphen
 
   create-pdf:
     name: Create PDF
