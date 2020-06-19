@@ -12,12 +12,12 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Setup Ruby, JRuby and TruffleRuby
-          uses: ruby/setup-ruby@v1.38.0
-          with:
-            ruby-version: default
-            bundler: default
-            bundler-cache: false
-            working-directory: .
+        uses: ruby/setup-ruby@v1.38.0
+        with:
+          ruby-version: default
+          bundler: default
+          bundler-cache: false
+          working-directory: .
 
       - name: Install JDK
           steps:
@@ -35,7 +35,7 @@ jobs:
 
       - name: Install Asciidoctor-Diagrams
         run: gem install asciidoctor-diagrams
-        
+
       - name: Install text hyphenation
         run: gem install text-hyphen
 
