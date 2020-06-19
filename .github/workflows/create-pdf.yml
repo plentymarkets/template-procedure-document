@@ -39,17 +39,20 @@ jobs:
       - name: Install text hyphenation
         run: gem install text-hyphen
 
-  create-pdf:
-    name: Create PDF
-    needs: setup
-    runs-on: macos-latest
-    steps:
-      - name: Checkout repository code
-        uses: actions/checkout@v2
-      - name: Check ruby version
-        run: ruby -v
       - name: Run main.rb
         run: ruby ./main.rb
+
+  # create-pdf:
+  #   name: Create PDF
+  #   needs: setup
+  #   runs-on: macos-latest
+  #   steps:
+  #     - name: Checkout repository code
+  #       uses: actions/checkout@v2
+  #     - name: Check ruby version
+  #       run: ruby -v
+  #     - name: Run main.rb
+  #       run: ruby ./main.rb
 
   # cleanup:
   #   name: Clean up repo
