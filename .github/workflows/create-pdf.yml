@@ -37,10 +37,13 @@ jobs:
   create-pdf:
     name: Create PDF
     needs: setup
+    defaults:
+      run:
+        working-directory: .
     runs-on: macos-latest
     steps:
       - name: Run main.rb
-        run: ruby /main.rb
+        run: ruby main.rb
 
   # cleanup:
   #   name: Clean up repo
