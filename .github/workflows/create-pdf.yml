@@ -19,45 +19,45 @@ jobs:
           bundler-cache: false
           working-directory: .
 
-      - name: Install JDK
-        steps:
-          - uses: actions/checkout@v2
-          - uses: joschi/setup-jdk@v2
-            with:
-              java-version: '11' # The OpenJDK version to make available on the path
-              architecture: 'x64' # defaults to 'x64'
+  #     - name: Install JDK
+  #       steps:
+  #         - uses: actions/checkout@v2
+  #         - uses: joschi/setup-jdk@v2
+  #           with:
+  #             java-version: '11' # The OpenJDK version to make available on the path
+  #             architecture: 'x64' # defaults to 'x64'
             
-      - name: Install Asciidoctor
-        steps:
-          - uses: actions/checkout@v2
-            run: gem install asciidoctor
+  #     - name: Install Asciidoctor
+  #       steps:
+  #         - uses: actions/checkout@v2
+  #           run: gem install asciidoctor
 
-      - name: Install Asciidoctor-PDF
-        steps:
-          - uses: actions/checkout@v2
-            run: gem install asciidoctor-pdf
+  #     - name: Install Asciidoctor-PDF
+  #       steps:
+  #         - uses: actions/checkout@v2
+  #           run: gem install asciidoctor-pdf
 
-      - name: Install Asciidoctor-Diagrams
-        steps:
-          - uses: actions/checkout@v2
-            run: gem install asciidoctor-diagrams
+  #     - name: Install Asciidoctor-Diagrams
+  #       steps:
+  #         - uses: actions/checkout@v2
+  #           run: gem install asciidoctor-diagrams
 
-      - name: Install text hyphenation
-        steps:
-          - uses: actions/checkout@v2
-            run: gem install text-hyphen
+  #     - name: Install text hyphenation
+  #       steps:
+  #         - uses: actions/checkout@v2
+  #           run: gem install text-hyphen
 
-  create-pdf:
-    name: Create PDF
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-        run: ruby main.rb
+  # create-pdf:
+  #   name: Create PDF
+  #   runs-on: macos-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       run: ruby main.rb
 
-  cleanup:
-    name: Clean up repo
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-        run: rm -rf .asciidoctor/diagram
+  # cleanup:
+  #   name: Clean up repo
+  #   runs-on: macos-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       run: rm -rf .asciidoctor/diagram
 
