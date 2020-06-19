@@ -30,22 +30,22 @@ jobs:
       - name: Install Asciidoctor
         steps:
           - uses: actions/checkout@v2
-          - run: gem install asciidoctor
+            run: gem install asciidoctor
 
       - name: Install Asciidoctor-PDF
         steps:
           - uses: actions/checkout@v2
-          - run: gem install asciidoctor-pdf
+            run: gem install asciidoctor-pdf
 
       - name: Install Asciidoctor-Diagrams
         steps:
           - uses: actions/checkout@v2
-          - run: gem install asciidoctor-diagrams
+            run: gem install asciidoctor-diagrams
 
       - name: Install text hyphenation
         steps:
           - uses: actions/checkout@v2
-          - run: gem install text-hyphen
+            run: gem install text-hyphen
 
   create-pdf:
     name: Create PDF
