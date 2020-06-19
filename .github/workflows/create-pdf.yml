@@ -7,17 +7,15 @@ on:
       - kevin/github_action
 
 jobs:
-  setup:
-    name: Set up environment
+  update-procedure-document:
+    name: Update procedure document
     runs-on: macos-latest
     steps:
       - name: Setup Ruby, JRuby and TruffleRuby
         uses: ruby/setup-ruby@v1.38.0
         with:
           ruby-version: 2.3.7
-      - name: Check ruby version
-        run: ruby -v
-
+      
       - name: Setup OpenJDK
         uses: joschi/setup-jdk@v2
         with:
@@ -41,18 +39,6 @@ jobs:
 
       - name: Run main.rb
         run: ruby ./main.rb
-
-  # create-pdf:
-  #   name: Create PDF
-  #   needs: setup
-  #   runs-on: macos-latest
-  #   steps:
-  #     - name: Checkout repository code
-  #       uses: actions/checkout@v2
-  #     - name: Check ruby version
-  #       run: ruby -v
-  #     - name: Run main.rb
-  #       run: ruby ./main.rb
 
   # cleanup:
   #   name: Clean up repo
