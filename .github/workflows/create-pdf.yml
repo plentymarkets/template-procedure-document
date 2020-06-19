@@ -29,19 +29,19 @@ jobs:
             
       - name: Install Asciidoctor
         steps:
-          run: gem install asciidoctor
+          - run: gem install asciidoctor
 
       - name: Install Asciidoctor-PDF
         steps:
-          run: gem install asciidoctor-pdf
+          - run: gem install asciidoctor-pdf
 
       - name: Install Asciidoctor-Diagrams
         steps:
-          run: gem install asciidoctor-diagrams
+          - run: gem install asciidoctor-diagrams
 
       - name: Install text hyphenation
         steps:
-          run: gem install text-hyphen
+          - run: gem install text-hyphen
 
   create-pdf:
     name: Create PDF
