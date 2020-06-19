@@ -42,7 +42,7 @@ jobs:
       - name: Checkout repository code
         uses: actions/checkout@v2
       - name: Run main.rb
-        run: ruby /main.rb
+        run: ruby ./main.rb
 
   # cleanup:
   #   name: Clean up repo
