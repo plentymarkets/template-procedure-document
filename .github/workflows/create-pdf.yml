@@ -14,10 +14,7 @@ jobs:
       - name: Setup Ruby, JRuby and TruffleRuby
         uses: ruby/setup-ruby@v1.38.0
         with:
-          ruby-version: default
-          bundler: default
-          bundler-cache: false
-          working-directory: .
+          ruby-version: 2.3.7
 
   #     - name: Install JDK
   #       steps:
