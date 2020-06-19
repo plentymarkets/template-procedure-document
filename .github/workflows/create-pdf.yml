@@ -39,7 +39,7 @@ jobs:
     needs: setup
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Run main.rb
         run: ruby main.rb
 
   # cleanup:
