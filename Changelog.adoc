@@ -1,3 +1,5 @@
+Das ist der Changelog.
+
 [tabelle-changelog]]
 .Changelog mit Angabe der Version, des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
 [cols="1,2,1,2"]
