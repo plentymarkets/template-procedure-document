@@ -39,7 +39,7 @@ jobs:
     needs: setup
     defaults:
       run:
-        working-directory: .
+        working-directory: ./
     runs-on: macos-latest
     steps:
       - name: Run main.rb
