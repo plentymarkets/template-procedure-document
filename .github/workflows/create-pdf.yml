@@ -28,8 +28,8 @@ jobs:
       - name: Install Asciidoctor-PDF
         run: gem install asciidoctor-pdf
 
-      - name: Install Asciidoctor-Diagrams
-        run: gem install asciidoctor-diagrams
+      - name: Install Asciidoctor-Diagram
+        run: gem install asciidoctor-diagram
 
       - name: Install text hyphenation
         run: gem install text-hyphen
