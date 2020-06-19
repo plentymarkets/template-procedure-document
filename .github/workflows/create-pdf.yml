@@ -34,12 +34,13 @@ jobs:
       - name: Install text hyphenation
         run: gem install text-hyphen
 
-  # create-pdf:
-  #   name: Create PDF
-  #   runs-on: macos-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #       run: ruby main.rb
+  create-pdf:
+    name: Create PDF
+    needs: setup
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+        run: ruby main.rb
 
   # cleanup:
   #   name: Clean up repo
