@@ -1,0 +1,55 @@
+name: Create procedure document PDF
+
+on:
+  push:
+    branches:
+      - master
+      - kevin/github_action
+
+jobs:
+  setup:
+    name: Set up environment
+    runs-on: macos-latest
+    steps:
+      - name: Setup Ruby, JRuby and TruffleRuby
+          uses: ruby/setup-ruby@v1.38.0
+          with:
+            ruby-version: default
+            bundler: default
+            bundler-cache: false
+            working-directory: .
+
+      - name: Install JDK
+          steps:
+            - uses: actions/checkout@v2
+            - uses: joschi/setup-jdk@v2
+            with:
+              java-version: '11' # The OpenJDK version to make available on the path
+              architecture: 'x64' # defaults to 'x64'
+            
+      - name: Install Asciidoctor
+        run: gem install asciidoctor
+
+      - name: Install Asciidoctor-PDF
+        run: gem install asciidoctor-pdf
+
+      - name: Install Asciidoctor-Diagrams
+        run: gem install asciidoctor-diagrams
+        
+      - name: Install text hyphenation
+        run: gem install text-hyphen
+
+  create-pdf:
+    name: Create PDF
+    runs-on: macos-latest
+    steps:
+      - name: Execute main
+        run: ruby main.rb
+
+  cleanup:
+    name: Clean up repo
+    runs-on: macos-latest
+    steps:
+      - name: Remove images
+        run: rm -rf .asciidoctor/diagram
+
