@@ -40,6 +40,9 @@ jobs:
       - name: Run main.rb
         run: ruby ./main.rb
 
+      - name: List files
+        run: ls
+
   # cleanup:
   #   name: Clean up repo
   #   runs-on: macos-latest
