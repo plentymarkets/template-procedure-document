@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-[[tabelle-changelog]]
-=======
 = Changelog
 
 NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
 
 [tabelle-changelog]]
->>>>>>> master
 .Changelog mit Angabe der Version, des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
 [cols="1,2,1,2"]
 |====
