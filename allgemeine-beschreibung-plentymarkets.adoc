@@ -13,4 +13,4 @@ Einige Aktionen erfolgen jedoch auch automatisch durch das System und können ni
 
 Bei Bestellung eines plentymarkets Systems erhält der Anwender Login-Daten, mit denen er sich als Benutzer in sein System einloggen kann. Was Benutzer sind und was sie dürfen, wird zunächst beschrieben. Anschließend werden die Module einzeln genauer beschrieben.
 
-Definitionen und weitere Informationen zur Terminologie, die innerhalb des Systems plentymarkets verwendet wird, können jederzeit im link:https://knowledge.plentymarkets.com/glossar[Glossar im Benutzerhandbuch^] eingesehen werden.
+Definitionen und weitere Informationen zur Terminologie, die innerhalb des plentymarkets Systems verwendet wird, können jederzeit im link:https://knowledge.plentymarkets.com/glossar[Glossar im Benutzerhandbuch^] eingesehen werden.
