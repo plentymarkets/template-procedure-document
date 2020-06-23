@@ -634,7 +634,7 @@ link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#180[Einlagen und
 
 Während der Einlage/Entnahme wird ein Grund für die Buchung gewählt. Die Gründe "Einlage" und "Entnahme" sind standardmäßig in plentymarkets verfügbar und können nicht gelöscht werden. Anwender können jedoch weitere Gründe im Voraus ergänzen. Pro Grund kann auch ein <<#_buchungskonten_für_weitere_kassenvorfälle, Buchungskonto>> gespeichert werden. Somit ist es möglich, Beträge auf bestimmte Konten zu buchen.
 
-Einlagen und Entnahmen sind nur möglich, wenn plentyPOS im <<#_verfahren_bei_ausfall_von_plentypos, Online-Modus>> läuft, also eine Verbindung zum ERP-System plentymarkets besteht. Die Daten werden also direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert.
+Einlagen und Entnahmen sind im <<#_verfahren_bei_ausfall_von_plentypos, Online-Modus>> von plentyPOS, also mit bestehender Verbindung zum ERP-System plentymarkets, als auch im Offline-Modus möglich. Im Online-Modus werden die Daten werden direkt an das ERP-System plentymarkets übertragen und nicht auf dem mobilen Endgerät zwischengespeichert. Im Offline-Modus, also wenn keine Verbindung zum ERP-System plentymarkets besteht, werden die Daten vorübergehend auf dem mobilen Endgerät zwischengespeichert und bei der nächsten Verbindungsherstellung zum System synchronisiert.
 
 === Speicherung
 
