@@ -1622,6 +1622,44 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Märkte beschrieb
 legend
 Märkte
 |_ Amazon
+|_ bol.com
+|_ Cdiscount
+|_ Check24
+|_ eBay
+|_ Flubit
+|_ Fruugo
+|_ Google Shopping DE
+|_ Google Shopping Int.
+|_ grosshandel.eu
+|_ Hood
+|_ idealo
+|_ Kauflux
+|_ La Redoute
+|_ Mercateo
+|_ Neckermann Österreich Enterprise
+|_ Netto eStores
+|_ Otto
+|_ PIXmania
+|_ Rakuten.de
+|_ real.de
+|_ Restposten
+|_ ricardo
+|_ Shopgate
+|_ Yatego
+|_ Zalando
+|_ Zugangsdaten
+end legend
+----
+
+<<<
+
+=== Amazon
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Amazon
  |_ ASIN-Verknüpfung
   |_ Bearbeiten
  |_ Datenaustausch
@@ -1641,7 +1679,18 @@ Märkte
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
-|_ bol.com
+end legend
+----
+
+<<<
+
+=== bol.com
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+bol.com
  |_ bol.com Konfiguration
   |_ Anzeigen
   |_ Speichern/ändern
@@ -1650,11 +1699,44 @@ Märkte
   |_ Anzeigen
   |_ Löschen
   |_ Speichern
-|_ Cdiscount
+end legend
+----
+
+<<<
+
+=== Cdisount
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Cdiscount
  |_ Bearbeiten
-|_ Check24
+end legend
+----
+
+<<<
+
+=== Check24
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Check24
  |_ Bearbeiten
-|_ eBay
+end legend
+----
+
+<<<
+
+=== eBay
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+eBay
  |_ Datenaustausch
   |_ Bearbeiten
  |_ eBay-Kategorie
@@ -1697,6 +1779,10 @@ Märkte
 end legend
 ----
 
+<<<
+
+=== Flubit
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
@@ -1704,49 +1790,192 @@ legend
 Märkte
 |_ Flubit
  |_ Bearbeiten
-|_ Fruugo
+end legend
+----
+
+<<<
+
+=== Fruugo
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Fruugo
  |_ Bearbeiten
-|_ Google Shopping DE
+end legend
+----
+
+<<<
+
+=== Google Shopping DE
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Google Shopping DE
  |_ Bearbeiten
-|_ Google Shopping Int.
+end legend
+----
+
+<<<
+
+=== Google Shopping Int.
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Google Shopping Int.
  |_ Bearbeiten
-|_ grosshandel.eu
+end legend
+----
+
+<<<
+
+=== grosshandel.eu
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+grosshandel.eu
  |_ Bearbeiten
-|_ Hood
+end legend
+----
+
+<<<
+
+=== Hood
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Hood
  |_ Bearbeiten
-|_ idealo
+end legend
+----
+
+<<<
+
+=== idealo
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+idealo
  |_ Bearbeiten
-|_ Kauflux
+end legend
+----
+
+<<<
+
+=== Kauflux
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Kauflux
  |_ Einstellungen
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
-|_ La Redoute
+end legend
+----
+
+<<<
+
+=== La Redoute
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+La Redoute
  |_ Einstellungen
   |_ Bearbeiten
  |_ Import
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
-|_ Mercateo
+end legend
+----
+
+<<<
+
+=== Mercateo
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Mercateo
  |_ Datenexport
   |_ Bearbeiten
  |_ Einstellungen
   |_ Bearbeiten
  |_ Export-Verlauf
   |_ Bearbeiten
-|_ Neckermann Österreich Enterprise
+end legend
+----
+
+<<<
+
+=== Neckermann Österreich Enterprise
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Neckermann Österreich Enterprise
  |_ Bearbeiten
-|_ Netto eStores
+end legend
+----
+
+<<<
+
+=== Netto eStores
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Netto eStores
  |_ Bearbeiten
-|_ Otto
+end legend
+----
+
+<<<
+
+=== Otto
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Otto
  |_ Otto Cooperation
   |_ Bearbeiten
  |_ Otto Direktversand
   |_ Bearbeiten
  |_ Otto Integration
   |_ Bearbeiten
-|_ PIXmania
+end legend
+----
+
+<<<
+
+=== PIXmania
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+PIXmania
  |_ Einstellungen
   |_ Bearbeiten
  |_ Export-Verlauf
@@ -1756,38 +1985,116 @@ Märkte
 end legend
 ----
 
+=== Rakuten.de
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Märkte
-|_ Rakuten.de
+Rakuten.de
  |_ Bearbeiten
-|_ real.de
+end legend
+----
+
+<<<
+
+=== real.de
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+real.de
  |_ Einstellungen
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
-|_ Restposten
+end legend
+----
+
+<<<
+
+=== Restposten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Restposten
  |_ Bearbeiten
-|_ ricardo
+end legend
+----
+
+<<<
+
+=== ricardo
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+ricardo
  |_ Einstellungen
   |_ Bearbeiten
  |_ Konten
   |_ Bearbeiten
-|_ Shopgate
+end legend
+----
+
+<<<
+
+=== Shopgate
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Shopgate
  |_ Bearbeiten
-|_ Yatego
+end legend
+----
+
+<<<
+
+=== Yatego
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Yatego
  |_ Einstellungen
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
-|_ Zalando
+end legend
+----
+
+<<<
+
+=== Zalando
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Zalando
  |_ Einstellungen
   |_ Bearbeiten
  |_ Kategorieverknüpfung
   |_ Bearbeiten
-|_ Zugangsdaten
+end legend
+----
+
+<<<
+
+=== Zugangsdaten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Zugangsdaten
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
