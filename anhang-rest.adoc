@@ -232,62 +232,45 @@ Variante
 end legend
 ----
 
+<<<
+
 === Artikeletikett
-
-=== Artikelsets
-
-=== Attribut
-
-=== Barcode
-
-=== Bild
-
-=== Digital
-
-=== Einheit
-
-=== Einstellungen
-
-=== Freitextfeld
-
-=== GTIN
-
-=== Hersteller
-
-=== Inhalt
-
-=== Kategorie
-
-=== Lionbridge
-
-=== Markierung
-
-=== Merkmal
-
-=== Packstück
-
-=== Preiskalkulation
-
-=== Suche
-
-=== Verfügbarkeit
-
-=== Verkaufspreis
 
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Artikel
-|_ Artikeletikett
+Artikeletikett
  |_ Anzeigen
  |_ Bearbeiten
  |_ Erstellen
-|_ Artikelsets
+end legend
+----
+
+<<<
+
+=== Artikelsets
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikelsets
  |_ Aktualisieren
  |_ Erstellen
  |_ Löschen
- |_ Attribut
+end legend
+----
+
+<<<
+
+=== Attribut
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Attribut
   |_ Aktualisieren
   |_ Anzeigen
   |_ Attributname
@@ -313,19 +296,63 @@ Artikel
  |_ Bearbeiten
  |_ Erstellen
  |_ Löschen
-|_ Barcode
+end legend
+----
+
+<<<
+
+=== Barcode
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Barcode
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
  |_ Löschen
-|_ Bild
+end legend
+----
+
+<<<
+
+=== Bild
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Bild
  |_ Einstellungen
   |_ Bearbeiten
  |_ Größe
   |_ Bearbeiten
-|_ Digital
+end legend
+----
+
+<<<
+
+=== Digital
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Digital
  |_ Bearbeiten
-|_ Einheit
+end legend
+----
+
+<<<
+
+=== Einheit
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Einheit
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
@@ -339,18 +366,54 @@ Artikel
 end legend
 ----
 
+<<<
+
+=== Einstellungen
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Artikel
-|_ Einstellungen
+Einstellungen
  |_ Bearbeiten
-|_ Freitextfeld
+end legend
+----
+
+<<<
+
+=== Freitextfeld
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Freitextfeld
  |_ Bearbeiten
-|_ GTIN
+end legend
+----
+
+<<<
+
+=== GTIN
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+GTIN
  |_ Bearbeiten
-|_ Hersteller
+end legend
+----
+
+<<<
+
+=== Hersteller
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Hersteller
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
@@ -366,18 +429,73 @@ Artikel
   |_ Erstellen
   |_ Löschen
  |_ Löschen
-|_ Inhalt
+end legend
+----
+
+<<<
+
+=== Inhalt
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Inhalt
  |_ Anzeigen
-|_ Kategorie
+end legend
+----
+
+<<<
+
+=== Kategorie
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Kategorie
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Lionbridge
+end legend
+----
+
+<<<
+
+=== Lionbridge
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Lionbridge
  |_ Anzeigen
-|_ Markierung
+end legend
+----
+
+<<<
+
+=== Markierung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Markierung
  |_ Bearbeiten
-|_ Merkmal
+end legend
+----
+
+<<<
+
+=== Merkmal
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Merkmal
  |_ Aktualisieren
  |_ Anzeigen
  |_ Auswahl
@@ -411,16 +529,41 @@ Artikel
 end legend
 ----
 
+<<<
+
+=== Packstück
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Artikel
-|_ Packstück
+Packstück
  |_ Anzeigen
-|_ Preiskalkulation
+end legend
+----
+
+<<<
+
+=== Preiskalkulation
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Preiskalkulation
  |_ Bearbeiten
-|_ Suche
+end legend
+----
+
+<<<
+
+=== Suche
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Suche
  |_ Backend
   |_ Bearbeiten
  |_ Frontend
@@ -428,9 +571,31 @@ Artikel
    |_ Bearbeiten
   |_ Sprache
    |_ Bearbeiten
-|_ Verfügbarkeit
+end legend
+----
+
+<<<
+
+=== Verfügbarkeit
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verfügbarkeit
  |_ Bearbeiten
-|_ Verkaufspreis
+end legend
+----
+
+<<<
+
+=== Verkaufspreis
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verkaufspreis
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
@@ -467,6 +632,8 @@ Artikel
   |_ Deaktivieren
 end legend
 ----
+
+<<<
 
 == Aufträge
 
