@@ -2,6 +2,46 @@
 
 Die folgenden Diagramme listen die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
 
+Die Berechtigungen sind in folgende Bereiche unterteilt:
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Berechtigungen
+|_ Artikel
+|_ Aufträge
+|_ Authorisierung
+|_ Benutzer
+|_ Blog
+|_ Buchhaltung
+|_ CMS
+|_ CRM
+|_ Daten
+|_ Editoren
+|_ Einrichtung
+|_ Kommentare
+|_ Listing
+|_ Mandant
+|_ Markierung
+|_ Märkte
+|_ plentyApp-Einstellungen
+|_ plentyBase-Einstellungen
+|_ Plugins
+|_ POS
+|_ Prozesse
+|_ Report
+|_ Service
+|_ Service-Center
+|_ Stammdaten
+|_ Start
+|_ Warenbestände
+|_ Zahlenformat
+end legend
+----
+
+<<<
+
 == Artikel
 
 In diesem Abschnitt werden die Berechtigungen für den Bereich Artikel beschrieben.
@@ -12,37 +52,179 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Artikel beschrieb
 legend
 Artikel
 |_ Aktionen
-  |_ Bearbeiten
 |_ Artikel
+|_ Artikeletikett
+|_ Artikelsets
+|_ Attribut
+|_ Barcode
+|_ Bild
+|_ Digital
+|_ Einheit
+|_ Einstellungen
+|_ Freitextfeld
+|_ GTIN
+|_ Hersteller
+|_ Inhalt
+|_ Kategorie
+|_ Lionbridge
+|_ Markierung
+|_ Merkmal
+|_ Packstück
+|_ Preiskalkulation
+|_ Suche
+|_ Verfügbarkeit
+|_ Verkaufspreis
+end legend
+----
+
+<<<
+
+=== Aktionen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Aktionen
+|_ Bearbeiten
+end legend
+----
+
+<<<
+
+=== Artikel
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikel
+|_ Aktualisieren
+|_ Anzeigen
+|_ Artikelbild
   |_ Aktualisieren
   |_ Anzeigen
-  |_ Artikelbild
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
-    |_ Artikelbildname
-      |_ Aktualisieren
-      |_ Anzeigen
-      |_ Erstellen
-      |_ Löschen
-    |_ Verfügbarkeit
-      |_ Aktualisieren
-      |_ Anzeigen
-      |_ Erstellen
-      |_ Löschen
-  |_ Cross-Selling
-    |_ Aktivieren
-    |_ Deaktivieren
-    |_ Anzeigen
   |_ Erstellen
   |_ Löschen
-  |_ Seriennummer
+  |_ Artikelbildname
     |_ Aktualisieren
     |_ Anzeigen
     |_ Erstellen
     |_ Löschen
-  |_ Set
+  |_ Verfügbarkeit
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+|_ Cross-Selling
+  |_ Aktivieren
+  |_ Deaktivieren
+  |_ Anzeigen
+|_ Erstellen
+|_ Löschen
+|_ Seriennummer
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+|_ Set
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+|_ Variante
+end legend
+----
+
+<<<
+
+==== Variante
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Variante
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Artikelpaket
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Artikeltext
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Attribut
+    |_ Wert
+    |_ Anzeigen
+  |_ Barcode
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Bestandskorrektur
+  |_ Einkaufspreis
+  |_ Erstellen
+  |_ Kategorie
+    |_ Aktivieren
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Deaktivieren
+  |_ Lagerdaten
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Lieferantendaten
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Löschen
+  |_ Mandant
+    |_ Aktivieren
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Deaktivieren
+  |_ Marktplatz
+    |_ Aktivieren
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ ASIN/ePID
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+    |_ Deaktivieren
+  |_ Merkmal
+    |_ Aktivieren
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Deaktivieren
+    |_ Eigenschaftswerte
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+    |_ Text
+      |_ Aktualisieren
+      |_ Anzeigen
+      |_ Erstellen
+      |_ Löschen
+  |_ Preis
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+  |_ Standardkategorie
+    |_ Aktivieren
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Deaktivieren
+  Zusätzliche SKU
     |_ Aktualisieren
     |_ Anzeigen
     |_ Erstellen
@@ -50,98 +232,47 @@ Artikel
 end legend
 ----
 
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Artikel
-  |_ Variante
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Artikelpaket
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-    |_ Artikeltext
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-    |_ Attribut
-     |_ Wert
-      |_ Anzeigen
-    |_ Barcode
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-    |_ Bestandskorrektur
-    |_ Einkaufspreis
-    |_ Erstellen
-    |_ Kategorie
-     |_ Aktivieren
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Deaktivieren
-    |_ Lagerdaten
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-    |_ Lieferantendaten
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-    |_ Löschen
-    |_ Mandant
-     |_ Aktivieren
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Deaktivieren
-    |_ Marktplatz
-     |_ Aktivieren
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ ASIN/ePID
-      |_ Aktualisieren
-      |_ Anzeigen
-      |_ Erstellen
-      |_ Löschen
-     |_ Deaktivieren
-    |_ Merkmal
-     |_ Aktivieren
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Deaktivieren
-     |_ Eigenschaftswerte
-      |_ Aktualisieren
-      |_ Anzeigen
-      |_ Erstellen
-      |_ Löschen
-      |_ Text
-       |_ Aktualisieren
-       |_ Anzeigen
-       |_ Erstellen
-       |_ Löschen
-    |_ Preis
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-    |_ Standardkategorie
-     |_ Aktivieren
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Deaktivieren
-    Zusätzliche SKU
-     |_ Aktualisieren
-     |_ Anzeigen
-     |_ Erstellen
-     |_ Löschen
-end legend
-----
+=== Artikeletikett
+
+=== Artikelsets
+
+=== Attribut
+
+=== Barcode
+
+=== Bild
+
+=== Digital
+
+=== Einheit
+
+=== Einstellungen
+
+=== Freitextfeld
+
+=== GTIN
+
+=== Hersteller
+
+=== Inhalt
+
+=== Kategorie
+
+=== Lionbridge
+
+=== Markierung
+
+=== Merkmal
+
+=== Packstück
+
+=== Preiskalkulation
+
+=== Suche
+
+=== Verfügbarkeit
+
+=== Verkaufspreis
 
 [plantuml, format=png, opts="inline"]
 ----
