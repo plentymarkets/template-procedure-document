@@ -14,8 +14,6 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 include::Changelog.adoc[]
 
-:leveloffset: +1
-
 <<<
     
 include::allgemeine-beschreibung-plentymarkets.adoc[]
