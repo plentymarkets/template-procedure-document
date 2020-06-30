@@ -2321,6 +2321,29 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Mandant beschrieb
 legend
 Mandant
 |_ Dienste
+|_ Domains
+|_ Einstellungen
+|_ Feedback
+|_ FTP-Einstellungen
+|_ Geschenkservice
+|_ Gewinnspiele
+|_ Live-Shopping
+|_ Mandantenspezifische Einstellungen
+|_ Sprachpakete
+|_ SSL-Einstellungen
+|_ Statistik
+|_ Versionseinstellungen
+----
+
+<<<
+
+=== Dienste
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Dienste
  |_ bit.ly
   |_ Bearbeiten
  |_ Cliplister
@@ -2341,21 +2364,109 @@ Mandant
   |_ Bearbeiten
  |_ Twitter
   |_ Bearbeiten
-|_ Domains
+end legend
+----
+
+<<<
+
+=== Domains
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Domains
  |_ Domains Bearbeiten
-|_ Einstellungen
+end legend
+----
+
+<<<
+
+=== Einstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Einstellungen
   |_ Bearbeiten
-|_ Feedback
+end legend
+----
+
+<<<
+
+=== Feedback
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Feedback
   |_ Bearbeiten
-|_ FTP-Einstellungen
+end legend
+----
+
+<<<
+
+=== FTP-Einstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+FTP-Einstellungen
   |_ Bearbeiten
-|_ Geschenkservice
+end legend
+----
+
+<<<
+
+=== Geschenkservice
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Geschenkservice
   |_ Bearbeiten
-|_ Gewinnspiele
+end legend
+----
+
+<<<
+
+=== Gewinnspiele
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Gewinnspiele
   |_ Bearbeiten
-|_ Live-Shopping
+end legend
+----
+
+<<<
+
+=== Live-Shopping
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Live-Shopping
   |_ Bearbeiten
-|_ Mandantenspezifische Einstellungen
+end legend
+----
+
+<<<
+
+=== Mandantenspezifische Einstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Mandantenspezifische Einstellungen
  |_ Affiliate
   |_ Bearbeiten
  |_ Bearbeiten
@@ -2376,13 +2487,57 @@ Mandant
  |_ Zolltarifnummern
    |_ Anzeigen
    |_ Bearbeiten
-|_ Sprachpakete
+end legend
+----
+
+<<<
+
+=== Sprachpakete
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Sprachpakete
   |_ Bearbeiten
-|_ SSL-Einstellungen
+end legend
+----
+
+<<<
+
+=== SSL-Einstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+SSL-Einstellungen
   |_ Bearbeiten
-|_ Statistik
+end legend
+----
+
+<<<
+
+=== Statistik
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Statistik
   |_ Bearbeiten
-|_ Versionseinstellungen
+end legend
+----
+
+<<<
+
+=== Versionseinstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Versionseinstellungen
   |_ Bearbeiten
 end legend
 ----
