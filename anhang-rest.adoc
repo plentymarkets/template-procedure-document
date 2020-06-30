@@ -148,87 +148,22 @@ Variante
   |_ Aktualisieren
   |_ Anzeigen
   |_ Artikelpaket
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
   |_ Artikeltext
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
   |_ Attribut
-    |_ Wert
-    |_ Anzeigen
   |_ Barcode
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
   |_ Bestandskorrektur
   |_ Einkaufspreis
   |_ Erstellen
   |_ Kategorie
-    |_ Aktivieren
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Deaktivieren
   |_ Lagerdaten
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
   |_ Lieferantendaten
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
   |_ Löschen
   |_ Mandant
-    |_ Aktivieren
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Deaktivieren
   |_ Marktplatz
-    |_ Aktivieren
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ ASIN/ePID
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
-    |_ Deaktivieren
   |_ Merkmal
-    |_ Aktivieren
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Deaktivieren
-    |_ Eigenschaftswerte
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
-    |_ Text
-      |_ Aktualisieren
-      |_ Anzeigen
-      |_ Erstellen
-      |_ Löschen
   |_ Preis
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
   |_ Standardkategorie
-    |_ Aktivieren
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Deaktivieren
   Zusätzliche SKU
-    |_ Aktualisieren
-    |_ Anzeigen
-    |_ Erstellen
-    |_ Löschen
 end legend
 ----
 
@@ -1852,6 +1787,8 @@ Daten
 |_ Sync Daten-Log
 end legend
 ----
+
+<<<
 
 === Backup
 
