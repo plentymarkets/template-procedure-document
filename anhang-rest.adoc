@@ -1259,6 +1259,29 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich CMS beschrieben.
 legend
 CMS
 |_ Alt
+|_ Artikelgalerie
+|_ Container-Verknüpfungen
+|_ Dokumente
+|_ Feedbacks
+|_ Formulare
+|_ Mehrsprachigkeit
+|_ Rechtliche Angaben
+|_ RSS
+|_ ShopBuilder
+|_ Templates
+|_ Webspace
+end legend
+----
+
+<<<
+
+=== Alt
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Alt
  |_ Blog
    |_ Anzeigen
  |_ Feedback
@@ -1271,13 +1294,57 @@ CMS
    |_ Anzeigen
  |_ Webspace (alt)
   |_ Anzeigen
-|_ Artikelgalerie
+end legend
+----
+
+<<<
+
+=== Artikelgallerie
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikelgalerie
   |_ Bearbeiten
-|_ Container-Verknüpfungen
+end legend
+----
+
+<<<
+
+=== Container-Verknüpfungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Container-Verknüpfungen
   |_ Anzeigen
-|_ Dokumente
+end legend
+----
+
+<<<
+
+=== Dokumente
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Dokumente
   |_ Anzeigen
-|_ Feedbacks
+end legend
+----
+
+<<<
+
+=== Feedbacks
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Feedbacks
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
@@ -1291,22 +1358,99 @@ CMS
   |_ Löschen
  |_ Löschen
  |_ Migrieren
-|_ Formulare
+end legend
+----
+
+<<<
+
+=== Formulare
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Formulare
  |_ Bearbeiten
-|_ Mehrsprachigkeit
+end legend
+----
+
+<<<
+
+=== Mehrsprachigkeit
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Mehrsprachigkeit
  |_ Anzeigen
-|_ Rechtliche Angaben
+end legend
+----
+
+<<<
+
+=== Rechtliche Angaben
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Rechtliche Angaben
  |_ Speichern
-|_ RSS
+end legend
+----
+
+<<<
+
+=== RSS
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+RSS
  |_ Bearbeiten
-|_ ShopBuilder
+end legend
+----
+
+<<<
+
+=== ShopBuilder
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+ShopBuilder
  |_ Anzeigen
-|_ Templates
+end legend
+----
+
+<<<
+
+=== Templates
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Templates
  |_ Designs
   |_ Design-Einstellungen
    |_ Aktualisieren
    |_ Kopieren
-|_ Webspace
+end legend
+----
+
+<<<
+
+=== Webspace
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Webspace
  |_ Anzeigen
 end legend
 ----
