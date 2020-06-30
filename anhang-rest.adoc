@@ -2288,22 +2288,113 @@ Listing
 |_ Aktualisieren
 |_ Anzeigen
 |_ Bestandsabhängigkeit
- |_ Anzeigen
 |_ Einstellungen
- |_ Bearbeiten
 |_ Erstellen
 |_ Kaufabwicklung
- |_ Bearbeiten
 |_ Layout-Vorlage
+|_ Layouts
+|_ Listing-Typ
+|_ Löschen
+|_ Market-Listing
+|_ Optionenvorlage
+|_ Verkaufsplaner
+|_ Versandprofil
+|_ Verzeichnisse
+|_ Warenbestand
+|_ Zukünftige Listings
+end legend
+----
+
+<<<
+
+=== Bestandsabhängigkeit
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Listing
+Bestandsabhängigkeit
+ |_ Anzeigen
+end legend
+----
+
+<<<
+
+=== Einstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Einstellungen
+ |_ Bearbeiten
+end legend
+----
+
+<<<
+
+=== Kaufabwicklung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Kaufabwicklung
+ |_ Bearbeiten
+end legend
+----
+
+<<<
+
+=== Layout-Vorlage
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Layout-Vorlage
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Layouts
+end legend
+----
+
+<<<
+
+=== Layouts
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Layouts
  |_ Bearbeiten
-|_ Listing-Typ
+end legend
+----
+
+<<<
+
+=== Listing-Typ
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Listing-Typ
  |_ Anzeigen
-|_ Löschen
-|_ Market-Listing
+end legend
+----
+
+<<<
+
+=== Market-Listing
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Market-Listing
  |_ Aktive Listings
   |_ Aktualisieren
   |_ Anzeigen
@@ -2325,20 +2416,86 @@ Listing
   |_ Anzeigen
   |_ Löschen
   |_ Erstellen
-|_ Optionenvorlage
+end legend
+----
+
+<<<
+
+=== Optionenvorlage
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Optionenvorlage
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Verkaufsplaner
+end legend
+----
+
+<<<
+
+=== Verkaufsplaner
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verkaufsplaner
  |_ Bearbeiten
-|_ Versandprofil
+end legend
+----
+
+<<<
+
+=== Versandprofil
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Versandprofil
  |_ Anzeigen
-|_ Verzeichnisse
+end legend
+----
+
+<<<
+
+=== Verzeichnisse
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verzeichnisse
  |_ Bearbeiten
-|_ Warenbestand
+end legend
+----
+
+<<<
+
+=== Warenbestand
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Warenbestand
  |_ Bearbeiten
-|_ Zukünftige Listings
+end legend
+----
+
+<<<
+
+=== Zukünftige Listings
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Zukünftige Listings
  |_ Anzeigen
 end legend
 ----
