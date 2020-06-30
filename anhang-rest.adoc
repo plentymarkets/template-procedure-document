@@ -44,7 +44,7 @@ end legend
 
 == Artikel
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Artikel beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Artikel aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -793,7 +793,7 @@ end legend
 
 == Aufträge
 
-In diesem Abaschnitt werden die Berechtigungen für den Bereich Aufträge beschrieben.
+In diesem Abaschnitt werden die Berechtigungen für den Bereich Aufträge aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1106,7 +1106,7 @@ end legend
 
 == Authorisierung
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Authorisierung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Authorisierung aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1127,7 +1127,7 @@ end legend
 
 == Benutzer
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Benutzer beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Benutzer aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1142,7 +1142,7 @@ end legend
 
 == Blog
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Blog beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Blog aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1160,7 +1160,7 @@ end legend
 
 == Buchhaltung
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Buchhaltung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Buchhaltung aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1186,7 +1186,7 @@ end legend
 
 == CMS
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich CMS beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich CMS aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1394,7 +1394,7 @@ end legend
 
 == CRM
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich CRM beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich CRM aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -1764,7 +1764,7 @@ end legend
 
 == Daten
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Daten beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Daten aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2007,7 +2007,7 @@ end legend
 
 == Editoren
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Editoren beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Editoren aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2022,7 +2022,7 @@ end legend
 
 == Einrichtung
 
-In diesem Abaschnitt werden die Berechtigungen für den Bereich Einrichtung beschrieben.
+In diesem Abaschnitt werden die Berechtigungen für den Bereich Einrichtung aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2261,7 +2261,7 @@ end legend
 
 == Kommentare
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Kommentare beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Kommentare aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2278,7 +2278,7 @@ end legend
 
 == Listing
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Listing beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Listing aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2504,7 +2504,7 @@ end legend
 
 == Mandant
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Mandant beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Mandant aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2738,7 +2738,7 @@ end legend
 
 == Markierung
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Markierung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Markierung aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -2755,7 +2755,7 @@ end legend
 
 == Märkte
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Märkte beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Märkte aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3249,7 +3249,7 @@ end legend
 
 == plentyApp-Einstellungen
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich plentyApp-Einstellungen beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich plentyApp-Einstellungen aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3264,7 +3264,7 @@ end legend
 
 == plentyBase-Einstellungen
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBase-Einstellungen beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBase-Einstellungen aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3279,7 +3279,7 @@ end legend
 
 == Plugins
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Plugins beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Plugins aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3327,7 +3327,7 @@ end legend
 
 == POS
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich POS beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich POS aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3351,7 +3351,7 @@ end legend
 
 == Prozesse
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Prozesse beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Prozesse aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3367,7 +3367,7 @@ end legend
 
 == Report
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Report beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Report aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3403,7 +3403,7 @@ end legend
 
 == Service
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Service beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Service aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3419,7 +3419,7 @@ end legend
 
 == Service-Center
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Service-Center beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Service-Center aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3433,7 +3433,7 @@ end legend
 
 == Stammdaten
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Stammdaten beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Stammdaten aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3448,7 +3448,7 @@ end legend
 
 == Start
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Start beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Start aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3466,7 +3466,7 @@ end legend
 
 == Warenbestände
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Warenbestände beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Warenbestände aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3522,7 +3522,7 @@ end legend
 
 == Zahlenformat
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Zahlenformat beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Zahlenformat aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
@@ -3537,7 +3537,7 @@ end legend
 
 == Zertifizierung
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Zertifizierung beschrieben.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Zertifizierung aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----

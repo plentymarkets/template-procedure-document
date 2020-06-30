@@ -1,9 +1,9 @@
 = Technische Systemdokumentation plentymarkets
-:revnumber: 7.0
-:revdate: 30. Juni 2020
 :toc:
+:toc-title: Inhaltsverzeichnis
 :toclevels: 3
 :hyphens:
+:table-caption: Tabelle
 
 :leveloffset: +1
 
