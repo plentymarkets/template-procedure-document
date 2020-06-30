@@ -1,4 +1,6 @@
 = Technische Systemdokumentation plentymarkets
+:revnumber: 7.0
+:revdate: 30. Juni 2020
 :toc:
 :toclevels: 3
 :hyphens:
