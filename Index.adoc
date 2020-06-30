@@ -1,16 +1,15 @@
+= Technische Systemdokumentation plentymarkets
+:revnumber: 7.0
+:revdate: 30. Juni 2020
 :toc:
 :toclevels: 3
 :hyphens:
 
-= Technische Systemdokumentation plentymarkets
+:leveloffset: +1
 
 include::document-purpose.adoc[]
 
 <<<
-
-== Changelog
-
-NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
 
 include::Changelog.adoc[]
 
@@ -68,7 +67,7 @@ include::modul-gutscheine.adoc[]
 
 <<<
 
-include::online-store-flow-chart.adoc[]
+include::modul-webshop.adoc[]
 
 <<<
 
@@ -93,3 +92,5 @@ include::wording-examples.adoc[]
 <<<
 
 include::anhang-rest.adoc[]
+
+:leveloffset: -1

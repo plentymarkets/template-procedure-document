@@ -1,4 +1,6 @@
-Das ist der Changelog.
+= Changelog
+
+NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
 
 [tabelle-changelog]]
 .Changelog mit Angabe der Version, des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
@@ -7,7 +9,16 @@ Das ist der Changelog.
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
-
+|V7.0|Allgemein |30.06.2020 |Geändert: Verkaufsgutscheine wurden in Mehrzweckgutscheine umbenannt.
+|V7.0|App |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
+|V7.0|Auftragsabwicklung |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
+|V7.0|Auftragsabwicklung |30.06.2020 |Neu: Bereich Auftragsdokumente wurde hinzugefügt.
+|V7.0|Auftragsabwicklung |30.06.2020 |Neu: Bereich Buchhaltung wurde hinzugefügt.
+|V7.0|Auftragsabwicklung |30.06.2020 |Neu: Bereich Zahlungsverkehr wurde hinzugefügt.
+|V7.0|plentyDrive |30.06.2020 |Geändert: Abschnitt zu plentyDrive wurde entfernt.
+|V7.0|POS |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
+|V7.0|REST-Berechtigungen |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
+|V7.0|Webshop |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
 |V6.3 |POS |07.05.2020 |Geändert: Dieser Bereich wurde durch Informationen zur Kassensicherungsverordnung ergänzt.
 |V6.2|REST-Berechtigungen |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.
 |V6.2|Marketplace-Plugins |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.
