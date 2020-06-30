@@ -580,6 +580,8 @@ Erstellte steuerrelevante Dokumente (wie z.B. Rechnungen oder Mahnungen) können
 *Besonderheit Mahnungen und Stornobeleg Mahnung:* Eine Mahnung kann nur erstellt werden, wenn bereits eine gültige Rechnung existiert. Daher ist es auch nur möglich eine Rechnung zu stornieren, wenn vorher eventuell bestehende Mahnungen storniert werden. Dafür gibt es einen eigenen Dokumententyp, den Stornobeleg Mahnung. +
 Im System stehen dem Anwender 4 Mahnstufen zur Verfügung. Für jede Mahnstufe muss eine neue Mahnung mit eigenen Mahngebühren erstellt werden. Diese Mahngebühren für die verschiedenen Mahnstufen werden vom Anwender festgelegt, sie liegen dementsprechend in seinem Ermessen.
 
+<<<
+
 == Buchhaltung
 
 Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatzsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Unterkapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung entscheiden.
