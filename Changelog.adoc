@@ -17,7 +17,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 |V7.0|Auftragsabwicklung |30.06.2020 |Neu: Bereich Zahlungsverkehr wurde hinzugefügt.
 |V7.0|plentyDrive |30.06.2020 |Geändert: Abschnitt zu plentyDrive wurde entfernt.
 |V7.0|POS |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
-|V7.0|REST-Berechtigungen |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet
+|V7.0|REST-Berechtigungen |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.0|Webshop |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
 |V6.3 |POS |07.05.2020 |Geändert: Dieser Bereich wurde durch Informationen zur Kassensicherungsverordnung ergänzt.
 |V6.2|REST-Berechtigungen |06.12.2019 |Neu: Dieser Bereich wurde hinzugefügt.
