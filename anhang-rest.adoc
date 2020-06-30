@@ -2066,18 +2066,60 @@ legend
 Eigenschaft
  |_ Aktualisieren
  |_ Amazon-Eigenschaftsverknüpfung
-  |_ Aktualisieren
-  |_ Anzeigen
-  |_ Erstellen
-  |_ Löschen
  |_ Anzeigen
  |_ Auswahl
+ |_ Erstellen
+ |_ Gruppe
+ |_ Löschen
+ |_ Markt
+ |_ Name
+ |_ Option
+ |_ Verfügbarkeit
+ |_ Verknüpfung
+end legend
+----
+
+<<<
+
+==== Amazon-Eigenschaftsverknüpfung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Amazon-Eigenschaftsverknüpfung
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
- |_ Erstellen
- |_ Gruppe
+end legend
+----
+
+<<<
+
+==== Auswahl
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Auswahl
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+==== Gruppe
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Gruppe
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
@@ -2087,28 +2129,82 @@ Eigenschaft
    |_ Erstellen
    |_ Löschen
   |_ Löschen
- |_ Löschen
- |_ Markt
+end legend
+----
+
+<<<
+
+==== Markt
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Markt
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
- |_ Name
+end legend
+----
+
+<<<
+
+==== Name
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Name
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
- |_ Option
+end legend
+----
+
+<<<
+
+==== Option
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Option
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
- |_ Verfügbarkeit
+end legend
+----
+
+<<<
+
+==== Verfügbarkeit
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verfügbarkeit
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
- |_ Verknüpfung
+end legend
+----
+
+<<<
+
+==== Verknüpfung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verknüpfung
   |_ Aktualisieren
   |_ Anzeigen
   |_ Aufpreis
