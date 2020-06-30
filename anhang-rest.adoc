@@ -1467,12 +1467,52 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich CRM beschrieben.
 legend
 CRM
 |_ Adress-Layout
+|_ Adresse
+|_ Auftragszusammenfassung
+|_ Bankdaten
+|_ E-Mail
+|_ Eigenschaft
+|_ Event
+|_ Firma
+|_ Kampagne
+|_ Kontakt
+|_ Kontaktklasse
+|_ Nachricht
+|_ Newsletter
+|_ Passwort
+|_ Schuldner
+|_ Serviceeinheit
+|_ Ticket
+|_ Typ
+|_ Umsatzsteuer-ID
+----
+
+<<<
+
+=== Adress-Layout
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Adress-Layout
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
  |_ Erstellen
  |_ Löschen
-|_ Adresse
+end legend
+----
+
+<<<
+
+=== Adresse
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Adresse
  |_ Adresstyp
   |_ Aktualisieren
   |_ Anzeigen
@@ -1487,18 +1527,51 @@ CRM
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
-|_ Auftragszusammenfassung
+end legend
+----
+
+<<<
+
+=== Auftragszusammenfassung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Auftragszusammenfassung
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Bankdaten
+end legend
+----
+
+<<<
+
+=== Bankdaten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Bankdaten
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
  |_ Erstellen
  |_ Löschen
-|_ E-Mail
+end legend
+----
+
+<<<
+
+=== E-Mail
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+E-Mail
  |_ Automatischer Versand bearbeiten
  |_ E-Mail-Einstellungen bearbeiten
  |_ HTML-Design bearbeiten
@@ -1507,19 +1580,63 @@ CRM
  |_ Signatur bearbeiten
  |_ Vorlagen bearbeiten
  |_ Zugangsdaten bearbeiten
-|_ Eigenschaft
+end legend
+----
+
+<<<
+
+=== Eigenschaft
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Eigenschaft
  |_ Bearbeiten
-|_ Event
+end legend
+----
+
+<<<
+
+=== Event
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Event
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Firma
+end legend
+----
+
+<<<
+
+=== Firma
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Firma
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Kampagne
+end legend
+----
+
+<<<
+
+=== Kampagne
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Kampagne
  |_ Anzeigen
  |_ Bearbeiten
  |_ Code
@@ -1528,18 +1645,18 @@ CRM
   |_ Löschen
  |_ Erstellen
  |_ Löschen
-|_ Löschen
 end legend
 ----
 
 <<<
 
+=== Kontakt
+
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-CRM
-|_ Kontakt
+Kontakt
  |_ Aktualisieren
  |_ Anonymisieren
  |_ Anzeigen
@@ -1550,14 +1667,47 @@ CRM
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
-|_ Kontaktklasse
+end legend
+----
+
+<<<
+
+=== Kontaktklasse
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Kontaktklasse
  |_ Bearbeiten
-|_ Nachricht
+end legend
+----
+
+<<<
+
+=== Nachricht
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Nachricht
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
  |_ Löschen
-|_ Newsletter
+end legend
+----
+
+<<<
+
+=== Newsletter
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Newsletter
  |_ Anzeigen
  |_ Bearbeiten
  |_ Erstellen
@@ -1571,14 +1721,58 @@ CRM
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
-|_ Passwort
+end legend
+----
+
+<<<
+
+=== Passwort
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Passwort
  |_ Bearbeiten
-|_ Schuldner
+end legend
+----
+
+<<<
+
+=== Schuldner
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Schuldner
  |_ Anzeigen
-|_ Serviceeinheiten
+end legend
+----
+
+<<<
+
+=== Serviceeinheiten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Serviceeinheiten
  |_ Anzeigen
  |_ Bearbeiten
-|_ Ticket
+end legend
+----
+
+<<<
+
+=== Ticket
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Ticket
  |_ Ticket aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
@@ -1601,9 +1795,31 @@ CRM
    |_ Anzeigen
   |_ Öffentliche Ticket-Nachricht
    |_ Anzeigen
-|_ Typ
+end legend
+----
+
+<<<
+
+=== Typ
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Typ
  |_ Bearbeiten
-|_ Umsatzsteuer-ID
+end legend
+----
+
+<<<
+
+=== Umsatzsteuer-ID
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Umsatzsteuer-ID
  |_ Bearbeiten
 end legend
 ----
