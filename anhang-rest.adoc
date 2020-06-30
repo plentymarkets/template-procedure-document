@@ -2096,6 +2096,7 @@ Einrichtung
 |_ Eigenschaft
 |_ Sprache
 |_ Tag
+end legend
 ----
 
 <<<
@@ -2333,6 +2334,7 @@ Mandant
 |_ SSL-Einstellungen
 |_ Statistik
 |_ Versionseinstellungen
+end legend
 ----
 
 <<<
