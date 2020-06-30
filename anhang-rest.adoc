@@ -2093,6 +2093,20 @@ In diesem Abaschnitt werden die Berechtigungen für den Bereich Einrichtung besc
 legend
 Einrichtung
 |_ Assistenten
+|_ Eigenschaft
+|_ Sprache
+|_ Tag
+----
+
+<<<
+
+=== Assistenten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Assistenten
  |_ Anzeigen
  |_ Datensatz
   |_ Abschließen
@@ -2100,7 +2114,18 @@ Einrichtung
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
-|_ Eigenschaft
+end legend
+----
+
+<<<
+
+=== Eigenschaft
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Eigenschaft
  |_ Aktualisieren
  |_ Amazon-Eigenschaftsverknüpfung
   |_ Aktualisieren
@@ -2160,10 +2185,32 @@ Einrichtung
    |_ Anzeigen
    |_ Erstellen
    |_ Löschen
-|_ Sprache
+end legend
+----
+
+<<<
+
+=== Sprache
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Sprache
  |_ Sprachumgebung
   |_ Konfigurieren
-|_ Tag
+end legend
+----
+
+<<<
+
+=== Tag
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Tag
  |_ Aktualisieren
  |_ Anzeigen
  |_ Erstellen
