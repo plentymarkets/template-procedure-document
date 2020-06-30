@@ -1485,6 +1485,7 @@ CRM
 |_ Ticket
 |_ Typ
 |_ Umsatzsteuer-ID
+end legend
 ----
 
 <<<
@@ -1836,8 +1837,42 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Daten beschrieben
 legend
 Daten
 |_ Backup
- |_ Bearbeiten
 |_ Datenaustausch
+|_ Datenbereinigung
+|_ Druckverlauf
+|_ Export
+|_ Gelöschte Logs
+|_ Historie
+|_ Import
+|_ Log
+|_ Migration
+|_ Report
+|_ Status
+|_ Sync
+|_ Sync Daten-Log
+end legend
+----
+
+=== Backup
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Backup
+ |_ Bearbeiten
+end legend
+----
+
+<<<
+
+=== Datenaustausch
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Datenaustausch
  |_ Export
   |_ Dynamischer Export
    |_ Anzeigen
@@ -1850,39 +1885,159 @@ Daten
  |_ Import
   |_ Dynamischer Import
    |_ Anzeigen
-|_ Datenbereinigung
+end legend
+----
+
+<<<
+
+=== Datenbereinigung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Datenbereinigung
  |_ Aktualisieren
  |_ Anzeigen
  |_ Bearbeiten
-|_ Druckverlauf
+end legend
+----
+
+<<<
+
+=== Druckverlauf
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Druckverlauf
  |_ Anzeigen
-|_ Export
- |_ Elastischer Export
+end legend
+----
+
+<<<
+
+=== Export
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Elastischer Export
   |_ Aktualisieren
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
   |_ Suchen
-|_ Gelöschte Logs
+end legend
+----
+
+<<<
+
+=== Gelöschte Logs
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Gelöschte Logs
  |_ Anzeigen
-|_ Historie
+end legend
+----
+
+<<<
+
+=== Historie
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Historie
  |_ Anzeigen
-|_ Import
+end legend
+----
+
+<<<
+
+=== Import
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Import
  |_ eBay-Listings
-|_ Log
+end legend
+----
+
+<<<
+
+=== Log
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Log
  |_ Anzeigen
  |_ API-Log
   |_ Anzeigen
   |_ Bearbeiten
-|_ Migration
+end legend
+----
+
+<<<
+
+=== Migration
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Migration
  |_ Bearbeiten
-|_ Report
+end legend
+----
+
+<<<
+
+=== Report
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Report
  |_ Rohdaten
   |_ Anzeigen
   |_ Bearbeiten
-|_ Status
+end legend
+----
+
+<<<
+
+=== Status
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Status
  |_ Anzeigen
-|_ Sync
+end legend
+----
+
+<<<
+
+=== Sync
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Sync
  |_ Aktualiseren
  |_ Anzeigen
  |_ Erstellen
@@ -1892,7 +2047,18 @@ Daten
   |_ Anzeigen
   |_ Erstellen
   |_ Löschen
-|_ Sync Daten-Log
+end legend
+----
+
+<<<
+
+=== Sync Daten-Log
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Sync Daten-Log
  |_ Aktualisieren
  |_ Anzeigebn
  |_ Erstellen
