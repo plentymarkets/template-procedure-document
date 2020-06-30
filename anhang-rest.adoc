@@ -234,6 +234,227 @@ end legend
 
 <<<
 
+===== Artikelpaket
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikelpaket
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+===== Artikeltext
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikeltext
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+===== Attribut
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Attribut
+  |_ Wert
+  |_ Anzeigen
+end legend
+----
+
+<<<
+
+===== Barcode
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Barcode
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+===== Kategorie
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Kategorie
+  |_ Aktivieren
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Deaktivieren
+end legend
+----
+
+<<<
+
+===== Lagerdaten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Lagerdaten
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+===== Lieferantendaten
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Lieferantendaten
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+===== Mandant
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Mandant
+  |_ Aktivieren
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Deaktivieren
+end legend
+----
+
+<<<
+
+===== Marktplatz
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Marktplatz
+  |_ Aktivieren
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ ASIN/ePID
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+  |_ Deaktivieren
+end legend
+----
+
+<<<
+
+===== Merkmal
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Merkmal
+  |_ Aktivieren
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Deaktivieren
+  |_ Eigenschaftswerte
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+  |_ Text
+    |_ Aktualisieren
+    |_ Anzeigen
+    |_ Erstellen
+    |_ Löschen
+end legend
+----
+
+<<<
+
+===== Preis
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Preis
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
+===== Standardkategorie
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Standardkategorie
+  |_ Aktivieren
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Deaktivieren
+end legend
+----
+
+<<<
+
+===== Zusätzliche SKU
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Zusätzliche SKU
+  |_ Aktualisieren
+  |_ Anzeigen
+  |_ Erstellen
+  |_ Löschen
+end legend
+----
+
+<<<
+
 === Artikeletikett
 
 [plantuml, format=png, opts="inline"]
@@ -1984,6 +2205,8 @@ PIXmania
   |_ Bearbeiten
 end legend
 ----
+
+<<<
 
 === Rakuten.de
 
