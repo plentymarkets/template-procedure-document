@@ -9,6 +9,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.1 |POS |Datum tbd! |Geändert: In diesem Bereich wurden Korrekturen vorgenommen.
 |V7.0|Allgemein |30.06.2020 |Geändert: Verkaufsgutscheine wurden in Mehrzweckgutscheine umbenannt.
 |V7.0|App |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.0|Auftragsabwicklung |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
