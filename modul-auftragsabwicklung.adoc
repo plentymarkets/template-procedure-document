@@ -484,6 +484,12 @@ Beim automatisierten Teilen werden auf einmal alle Artikelpositionen anhand eine
 
 Das automatisierte Teilen kann wiederum manuell durch den Anwender oder automatisiert angestoßen werden. Automatisiert angestoßen bedeutet, dass der Anwender einen  Zeitpunkt, zu dem ein Auftrag in Lieferaufträge geteilt wird, bestimmt. Die Funktion, die hierzu genutzt werden kann, nennt sich Ereignisaktion. Die allgemeine Funktionsweise von Ereignisaktionen wird an anderer Stelle beschrieben.
 
+== Zahlungsbedingungen
+
+Für Aufträge können Zahlungsbedingungen eingestellt werden. Zahlungsbedingungen umfassen Skonto, Valuta und Zahlungsziel. Ob und welche Zahlungsbedingungen eingestellt werden, entscheidet der Anwender. +
+Bei der Einstellung der Zahlungsbedingungen haben die im Kontaktdatensatz hinterlegten Werte Priorität. In den Kontakten können Zahlungsbedingungen für Firmen, nicht jedoch für Privatkunden, eingerichtet werden. Als nächste Option können Zahlungsbedingungen für Kundenklassen festgelegt werden. Die Werte werden dann in Aufträge übernommen. Priorisiert die Werte aus den Kundendaten, danach die in einer Kundenklasse definierten Werte. An einem Auftrag können die Werte für die Zahlungsbedingungen entweder manuell angepasst oder auch eingefügt werden, falls im Kontaktdatensatz und der Kundenklasse nichts hinterlegt ist. Alle diese Einstellungen sind optional. +
+Die Werte, die in einem Auftrag hinterlegt sind, werden bei der Dokumentenerstellung für die Dokumente übernommen, wenn die Zahlungsbedingungen dort mit aufgeführt sein sollen. Dies betrifft Rechnungen, Proformarechnungen, Auftragsbestätigungen und Angebote. Im Bereich *Dokumenteneinstellungen* entscheidet der Anwender darüber, ob und wenn welche Zahlungsbedingungen auf den Dokumenten eingefügt werden. Die Zahlungsbedingungen gehören demnach nicht zu den Pflichtelementen (siehe <<tabelle-dokumente-pflichtelemente>>) eines Dokuments.
+
 == Auftragsdokumente
 
 In plentymarkets gibt es einige Dokumente, die im Zusammenhang mit der Auftragsabwicklung eingerichtet, erstellt und versendet werden können. Für jedes Dokument, das er nutzen möchte, muss der Anwender eine Vorlage erstellen. Die Gestaltung dieser Vorlage (z.B. Sprache, Schriftart, Seitenränder) steht dem Anwender frei, es gibt jedoch einige Pflichtelemente, die bei der Einrichtung einer Dokumentenvorlage einzufügen sind (siehe <<tabelle-dokumente-pflichtelemente>>). Das System stellt auch eine Standard-Dokumentenvorlage zur Verfügung, die vom Anwender genutzt werden kann. +

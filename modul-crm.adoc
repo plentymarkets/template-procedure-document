@@ -135,7 +135,7 @@ Es ist möglich, weitere eigene Typen zu definieren und der Liste der vorhandene
 
 == Kundenklassen
 
-Kundenklassen ermöglichen dem Anwender, seinen Kundenstamm nach unterschiedlichen Kriterien zu unterteilen. Beispielsweise können für Kundenklassen Mindestbestellmengen definiert, unterschiedliche Rabatte zugeordnet, Zahlungsarten festgelegt und Mengenrabatte gewährt werden. Diese Einstellungen sind dann nur für die Kundenklasse wirksam. Der Anwender kann die Kundenklasse dem Kunden im  zuordnen. Die Verwendung von Kundenklassen ist optional.
+Kundenklassen ermöglichen dem Anwender, seinen Kundenstamm nach unterschiedlichen Kriterien zu unterteilen. Beispielsweise können für Kundenklassen Mindestbestellmengen definiert, unterschiedliche Rabatte zugeordnet, Zahlungsarten festgelegt, Mengenrabatte gewährt und Zahlungsbedingungen eingestellt werden. Diese Einstellungen sind dann nur für die Kundenklasse wirksam. Der Anwender kann die Kundenklasse dem Kunden im  zuordnen. Die Verwendung von Kundenklassen ist optional.
 
 Ein möglicher Anwendungsfall für eine Kundenklasse wäre die Unterteilung nach Endkunden (B2C) und Händlern (B2B). Diese Unterteilung ist sinnvoll, wenn erwünscht ist, dass die Verkaufspreise im Webshop den B2C-Kunden als Bruttopreise, den B2B-Kunden jedoch als Nettopreise angezeigt werden. Ein weiterer Anwendungsfall kann beispielsweise eine VIP-Kundenklasse für Kunden, die regelmäßig und umsatzsteigernd im Webshop bestellen, sein, um für diese Kundenklasse eigene Verkaufspreise festzulegen.
 
@@ -166,7 +166,7 @@ Der Rabatt wird berechnet und im Webshop angezeigt, wenn der Kunde seinen Einkau
 
 === Rabatt auf Zahlungsart
 
-Der Rabatt auf eine Zahlungsart ist eine Art Skontoumsetzung in plentymarkets. Der Anwender gewährt Kunden damit einen Rabatt auf die Verwendung einer oder mehrerer Zahlungsarten.
+Mit dem Rabatt auf eine Zahlungsart gewährt der Anwender Kunden einen Rabatt auf die Verwendung einer oder mehrerer Zahlungsarten.
 
 === Verkaufspreis als Rabatt
 
