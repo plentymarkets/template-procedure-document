@@ -9,6 +9,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Bereich Zahlungsbedingungen wurde hinzugefügt.
 |V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Dieser Bereich wurde durch Informationen zum Umgang mit Dokumenten ergänzt.
 |V7.0|Allgemein |30.06.2020 |Geändert: Verkaufsgutscheine wurden in Mehrzweckgutscheine umbenannt.
 |V7.0|App |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
