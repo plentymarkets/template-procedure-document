@@ -2,7 +2,7 @@
 
 NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
 
-[tabelle-changelog]]
+[[tabelle-changelog]]
 .Changelog mit Angabe der Version, des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
 [cols="1,2,1,2"]
 |====
@@ -11,6 +11,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Bereich Zahlungsbedingungen wurde hinzugefügt.
 |V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Dieser Bereich wurde durch Informationen zum Umgang mit Dokumenten ergänzt.
+|V7.1 |POS |25.09.2020 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.0|Allgemein |30.06.2020 |Geändert: Verkaufsgutscheine wurden in Mehrzweckgutscheine umbenannt.
 |V7.0|App |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.0|Auftragsabwicklung |30.06.2020 |Geändert: Dieser Bereich wurde überarbeitet.
