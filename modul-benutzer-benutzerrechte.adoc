@@ -149,7 +149,6 @@ In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwalte
 
 * EBICS
 * PayPal
-* FormatDesigner
 * DHLShipping
 
 === REST-Rechte
