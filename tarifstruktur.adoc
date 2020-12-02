@@ -8,30 +8,30 @@ In allen Tarifen stehen integrale und optionale Module zur Verfügung. Integrale
 
 Die Tarifgruppe *STARTER* besteht aus dem Tarif *BASIC*. In diesem Tarif sind die folgenden Module integral:
 
-  * Multi-Channel
-  * Online-Shop
-  * Auftragsabwicklung
-  * Warenwirtschaft
-  * CRM
-  * Payment
-  * Fulfillment
-  * Prozesse
-  * Cloud-Hosting
+* Multi-Channel
+* Online-Shop
+* Auftragsabwicklung
+* Warenwirtschaft
+* CRM
+* Payment
+* Fulfillment
+* Prozesse
+* Cloud-Hosting
 
 Zusätzlich ist die Nutzung folgender Leistungen inklusive:
 
-  * ShopBuilder
-  * ShopBooster
-  * Facettensuche
-  * Rest-API
-  * Forensupport
-  * Software-Updates
+* ShopBuilder
+* ShopBooster
+* Facettensuche
+* Rest-API
+* Forensupport
+* Software-Updates
 
 Das Modul *POS* ist immer optional und muss separat hinzugebucht werden. +
 Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 1 aufgeführten maximalen Anzahlen hinzugebucht werden.
 
 .Optionen in der Tarifgruppe *STARTER*
-[cols="1,3,3,3"]
+[cols="1,3"]
 |====
 |Option |BASIC
 
@@ -50,30 +50,33 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 |POS / Kassen
 |bis zu 5 Kassen zubuchbar
 
+|plentyBI
+|XS verfügbar / maximal S
+
 |====
 
 == Tarifgruppe *PRO*
 
 Die Tarifgruppe *PRO* besteht aus den Tarifen *CLASSIC* und *FLEX*. Die folgenden Module sind in beiden Tarifen der Gruppe *PRO* integral:
 
-  * Multi-Channel
-  * Online-Shop
-  * Auftragsabwicklung
-  * Warenwirtschaft
-  * CRM
-  * Payment
-  * Fulfillment
-  * Prozesse
-  * Cloud-Hosting
+* Multi-Channel
+* Online-Shop
+* Auftragsabwicklung
+* Warenwirtschaft
+* CRM
+* Payment
+* Fulfillment
+* Prozesse
+* Cloud-Hosting
 
 Zusätzlich ist die Nutzung folgender Leistungen inklusive:
 
-  * ShopBuilder
-  * ShopBooster
-  * Facettensuche
-  * Rest-API
-  * Forensupport
-  * Software-Updates
+* ShopBuilder
+* ShopBooster
+* Facettensuche
+* Rest-API
+* Forensupport
+* Software-Updates
 
 Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
 Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 2 aufgeführten maximalen Anzahlen hinzugebucht werden.
@@ -103,14 +106,18 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 |bis zu 25 Kassen zubuchbar
 |bis zu 99 Kassen zubuchbar
 
+|plentyBI
+|XS verfügbar / maximal L
+|XS verfügbar / maximal L
+
 |====
 
 In der Tarifgruppe Classic können zusätzlich Auftragspakete gebucht werden. Folgende Auftragspakete stehen zu Verfügung:
 
-  * 500 Aufträge
-  * 5.000 Aufträge
-  * 10.000 Aufträge
-  * 50.000 Aufträge
+* 500 Aufträge
+* 5.000 Aufträge
+* 10.000 Aufträge
+* 50.000 Aufträge
 
 Auftragspakete können für einen Zeitraum von 3 Monaten, 6 Monaten oder 12 Monaten gebucht und beliebig kombiniert werden.
 
@@ -118,24 +125,24 @@ Auftragspakete können für einen Zeitraum von 3 Monaten, 6 Monaten oder 12 Mona
 
 Die Tarifgruppe *PLUS* besteht aus den Tarifen *PLUS* und *B2B PLUS*. Die folgenden Module sind in beiden Tarifen der Gruppe *PLUS* integral:
 
-  * Multi-Channel
-  * Online-Shop
-  * Auftragsabwicklung
-  * Warenwirtschaft
-  * CRM
-  * Payment
-  * Fulfillment
-  * Prozesse
-  * Cloud-Hosting
+* Multi-Channel
+* Online-Shop
+* Auftragsabwicklung
+* Warenwirtschaft
+* CRM
+* Payment
+* Fulfillment
+* Prozesse
+* Cloud-Hosting
 
 Zusätzlich ist die Nutzung folgender Leistungen inklusive:
 
-  * ShopBuilder
-  * ShopBooster
-  * Facettensuche
-  * Rest-API
-  * Forensupport
-  * Software-Updates
+* ShopBuilder
+* ShopBooster
+* Facettensuche
+* Rest-API
+* Forensupport
+* Software-Updates
 
 Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden. +
 Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 3 aufgeführten maximalen Anzahlen hinzugebucht werden.
@@ -161,30 +168,78 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 |bis zu 99 Kassen zubuchbar
 |bis zu 99 Kassen zubuchbar
 
+|plentyBI
+|XS verfügbar / maximal L
+|XS verfügbar / maximal L
+
 |====
+
+== plentyBI
+
+Das Produkt *plentyBI* muss separat gebucht werden. Das Produkt *plentyBI XS* ist in allen Tarifen verfügbar. Je nach Tarif, können folgende Produkte gebucht werden:
+
+* *plentyBI S*
+* *plentyBI M*
+* *plentyBI L*
+
+Die Produkte unterscheiden sich anhand folgender Werte:
+
+* Maximale Anzahl an Kennzahlenkonfigurationen, die gleichzeitig ausgelesen werden können
+* Verfügbare Kennzahlen
+* Alter der verfügbaren Rohdaten
+* Speicherdauer der berechneten Ergebnisse
+
+Um eine bestimmte Kennzahl auszulesen, werden Rohdaten benötigt. Die verfügbaren Rohdaten sind je nach Produkt beschränkt. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/business-entscheidungen/business-intelligence/reports/reports-verwalten#_datenformat_creator[Reports verwalten^] zu finden.
+
+Das Alter der verfügbaren Rohdaten und die Speicherdauer der berechneten Ergebnisse in den verschiedenen Produkten können folgender Tabelle entnommen werden:
+
+.Informationen zur Datenspeicherung
+[cols="1,3,3"]
+|===
+|plentyBI
+|Alter Rohdaten (Monate)
+|Speicherdauer Ergebnisse (Monate)
+
+|XS
+|3
+|6
+
+|S
+|6
+|12
+
+|M
+|12
+|36
+
+|L
+|48
+|120
+
+|===
 
 == Tarif *plentymarkets PARTNER*
 
 Der Tarif *plentymarkets PARTNER* kann nur von zertifizierten plentymarkets Partnern gebucht werden. Die folgenden Module sind im Tarif integral:
 
-  * Multi-Channel
-  * Online-Shop
-  * Auftragsabwicklung
-  * Warenwirtschaft
-  * CRM
-  * Payment
-  * Fulfillment
-  * Prozesse
-  * Cloud-Hosting
+* Multi-Channel
+* Online-Shop
+* Auftragsabwicklung
+* Warenwirtschaft
+* CRM
+* Payment
+* Fulfillment
+* Prozesse
+* Cloud-Hosting
 
 Zusätzlich ist die Nutzung folgender Leistungen inklusive:
 
-    * ShopBuilder
-    * ShopBooster
-    * Facettensuche
-    * Rest-API
-    * Forensupport
-    * Software-Updates
+* ShopBuilder
+* ShopBooster
+* Facettensuche
+* Rest-API
+* Forensupport
+* Software-Updates
 
 Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tabelle 4 aufgeführten maximalen Anzahlen hinzugebucht werden.
 
