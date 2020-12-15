@@ -189,7 +189,7 @@ Die Produkte unterscheiden sich anhand folgender Werte:
 * Alter der verfügbaren Rohdaten
 * Speicherdauer der berechneten Ergebnisse
 
-Um eine bestimmte Kennzahl auszulesen, werden Rohdaten benötigt. Die verfügbaren Rohdaten sind je nach Produkt beschränkt. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/business-entscheidungen/business-intelligence/reports/reports-verwalten#_datenformat_creator[Reports verwalten^] zu finden.
+Um eine bestimmte Kennzahl auszulesen, werden Rohdaten benötigt. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/business-entscheidungen/business-intelligence/reports/reports-verwalten#_datenformat_creator[Reports verwalten^] zu finden.
 
 Das Alter der verfügbaren Rohdaten und die Speicherdauer der berechneten Ergebnisse in den verschiedenen Produkten können folgender Tabelle entnommen werden:
 
