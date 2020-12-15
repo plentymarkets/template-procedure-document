@@ -9,6 +9,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.2 |POS |DD.MM.YYYY |Geändert: Dieser Bereich wurde um Informationen zur Retourenerstattung in plentyPOS ergänzt.
 |V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Bereich Zahlungsbedingungen wurde hinzugefügt.
 |V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Dieser Bereich wurde durch Informationen zum Umgang mit Dokumenten ergänzt.
 |V7.1 |POS |25.09.2020 |Geändert: Dieser Bereich wurde überarbeitet.

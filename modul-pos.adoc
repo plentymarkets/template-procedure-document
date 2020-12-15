@@ -541,7 +541,7 @@ link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#380[Bei der zwei
 
 In beiden Fällen wird die erstellte Retoure als Geschäftsfall des Typs *Retoure* im ERP-System plentymarkets gespeichert. Beachte auch die folgenden link:https://knowledge.plentymarkets.com/pos/pos-einrichten#2000[Hinweise zu Retouren^]:
 
-* Retourenbeträge können entweder in bar oder in Form eines Gutscheins ausgezahlt werden.
+* Retourenbeträge können in bar oder in Form eines Gutscheins ausgezahlt werden. Zusätzlich ist die Erstattung auf EC-Karten möglich, sofern ein Kartenterminal mit ZVT-Schnittstelle am Kassensystem angebunden ist.
 * Mehrzweckgutscheine können nicht retourniert werden.
 
 
