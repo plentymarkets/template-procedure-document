@@ -1,20 +1,20 @@
-= Fachliche und technische Beschreibung des Moduls Datenimport mit ElasticSync
+= Fachliche und technische Beschreibung des Moduls Datenimport
 
-In plentymarkets wird der Datenimport mit ElasticSync durchgeführt. Ein Import von Daten ist ratsam, wenn z.B. neue Artikel, Kundendaten oder Lagerbestände in das plentymarkets System eingepflegt werden sollen und die Daten bereits digital vorliegen. ElasticSync ermöglicht es über das Erstellen von sogenannten Syncs, Datenimporte auszuführen. Ein Import kann manuell oder automatisiert erfolgen.
+In plentymarkets wird der Datenimport mit dem Import-Tool durchgeführt. Ein Import von Daten ist ratsam, wenn z.B. neue Artikel, Kundendaten oder Lagerbestände in das plentymarkets System eingepflegt werden sollen und die Daten bereits digital vorliegen. Das Tool ermöglicht es über das Erstellen von Importen, Datenimporte auszuführen. Ein Import kann manuell oder automatisiert erfolgen.
 
-== Sync-Typen in plentymarkets
+== Import-Typen in plentymarkets
 
-plentymarkets stellt verschiedene Sync-Typen zur Verfügung, mit denen ausgewählte Daten importiert werden können. Je nach Typ müssen bestimmte Datensätze vorhanden sein. Es gibt jeweils Abgleich- und Zuordnungsfelder, die für den Datenimport verwendet werden können.
+plentymarkets stellt verschiedene Import-Typen zur Verfügung, mit denen ausgewählte Daten importiert werden können. Je nach Typ müssen bestimmte Datensätze vorhanden sein. Es gibt jeweils Abgleich- und Zuordnungsfelder, die für den Datenimport verwendet werden können.
 
-Ein neuer Sync kann im Menü *Daten » ElasticSync* erstellt werden.
-Die verschiedenen Sync-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch^] unter *Daten » Daten importieren » Sync-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Sync-Typ für welche Importdaten zur Verfügung steht.
+Ein neuer Import kann im Menü *Daten » Import* erstellt werden.
+Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch^] unter *Daten » Daten importieren » Import-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Import-Typ für welche Importdaten zur Verfügung steht.
 
-[[sync-typen]]
-.Sync-Typen in plentymarkets
+[[import-typen]]
+.Import-Typen in plentymarkets
 [cols="1,3"]
 |====
 
-|*Sync-Typ* |*Importdaten*
+|*Import-Typ* |*Importdaten*
 
 |Artikel
 |Artikel- und Variantendaten
@@ -73,7 +73,7 @@ Die verschiedenen Sync-Typen und alle dazugehörigen Felder für den Datenimport
 
 == Abgleich
 
-Mit dem Abgleich wird bestimmt, anhand welcher Daten identifiziert werden soll, ob bereits ein Datensatz besteht oder nicht. Bei den Abgleichfeldern handelt es sich um optionale Einstellungen. Wird kein Abgleichfeld gewählt, können die Daten der Datei keinen bestehenden Daten im System zugeordnet werden. Es können eins, mehrere oder alle Abgleichfelder festgelegt werden. Die angezeigten Abgleichfelder unterscheiden sich für jeden Sync-Typ. +
+Mit dem Abgleich wird bestimmt, anhand welcher Daten identifiziert werden soll, ob bereits ein Datensatz besteht oder nicht. Bei den Abgleichfeldern handelt es sich um optionale Einstellungen. Wird kein Abgleichfeld gewählt, können die Daten der Datei keinen bestehenden Daten im System zugeordnet werden. Es können eins, mehrere oder alle Abgleichfelder festgelegt werden. Die angezeigten Abgleichfelder unterscheiden sich für jeden Import-Typ. +
 Es kann außerdem festgelegt werden, was passieren soll, wenn durch den Abgleich keine bestehenden Daten gefunden werden. Dafür gibt es drei verschiedene Optionen, die hier im Kapitel <<#_importoptionen, Importoptionen>> aufgeführt sind. Für die Importoptionen kann außerdem festgelegt werden, ob die englische oder die deutsche Schreibweise der Dezimalzahl verwendet werden soll.
 
 *Bsp.*:	DE: 1,25 oder 1.000,25 ; EN: 1.25 oder 1,000.25
@@ -85,14 +85,14 @@ Für den Import können entweder alle Zeilen importiert werden oder es kann bei 
 Mithilfe von Filtern können die zu importierenden Daten eingegrenzt werden. Bei der Verwendung mehrerer Filter werden nur Datensätze importiert, die auf alle Filter zutreffen. Es handelt sich also um eine Und-Verknüpfung der Filter.
 
 == Eigene Zuordnung
-Mit der Eigenen Zuordnung können vorhandene Werte einer CSV-Datei auf andere Werte im System gemappt werden. So kann definiert werden, für welche ID welcher Wert importiert werden soll. Syncs können auch aus einem anderen plentymarkets System importiert werden, wofür der Abgleich und die Zuordnung angepasst werden müssen. Hier ist allerdings zu beachten, dass nur .json Dateien importiert werden können. +
-Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Imports zu manipulieren und Werte zu ändern. Weitere Informationen dazu gibt es im plentymarkets Handbuch auf der Seite Daten mit ElasticSync importieren.
+Mit der Eigenen Zuordnung können vorhandene Werte einer CSV-Datei auf andere Werte im System gemappt werden. So kann definiert werden, für welche ID welcher Wert importiert werden soll. Importe können auch aus einem anderen plentymarkets System importiert werden, wofür der Abgleich und die Zuordnung angepasst werden müssen. Hier ist allerdings zu beachten, dass nur .json Dateien importiert werden können. +
+Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Imports zu manipulieren und Werte zu ändern. Weitere Informationen dazu gibt es im plentymarkets Handbuch auf der Seite *Import-Tool nutzen*.
 
 == Datenquellen
 Als Quelle stehen die Optionen *Manueller Upload*, *FTP*, *SFTP* oder *HTTPS* zur Verfügung.
 Je nach gewählter Option werden weitere Einstellungen sichtbar.
 
-Über den Abgleich wird sichergestellt, dass die Daten identifiziert und korrekt übernommen werden. Sind die Daten einmal im System, werden die gleichen Daten bei erneuter Verarbeitung ignoriert, d.h. im System ändert sich nichts. Falls während des Imports ein Fehler auftritt, ist dieser im Menü unter *Daten » Logs* aufgeführt. Dort elasticSyncId als Referenztyp wählen und nach der ID filtern.
+Über den Abgleich wird sichergestellt, dass die Daten identifiziert und korrekt übernommen werden. Sind die Daten einmal im System, werden die gleichen Daten bei erneuter Verarbeitung ignoriert, d.h. im System ändert sich nichts. Falls während des Imports ein Fehler auftritt, ist dieser im Menü unter *Daten » Logs* aufgeführt. Dort die importId als Referenztyp wählen und nach der ID filtern.
 Alternativ können Fehler, die während des Importvorgangs aufgetreten sind, auch im Menü *Daten » Import* eingesehen werden.
 Wurde der Import gestartet, ist kein Abbruch mehr möglich.
 
@@ -108,7 +108,7 @@ Es gibt die folgenden Anforderungen an die Dateien: +
 |*Datenquelle* |*Erläuterung*
 
 |Manueller Upload
-|Hier wird eine lokale Datei gewählt und direkt hochgeladen. Bei dieser Option liegt die Datenhoheit bei plentymarkets. Somit liegen die importierten Daten in einem privaten Bereich, auf den nur die Personen mit Zugriff auf das System und ElasticSync zugreifen können.
+|Hier wird eine lokale Datei gewählt und direkt hochgeladen. Bei dieser Option liegt die Datenhoheit bei plentymarkets. Somit liegen die importierten Daten in einem privaten Bereich, auf den nur die Personen mit Zugriff auf das System und das Import-Tool zugreifen können.
 
 |FTP und SFTP
 |Mit diesen Optionen können ebenfalls Daten bereitgestellt werden. Hier werden Host, Port, Benutzername, Passwort und Dateiname als Einstellungen sichtbar. Allerdings befinden sich diese Daten extern, d.h. plentymarkets kann hier nicht sicherstellen, dass die Daten gesichert sind. Wenn die gewählte Option aktiv ist, wird die Importdatei nach erfolgreichem Import automatisch in einen neuen Archiv-Ordner auf dem FTP-Verzeichnis verschoben.
@@ -118,7 +118,7 @@ Es gibt die folgenden Anforderungen an die Dateien: +
 |====
 
 == Importoptionen
-Syncs können importiert und exportiert werden. So können Syncs sowohl lokal gesichert als auch von anderen Nutzern importiert werden. Für den Import von Syncs gibt es verschiedene Optionen. Es kann gewählt werden, welche Daten importiert und welche Daten aktualisiert werden sollen.
+Daten können importiert und exportiert werden. So können Importe sowohl lokal gesichert als auch von anderen Nutzern importiert werden. Für den Import gibt es verschiedene Optionen. Es kann gewählt werden, welche Daten importiert und welche Daten aktualisiert werden sollen.
 
 [[import-optionen]]
 .Import-Optionen
@@ -155,9 +155,9 @@ Replace pattern: $2 $1 +
 Result: “Max Mustermann”
 
 == Import von Massendaten
-Die Queue sorgt dafür, dass auch große Datenmengen importiert werden können. Noch vor dem Import wird die Importdatei in Pakete zerlegt und anschließend in sogenannten Jobs abgearbeitet. Ein Job besteht aus 750 Zeilen einer CSV-Datei. Jedoch werden auch Importdateien, die weniger als 750 Zeilen enthalten, zu einem Job. Wird ein Sync gestartet, wird die CSV-Datei in die entsprechenden Jobs aufgeteilt und in die Queue eingereiht. In der Queue werden neue Jobs ständig abgerufen und die Syncs werden abgearbeitet. Dabei gibt es zwei verschiedene Status. Der Status *Offene Jobs* bedeutet, dass es Jobs gibt, die sich noch in der Queue befinden und darauf warten, abgearbeitet zu werden. *Abgeschlossene Jobs* hingegen wurden bereits bearbeitet und die Daten dementsprechend importiert.
+Die Queue sorgt dafür, dass auch große Datenmengen importiert werden können. Noch vor dem Import wird die Importdatei in Pakete zerlegt und anschließend in sogenannten Jobs abgearbeitet. Ein Job besteht aus 750 Zeilen einer CSV-Datei. Jedoch werden auch Importdateien, die weniger als 750 Zeilen enthalten, zu einem Job. Wird ein Import gestartet, wird die CSV-Datei in die entsprechenden Jobs aufgeteilt und in die Queue eingereiht. In der Queue werden neue Jobs ständig abgerufen und die Importe werden abgearbeitet. Dabei gibt es zwei verschiedene Status. Der Status *Offene Jobs* bedeutet, dass es Jobs gibt, die sich noch in der Queue befinden und darauf warten, abgearbeitet zu werden. *Abgeschlossene Jobs* hingegen wurden bereits bearbeitet und die Daten dementsprechend importiert.
 
-== Status von Syncs einsehen
+== Status von Importen einsehen
 
-Im Menü *Daten » Status* können Informationen zum Status von importierten Syncs eingesehen werden. Die Übersicht enthält Details zum Fortschritt der Sync-Jobs sowie zu eventuellen Fehlern, die während des Importvorgangs aufgetreten sind. Die Importe können bis zu 7 Tage zurückverfolgt werden.
+Im Menü *Daten » Status* können Informationen zum Status von Importen eingesehen werden. Die Übersicht enthält Details zum Fortschritt der Jobs sowie zu eventuellen Fehlern, die während des Importvorgangs aufgetreten sind. Die Importe können bis zu 7 Tage zurückverfolgt werden.
 In der Detailansicht werden dem Nutzer die konkreten Fehlermeldungen sowie Angaben zu Herkunft und Art des Fehlers zur Verfügung gestellt. Anhand der Fehlermeldungen kann die CSV-Datei entsprechend abgeändert und der Import anschließend erneut gestartet werden.

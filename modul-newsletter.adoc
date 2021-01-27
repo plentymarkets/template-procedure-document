@@ -63,10 +63,10 @@ Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, i
 
 Für den manuellen Austausch von Newsletter-Daten stehen dem Anwender die folgenden Formate zur Verfügung:
 
-* Für den Import der Sync-Typ *Newsletter-Empfänger* im ElasticSync
+* Für den Import der Import-Typ *Newsletter-Empfänger* im Import-Tool
 
 * Für den Export das Datenformat *Newsletter-Empfänger* im Elastischen Export
 
-Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Daten mit ElasticSync importieren^] und link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[FormatDesigner^] zu finden.
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Import-Tool nutzen^] und link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[FormatDesigner^] zu finden.
 
 *Hinweis*: Die selbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.

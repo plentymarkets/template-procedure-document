@@ -140,7 +140,7 @@ Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, 
 
 == Datenaustausch
 
-Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über ElasticSync und den elastischen Export mit den Schnittstellen ausgetauscht werden. Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
+Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
 [[datenaustausch-markplätze]]
 .Datenaustausch mit Marktplätzen

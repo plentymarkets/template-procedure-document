@@ -14,7 +14,7 @@ include::document-purpose.adoc[]
 include::Changelog.adoc[]
 
 <<<
-    
+
 include::allgemeine-beschreibung-plentymarkets.adoc[]
 
 <<<
@@ -35,11 +35,15 @@ include::modul-auftragsabwicklung.adoc[]
 
 <<<
 
-include::modul-datenimport-mit-elasticsync.adoc[]
+include::modul-datenimport.adoc[]
 
 <<<
 
 include::modul-multichannel.adoc[]
+
+<<<
+
+include::modul-kataloge.adoc[]
 
 <<<
 
