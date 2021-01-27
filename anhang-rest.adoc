@@ -1783,8 +1783,8 @@ Daten
 |_ Migration
 |_ Report
 |_ Status
-|_ Sync
-|_ Sync Daten-Log
+|_ Import (Sync)
+|_ Daten-Log
 end legend
 ----
 
@@ -1968,13 +1968,13 @@ end legend
 
 <<<
 
-=== Sync
+=== Import
 
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Sync
+Import
  |_ Aktualiseren
  |_ Anzeigen
  |_ Erstellen
@@ -1989,13 +1989,13 @@ end legend
 
 <<<
 
-=== Sync Daten-Log
+=== Daten-Log
 
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Sync Daten-Log
+Daten-Log
  |_ Aktualisieren
  |_ Anzeigebn
  |_ Erstellen

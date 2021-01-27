@@ -5,7 +5,7 @@ Das CRM-Modul von plentymarkets erlaubt das Verwalten, Speichern und Bearbeiten 
  * Webshop des Anwenders
  * Marktplätze
  * REST-API
- * ElasticSync
+ * Import
  * manuelles Erstellen im Backend durch den Anwender
 
 In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
@@ -376,7 +376,7 @@ Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
-Für den manuellen Austausch von Kontaktdaten stehen dem Anwender der link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[ElasticSync^] für den Import und der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
+Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
 
 [discrete]
 === Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
