@@ -1,0 +1,67 @@
+= Fachliche und technische Beschreibung des Moduls Kataloge
+
+== Verwendungszweck
+
+Kataloge ermöglichen es, Daten im plentymarkets System für den Export an einen Verkaufskanal vorzubereiten. Sie helfen dabei, die Informationen zu einem Produktsortiment auf die Anforderungen und die Zielgruppe eines Marktplatzes zuzuschneiden. Hierbei gibt der Verkaufskanal die Datenstruktur vor und zeigt an, welche Variantendaten notwendig sind, um Artikel dort zu listen. Der Händler kann pro Verkaufskanal oder auch pro Format festlegen, welche Daten auf dem Verkaufskanal veröffentlicht werden sollen.
+Kataloge in plentymarkets können außerdem dazu genutzt werden, bestimmte Daten wie z.B. Auftragsdaten aus dem plentymarkets System zu exportieren und anschließend weiterzuverarbeiten.
+
+== Dokumentation
+
+Die Dokumentation des Moduls Kataloge ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten[https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten^].
+Dort sind auch weitere Informationen zu den verfügbaren Marktplätzen sowie den vorhandenen plentymarkets Datenquellen aufgeführt.
+
+== Formate und Typen
+
+Bereits beim Erstellen eines Katalogs wird festgelegt, wofür dieser verwendet werden soll und welche Art von Daten exportiert werden soll. Dafür wird ein *Export-Typ*, ein *Format-Typ* und ein *Format* gewählt. Für den Datenexport sind die Dateiformate CSV, TXT, JSON und XML zulässig.
+
+* *Export-Typ*: Bei einem Datenexport an Marktplätze handelt es sich hier um das Marktplatz-Format, das für den Export verwendet werden soll (z.B. Amazon). Bei einem Export von Daten aus dem plentymarkets System wird hier das Standardformat gewählt.
+* *Format-Typ*: Wurde als Export-Typ ein Marktplatz angegeben, ist hier der Typ des Formats (z.B. Artikel) zu wählen. Für Exporte aus dem plentymarkets System wird hier z.B. der Typ Warenbestände gewählt.
+* *Format*: Sollen Artikel an einen Marktplatz exportiert werden, wird hier die konkrete Kategorie gewählt (z.B. Spielwaren). Sollen Artikel aus dem System exportiert werden, ist hier das entsprechende Exportformat zu wählen.
+
+Im Folgenden werden die Begriffe *Marktplatz-Format* und *Standardformat* nochmals aufgeführt und der Unterschied zwischen diesen näher erläutert.
+
+* *Marktplatz-Format*: Mit diesem Format werden Daten an Marktplätze übertragen. Hier gibt es Datenfelder, die vom jeweiligen Marktplatz vorgegeben werden sowie Datenfelder, die optional sind. Informationen zu den jeweils verfügbaren Marktplatz-Formaten eines Verkaufskanals sind in der Dokumentation des Verkaufskanals zu finden.
+* *Standardformat*: Standardformate werden verwendet, um spezifische Daten wie z.B. Artikel- oder Auftragsdaten aus dem plentymarkets System zu exportieren und anschließend weiterzuverarbeiten. Hier bestimmt der Anwender selbst, welche Datenfelder exportiert werden sollen.
+
+=== plentymarkets Exportformate
+
+Die folgenden Exportformate sind im Elastischen Export verfügbar und werden nach und nach in den Katalog überführt.
+
+* Artikel
+* Artikelbilder
+* Attribute
+* Aufträge
+* Auftragspositionen
+* Eigenschaften
+* Facetten
+* Facettenwerte
+* Facettenwert-Verknüpfungen
+* Hersteller
+* Kategorien
+* Kontakte
+* Lager
+* Listings
+* Aktive Listings
+* Newsletter-Empfänger
+* Warenbestände
+* Warenbewegungen
+
+== Sichtbarkeit von Marktplatz-Formaten
+
+Die Marktplatz-Formate bestimmter Verkaufskanäle werden erst in das Menü *Daten » Kataloge* geladen, wenn das Plugin dieses Verkaufskanals bereitgestellt oder der entsprechende Assistent im plentymarkets System durchlaufen wurde.
+
+== Datenexporte automatisieren
+
+Datenexporte können automatisiert werden. Dazu genügt die Aktivierung der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwlaten#170[Umschaltfläche in der Katalog-Übersicht^]. Mit einem manuellen Export über die Funktion *Daten herunterladen* erfolgt jedoch kein Export an Marktplätze. Die Daten werden hier lediglich im gewählten Format heruntergeladen.
+
+== Speicherung von Exporten
+
+Exporte werden für 15 Tage im System gespeichert. Soll ein ausgeführter Export weiterhin im System bestehen bleiben, kann dies über den *Zeitplan* eingestellt werden. Alternativ kann über die Funktion *Daten herunterladen* ein manueller Export ausgeführt werden. Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten#270[Kataloge verwalten^] zu finden.
+
+== Kataloge wiederherstellen
+
+Gelöschte Kataloge können wiederhergestellt werden. Dasselbe gilt für eine vorherige Version eines Katalogs. Weitere Informationen dazu sind im link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten#230[Handbuch^] aufgeführt.
+
+== URL für Exporte verwalten
+
+Wird in den Download-Einstellungen ein sogenanntes Hash verwendet, können die Exportdaten gesteuert werden. Das Hash steht für die für den Katalogexport relevanten Einstellungen. Wenn diese Einstellungen geändert werden, ändert sich auch das Hash und alle zukünftigen Links enthalten das neue Hash. Ältere Links sind ab dem letzten Export mit diesem Hash für 15 Tage gültig. Möchte man immer die aktuellen Katalogeinstellungen exportieren, sollte kein Hash verwendet werden.

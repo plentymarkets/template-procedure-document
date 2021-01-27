@@ -667,7 +667,7 @@ Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, be
 
 === Zolltarifnummern
 
-Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen ElasticSync Import befüllt werden.
+Zolltarifnummern werden in plentymarkets direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen Import befüllt werden.
 
 === Debitoren- und Erlöskonten
 

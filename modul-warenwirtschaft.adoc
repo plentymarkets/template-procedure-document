@@ -98,9 +98,9 @@ In plentymarkets können Varianten mit einem Mindesthalbarkeitsdatum (MHD) und/o
 
 Für den Import von Warenbestand in das plentymarkets System gibt es verschiedene Möglichkeiten, die im Folgenden aufgeführt sind.
 
-=== Import über ElasticSync
+=== Import über das Import-Tool
 
-Bei ElasticSync wird der Import von Warenbestand über das Erstellen von sogenannten Syncs ermöglicht. Für den Datenimport wird ein Sync-Typ gewählt - in diesem Fall der Typ Warenbestand. Der Anwender wählt außerdem Felder für den Abgleich und die Zuordnung von Warenbestandsdaten und anhand des gewählten Abgleichfelds wird geprüft, ob der importierte Datensatz in plentymarkets vorhanden ist. Diese Art von Datenimport ist besonders dann sinnvoll, wenn neue Artikel, Kundendaten oder Lagerbestände in das System eingepflegt werden sollen und die Daten bereits digital vorliegen. Dieser Import kann manuell oder automatisiert erfolgen.
+Im Menü *Daten » Import* wird der Import von Warenbestand über das Erstellen von neuen Importen ermöglicht. Für den Datenimport wird ein Import-Typ gewählt - in diesem Fall der Typ Warenbestand. Der Anwender wählt außerdem Felder für den Abgleich und die Zuordnung von Warenbestandsdaten und anhand des gewählten Abgleichfelds wird geprüft, ob der importierte Datensatz in plentymarkets vorhanden ist. Diese Art von Datenimport ist besonders dann sinnvoll, wenn neue Artikel, Kundendaten oder Lagerbestände in das System eingepflegt werden sollen und die Daten bereits digital vorliegen. Dieser Import kann manuell oder automatisiert erfolgen.
 
 === Import über das Backend
 
