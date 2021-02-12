@@ -13,7 +13,6 @@ plentymarkets übernimmt den Support für die folgenden Versanddienstleister- bz
 * DHL Retoure Online
 * DPD Versand Services
 * DPD Shipping UK
-* eBay Fulfillment
 
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
@@ -23,7 +22,7 @@ Bevor der Anwender eine der in plentymarkets angebotenen Schnittstellen zu einem
 
 == Lieferländer
 
-In einem neu angelegten System sind 259 Lieferländer bzw. Lieferregionen im System vorhanden. Jedes Lieferland ist mit einer ID versehen. Bei der ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert, der durch das System vergeben wird.
+In einem neu angelegten System sind 260 Lieferländer bzw. Lieferregionen im System vorhanden. Jedes Lieferland ist mit einer ID versehen. Bei der ID handelt es sich um einen eindeutigen, sogenannten Auto-Increment-Wert, der durch das System vergeben wird.
 
 Die IDs können nicht geändert werden und die Lieferländer können nicht gelöscht werden. Dem Anwender ist es nicht möglich, eigene Lieferländer im System hinzuzufügen.
 
@@ -53,7 +52,7 @@ Ausgehend von ID 100 wird hochgezählt, wenn ein neuer Versanddienstleister, z.B
 
 Versanddienstleister, die der Anwender in diesem Bereich der Software erstellt, sind bei Erstellung des Versandprofils dann wählbar. Das bedeutet, dass kein Versandprofil erstellt werden kann, ohne zuvor den Versanddienstleister erstellt zu haben.
 
-In <<tabelle-versanddienstleister-ids>> werden die standardmäßig in plentymarkets vorhandenen Versanddiensleister mit IDs aufgelistet.
+In der folgenden Tabelle werden die standardmäßig in plentymarkets vorhandenen Versanddiensleister mit IDs aufgelistet.
 
 [[tabelle-versanddienstleister-ids]]
 .Versanddienstleister mit deren IDs
@@ -162,7 +161,7 @@ Für den ersten Portoaufschlag wird der am Artikel eingegebene Betrag zu den Ver
 
 Viele Versanddienstleister verlangen für den Versand in Inselregionen höhere Gebühren. Diese Kosten kann der Anwender auf seine Kunde übertragen und im Versandprofil einen Inselzuschlag für den Versand seiner Ware berechnen.
 
-In <<tabelle-postleitzahlen-inselregionen>> ist aufgelistet, für welche Postleitzahlenbereiche der aktivierbaren Lieferländer der Inselzuschlag eingestellt werden kann.
+In der folgenden Tabelle ist aufgelistet, für welche Postleitzahlenbereiche der aktivierbaren Lieferländer der Inselzuschlag eingestellt werden kann.
 
 [[tabelle-postleitzahlen-inselregionen]]
 .Postleitzahlen von Inselregionen
@@ -172,7 +171,7 @@ In <<tabelle-postleitzahlen-inselregionen>> ist aufgelistet, für welche Postlei
 
 |1
 |Deutschland
-|18565, 25845, 25846-25849, 25859, 25863, 25869, 25929-25956, 25938-25942, 25946-25949, 25952-25955, 25960-25999, 26453-26460, 26462-26486, 26533-26546, 26548, 26557-26579, 26737-26757, 27483
+|18565, 26465 - 26757, 25845, 25846-25849, 25859, 25863, 25869, 25929-25956, 25938-25942, 25946-25949, 25952-25955, 25960-25999, 26453-26460, 26462-26486, 26533-26546, 26548, 26557-26579, 26737-26757, 27483, 83256
 
 |7
 |Dänemark
@@ -207,6 +206,10 @@ Hebriden und Schottisches Hochland: HS1-9, IV1-28, IV36, IV40-56, IV63, KA27-28,
 |Helgoland
 |27498
 
+|22
+|Portugal
+|9500 - 9690, 9700 - 9950, 9960 - 9980, 9000 - 9390, 9400
+
 |====
 
 Die Postleitzahlen der Inselregionen sind systemseitig gespeichert. Der Anwender kann die  Postleitzahlenbereiche nicht ändern oder erweitern. Bei Aktivierung des Inselzuschlages erfolgt eine Berechnung nur, wenn die Postleitzahl im System als Inselregion erkannt wird.
@@ -219,7 +222,7 @@ In der Portotabelle speichert der Anwender die Versandkosten für das Versandpro
 
 === Berechnungstypen
 
-Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der folgenden Tabelle aufgeführt. <<tabelle-moegliche-berechnungstypen-versandkosten>> listet die im System verfügbaren Berechnungstypen auf.
+Im System gibt es sechs voreingestellte Berechnungstypen, zwischen denen der Anwender wählen kann. Der Berechnungstyp bildet die Grundlage für die Berechnung der Versandkosten. Für alle Berechnungstypen kann der Anwender Beschränkungen, Maximalwerte und Pauschalen einstellen. Diese werden unterhalb der folgenden Tabelle aufgeführt. Der folgenden Tabelle entnehmen Sie die im System verfügbaren Berechnungstypen.
 
 
 [[tabelle-moegliche-berechnungstypen-versandkosten]]
@@ -264,7 +267,7 @@ In den folgenden Unterkapiteln wird aufgelistet, welche fest integrierten Schnit
 
 === Integrierte Versanddienstleister
 
-<<tabelle-liste-integrierte-versanddienstleister>> listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
+Die folgende Tabelle listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
 
 [[tabelle-liste-integrierte-versanddienstleister]]
 .Liste der in plentymarkets integrierten Versanddienstleister
@@ -340,26 +343,33 @@ Der Anwender kann für seine Versandprozesse Versandpakete erstellen. Es ist mö
 
 == Zollinhaltserklärung für Sendungen ins Ausland
 
-Sendungen ins Ausland müssen eine Zollinhaltserklärung, ein sogenanntes CN23-Dokument, und eine Paketkarte, ein sogenanntes CP 71-Dokument, beigelegt haben. Diese Dokumente sind wichtig für die Zollanmeldung, damit das Zollamt den Inhalt der Sendung kennt. Die folgende Informationen müssen auf der Zollinhaltserklärung vorhanden sein:
+Sendungen ins Ausland muss eine Zollinhaltserklärung, ein sogenanntes CN23-Dokument, beigelegt werden. Dieses Dokument ist wichtig für die Zollanmeldung, damit das Zollamt im Empfängerland den Inhalt der Sendung kennt. Die folgende Informationen müssen auf der Zollinhaltserklärung vorhanden sein:
 
- * Artikelname
- * Zolltarifnummer
- * Warenwert
- * Gewicht
- * Menge
- * Herstellerland
+* Absenderdaten
+* Empfängerdaten
+* Detaillierte Beschreibung des Inhalts
+* Zolltarifnummer
+* Warenwert
+* Gewicht
+* Menge
+* Ursprungsland der Waren
+* Gesamtgewicht des Pakets
+* Gesamtwert des Paketinhalts
+* Art der Sendung
+* ggf. Rechnungsnummer
+* Datum und Unterschrift des Absenders
 
-Aktuell kann der Anwender Zollinhaltserklärungen und Paketkarten ausschließlich für DHL-Sendungen über die Schnittstelle zu DHL zu generieren. Für andere fest im System integrierte Versanddienstleister-Schnittstellen ist dies nicht möglich. In diesem Fall muss der Anwender den Versand direkt über den Versanddienstleister anmelden und nicht über die im System integrierte Schnittstelle.
+Aktuell kann der Anwender Zollinhaltserklärungen ausschließlich für DHL-Sendungen über die Schnittstelle zu DHL Shipping (Versenden) generieren. Für andere fest im System integrierte Versanddienstleister-Schnittstellen ist dies nicht möglich. In diesem Fall muss der Anwender den Versand direkt über den Versanddienstleister anmelden und nicht über die im System integrierte Schnittstelle.
 
-Zollinhaltserklärungen und Paketkarten für DHL-Sendungen können im System erst generiert werden, wenn der Auftrag bei DHL angemeldet und eine Rechnung erzeugt wurde.
+Zollinhaltserklärungen für DHL Shipping (Versenden)-Sendungen werden im System erst generiert, wenn der Auftrag bei DHL angemeldet und eine Rechnung erzeugt wurde.
 
-Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind in <<#_anhang_dhl_paketkarte_und_zollinhaltserklärung, Anhang DHL Paketkarte und Zollinhaltserklärung>> zu finden.
+Ein Beispiel einer Zollinhaltserklärung für DHL ist in <<#_anhang:_cn23-formular_(zollinhaltserklärung), Anhang: CN23-Formular (Zollinhaltserklärung)>> zu finden.
 
 == Anhänge
 
 === Anhang Lieferländer mit ID
 
-<<tabelle-lieferlaender-mit-id>> listet die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs auf.
+Die folgende Tabelle listet die im System voreingestellten und für den Anwender nicht änderbaren Ländernamen sowie deren IDs auf.
 
 [[tabelle-lieferlaender-mit-id]]
 .Lieferländer mit ID
@@ -631,16 +641,13 @@ Ein Beispiel für eine Zollinhaltserklärung und eine Paketkarte für DHL sind i
 |262 |Livigno
 |263 |Campione d'Italia
 |264 |Luganer See von Ponte Tresa bis Porto Ceresio (IT)
+|265 |Nordirland
 |====
 
-=== Anhang DHL Paketkarte und Zollinhaltserklärung
+=== Anhang: CN23-Formular (Zollinhaltserklärung)
 
-Beispiel einer Paketkarte (CP 71) (siehe <<bild-dhl-paketkarte>> und einer Zollinhaltserklärung (CN 23) <<bild-dhl-zollinhaltserklaerung>> für DHL mit dem Lieferland Schweiz:
+Beispiel einer Zollinhaltserklärung (CN 23) <<bild-dhl-zollinhaltserklaerung>> für DHL mit dem Lieferland Schweiz:
 
-[[bild-dhl-paketkarte]]
-.DHL-Paketkarte (CP 71)
-image::assets/DHL-Paketkarte_CP71.png[]
-
-[[bild-dhl-zolinhaltserklaerung]]
+[[bild-dhl-zollinhaltserklaerung]]
 .DHL-Zollinhaltserklärung (CP 23)
 image::assets/DHL-Zollinhaltserklaerung_CN23.png[]
