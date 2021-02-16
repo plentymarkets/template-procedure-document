@@ -1,9 +1,9 @@
 = Fachliche und technische Beschreibung des Moduls Artikel
-//Inhalt geprüft am 25.09.2020
+//Inhalt geprüft am 16.02.2021
 
 Artikeldaten werden in plentymarkets zentral verwaltet. Das heißt, dass Händler ihre Produktdaten im plentymarkets-ERP-System einpflegen. Daraufhin können sie ihre Ware auf diversen <<#_fachliche_und_technische_beschreibung_des_moduls_multi_channel, Marktplätzen>>, im eigenen <<#_fachliche_und_technische_beschreibung_des_moduls_webshop, Webshop>> und im <<#_fachliche_und_technische_beschreibung_plentypos, stationären Laden>> verkaufen.
 
-Müssen Daten, wie z.B. die Beschreibung oder der Preis eines Artikels, zu einem späteren Zeitpunkt geändert werden, muss der Händler diese Daten lediglich zentral im plentymarkets-ERP-System ändern. Die Änderung erscheint automatisch auf allen genutzten Vertriebskanälen.
+Müssen Daten, wie z.B. die Beschreibung oder der Preis eines Artikels, zu einem späteren Zeitpunkt geändert werden, muss der Händler diese Daten lediglich zentral im plentymarkets-ERP-System ändern. Die Änderung kann automatisch auf allen genutzten Vertriebskanälen angezeigt werden.
 
 [TIP]
 .Ergänzen Sie Ihre eigenen Firmendaten
@@ -113,14 +113,42 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
-=== Änderungsprotokoll
-//Inhalt geprüft am 25.09.2020
-//aktualisieren wenn die neue Änderungshistorie veröffentlicht wird
+=== Änderungen nachvollziehen
+
+==== Änderungshistorie
+//Inhalt geprüft am 16.02.2021
+//Der gleiche Inhalt findet sich auch im Kapitel Auftragsabwicklung
+
+Mit Hilfe der link:https://knowledge.plentymarkets.com/daten/aenderungshistorie[Änderungshistorie^] können Anwender Änderungen an rechnungsrelevanten Daten verfolgen. Zum Beispiel können Anwender den gesamten Lebensweg eines Artikels oder eines Auftrags nachvollziehen.
+Die Änderungshistorie setzt sich aus den folgenden Teilen zusammen:
+
+* *_Suche_*: Änderungsaufzeichnungen, die weniger als sechs Monate zurückliegen, können live durchsucht werden.
+* *_Archiv_*: Nach Ablauf der sechs Monate werden die Daten in ein Archiv verschoben. Dort sind die Daten weiterhin zugänglich, können jedoch nicht mehr durchsucht werden.
+Die Änderungen werden 11 Jahre archiviert.
+Anwender können die Archivdateien anfordern und herunterladen.
+
+Die Änderungshistorie ist manipulationssicher und vertrauenswürdig in dem Sinne, dass Anwender die Einträge weder ändern noch löschen können.
+Änderungen können lediglich abgerufen und durchsucht werden.
+
+Standardmäßig ist die Änderungshistorie ausgeschaltet.
+Anwender müssen sie also selbst aktivieren.
+Dabei können Anwender alle GoBD-relevanten Einstellungen gleichzeitig aktivieren.
+Alternativ können Anwender selbst entscheiden:
+
+* welche Datenfelder protokolliert werden sollen (GoBD-relevante Datenfelder sind entsprechend gekennzeichnet).
+* ob das Archiv aktiviert werden soll, d.h. ob die protokollierten Änderungen 11 Jahre lang abrufbar sein sollen.
+
+==== Zeitstempel
+//Inhalt geprüft am 16.02.2021
 
 In plentymarkets werden jeweils beim Erstellen und Ändern von Artikel- und Variantendaten Zeitstempel erzeugt. Der Zeitstempel der letzten Änderung wird bei jeder Änderung der Daten entsprechend aktualisiert.
 Für Artikel sind diese Zeitstempel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* zu finden, für Varianten im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: [Varianten-ID]*.
 
-Sonstige Änderungen an Artikel- und Variantendaten werden nicht in plentymarkets protokolliert und müssen ggf. vom Anwender selbst erfasst und dokumentiert werden. Zu diesem Zweck können Anwender auch diverse link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Artikel- und Variantendaten exportieren^].
+==== Sonstige Möglichkeiten
+//Inhalt geprüft am 16.02.2021
+
+Anwender können Änderungen an Artikel- und Variantendaten auch selbst erfassen und dokumentieren.
+Zu diesem Zweck können Anwender diverse link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Artikel- und Variantendaten exportieren^].
 
 Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter Änderungen an Artikel- und Variantendaten protokollieren:
 

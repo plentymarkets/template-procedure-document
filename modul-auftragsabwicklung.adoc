@@ -740,3 +740,26 @@ Zur Verwaltung von Zahlungen können Grundeinstellungen vorgenommen werden. Es s
 Neben der Zuordnung zu einem Auftrag stehen den Anwendern im Zahlungsverkehr-Menü noch die Bearbeitungsmöglichkeiten *teilen einer Zahlung* (der Betrag der Zahlung wird auf mehrere ausgewählte Aufträge aufgeteilt) und *löschen einer Zahlung* (muss in einer Abfrage vom Anwender bestätigt werden und ist nur möglich, wenn die Zahlung unzugeordnet ist) zur Verfügung. Beim Löschen handelt es sich um einen Soft Delete, d.h. die Zahlung ist im jeweiligen System nicht mehr verfügbar, jedoch nicht komplett gelöscht. Darüber hinaus können einem Auftrag zugeordnete Zahlungen von diesem auch wieder *gelöst* und danach neu zugeordnet werden. Neben dieser manuellen Zuordnung von Zahlungen kann eine automatische Zuordnung über die Gruppenfunktion stattfinden. Dabei werden Zahlungen vom System automatisch nach einer vom Anwender festgelegten Übereinstimmungsrate zugeordnet.
 
 Es gibt Fälle, in denen Zahlungen in der Übersicht keinen Aufträgen mehr zugeordnet werden können. Das sind zum Beispiel Vormerkposten, zu denen die eigentliche Zahlung bereits gebucht wurde. Die Zahlungen werden in der Übersicht mit *Nicht verbuchbare Zahlung* gekennzeichnet.
+
+== Änderungshistorie
+//Inhalt geprüft am 16.02.2021
+//Der gleiche Inhalt findet sich auch im Kapitel Artikel
+
+Mit Hilfe der link:https://knowledge.plentymarkets.com/daten/aenderungshistorie[Änderungshistorie^] können Anwender Änderungen an rechnungsrelevanten Daten verfolgen. Zum Beispiel können Anwender den gesamten Lebensweg eines Artikels oder eines Auftrags nachvollziehen.
+Die Änderungshistorie setzt sich aus den folgenden Teilen zusammen:
+
+* *_Suche_*: Änderungsaufzeichnungen, die weniger als sechs Monate zurückliegen, können live durchsucht werden.
+* *_Archiv_*: Nach Ablauf der sechs Monate werden die Daten in ein Archiv verschoben. Dort sind die Daten weiterhin zugänglich, können jedoch nicht mehr durchsucht werden.
+Die Änderungen werden 11 Jahre archiviert.
+Anwender können die Archivdateien anfordern und herunterladen.
+
+Die Änderungshistorie ist manipulationssicher und vertrauenswürdig in dem Sinne, dass Anwender die Einträge weder ändern noch löschen können.
+Änderungen können lediglich abgerufen und durchsucht werden.
+
+Standardmäßig ist die Änderungshistorie ausgeschaltet.
+Anwender müssen sie also selbst aktivieren.
+Dabei können Anwender alle GoBD-relevanten Einstellungen gleichzeitig aktivieren.
+Alternativ können Anwender selbst entscheiden:
+
+* welche Datenfelder protokolliert werden sollen (GoBD-relevante Datenfelder sind entsprechend gekennzeichnet).
+* ob das Archiv aktiviert werden soll, d.h. ob die protokollierten Änderungen 11 Jahre lang abrufbar sein sollen.
