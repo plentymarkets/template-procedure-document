@@ -383,6 +383,19 @@ Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden bzw. Gastkunden ge
 
 Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentymarkets dafür vorgesehene Menü einzuspielen.
 
-== CRM-Historie
 
-Über die link:https://knowledge.plentymarkets.com/daten/aenderungshistorie#1300[CRM-Historie^] kann der Anwender nachverfolgen, welcher Benutzer im System zu welchem Zeitpunkt welche Änderung an einem Kontaktdatensatz vorgenommen hat.
+== CRM Historie
+
+Mit Hilfe der link:https://knowledge.plentymarkets.com/daten/aenderungshistorie#1300[CRM Historie^] können Anwender Änderungen an Kundendaten, ShopBooster-Daten oder die Einstellungen zur link:https://knowledge.plentymarkets.com/daten/datenbereinigung[Datenbereinigung^] nachvollziehen. Die Daten in diesem Menü werden 1 Jahr gespeichert.
+
+Der Anwender wählt einen Referenztyp, z.B. die Adresse, und gibt anschließend die eindeutige ID der Adresse ein. Das bedeutet, dass der Anwender die ID kennen muss, um eine Anpassung an einem Datensatz nachverfolgen zu können. Für den Bereich der Kundendaten stehen die Referenztypen Kontakt, Adresse und Firma zur Verfügung.
+
+Dem Anwender werden dann in einer Übersicht die folgenden Werte angezeigt:
+
+* Referenztyp
+* Referenz-ID
+* Neuer Wert
+* Alter Wert
+* Datum der Änderung
+* Name des Benutzers, der die Änderung vorgenommen hat
+* ID des Benutzers, der die Änderung vorgenommen hat
