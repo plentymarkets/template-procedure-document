@@ -18,7 +18,7 @@ Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Hand
 
 In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
 
-<<tabelle-beispielkontaktdatensaetze>> listet die Beispielkontaktdatensätze mit einigen der vorausgefüllten Daten auf.
+Die folgende Tabelle listet die Beispielkontaktdatensätze mit einigen der vorausgefüllten Daten auf.
 
 [[tabelle-beispielkontaktdatensaetze]]
 .Beispielkontaktdatensätze
@@ -76,10 +76,6 @@ In plentymarkets gibt es zwei Zugangsarten, wenn eine Bestellung (Auftrag) im Sy
 
 Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird.
 
-Ob ein Kontaktdatensatz im System erstellt wird, hängt zudem vom verwendeten Webshop Callisto oder Ceres ab:
-
- * Webshop Callisto: Bei Gastbestellungen wird ein Kontaktdatensatz erstellt.
- * Webshop Ceres: Bei Gastbestellungen wird kein Datensatz erstellt. Lediglich die E-Mail-Adresse des Gastzugangs wird in der Session gespeichert. Eine Session dauert in der Regel so lange, bis der Bestellvorgang komplett abgeschlossen und damit im System eingegangen und gespeichert ist.
 
 [discrete]
 === Auftragszuordnung bei regulären Zugängen und Gastzugängen
@@ -90,7 +86,7 @@ Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auft
 
 == Typen
 
-Typen dienen der Einordnung und Unterscheidung von Kontakten. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. In <<tabelle-fest-integrierte-typen>> werden die standardmäßig vorhandenen Typen und deren IDs aufgelistet.
+Typen dienen der Einordnung und Unterscheidung von Kontakten. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. In der folgenden Tabelle werden die standardmäßig vorhandenen Typen und deren IDs aufgelistet.
 
 [[tabelle-fest-integrierte-typen]]
 .Fest integrierte Typen und deren IDs
@@ -173,11 +169,11 @@ Mit dem Rabatt auf eine Zahlungsart gewährt der Anwender Kunden einen Rabatt au
 Der Anwender kann einen mengenbezogenen Rabatt als eigenen Preis anlegen. Der Anwender legt für den Verkaufspreis fest, ab welcher Artikelmenge der rabattierte Preis gelten soll. Eine Staffelung wird durch das Anlegen entsprechender Verkaufspreise mit den gewünschten Mindestmengen realisiert. +
 Ein Kunde erhält den Rabatt, wenn er a) zu der betreffenden Kundenklasse gehört und b) mindestens die beim Verkaufspreis hinterlegte Menge bestellt.
 
-==== Eigenschaften
+== Eigenschaften
 
 Eigenschaften dienen einer näheren Charakterisierung von Kunden. In einem neu angelegten System ist keine Eigenschaft standardmäßig vorhanden, d.h. die Verwendung ist optional. Die vom Anwender erstellten Eigenschaften erhalten eine fortlaufende, eindeutige ID beginnend mit ID 1. Die ID wird durch das System vergeben und kann nicht geändert werden. Der Anwender kann beliebig viele Eigenschaften für den Bereich *Kontakt* erstellen.
 
-Für die spätere Verwendung der Eigenschaften gibt es zwei Möglichkeiten: Der Anwender kann die Informationen entweder im Bestellvorgang oder in der Kundenregistrierung von seinen Kunden abfragen oder der Anwender nutzt die Eigenschaften, um selbst Informationen zu den Kunden im jeweiligen Kontaktdatensatz zu speichern.
+Für die spätere Verwendung der Eigenschaften gibt es mehrere Möglichkeiten: Der Anwender kann die Informationen entweder im Bestellvorgang oder in der Kundenregistrierung von seinen Kunden abfragen; der Anwender nutzt die Eigenschaften, um selbst Informationen zu den Kunden im jeweiligen Kontaktdatensatz zu speichern; der Anwender kann einige der Eigenschaften auf seinen Auftragsdokumenten ausgeben lassen.
 
 Im Fall der Abfrage vom Kunden im Webshop bestimmt der Anwender, ob die Angabe ein Pflichtfeld ist und somit zwingend durch den Kunden eingegeben werden muss. Der Anwender kann beispielsweise bei der Registrierung abfragen, wie der Kunde auf seinen Webshop aufmerksam geworden ist.
 
@@ -192,7 +188,7 @@ Für jede Eigenschaft muss der Anwender einen Typen wählen. Der Typ legt fest, 
  * Datum
  * Datei
 
-<<tabelle-typen-kundeneigenschaften>> listet die in plentymarkets verfügbaren Typen auf. Ein Beispiel erläutert die Verwendung der Eigenschaft.
+Die folgende Tabelle listet die in plentymarkets verfügbaren Typen auf. Ein Beispiel erläutert die Verwendung der Eigenschaft.
 
 [[tabelle-typen-kundeneigenschaften]]
 .Auswählbare Typen für die Kundeneigenschaften
@@ -227,11 +223,11 @@ Für jede Eigenschaft muss der Anwender einen Typen wählen. Der Typ legt fest, 
 
 |====
 
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/willkommen/allgemeine-funktionen/eigenschaften[Eigenschaften^] zu finden.
+Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#950[Kontakte^] zu finden.
 
 == Im Kontaktdatensatz verknüpfte Daten
 
-Im <<tabelle-verknuepfte-daten-kontaktdatensatz>> wird aufgelistet, welche Daten der Anwender aus einem Kontaktdatensatz heraus aufrufen kann.
+Im der folgenden Tabelle wird aufgelistet, welche Daten der Anwender aus einem Kontaktdatensatz heraus aufrufen kann.
 
 [[tabelle-verknuepfte-daten-kontaktdatensatz]]
 .In einem Kontaktdatensatz verknüpfte Daten
@@ -242,7 +238,7 @@ Im <<tabelle-verknuepfte-daten-kontaktdatensatz>> wird aufgelistet, welche Daten
 
 |Adressen / +
 Neue Adresse
-|Der Anwender kann mehrere Liefer- und Rechnungsadressen pro Kontakt eingeben und diese Lieferanschriften dann pro Auftrag individuell zuordnen. Es werden auch die Lieferadressen, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt. Der Anwender kann jeweils eine Lieferadresse und eine Rechnungsadresse als primär definieren.
+|Der Anwender kann mehrere Liefer- und Rechnungsadressen pro Kontakt eingeben und diese Lieferadressen dann pro Auftrag individuell zuordnen. Es werden auch die Lieferadressen, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt. Der Anwender kann jeweils eine Lieferadresse und eine Rechnungsadresse als primär definieren.
 
 |Eigenschaften
 |Die Eigenschaften, die für die Kunden erstellt wurden, kann der Anwender speichern bzw. diese werden im Kontaktdatensatz angezeigt, wenn der Kunde Informationen im Webshop eingetragen hat.
@@ -338,7 +334,7 @@ image::assets/AGB_Widerrufsrecht.png[]
 
 == Speicherung von marktplatzspezifischen Kundendaten
 
-Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden im Modul <<#_fachliche_und_technische_beschreibung_des_moduls_multichannel, Fachliche und technische Beschreibung des Moduls Multi-Channel>> beschrieben.
+Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden im Modul *Fachliche und technische Beschreibung des Moduls Multi-Channel* beschrieben.
 
 == Passwörter
 
@@ -386,6 +382,7 @@ Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden bzw. Gastkunden ge
 == Backup
 
 Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentymarkets dafür vorgesehene Menü einzuspielen.
+
 
 == CRM Historie
 
