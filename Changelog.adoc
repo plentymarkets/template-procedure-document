@@ -9,6 +9,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.4 |POS |DD.MM.YY | Geändert: Dieser Bereich wurde überarbeitet.
 |V7.3 |Artikel + Auftragsabwicklung |16.02.2021 |Neu: Eine Beschreibung der globalen Änderungshistorie wurde hinzugefügt.
 |V7.3 |CRM |16.02.2021 |Geändert: Die alte Änderungshistorie wurde in CRM-Historie umbenannt.
 |V7.2 |POS |27.01.2021 |Geändert: Dieser Bereich wurde um Informationen zur Retourenerstattung in plentyPOS ergänzt.
