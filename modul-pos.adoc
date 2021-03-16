@@ -362,7 +362,7 @@ In plentyPOS werden Geschäftsvorfälle einzeln, vollständig und unveränderbar
 * <<#_einlagen, Einlagen>>
 * <<#_entnahmen, Entnahmen>>
 
-Geschäftsvorfälle sind jederzeit über das link:https://knowledge.plentymarkets.com/pos/pos-einrichten#400[Kassenjournal^] des ERP-Systems plentymarkets verfügbar und über den link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[IDEA-Export^] maschinell auslesbar.
+Geschäftsvorfälle sind jederzeit über das link:https://knowledge.plentymarkets.com/pos/pos-einrichten#400[Kassenjournal^] des ERP-Systems plentymarkets verfügbar und über den link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#300[IDEA-Export^] maschinell auslesbar.
 
 Zudem werden für alle über plentyPOS erstellten Geschäftsvorfälle automatisch <<#_speicherung_und_ abrufbarkeit_von_plentypos_berichten, Belege>> erstellt und link:https://knowledge.plentymarkets.com/auftraege/dokumentenarchiv[im Dokumentenarchiv gespeichert^]. Diese Belege werden zur eindeutigen Kennzeichnung mit einer fortlaufenden Nummer versehen. Die Belegnummern setzen sich aus der ID der Kasse (vierstellig, ggf. mit führenden Nullen) und der Vorgangsnummer zusammen. Der erste Beleg der Kasse mit der ID 1 lautet also z.B. 0001-1.
 
@@ -478,9 +478,11 @@ Bei bargeldloser Zahlung (Kartenzahlung) treten folgende Besonderheiten auf:
 
 === Sonderfall 4: Online-Bestellungen an der Kasse abschließen (Click & Collect)
 
-Online-Bestellungen können auch link:https://knowledge.plentymarkets.com/pos/pos-kassenbenutzer#450[an der Kasse abgeschlossen^] werden. Kundinnen und Kunden können Waren also auch über den Webshop bestellen und entweder im Ladengeschäft die bereits bezahlten Artikel abholen oder die bestellten Artikel im Ladengeschäft bezahlen und abholen. Hierfür sind einige link:https://knowledge.plentymarkets.com/pos/pos-einrichten#4100[Vorbereitungen im ERP-System plentymarkets^] nötig.
+Online-Bestellungen können auch link:https://knowledge.plentymarkets.com/pos/pos-online-bestellungen[an der Kasse abgeschlossen^] werden. Kundinnen und Kunden können Waren also auch über den Webshop bestellen und entweder im Ladengeschäft die bereits bezahlten Artikel abholen oder die bestellten Artikel im Ladengeschäft bezahlen und abholen. Hierfür sind einige link:https://knowledge.plentymarkets.com/pos/pos-online-bestellungen#200[Vorbereitungen im ERP-System plentymarkets^] nötig.
 
 Zahlungen, die an der Kasse getätigt werden, um einen solchen Online-Auftrag zu bezahlen, sind für die Kasse umsatzneutral. Der Umsatz wird stattdessen der Herkunft des Auftrags zugerechnet. Im Kassenjournal werden Zahlungen, die nicht umsatzrelevant für die Kasse sind, als Kassenvorfall des Typs *Zahlung* gespeichert.
+
+Sobald für einen Online-Auftrag eine Zahlung an der Kasse getätigt wird, wird in plentymarkets automatisch ein Rechnungsdokument zum Auftrag erstellt. Dieses Verhalten ist standardmäßig vorgegeben und kann von Nutzerinnen und Nutzern der Kasse nicht beeinflusst werden.
 
 == Stornierungen
 
@@ -1059,7 +1061,7 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 
 § 147 Absatz 2 Nummer 2 AO der GoBD sieht vor, dass im Rahmen einer Außenprüfung alle zur Auswertung der aufzeichnungs- und aufbewahrungspflichtigen Daten notwendigen Strukturinformationen in maschinell auswertbarer Form bereitzustellen sind. Um diesen Anforderungen gerecht zu werden, können alle plentyPOS Geschäftsvorfälle über das Menü *Aufträge » POS » Idea-Export* des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen und enthält alle Geschäftsvorfälle aus allen plentyPOS Kassen des plentymarkets Systems. Benutzer können beim Export also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
 
-link:https://knowledge.plentymarkets.com/pos/pos-einrichten#500[Der IDEA-Export^] besteht aus den folgenden Dateien:
+link:https://knowledge.plentymarkets.com/pos/pos-rechtssicherheit#300[Der IDEA-Export^] besteht aus den folgenden Dateien:
 
 * addresses.csv
 * gdpdu-[TT-MM-JJJJ].dtd
