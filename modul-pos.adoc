@@ -798,7 +798,7 @@ Gutscheine werden mit 0% angezeigt. +
 Bei Entnahmen und Einlagen ist das Feld leer.
 
 |USt.
-|Brutto-Betrag ./. Netto-Betrag
+|(Brutto-Betrag) - (Netto-Betrag)
 |Bei Entnahmen und Einlagen ist das Feld leer.
 
 |Buchungskonto
@@ -906,7 +906,7 @@ Ergänzen Sie <<tabelle-pos-tagesberichte>>. In plentyPOS generierte Tagesberich
 |Übertrag aus dem letzten Tagesabschlussbericht
 
 |Soll-Bestand
-|Anfangsbestand + Zugänge ./. Abgänge
+|(Anfangsbestand) + (Zugänge) - (Abgänge)
 |
 
 |Ist-Bestand
@@ -920,11 +920,11 @@ Ergänzen Sie <<tabelle-pos-tagesberichte>>. In plentyPOS generierte Tagesberich
 3+|*Umsatz*
 
 |Summe
-|Summe der Aufträge ./. Summe der verkauften Gutscheine ./. Retouren ./. Stornierungen
+|(Summe der Aufträge) - (Summe der verkauften Gutscheine) - (Retouren) - (Stornierungen)
 |Umsatz seit dem letzten Tagesabschluss
 
 |Grand Total
-|Summe der Aufträge ./. Summe der verkauften Gutscheine ./. Retouren ./. Stornierungen
+|(Summe der Aufträge) - (Summe der verkauften Gutscheine) - (Retouren) - (Stornierungen)
 |Umsatz seit Inbetriebnahme der Kasse
 
 3+|*Steuerbericht* +
@@ -935,7 +935,7 @@ Ergänzen Sie <<tabelle-pos-tagesberichte>>. In plentyPOS generierte Tagesberich
 |Im ERP-System plentymarkets gespeicherter Steuersatz
 
 |Netto
-|Umsatzsumme ./. Betrag des Steuersatzes
+|(Umsatzsumme) - (Betrag des Steuersatzes)
 |Nettobetrag
 
 |MwSt
