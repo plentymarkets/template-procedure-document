@@ -1,5 +1,5 @@
 = Fachliche und technische Beschreibung des Moduls Artikel
-//Inhalt geprüft am 16.02.2021
+//Inhalt geprüft am 23.03.2021
 
 Artikeldaten werden in plentymarkets zentral verwaltet. Das heißt, dass Händler ihre Produktdaten im plentymarkets-ERP-System einpflegen. Daraufhin können sie ihre Ware auf diversen <<#_fachliche_und_technische_beschreibung_des_moduls_multi_channel, Marktplätzen>>, im eigenen <<#_fachliche_und_technische_beschreibung_des_moduls_webshop, Webshop>> und im <<#_fachliche_und_technische_beschreibung_plentypos, stationären Laden>> verkaufen.
 
@@ -12,7 +12,6 @@ Dieses Kapitel enthält eine Mischung aus rein informativen Texten über die ple
 ====
 
 == Einführung in die plentymarkets Artikelstruktur
-//Inhalt geprüft am 25.09.2020
 
 Zu den Artikeldaten gehören Angaben wie z.B. Kategorien, Preise, Hersteller, Beschreibungstexte und Bilder. Um die Artikelverwaltung zu erleichtern, werden diese Daten auf drei Ebenen aufgeteilt:
 
@@ -38,7 +37,6 @@ Zusammengefasst kann die Artikelstruktur in drei Datenebenen dargestellt werden:
 |===
 
 === Wie werden Varianten gebildet?
-//Inhalt geprüft am 25.09.2020
 
 In plentymarkets können Varianten entweder durch verschiedene Kombinationen aus <<#_einheiten, Einheit und Inhalt>> oder durch den Einsatz von <<#_attribute, Attributen>> erstellt werden:
 
@@ -61,7 +59,6 @@ Manche Produkte werden allerdings _nicht_ in unterschiedlichen Ausführungen ver
 Die erste Variante eines Artikels wird als Hauptvariante bezeichnet. Hat ein Artikel mehrere Varianten, kann die Hauptvariante entweder selbst ein verkaufbares Produkt sein oder ähnlich wie der Artikel rein virtuell bestehen, um die weiteren Untervarianten des Artikels anhand von Vererbung zu verwalten.
 
 === Was ist Vererbung?
-//Inhalt geprüft am 25.09.2020
 
 Die Hauptvariante eines Artikels unterscheidet sich von den Untervarianten dadurch, dass ihre Daten weitergegeben, also vererbt, werden können. Die Hauptvariante ist also eine Elternvariante, die bestimmte Daten an ihre Kinder vererbt.
 
@@ -78,7 +75,6 @@ Bei der _1-zu-N-Vererbung_ werden vollständige Datensätze von der Hauptvariant
 
 [#100]
 == Erstellung, Import und Export von Artikeldaten
-//Inhalt geprüft am 25.09.2020
 
 Einerseits können Anwender Artikel- und Variantendaten link:https://knowledge.plentymarkets.com/artikel/import-export-anlage/anlage/neue-artikel[manuell in plentymarkets erstellen^]. Andererseits können sie auch Daten zwischen ihrem plentymarkets-System und anderen, externen Systeme austauschen. Hierfür stehen link:https://knowledge.plentymarkets.com/artikel/import-export-anlage[unterschiedliche Tools^] zur Verfügung. Anwender können Artikeldatensätze z.B.:
 
@@ -92,14 +88,12 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 == Verwaltung von Artikeldaten
-//Inhalt geprüft am 25.09.2020
 
 Das Menü *Artikel » Artikel bearbeiten* bietet eine Übersicht aller im System gespeicherten Artikel- und Variantendatensätze. Welche Daten in der Übersicht angezeigt werden, ist von den gesetzten Filtern abhängig.
 
 In diesem Menü können Artikel- und Variantendaten eingesehen und manuell geändert werden.
 
 === Artikel- und Varianten-IDs
-//Inhalt geprüft am 25.09.2020
 
 Artikel und Varianten werden durch eindeutige IDs in plentymarkets gekennzeichnet. Diese IDs werden beim Erstellen des Artikels bzw. der Variante erzeugt und sind systemweit eindeutig.
 
@@ -116,7 +110,6 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 === Änderungen nachvollziehen
 
 ==== Änderungshistorie
-//Inhalt geprüft am 16.02.2021
 //Der gleiche Inhalt findet sich auch im Kapitel Auftragsabwicklung
 
 Mit Hilfe der link:https://knowledge.plentymarkets.com/daten/aenderungshistorie[Änderungshistorie^] können Anwender Änderungen an rechnungsrelevanten Daten verfolgen. Zum Beispiel können Anwender den gesamten Lebensweg eines Artikels oder eines Auftrags nachvollziehen.
@@ -139,13 +132,11 @@ Alternativ können Anwender selbst entscheiden:
 * ob das Archiv aktiviert werden soll, d.h. ob die protokollierten Änderungen 11 Jahre lang abrufbar sein sollen.
 
 ==== Zeitstempel
-//Inhalt geprüft am 16.02.2021
 
 In plentymarkets werden jeweils beim Erstellen und Ändern von Artikel- und Variantendaten Zeitstempel erzeugt. Der Zeitstempel der letzten Änderung wird bei jeder Änderung der Daten entsprechend aktualisiert.
 Für Artikel sind diese Zeitstempel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* zu finden, für Varianten im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: [Varianten-ID]*.
 
 ==== Sonstige Möglichkeiten
-//Inhalt geprüft am 16.02.2021
 
 Anwender können Änderungen an Artikel- und Variantendaten auch selbst erfassen und dokumentieren.
 Zu diesem Zweck können Anwender diverse link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Artikel- und Variantendaten exportieren^].
@@ -158,23 +149,25 @@ Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Syst
 
 === Preise
 ==== Was sind Verkaufspreise?
-//Inhalt geprüft am 25.09.2020
 
 In plentymarkets wird zwischen Verkaufspreisen und Preisen unterschieden. Die Verkaufspreise sind Datencontainer (ähnlich wie Artikel es auch sind). Sie ermöglichen das zentrale Verwalten von Bedingungen, die auf Preise zutreffen sollen. Verkaufspreise bestimmen also link:https://knowledge.plentymarkets.com/artikel/einstellungen/preise[in welchen Situationen^] eine Variante zu einem bestimmten Preis verkauft wird.
 
-Verkaufspreise gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Nach der Erstellung im Menü *Einrichtung » Artikel » Verkaufspreise* werden Verkaufspreise mit einzelnen Varianten verknüpft.
+Verkaufspreise gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Nach der Erstellung werden Verkaufspreise mit einzelnen Varianten verknüpft.
 
 In einem neu angelegten System sind standardmäßig zwei Verkaufspreise mit den IDs 1 und 2 hinterlegt. Anwender können diese Standard-Verkaufspreise ändern, löschen und/oder beliebig viele neue Verkaufspreise erstellen. Die vom Anwender erstellten Verkaufspreise erhalten eine fortlaufende ID beginnend mit ID 3. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben und nicht geändert werden kann.
 
 ==== Was sind Preise?
-//Inhalt geprüft am 25.09.2020
 
-Im Gegensatz zu dem Verkaufspreis ist der Preis der tatsächliche monetäre Betrag, zu dem eine Variante verkauft wird, wenn die durch den Verkaufspreis definierten Bedingungen erfüllt sind. Einer Variante können beliebig viele Verkaufspreise zugeordnet werden. Pro Verkaufspreis wird dann ein Preis direkt an der Variante gespeichert. Dieser Preis wird Kunden in Rechnung gestellt, wenn die Bedingungen erfüllt sind, die in den Verkaufspreiseinstellungen definiert wurden.
+Im Gegensatz zu dem Verkaufspreis ist der Preis der tatsächliche Geldbetrag, zu dem eine Variante verkauft wird, wenn die durch den Verkaufspreis definierten Bedingungen erfüllt sind. Einer Variante können beliebig viele Verkaufspreise zugeordnet werden. Pro Verkaufspreis wird dann ein Preis direkt an der Variante gespeichert.
 
 Standardmäßig werden die Kombinationen aus Verkaufspreis und Preis von der Hauptvariante an die Untervarianten des Artikels <<#_was_ist_vererbung?_, 1-zu-N vererbt>>. Das bedeutet, dass allen Varianten eines Artikels standardmäßig dieselben Kombinationen aus Verkaufspreis und Preis zugeordnet werden.
 
+Intern arbeitet plentymarkets mit Bruttopreisen.
+Anwender können zwar entscheiden, ob Brutto- oder Nettopreise im Artikeldatensatz angezeigt werden sollen.
+Diese Einstellung betrifft jedoch nur die Anzeige.
+Es werden _ausschließlich_ Bruttopreise in der Datenbank gespeichert.
+
 ==== Wie können Preisdaten geändert werden?
-//Inhalt geprüft am 25.09.2020
 
 Die Preise einer einzigen Variante können geändert werden, z.B.:
 
@@ -190,38 +183,20 @@ Die Preise mehrere Varianten können gleichzeitig geändert werden, z.B.:
 * durch den link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Import von Preisdaten^].
 * per link:https://knowledge.plentymarkets.com/daten/rest-api[REST-API^].
 
-//aktualisieren wenn die neue Änderungshistorie veröffentlicht wird
-Preisänderungen werden in plentymarkets nicht dokumentiert. Daher müssen Anwender GoBD-relevante Änderungen selbst erfassen und dokumentieren. Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
+Preisänderungen können in der plentymarkets <<#_änderungshistorie, Änderungshistorie>> protokolliert werden. Dies setzt voraus, dass der Anwender die Änderungshistorie und die relevanten Datenfelder aktiviert hat.
+Alternativ können Anwender GoBD-relevante Änderungen selbst erfassen und dokumentieren. Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 ==== Preiskalkulationen
-//Inhalt geprüft am 25.09.2020
-//aktualisieren wenn die neue Preiskalkulation veröffentlich wird
 
-Preiskalkulationen gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>.
-Sie dienen dazu, die monetären Preise von Varianten automatisch anhand bestimmter Kriterien zu berechnen und zu aktualisieren.
+link:https://knowledge.plentymarkets.com/artikel/einstellungen/preise#1000[Preiskalkulationen^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>.
+Sie dienen dazu, die Geldpreise von Varianten automatisch anhand bestimmter Kriterien zu berechnen und zu aktualisieren.
 
-*_Beispiel_*: Anwender können mit dem Einkaufspreis des Artikels starten und dann die Transportkosten, Lagerkosten und Steuern hinzufügen. Schließlich können Anwender eine Gewinnspanne von 20% oben drauf legen.
+*_Beispiel_*: Anwender können mit dem Einkaufspreis des Artikels starten und dann die Transportkosten, Lagerkosten und Steuern hinzufügen. Schließlich können Anwender eine Gewinnspanne von 7% oben drauf legen.
 
 _Im ersten Schritt_ erstellen Anwender individuelle Preiskalkulationen.
-Diese können nur manuell im Menü *Einrichtung » Artikel » Preiskalkulation* erstellt und bearbeitet werden.
-
-Dabei entscheiden Anwender selbst, welcher Wert als Grundlage für die Berechnung dienen soll:
-
-* Der Einkaufspreis
-* Ein bestehender <<#_preise, Verkaufspreis>>
-
-Anwender entscheiden welche, link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#280[an der Variante gespeicherten Kosten^] hinzukommen sollen:
-
-* Transportkosten (netto)
-* Lagerkosten (netto)
-* Zoll (prozentual)
-* Betriebskosten (prozentual)
-* link:https://knowledge.plentymarkets.com/auftragsabwicklung/auftraege/buchhaltung#300[Mehrwertsteuer^]
-
-Anwender entscheiden, ob sie individuelle Beträge zum Preis addieren oder vom Preis subtrahieren möchten, z.B. plus 5% oder mal 1,05.
-Hierzu tragen Anwender einen numerischen Wert ein und wählen einen der folgenden Operatoren: `+`, `-`, `+%`, `-%`, `*`, `/`.
+Diese können nur manuell erstellt und bearbeitet werden.
 
 _Im zweiten Schritt_ bestimmen Anwender, für welche Varianten die Preiskalkulation verwendet werden soll.
 Dies geschieht z.B. durch:
@@ -230,16 +205,13 @@ Dies geschieht z.B. durch:
 * den link:https://knowledge.plentymarkets.com/daten/daten-importieren/sync-typen/elasticSync-artikel#2300[Import^] von Preiskalkulationsverknüpfungen.
 * die Verwendung der link:https://knowledge.plentymarkets.com/artikel/import-export-anlage/anlage/massenbearbeitung#100[Varianten-Gruppenfunktion^].
 
+Bei aktivierter <<#_was_ist_vererbung?_, Vererbung>> werden diese Preise wie andere Preise auch von der Hauptvariante an die anderen Varianten des Artikels vererbt.
+
 Änderungen, die Anwender an Preiskalkulationen vornehmen, werden nicht protokolliert. Daher müssen Anwender GoBD-relevante Änderungen selbst erfassen und dokumentieren. Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
-Bei aktivierter <<#_was_ist_vererbung?_, Vererbung>> werden diese Preise wie andere Preise auch von der Hauptvariante an die anderen Varianten des Artikels vererbt.
-
-Wenn die Preiskalkulation mit einer Variante verknüpft wird, wird außerdem die <<#_hersteller, Herstellerprovision>> berücksichtigt, wenn die definierten Bedingungen zutreffen.
-
 ==== Welche Rabatte auf Preise sind möglich?
-//Inhalt geprüft am 25.09.2020
 
 In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 
@@ -252,7 +224,6 @@ In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verw
 Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* mit der Option link:https://knowledge.plentymarkets.com/artikel/artikel-verwalten#40[Aktionsgutschein/POS-Rabatt^] von Rabatten an der plentyPOS Kasse ausgeschlossen werden. Das bedeutet, dass das Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte und Aktionsrabatte sind für diese nicht rabattfähigen Artikel ungültig.
 
 === Kategorien
-//Inhalt geprüft am 25.09.2020
 //aktualisieren wenn Limits da sind
 
 In plentymarkets können link:https://knowledge.plentymarkets.com/artikel/einstellungen/kategorien[Kategorien^] sowohl im Sinne von _Warengruppen_ als auch im Sinne von den _Content-Seiten_ eines Webshops verstanden werden. In diesem Kapitel sind mit Kategorien Warengruppen gemeint. Sie dienen dazu, Produkte übersichtlich zu gruppieren.
@@ -262,9 +233,8 @@ Varianten können beliebig vielen Kategorien zugeordnet werden. Allerdings muss 
 Kategorien haben steuerrechtliche Relevanz, da ein oder mehrere Mengenrabatte für einzelne Kategorien im Menü *Einrichtung » Mandant » Mandant öffnen » Kategorien » Rabatte* gespeichert werden können. Pro Kategorie sind bis zu drei Mengenrabatte möglich. Diese Rabatte werden automatisch angewendet, wenn Kunden die rabattfähige Menge an Varianten aus einer Kategorie erreichen oder überschreiten. Sie gelten jedoch nur für die Standardkategorie einer Variante. Diese Kategorierabatte können nur manuell im plentymarkets Backend gespeichert werden. Ein Import oder Export dieser Konfiguration ist nicht möglich.
 
 === Einheiten
-//Inhalt geprüft am 25.09.2020
 
-Einheiten gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
+link:https://knowledge.plentymarkets.com/artikel/einstellungen/einheiten[Einheiten^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
 
 * verschiedene <<#_wie_werden_varianten_gebildet?_, Varianten eines Artikels>> zu bilden.
 * den Inhalt von Varianten zu definieren. Hierfür werden Einheiten mit den Varianten verknüpft und Mengenangaben hinterlegt.
@@ -273,7 +243,6 @@ Einheiten gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymar
 Standardmäßig sind 52 Einheiten nach ISO-Code in plentymarkets-Systemen gespeichert. Anwender können jedoch im Menü *Einrichtung » Artikel » Einheiten* auch eigene Einheiten erstellen.
 
 === Attribute
-//Inhalt geprüft am 25.09.2020
 
 link:https://knowledge.plentymarkets.com/artikel/einstellungen/attribute[Attribute^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
 
@@ -293,25 +262,25 @@ Im Menü *Einrichtung » Artikel » Attribute* können beliebig viele Attribute 
 |===
 
 === Merkmale und Eigenschaften
-//Inhalt geprüft am 25.09.2020
 //aktualisieren wenn Bestelleigenschaften veröffentlicht werden
 
 In plentymarkets ist es auch möglich, Produkte zu charakterisieren, ohne dabei Varianten zu bilden. Hierfür werden Merkmale und Eigenschaften verwendet. Darüber lassen sich Features, z.B. technische Details wie “Bluetooth” oder “WLAN” abbilden. Merkmale und Eigenschaften sind nicht an den Warenbestand gekoppelt und nicht auf der Produktseite im Webshop wählbar.
 
 Sowohl Merkmale als auch Eigenschaften gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Nach der Erstellung werden Merkmale allerdings auf der Artikelebene verknüpft und Eigenschaften auf der Variantenebene.
 
+//eigenschaften können das jetzt auch, aber sie können noch nicht im webshop als Bestelleigenschaften verwendet werden - aktualisieren wenn Bestelleigenschaften fertig sind
 Merkmalen kommt eine besondere Bedeutung im Sinne der GoBD zu, da sie Aufpreise definieren können. Eigenschaften hingegen können keine Aufpreise definieren.
 
 Anwender tragen einen Wert ein, wenn sie für das Merkmal einen Aufpreis berechnen möchten. Dieser Wert wird automatisch zum Artikelpreis addiert.
 
 Anwender haben auch die Möglichkeit, keine MwSt. auf den eingegebenen Aufpreis anzurechnen. Dazu muss die Option *Als Zusatzkosten darstellen* gewählt werden. Eine mögliche Anwendung ist zum Beispiel die Darstellung von Pfandbeträgen, bei denen keine Mehrwertsteuer angewendet wird. In Rechnungen etc. erscheinen Merkmale, bei denen diese Option gewählt wurde, als eigene Position mit der ID -2.
 
+//merkmalverknüpfungen kommen in änderungshistorie raus - aktualisieren wenn Bestelleigenschaften fertig sind
 Änderungen an Merkmalen und daraus resultierende Preisänderungen werden nicht protokolliert. Die Protokollierung solcher Änderungen obliegt dem Anwender. Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 === Versandprofile
-//Inhalt geprüft am 25.09.2020
 
 <<#_fachliche_und_technische_beschreibung_versandabwicklung, Versandprofile>> gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie beinhalten die vom Händler angebotenen Versandservices und Portokosten. Nach der Erstellung werden Versandprofile mit Artikeln verknüpft.
 
@@ -320,7 +289,6 @@ Die Versandkosten einer Variante ergeben sich also aus der Konfiguration der mit
 Beim Erstellen eines neuen Artikels ist standardmäßig kein Versandprofil aktiviert. Pro Artikel sollte jedoch mindestens ein Versandprofil aktiviert werden, da sonst ungewollte Effekte bei der Versandkostenberechnung auftreten können.
 
 === Hersteller
-//Inhalt geprüft am 25.09.2020
 
 Herstellerdaten werden <<#_einführung_in_die_plentymarkets_artikelstruktur, zentral in den plentymarkets Einstellungen>> verwaltet und anschließend mit Artikeln verknüpft.
 Im zentralen Herstellerdatensatz werden Name, Kontaktdaten und marktplatzspezifische IDs des Herstellers gespeichert.
@@ -338,7 +306,6 @@ Herstellerprovisionen können nur manuell im Menü *Einrichtung » Artikel » He
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 == Multipacks, Artikelpakete und Artikelsets
-//Inhalt geprüft am 25.09.2020
 
 Anwender haben drei verschiedene Möglichkeiten, Produkte zu kombinieren und als eine Verkaufseinheit anzubieten. Die folgende Tabelle vergleicht die Möglichkeiten und erläutert sie beispielhaft.
 
@@ -397,7 +364,6 @@ Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
 == Backup
-//Inhalt geprüft am 25.09.2020
 
 Anwender können eine link:https://knowledge.plentymarkets.com/daten/backup[Backup-Funktion^] nutzen, um Artikel- und Variantendaten in der Datenbank auf einen früheren Stand zurückzusetzen oder um gelöschte Daten wiederherzustellen.
 
