@@ -43,7 +43,7 @@ Das Abrechnungsmodell des ShopBoosters bemisst sich nach Seitenaufrufen und Seit
 * Speichern von Einstellungen des Online-Shops
 * Invalidieren des Caches bei Deaktivierung des ShopBoosters
 
-Der ShopBooster ist für alle plentymarkets Tarife verfügbar. Man aktiviert den Shopbooster im Menü *System » Systemeinstellungen » Mandant » Mandant wählen » Webshop » ShopBooster* und kann ihn dort auch wieder aktivieren.
+Der ShopBooster ist für alle plentymarkets Editionen verfügbar. Man aktiviert den Shopbooster im Menü *System » Systemeinstellungen » Mandant » Mandant wählen » Webshop » ShopBooster* und kann ihn dort auch wieder aktivieren.
 
 
 == Beispielablauf eines Einkaufs in einem Ceres-Webshop 

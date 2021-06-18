@@ -3,9 +3,9 @@
 Dieser Anhang liefert Formulierungsbeispiele für eine Verfahrensdokumentation beim Einsatz der Software plentymarkets. Die Beispiele bedürfen in jedem Fall Anpassungen an die tatsächlichen Gegebenheiten des Unternehmens, das plentymarkets einsetzt. Die hier angegebenen Beispielformulierungen sind nicht rechtlich geprüft. +
 _Hinweis: Dieses Kapitel ist nicht Teil des Formulierungsvorschlag und sollte nicht in Ihre Verfahrensdokumentation übernommen werden._
 
-== Tarif und Hosting
+== Edition und Hosting
 
-Ich nutze die Software plentymarkets im Tarif … In diesem Tarif sind folgende Module … integral. Außerdem habe ich folgende optionale Module hinzugebucht: … +
+Ich nutze die Software plentymarkets in der Edition … In dieser Edition sind folgende Module … integral. Außerdem habe ich folgende optionale Module hinzugebucht: … +
 Ich habe mich für das von plentymarkets angebotene Hosting in … entschieden.
 
 == Fachliche Beschreibung plentymarkets
