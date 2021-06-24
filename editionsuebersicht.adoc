@@ -295,15 +295,15 @@ Das Alter der verfügbaren Rohdaten und die Speicherdauer der berechneten Ergebn
 |Speicherdauer Ergebnisse (Monate)
 
 |XS
-|3
 |6
+|12
 
 |S
-|6
 |12
+|24
 
 |M
-|12
+|24
 |36
 
 |L
