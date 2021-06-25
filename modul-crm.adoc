@@ -246,6 +246,9 @@ Neue Adresse
 |Aufträge / +
 Neuer Auftrag / +
 Neues Angebot / +
+Neuer Auftrag [beta]/ +
+Neues Angebot [beta]/ +
+Neues Abonnement [beta]/ +
 Neuer Sammelauftrag / +
 Scheduler
 |Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht bzw. die Übersicht der Abonnements des Kontakts öffnen und neue Aufträge bzw. Angebote und Sammelaufträge manuell erstellen.
