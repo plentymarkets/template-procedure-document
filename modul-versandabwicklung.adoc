@@ -6,19 +6,20 @@ Eine Übersicht über vorhandene (sowohl intern als auch extern entwickelte) Plu
 
 Im Tab _Support_ jedes Plugins ist beschrieben, welcher Ansprechpartner für Rückfragen kontaktiert werden kann.
 
-plentymarkets übernimmt den Support für die folgenden Versanddienstleister- bzw. Fulfillment-Dienstleister-Plugins:
+plentymarkets übernimmt die Entwicklung und den Support für die folgenden Versanddienstleister- bzw. Fulfillment-Dienstleister-Plugins:
 
-* DHL Shipping (Versenden)
-* DHL Wunschpaket
-* DHL Retoure Online
-* DPD Versand Services
-* DPD Shipping UK
+* link:https://marketplace.plentymarkets.com/dhlshipping_4871[DHL Shipping (Versenden)^]
+* link:https://marketplace.plentymarkets.com/dhlwunschpaket_5435[DHL Wunschzustellung^]
+* link:https://marketplace.plentymarkets.com/dhlretoureonline_6714[DHL Retoure Online^]
+* link:https://marketplace.plentymarkets.com/dpdshippingservices_6320[DPD Versand Services^]
+* link:https://marketplace.plentymarkets.com/dpdshippinguk_5121[DPD Shipping UK^]
+* link:https://marketplace.plentymarkets.com/postnl_7014[PostNL^]
 
 Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware lediglich anmeldet und versendet, beinhaltet das Versenden der Waren mit einem Fulfillment-Dienstleister die komplette oder teilweise Verwaltung des Warenbestands des Anwenders inklusive Lagerung der Artikel.
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<#_integrierte_versanddienstleister, Integrierte Versanddienstleister>> und <<#_integrierte_fulfillment_dienstleister, Integrierte Fulfillment-Dienstleister>>.
 
-Bevor der Anwender eine der in plentymarkets angebotenen Schnittstellen zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren.
+Bevor der Anwender eine der in plentymarkets angebotenen Schnittstellen zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren und erhält daraufhin die für das plentymarkets System benötigten Zugangsdaten.
 
 == Lieferländer
 
@@ -296,20 +297,22 @@ Iloxx |DPD Print
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Versanddienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#2500[Versanddienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#2500[Versanddienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
 
 === Integrierte Fulfillment-Dienstleister
 
 Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnittstelle in plentymarkets:
 
  * DHL Fulfillment
+ * eBay Fulfillment by Orange Connex
+ * Fulfillment by Amazon
  * IDS Logistik
  * iLOPACK
- * Fulfillment by Amazon
 
-Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#4700[Fulfillment-Dienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
+Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren und erhält daraufhin die für das plentymarkets System benötigten Zugangsdaten.
+
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/fulfillment/versand-vorbereiten#4700[Fulfillment-Dienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
 
 == Datenübertragung
 
