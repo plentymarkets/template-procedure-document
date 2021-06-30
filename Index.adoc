@@ -23,7 +23,7 @@ include::modul-benutzer-benutzerrechte.adoc[]
 
 <<<
 
-include::tarifstruktur.adoc[]
+include::editionsuebersicht.adoc[]
 
 <<<
 
