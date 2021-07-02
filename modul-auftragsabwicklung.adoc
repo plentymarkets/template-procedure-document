@@ -636,7 +636,7 @@ Standardmäßig sind 2 Standorte, Deutschland und United Kingdom, als Beispiele 
 Das System unterscheidet bei Standortländern zwischen Mitgliedsländern der EU und anderen Ländern. Wenn daher ein Standort eingerichtet wird, der nicht in der EU liegt, wird jede Lieferung in ein anderes Land als Ausfuhrlieferung betrachtet. Wenn ein Standort in der EU liegt, wird zwischen innergemeinschaftlichen Lieferungen und Ausfuhrlieferungen unterschieden. +
 Zu den umsatzsteuerrelevanten Grundeinstellungen zählen Festlegungen zum Umgang mit Ausfuhrlieferungen und zur Anzeige der Umsatzsteuer von Versandkosten. Für EU-Standorte muss außerdem festgelegt werden, wie sich das System bei einer Umsatzsteuer-ID am Auftrag verhält.
 
-Mindestens eine Steuerkonfiguration muss im System hinzugefügt werden, mit dieser kann auch in verschiedene Länder versendet werden. Sobald die Lieferschwelle für ein Land überschritten wird, muss eine weitere Steuerkonfiguration hinzugefügt werden, damit die Steuerabgaben korrekt berechnet werden können. Standorte werden für Firmensitze hinzugefügt, das Land des Standortes wird mit den entsprechenden Steuerkonfigurationen für die korrekte Abrechnung hinzugefügt. Erst wenn Händler in weiteren Ländern steuerpflichtig werden, weil sie die Lieferschwelle überschritten haben, werden für einen Standort weitere Länder mit Steuerkonfigurationen hinzugefügt.
+Mindestens eine Steuerkonfiguration muss im System hinzugefügt werden, mit dieser kann auch in verschiedene Länder versendet werden. Sobald die Lieferschwelle für Lieferungen in andere EU-Länder überschritten wird, müssen Steuerkonfigurationen für diese Lieferländer hinzugefügt werden, damit die Steuerabgaben korrekt berechnet werden können. Standorte werden für Firmensitze hinzugefügt, das Land des Standortes wird mit den entsprechenden Steuerkonfigurationen für die korrekte Abrechnung hinzugefügt.
 
 Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
 
@@ -651,11 +651,13 @@ Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant 
 |Steuersatz A in % +
 Steuersatz B in % +
 Steuersatz C in % +
-Steuersatz D in % |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
+Steuersatz D in % +
+Steuersatz E in % +
+Steuersatz F in % |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
 
 |Gültig ab|Das Datum, ab dem die Steuersätze gelten sollen.
 
-|Ungültig ab|Das Datum, ab dem die Steuersätze nicht länger gelten sollen. Zum Beispiel das Datum, ab dem der Anwender nicht länger steuerpflichtig in einem Lieferland ist, weil er die Lieferschwelle nicht überschritten hat oder weil er nicht länger in dieses Land liefert.
+|Ungültig ab|Das Datum, ab dem die Steuersätze nicht länger gelten sollen.
 
 |Nur für digitale Artikel|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
 Wenn für ein Lieferland bereits ein Steuersatz vorhanden ist, z.B. weil die Lieferschwelle überschritten wurde, muss kein weiterer Steuersatz nur für digitale Artikel angelegt werden, da der vorhandene Steuersatz verwendet wird.
