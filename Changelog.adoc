@@ -9,6 +9,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.5 |Auftragsabwicklung |02.07.2021 |Geändert: Dieser Bereich wurde überarbeitet. Steuerkonfigurationen für Länder außerhalb der EU wurden angepasst.
 |V7.5 |Tarifstruktur |18.06.2021 |Geändert: Dieser Bereich wurde in Editionsübersicht umbenannt und überarbeitet.
 |V7.4 |POS |24.03.2021 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.4 |Artikel |24.03.2021 |Geändert: Dieser Bereich wurde überarbeitet.
