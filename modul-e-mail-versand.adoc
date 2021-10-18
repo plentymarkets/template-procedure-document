@@ -18,6 +18,10 @@ Der Anwender hat die Möglichkeit, den E-Mail-Versand vor dem Live-Betrieb zu te
 
 == E-Mail-Vorlagen
 
+Aktuell gibt es im plentymarkets System 2 Möglichkeiten, E-Mail-Vorlagen zu erstellen. Diese werden im Folgenden erläutert.
+
+=== E-Mail-Vorlagen in den E-Mail-Einstellungen des Mandanten erstellen
+
 Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen. Die E-Mail-Vorlagen werden gemäß der Einstellung des Eigners, die man beim Erstellen der Vorlage wählen kann, in einem der drei bereits im System vorhandenen Ordner gespeichert:
 
  * Allgemeine E-Mail-Vorlagen – Eigner: Alle
@@ -53,6 +57,36 @@ Der Ordner *Meine E-Mail-Vorlagen* dient dazu, E-Mail-Vorlagen nur für den eige
 Der Ordner *E-Mail-Vorlagen anderer Benutzer* dient dazu, E-Mail-Vorlagen für alle Benutzer, die die Berechtigung im System des Anwenders haben, zugänglich zu machen. Unabhängig davon, welcher Benutzer im System angemeldet ist, kann dieser auf den Ordner zugreifen.
 
 Weitere Informationen zum E-Mail-Versand sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/e-mails-versenden[E-Mails^] zu finden.
+
+=== E-Mail-Vorlagen über den EmailBuilder erstellen
+
+Der Anwender kann beliebig viele Ordner und E-Mail-Vorlagen erstellen. 
+
+Der Ordner *Standardvorlagen* enthält bereits 10 E-Mail-Vorlagen, die in der folgenden Tabelle aufgelistet sind. Ebenso gibt es den Ordner *Default templates*, der diese 10 Vorlagen in englischer Sprache enthält.
+
+[[tabelle-standardvorlagen-emailbuilder]]
+.Standardvorlagen im EmailBuilder
+[cols="1,1"]
+|====
+|Name der deutschen Vorlage |Name der englischen Vorlage
+
+|Auftrag: Änderung |Order: Changes
+|Auftrag: Teilzahlung erhalten |Order: Partial payment received
+|Auftrag: Versandbestätigung |Order: Shipping confirmation
+|Auftrag: Zahlungseingang vollständig |Order: Payment complete
+|eBay: Disput / Storno, keine Zahlung |eBay: dispute / cancellation, no payment
+|eBay: Eingangsbestätigung Bestellung |eBay: Order confirmation
+|eBay: Eingangsbestätigung mit Bankdaten ohne Checkout |eBay: Order confirmation with bank details without checkout
+|Shop: Neues Passwort |Shop: New password
+|Shop: Newsletter-Anmeldung |Shop: Newsletter registration
+|Shop: Eingangsbestätigung Bestellung |Shop: Order confirmation
+|====
+
+Der Anwender kann die Namen der Vorlagen sowie deren Inhalt und Betreff ändern.
+
+Beim Erstellen der Vorlagen über den EmailBuilder stehen dem Anwender Widgets zur Verfügung. Diese können per Drag-and-drop an die gewünschte Stelle der Vorlage gesetzt werden und mit Inhalt, wie z.B. Variablen befüllt werden.
+
+Weitere Informationen zum EmailBuilder sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/emailbuilder-testphase[EmailBuilder^] zu finden.
 
 == E-Mail-Versand automatisieren
 
@@ -106,8 +140,8 @@ Der Anwender hat die Möglichkeit, bestimmte Ereignisse mit einer E-Mail-Vorlage
 |Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei ricardo abgeschlossen wurde.
 |kein Versand
 
-|Neue Bestellung über real.de
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei real.de abgeschlossen wurde.
+|Neue Bestellung über Kaufland.de
+|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Kaufland.de abgeschlossen wurde.
 |kein Versand
 
 |Neue Bestellung über Rakuten
@@ -119,7 +153,7 @@ Der Anwender hat die Möglichkeit, bestimmte Ereignisse mit einer E-Mail-Vorlage
 |kein Versand
 
 |Sende Kunde E-Mail zur Passwortänderung
-|Sendet Kunden eine E-Mail mit einem Link zum neuen Passwort, der aktiv bestätigt werden muss. Die Template-Funktion *+{% Link_ChangePassword() %}+* muss in der E-Mail-Vorlage enthalten sein.
+|Sendet Kunden eine E-Mail mit einem Link zum neuen Passwort, der aktiv bestätigt werden muss.
 |Webshop: Neues Passwort
 
 |Bestätigung der Passwortänderung
@@ -137,12 +171,6 @@ Der Anwender hat die Möglichkeit, bestimmte Ereignisse mit einer E-Mail-Vorlage
 |Bestätigung Newsletter-Opt-In
 |Sendet Kunden eine E-Mail als Bestätigung, sobald diese den Bestätigungslink, der mit der E-Mail-Vorlage für das Ereignis *Newsletter Opt-In* verschickt wurde, aktiviert haben.
 |Webshop: Newsletteranmeldung
-
-|Erinnerung bei Kaufabbruch
-|Sendet Kunden eine E-Mail als Erinnerung, dass ein oder mehrere Artikel im Warenkorb liegen, der Kaufvorgang jedoch nicht abgeschlossen wurde. Die E-Mail-Vorlage sollte den Link zum Warenkorb enthalten, damit die Kunden diesen aufrufen und die Bestellung abschließen können. Dazu an die URL des Webshops den Suffix */basket/* anfügen (Beispiel: +https://www.meinshop.de/basket/+). +
-Voraussetzung hierbei ist, dass die potenziellen Käufer bei ihrem Besuch im Webshop angemeldet und eingeloggt waren, da andernfalls die E-Mail-Adresse nicht vorliegt und der automatische Versand der E-Mail-Vorlage daher nicht funktionieren kann. +
-*_Wichtig:_* Diese Art von E-Mail-Versand kann aufgrund der fehlenden vorherigen Einwilligung als unzulässiger Spam gelten. Der Anwender sollte sich daher von einem kundigen Fachanwalt beraten lassen.
-|kein Versand
 
 |Kundenregistrierung
 |Sendet Kunden eine E-Mail, wenn diese sich neu im Webshop registriert haben.
