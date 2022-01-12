@@ -337,7 +337,7 @@ image::assets/AGB_Widerrufsrecht.png[]
 
 == Speicherung von marktplatzspezifischen Kundendaten
 
-Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden im Modul *Fachliche und technische Beschreibung des Moduls Multi-Channel* beschrieben.
+Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden im Modul *Fachliche und technische Beschreibung des Moduls plentyChannel* beschrieben.
 
 == Passwörter
 

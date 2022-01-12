@@ -8,7 +8,7 @@ In allen Editionen stehen integrale und optionale Module zur Verfügung. Integra
 
 In der Edition *plentymarkets BASIC* sind die folgenden Module integral:
 
-* Multi-Channel
+* plentyChannel (Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten)
 * Online-Shop
 * Auftragsabwicklung
 * Warenwirtschaft
@@ -59,7 +59,7 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 
 In der Edition *plentymarkets CLASSIC* sind die folgenden Module integral:
 
-* Multi-Channel
+* plentyChannel (Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten)
 * Online-Shop
 * Auftragsabwicklung
 * Warenwirtschaft
@@ -119,7 +119,7 @@ Auftragspakete können für einen Zeitraum von 3 Monaten, 6 Monaten oder 12 Mona
 
 In der Edition *plentymarkets FLEX* sind die folgenden Module integral:
 
-* Multi-Channel
+* plentyChannel (Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten)
 * Online-Shop
 * Auftragsabwicklung
 * Warenwirtschaft
@@ -170,7 +170,7 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 
 In der Edition *plentymarkets PLUS* sind folgenden Module integral:
 
-* Multi-Channel
+* plentyChannel (Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten)
 * Online-Shop
 * Auftragsabwicklung
 * Warenwirtschaft
@@ -221,7 +221,7 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 
 In der Edition *plentymarkets ENTERPRISE* sind folgenden Module integral:
 
-* Multi-Channel
+* plentyChannel (Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten)
 * Online-Shop
 * Auftragsabwicklung
 * Warenwirtschaft
@@ -316,7 +316,7 @@ Das Alter der verfügbaren Rohdaten und die Speicherdauer der berechneten Ergebn
 
 Die Edition *plentymarkets PARTNER* kann nur von zertifizierten plentymarkets Partnern gebucht werden. Die folgenden Module sind in der Edition integral:
 
-* Multi-Channel
+* plentyChannel (Vertrieb auf Online-Marktplätzen und Preisvergleichsseiten)
 * Online-Shop
 * Auftragsabwicklung
 * Warenwirtschaft
