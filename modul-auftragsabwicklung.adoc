@@ -10,7 +10,7 @@ Auftragsherkünfte geben wieder, über welchen Kanal ein Auftrag erstellt wurde.
 
 Systemherkünfte sind bei Auslieferung eines plentymarkets Systems bereits angelegt und können nicht gelöscht werden. Die Systemherkünfte sind automatisch aktiv. Systemherkünfte lassen sich durch das Entfernen eines Häkchens deaktivieren, sie sind dadurch aber nicht gelöscht. Über eine deaktivierte Systemherkunft lassen sich lediglich keine Aufträge mehr generieren. Damit über eine Herkunft tatsächlich Aufträge generiert werden können und diese Herkunft einem Auftrag auch zugeordnet werden kann, muss sie mindestens aktiv sein, aber bei vielen Systemherkünften sind noch weitere Einstellungen notwendig.
 Den Systemherkünften stehen die eigenen Herkünfte gegenüber. Eigene Herkünfte werden wie bereits erwähnt durch den Anwender hinzugefügt und müssen anschließend genau wie Systemherkünfte aktiviert werden. Im Gegensatz zu Systemherkünften können eigene Herkünfte später auch wieder gelöscht werden.
-Für alle Herkünfte gilt also, dass sie deaktiviert oder aktiviert werden müssen. Welche Schritte genau zur Einrichtung einer Herkunft notwendig sind, unterscheidet sich von Herkunft zu Herkunft und wird in den Beschreibungen der Module plentyChannel, POS, Online-Shop sowie in den Plugin-Beschreibungen erläutert.
+Für alle Herkünfte gilt also, dass sie deaktiviert oder aktiviert werden müssen. Welche Schritte genau zur Einrichtung einer Herkunft notwendig sind, unterscheidet sich von Herkunft zu Herkunft und wird in den Beschreibungen der Module plentyChannel, plentyPOS, Webshop sowie in den Plugin-Beschreibungen erläutert.
 
 Folgende Herkünfte sind standardmäßig in jedem plentymarkets System vorangelegt:
 

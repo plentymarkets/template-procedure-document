@@ -1,10 +1,10 @@
 = Fachliche und technische Beschreibung des Moduls Webshop
 
-plentymarkets stellt seinen Anwendern einen vollumfänglichen Webshop zur Verfügung, der über die beiden Plugins Ceres und IO individualisierbar ist. Das Plugin Ceres ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die den Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
+plentymarkets stellt seinen Anwendern einen vollumfänglichen Webshop zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die den Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
 
-Der Anwender erstellt das Design seines Webshops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, Artikelseiten, rechtlichen Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins Ceres und IO vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentymarkets System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
+Der Anwender erstellt das Design seines Webshops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, Artikelseiten, rechtlichen Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentymarkets System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
 
-Nach Änderungen an den Einstellungen der Plugin-Konfigurationen müssen die Plugins Ceres und IO erneut gespeichert und bereitgestellt werden, damit die vorgenommenen Änderungen im Webshop greifen. Änderungen, die mit dem ShopBuilder vorgenommen werden sind direkt sichtbar. 
+Nach Änderungen an den Einstellungen der Plugin-Konfigurationen müssen die Plugins plentyShop LTS und IO erneut gespeichert und bereitgestellt werden, damit die vorgenommenen Änderungen im Webshop greifen. Änderungen, die mit dem ShopBuilder vorgenommen werden sind direkt sichtbar. 
 
 == Webshop-relevante Einstellungen im plentymarkets System
 
@@ -18,15 +18,15 @@ Einige für den Webshop relevante Einstellungen müssen im plentymarkets System 
 * Das Standardlieferland, das im Menü *System » Systemeinstellungen » Mandant » Mandant wählen » Aufträge* pro aktiver Webshopsprache hinterlegt wird und im Webshop vorausgewählt ist.
 * Die Standardwährung, die im Menü *System » Systemeinstellungen » Mandant » Mandant wählen » Aufträge* pro aktiver Webshopsprache hinterlegt wird und im Webshop für die gewählte Sprache vorausgewählt ist.
 
-== Einstellungen am Plugin Ceres
+== Einstellungen am Plugin plentyShop LTS
 
-Einstellungen am Plugin Ceres werden im Menü *Plugins » Plugin-Übersicht » Ceres* getroffen. Das Tab *Konfiguration* enthält 14 weitere Tabs, die jeweils die Einstellungen für die Bereiche Startseite, Header, Footer, Artikelansicht, Warenkorb, Kontaktformular, Paginierung und Sortierung, Kaufabwicklung und Mein Konto, Sprachen, Währungen. SEO, Design und Logging und Performance enthalten. Alle Einstellungen, die am Plugin Ceres direkt vorgenommen werden, werden in einer eigenen Datenbank gespeichert (siehe Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>>).
+Einstellungen am Plugin plentyShop LTS werden im Menü *Plugins » Plugin-Set-Übersicht » plentyShop LTS* getroffen. Das Tab *Konfiguration* enthält 14 weitere Tabs, die jeweils die Einstellungen für die Bereiche Startseite, Header, Footer, Artikelansicht, Warenkorb, Kontaktformular, Paginierung und Sortierung, Kaufabwicklung und Mein Konto, Sprachen, Währungen. SEO, Design und Logging und Performance enthalten. Alle Einstellungen, die am Plugin plentyShop LTS direkt vorgenommen werden, werden in einer eigenen Datenbank gespeichert (siehe Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>>).
 
-Die link:https://knowledge.plentymarkets.com/webshop/ceres-einrichten[Andwenderdokumentation für Ceres^] enthält Anleitungen für alle relevanten Ceres-Einstellungen.
+Die link:https://knowledge.plentymarkets.com/webshop/ceres-einrichten[Anwenderdokumentation für plentyShop LTS^] enthält Anleitungen für alle relevanten plentyShop LTS Einstellungen.
 
 == Einstellungen am Plugin IO
 
-Das Plugin IO stellt die dem Webshop zugrundeliegende Logik zur Verfügung. Einstellungen am Plugin IO werden im Menü *Plugins » Plugin-Übersicht » IO* getroffen. Dort werden beispielsweise Einstellungen bezüglich der verwendeten Zahlenformate und der Webshop-Routen vorgenommen.
+Das Plugin IO stellt die dem Webshop zugrundeliegende Logik zur Verfügung. Einstellungen am Plugin IO werden im Menü *Plugins » Plugin-Set-Übersicht » IO* getroffen. Dort werden beispielsweise Einstellungen bezüglich der verwendeten Zahlenformate und der Webshop-Routen vorgenommen.
 
 Die link:https://knowledge.plentymarkets.com/webshop/io-einrichten[Andwenderdokumentation für IO^] enthält Anleitungen für alle relevanten IO-Einstellungen.
 
@@ -40,13 +40,13 @@ Das Abrechnungsmodell des ShopBoosters bemisst sich nach Seitenaufrufen und Seit
 * Aktualisieren von Artikel- und Kategoriedaten
 * Aktualisieren von ShopBuilder-Seiten
 * Bereitstellen von Plugins
-* Speichern von Einstellungen des Online-Shops
+* Speichern von Einstellungen des Webshops
 * Invalidieren des Caches bei Deaktivierung des ShopBoosters
 
 Der ShopBooster ist für alle plentymarkets Editionen verfügbar. Man aktiviert den Shopbooster im Menü *System » Systemeinstellungen » Mandant » Mandant wählen » Webshop » ShopBooster* und kann ihn dort auch wieder aktivieren.
 
 
-== Beispielablauf eines Einkaufs in einem Ceres-Webshop 
+== Beispielablauf eines Einkaufs in einem plentyShop LTS Webshop 
 
 image::assets/Flow-chart-online-store.png[]
 
