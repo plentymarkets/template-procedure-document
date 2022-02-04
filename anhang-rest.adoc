@@ -27,16 +27,17 @@ Berechtigungen
 |_ Märkte
 |_ plentyApp-Einstellungen
 |_ plentyBase-Einstellungen
+|_ plentyBI
 |_ Plugins
 |_ POS
 |_ Prozesse
-|_ Report
 |_ Service
 |_ Service-Center
 |_ Stammdaten
 |_ Start
 |_ Warenbestände
 |_ Zahlenformat
+|_ Zertifizierung
 end legend
 ----
 
@@ -3277,6 +3278,172 @@ end legend
 
 <<<
 
+== plentyBI
+
+In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBI aufgelistet.
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+plentyBI
+|_ Kennzahlen
+  |_ Aufträge
+  |_ CRM
+  |_ Messenger
+  |_ plentyBI
+  |_ Plugins
+  |_ Validierung
+  |_ Verbrauch
+end legend
+----
+
+<<<
+
+=== Aufträge
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Aufträge
+|_ Absatz
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Aufträge
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Global
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Global pro System
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Durchschschnittliche Auftragspositionen
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Durchschnittlicher Bestellwert
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Retourenquote
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Rohertrag
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Umsatz
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Umsatzsteuer gesamt
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Versandumsatz
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
+=== CRM
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+CRM
+|_ Kontakte
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Opportunities
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
+=== Messenger
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Messenger
+|_ Nachrichten
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
+=== plentyBI
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+plentyBI
+|_ Global
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
+=== Plugins
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Plugins
+|_ Installierte Plugins
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Veröffentlichte Plugins
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Veröffentlichte Plugins pro Autor
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
+=== Validierung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Validierung
+|_ Varianten
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
+=== Verbrauch
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Verbrauch
+|_ Verbrauch
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<<
+
 == Plugins
 
 In diesem Abschnitt werden die Berechtigungen für den Bereich Plugins aufgelistet.
@@ -3360,42 +3527,6 @@ legend
 Prozesse
 |_ Anzeigen
 |_ Bearbeiten
-end legend
-----
-
-<<<
-
-== Report
-
-In diesem Abschnitt werden die Berechtigungen für den Bereich Report aufgelistet.
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Report
-|_ Kennzahlen
- |_ Aufträge
-  |_ Aufträge
-   |_ Konfigurieren
-  |_ Global
-   |_ Konfigurieren
-  |_ Global pro System
-   |_ Konfigurieren
- |_ Messenger
-  |_ Nachrichten
-   |_ Konfigurieren
-  |_ Nachrichten pro Benutzer
-   |_ Konfigurieren
- |_ Plugins
-  |_ Installierte Plugins
-   |_ Konfigurieren
-  |_ Installierte Plugins pro Autor
-   |_ Konfigurieren
-  |_ Veröffentlichte Plugins
-   |_ Konfigurieren
-  |_ Veröffentlichte Plugins pro Autor
-   |_ Konfigurieren
 end legend
 ----
 

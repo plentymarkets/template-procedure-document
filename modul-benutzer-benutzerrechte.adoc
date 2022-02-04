@@ -99,6 +99,7 @@ In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen 
 * Artikel
 * Aufträge
 * Authorisierung
+* Benutzer
 * Blog
 * Buchhaltung
 * CMS
@@ -109,11 +110,12 @@ In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen 
 * Kommentare
 * Kunde
 * Listing
+* Mandant
 * Markierung
 * Märkte
-* PIM
-* plentyApp
-* plentybase
+* plentyApp-Einstellungen
+* plentyBase-Einstellungen
+* plentyBI
 * Plugins
 * POS
 * Prozesse
@@ -121,7 +123,6 @@ In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen 
 * Service-Center
 * Stammdaten
 * Start
-* System
 * Warenbestände
 * Zahlenformat
 * Zertifizierung
