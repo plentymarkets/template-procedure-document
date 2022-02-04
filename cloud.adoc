@@ -83,7 +83,7 @@ Andere Daten eines plentymarkets Kundensystems werden in Filestrukturen abgelegt
 ==== Welche Daten werden wie gespeichert?
 Die Speicherung der Daten eines plentymarkets Kundensystems erfolgt u.a. auf Amazon S3-Servern. Hier werden Daten gespeichert wie:
 
-* Layoutdateien zu dem Onlineshop (Bilder, CSS etc.) (Public)
+* Layoutdateien zum Webshop (Bilder, CSS etc.) (Public)
 * PDF-Dokumente (Rechnungen, Gutschriften etc.) (Private).
 
 Der Zugriff eines Kundensystems ist nur auf die dazugehörige Kundenbuckets möglich. Ein Zugriff auf ein "fremdes" Kundenbuckets ist aufgrund der Struktur und Rechtevergabe nicht möglich.

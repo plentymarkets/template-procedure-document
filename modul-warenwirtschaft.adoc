@@ -24,10 +24,10 @@ Ausführliche Beschreibungen zu den Inhalten und Abläufen der hier genannten Au
 
 === Verantwortungsträger im Modul Warenwirtschaft
 
-Bei den Prozessen, die im Bereich Warenwirtschaft ablaufen, liegt die Verantwortung immer dann bei plentysystems, wenn diese Prozesse innerhalb des plentymarkets Systems automatisch ablaufen. Für Vorgänge, die außerhalb des Systems stattfinden, ist immer der Anwender verantwortlich. Dies betrifft die folgenden Prozesse: *Waren einbuchen*, *Waren ausbuchen*, *Nachbestellungen*, *Bestandskorrekturen*, *Abbildung des physischen Lagers*, *Retouren*.
+Bei den Vorgängen, die im Bereich Warenwirtschaft ablaufen, liegt die Verantwortung immer dann bei plentysystems, wenn diese Vorgänge innerhalb des plentymarkets Systems automatisch ablaufen. Für Vorgänge, die außerhalb des Systems stattfinden, ist immer der Anwender verantwortlich. Dies betrifft die folgenden Vorgänge: *Waren einbuchen*, *Waren ausbuchen*, *Nachbestellungen*, *Bestandskorrekturen*, *Abbildung des physischen Lagers*, *Retouren*.
 
 == Lager einrichten
-Für ein funktionierendes Lager wird zunächst mindestens ein Lager, ein Lieferant und Warenbestand benötigt. Dabei spielen auch Lagerorte und Dimensionen eine Rolle. Lagerorte sind die konkreten Ablageplätze, an denen die Artikel im Lager liegen. Um Lagerorte zu generieren wird mindestens eine Dimension benötigt. Aufgebaut werden Lager aus Dimensionen, die komplett frei definierbar sind. Dies können beispielsweise Hallen, Regale und Böden sein. Alle Dimensionen zusammen bilden schließlich das Layout des Lagers. Lagerorte sind in plentymarkets allerdings keine Dimension. +
+Für ein funktionierendes Lager wird zunächst mindestens ein Lager, ein Lieferant und Warenbestand benötigt. Dabei spielen auch Lagerorte und Dimensionen eine Rolle. Lagerorte sind die konkreten Ablageplätze, an denen die Artikel im Lager liegen. Um Lagerorte zu generieren, wird mindestens eine Dimension benötigt. Aufgebaut werden Lager aus Dimensionen, die komplett frei definierbar sind. Dies können beispielsweise Hallen, Regale und Böden sein. Alle Dimensionen zusammen bilden schließlich das Layout des Lagers. Lagerorte sind in plentymarkets allerdings keine Dimension. +
 Nähere Informationen zum Einrichten eines Lagers sind im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/lager-einrichten[Lager einrichten^] aufgeführt.
 
 == Lagertypen in plentymarkets
@@ -41,7 +41,7 @@ plentymarkets stellt verschiedene Lagertypen bereit, die je nach Zweck gewählt 
 |*Lagertyp* |*Erläuterung*
 
 |Vertrieb
-|Standardlager. Lager für den Verkauf mit den entsprechenden Automatismen wie Bestandsreservierung und Statuswechsel bei Aufträgen.
+|Standardlager. Dieses Lager wird zwingend benötigt, um den Verkauf mit den entsprechenden Automatismen wie Bestandsreservierung und Statuswechsel bei Aufträgen abzubilden.
 
 |Reparatur
 |Lager für Retourenartikel. Dieses Lager ist für Lager des Typs Vertrieb als Zugeordnetes Reparaturlager wählbar.
@@ -148,7 +148,7 @@ Die Umbuchung in ein Lager ohne MHD und Charge ist möglich. Die Chargeninformat
 
 === Warenbestand mit der plentymarkets App umbuchen
 
-Auch die plentymarkets App bietet die Möglichkeit, Warenbestand umzubuchen. Dazu ist es zunächst erforderlich, dass Benutzer die nötigen Berechtigungen haben. Lediglich Benutzerkonten mit Admin-Rechten haben standardmäßig die Berechtigung, Umbuchungen über die App vorzunehmen. Mit Umbuchungsvorlagen und App-Einstellungen kann der Umbuchungsvorgang an die spezifischen Lagergegebenheiten angepasst werden. Es können beliebig viele Vorlagen für das Umbuchen erstellt werden, über die die Felder und Felderanordnung definiert wird, die Benutzern beim Umbuchen in der App angezeigt werden
+Auch die plentymarkets App bietet die Möglichkeit, Warenbestand umzubuchen. Dazu ist es zunächst erforderlich, dass Benutzer die nötigen Berechtigungen haben. Lediglich Benutzerkonten mit Admin-Rechten haben standardmäßig die Berechtigung, Umbuchungen über die App vorzunehmen. Mit Umbuchungsvorlagen und App-Einstellungen kann der Umbuchungsvorgang an die spezifischen Lagergegebenheiten angepasst werden. Es können beliebig viele Vorlagen für das Umbuchen erstellt werden, über die die Felder und Felderanordnung definiert wird, die Benutzern beim Umbuchen in der App angezeigt werden.
 Wird keine Vorlage erstellt, wird automatisch die Standardvorlage gewählt. Der Benutzer kann weitere Einstellungen vornehmen, um den Umbuchungsvorgang zu personalisieren.
 Hardware-Empfehlungen für das Umbuchen von Ware über die plentymarkets App sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/willkommen/schnelleinstieg/systemvoraussetzungen[Systemvoraussetzungen^] aufgeführt.
 
@@ -241,7 +241,7 @@ Eine Inventur der Ware kann auch über die plentymarkets App durchgeführt werde
 
 Außerdem gibt es die Möglichkeit, den Warenbestand täglich zu sichern und somit ein Daten-Backup zu erstellen, was es ermöglicht, den Warenbestand zu einem beliebigen Zeitpunkt zu ermitteln. Was dafür zu tun ist, wird im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/warenwirtschaft/best-practices-warenbestand[Praxisbeispiel: Warenbestand täglich sichern^] erklärt.
 
-== Daten-Backup
+== Daten-Backup für Lagerorte
 
 Anwender können Backups im Menü *Einrichtung » Einstellungen » Daten » Backup* für die verschiedensten Bereiche erstellen und/oder einspielen. Um ein Backup für Lagerorte im System einzuspielen, muss der Typ Warehouse gewählt werden.
 Im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/daten/backup[Datenbank-Backup durchführen^] wird der Vorgang näher beschreiben.
