@@ -1,14 +1,18 @@
-= Changelog
+= Änderungsverlauf
 
 NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeichnet werden.
 
 [[tabelle-changelog]]
-.Changelog mit Angabe der Version, des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
+.Änderungsverlauf mit Angabe der Version, des Bereichs, des Datums und einer kurzen Beschreibung der Änderung
 [cols="1,2,1,2"]
 |====
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.6 |Warenwirtschaft |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet und um diverse Informationen zur plentyWarehouse App und zu Zählprotokollen erweitert.
+|V7.6 |Webshop |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet. Das Plugin "Ceres" wurde in "plentyShop LTS" umbenannt.
+|V7.6 |Multi-Channel |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet. Das Modul "Multi-Channel" wurde in "plentyChannel" umbenannt.
+|V7.6 |E-Mail-Versand |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.5 |Auftragsabwicklung |02.07.2021 |Geändert: Dieser Bereich wurde überarbeitet. Steuerkonfigurationen für Länder außerhalb der EU wurden angepasst.
 |V7.5 |Tarifstruktur |18.06.2021 |Geändert: Dieser Bereich wurde in Editionsübersicht umbenannt und überarbeitet.
 |V7.4 |POS |24.03.2021 |Geändert: Dieser Bereich wurde überarbeitet.
