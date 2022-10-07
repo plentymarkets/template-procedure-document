@@ -153,7 +153,7 @@ Ergänzen Sie <<tabelle-pos-programmierung-person>>. Diese Tabelle gibt Auskunft
 
 === Grundeinstellungen
 
-Die link:https://knowledge.plentymarkets.com/pos/pos-einrichten#50[Grundeinstellungen^] einer Kasse werden im Menü *Einrichtung » Mandant » Mandant öffnen » POS » Kasse öffnen » Tab: Grundeinstellungen* vorgenommen. Die Einstellungen erfolgen pro Kasse.
+Die link:https://knowledge.plentymarkets.com/pos/pos-einrichten#50[Grundeinstellungen^] einer Kasse werden im Menü *Einrichtung » POS » [Mandant wählen] » Kasse öffnen » Tab: Grundeinstellungen* vorgenommen. Die Einstellungen erfolgen pro Kasse.
 
 Ergänzen Sie <<tabelle-pos-grundeinstellungen>>. Die folgenden Grundeinstellungen wurden vorgenommen [_1 Tabelle pro Kasse erstellen_]:
 
@@ -213,7 +213,7 @@ Ergänzen Sie <<tabelle-pos-grundeinstellungen>>. Die folgenden Grundeinstellung
 
 ==== Belegeinstellungen
 
-Die link:https://knowledge.plentymarkets.com/pos/pos-einrichten#120[Belegeinstellungen^] einer Kasse werden im Menü *Einrichtung » Mandant » Mandant öffnen » POS » Kasse öffnen » Tab: Beleg* vorgenommen. Die Einstellungen erfolgen pro Kasse.
+Die link:https://knowledge.plentymarkets.com/pos/pos-einrichten#120[Belegeinstellungen^] einer Kasse werden im Menü *Einrichtung » POS » [Mandant wählen] » Kasse öffnen » Tab: Beleg* vorgenommen. Die Einstellungen erfolgen pro Kasse.
 
 Ergänzen Sie <<tabelle-pos-belegeinstellungen>>. Die folgenden Belegeinstellungen wurden vorgenommen [_1 Tabelle pro Kasse erstellen_]:
 
