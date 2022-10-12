@@ -10,7 +10,7 @@ Der Anwender legt fest, welche E-Mail wann automatisch versendet werden soll.
 
 == E-Mail-Server-Zugangsdaten
 
-Der Anwender muss die Zugangsdaten des E-Mail-Postfachs, aus dem er die E-Mails versenden möchte, speichern, damit das System E-Mails wie z.B. Auftragsbestätigungen und Versandbestätigungen von dieser E-Mail-Adresse versenden kann. Sind keine Daten gespeichert, kann kein E-Mail-Versand stattfinden.
+Der Anwender muss die Zugangsdaten des E-Mail-Postfachs, aus dem er die E-Mails versenden möchte, im System speichern, damit das System E-Mails wie z.B. Auftragsbestätigungen und Versandbestätigungen von dieser E-Mail-Adresse versenden kann. Sind keine Daten gespeichert, kann kein E-Mail-Versand stattfinden.
 
 Der Anwender muss den Postausgangsserver, den Port sowie die verfügbare Verschlüsselungsmethode wie von seinem E-Mail-Provider angegeben eingeben.
 
@@ -56,13 +56,13 @@ Der Ordner *Meine E-Mail-Vorlagen* dient dazu, E-Mail-Vorlagen nur für den eige
 
 Der Ordner *E-Mail-Vorlagen anderer Benutzer* dient dazu, E-Mail-Vorlagen für alle Benutzer, die die Berechtigung im System des Anwenders haben, zugänglich zu machen. Unabhängig davon, welcher Benutzer im System angemeldet ist, kann dieser auf den Ordner zugreifen.
 
-Weitere Informationen zum E-Mail-Versand sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/e-mails-versenden[E-Mails^] zu finden.
+Weitere Informationen zum E-Mail-Versand sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/e-mails-versenden.html[E-Mails^] zu finden.
 
 === E-Mail-Vorlagen über den EmailBuilder erstellen
 
 Der Anwender kann beliebig viele Ordner und E-Mail-Vorlagen erstellen. 
 
-Der Ordner *Standardvorlagen* enthält bereits 10 E-Mail-Vorlagen, die in der folgenden Tabelle aufgelistet sind. Ebenso gibt es den Ordner *Default templates*, der diese 10 Vorlagen in englischer Sprache enthält.
+Der Ordner *Standardvorlagen* enthält bereits 12 E-Mail-Vorlagen, die in der folgenden Tabelle aufgelistet sind. Ebenso gibt es den Ordner *Default templates*, der diese 12 Vorlagen in englischer Sprache enthält.
 
 [[tabelle-standardvorlagen-emailbuilder]]
 .Standardvorlagen im EmailBuilder
@@ -74,6 +74,8 @@ Der Ordner *Standardvorlagen* enthält bereits 10 E-Mail-Vorlagen, die in der fo
 |Auftrag: Teilzahlung erhalten |Order: Partial payment received
 |Auftrag: Versandbestätigung |Order: Shipping confirmation
 |Auftrag: Zahlungseingang vollständig |Order: Payment complete
+|Auftrag: Zahlungserinnerung |Order: Payment reminder
+|Auftrag: Rechnung PDF-Anhang |Order: Invoice
 |eBay: Disput / Storno, keine Zahlung |eBay: dispute / cancellation, no payment
 |eBay: Eingangsbestätigung Bestellung |eBay: Order confirmation
 |eBay: Eingangsbestätigung mit Bankdaten ohne Checkout |eBay: Order confirmation with bank details without checkout
@@ -86,7 +88,7 @@ Der Anwender kann die Namen der Vorlagen sowie deren Inhalt und Betreff ändern.
 
 Beim Erstellen der Vorlagen über den EmailBuilder stehen dem Anwender Widgets zur Verfügung. Diese können per Drag-and-drop an die gewünschte Stelle der Vorlage gesetzt werden und mit Inhalt, wie z.B. Variablen befüllt werden.
 
-Weitere Informationen zum EmailBuilder sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/emailbuilder-testphase[EmailBuilder^] zu finden.
+Weitere Informationen zum EmailBuilder sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/emailbuilder.html[EmailBuilder^] zu finden.
 
 == E-Mail-Versand automatisieren
 
@@ -206,7 +208,7 @@ Der Anwender hat die Möglichkeit, bestimmte Ereignisse mit einer E-Mail-Vorlage
 
 Neben dem Verknüpfen von E-Mail-Vorlagen mit Ereignissen besteht die Möglichkeit, Ereignisaktionen einzurichten: Der Anwender definiert ein Ereignis, setzt Filter und legt Aktionen fest, die dann vom System automatisch im Ereignisfall ausgeführt werden. Beispielsweise kann der E-Mail-Versand eines Gutscheins ausgelöst werden, wenn der Kunde eine bestimmte Anzahl an Aufträgen generiert hat.
 
-Weitere Informationen zu Ereignisaktionen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] zu finden.
+Weitere Informationen zu Ereignisaktionen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] zu finden.
 
 == Gesendete E-Mails einsehen
 
