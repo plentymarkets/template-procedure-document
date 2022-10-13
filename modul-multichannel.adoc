@@ -8,9 +8,9 @@ Das Softwaremodul plentyChannel dient dem zusätzlichen Vertrieb auf Online-Mark
  * Bestandsabgleich über automatische Prozesse mit zeitlich festlegten Intervallen
  * Produktdatenaustausch über automatische Prozesse mit zeitlich festlegten Intervallen
  * Auftragsimport über automatische Prozesse mit zeitlich festlegten Intervallen
- * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
- * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktion^]
- * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentymarkets.com/crm/ticketsystem-nutzen[Ticketsystem^]
+ * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^]
+ * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/ticketsystem-nutzen.html[Ticketsystem^]
 
 == Verfügbarkeit
 
@@ -18,7 +18,7 @@ Aktuell ist das Softwaremodul plentyChannel in allen von plentymarkets angeboten
 
 == Dokumentation
 
-Die Dokumentation des Moduls plentyChannel ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/maerkte[https://knowledge.plentymarkets.com/maerkte^]. Die Dokumentation der Marktplatz- und Preisportal-Plugins kann im jeweiligen Plugin im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] angesehen werden. Ein Download der Dokumentation ist zurzeit nicht möglich. +
+Die Dokumentation des Moduls plentyChannel ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/de-de/manual/main/maerkte/maerkte.html[https://knowledge.plentymarkets.com/de-de/manual/main/maerkte/maerkte.html^]. Die Dokumentation der Marktplatz- und Preisportal-Plugins kann im jeweiligen Plugin im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] angesehen werden. Ein Download der Dokumentation ist zurzeit nicht möglich. +
 Auf Anfrage stellt die plentysystems AG prüfenden Finanzbehörden ältere Versionen der Verfahrensdokumentation zur Verfügung.
 
 == Integrierte Kanäle
@@ -37,20 +37,18 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |eBay|[_Ja/Nein_]|
 |Flubit|[_Ja/Nein_]|
 |Fruugo|[_Ja/Nein_]|
-|GartenXXL.at|[_Ja/Nein_]|
-|GartenXXL.de|[_Ja/Nein_]|
 |GoogleShopping DE|[_Ja/Nein_]|Veraltete Schnittstelle, die nicht mehr verwendet wird.
 |GoogleShopping Int.|[_Ja/Nein_]|
 |grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
 |Hood|[_Ja/Nein_]|
+|Kaufland.de|[_Ja/Nein_]|_früher real.de_
 |La Redoute|[_Ja/Nein_]|Veraltete Schnittstelle, die momentan nicht genutzt werden kann.
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
-|OTTO|[_Ja/Nein_]|Der Marktplatz OTTO verfügt über drei Schnittstellen: *Direktversand*, *Cooperation* und *Integration*, die sich im Auftragsimport unterscheiden. Weitere Informationen zu den verschiedenen Schnittstellen finden sie auf der link:https://knowledge.plentymarkets.com/maerkte/otto/otto-interface[OTTO-Handbuchseite^].
+|OTTO|[_Ja/Nein_]|Der Marktplatz OTTO verfügt über drei Schnittstellen: *Cooperation*, *Integration* und *PreDropshipment*, die sich im Auftragsimport unterscheiden. Für Neukunden ist nur noch die Schnittstelle *PreDropshipment* verfügbar.
 |OTTO market|[_Ja/Nein_]|
 |Pixmania|[_Ja/Nein_]|
-|real.de|[_Ja/Nein_]|
 |Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
 |ricardo.ch|[_Ja/Nein_]|
 |Shopgate|[_Ja/Nein_]|
@@ -58,7 +56,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |Zalando|[_Ja/Nein_]|
 |===
 
-Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in plentymarkets als link:https://knowledge.plentymarkets.com/plugins[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
+Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in plentymarkets als link:https://knowledge.plentymarkets.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
 
 Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einrichtung » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul plentyChannel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig: +
 
@@ -75,8 +73,9 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |Google Shopping|[_Ja/Nein_]
 |idealo Direktkauf|[_Ja/Nein_]
 |Kauflux|[_Ja/Nein_]
-|Rakuten.de|[_Ja/Nein_]
 |===
+
+*_Hinweis:_* Für die Märkte CHECK24 und Kauflux können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über Kataloge wird kein Plugin mehr benötigt. 
 
 == Zusätzliche Marktplatz-Services
 
@@ -95,11 +94,11 @@ Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer 
 
 Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden. +
 
-Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/automatisierung/ereignisaktionen[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
+Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
 
 == Marktplatz-Zahlungsarten
 
-Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Zahlungsarten der Marktplätze werden in der Regel nicht vollständig eingerichtet, sondern lediglich aktiviert. Ohne eine Aktivierung kann es zu Problemen bei der Zahlungsabwicklung kommen. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
+Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Marktplatz-Zahlungsarten sind automatisch verfügbar, sobald ein aktives Konto für den Marktplatz in plentymarkets existiert. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
 
 [[marktplatz-zahlungsarten]]
 .Marktplatz-Zahlungsarten
@@ -131,7 +130,7 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 
 == Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/artikel/einstellungen/preise#100[Verkaufspreise^] des plentymarkets Handbuchs. +
+Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des plentymarkets Handbuchs. +
 In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
@@ -140,7 +139,8 @@ Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, 
 
 == Datenaustausch
 
-Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
+Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten für einige Marktplätze und Preisportale bereits mit dem Katalogexport übertragen werden. +
+Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
 [[datenaustausch-markplätze]]
 .Datenaustausch mit Marktplätzen
