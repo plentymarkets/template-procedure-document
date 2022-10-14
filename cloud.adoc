@@ -95,7 +95,7 @@ Um die Ausfallsicherheit und die Auslieferungszeit von statischen Inhalten wie z
 Alle oben genannten Kernsysteme sind wie erwähnt redundant ausgelegt. Zusätzlich werden alle Datenbank- und NFS-Daten auf 4 Backup-Servern gesichert. Die Datenbank-Daten werden täglich, die NFS-Daten werden einmal wöchentlich (Sonntagnacht) gesichert.
 
 === Recovery
-Kunden haben die Möglichkeit, link:https://knowledge.plentymarkets.com/daten/backup[Backups^] selbstständig im Menü *Einrichtung » Einstellungen » Daten » Backup* wieder einzuspielen. Bei Bedarf spielt die Administration Backups oder Teile von Backups wieder ein.
+Kunden haben die Möglichkeit, link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/backup.html[Backups^] selbstständig im Menü *Einrichtung » Einstellungen » Hosting » Backup* wieder einzuspielen. Bei Bedarf spielt die Administration Backups oder Teile von Backups wieder ein.
 
 == Löschkonzept DB / NFS / S3
 
