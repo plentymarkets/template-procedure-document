@@ -14,7 +14,7 @@ Das Softwaremodul plentyChannel dient dem zusätzlichen Vertrieb auf Online-Mark
 
 == Verfügbarkeit
 
-Aktuell ist das Softwaremodul plentyChannel in allen von plentymarkets angebotenen Tarifen inklusive (Starter, Pro, Plus).
+Aktuell ist das Softwaremodul plentyChannel in allen von plentymarkets angebotenen Editionen inklusive (Basic, Classic, Flex, Plus, Enterprise).
 
 == Dokumentation
 
@@ -42,7 +42,6 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
 |Hood|[_Ja/Nein_]|
 |Kaufland.de|[_Ja/Nein_]|_früher real.de_
-|La Redoute|[_Ja/Nein_]|Veraltete Schnittstelle, die momentan nicht genutzt werden kann.
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
@@ -75,7 +74,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |Kauflux|[_Ja/Nein_]
 |===
 
-*_Hinweis:_* Für die Märkte CHECK24 und Kauflux können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über Kataloge wird kein Plugin mehr benötigt. 
+*_Hinweis:_* Für die Märkte CHECK24 und Kauflux können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge^] wird kein Plugin mehr benötigt.
 
 == Zusätzliche Marktplatz-Services
 
@@ -92,7 +91,7 @@ Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer 
 
 == Verkauf über plentyChannel
 
-Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. In einigen Fällen muss zusätzlich die marktplatzeigene Zahlungsart aktiviert werden. +
+Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. +
 
 Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
 
@@ -113,25 +112,26 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |eBay-Rechnungskauf|Zahlungsart für Kauf auf Rechnung bei eBay.
 |Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentymarkets System kommen.
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentymarkets System kommen.
-|GartenXXL.at|Zahlungsart für Aufträge, die über den Marktplatz GartenXXL.at ins plentymarkets System kommen.
-|GartenXXL.de|Zahlungsart für Aufträge, die über den Marktplatz GartenXXL.de ins plentymarkets System kommen.
+|Hood Pay|Zahlungsart für Aufträge, die über HoodPay bezahlt wurden.
 |idealo Direktkauf|Zahlungsart für Aufträge, die über den Marktplatz idealo Direktkauf ins plentymarkets System kommen.
+|Kaufland.de Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentymarkets System kommen.
 |Neckermann.at Payment|Zahlungsart für Aufträge, die über den Marktplatz Neckermann.at ins plentymarkets System kommen.
-|Netto|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentymarkets System kommen.
-|Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation und OTTO Integration.
+|Netto.de|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentymarkets System kommen.
+|Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation, OTTO Integration und OTTO Market.
 |OTTO Direktversand|Zahlungsart für die Schnittstelle OTTO Direktversand.
-|PIXmania Payment|Zahlungsart für Aufträge, die über den Marktplatz PIXmania ins plentymarkets System kommen.
-|Rakuten|Zahlungsart für Aufträge, die über den Marktplatz Rakuten ins plentymarkets System kommen.
-|real.de Payment|Zahlungsart für Aufträge, die über den Marktplatz real.de ins plentymarkets System kommen.
-|Shopgate Payment|Zahlungsart für Aufträge, die über den Marktplatz Shopgate ins plentymarkets System kommen.
+|Pixmania Payment|Zahlungsart für Aufträge, die über den Marktplatz PIXmania ins plentymarkets System kommen.
+|Shopgate|Zahlungsart für Aufträge, die über den Marktplatz Shopgate ins plentymarkets System kommen.
 |Yatego Rechnung|Zahlungsart für Aufträge, die über den Marktplatz Yatego ins plentymarkets System kommen.
 |Zalando Payment|Zahlungsart für Aufträge, die über den Marktplatz Zalando ins plentymarkets System kommen.
+|Zalando AT|Zahlungsart für Aufträge, die über den Marktplatz Zalando Österreich ins plentymarkets System kommen.
+|Zalando BE|Zahlungsart für Aufträge, die über den Marktplatz Zalando Belgien ins plentymarkets System kommen.
+|Zalando CH|Zahlungsart für Aufträge, die über den Marktplatz Zalando Schweiz ins plentymarkets System kommen.
 |===
 
 == Preisbildung
 
 Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des plentymarkets Handbuchs. +
-In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon und real.de verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
+In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
 Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten. +
@@ -139,7 +139,7 @@ Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, 
 
 == Datenaustausch
 
-Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten für einige Marktplätze und Preisportale bereits mit dem Katalogexport übertragen werden. +
+Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten bei einigen Marktplätzen und Preisportalen mit dem Katalogexport übertragen werden. +
 Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
 [[datenaustausch-markplätze]]
@@ -148,11 +148,11 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |===
 |*Marktplatz*|*Datenaustausch*
 
-|Amazon|Im- und Export über Amazon MWS Webservice-API mit CSV- und XML-Dateien
-|bol.com|Export über elastischen Export +
+|Amazon|Im- und Export über Amazon MWS Webservice-API mit CSV- und XML-Dateien; Export über Kataloge
+|bol.com|Export über Kataloge +
  Import über REST-API mit JSON
 |Cdiscount|Im- und Export über SOAP-API mit XML-Datei
-|CHECK24|Export über elastischen Export +
+|CHECK24|Export über elastischen Export; Export über Kataloge +
  Import über FTP-Server mit XML-Datei
 |eBay|Im- und Export über REST-API mit XML-Dateien
 |Flubit|Im- und Export über REST-API mit JSON
@@ -161,19 +161,17 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |grosshandel.eu|Im- und Export über SOAP-API
 |Hood|Im- und Export über REST-API mit XML-Dateien
 |idealo|Export über elastischen Export und REST-API mit JSON
-|Kauflux|Export über elastischen Export +
+|Kaufland|Im- und Export über REST-API mit CSV-Datei; Export über Kataloge
+|Kauflux|Export über elastischen Export; Export über Kataloge +
  Import über REST-API mit XML-Datei
-|La Redoute|Im- und Export über SOAP-API mit XML-Datei
 |Mercateo|Export über FTP-Server mit XML-Datei +
  Import über E-Mail
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
-|Netto eStores (Netto, GartenXXL.at, GartenXXL.de)|Im- und Export über SFTP-Server mit XML-Datei
+|Netto eStores|Im- und Export über SFTP-Server mit XML-Datei
 |OTTO|Im- und Export über FTP-Server mit XML-Datei
-|OTTO market|Im- und Export über REST-API mit JSON
+|OTTO Market|Import über REST-API mit JSON +
+Export über Kataloge
 |PIXmania|Im- und Export über REST-API mit CSV-Datei
-|Rakuten.de|Export über elastischen Export +
-Import über REST-API mit JSON
-|real.de|Im- und Export über REST-API mit CSV-Datei
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
 |Shopgate|Im- und Export über REST-API mit CSV-Datei
