@@ -7,7 +7,7 @@ In plentymarkets wird der Datenimport mit dem Import-Tool durchgeführt. Ein Imp
 plentymarkets stellt verschiedene Import-Typen zur Verfügung, mit denen ausgewählte Daten importiert werden können. Je nach Typ müssen bestimmte Datensätze vorhanden sein. Es gibt jeweils Abgleich- und Zuordnungsfelder, die für den Datenimport verwendet werden können.
 
 Ein neuer Import kann im Menü *Daten » Import* erstellt werden.
-Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/[plentymarkets Handbuch^] unter *Daten » Daten importieren » Import-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Import-Typ für welche Importdaten zur Verfügung steht.
+Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-importieren.html/[plentymarkets Handbuch^] unter *Daten » Daten importieren » Import-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Import-Typ für welche Importdaten zur Verfügung steht.
 
 [[import-typen]]
 .Import-Typen in plentymarkets
@@ -86,7 +86,7 @@ Mithilfe von Filtern können die zu importierenden Daten eingegrenzt werden. Bei
 
 == Eigene Zuordnung
 Mit der Eigenen Zuordnung können vorhandene Werte einer CSV-Datei auf andere Werte im System gemappt werden. So kann definiert werden, für welche ID welcher Wert importiert werden soll. Importe können auch aus einem anderen plentymarkets System importiert werden, wofür der Abgleich und die Zuordnung angepasst werden müssen. Hier ist allerdings zu beachten, dass nur .json Dateien importiert werden können. +
-Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Imports zu manipulieren und Werte zu ändern. Weitere Informationen dazu gibt es im plentymarkets Handbuch auf der Seite *Import-Tool nutzen*.
+Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Imports zu manipulieren und Werte zu ändern. Weitere Informationen dazu gibt es im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^].
 
 == Datenquellen
 Als Quelle stehen die Optionen *Manueller Upload*, *FTP*, *SFTP* oder *HTTPS* zur Verfügung.

@@ -7,7 +7,7 @@ Kataloge in plentymarkets können außerdem dazu genutzt werden, bestimmte Daten
 
 == Dokumentation
 
-Die Dokumentation des Moduls Kataloge ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten[https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten^].
+Die Dokumentation des Moduls Kataloge ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html^].
 Dort sind auch weitere Informationen zu den verfügbaren Marktplätzen sowie den vorhandenen plentymarkets Datenquellen aufgeführt.
 
 == Formate und Typen
@@ -52,15 +52,15 @@ Die Marktplatz-Formate bestimmter Verkaufskanäle werden erst in das Menü *Date
 
 == Datenexporte automatisieren
 
-Datenexporte können automatisiert werden. Dazu genügt die Aktivierung der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwlaten#170[Umschaltfläche in der Katalog-Übersicht^]. Mit einem manuellen Export über die Funktion *Daten herunterladen* erfolgt jedoch kein Export an Marktplätze. Die Daten werden hier lediglich im gewählten Format heruntergeladen.
+Datenexporte können automatisiert werden. Dazu genügt die Aktivierung der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/standardformate-exportieren.html#activate-catalogue[Umschaltfläche in der Katalog-Übersicht^]. Mit einem manuellen Export über die Funktion *Daten herunterladen* erfolgt jedoch kein Export an Marktplätze. Die Daten werden hier lediglich im gewählten Format heruntergeladen.
 
 == Speicherung von Exporten
 
-Exporte werden für 15 Tage im System gespeichert. Soll ein ausgeführter Export weiterhin im System bestehen bleiben, kann dies über den *Zeitplan* eingestellt werden. Alternativ kann über die Funktion *Daten herunterladen* ein manueller Export ausgeführt werden. Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten#270[Kataloge verwalten^] zu finden.
+Exporte werden für 15 Tage im System gespeichert. Soll ein ausgeführter Export weiterhin im System bestehen bleiben, kann dies über den *Zeitplan* eingestellt werden. Alternativ kann über die Funktion *Daten herunterladen* ein manueller Export ausgeführt werden. Weitere Informationen sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/standardformate-exportieren.html#manual-export[Handbuch^] zu finden.
 
 == Kataloge wiederherstellen
 
-Gelöschte Kataloge können wiederhergestellt werden. Dasselbe gilt für eine vorherige Version eines Katalogs. Weitere Informationen dazu sind im link:https://knowledge.plentymarkets.com/daten/daten-exportieren/kataloge-verwalten#230[Handbuch^] aufgeführt.
+Gelöschte Kataloge können wiederhergestellt werden. Dasselbe gilt für eine vorherige Version eines Katalogs. Weitere Informationen dazu sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-manage.html#240[Handbuch^] aufgeführt.
 
 == URL für Exporte verwalten
 
