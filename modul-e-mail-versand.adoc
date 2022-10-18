@@ -98,7 +98,7 @@ Der Anwender kann einen großen Teil seiner Routineaufgaben wie z.B. das Versend
 
 Der Anwender hat die Möglichkeit, bestimmte Ereignisse mit einer E-Mail-Vorlage zu verknüpfen. Bei Eintritt des Ereignisses wird die verknüpfte E-Mail-Vorlage automatisch vom System an den Kunden versendet.
 
-<<tabelle-vorkonfigurierte-ereignisse-e-mail-vorlage>> listet sowohl die im System bereits verfügbaren Ereignisse, die der Anwender mit zuvor erstellten E-Mail-Vorlagen verknüpfen kann, als auch deren Verwendungszweck auf. Die Namen der Ereignisse können nicht geändert werden.
+Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse, die der Anwender mit zuvor erstellten E-Mail-Vorlagen verknüpfen kann, als auch deren Verwendungszweck auf. Die Namen der Ereignisse können nicht geändert werden.
 
 [[tabelle-vorkonfigurierte-ereignisse-e-mail-vorlage]]
 .Vorkonfigurierte Ereignisse, die mit einer E-Mail-Vorlage verknüpft werden können
