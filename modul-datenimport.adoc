@@ -28,6 +28,9 @@ Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimpo
 |Eigenschaften
 |Eigenschaftsdaten
 
+|Eigenschaften: Auswahlwerte
+|Auswahlwerte von Eigenschaften
+
 |Facetten
 |Facettendaten
 
@@ -58,7 +61,7 @@ Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimpo
 |Merkmale
 |Merkmaldaten
 
-|Newsletter-Empfänger
+|Newsletter
 |Daten zu Newslettern
 
 |Notizen
@@ -69,6 +72,9 @@ Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimpo
 
 |Wareneingang
 |Ausgewählte Datensätze des Wareneingangs
+
+|Zuordnung Zolltarifnummer
+|Daten zu Zolltarifnummern
 |====
 
 == Abgleich

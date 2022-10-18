@@ -32,6 +32,8 @@ Die folgenden Exportformate sind im Elastischen Export verfügbar und werden nac
 * Attribute
 * Aufträge
 * Auftragspositionen
+* Auftragspositionen Bestellungen
+* Bestellwesen
 * Eigenschaften
 * Facetten
 * Facettenwerte
