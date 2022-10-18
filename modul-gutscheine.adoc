@@ -4,7 +4,7 @@
 
 In plentymarkets gibt es zwei Gutscheintypen (Gutschein und Voucher) sowie zwei Gutscheinarten (Aktionsgutschein und Mehrzweckgutschein).
 
-Es handelt sich dann um einen link:https://knowledge.plentymarkets.com/auftraege/gutscheine[Gutschein^], wenn der Inhaber diesen zur Einlösung gegen Gegenstände oder Dienstleistungen verwenden kann.
+Es handelt sich dann um einen link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html[Gutschein^], wenn der Inhaber diesen zur Einlösung gegen Gegenstände oder Dienstleistungen verwenden kann.
 
 Es handelt sich _nicht_ um einen Gutschein, wenn der Inhaber lediglich zu einem Preisnachlass beim Erwerb von Gegenständen oder Dienstleistungen berechtigt wird.
 
@@ -14,7 +14,7 @@ Diese Gutscheinart kann in plentymarkets sowohl verkauft als auch eingelöst wer
 
 Hierfür sind einige Vorbereitungen im ERP-System plentymarkets nötig:
 
-* Pro Gutscheinwert muss ein Artikel in plentymarkets erstellt und mit einer link:https://knowledge.plentymarkets.com/auftraege/gutscheine#20[Kampagne^] verknüpft werden.
+* Pro Gutscheinwert muss ein Artikel in plentymarkets erstellt und mit einer link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html#kampagne-erstellen[Kampagne^] verknüpft werden.
 * Diese Artikel erhalten den Mehrwertsteuersatz 0%.
 * Der Artikelpreis entspricht jeweils dem Gutscheinwert.
 
@@ -27,12 +27,12 @@ Zum Einlösen eines Gutscheins benötigt der Kunde lediglich seinen Gutschein-Co
 
 == Rabatte und Preisnachlässe
 
-In plentymarkets sind link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
+In plentymarkets sind link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 
 * Bestandskunden einen günstigeren Preis als Standardkunden anzubieten.
-* werbliche Aktionen durchzuführen, z.B. 20% auf alle Produkte. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/auftraege/gutscheine[Aktionsgutscheinen^] durchgeführt.
+* werbliche Aktionen durchzuführen, z.B. 20% auf alle Produkte. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html[Aktionsgutscheinen^] durchgeführt.
 
-plentymarkets Händler können Bestandskunden einen anderen Preis anbieten als Standardkunden. Solche Rabatte hängen von der link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#15[Kundenklasse^] des Bestandskunden ab, und davon, ob für diese Kundenklasse ein link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#25[Rabatt^] im ERP-System plentymarkets gespeichert ist.
+plentymarkets Händler können Bestandskunden einen anderen Preis anbieten als Standardkunden. Solche Rabatte hängen von der link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#kundenklasse-erstellen[Kundenklasse^] des Bestandskunden ab, und davon, ob für diese Kundenklasse ein link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatt^] im ERP-System plentymarkets gespeichert ist.
 
 Kundenklassenrabatte werden direkt auf den Auftrag angewendet, jedoch nicht separat im Auftrag ausgewiesen.
 

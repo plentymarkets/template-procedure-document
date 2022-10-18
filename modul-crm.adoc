@@ -2,19 +2,19 @@
 
 Das CRM-Modul von plentymarkets erlaubt das Verwalten, Speichern und Bearbeiten von Kontaktdaten inklusive Adress- und Firmendaten. Kontaktdatensätze, die im System gespeichert sind, können aus verschiedenen Kanälen stammen:
 
- * Webshop des Anwenders
- * Marktplätze
- * REST-API
- * Import
- * manuelles Erstellen im Backend durch den Anwender
+* Webshop des Anwenders
+* Marktplätze
+* REST-API
+* Import
+* manuelles Erstellen im Backend durch den Anwender
 
 In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
 
 == Kontakt-IDs
 
-Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht beeinflusst werden kann.
+Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann.
 
-Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#100[Kontakte^] beschrieben.
+Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-erstellen.html#kontakt-erstellen[Kontakt erstellen^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] beschrieben.
 
 In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
 
@@ -48,15 +48,10 @@ Die folgende Tabelle listet die Beispielkontaktdatensätze mit einigen der vorau
 |0
 |====
 
-Öffnet der Anwender einen Kontaktdatensatz sind weitere Informationen sichtbar. Dazu gehören z.B. Firmenname, Adresse, E-Mail-Adresse, Telefonnummer und USt-IdNr. Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das plentymarkets Kassensystem im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
+Öffnet der Anwender einen Kontaktdatensatz sind weitere Informationen sichtbar. Dazu gehören z.B. Firmenname, Adressen, E-Mail-Adresse, Telefonnummer und USt-IdNr, Bankdaten, Optionen, Dokumente und Aufträge. +
+Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das plentymarkets Kassensystem im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
 
-<<bild-uebersicht-kontaktdatensaetze>> zeigt die Kontaktübersicht mit den bereits im System vorhandenen Beispielkontaktdatensätzen.
-
-[[bild-uebersicht-kontaktdatensaetze]]
-.Übersicht der Beispielkontaktdatensätze in einem neu angelegten System
-image::assets/Uebersicht-Kontaktdatensaetze.png[]
-
-Der Barverkauf ist – da es sich im klassischen Sinne um keinen “echten” Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
+Der Barverkauf ist – da es sich im klassischen Sinne nicht um einen "realen" Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
 
 Für die anderen drei Beispielkontaktdatensätze (IDs 101, 102 und 103) sind bereits Bewegungsdaten gespeichert. Bewegungsdaten beinhalten die folgenden Informationen:
 
@@ -223,7 +218,7 @@ Die folgende Tabelle listet die in plentymarkets verfügbaren Typen auf. Ein Bei
 
 |====
 
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#950[Kontakte^] zu finden.
+Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#eigenschaften-einleitung[Kontakte - Vorbereitende Einstellungen vornehmen^] zu finden.
 
 == Im Kontaktdatensatz verknüpfte Daten
 
@@ -236,12 +231,28 @@ Im der folgenden Tabelle wird aufgelistet, welche Daten der Anwender aus einem K
 
 |*Im Kontaktdatensatz verknüpfte Informationen* |*Kurzbeschreibung*
 
+|Kontaktdetails
+|In diesem Bereich des Kontaktdatensatzes finden sich Informationen wie z.B. Name, Kundenklasse, Kundentyp, Eigner, Geburtsdatum und erlaubte Zahlungsarten.
+
 |Adressen / +
 Neue Adresse
 |Der Anwender kann mehrere Liefer- und Rechnungsadressen pro Kontakt eingeben und diese Lieferadressen dann pro Auftrag individuell zuordnen. Es werden auch die Lieferadressen, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt. Der Anwender kann jeweils eine Lieferadresse und eine Rechnungsadresse als primär definieren.
 
+|Dokumente
+|Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
+JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
+
 |Eigenschaften
 |Die Eigenschaften, die für die Kunden erstellt wurden, kann der Anwender speichern bzw. diese werden im Kontaktdatensatz angezeigt, wenn der Kunde Informationen im Webshop eingetragen hat.
+
+|Tags
+|Der Anwender kann dem Kontakt Tags zuweisen, um diese als Suchfilter zu verwenden. 
+
+|plentyShop-Login
+|*Passwort ändern*: Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
+*E-Mail zum Zurücksetzen des Passworts*: Der Anwender kann dem Kunden eine E-Mail-Vorlage zum Zurücksetzen des Passworts senden. Voraussetzung dafür ist, dass eine E-Mail-Vorlage, die die entsprechende Variable enthält, mit dem entsprechenden Ereignis verknüpft ist. +
+*Login entsperren*: Der Anwender kann den Login des Kunden entsperren, wenn dieser zum Beispiel 4 Mal hintereinander das Passwort falsch im plentyShop eingegeben hat und deshalb für den Login gesperrt wurde. +
+*Login-URL*: Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
 
 |Aufträge / +
 Neuer Auftrag / +
@@ -253,33 +264,30 @@ Neuer Sammelauftrag / +
 Scheduler
 |Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht bzw. die Übersicht der Abonnements des Kontakts öffnen und neue Aufträge bzw. Angebote und Sammelaufträge manuell erstellen.
 
-|Tickets / +
-Neues Ticket
-|Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
-
-|Neue Karte
-|Ermöglicht das Hinzufügen einer neuer Karte im Menü *plentymarkets Logo (Start) » Boards*.
-
-|Messenger
-|Es ist möglich, zu jedem Kunden Nachrichten im Messenger zu versenden. Nachrichten werden nur im Backend gespeichert; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten können gelöscht werden.
-
-|Dokumente
-|Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
-JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
-
-|Konto
-|Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
+|Historie
+|Der Anwender kann die Bewegungsdaten des Kontakts einsehen. Diese Daten beinhalten zum Beispiel das Datum und die Uhrzeit des letzten Logins, des letzten Auftrags und der Registrierung des Kunden im Webshop des Anwenders.
 
 |Bankdaten
 |Der Anwender kann die Bankdaten des Kunden eingeben und diese bei Bedarf löschen.
 
-|Events
-|Ein Event kann ein Kundenanruf oder eine E-Mail an den Kunden sein. Der Anwender kann z.B. die Dauer des Telefonats eingeben, eine Information zum Vorgang wählen und einen Kommentar zum Event speichern. Es ist auch möglich, kostenpflichtige Events einzutragen und diese abzurechnen.
+|Firma
+|Der Anwender kann die mit dem Kontakt verknüpfte Firma sehen und bearbeiten oder dem Kontakt eine Firma zuordnen.
 
-|Zugangsdaten
-|*Neues Passwort:* Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
-*Login-URL:*
-Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
+|Konto
+|Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
+
+|Messenger
+|Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger-testphase.html[Messenger^].
+
+|Optionen
+|Der Anwender kann alle zum gespeicherten Optionen sehen und bearbeiten und neue Optionen hinzufügen. Optionen beinhalten zum Beispiel die private und geschäftliche E-Mail-Adresse und Telefonnummer und die private und geschäftliche Anrede.
+
+|Tickets / +
+Neues Ticket
+|Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
+
+|Scheduler
+|Der Anwender kann aus dem Kontaktdatensatz heraus einen Übersicht der Scheduler-Aufträge des Kontakts aufrufen und neue Scheduler-Aufträge für den Kontakt anlegen. Scheduler-Aufträge sind Abo-Aufträge, die dem Kunden die Möglichkeit bieten, bestimmte Artikel im Webshop des Anwenders im Abonnement zu kaufen.
 
 |Provision & Kostenstellen
 |*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
@@ -290,7 +298,7 @@ Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zu
 
 |====
 
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/crm/kontakte-verwalten#[Kontakte^] zu finden.
+Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] zu finden.
 
 == Zahlungsarten
 
@@ -309,8 +317,8 @@ Der Anwender hat die Möglichkeit, Kunden zu sperren, damit diese sich nicht meh
 
 Da der Anwender festlegt, wie der Kundenlogin im Mein Konto-Bereich der Kunden erfolgen soll, wird der Kunde anhand dieser Einstellung gesperrt:
 
- * mittels E-Mail-Adresse und Passwort oder
- * mittels Kunden-ID und Passwort.
+* mittels E-Mail-Adresse und Passwort oder
+* mittels Kunden-ID und Passwort.
 
 == Unbezahlte Aufträge von Kunden einsehen
 
@@ -364,7 +372,7 @@ Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dies
 [discrete]
 === Löschung von Kundendaten
 
-Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen, Tickets oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/daten/datenbereinigung[Datenbereinigung^] zu finden.
+Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen, Tickets oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] zu finden.
 
 [discrete]
 === Aufbewahrungspflicht
@@ -375,7 +383,7 @@ Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
-Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
+Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-exportieren.html[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
 
 [discrete]
 === Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
@@ -389,7 +397,7 @@ Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten üb
 
 == CRM Historie
 
-Mit Hilfe der link:https://knowledge.plentymarkets.com/daten/aenderungshistorie#1300[CRM Historie^] können Anwender Änderungen an Kundendaten, ShopBooster-Daten oder die Einstellungen zur link:https://knowledge.plentymarkets.com/daten/datenbereinigung[Datenbereinigung^] nachvollziehen. Die Daten in diesem Menü werden 1 Jahr gespeichert.
+Mit Hilfe der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/aenderungshistorie.html#1300[CRM Historie^] können Anwender Änderungen an Kundendaten, ShopBooster-Daten oder die Einstellungen zur link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] nachvollziehen. Die Daten in diesem Menü werden 1 Jahr gespeichert.
 
 Der Anwender wählt einen Referenztyp, z.B. die Adresse, und gibt anschließend die eindeutige ID der Adresse ein. Das bedeutet, dass der Anwender die ID kennen muss, um eine Anpassung an einem Datensatz nachverfolgen zu können. Für den Bereich der Kundendaten stehen die Referenztypen Kontakt, Adresse und Firma zur Verfügung.
 

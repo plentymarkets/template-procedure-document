@@ -6,7 +6,7 @@ Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine New
 
 Der Anwender kann bestimmte Ereignisse in seinem System einstellen. Wenn dieses Ereignis eintritt, resultiert daraus eine Aktion, d.h. der Newsletter wird dann automatisiert über das System an die Kunden bzw. Interessenten, die sich z.B. im Webshop für den Newsletter angemeldet haben, versendet.
 
-Alle Informationen zum Newsletter-Versand sind im Handbuch auf der Seite https://knowledge.plentymarkets.com/crm/newsletter-versenden[Newsletter^] zu finden.
+Alle Informationen zum Newsletter-Versand sind im Handbuch auf der Seite https://knowledge.plentymarkets.com/de-de/manual/main/crm/newsletter-versenden.html[Newsletter^] zu finden.
 
 == Häufigkeit des Newsletter-Versands
 
@@ -67,6 +67,6 @@ Für den manuellen Austausch von Newsletter-Daten stehen dem Anwender die folgen
 
 * Für den Export das Datenformat *Newsletter-Empfänger* im Elastischen Export
 
-Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/daten/daten-importieren/ElasticSync[Import-Tool nutzen^] und link:https://knowledge.plentymarkets.com/daten/daten-exportieren/FormatDesigner[FormatDesigner^] zu finden.
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
 
 *Hinweis*: Die selbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.
