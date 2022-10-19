@@ -33,7 +33,7 @@ In einem neu angelegten System sind die Lieferländer *Deutschland (ID 1)* und *
 
 Der Anwender kann die Lieferländer bei Bedarf deaktivieren, den Webshop-Namen anpassen und die Lagerauswahl ändern. Die restlichen Lieferländer sind nicht automatisch aktiv. Sie sind lediglich bereits mit dem Standardnamen angelegt und verfügen über eine ID. Damit der Anwender seine Artikel in die gewünschten Lieferländer liefern kann, muss er die Lieferländer im Vorfeld aktivieren.
 
-<<bild-uebersicht-lieferlaender>> zeigt einen Ausschnitt der ersten Übersichtsseite der Lieferländer in einem neu angelegten System.
+Die folgende Abbildung zeigt einen Ausschnitt der ersten Übersichtsseite der Lieferländer in einem neu angelegten System.
 
 [[bild-uebersicht-lieferlaender]]
 .Bildausschnitt der Übersichtsseite der Lieferländer
@@ -648,7 +648,7 @@ Die folgende Tabelle listet die im System voreingestellten und für den Anwender
 
 === Anhang: CN23-Formular (Zollinhaltserklärung)
 
-Beispiel einer Zollinhaltserklärung (CN 23) <<bild-dhl-zollinhaltserklaerung>> für DHL mit dem Lieferland Schweiz:
+Die folgende Abbildung zeigt ein Beispiel einer Zollinhaltserklärung (CN 23) für DHL mit dem Lieferland Schweiz:
 
 [[bild-dhl-zollinhaltserklaerung]]
 .DHL-Zollinhaltserklärung (CP 23)
