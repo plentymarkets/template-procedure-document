@@ -16,7 +16,7 @@ jobs:
       - name: Setup Ruby, JRuby and TruffleRuby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.5
+          ruby-version: 2.7
       
       - name: Setup OpenJDK
         uses: actions/setup-java@v1.4.3
