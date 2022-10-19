@@ -1,9 +1,9 @@
 = Fachliche und technische Beschreibung des Moduls Webshop
 //überarbeitet am 17.10.2022
 
-plentymarkets stellt seinen Anwender:innen einen vollumfänglichen Webshop zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die den Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
+plentymarkets stellt seinen Anwendern einen vollumfänglichen Webshop zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die den Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
 
-Anwender:innen erstellen das Design des plentyShops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kund:innen ihre Startseite, Artikelseiten, rechtlichen Informationen, weitere statische Seiten, den Kund:innenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentymarkets System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
+Anwender erstellen das Design des plentyShops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, Artikelseiten, rechtlichen Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentymarkets System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
 
 Nach Änderungen an den Einstellungen der Plugin-Konfigurationen müssen die Plugins plentyShop LTS und IO erneut gespeichert und bereitgestellt werden, damit die vorgenommenen Änderungen im Webshop greifen. Änderungen, die mit dem ShopBuilder vorgenommen werden sind direkt sichtbar. 
 
@@ -23,7 +23,7 @@ Einige für den Webshop relevante Einstellungen müssen im plentymarkets System 
 
 Einstellungen am Plugin plentyShop LTS werden im Menü *Plugins » Plugin-Set-Übersicht » plentyShop LTS* getroffen. Das Tab *Konfiguration* enthält 14 weitere Tabs, die jeweils die Einstellungen für die Bereiche Startseite, Header, Footer, Artikelansicht, Warenkorb, Kontaktformular, Paginierung und Sortierung, Kaufabwicklung und Mein Konto, Sprachen, Währungen. SEO, Design und Logging und Performance enthalten. Alle Einstellungen, die am Plugin plentyShop LTS direkt vorgenommen werden, werden in einer eigenen Datenbank gespeichert (siehe Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>>).
 
-Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/ceres-einrichten.html[Anwender:innendokumentation für plentyShop LTS^] enthält Anleitungen für alle relevanten plentyShop LTS Einstellungen.
+Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/ceres-einrichten.html[Anwenderdokumentation für plentyShop LTS^] enthält Anleitungen für alle relevanten plentyShop LTS Einstellungen.
 
 == Einstellungen am Plugin IO
 
@@ -36,7 +36,7 @@ Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/io-einric
 
 Der ShopBooster ist ein kostenpflichtiges Zusatzmodul in plentymarkets, welches dazu dient, die TTFB-Zeit (Time to first Byte), sprich die Zeit, bis der Browser die ersten Daten vom Server empfängt, deutlich zu verringern. Dies wird über sogenanntes Content-Caching erzielt: Seiteninhalte werden beim ersten Aufruf einer Seite in den Cache geschrieben und können dadurch beim erneuten Aufrufen der gleichen Seite deutlich schneller angezeigt werden. Bei aktivem ShopBooster-Modul liegt der TTFB-Wert in der Regel bei unter 100 Millisekunden. Die Daten, die in den Cache geschrieben werden, werden im File Storage Service S3 von AWS gespeichert.
 
-Das Abrechnungsmodell des ShopBoosters bemisst sich nach Seitenaufrufen und Seitenänderungen. Pro 100 Seitenaufrufen und -änderungen werden 0,004€ berechnet; sollten dadurch Kosten von über 100€ entstehen, werden die Kosten auf 100€ pro Monat reduziert. Ein Seitenaufruf ist der Vorgang, bei dem Shop-Besucher:innen oder ein Webcrawler eine URL des Webshops aufruft. Eine Seitenveränderung wird durch folgende Vorgänge ausgelöst:
+Das Abrechnungsmodell des ShopBoosters bemisst sich nach Seitenaufrufen und Seitenänderungen. Pro 100 Seitenaufrufen und -änderungen werden 0,004€ berechnet; sollten dadurch Kosten von über 100€ entstehen, werden die Kosten auf 100€ pro Monat reduziert. Ein Seitenaufruf ist der Vorgang, bei dem Shop-Besucher oder ein Webcrawler eine URL des Webshops aufruft. Eine Seitenveränderung wird durch folgende Vorgänge ausgelöst:
 
 * Aktualisieren von Artikel- und Kategoriedaten
 * Aktualisieren von ShopBuilder-Seiten
