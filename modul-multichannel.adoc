@@ -47,7 +47,6 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |Netto|[_Ja/Nein_]|
 |OTTO|[_Ja/Nein_]|
 |OTTO market|[_Ja/Nein_]|
-|Pixmania|[_Ja/Nein_]|
 |Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
 |ricardo.ch|[_Ja/Nein_]|
 |Shopgate|[_Ja/Nein_]|
@@ -119,7 +118,6 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |Netto.de|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentymarkets System kommen.
 |Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation, OTTO Integration und OTTO Market.
 |OTTO Direktversand|Zahlungsart für die Schnittstelle OTTO Direktversand.
-|Pixmania Payment|Zahlungsart für Aufträge, die über den Marktplatz PIXmania ins plentymarkets System kommen.
 |Shopgate|Zahlungsart für Aufträge, die über den Marktplatz Shopgate ins plentymarkets System kommen.
 |Yatego Rechnung|Zahlungsart für Aufträge, die über den Marktplatz Yatego ins plentymarkets System kommen.
 |Zalando Payment|Zahlungsart für Aufträge, die über den Marktplatz Zalando ins plentymarkets System kommen.
@@ -171,7 +169,6 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |OTTO|Im- und Export über FTP-Server mit XML-Datei
 |OTTO Market|Import über REST-API mit JSON +
 Export über Kataloge
-|PIXmania|Im- und Export über REST-API mit CSV-Datei
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
 |Shopgate|Im- und Export über REST-API mit CSV-Datei
