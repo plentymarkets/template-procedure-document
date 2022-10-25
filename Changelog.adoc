@@ -9,6 +9,9 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V7.7 |plentyChannel |25.10.2022 |Geändert: Dieser Bereich wurde überarbeitet. Es wurden Informationen zum Katalogexport für Marktplätze hinzugefügt.
+|V7.7 |Auftragsverwaltung |25.10.2022 |Geändert: Dieser Bereich wurde überarbeitet. Es wurden Informationen zur neuen Auftrags-UI hinzugefügt.
+|V7.7 |Allgemein |25.10.2022 |Geändert: In allen Bereichen wurden die Verlinkungen auf das plentymarkets Handbuch angepasst.
 |V7.6 |Warenwirtschaft |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet und um diverse Informationen zur plentyWarehouse App und zu Zählprotokollen erweitert.
 |V7.6 |Webshop |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet. Das Plugin "Ceres" wurde in "plentyShop LTS" umbenannt.
 |V7.6 |Multi-Channel |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet. Das Modul "Multi-Channel" wurde in "plentyChannel" umbenannt.
