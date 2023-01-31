@@ -728,7 +728,7 @@ Ergänzen Sie die folgenden Tabellen. Im plentymarkets ERP-System des Unternehme
 
 Sämtliche über plentyPOS generierten Geschäftsvorfälle werden in das ERP-System plentymarkets importiert. Ein Kassenbuch wird in Form eines elektronischen Kassenjournals automatisch erstellt und aktualisiert.
 
-Das Kassenjournal ist im ERP-System plentymarkets über das Menü *Aufträge » POS » Kassenjournal* erreichbar. Das Kassenjournal enthält sämtliche Geschäftsvorfälle, die über plentyPOS Kassen in das System gelangen. Im Kassenjournal sind folgende Vorgänge möglich:
+Das Kassenjournal ist im ERP-System plentymarkets über das Menü *Daten » POS » Protokolle » Kassenjournal* erreichbar. Das Kassenjournal enthält sämtliche Geschäftsvorfälle, die über plentyPOS Kassen in das System gelangen. Im Kassenjournal sind folgende Vorgänge möglich:
 
 * Filterung von Geschäftsvorfällen anhand von Filtern
 * Export der Daten im PDF-Format
@@ -1057,7 +1057,7 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 
 == Maschinelle Auswertbarkeit der POS-Geschäftsvorfälle (IDEA-Export)
 
-§ 147 Absatz 2 Nummer 2 AO der GoBD sieht vor, dass im Rahmen einer Außenprüfung alle zur Auswertung der aufzeichnungs- und aufbewahrungspflichtigen Daten notwendigen Strukturinformationen in maschinell auswertbarer Form bereitzustellen sind. Um diesen Anforderungen gerecht zu werden, können alle plentyPOS Geschäftsvorfälle über das Menü *Aufträge » POS » Idea-Export* des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen und enthält alle Geschäftsvorfälle aus allen plentyPOS Kassen des plentymarkets Systems. Benutzer können beim Export also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
+§ 147 Absatz 2 Nummer 2 AO der GoBD sieht vor, dass im Rahmen einer Außenprüfung alle zur Auswertung der aufzeichnungs- und aufbewahrungspflichtigen Daten notwendigen Strukturinformationen in maschinell auswertbarer Form bereitzustellen sind. Um diesen Anforderungen gerecht zu werden, können alle plentyPOS Geschäftsvorfälle über das Menü *Daten » POS » Protokolle » Idea-Export* des ERP-Systems plentymarkets in elektronisch auswertbarer Form exportiert werden. Der Export erfolgt pro Kalenderjahr ohne weitere Filterungen und enthält alle Geschäftsvorfälle aus allen plentyPOS Kassen des plentymarkets Systems. Benutzer können beim Export also nur das Kalenderjahr, jedoch nicht den Umfang der exportierten Daten beeinflussen. Der Datenexport erfolgt im GDPdU-konformen IDEA-Format und wurde durch die Audicon GmbH zertifiziert.
 
 link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-rechtssicherheit.html#300[Der IDEA-Export^] besteht aus den folgenden Dateien:
 
@@ -1076,7 +1076,7 @@ link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-rechtssicherh
 * zreport.csv
 * zreportpayments.csv
 
-Nach Abschluss des Exports stehen die Dateien im Menü *Aufträge » POS » Idea-Export* des ERP-Systems plentymarkets zum Download zur Verfügung.
+Nach Abschluss des Exports stehen die Dateien im Menü *Daten » POS » Protokolle » Idea-Export* des ERP-Systems plentymarkets zum Download zur Verfügung.
 
 Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter bei IDEA-Exporten handeln:
 
@@ -1095,8 +1095,8 @@ In plentymarkets werden TSE-Exporte über die plentymarkets App generiert. link:
 
 Die über die Schaltfläche Export erstellen und hochladen erstellten Exportdateien werden automatisch in das plentymarkets Backend übertragen. Während der Übertragung können die Dateien weder vom plentymarkets System, noch von Nutzern verändert werden. Im plentymarkets Backend sind ausschließlich Exportdateien vorhanden, die zuvor über die Schaltfläche Export erstellen und hochladen erzeugt wurden.
 
-Wird die Herausgabe der generierten Exportdateien, beispielsweise im Fall einer Prüfung durch die Finanzbehörden, notwendig, laden Nutzer die Exportdateien im Menü *Aufträge » POS » TSE-Export* herunter.
-Systembenutzer des Typs Backend müssen über die entsprechenden Zugriffsrechte für das Menü verfügen. Beim Herunterladen der Exportdateien im Menü *Aufträge » POS » TSE-Export* können Nutzer den Zeitraum der herunterzuladenden Dateien eingrenzen.
+Wird die Herausgabe der generierten Exportdateien, beispielsweise im Fall einer Prüfung durch die Finanzbehörden, notwendig, laden Nutzer die Exportdateien im Menü *Daten » POS » Protokolle » TSE-Export* herunter.
+Systembenutzer des Typs Backend müssen über die entsprechenden Zugriffsrechte für das Menü verfügen. Beim Herunterladen der Exportdateien im Menü *Daten » POS » Protokolle » TSE-Export* können Nutzer den Zeitraum der herunterzuladenden Dateien eingrenzen.
 
 Der TSE-Export wird in plentymarkets stets im Standard-Archivformat .tar bereitgestellt und als .zip-Datei heruntergeladen. TSE-Exportdateien setzen sich aus .log-Dateien zusammen. Die Software plentymarkets nimmt keine Änderungen an den Inhalten der Exportdateien vor. Daten, Strukturen und sonstige Inhalte innerhalb der Exportdateien sind weder durch den Systembenutzer noch durch weitere Dritte bearbeit- oder veränderbar, sondern werden wie von der TSE übermittelt bereitgestellt.
 
@@ -1109,11 +1109,11 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 
 === Export von Daten gemäß DSFinV-K
 
-Mithilfe des sogenannten DSFinV-K-Exportes wird das Erstellen und Herunterladen GoBD-konformer Datenexporte gemäß der Digitalen Schnittstelle der Finanzverwaltung für Kassensysteme (DSFinV-K) ermöglicht. Nutzer erzeugen DSFinV-K-Exporte im plentymarkets Backend im Menü *Aufträge » POS » DSFinV-K-Export*.
+Mithilfe des sogenannten DSFinV-K-Exportes wird das Erstellen und Herunterladen GoBD-konformer Datenexporte gemäß der Digitalen Schnittstelle der Finanzverwaltung für Kassensysteme (DSFinV-K) ermöglicht. Nutzer erzeugen DSFinV-K-Exporte im plentymarkets Backend im Menü *Daten » POS » Protokolle » DSFinV-K-Export*.
 
-Systembenutzer des Typs Backend müssen über die entsprechenden Zugriffsrechte für das Menü verfügen. Beim Herunterladen der Exportdateien im Menü *Aufträge » POS » DSFinV-K-Export* können Nutzer den Zeitraum der herunterzuladenden Dateien auf jeweils ein ausgewähltes Jahr pro Exportdatei eingrenzen. Zusätzlich muss ein Mandant ausgewählt werden, für den der Export für das betreffende Jahr erstellt wird.
+Systembenutzer des Typs Backend müssen über die entsprechenden Zugriffsrechte für das Menü verfügen. Beim Herunterladen der Exportdateien im Menü *Daten » POS » Protokolle » DSFinV-K-Export* können Nutzer den Zeitraum der herunterzuladenden Dateien auf jeweils ein ausgewähltes Jahr pro Exportdatei eingrenzen. Zusätzlich muss ein Mandant ausgewählt werden, für den der Export für das betreffende Jahr erstellt wird.
 
-Nach dem Anstoßen des DSFinV-K-Exportes durch den Nutzer im Menü *Aufträge » POS » DSFinV-K-Export* wird die Exportdatei über Nacht generiert. Je nach Startzeit des Exports kann die Generierung 24 Stunden dauern. Anschließend wird der DSFinV-K-Export im selben Menü stets im Standard-Archivformat .tar bereitgestellt und kann anschließend durch den Nutzer heruntergeladen werden. DSFinV-K-Exportdateien setzen sich aus .csv-Dateien zusammen. Die Software plentymarkets nimmt keine Änderungen an den Inhalten der Exportdateien vor.
+Nach dem Anstoßen des DSFinV-K-Exportes durch den Nutzer im Menü *Daten » POS » Protokolle » DSFinV-K-Export* wird die Exportdatei über Nacht generiert. Je nach Startzeit des Exports kann die Generierung 24 Stunden dauern. Anschließend wird der DSFinV-K-Export im selben Menü stets im Standard-Archivformat .tar bereitgestellt und kann anschließend durch den Nutzer heruntergeladen werden. DSFinV-K-Exportdateien setzen sich aus .csv-Dateien zusammen. Die Software plentymarkets nimmt keine Änderungen an den Inhalten der Exportdateien vor.
 
 Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter bei DSFinV-K-Exporten handeln:
 
