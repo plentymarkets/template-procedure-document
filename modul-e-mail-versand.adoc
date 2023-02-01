@@ -106,54 +106,6 @@ Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse
 |====
 |Name des Ereignisses |Verwendungszweck |Voreingestellte E-Mail-Vorlagen
 
-|Neue Bestellung über den Webshop
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang im Webshop abgeschlossen wurde.
-|Webshop: Eingangsbestätigung Bestellung
-
-|Neue Bestellung über eBay
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei eBay abgeschlossen wurde.
-|Ebay: Eingangsbestätigung Bestellung
-
-|Neue Bestellung über Amazon
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Amazon abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über Amazon FBA
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Amazon FBA abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über Yatego
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Yatego abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über Kauflux
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Kauflux abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über Mercateo
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Mercateo abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über PIXmania
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei PIXmania abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über ricardo
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei ricardo abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über Kaufland.de
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Kaufland.de abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über Rakuten
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang bei Rakuten abgeschlossen wurde.
-|kein Versand
-
-|Neue Bestellung über sonstige Schnittstelle
-|Sendet Kunden eine E-Mail mit der Auftragsbestätigung, nachdem der Kaufvorgang über eine Schnittstelle abgeschlossen wurde.
-|kein Versand
-
 |Sende Kunde E-Mail zur Passwortänderung
 |Sendet Kunden eine E-Mail mit einem Link zum neuen Passwort, der aktiv bestätigt werden muss.
 |Webshop: Neues Passwort
@@ -182,20 +134,12 @@ Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse
 |Sendet eine E-Mail, wenn das eingestellte Intervall für ein “Abo” erreicht wird.
 |kein Versand
 
-|Gewinnspielanmeldung
-|Sendet Kunden, die sich zum Gewinnspiel angemeldet haben, eine E-Mail als Bestätigung.
-|kein Versand
-
 |Serviceeinheiten
 |Sendet eine E-Mail, wenn auf das “Kundenkonto” ein weiteres Event gebucht wurde.
 |kein Versand
 
 |Änderung eines Scheduler-Auftrags
 |Sendet Kunden eine E-Mail zur Änderung des Scheduler-Auftrags.
-|kein Versand
-
-|Forum-Benachrichtigung
-|Sendet Kunden eine E-Mail, sobald eine Benachrichtigung im systeminternen Forum vorliegt.
 |kein Versand
 
 |Benachrichtigung bei verfügbarem Artikel
