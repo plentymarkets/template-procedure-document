@@ -1,133 +1,60 @@
 = Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
-Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Berechtigungen. +
-Die Benutzerrechte eines Benutzer in plentymarkets hängen zunächst von seinem Benutzerzugang ab. Jedem Benutzer muss ein Benutzerzugang zugeordnet werden. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
+Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Rechte. +
+Die Benutzerrechte eines Benutzers in plentymarkets hängen zunächst von seinem Benutzerzugang ab. Wird dem Benutzer kein Benutzerzugang zugewiesen, hängen die Benutzerrechte von den zugewiesenen Rollen ab. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
 
 == Benutzerzugänge
 
 Folgende Benutzerzugänge gibt es in plentymarkets:
 
- * Admin
- * Backend
- * REST-API
+ * Administrator
+ * Nur API-Benutzer
 
-Jeder Benutzerzugang ist mit unterschiedlichen Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Die Vergabe von Rechten wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/business-entscheidungen/benutzerkonten-zugaenge#105[Benutzerkonten und Zugänge^] beschrieben. +
-Außerdem können optional Benutzerrollen angelegt werden. Mithilfe von Benutzerrollen lassen sich Rechte für mehrere Benutzer gleichzeitig vergeben. Die Benutzer müssen dafür der Rolle zugeordnet werden.
+Jeder Benutzerzugang ist mit den Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Benutzern werden Rechte durch Rollen zugewiesen. Die gleiche Rolle kann mehreren Benutzern zugewiesen werden. Die Vergabe von Rollen wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/business-entscheidungen/benutzerkonten-zugaenge#105[Benutzerkonten und Zugänge^] beschrieben. +
 
-=== Benutzerzugang Admin
+=== Benutzerzugang Administrator
 
-Der Benutzerzugang Admin verfügt über alle Rechte und dient zur Verwaltung des Systems. Benutzern dieses Zugangs können keine Rechte zusätzlich gewährt oder verwehrt werden. Sie verfügen pauschal über alle Rechte.
+Der Benutzerzugang Administrator verfügt über alle Rechte und dient zur Verwaltung des Systems. Benutzern dieses Zugangs können keine Rechte zusätzlich gewährt oder verwehrt werden. Sie verfügen pauschal über alle Rechte.
 
-=== Benutzerzugang Backend
+=== Benutzerzugang Nur API-Benutzer
 
-Der Benutzerzugang Backend verfügt standardmäßig über keine Rechte und bietet die größte Möglichkeit der individuellen Zuordnung von Rechten, die im Tab Berechtigung freitgeschaltet werden können.
+Für den Benutzerzugang Nur API-Benutzer können in der zugewiesenen Rolle REST-Calls freigeschaltet werden. Diese werden einzeln aktiviert. *Achtung*: Nutzern mit diesem Benutzerzugang wird der Zugriff auf das Backend verweigert.
 
-=== Benutzerzugang REST-API
-
-Für den Benutzerzugang REST-API können im Benutzerkonto REST-Calls freigeschaltet werden. Diese werden einzeln aktiviert. *Achtung*: Nutzern mit diesem Benutzerzugang wird der Zugriff auf das Backend verweigert.
-
-Standardmäßig sind jedoch keine Zugriffsrechte für REST aktiviert. Es besteht lediglich die Möglichkeit, einem Benutzer des Zugangs REST-API per REST Zugriff auf Daten des Systems zu gewähren. Ein REST-API-Benutzer hat keinen Zugriff auf Daten über die Softwareoberfläche. +
+Standardmäßig sind jedoch keine Zugriffsrechte für REST aktiviert. Es besteht lediglich die Möglichkeit, einem Benutzer des Zugangs Nur API-Benutzer per REST Zugriff auf Daten des Systems zu gewähren. Ein Nur API-Benutzer hat keinen Zugriff auf Daten über die Softwareoberfläche. +
 Eine detaillierte Beschreibung der REST-Schnittstelle befindet sich in der link:https://developers.plentymarkets.com/[Entwicklerdokumentation^]. +
 
 == Rechte vergeben
 
-Die Benutzerrechte in plentymarkets sind in die folgenden Bereiche unterteilt:
+Die Benutzerrechte in plentymarkets werden über Rollen verwaltet und unterteilen sich in:
 
+* Menü- und Plugin-Sichtbarkeiten
 * Berechtigungen
-* Menü-Sichtbarkeiten
-* Plugins
 
-Die Bereiche Berechtigungen und Menü-Sichtbarkeiten sind verknüpft, wodurch die gewählten Rechte für den jeweils anderen Bereich automatisch mit aktiviert werden.
+Die Menü- und Plugin-Sichtbarkeiten werden im einfachen Modus der Rollenerstellung vergeben, die Berechtigungen im erweiterten Modus der Rollenerstellung. Der einfache Modus und der erweiterte Modus sind miteinander verknüpft. Wenn Menü-Sichtbarkeiten im einfachen Modus aktiviert werden, sind dazugehörige Berechtigungen auch im erweiterten Modus automatisch aktiv. Diese Verknüpfung existiert nur in diese Richtung. Wenn im erweiterten Modus Berechtigungen vergeben werden, werden keine Menü- oder Plugin-Sichtbarkeiten automatisch aktiviert.
 
-Beim Vergeben von Berechtigungen gilt generell, dass das Aktivieren einer Berechtigung einer übergeordneten Ebene alle darunter liegenden Berechtigungen aktiviert. Das Entfernen einer Berechtigung einer übergeordneten Ebene entfernt analog alle darunter einsortieren Berechtigungen.
+Beim Vergeben von Menü- und Plugin-Sichtbarkeiten sowie Berechtigungen gilt generell, dass das Aktivieren einer Berechtigung einer übergeordneten Ebene alle darunter liegenden Berechtigungen aktiviert. Das Entfernen einer Berechtigung einer übergeordneten Ebene entfernt analog alle darunter einsortieren Berechtigungen.
 
-== Liste der Admin- und Backend-Benutzer
+== Liste der Administratoren und Standardbenutzer
 
 Ergänzen Sie in der folgenden Tabelle, welche Personen über welchen Zugriff verfügen.
 
-Folgende Personen sind Admin-Benutzer und verfügen über uneingeschränkten Zugriff auf das plentymarkets System
+Folgende Personen sind Administratoren und verfügen über uneingeschränkten Zugriff auf das plentymarkets System
 
 Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 3: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_)
 
-Folgende Personen sind Backend-Benutzer und verfügen über eingeschränkten Zugriff auf das plentymarkets System:
+Folgende Personen sind Standardbenutzer und verfügen über eingeschränkten Zugriff auf das plentymarkets System:
 
 Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 3: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_)
-
-=== Berechtigungen
-
-Mithilfe der Berechtigungen wird festgelegt welche tatsächlichen Daten ein Benutzer sieht. +
-Die Sichtbarkeiten sind in 5 Abschnitte unterteilt, die in der folgenden Tabelle aufgeführt und erläutert sind.
-
-
-[[tabelle-sichtbarkeiten]]
-.Sichtbarkeiten in plentymarkets
-[cols="1,3"]
-|====
-|*Sichtbarkeiten* |*Erläuterung*
-
-|Lager
-|Die Lager sind einzeln wählbar unterteilt nach Lagertypen.
-
-|Sichtbare Auftragsstatus
-|Die Auftragsstatus sind einzeln wählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle eigenen.
-
-|Setzbare Auftragsstatus
-|Die Auftragsstatus sind einzeln wählbar. Zur Auswahl stehen alle 29 Standard-Auftragsstatus sowie alle durch den Anwender eingetragenen Status.
-
-|Mandanten
-|Die Mandanten sind einzeln wählbar.
-
-|Ticketstatus
-|Die Ticketstatus sind einzeln wählbar. Zur Auswahl stehen alle durch den Anwender angelegten Ticketstatus.
-|====
-
-*_Hinweis_*: Die dort aufgeführten Sichtbarkeiten werden bald in das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer » Tab: Ressourcen* umgezogen.
-
 
 == Menü und REST-API-Rechte verwalten
 
 Mit den Rechten wird festgelegt, welche Berechtigungen (REST-Rechte) ein Benutzer hat und welche Menüs und Plugins er sehen und öffnen kann. Außerdem kann bestimmt werden, welche Bearbeitungsmöglichkeiten der Benutzer im Menü haben soll.
 
-=== Berechtigungen
-
-In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen benötigt werden.
-
-* Artikel
-* Aufträge
-* Authorisierung
-* Benutzer
-* Blog
-* Buchhaltung
-* CMS
-* CRM
-* Daten
-* Editoren
-* Einrichtung
-* Kommentare
-* Kunde
-* Listing
-* Mandant
-* Markierung
-* Märkte
-* plentyApp-Einstellungen
-* plentyBase-Einstellungen
-* plentyBI
-* Plugins
-* POS
-* Prozesse
-* Service
-* Service-Center
-* Stammdaten
-* Start
-* Warenbestände
-* Zahlenformat
-* Zertifizierung
-
-=== Menü-Sichtbarkeiten
+=== Menü- und Plugin-Sichtbarkeiten im einfachen Modus
 
 In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet. Dort können die für den Benutzer sichtbaren Bereiche gewählt werden. Die REST-Rechte für die Menüpunkte werden automatisch gesetzt.
 
@@ -143,14 +70,45 @@ In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet
 * Prozesse
 * Einrichtung
 * Support
+* Mobile
 
-=== Plugins
+=== Berechtigungen
 
-In diesem Bereich wird die Freigabe der Menü-Sichtbarkeit für Plugins verwaltet. Zunächst werden nur die Plugins mit ihren einzelnen Einträgen, jedoch ohne die korrekte Route, angezeigt. Die hier aufgelisteten Plugins dienen lediglich als Beispiel.
+In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen benötigt werden.
 
-* EBICS
-* PayPal
-* DHLShipping
+* Buchhaltung
+* Authorisierung
+* Automation
+* Blog
+* Zertifizierung
+* Mandant
+* CMS
+* Kommentare
+* CRM
+* Daten
+* Dokumente
+* Editoren
+* Artikel
+* Listing
+* Märkte
+* Markierung
+* Stammdaten
+* plentyApp-Einstellungen
+* Zahlenformat
+* Aufträge
+* plentyBI
+* plentyBase-Einstellungen
+* Plugins
+* POS
+* Prozesse
+* Service
+* Service-Center
+* Einrichtung
+* Start
+* Warenbestände
+* plentymarkets Systeme
+* Vorlage
+* Benutzer
 
 === REST-Rechte
 
