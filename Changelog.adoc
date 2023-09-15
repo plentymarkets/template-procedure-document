@@ -9,6 +9,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V8.0 |POS |15.09.2023 |Geändert: Informationen zur Zusammensetzung der Daten in Tagesabschlussberichten wurden korrigiert.
 |V7.9 |Benutzerrechte |17.03.2023 |Geändert: Benutzerrechte wurden aktualisiert sowie der Anhang mit den REST-Berechtigungen.
 |V7.8 |POS |31.01.2023 |Geändert: Der Menüpfad für Kassenjournal, IDEA-Export, DEP-Export, TSE-Export und DSFinV-K-Export wurde geändert.
 |V7.7 |plentyChannel |25.10.2022 |Geändert: Dieser Bereich wurde überarbeitet. Es wurden Informationen zum Katalogexport für Marktplätze hinzugefügt.
