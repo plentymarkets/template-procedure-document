@@ -25,7 +25,7 @@ Eine detaillierte Beschreibung der REST-Schnittstelle befindet sich in der link:
 
 == Rechte vergeben
 
-Die Benutzerrechte in plentymarkets werden über Rollen verwaltet und unterteilen sich in:
+Die Benutzerrechte in plentysystems werden über Rollen verwaltet und unterteilen sich in:
 
 * Menü- und Plugin-Sichtbarkeiten
 * Berechtigungen
@@ -38,13 +38,13 @@ Beim Vergeben von Menü- und Plugin-Sichtbarkeiten sowie Berechtigungen gilt gen
 
 Ergänzen Sie in der folgenden Tabelle, welche Personen über welchen Zugriff verfügen.
 
-Folgende Personen sind Administratoren und verfügen über uneingeschränkten Zugriff auf das plentymarkets System
+Folgende Personen sind Administratoren und verfügen über uneingeschränkten Zugriff auf das plentysystems System
 
 Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 3: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_)
 
-Folgende Personen sind Standardbenutzer und verfügen über eingeschränkten Zugriff auf das plentymarkets System:
+Folgende Personen sind Standardbenutzer und verfügen über eingeschränkten Zugriff auf das plentysystems System:
 
 Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
