@@ -1,15 +1,17 @@
 = Fachliche und technische Beschreibung des Moduls Webshop
 //überarbeitet am 17.10.2022
 
-plentymarkets stellt seinen Anwendern einen vollumfänglichen Webshop zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die den Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
+== plentyShop LTS
 
-Anwender erstellen das Design des plentyShops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, Artikelseiten, rechtlichen Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentymarkets System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
+plentysystems stellt seinen Anwendern den vollumfänglichen Webshop *plentyShop LTS* zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die den Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
 
-Nach Änderungen an den Einstellungen der Plugin-Konfigurationen müssen die Plugins plentyShop LTS und IO erneut gespeichert und bereitgestellt werden, damit die vorgenommenen Änderungen im Webshop greifen. Änderungen, die mit dem ShopBuilder vorgenommen werden sind direkt sichtbar. 
+Anwender erstellen das Design des plentyShops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, unterschiedliche Artikelseiten (auch für Artikelpakete und -sets),Seiten für rechtliche Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO oder in den dazugehörigen Assistenten vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentysystems System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
 
-== Webshop-relevante Einstellungen im plentymarkets System
+Nach Änderungen an den Einstellungen der Plugin-Konfigurationen müssen die Plugins plentyShop LTS und IO erneut gespeichert und bereitgestellt werden, damit die vorgenommenen Änderungen im Webshop greifen. Änderungen, die mit dem ShopBuilder vorgenommen werden, sind direkt sichtbar.
 
-Einige für den Webshop relevante Einstellungen müssen im plentymarkets System selbst vorgenommen werden. Dies sind konkret: 
+== Webshop-relevante Einstellungen im plentysystems System
+
+Einige für den Webshop relevante Einstellungen müssen im plentysystems System selbst vorgenommen werden. Dies sind konkret: 
 
 * Die im Webshop verwendete Standardsprache, die im Menü *Einrichtung » Mandant » Mandant wählen » Aufträge* hinterlegt wird und im Webshop vorausgewählt ist.
 * Die Standardversandart, die im Menü *Einrichtung » Mandant » Mandant wählen » Aufträge* hinterlegt wird und im Webshop vorausgewählt ist.
@@ -21,7 +23,7 @@ Einige für den Webshop relevante Einstellungen müssen im plentymarkets System 
 
 == Einstellungen am Plugin plentyShop LTS
 
-Einstellungen am Plugin plentyShop LTS werden im Menü *Plugins » Plugin-Set-Übersicht » plentyShop LTS* getroffen. Das Tab *Konfiguration* enthält 14 weitere Tabs, die jeweils die Einstellungen für die Bereiche Startseite, Header, Footer, Artikelansicht, Warenkorb, Kontaktformular, Paginierung und Sortierung, Kaufabwicklung und Mein Konto, Sprachen, Währungen. SEO, Design und Logging und Performance enthalten. Alle Einstellungen, die am Plugin plentyShop LTS direkt vorgenommen werden, werden in einer eigenen Datenbank gespeichert (siehe Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>>).
+Einstellungen am Plugin plentyShop LTS werden im Menü *Plugins » Plugin-Set-Übersicht » plentyShop LTS* getroffen. Das Tab *Konfiguration* enthält 14 weitere Tabs, die jeweils die Einstellungen für die Bereiche Startseite, Header, Footer, Artikelansicht, Warenkorb, Kontaktformular, Paginierung und Sortierung, Kaufabwicklung und Mein Konto, Sprachen, Währungen. SEO, Design und Logging und Performance enthalten. Alle Einstellungen, die am Plugin plentyShop LTS direkt vorgenommen werden, werden in einer eigenen Datenbank gespeichert (siehe Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>>). Alle Einstellungen, die in den Plugin-Einstellungen getroffen werden, können auch über den plentyShop LTS-Assistenten abgewickelt werden. Dieser ist kann über das Menü *Einrichtung » Assistenten » Plugins » Plugin-Set wählen » plentyShop LTS » Mandant wählen* aufgerufen werden.
 
 Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/ceres-einrichten.html[Anwenderdokumentation für plentyShop LTS^] enthält Anleitungen für alle relevanten plentyShop LTS Einstellungen.
 
@@ -31,20 +33,23 @@ Das Plugin IO stellt die dem Webshop zugrundeliegende Logik zur Verfügung. Eins
 
 Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/io-einrichten.html[Andwenderdokumentation für IO^] enthält Anleitungen für alle relevanten IO-Einstellungen.
 
-
 == ShopBooster 
 
-Der ShopBooster ist ein kostenpflichtiges Zusatzmodul in plentymarkets, welches dazu dient, die TTFB-Zeit (Time to first Byte), sprich die Zeit, bis der Browser die ersten Daten vom Server empfängt, deutlich zu verringern. Dies wird über sogenanntes Content-Caching erzielt: Seiteninhalte werden beim ersten Aufruf einer Seite in den Cache geschrieben und können dadurch beim erneuten Aufrufen der gleichen Seite deutlich schneller angezeigt werden. Bei aktivem ShopBooster-Modul liegt der TTFB-Wert in der Regel bei unter 100 Millisekunden. Die Daten, die in den Cache geschrieben werden, werden im File Storage Service S3 von AWS gespeichert.
+Der ShopBooster ist eine Zusatzfunktion für den Webshop, welcher dazu dient, die TTFB-Zeit (Time to first Byte), also die Zeit, bis der Browser die ersten Daten vom Server empfängt, deutlich zu verringern. Dies wird über sogenanntes Content-Caching erzielt: Seiteninhalte werden beim ersten Aufruf einer Seite in den Cache geschrieben und können dadurch beim erneuten Aufrufen der gleichen Seite deutlich schneller angezeigt werden. Bei aktivem ShopBooster-Modul liegt der TTFB-Wert in der Regel bei unter 100 Millisekunden. Die Daten, die in den Cache geschrieben werden, werden im File Storage Service S3 von AWS gespeichert.
 
-Das Abrechnungsmodell des ShopBoosters bemisst sich nach Seitenaufrufen und Seitenänderungen. Pro 100 Seitenaufrufen und -änderungen werden 0,004€ berechnet; sollten dadurch Kosten von über 100€ entstehen, werden die Kosten auf 100€ pro Monat reduziert. Ein Seitenaufruf ist der Vorgang, bei dem Shop-Besucher oder ein Webcrawler eine URL des Webshops aufruft. Eine Seitenveränderung wird durch folgende Vorgänge ausgelöst:
+// Das Abrechnungsmodell des ShopBoosters bemisst sich nach Seitenaufrufen und Seitenänderungen. Pro 100 Seitenaufrufen und -änderungen werden 0,004€ berechnet; sollten dadurch Kosten von über 100€ entstehen, werden die Kosten auf 100€ pro Monat reduziert. Ein Seitenaufruf ist der Vorgang, bei dem Shop-Besucher oder ein Webcrawler eine URL des Webshops aufruft. Eine Seitenveränderung wird durch folgende Vorgänge ausgelöst:
 
-* Aktualisieren von Artikel- und Kategoriedaten
-* Aktualisieren von ShopBuilder-Seiten
-* Bereitstellen von Plugins
-* Speichern von Einstellungen des Webshops
-* Invalidieren des Caches bei Deaktivierung des ShopBoosters
+// * Aktualisieren von Artikel- und Kategoriedaten
+// * Aktualisieren von ShopBuilder-Seiten
+//* Bereitstellen von Plugins
+//* Speichern von Einstellungen des Webshops
+//* Invalidieren des Caches bei Deaktivierung des ShopBoosters
 
-Der ShopBooster ist für alle plentymarkets Editionen verfügbar. Man aktiviert den Shopbooster im Menü *Einrichtung » Mandant » Mandant wählen » Webshop » ShopBooster* und kann ihn dort auch wieder aktivieren.
+Der ShopBooster ist für alle plentysystems Editionen verfügbar und ist mittlerweile kostenlos. 
+ShopBooster ist standardmäßig für alle Systeme aktiv.
+Im Menü *Einrichtung » plentyShop » Mandanten wählen » ShopBooster* haben Kunden die Möglichkeit, die Invalidierung von Seiten für einen frei wählbaren Zeitraum auszusetzen. Ebenfalls besteht die Möglichkeit, den ShopBooster-Cache manuell zu invalidieren; diese Funktion steht Kunden allerdings nur 5 mal alle 24 Stunden zur Verfügung.
+
+//Man aktiviert den Shopbooster im Menü *Einrichtung » Mandant » Mandant wählen » Webshop » ShopBooster* und kann ihn dort auch wieder aktivieren.
 
 
 == Beispielablauf eines Einkaufs in einem plentyShop LTS Webshop 
@@ -59,7 +64,7 @@ Beispielablauf:
 . Der Kunde verwendet einen Gutschein. Die Datenbank Gutscheine liefert die nötigen Informationen.
 . Der Kunde wählt eine Zahlungsart. Die Datenbank Zahlung liefert die für die Abwicklung nötigen Informationen.
 . Der Kunde wählt eine Versandart. Die Datenbank Versand liefert die für die Abwicklung nötigen Informationen.
-. Der Kunde schickt die Bestellung ab. Im plentymarkets System wird ein Auftrag angelegt.
+. Der Kunde schickt die Bestellung ab. Im plentysystems System wird ein Auftrag angelegt.
 . Die Datenbank Waren passt den Bestand des Artikels an.
 . Der Kunde erhält eine Bestellbestätigung.
-. Die weitere Bearbeitung des Auftrags erfolgt im plentymarkets System.
+. Die weitere Bearbeitung des Auftrags erfolgt im plentysystems System.
