@@ -1,4 +1,4 @@
-= Technische Systemdokumentation plentymarkets
+= Technische Systemdokumentation plentysystems
 :toc:
 :toc-title: Inhaltsverzeichnis
 :toclevels: 3

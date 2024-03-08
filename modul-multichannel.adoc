@@ -14,7 +14,7 @@ Das Softwaremodul plentyChannel dient dem zusätzlichen Vertrieb auf Online-Mark
 
 == Verfügbarkeit
 
-Aktuell ist das Softwaremodul plentyChannel in allen von plentymarkets angebotenen Editionen inklusive (Basic, Classic, Flex, Plus, Enterprise).
+Aktuell ist das Softwaremodul plentyChannel in allen von plentysystems angebotenen Editionen inklusive (Basic, Classic, Flex, Plus, Enterprise).
 
 == Dokumentation
 
@@ -25,7 +25,7 @@ Auf Anfrage stellt die plentysystems AG prüfenden Finanzbehörden ältere Versi
 
 Die im Modul plentyChannel fest integrierten Online-Marktplätze werden im Menü *Einrichtung » Märkte* eingerichtet. Folgende Online-Marktplätze sind im Modul plentyChannel fest integriert: +
 
-Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentymarkets verkaufen.
+Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysystems verkaufen.
 
 [[online-marktplätze]]
 .Online-Marktplätze
@@ -54,11 +54,11 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 |Zalando|[_Ja/Nein_]|
 |===
 
-Es sind jedoch nicht alle von plentymarkets angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in plentymarkets als link:https://knowledge.plentymarkets.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
+Es sind jedoch nicht alle von plentysystems angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in plentysystems als link:https://knowledge.plentymarkets.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
 
 Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einrichtung » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul plentyChannel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig: +
 
-Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentymarkets verkaufen.
+Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysystems verkaufen.
 
 [[online-marktplätze-verkauf]]
 .Verkauf auf Online-Marktplätzen
@@ -77,26 +77,26 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentyma
 
 == Zusätzliche Marktplatz-Services
 
-Für den Marktplatz Amazon steht der Amazon-Umsatzsteuerservice VCS zur Verfügung. Mit diesem Service können Amazon-Rechnungen durch plentymarkets oder durch Amazon erzeugt werden. +
-Wenn Amazon-Rechnungen durch plentymarkets erzeugt werden, werden diese mit Daten von Amazon erzeugt, automatisch zu Amazon übertragen und bei Amazon gespeichert. Wenn Rechnungen durch Amazon erzeugt werden, werden diese mit Daten von Amazon erzeugt und bei Amazon gespeichert. In beiden Fällen können die Rechnungen nicht nachträglich geändert werden.
+Für den Marktplatz Amazon steht der Amazon-Umsatzsteuerservice VCS zur Verfügung. Mit diesem Service können Amazon-Rechnungen durch plentysystems oder durch Amazon erzeugt werden. +
+Wenn Amazon-Rechnungen durch plentysystems erzeugt werden, werden diese mit Daten von Amazon erzeugt, automatisch zu Amazon übertragen und bei Amazon gespeichert. Wenn Rechnungen durch Amazon erzeugt werden, werden diese mit Daten von Amazon erzeugt und bei Amazon gespeichert. In beiden Fällen können die Rechnungen nicht nachträglich geändert werden.
 
 Weiterhin steht der Amazon-Service plentyChannel zur Verfügung, womit Aufträge von externen Verkaufskanälen über Amazon abgewickelt werden können.
 
 == Auftragsherkünfte
 
-Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz ein Auftrag generiert wurde. Eine Übersicht zu den Auftragsherkünften, die standardmäßig in jedem plentymarkets System vorhanden sind, ist im Kapitel <<#_Fachliche_und_technische_Beschreibung_des_Moduls_Auftragsabwicklung, Fachliche und technische Beschreibung des Moduls Auftragsabwicklung>> der Verfahrensdokumentation verfügbar. Bei den dort aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentymarkets System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiviert. +
+Die Auftragsherkünfte dienen der Kennzeichnung, über welchen Online-Marktplatz ein Auftrag generiert wurde. Eine Übersicht zu den Auftragsherkünften, die standardmäßig in jedem plentysystems System vorhanden sind, ist im Kapitel <<#_Fachliche_und_technische_Beschreibung_des_Moduls_Auftragsabwicklung, Fachliche und technische Beschreibung des Moduls Auftragsabwicklung>> der Verfahrensdokumentation verfügbar. Bei den dort aufgeführten Auftragsherkünften handelt es sich um Systemherkünfte, die standardmäßig mit jedem plentysystems System ausgeliefert werden und nicht gelöscht werden können. Systemherkünfte sind nicht automatisch aktiviert. +
 
 Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer Herkunft zugeordnet werden können, muss die Auftragsherkunft zunächst aktiviert werden. Ohne die Aktivierung der Herkunft findet also kein Verkauf auf Online-Marktplätzen statt.
 
 == Verkauf über plentyChannel
 
-Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentymarkets Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. +
+Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich plentysystems Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. +
 
 Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
 
 == Marktplatz-Zahlungsarten
 
-Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Marktplatz-Zahlungsarten sind automatisch verfügbar, sobald ein aktives Konto für den Marktplatz in plentymarkets existiert. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
+Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Marktplatz-Zahlungsarten sind automatisch verfügbar, sobald ein aktives Konto für den Marktplatz in plentysystems existiert. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
 
 [[marktplatz-zahlungsarten]]
 .Marktplatz-Zahlungsarten
@@ -104,40 +104,40 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |===
 |*Zahlungsart*|*Erläuterung*
 
-|Amazon|Zahlungsart für Aufträge, die über den Marktplatz Amazon ins plentymarkets System kommen.
-|BOL.com|Zahlungsart für Aufträge, die über den Marktplatz bol.com ins plentymarkets System kommen.
-|Cdiscount|Zahlungsart für Aufträge, die über den Marktplatz Cdiscount ins plentymarkets System kommen.
-|CHECK24|Zahlungsart für Aufträge, die über den Marktplatz CHECK24 ins plentymarkets System kommen.
+|Amazon|Zahlungsart für Aufträge, die über den Marktplatz Amazon ins plentysystems System kommen.
+|BOL.com|Zahlungsart für Aufträge, die über den Marktplatz bol.com ins plentysystems System kommen.
+|Cdiscount|Zahlungsart für Aufträge, die über den Marktplatz Cdiscount ins plentysystems System kommen.
+|CHECK24|Zahlungsart für Aufträge, die über den Marktplatz CHECK24 ins plentysystems System kommen.
 |eBay-Rechnungskauf|Zahlungsart für Kauf auf Rechnung bei eBay.
-|Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentymarkets System kommen.
-|Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentymarkets System kommen.
+|Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentysystems System kommen.
+|Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentysystems System kommen.
 |Hood Pay|Zahlungsart für Aufträge, die über HoodPay bezahlt wurden.
-|idealo Direktkauf|Zahlungsart für Aufträge, die über den Marktplatz idealo Direktkauf ins plentymarkets System kommen.
-|Kaufland.de Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentymarkets System kommen.
-|Neckermann.at Payment|Zahlungsart für Aufträge, die über den Marktplatz Neckermann.at ins plentymarkets System kommen.
-|Netto.de|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentymarkets System kommen.
+|idealo Direktkauf|Zahlungsart für Aufträge, die über den Marktplatz idealo Direktkauf ins plentysystems System kommen.
+|Kaufland.de Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentysystems System kommen.
+|Neckermann.at Payment|Zahlungsart für Aufträge, die über den Marktplatz Neckermann.at ins plentysystems System kommen.
+|Netto.de|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentysystems System kommen.
 |Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation, OTTO Integration und OTTO Market.
 |OTTO Direktversand|Zahlungsart für die Schnittstelle OTTO Direktversand.
-|Shopgate|Zahlungsart für Aufträge, die über den Marktplatz Shopgate ins plentymarkets System kommen.
-|Yatego Rechnung|Zahlungsart für Aufträge, die über den Marktplatz Yatego ins plentymarkets System kommen.
-|Zalando Payment|Zahlungsart für Aufträge, die über den Marktplatz Zalando ins plentymarkets System kommen.
-|Zalando AT|Zahlungsart für Aufträge, die über den Marktplatz Zalando Österreich ins plentymarkets System kommen.
-|Zalando BE|Zahlungsart für Aufträge, die über den Marktplatz Zalando Belgien ins plentymarkets System kommen.
-|Zalando CH|Zahlungsart für Aufträge, die über den Marktplatz Zalando Schweiz ins plentymarkets System kommen.
+|Shopgate|Zahlungsart für Aufträge, die über den Marktplatz Shopgate ins plentysystems System kommen.
+|Yatego Rechnung|Zahlungsart für Aufträge, die über den Marktplatz Yatego ins plentysystems System kommen.
+|Zalando Payment|Zahlungsart für Aufträge, die über den Marktplatz Zalando ins plentysystems System kommen.
+|Zalando AT|Zahlungsart für Aufträge, die über den Marktplatz Zalando Österreich ins plentysystems System kommen.
+|Zalando BE|Zahlungsart für Aufträge, die über den Marktplatz Zalando Belgien ins plentysystems System kommen.
+|Zalando CH|Zahlungsart für Aufträge, die über den Marktplatz Zalando Schweiz ins plentysystems System kommen.
 |===
 
 == Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentymarkets finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des plentymarkets Handbuchs. +
-In plentymarkets können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
+Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in plentysystems finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des plentysystems Handbuchs. +
+In plentysystems können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
 Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten. +
-Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, wird im Artikel oder im Listing in plentymarkets eingestellt.
+Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, wird im Artikel oder im Listing in plentysystems eingestellt.
 
 == Datenaustausch
 
-Daten können in plentymarkets automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten bei einigen Marktplätzen und Preisportalen mit dem Katalogexport übertragen werden. +
+Daten können in plentysystems automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten bei einigen Marktplätzen und Preisportalen mit dem Katalogexport übertragen werden. +
 Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
 [[datenaustausch-markplätze]]
@@ -179,5 +179,5 @@ Export über Kataloge
 
 === Welche Daten werden mit den Schnittstellen ausgetauscht?
 
-plentymarkets überträgt Artikeldaten (z.B. Bestand, Preise, Produktinformationen) und Lieferdaten an die Online-Marktplätze. Auftragsdaten und Kundendaten werden von den Marktplätzen ins plentymarkets System importiert.
-//Kundendaten können im plentymarkets System manuell angepasst werden.
+plentysystems überträgt Artikeldaten (z.B. Bestand, Preise, Produktinformationen) und Lieferdaten an die Online-Marktplätze. Auftragsdaten und Kundendaten werden von den Marktplätzen ins plentysystems System importiert.
+//Kundendaten können im plentysystems System manuell angepasst werden.

@@ -1,11 +1,11 @@
 = Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
-Benutzer sind die Personen, die die Software plentymarkets bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentymarkets Rechte. +
-Die Benutzerrechte eines Benutzers in plentymarkets hängen zunächst von seinem Benutzerzugang ab. Wird dem Benutzer kein Benutzerzugang zugewiesen, hängen die Benutzerrechte von den zugewiesenen Rollen ab. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
+Benutzer sind die Personen, die die Software plentysystems bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentysystems Rechte. +
+Die Benutzerrechte eines Benutzers in plentysystems hängen zunächst von seinem Benutzerzugang ab. Wird dem Benutzer kein Benutzerzugang zugewiesen, hängen die Benutzerrechte von den zugewiesenen Rollen ab. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
 
 == Benutzerzugänge
 
-Folgende Benutzerzugänge gibt es in plentymarkets:
+Folgende Benutzerzugänge gibt es in plentysystems:
 
  * Administrator
  * Nur API-Benutzer
