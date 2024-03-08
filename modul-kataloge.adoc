@@ -2,28 +2,28 @@
 
 == Verwendungszweck
 
-Kataloge ermöglichen es, Daten im plentymarkets System für den Export an einen Verkaufskanal vorzubereiten. Sie helfen dabei, die Informationen zu einem Produktsortiment auf die Anforderungen und die Zielgruppe eines Marktplatzes zuzuschneiden. Hierbei gibt der Verkaufskanal die Datenstruktur vor und zeigt an, welche Variantendaten notwendig sind, um Artikel dort zu listen. Der Händler kann pro Verkaufskanal oder auch pro Format festlegen, welche Daten auf dem Verkaufskanal veröffentlicht werden sollen.
-Kataloge in plentymarkets können außerdem dazu genutzt werden, bestimmte Daten wie z.B. Auftragsdaten aus dem plentymarkets System zu exportieren und anschließend weiterzuverarbeiten.
+Kataloge ermöglichen es, Daten im plentysystems System für den Export an einen Verkaufskanal vorzubereiten. Sie helfen dabei, die Informationen zu einem Produktsortiment auf die Anforderungen und die Zielgruppe eines Marktplatzes zuzuschneiden. Hierbei gibt der Verkaufskanal die Datenstruktur vor und zeigt an, welche Variantendaten notwendig sind, um Artikel dort zu listen. Der Händler kann pro Verkaufskanal oder auch pro Format festlegen, welche Daten auf dem Verkaufskanal veröffentlicht werden sollen.
+Kataloge in plentysystems können außerdem dazu genutzt werden, bestimmte Daten wie z.B. Auftragsdaten aus dem plentysystems System zu exportieren und anschließend weiterzuverarbeiten.
 
 == Dokumentation
 
 Die Dokumentation des Moduls Kataloge ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html^].
-Dort sind auch weitere Informationen zu den verfügbaren Marktplätzen sowie den vorhandenen plentymarkets Datenquellen aufgeführt.
+Dort sind auch weitere Informationen zu den verfügbaren Marktplätzen sowie den vorhandenen plentysystems Datenquellen aufgeführt.
 
 == Formate und Typen
 
 Bereits beim Erstellen eines Katalogs wird festgelegt, wofür dieser verwendet werden soll und welche Art von Daten exportiert werden soll. Dafür wird ein *Export-Typ*, ein *Format-Typ* und ein *Format* gewählt. Für den Datenexport sind die Dateiformate CSV, TXT, JSON und XML zulässig.
 
-* *Export-Typ*: Bei einem Datenexport an Marktplätze handelt es sich hier um das Marktplatz-Format, das für den Export verwendet werden soll (z.B. Amazon). Bei einem Export von Daten aus dem plentymarkets System wird hier das Standardformat gewählt.
-* *Format-Typ*: Wurde als Export-Typ ein Marktplatz angegeben, ist hier der Typ des Formats (z.B. Artikel) zu wählen. Für Exporte aus dem plentymarkets System wird hier z.B. der Typ Warenbestände gewählt.
+* *Export-Typ*: Bei einem Datenexport an Marktplätze handelt es sich hier um das Marktplatz-Format, das für den Export verwendet werden soll (z.B. Amazon). Bei einem Export von Daten aus dem plentysystems System wird hier das Standardformat gewählt.
+* *Format-Typ*: Wurde als Export-Typ ein Marktplatz angegeben, ist hier der Typ des Formats (z.B. Artikel) zu wählen. Für Exporte aus dem plentysystems System wird hier z.B. der Typ Warenbestände gewählt.
 * *Format*: Sollen Artikel an einen Marktplatz exportiert werden, wird hier die konkrete Kategorie gewählt (z.B. Spielwaren). Sollen Artikel aus dem System exportiert werden, ist hier das entsprechende Exportformat zu wählen.
 
 Im Folgenden werden die Begriffe *Marktplatz-Format* und *Standardformat* nochmals aufgeführt und der Unterschied zwischen diesen näher erläutert.
 
 * *Marktplatz-Format*: Mit diesem Format werden Daten an Marktplätze übertragen. Hier gibt es Datenfelder, die vom jeweiligen Marktplatz vorgegeben werden sowie Datenfelder, die optional sind. Informationen zu den jeweils verfügbaren Marktplatz-Formaten eines Verkaufskanals sind in der Dokumentation des Verkaufskanals zu finden.
-* *Standardformat*: Standardformate werden verwendet, um spezifische Daten wie z.B. Artikel- oder Auftragsdaten aus dem plentymarkets System zu exportieren und anschließend weiterzuverarbeiten. Hier bestimmt der Anwender selbst, welche Datenfelder exportiert werden sollen.
+* *Standardformat*: Standardformate werden verwendet, um spezifische Daten wie z.B. Artikel- oder Auftragsdaten aus dem plentysystems System zu exportieren und anschließend weiterzuverarbeiten. Hier bestimmt der Anwender selbst, welche Datenfelder exportiert werden sollen.
 
-=== plentymarkets Exportformate
+=== plentysystems Exportformate
 
 Die folgenden Exportformate sind im Elastischen Export verfügbar und werden nach und nach in den Katalog überführt.
 
@@ -50,7 +50,7 @@ Die folgenden Exportformate sind im Elastischen Export verfügbar und werden nac
 
 == Sichtbarkeit von Marktplatz-Formaten
 
-Die Marktplatz-Formate bestimmter Verkaufskanäle werden erst in das Menü *Daten » Kataloge* geladen, wenn das Plugin dieses Verkaufskanals bereitgestellt oder der entsprechende Assistent im plentymarkets System durchlaufen wurde.
+Die Marktplatz-Formate bestimmter Verkaufskanäle werden erst in das Menü *Daten » Kataloge* geladen, wenn das Plugin dieses Verkaufskanals bereitgestellt oder der entsprechende Assistent im plentysystems System durchlaufen wurde.
 
 == Datenexporte automatisieren
 

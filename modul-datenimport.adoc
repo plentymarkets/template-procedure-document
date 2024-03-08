@@ -1,16 +1,16 @@
 = Fachliche und technische Beschreibung des Moduls Datenimport
 
-In plentymarkets wird der Datenimport mit dem Import-Tool durchgeführt. Ein Import von Daten ist ratsam, wenn z.B. neue Artikel, Kundendaten oder Lagerbestände in das plentymarkets System eingepflegt werden sollen und die Daten bereits digital vorliegen. Das Tool ermöglicht es über das Erstellen von Importen, Datenimporte auszuführen. Ein Import kann manuell oder automatisiert erfolgen.
+In plentysystems wird der Datenimport mit dem Import-Tool durchgeführt. Ein Import von Daten ist ratsam, wenn z.B. neue Artikel, Kundendaten oder Lagerbestände in das plentysystems System eingepflegt werden sollen und die Daten bereits digital vorliegen. Das Tool ermöglicht es über das Erstellen von Importen, Datenimporte auszuführen. Ein Import kann manuell oder automatisiert erfolgen.
 
-== Import-Typen in plentymarkets
+== Import-Typen in plentysystems
 
-plentymarkets stellt verschiedene Import-Typen zur Verfügung, mit denen ausgewählte Daten importiert werden können. Je nach Typ müssen bestimmte Datensätze vorhanden sein. Es gibt jeweils Abgleich- und Zuordnungsfelder, die für den Datenimport verwendet werden können.
+plentysystems stellt verschiedene Import-Typen zur Verfügung, mit denen ausgewählte Daten importiert werden können. Je nach Typ müssen bestimmte Datensätze vorhanden sein. Es gibt jeweils Abgleich- und Zuordnungsfelder, die für den Datenimport verwendet werden können.
 
 Ein neuer Import kann im Menü *Daten » Import* erstellt werden.
-Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-importieren.html/[plentymarkets Handbuch^] unter *Daten » Daten importieren » Import-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Import-Typ für welche Importdaten zur Verfügung steht.
+Die verschiedenen Import-Typen und alle dazugehörigen Felder für den Datenimport sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-importieren.html/[plentysystems Handbuch^] unter *Daten » Daten importieren » Import-Typen* zu finden. Die folgende Tabelle zeigt zunächst, welcher Import-Typ für welche Importdaten zur Verfügung steht.
 
 [[import-typen]]
-.Import-Typen in plentymarkets
+.Import-Typen in plentysystems
 [cols="1,3"]
 |====
 
@@ -86,13 +86,13 @@ Es kann außerdem festgelegt werden, was passieren soll, wenn durch den Abgleich
 
 == Zuordnung
 
-Mit der Zuordnung wird festgelegt, welche Spalte der Datei welchem Datenfeld in plentymarkets entspricht. Es kann auch die automatische Zuordnung verwendet werden, die dafür sorgt, dass die Spalten der CSV-Datei den plentymarkets Datenfeldern automatisch zugeordnet werden. Damit die Zuordnung funktioniert, darf die Benennung der im FormatDesigner gewählten Felder nicht geändert werden. Ohne Zuordnung können keine Daten importiert werden. +
+Mit der Zuordnung wird festgelegt, welche Spalte der Datei welchem Datenfeld in plentysystems entspricht. Es kann auch die automatische Zuordnung verwendet werden, die dafür sorgt, dass die Spalten der CSV-Datei den plentysystems Datenfeldern automatisch zugeordnet werden. Damit die Zuordnung funktioniert, darf die Benennung der im FormatDesigner gewählten Felder nicht geändert werden. Ohne Zuordnung können keine Daten importiert werden. +
 Für den Import können entweder alle Zeilen importiert werden oder es kann bei jeder Zeile individuell entschieden werden, ob sie beim Import berücksichtigt werden soll.
 Mithilfe von Filtern können die zu importierenden Daten eingegrenzt werden. Bei der Verwendung mehrerer Filter werden nur Datensätze importiert, die auf alle Filter zutreffen. Es handelt sich also um eine Und-Verknüpfung der Filter.
 
 == Eigene Zuordnung
-Mit der Eigenen Zuordnung können vorhandene Werte einer CSV-Datei auf andere Werte im System gemappt werden. So kann definiert werden, für welche ID welcher Wert importiert werden soll. Importe können auch aus einem anderen plentymarkets System importiert werden, wofür der Abgleich und die Zuordnung angepasst werden müssen. Hier ist allerdings zu beachten, dass nur .json Dateien importiert werden können. +
-Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Imports zu manipulieren und Werte zu ändern. Weitere Informationen dazu gibt es im plentymarkets Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^].
+Mit der Eigenen Zuordnung können vorhandene Werte einer CSV-Datei auf andere Werte im System gemappt werden. So kann definiert werden, für welche ID welcher Wert importiert werden soll. Importe können auch aus einem anderen plentysystems System importiert werden, wofür der Abgleich und die Zuordnung angepasst werden müssen. Hier ist allerdings zu beachten, dass nur .json Dateien importiert werden können. +
+Die eigene Zuordnung kann außerdem dazu genutzt werden, Daten während des Imports zu manipulieren und Werte zu ändern. Weitere Informationen dazu gibt es im plentysystems Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^].
 
 == Datenquellen
 Als Quelle stehen die Optionen *Manueller Upload*, *FTP*, *SFTP* oder *HTTPS* zur Verfügung.
@@ -108,16 +108,16 @@ Es gibt die folgenden Anforderungen an die Dateien: +
 *Trennzeichen*: Semikolon, Komma, Tabulator oder Pipe
 
 [[datenquellen-in-plentymarkets]]
-.Datenquellen in plentymarkets
+.Datenquellen in plentysystems
 [cols="1,3"]
 |====
 |*Datenquelle* |*Erläuterung*
 
 |Manueller Upload
-|Hier wird eine lokale Datei gewählt und direkt hochgeladen. Bei dieser Option liegt die Datenhoheit bei plentymarkets. Somit liegen die importierten Daten in einem privaten Bereich, auf den nur die Personen mit Zugriff auf das System und das Import-Tool zugreifen können.
+|Hier wird eine lokale Datei gewählt und direkt hochgeladen. Bei dieser Option liegt die Datenhoheit bei plentysystems. Somit liegen die importierten Daten in einem privaten Bereich, auf den nur die Personen mit Zugriff auf das System und das Import-Tool zugreifen können.
 
 |FTP und SFTP
-|Mit diesen Optionen können ebenfalls Daten bereitgestellt werden. Hier werden Host, Port, Benutzername, Passwort und Dateiname als Einstellungen sichtbar. Allerdings befinden sich diese Daten extern, d.h. plentymarkets kann hier nicht sicherstellen, dass die Daten gesichert sind. Wenn die gewählte Option aktiv ist, wird die Importdatei nach erfolgreichem Import automatisch in einen neuen Archiv-Ordner auf dem FTP-Verzeichnis verschoben.
+|Mit diesen Optionen können ebenfalls Daten bereitgestellt werden. Hier werden Host, Port, Benutzername, Passwort und Dateiname als Einstellungen sichtbar. Allerdings befinden sich diese Daten extern, d.h. plentysystems kann hier nicht sicherstellen, dass die Daten gesichert sind. Wenn die gewählte Option aktiv ist, wird die Importdatei nach erfolgreichem Import automatisch in einen neuen Archiv-Ordner auf dem FTP-Verzeichnis verschoben.
 
 |HTTPS
 |Hier wird eine externe URL gewählt, unter der die Importdatei erreichbar ist. Der Anwender wählt, ob für den Zugriff auf die Datei eine Authentifizierung erforderlich ist oder nicht.

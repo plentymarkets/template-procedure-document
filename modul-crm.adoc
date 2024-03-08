@@ -1,6 +1,6 @@
 = Fachliche und technische Beschreibung des Moduls CRM
 
-Das CRM-Modul von plentymarkets erlaubt das Verwalten, Speichern und Bearbeiten von Kontaktdaten inklusive Adress- und Firmendaten. Kontaktdatensätze, die im System gespeichert sind, können aus verschiedenen Kanälen stammen:
+Das CRM-Modul von plentysystems erlaubt das Verwalten, Speichern und Bearbeiten von Kontaktdaten inklusive Adress- und Firmendaten. Kontaktdatensätze, die im System gespeichert sind, können aus verschiedenen Kanälen stammen:
 
 * Webshop des Anwenders
 * Marktplätze
@@ -49,7 +49,7 @@ Die folgende Tabelle listet die Beispielkontaktdatensätze mit einigen der vorau
 |====
 
 Öffnet der Anwender einen Kontaktdatensatz sind weitere Informationen sichtbar. Dazu gehören z.B. Firmenname, Adressen, E-Mail-Adresse, Telefonnummer und USt-IdNr, Bankdaten, Optionen, Dokumente und Aufträge. +
-Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das plentymarkets Kassensystem im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
+Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das Kassensystem plenyPOS im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
 
 Der Barverkauf ist – da es sich im klassischen Sinne nicht um einen "realen" Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
 
@@ -63,7 +63,7 @@ Für die anderen drei Beispielkontaktdatensätze (IDs 101, 102 und 103) sind ber
 
 == Regulärer Zugang und Gastzugang
 
-In plentymarkets gibt es zwei Zugangsarten, wenn eine Bestellung (Auftrag) im System angelegt wird.
+In plentysystems gibt es zwei Zugangsarten, wenn eine Bestellung (Auftrag) im System angelegt wird.
 
 * Bei einem regulären Zugang handelt es sich um einen Bestandskunden, der sich in der Vergangenheit im Webshop des Anwenders registriert hat und sich regelmäßig mit seinen Daten einloggt. Die reguläre Zugangsart wird außerdem auch gespeichert, wenn der Anwender einen neuen Kontaktdatensatz manuell, z.B während eines Telefonats mit einem Interessenten, erstellt.
 
@@ -183,7 +183,7 @@ Für jede Eigenschaft muss der Anwender einen Typen wählen. Der Typ legt fest, 
  * Datum
  * Datei
 
-Die folgende Tabelle listet die in plentymarkets verfügbaren Typen auf. Ein Beispiel erläutert die Verwendung der Eigenschaft.
+Die folgende Tabelle listet die in plentysystems verfügbaren Typen auf. Ein Beispiel erläutert die Verwendung der Eigenschaft.
 
 [[tabelle-typen-kundeneigenschaften]]
 .Auswählbare Typen für die Kundeneigenschaften
@@ -252,7 +252,7 @@ JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
 |*Passwort ändern*: Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
 *E-Mail zum Zurücksetzen des Passworts*: Der Anwender kann dem Kunden eine E-Mail-Vorlage zum Zurücksetzen des Passworts senden. Voraussetzung dafür ist, dass eine E-Mail-Vorlage, die die entsprechende Variable enthält, mit dem entsprechenden Ereignis verknüpft ist. +
 *Login entsperren*: Der Anwender kann den Login des Kunden entsperren, wenn dieser zum Beispiel 4 Mal hintereinander das Passwort falsch im plentyShop eingegeben hat und deshalb für den Login gesperrt wurde. +
-*Login-URL*: Im plentymarkets Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
+*Login-URL*: Im plentysystems Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
 
 |Aufträge / +
 Neuer Auftrag / +
@@ -377,11 +377,11 @@ Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der
 [discrete]
 === Aufbewahrungspflicht
 
-Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen Daten zu sichern und diese ggf. nach Ablauf der Aufbewahrungsfrist selbstständig zu löschen. Eine systemseitige Erinnerungsfunktion o.ä. für das Löschen von Daten ist in plentymarkets nicht vorhanden.
+Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen Daten zu sichern und diese ggf. nach Ablauf der Aufbewahrungsfrist selbstständig zu löschen. Eine systemseitige Erinnerungsfunktion o.ä. für das Löschen von Daten ist in plentysystems nicht vorhanden.
 
 == Import und Export
 
-Der Anwender hat die Möglichkeit, Kontaktdaten in plentymarkets automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
+Der Anwender hat die Möglichkeit, Kontaktdaten in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
 Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-exportieren.html[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
 
@@ -392,7 +392,7 @@ Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden bzw. Gastkunden ge
 
 == Backup
 
-Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentymarkets dafür vorgesehene Menü einzuspielen.
+Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentysystems dafür vorgesehene Menü einzuspielen.
 
 
 == CRM Historie

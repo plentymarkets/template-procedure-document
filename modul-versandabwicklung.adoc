@@ -1,12 +1,12 @@
 = Fachliche und technische Beschreibung Versandabwicklung
 
-Für die Versandabwicklung bietet das plentymarkets System für verschiedene Versanddienstleister und Fulfillment-Dienstleister Anbindungen über ein Plugin, über eine integrierte Schnittstelle oder auch über Polling-Formate an. Eine Polling-Datei wird benötigt, wenn keine direkte Schnittstelle zu der Software des Versanddienstleisters besteht. Der Anwender generiert die Polling-Datei, die die anzumeldenden Aufträge enthält, und lädt diese in der Software des Versanddienstleisters hoch, um die Versandanmeldung anzustoßen.
+Für die Versandabwicklung bietet das plentysystems System für verschiedene Versanddienstleister und Fulfillment-Dienstleister Anbindungen über ein Plugin, über eine integrierte Schnittstelle oder auch über Polling-Formate an. Eine Polling-Datei wird benötigt, wenn keine direkte Schnittstelle zu der Software des Versanddienstleisters besteht. Der Anwender generiert die Polling-Datei, die die anzumeldenden Aufträge enthält, und lädt diese in der Software des Versanddienstleisters hoch, um die Versandanmeldung anzustoßen.
 
 Eine Übersicht über vorhandene (sowohl intern als auch extern entwickelte) Plugins für Versanddienstleister- und Fulfillment-Dienstleister ist auf dem link:https://marketplace.plentymarkets.com/plugins/integration[plentyMarketplace^] zu finden.
 
 Im Tab _Support_ jedes Plugins ist beschrieben, welcher Ansprechpartner für Rückfragen kontaktiert werden kann.
 
-plentymarkets übernimmt die Entwicklung und den Support für die folgenden Versanddienstleister- bzw. Fulfillment-Dienstleister-Plugins:
+plentysystems übernimmt die Entwicklung und den Support für die folgenden Versanddienstleister- bzw. Fulfillment-Dienstleister-Plugins:
 
 * link:https://marketplace.plentymarkets.com/dhlshipping_4871[DHL Shipping (Versenden)^]
 * link:https://marketplace.plentymarkets.com/dhlwunschpaket_5435[DHL Wunschzustellung^]
@@ -19,7 +19,7 @@ Im Gegensatz zu einem Versanddienstleister, über den der Anwender seine Ware le
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Dienstleistern ist in den folgenden Kapiteln zu finden: <<#_integrierte_versanddienstleister, Integrierte Versanddienstleister>> und <<#_integrierte_fulfillment_dienstleister, Integrierte Fulfillment-Dienstleister>>.
 
-Bevor der Anwender eine der in plentymarkets angebotenen Schnittstellen zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren und erhält daraufhin die für das plentymarkets System benötigten Zugangsdaten.
+Bevor der Anwender eine der in plentysystems angebotenen Schnittstellen zu einem Versanddienstleister bzw. Fulfillment-Dienstleister vollumfänglich nutzen kann, muss dieser sich direkt bei dem Dienstleister registrieren und erhält daraufhin die für das plentysystems System benötigten Zugangsdaten.
 
 == Lieferländer
 
@@ -53,7 +53,7 @@ Ausgehend von ID 100 wird hochgezählt, wenn ein neuer Versanddienstleister, z.B
 
 Versanddienstleister, die der Anwender in diesem Bereich der Software erstellt, sind bei Erstellung des Versandprofils dann wählbar. Das bedeutet, dass kein Versandprofil erstellt werden kann, ohne zuvor den Versanddienstleister erstellt zu haben.
 
-In der folgenden Tabelle werden die standardmäßig in plentymarkets vorhandenen Versanddiensleister mit IDs aufgelistet.
+In der folgenden Tabelle werden die standardmäßig in plentysystems vorhandenen Versanddiensleister mit IDs aufgelistet.
 
 [[tabelle-versanddienstleister-ids]]
 .Versanddienstleister mit deren IDs
@@ -270,7 +270,7 @@ In den folgenden Unterkapiteln wird aufgelistet, welche fest integrierten Schnit
 Die folgende Tabelle listet die Versanddienstleister, zu denen eine Schnittstelle besteht oder denen man über das System eine Polling-Datei zur Verfügung stellt, auf.
 
 [[tabelle-liste-integrierte-versanddienstleister]]
-.Liste der in plentymarkets integrierten Versanddienstleister
+.Liste der in plentysystems integrierten Versanddienstleister
 [cols="3,1,3,3"]
 |====
 |Versanddienstleister |Fest integrierte Schnittstelle|Weitere “Unterschnittstellen”|Polling-Datei
@@ -301,7 +301,7 @@ Eine Übersicht über die im System fest integrierten Schnittstellen zu Versandd
 
 === Integrierte Fulfillment-Dienstleister
 
-Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnittstelle in plentymarkets:
+Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnittstelle in plentysystems:
 
  * DHL Fulfillment
  * eBay Fulfillment by Orange Connex
@@ -310,7 +310,7 @@ Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnitt
  * iLOPACK
 
 
-Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren und erhält daraufhin die für das plentymarkets System benötigten Zugangsdaten.
+Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren und erhält daraufhin die für das plentysystems System benötigten Zugangsdaten.
 
 Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/fulfillment/versand-vorbereiten.html#4700[Fulfillment-Dienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
 
@@ -318,7 +318,7 @@ Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillm
 
 Das System überträgt ausschließlich die Daten, die in den integrierten Schnittstellen vorhanden sind, an den Versanddienstleister bzw. den Fulfillment-Dienstleister. Die Daten werden erst bei der Versandanmeldung übertragen. Das System erhält im Erfolgsfall ein Versandlabel und eine Sendungsnummer von der Schnittstelle zurück oder die nötigen Informationen werden im System gespeichert, damit der Anwender selbst ein Versandlabel erzeugen kann. Im Fehlerfall wird ein Fehlercode ausgegeben.
 
-DHL Fulfillment ist der einzige in plentymarkets integrierte Dienstleister, bei dem plentymarkets die Daten im 15-minütigen Abstand überträgt.
+DHL Fulfillment ist der einzige in plentysystems integrierte Dienstleister, bei dem plentysystems die Daten im 15-minütigen Abstand überträgt.
 
 Generell werden die Adressdaten und relevante Daten zur Bestellungabwicklung wie z.B. die Auftrags-ID, Gewicht und spezifische Services gemäß Vertrag an den Dienstleister übertragen.
 

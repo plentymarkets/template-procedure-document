@@ -1,6 +1,6 @@
 = Fachliche und technische Beschreibung des Moduls Plugins
 
-Mit dem Plugin-Modul ist es möglich, das plentymarkets System um zusätzliche Funktionen zu erweitern und individuell zu gestalten. Bei Plugins handelt es sich um Erweiterungen des plentymarkets Systems. So ist es etwa möglich, neue Zahlungsarten zu einem Webshop oder eine neue Schnittstelle zum Backend hinzuzufügen.
+Mit dem Plugin-Modul ist es möglich, das plentysystems System um zusätzliche Funktionen zu erweitern und individuell zu gestalten. Bei Plugins handelt es sich um Erweiterungen des plentysystems Systems. So ist es etwa möglich, neue Zahlungsarten zu einem Webshop oder eine neue Schnittstelle zum Backend hinzuzufügen.
 
 Plugins können über verschiedene Quellen im System eingebunden werden:
 
@@ -18,7 +18,7 @@ Je nach Anbieter ist es möglich, Plugins für einen Zeitraum von 30 Tagen koste
 
 Einzelheiten zu den Arten von angebotenen Plugins sowie den verschiedenen Kaufoptionen sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/plugins-system-hinzufuegen#marketplace-plugins[Plugins dem System hinzufügen^] beschrieben. Einzelheiten zur Implementierung des verschiedenen Modelle sind auf der Entwicklerseite https://developers.plentymarkets.com/marketplace/plugin-pricing-models[Plugin pricing models^] und dem zugehörigen Tutorial https://developers.plentymarkets.com/tutorials/marketplace-subscriptions[Marketplace subscription plugins^] beschrieben.
 
-Wenn ein Plugin erworben wird, wird von plentymarkets automatisch ein Auftrag an der entsprechenden Kunden-ID hinterlegt (siehe Kapitel <<#_kontakt_ids>>). Sind einer Kunden-ID mehrere plentymarkets Systeme zugeordnet, steht das Plugin in all diesen Systemen zu Verfügung.
+Wenn ein Plugin erworben wird, wird von plentysystems automatisch ein Auftrag an der entsprechenden Kunden-ID hinterlegt (siehe Kapitel <<#_kontakt_ids>>). Sind einer Kunden-ID mehrere plentysystems Systeme zugeordnet, steht das Plugin in all diesen Systemen zu Verfügung.
 
 Eine Liste aller auf plentyMarketplace angebotenen Plugins ist im Anhang plentyMarketplace-Plugins aufgeführt.
 
@@ -38,7 +38,7 @@ Wenn ein lokales Plugin eingebunden wird, werden die zugehörigen Dateien auf AW
 
 Bevor sie verwendet werden können, müssen Plugins vom Anwender installiert, aktiviert und bereitgestellt werden.
 
-Beim Installieren von Plugins, die auf plentyMarketplace erworben wurden, wird der beim Kauf angelegte Auftrag von plentymarkets überprüft. Anschließend werden die Dateien des Plugins in das AWS-Verzeichnis des Kunden kopiert. Je nachdem, ob das Plugin in der Plugin-JSON als Open Source oder Closed Source definiert wurde, werden die Dateien in das Unterverzeichnis Public oder Private kopiert.
+Beim Installieren von Plugins, die auf plentyMarketplace erworben wurden, wird der beim Kauf angelegte Auftrag von plentysystems überprüft. Anschließend werden die Dateien des Plugins in das AWS-Verzeichnis des Kunden kopiert. Je nachdem, ob das Plugin in der Plugin-JSON als Open Source oder Closed Source definiert wurde, werden die Dateien in das Unterverzeichnis Public oder Private kopiert.
 
 Nach dem Installieren können Anwender Plugins innerhalb eines Plugin-Sets aktiviert und deaktiviert werden. Nur aktivierte Plugins werden beim Bereitstellen berücksichtigt. Nachdem ein Plugin bereitgestellt wurde, kann es aktiviert und deaktiviert werden. Wenn ein Plugin bereitgestellt und deaktiviert ist, wird der Code des Plugins nicht ausgeführt. Damit der Code ausgeführt wird, muss das Plugin aber nicht erneut bereitgestellt, sondern nur aktiviert werden.
 
