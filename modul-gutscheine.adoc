@@ -36,4 +36,4 @@ plentysystems Händler können Bestandskunden einen anderen Preis anbieten als S
 
 Kundenklassenrabatte werden direkt auf den Auftrag angewendet, jedoch nicht separat im Auftrag ausgewiesen.
 
-Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global » Option: Aktionsgutschein/POS-Rabatt* von Rabatten ausgeschlossen werden.
+Artikel können im Artikel-Menü über die Option *Aktionsgutschein/POS-Rabatt* von Rabatten ausgeschlossen werden.

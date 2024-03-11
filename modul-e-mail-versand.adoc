@@ -16,8 +16,9 @@ Der Anwender muss den Postausgangsserver, den Port sowie die verfügbare Verschl
 
 Der Anwender hat die Möglichkeit, den E-Mail-Versand vor dem Live-Betrieb zu testen. Im Testmodus werden alle E-Mails ausschließlich an die E-Mail-Adresse des Anwenders gesendet.
 
-== E-Mail-Vorlagen
+== E-Mail-Vorlagen erstellen
 
+////
 Aktuell gibt es im plentysystems System 2 Möglichkeiten, E-Mail-Vorlagen zu erstellen. Diese werden im Folgenden erläutert.
 
 === E-Mail-Vorlagen in den E-Mail-Einstellungen des Mandanten erstellen
@@ -60,9 +61,11 @@ Weitere Informationen zum E-Mail-Versand sind im Handbuch auf der Seite link:htt
 
 === E-Mail-Vorlagen über den EmailBuilder erstellen
 
-Der Anwender kann beliebig viele Ordner und E-Mail-Vorlagen erstellen. 
+////
 
-Der Ordner *Standardvorlagen* enthält bereits 12 E-Mail-Vorlagen, die in der folgenden Tabelle aufgelistet sind. Ebenso gibt es den Ordner *Default templates*, der diese 12 Vorlagen in englischer Sprache enthält.
+Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen. Außerdem kann er Ordner erstellen, die der besseren Übersicht und Struktur dienen.
+
+Der Ordner *Standardvorlagen* enthält bereits 12 E-Mail-Vorlagen in deutscher und englischer Sprache, die in der folgenden Tabelle aufgelistet sind.
 
 [[tabelle-standardvorlagen-emailbuilder]]
 .Standardvorlagen im EmailBuilder
@@ -86,7 +89,7 @@ Der Ordner *Standardvorlagen* enthält bereits 12 E-Mail-Vorlagen, die in der fo
 
 Der Anwender kann die Namen der Vorlagen sowie deren Inhalt und Betreff ändern.
 
-Beim Erstellen der Vorlagen über den EmailBuilder stehen dem Anwender Widgets zur Verfügung. Diese können per Drag-and-drop an die gewünschte Stelle der Vorlage gesetzt werden und mit Inhalt, wie z.B. Variablen befüllt werden.
+Beim Erstellen der Vorlagen über den EmailBuilder stehen dem Anwender Widgets zur Verfügung. Diese können per Drag-and-drop an die gewünschte Stelle der Vorlage gesetzt werden und mit Inhalt, wie z.B. Variablen, befüllt werden. Die Variablen werden dann in der versendeten E-Mail durch die korrekten Werte ersetzt.
 
 Weitere Informationen zum EmailBuilder sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/emailbuilder.html[EmailBuilder^] zu finden.
 
@@ -115,7 +118,7 @@ Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse
 |kein Versand
 
 |Kunde möchte E-Mail-Adresse ändern
-|ohne Funktion
+|Sendet Kunden eine Bestätigungs-E-Mail, wenn sie im Webshop ihre E-Mail-Adresse ändern und die neue E-Mail-Adresse eingeben. Die E-Mail-Vorlage sollte den Link zum Bestätigen der E-Mail-Adresse enthalten.
 |kein Versand
 
 |Newsletter Opt-In
@@ -130,20 +133,13 @@ Die folgende Tabelle listet sowohl die im System bereits verfügbaren Ereignisse
 |Sendet Kunden eine E-Mail, wenn diese sich neu im Webshop registriert haben.
 |kein Versand
 
-|Neuer Scheduler-Auftrag
-|Sendet eine E-Mail, wenn das eingestellte Intervall für ein “Abo” erreicht wird.
-|kein Versand
-
-|Serviceeinheiten
-|Sendet eine E-Mail, wenn auf das “Kundenkonto” ein weiteres Event gebucht wurde.
-|kein Versand
-
-|Änderung eines Scheduler-Auftrags
-|Sendet Kunden eine E-Mail zur Änderung des Scheduler-Auftrags.
-|kein Versand
-
 |Benachrichtigung bei verfügbarem Artikel
 |Sendet Kunden eine E-Mail mit dem Hinweis, dass ein bestimmter Artikel wieder verfügbar ist. Der Kunde hat zuvor seine E-Mail-Adresse direkt bei dem nicht lieferbaren Artikel eingetragen.
+|kein Versand
+
+|Neuer Link zur Bestellbestätigung
+|Sendet Gastkunden eine E-Mail mit der Möglichkeit, einen neuen Auftragsbestätigungslink anzufordern.
+Die E-Mail-Vorlage sollte den Link zur Auftragsübersicht enthalten.
 |kein Versand
 
 |====
