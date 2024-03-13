@@ -1,0 +1,14 @@
+= Fachliche und technische Beschreibung des Moduls Messenger
+
+Im Messenger-Modul in plentysystems verwaltet der Anwender sowohl die externe Kommunikation mit den Endkunden in Form von E-Mails als auch die interne Kommunikation in Form von Nachrichten. Wenn Nachrichten geflüstert werden, sind diese Nachrichten nur innerhalb des Systems sichtbar und können von den Endkunden nicht eingesehen werden.
+
+Es ist möglich, mit dem Messenger E-Mails nicht nur zu versenden, sondern auch zu empfangen, wenn man den Messenger-Service aktiviert, eine E-Mail-Weiterleitung eingerichtet und einige andere Einstellungen sowohl für den E-Mail-Versand als auch den E-Mail-Empfang eingestellt hat. 
+
+Der Anwender hat die Möglichkeit, den Messenger nur als internes Notiz-Tool zu verwenden, ohne E-Mails über den Messenger zu versenden und zu empfangen. In diesem Fall ist es nicht notwendig, die oben beschriebenen Einstellungen wie zum Beispiel die Service-Aktivierung des Messengers oder die Einrichtung einer E-Mail-Weiterleitung vorzunehmen.
+
+Der Messenger bietet außerdem eine Schnittstelle für Marktplatzanbindungen. Die Verwendung von übergeordneten Gruppen innerhalb des Messengers ermöglicht es dem Anwender, einen guten Überblick über einzelne Marktplätze zu behalten, weil innerhalb der Gruppen mit gruppenspezifischen Typen und Status gearbeitet werden kann. So kann der Anwender mit Hilfe der Typen und Status einzelne Marktplätze getrennt voneinander bearbeiten, aber dennoch einfach zwischen den einzelnen Gruppen hin- und herwechseln.
+
+Der Anwender kann über den Messenger beliebig viele Anhänge versenden. Auch hat der Anwender die Möglichkeit, das umfassende Automatisierungstool für den Messenger zu nutzen. Dort wird zwischen ereignisbasierten und zeitbasierten Automatisierungstypen entschieden. Je nachdem, welchen Typ der Anwender wählt, stehen verschiedene Auslöser und Filter zur Verfügung, die dann eine oder mehrere bestimmte Aktionen auslösen. Der Anwender kann die Filter, Auslöser und Aktionen nach seinen Bedürfnissen zusammenstellen und miteinander kombinieren.
+
+Es kann außerdem eingestellt werden, dass Konversationen – so werden im Messenger die Nachrichtenverläufe genannt – nach einer vom Anwender festgelegten Anzahl an Tagen automatisch in das Archiv verschoben werden. Des Weiteren kann der Anwender auch einstellen, nach wie vielen Tagen gelöschte Nachrichten und gelöschte Konversationen automatisch aus dem Papierkorb entfernt werden sollen.
+

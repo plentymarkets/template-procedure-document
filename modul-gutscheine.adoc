@@ -37,3 +37,16 @@ plentysystems Händler können Bestandskunden einen anderen Preis anbieten als S
 Kundenklassenrabatte werden direkt auf den Auftrag angewendet, jedoch nicht separat im Auftrag ausgewiesen.
 
 Artikel können im Artikel-Menü über die Option *Aktionsgutschein/POS-Rabatt* von Rabatten ausgeschlossen werden.
+
+
+== Import und Export
+
+Der Anwender hat die Möglichkeit, Gutscheindaten in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
+
+Für den manuellen Austausch von Gutscheindaten stehen dem Anwender die folgenden Möglichkeiten zur Verfügung:
+
+* Für den Import von Gutschein-Codes der Import-Typ *Gutschein-Codes* im Import-Tool
+* Für den Import von Kampagnen der Import-Typ *Kampagnen*
+* Für den Export in der Gutscheine-Bedienoberfläche eine Schaltfläche zum Exportieren der Kampagnendaten in eine CSV-Datei
+
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.

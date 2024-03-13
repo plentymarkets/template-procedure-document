@@ -65,8 +65,8 @@ Für den manuellen Austausch von Newsletter-Daten stehen dem Anwender die folgen
 
 * Für den Import der Import-Typ *Newsletter-Empfänger* im Import-Tool
 
-* Für den Export das Datenformat *Newsletter-Empfänger* im Elastischen Export
+* Für den Export entweder der Katalog-Formattyp *Newsletter-Empfänger* oder das Datenformat *Newsletter-Empfänger* im Elastischen Export
 
-Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
 
 *Hinweis*: Die selbe E-Mail-Adresse kann mehr als einmal in der Exportdatei oder in der REST-Abfrage vorkommen. Dies ist der Fall, wenn die E-Mail-Adresse in mehr als einem Ordner gespeichert ist. Pro Ordner kann dieselbe E-Mail-Adresse nur einmal gespeichert werden.

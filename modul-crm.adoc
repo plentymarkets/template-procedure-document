@@ -387,7 +387,12 @@ Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
-Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-exportieren.html[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
+Für den manuellen Austausch von Kontaktdaten stehen dem Anwender die folgenden Formate zur Verfügung:
+
+* Für den Import der Import-Typ *Kontakt* im Import-Tool
+* Für den Export der Katalog-Formattyp *Kontakt* oder das Datenformat *Kontakte* im Elastischen Export 
+
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
 
 [discrete]
 === Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
