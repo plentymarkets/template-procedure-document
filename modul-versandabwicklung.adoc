@@ -119,17 +119,8 @@ In der folgenden Tabelle werden die standardmäßig in plentysystems vorhandenen
 |19
 |Amazon Prime
 
-|20
-|c.b.c. logistics
-
-|21
-|NetDespatch
-
 |22
 |DHL Fulfillment
-
-|23
-|Parcelforce Worldwide
 
 |99
 |Sonstiges
@@ -275,22 +266,15 @@ Die folgende Tabelle listet die Versanddienstleister, zu denen eine Schnittstell
 |====
 |Versanddienstleister |Fest integrierte Schnittstelle|Weitere “Unterschnittstellen”|Polling-Datei
 
-|c.b.c. logistics |Ja |Nein |Nein
 |Deutsche Post |Nein |Nein | Internetmarke
-|DHL |Ja |DHL Freight +
-DHL Retoure Beilegeretiketten +
-DHL Retoure Online +
+|DHL |Ja |DHL Retoure Beilegeretiketten +
 DHL Supply Chain +
 DHL UK
-|DHL Easylog +
-DHL plentymarkets Import
+|DHL plentymarkets Import
 |DPD |Ja | DPD Cloud Webservice (My DPDBusiness) +
 Iloxx |DPD Print
-|EasyPAK |Nein |Nein | EasyPAK
 |GLS Germany |Nein |Nein | GLS Gepard
 |Hermes |Ja |Hermes 2-Mann-Handling |Hermes (Shipping Client)
-|NetDespatch |Ja |UK Mail |Nein
-|Parcelforce Worldwide |Nein |Nein |Parcelforce Worldwide
 |Swiss Post |Ja |Nein |Nein
 |UPS |Ja |Nein | UPS Worldship
 |====
