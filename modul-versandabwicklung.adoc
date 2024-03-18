@@ -172,7 +172,7 @@ In der folgenden Tabelle ist aufgelistet, für welche Postleitzahlenbereiche der
 
 |1
 |Deutschland
-|18565, 25845 - 25849, 25859, 25863, 25869, 25929 - 25956, 25960 - 25999, 26465, 26474, 26486, 26548, 26571, 26579, 26757, 83256
+|18565, 25845 - 25849, 25859, 25863, 25869, 25929 - 25956, 25960 - 25999, 26465, 26474, 26486, 26548, 26571, 26579, 26757, 27483, 27487, 27498, 83256
 
 |7
 |Dänemark
@@ -633,7 +633,7 @@ Die folgende Tabelle listet die im System voreingestellten und für den Anwender
 |252 |Zambia
 |253 |Zimbabwe
 |254 |United Arab Emirates
-|255 |Helgoland, Germany
+|255 |Helgoland, Deutschland
 |256 |Büsingen, Deutschland
 |*257* |*nicht vergeben*
 |258 |Curaçao
@@ -644,6 +644,23 @@ Die folgende Tabelle listet die im System voreingestellten und für den Anwender
 |263 |Campione d'Italia
 |264 |Luganer See von Ponte Tresa bis Porto Ceresio (IT)
 |265 |Nordirland
+|266 |Korsika
+|267 |Azoren
+|268 |Madeira
+|269 |Saint Martin
+|270 |Athos (Mount Athos)
+|271 |Kleinwalsertal
+|272 |Vennbahn
+|273 |Jungholz
+|274 |Samnaun
+|275 |Llívia
+|276 |Türkische Republik Nordzypern
+|277 |Baarle-Hertog
+|278 |Baarle-Nassau
+|279 |Brezovica Žumberačka
+|280 |Međurečje
+|281 |Oblast Kaliningrad
+|282 |Sankowo-Medweschje
 |====
 
 === Anhang: CN23-Formular (Zollinhaltserklärung)
