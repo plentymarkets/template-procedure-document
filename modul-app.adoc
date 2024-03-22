@@ -4,16 +4,17 @@ Die plentymarkets App erlaubt Ihnen auch von unterwegs einen sicheren Zugriff au
 
 * Anzeige von Kennzahlen des ERP-Systems plentysystems
 * Artikel-, Kunden- und Auftragssuche
-* Picklistenanzeige
-* Kommissionierung
-* Einbuchung/Umbuchung/Verräumen
-* Inventar
+* Rollende Kommissionierung
+* Wareneingang
+* Umbuchung
+* Verräumen
+* Inventur
 * <<#_fachliche_und_technische_beschreibung_plentypos, Kassensystem plentyPOS>>
 
 [TIP]
 .Ergänzen Sie Ihre eigenen Firmendaten
 ====
-Dieses Kapitel enthält eine Mischung aus rein informativen Texten über die plentymarkets App und aus Textblöcken, in denen Sie Informationen selbst ergänzen müssen. Gehen Sie dieses Kapitel sorgfältig durch und ergänzen Sie alle GoBD-relevante Informationen zu Ihrer eigenen Firma.
+Dieses Kapitel enthält eine Mischung aus rein informativen Texten über die plentymarkets App und aus Textblöcken, in denen Sie Informationen selbst ergänzen müssen. Gehen Sie dieses Kapitel sorgfältig durch und ergänzen Sie alle GoBD-relevanten Informationen zu Ihrer eigenen Firma.
 ====
 
 == Systemvoraussetzungen und Betrieb
@@ -84,6 +85,6 @@ Für alle anderen Benutzerklassen müssen die link:https://knowledge.plentymarke
 
 == App-Funktionen
 
-Die App beinhaltet eine Reihe nützlicher Funktionen, die im link:https://knowledge.plentymarkets.com/de-de/manual/main/app/funktionen.html[plentysystems Benutzerhandbuch^] beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentyPOS zu. Die Kasse wird <<#_fachliche_und_technische_beschreibung_plentypos, in einem separaten Kapitel beschrieben>>.
+Die App beinhaltet eine Reihe verschiedener Funktionen, die im link:https://knowledge.plentymarkets.com/de-de/manual/main/app/funktionen.html[plentysystems Benutzerhandbuch^] näher beschrieben sind. Besondere Bedeutung im Sinne der GoBD kommt dem mobilen Kassensystem plentyPOS zu. Die Kasse wird <<#_fachliche_und_technische_beschreibung_plentypos, in einem separaten Kapitel beschrieben>>.
 
 Je nach App-Version, die laut der obigen Tabelle auf den mobilen Endgeräten installiert ist, können der Funktionsumfang der App und des Kassensystems plentyPOS hinsichtlich der Einstellungsmöglichkeiten und technischer Besonderheiten wie Speicherungsverhalten abweichen. Die vorliegenden Informationen sowie die Beschreibungen des <<#_fachliche_und_technische_beschreibung_plentypos, Kassensystems plentyPOS>> basieren stets auf dem Funktionsumfang der jeweils aktuell verfügbaren, neuesten Version der plentymarkets App. Bei der Erstellung der unternehmenseigenen Verfahrensdokumentation muss daher genau beachtet werden, welche Versionen der plentymarkets App genutzt werden. Informationen zum Funktionsumfang und Änderungen in einzelnen Versionen der plentymarkets App können link:https://forum.plentymarkets.com/c/app-pos[hier^] eingesehen werden.
