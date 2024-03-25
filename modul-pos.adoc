@@ -351,6 +351,7 @@ Ort
 
 Kassierer mit den nötigen link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/benutzerkonten-zugaenge.html#105[Benutzerrechten^] können Kassenvorgänge auch über sogenannte link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#135[Bestandskunden] abwickeln, statt den Standardkunden zu wählen. Somit können auch link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#kundenklassenrabatt[Kundenklassenrabatte] vergeben werden.
 
+Zusätzlich zu den oben erwähnten Kassiervorgängen mit Zuordnung zu Standard- und Bestandskunden kann während des Kassiervorgangs einen Kontaktdatensatz für einen neuen Bestandskunden erstellt werden. Hierzu benötigen Kassierer keine gesonderten Benutzerrechte. Weitere Informationen zu dieser Vorgehensweise sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#138[plentyPOS für Kassenpersonal^] zu finden.
 
 == plentyPOS Geschäftsvorfälle
 
@@ -670,13 +671,13 @@ Anwendern wird empfohlen, Erlöskonten im ERP-System plentysystems zu pflegen. W
 
 . Es wird geprüft, ob am Artikel ein Erlöskonto gespeichert ist. Wenn ein Erlöskonto am Artikel gespeichert ist, wird dieses Erlöskonto herangezogen. Erlöskonten werden im Menü
 *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global » Option: Erlöskonto* gespeichert.
-. Ist kein Erlöskonto am Artikel gespeichert, wird das Erlöskonto anhand der Steuersätze des Standorts der Kasse ermittelt. Dieser Steuersatz wird im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung » Tab: Konten » Tab: Erlöskonten » Land öffnen* gespeichert.
-. Sind für den Standort der Kasse keine Steuersätze gespeichert, wird das Erlöskonto anhand der Steuersätze des Standard-Standorts des Mandanten ermittelt. Dieser Steuersatz wird im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standard-Standort öffnen » Buchhaltung » Tab: Konten » Tab: Erlöskonten » Land öffnen* gespeichert.
+. Ist kein Erlöskonto am Artikel gespeichert, wird das Erlöskonto anhand der Steuersätze des Standorts der Kasse ermittelt. Dieser Steuersatz wird im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung* gespeichert.
+. Sind für den Standort der Kasse keine Steuersätze gespeichert, wird das Erlöskonto anhand der Steuersätze des Standard-Standorts des Mandanten ermittelt. Dieser Steuersatz wird im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standard-Standort öffnen » Buchhaltung* gespeichert.
 . Sind auch am Standard-Standort keine Erlöskonten gespeichert, wird dem Auftrag kein Erlöskonto zugewiesen.
 
 === Buchungskonten für weitere Kassenvorfälle
 
-Da Einlagen, Entnahmen und Kassenstürze keine Aufträge sind, greift die oben beschriebene Logik für die Zuordnung eines Buchungskontos bei diesen Kassenvorfällen nicht. Daher können in plentysystems link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-einrichten.html#950[Buchungskonten^] gespeichert werden, die Einlagen, Entnahmen und Kassensturzdifferenzen zugewiesen werden. Die Buchungskonten für Kassenvorfälle werden im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gepflegt.
+Da Einlagen, Entnahmen und Kassenstürze keine Aufträge sind, greift die oben beschriebene Logik für die Zuordnung eines Buchungskontos bei diesen Kassenvorfällen nicht. Daher können in plentysystems link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-einrichten.html#950[Buchungskonten^] gespeichert werden, die Einlagen, Entnahmen und Kassensturzdifferenzen zugewiesen werden. Die Buchungskonten für Kassenvorfälle werden im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* gepflegt.
 
 Ergänzen Sie die folgenden Tabellen. Im plentysystems ERP-System des Unternehmens sind die folgenden Buchungskonten hinterlegt.
 
@@ -802,7 +803,7 @@ Bei Entnahmen und Einlagen ist das Feld leer.
 |Buchungskonto
 |---
 |Buchungskonto des Geschäftsvorfalls. +
-Buchungskonten werden im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gespeichert.
+Buchungskonten werden im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung* gespeichert.
 
 |Buchungstext
 |---
@@ -1122,7 +1123,6 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 * [_Speicherort für heruntergeladene DSFinV-K-Exporte_]
 * [_Sonstiges_]
 
-
 === Informationen zur Signierung von Kassenvorgangsdaten
 
 Im Kassenbereich werden alle umsatzrelevanten Vorgänge signiert. Zu den umsatzrelevanten Vorgängen zählen Aufträge, Stornierungen, Retouren und Gutschriften. Die Daten zu Zahlung, Brutto-Steuerumsätzen und Transaktionstyp sind in der Signatur enthalten. In plentysystems besteht der Transaktionstyp immer aus dem Typ Beleg.
@@ -1158,7 +1158,6 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
-
 == Organisationsunterlagen
 
 === Herstellerseitige Dokumentation
@@ -1170,7 +1169,6 @@ Die Dokumentation von plentyPOS ist über die folgende URL erreichbar:
 * https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos.html[https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos.html]
 
 Auf Anfrage stellt die plentysystems AG prüfenden Finanzbehörden ältere Versionen dieser Verfahrensdokumentation zur Verfügung.
-
 
 == [_Unternehmensspezifische Informationen/plentyPOS_]
 
