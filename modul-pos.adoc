@@ -351,6 +351,7 @@ Ort
 
 Kassierer mit den nötigen link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/benutzerkonten-zugaenge.html#105[Benutzerrechten^] können Kassenvorgänge auch über sogenannte link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#135[Bestandskunden] abwickeln, statt den Standardkunden zu wählen. Somit können auch link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#kundenklassenrabatt[Kundenklassenrabatte] vergeben werden.
 
+Zusätzlich zu den oben erwähnten Kassiervorgängen mit Zuordnung zu Standard- und Bestandskunden kann während des Kassiervorgangs einen Kontaktdatensatz für einen neuen Bestandskunden erstellt werden. Hierzu benötigen Kassierer keine gesonderten Benutzerrechte. Weitere Informationen zu dieser Vorgehensweise sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#138[plentyPOS für Kassenpersonal^] zu finden.
 
 == plentyPOS Geschäftsvorfälle
 
@@ -802,7 +803,7 @@ Bei Entnahmen und Einlagen ist das Feld leer.
 |Buchungskonto
 |---
 |Buchungskonto des Geschäftsvorfalls. +
-Buchungskonten werden im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung » Tab: Konten » Tab: Kassenvorfälle* gespeichert.
+Buchungskonten werden im Menü *Einrichtung » Mandant » Mandant öffnen » Standorte » Standort öffnen » Buchhaltung* gespeichert.
 
 |Buchungstext
 |---
