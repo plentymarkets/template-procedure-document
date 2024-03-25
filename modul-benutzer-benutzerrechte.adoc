@@ -67,18 +67,19 @@ In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet
 * Daten
 * CMS
 * Plugins
-* Prozesse
+* Automatisierung
 * Einrichtung
 * Support
-* Mobile
+* plentymarkets App / plentyPOS
+* plentyWarehouse
 
-=== Berechtigungen
+=== Berechtigungen im erweiterten Modus
 
 In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen benötigt werden.
 
 * Buchhaltung
 * Authorisierung
-* Automation
+* Automatisierung
 * Blog
 * Zertifizierung
 * Mandant
@@ -87,7 +88,6 @@ In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen 
 * CRM
 * Daten
 * Dokumente
-* Editoren
 * Artikel
 * Listing
 * Märkte
@@ -97,6 +97,7 @@ In diesem Bereich werden die REST-Rechte verwaltet, die für bestimmte Aktionen 
 * Zahlenformat
 * Aufträge
 * plentyBI
+* plentyWarehouse
 * plentyBase-Einstellungen
 * Plugins
 * POS
