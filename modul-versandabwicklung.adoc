@@ -8,6 +8,8 @@ Im Tab _Support_ jedes Plugins ist beschrieben, welcher Ansprechpartner für Rü
 
 plentysystems übernimmt die Entwicklung und den Support für die folgenden Versanddienstleister- bzw. Fulfillment-Dienstleister-Plugins:
 
+* link:https://marketplace.plentymarkets.com/clc_7017[CLC^]
+
 * link:https://marketplace.plentymarkets.com/dhlshipping_4871[DHL Shipping (Versenden)^]
 * link:https://marketplace.plentymarkets.com/dhlwunschpaket_5435[DHL Wunschzustellung^]
 * link:https://marketplace.plentymarkets.com/dhlretoureonline_6714[DHL Retoure Online^]
