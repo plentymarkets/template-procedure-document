@@ -1,9 +1,8 @@
 = Fachliche und technische Beschreibung des Moduls Warenwirtschaft
 
-
 == Zweck des Moduls Warenwirtschaft
 
-Die in plentysystems integrierte Warenwirtschaft bildet den Umgang mit Waren und damit verknüpften Vorgängen ab. Sie kann von der Einrichtung und Verwaltung eines Lagers bis hin zu Bestandskorrekturen und dem Warenausgang verwendet werden. Einige Funktionen sind für Anwender auch auf mobilen Endgeräten nutzbar. Voraussetzung dazu ist die Installation und Konfiguration der plentymarkets App oder der plentyWarehouse App auf passenden Endgeräten. Welche Funktionen und Aufgaben die Warenwirtschaft im Detail beinhaltet, wird in den folgenden Kapitel näher erläutert.
+Die in plentysystems integrierte Warenwirtschaft bildet den Umgang mit Waren und damit verknüpften Vorgängen ab. Sie kann von der Einrichtung und Verwaltung eines Lagers bis hin zu Bestandskorrekturen und dem Warenausgang verwendet werden. Einige Funktionen sind für Anwender auch auf mobilen Endgeräten nutzbar. Voraussetzung dazu ist die Installation und Konfiguration der plentymarkets App oder der plentyWarehouse App auf passenden Endgeräten. Welche Funktionen und Aufgaben die Warenwirtschaft im Detail beinhaltet, wird in den folgenden Kapiteln näher erläutert.
 
 == Aufgaben des Moduls Warenwirtschaft
 
@@ -62,7 +61,6 @@ plentysystems stellt verschiedene Lagertypen bereit, die je nach Zweck gewählt 
 In den Einstellungen der Lagerdaten gilt es zu beachten, dass der Lagertyp vom Typ Vertrieb sein muss, damit Warenbestände im Webshop angezeigt werden. Wählt man einen der anderen Lagertyp, werden die Warenbestände nicht angezeigt.
 Außerdem spielt die Priorität der Lager eine Rolle. Bei unterschiedlichen Artikeln wird zuerst von dem Lager mit der höchsten Priorität gepickt.
 
-
 == Bestandsbegriffe in plentysystems
 
 In plentysystems wird zwischen verschiedenen Arten von Warenbeständen unterschieden.
@@ -110,6 +108,11 @@ Der Import von Warenbestand kann auch über das Backend im Menü *Waren » Neuer
 
 Zum Import von Warenbestand kann außerdem die plentymarkets App verwendet werden. Voraussetzung dafür ist, dass Anwender über die Berechtigung zum Einbuchen von Ware verfügen. Benutzerkonten mit Admin-Rechten haben standardmäßig Berechtigungen, um Einbuchungen über die App vorzunehmen. Personen ohne Admin-Rechte müssen diese Berechtigungen allerdings erteilt bekommen. Dies gilt auch für das Vornehmen weiterer Einstellungen zum Einbuchen von Ware. Folglich sollte immer darauf geachtet werden, dass alle notwendigen Rechte vorhanden sind bzw. erteilt wurden. Um den Import-Vorgang zu beschleunigen, können Lagerorte gelabelt werden. Dies ermöglicht das Scannen des Ziellagerort-Labels. +
 Weitere Informationen zum Warenimport über die plentymarkets App gibt es im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/app/einbuchen-umbuchen.html[Ware einbuchen und umbuchen^].
+
+=== Import über die plentyWarehouse App
+
+Ware kann auch über die plentyWarehouse App eingebucht werden. Die Vorgehensweise sowie durch den Anwender mögliche Einstellungen sind auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/booking-incoming-items.html[Wareneingänge erfassen^] im plentysystems Handbuch beschrieben.
+Hardware-Empfehlungen für das Einbuchen von Ware über die plentyWarehouse App sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/willkommen/systemvoraussetzungen.html[Systemvoraussetzungen^] aufgeführt. Wareneingänge, die mittels der plentyWarehouse App erfasst wurden, können außerdem im Rahmen eines Wareneingangsbelegs dokumentiert werden. Die notwendigen Voraussetzungen zur Generierung des Dokuments sowie weitere relevante Informationen sind im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/booking-incoming-items.html#400[Wareneingangsbeleg erstellen] zu finden. 
 
 == Warenbestand umbuchen
 
@@ -172,7 +175,12 @@ Das System arbeitet Aufträge der Reihe nach ab. So ist sichergestellt, dass der
 
 == Korrektur von Warenbeständen
 
-In plentysystems besteht die Möglichkeit, Warenbestände bei Bedarf zu korrigieren. Dabei sind für Anwender einige Besonderheiten zu beachten, um sicherzustellen, dass der Korrekturvorgang GoBD-konform durchgeführt wird. Alle relevanten Informationen sind auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/praxisbeispiel-bestand-umbuchen.html[Praxisbeispiel: Bestand umbuchen/korrigieren/löschen^] im plentysystems Handbuch verfügbar.
+In plentysystems besteht die Möglichkeit, Warenbestände bei Bedarf zu korrigieren. Dabei sind für Anwender einige Besonderheiten zu beachten, um sicherzustellen, dass der Korrekturvorgang GoBD-konform durchgeführt wird. Alle relevanten Informationen sind im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/artikel-und-lagerorte.html#700[Praxisbeispiel: Bestand umbuchen/korrigieren/löschen^] im plentysystems Handbuch verfügbar.
+
+=== Warenbestände mit der plentyWarehouse App korrigieren
+
+Warenbestände können auch über die plentyWarehouse App korrigiert werden. Die Vorgehensweise sowie durch den Anwender mögliche Einstellungen sind auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/artikel-umbuchen.html[Bestände korrigieren^] im plentysystems Handbuch beschrieben.
+Hardware-Empfehlungen für die Korrektur von Warenbeständen über die plentyWarehouse App sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/willkommen/systemvoraussetzungen.html[Systemvoraussetzungen^] aufgeführt.
 
 == Sonderfälle: Warenausgang bei Stornierungen, Retouren und Gewährleistungen
 
@@ -249,11 +257,11 @@ Die plentyWarehouse App enthält ebenfalls eine Funktionalität, um mithilfe mob
 
 Im Gegensatz zur plentymarkets App können Inventuren, die mit der plentyWarehouse App durchgeführt wurden, nach Abschluss des Inventurvorgangs mithilfe eines Zählprotokolls dokumentiert werden.
 
-=== Inventur mittels Zählprotokoll dokumentieren
+=== Inventur mittels Zählprotokoll dokumentieren (nur plentyWarehouse App)
 
 Im Menü *Waren » Inventur » Zählprotokoll-Export* besteht die Möglichkeit, ein Zählprotokoll zu erstellen und herunterzuladen. Das Zählprotokoll enthält Informationen zu Inventurvorgängen und kann zur Ablage als Beleg im PDF-Format oder zur Weiterverarbeitung in anderen Softwarelösungen im CSV-Format heruntergeladen werden.
 
-Zählprotokolle enthalten nur Daten zu Inventuren, die über die plentyWarehouse App durchgeführt wurden. Inventurvorgänge, die mittels der anderen hier beschriebenen Methoden durchgeführt wurden, können zu diesem Zeitpunkt ausdrücklich nicht in Zählprotokollen berücksichtigt werden.
+Zählprotokolle enthalten ausschließlich Daten zu Inventuren, die über die plentyWarehouse App durchgeführt wurden. Inventurvorgänge, die mittels der anderen hier beschriebenen Methoden durchgeführt wurden, können zu diesem Zeitpunkt ausdrücklich nicht in Zählprotokollen berücksichtigt werden.
 
 Anwender können im Menü *Waren » Inventur » Zählprotokoll-Export* den Inhalt und die Sortierung der Daten im Zählprotokoll über verschiedene Filter beispielsweise nach Lagerort, Zeitraum oder Benutzer, der die Inventur durchgeführt hat, beeinflussen. Weitere Informationen zu den Filtern und möglichen Auswirkungen sind im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/inventur-durchfuehren.html#600[Inventur dokumentieren^] im plentysystems Handbuch verfügbar.
 

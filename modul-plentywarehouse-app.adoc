@@ -1,0 +1,81 @@
+= Fachliche und technische Beschreibung plentyWarehouse App
+
+Die plentyWarehouse App enthält die folgenden Funktionen zur Verwaltung von Lagerbeständen und Durchführung verschiedener Vorgänge der Warenwirtschaft:
+
+- Artikelsuche inkl. Bestandskorrektur
+- Lagerorte inspizieren
+- Wareneingänge erfassen
+- Artikel umbuchen
+- Artikel verräumen
+- Inventur
+- Mobile Picklisten
+- Rollende Kommissionierung
+- Einzelkommissionierung
+
+Detaillierte Informationen zu den einzelnen Funktionen sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/plentywarehouse.html#100[Handbuch^] verfügbar.
+
+[TIP]
+.Ergänzen Sie Ihre eigenen Firmendaten
+====
+Dieses Kapitel enthält eine Mischung aus rein informativen Texten über die plentyWarehouse App und aus Textblöcken, in denen Sie Informationen selbst ergänzen müssen. Gehen Sie dieses Kapitel sorgfältig durch und ergänzen Sie alle GoBD-relevanten Informationen zu Ihrer eigenen Firma.
+====
+
+== Systemvoraussetzungen und Betrieb
+
+Die plentyWarehouse App ist ausschließlich für Geräte mit Android-Betriebssystem verfügbar und wird im Google Play Store zum kostenlosen Download bereitgestellt.
+
+** https://play.google.com/store/apps/details?id=com.plentysystems.plentywarehouse[https://play.google.com/store/apps/details?id=com.plentysystems.plentywarehouse^]
+
+Versionen der plentyWarehouse App sind durch Versionsnummern gekennzeichnet. Änderungen an der Software werden sowohl im Changelog des Google Play Store als auch im plentysystems Forum veröffentlicht.
+
+** https://forum.plentymarkets.com/c/changelog/plentywarehouse-app/1035[https://forum.plentymarkets.com/c/changelog/plentywarehouse-app/1035]
+
+== Hardware
+
+Die plentyWarehouse App kann auf mobilen Endgeräten mit folgenden Systemvoraussetzungen betrieben werden:
+
+* Android-Geräte mit OS-Version ab 7.0
+
+Die plentyWarehouse App wird ohne eigene Hardware ausgeliefert. Je nach Anwendungsfall werden aber link:https://knowledge.plentymarkets.com/de-de/manual/main/willkommen/systemvoraussetzungen.html#450[unterschiedliche Endgeräte^] empfohlen.
+
+Ergänzen Sie die folgende Tabelle. Hier werden die unternehmenseigenen Tablets, Smartphones und sonstigen mobilen Endgeräte aufgelistet, auf denen die plentyWarehouse App installiert wurde.
+
+[[tabelle-plentywarehouse-app-hardware-vorlage]]
+.Eingesetzte Hardware
+|===
+|Gerätetyp|Modellnummer|Hersteller
+
+|{nbsp}
+|{nbsp}
+|{nbsp}
+
+|{nbsp}
+|{nbsp}
+|{nbsp}
+
+|{nbsp}
+|{nbsp}
+|{nbsp}
+|===
+
+== Zugang zur plentyWarehouse App
+
+=== Anmeldung
+
+Die plentyWarehouse App ist nur in Kombination mit einem gebuchten plentysystems ERP-System funktionsfähig. Das heißt, dass Sie bei der Erstanmeldung die Login-Daten Ihres plentysystems ERP-Systems eingeben müssen. Diese Login-Daten bestehen aus:
+
+* plentyID des Systems
+* Benutzer
+* Passwort
+
+=== Zugriffsrechte
+
+Admin-Benutzer haben uneingeschränkten Zugriff auf die plentyWarehouse App. Ergänzen Sie die Liste der Admin-Benutzer im <<#_fachliche_und_technische_beschreibung_benutzer_und_benutzerrechte, Kapitel zu Benutzerrechten>> und geben Sie somit an, welche Mitarbeiter über uneingeschränkten Zugriff auf alle Funktionen der plentyWarehousse App verfügen.
+
+Für alle anderen Benutzerklassen müssen die Benutzerrechte pro Rolle definiert werden. Die Zugriffsrechte für die plentyWarehouse App werden im Menü *Einrichtung » Kontoverwaltung » Rollen » [Rolle öffnen] » Rechte » Bereich: plentyWarehouse* definiert. Ergänzen Sie die Liste der Benutzer ohne Admin-Rechte im <<#_fachliche_und_technische_beschreibung_benutzer_und_benutzerrechte, Kapitel zu Benutzerrechten>> und geben Sie somit an, welche Mitarbeiter über eingeschränkten Zugriff auf die Funktionen der plentyWarehouse App verfügen.
+
+== App-Funktionen
+
+Die plentyWarehouse App beinhaltet eine Reihe verschiedener Funktionen, die im link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/plentywarehouse.html#100[Handbuch^] beschrieben sind. Besonders relevant ist die plentyWarehouse App für das Modul <<#_fachliche_und_technische_beschreibung_des_moduls_warenwirtschaft, Warenwirtschaft>>.
+
+Je nach App-Version, die laut der obigen Tabelle auf den mobilen Endgeräten installiert ist, können der Funktionsumfang der plentyWarehouse App hinsichtlich der Einstellungsmöglichkeiten und verfügbarer Funktionen abweichen. Die vorliegenden Informationen sowie die Beschreibungen des <<#_fachliche_und_technische_beschreibung_des_moduls_warenwirtschaft, Moduls Warenwirtschaft>> basieren stets auf dem Funktionsumfang der jeweils aktuell verfügbaren, neuesten Version der plentyWarehouse App. Bei der Erstellung der unternehmenseigenen Verfahrensdokumentation muss daher genau beachtet werden, welche Versionen der plentyWarehouse App genutzt werden. Informationen zum Funktionsumfang und Änderungen in einzelnen Versionen der plentyWarehouse App können link:https://forum.plentymarkets.com/c/changelog/plentywarehouse-app/1035[hier^] eingesehen werden.
