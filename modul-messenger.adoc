@@ -12,3 +12,4 @@ Der Anwender kann über den Messenger beliebig viele Anhänge versenden. Auch ha
 
 Es kann außerdem eingestellt werden, dass Konversationen – so werden im Messenger die Nachrichtenverläufe genannt – nach einer vom Anwender festgelegten Anzahl an Tagen automatisch in das Archiv verschoben werden. Des Weiteren kann der Anwender auch einstellen, nach wie vielen Tagen gelöschte Nachrichten und gelöschte Konversationen automatisch aus dem Papierkorb entfernt werden sollen.
 
+Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger.html[Messenger^].

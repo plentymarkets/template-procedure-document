@@ -230,6 +230,9 @@ Im der folgenden Tabelle wird aufgelistet, welche Daten der Anwender aus einem K
 
 |*Im Kontaktdatensatz verknüpfte Informationen* |*Kurzbeschreibung*
 
+|Kontaktübersicht/Gastübersicht
+|In diesem Bereich des Kontaktdatensatzes findet der Anwender eine Übersicht des Kontakts bzw. des Gastes. Die Daten in diesem Bereich können vom Anwender nicht angepasst werden.
+
 |Kontaktdetails
 |In diesem Bereich des Kontaktdatensatzes finden sich Informationen wie z.B. Name, Kundenklasse, Kundentyp, Eigner, Geburtsdatum und erlaubte Zahlungsarten.
 
@@ -275,9 +278,8 @@ Scheduler
 |Zahlungsübersicht
 |Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
 
-|Kundennotizen
-|
-// TODO: Erklärung ergänzen.
+|Kontaktnotizen
+|Der Anwender kann interne Notizen zu dem jeweiligen Kontakt speichern. Im Messenger-Modul sind alle gespeicherten Kontaktnotizen dann in der übergeordneten Gruppe *Kontaktnotizen* verfügbar.
 
 |Messenger
 |Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht und archiviert werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger.html[Messenger^].
@@ -288,18 +290,6 @@ Scheduler
 |Tickets / +
 Neues Ticket
 |Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
-
-//|Scheduler
-//|Der Anwender kann aus dem Kontaktdatensatz heraus einen Übersicht der Scheduler-Aufträge des Kontakts aufrufen und neue Scheduler-Aufträge für den Kontakt anlegen. Scheduler-Aufträge sind Abo-Aufträge, die dem Kunden die Möglichkeit bieten, bestimmte Artikel im Webshop des Anwenders im Abonnement zu kaufen.
-
-//|Provision & Kostenstellen
-//|*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
-// *Kostenstellen*: Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
-
-//|Statistik
-//|Der Anwender kann kundenspezifische Statistiken erstellen und so bestimmte Daten speziell für diesen Kunden auswerten, z.B. den Gesamtumsatzverlauf des Kunden in einem bestimmten Zeitraum. Bestehende Statistiken können auch durch den Anwender bearbeitet werden.
-
-// TODO: Infos/Bereiche im Kontaktdatensatz erneut prüfen und ggf. ergänzen.
 
 |====
 

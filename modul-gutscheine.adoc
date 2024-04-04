@@ -38,7 +38,6 @@ Kundenklassenrabatte werden direkt auf den Auftrag angewendet, jedoch nicht sepa
 
 Artikel können im Artikel-Menü über die Option *Aktionsgutschein/POS-Rabatt* von Rabatten ausgeschlossen werden.
 
-
 == Import und Export
 
 Der Anwender hat die Möglichkeit, Gutscheindaten in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
