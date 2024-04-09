@@ -1,0 +1,34 @@
+= Fachliche und technische Beschreibung des Moduls Login
+
+Über den Login melden sich Anwender in ihrem plentysystems System an. Im Login können außerdem Kontoeinstellungen sowie Sicherheitseinstellungen vorgenommen werden. Anwender können sich über zwei Wege in ihrem plentysystems System anmelden:
+
+* E-Mail-Adresse und Passwort
+* plenty ID, Benutzername und Passwort
+
+Die Sprache des plentysystems Login wird automatisch durch die Sprache des Webbrowsers ermittelt.
+
+== Sessiondauer
+
+Die Session eines plentysystems System endet nach 24 Stunden. Die Session des plentysystems Login endet nach 30 Tagen.
+
+== Kontoeinstellungen
+
+In den Kontoeinstellungen kann ein Profilbild vom Endgerät des Anwenders hochgeladen werden, die E-Mail-Adresse des plentysystems Kontos geändert werden, Vor- und Nachname des plentysystems Kontos geändert sowie die Zeitzone und Sprache werden. +
+
+Das Profilbild wird im plentysystems System des Anwenders oben rechts angezeigt. +
+
+Die E-Mail-Adresse, Vor- und Nachname werden in der Detailansicht des Benutzerkontos. +
+
+== Passwort ändern
+
+Im Login kann das Passwort des plentysystems Konto geändert werden. Bei einer Passwortänderung wird der Anwender abgemeldet und muss sich mit dem neuen Passowrt anmelden.
+
+== Multi-Faktor-Authentifizierung
+
+Um die Sicherheit des Logins zu erhöhen, kann die Multi-Faktor-Authentifizierung im plentysystems Konto aktiviert werden. Die Multi-Faktor-Authentifizierung von plentysystems funktioniert mit jeder gängigen Authenticator-App. Ist die Multi-Faktor-Authentifizierung aktiv, muss der Anwender bei jeder Anmeldung mit einem Bestätigungscode aus der Authenticator-App verifizieren. +
+
+Die Multi-Faktor-Authentifizierung kann jederzeit deaktiviert werden. +
+
+Die Verifikation über den Bestätigungscode einer Authenticator-App entfällt bei Geräten, denen der Anwender vertraut. Die Option, einem Gerät zu vertrauen, kann bei jeder Anmeldung mit akticierter Multi-Faktor-Authentifizierung aktiviert werden. Anschließend ist die Verifikation der Anmeldung über den Bestätigungscode einer Authenticator-App nur bei Geräten notwendig, denen der Anwender nicht vertraut. +
+
+Geräten kann jederzeit nicht mehr vertraut werden. Wird einem Gerät nicht mehr vertraut, wird der Anwender abgemeldet und muss sich erneut anmelden.
