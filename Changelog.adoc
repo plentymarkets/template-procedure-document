@@ -9,8 +9,6 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
-|V8.1 |CRM |TBD |Geändert: Die Module "CRM", "E-Mail-Versand", "Newsletter" und "Gutscheine" wurden überarbeitet.
-|V8.1 |Messenger |TBD |Neu: Dieser Bereich wurde hinzugefügt.
 |V8.1 |Allgemein |TBD |In allen Bereichen wurde der Name des ERP-Systems plentymarkets in plentysystems geändert.
 |V8.1 |Editionsübersicht |TBD |Dieser Bereich wurde überarbeitet. Informationen zu plentysystems Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
 |V8.0 |POS |15.09.2023 |Geändert: Informationen zur Zusammensetzung der Daten in Tagesabschlussberichten wurden korrigiert.
