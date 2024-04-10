@@ -16,7 +16,7 @@ Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Konta
 
 Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-erstellen.html#kontakt-erstellen[Kontakt erstellen^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] beschrieben.
 
-In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
+In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
 
 Die folgende Tabelle listet die Beispielkontaktdatensätze mit einigen der vorausgefüllten Daten auf.
 
@@ -49,7 +49,7 @@ Die folgende Tabelle listet die Beispielkontaktdatensätze mit einigen der vorau
 |====
 
 Öffnet der Anwender einen Kontaktdatensatz sind weitere Informationen sichtbar. Dazu gehören z.B. Firmenname, Adressen, E-Mail-Adresse, Telefonnummer und USt-IdNr, Bankdaten, Optionen, Dokumente und Aufträge. +
-Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das Kassensystem plenyPOS im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
+Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das Kassensystem plentyPOS im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
 
 Der Barverkauf ist – da es sich im klassischen Sinne nicht um einen "realen" Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
 
@@ -71,13 +71,12 @@ In plentysystems gibt es zwei Zugangsarten, wenn eine Bestellung (Auftrag) im Sy
 
 Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird.
 
-
 [discrete]
 === Auftragszuordnung bei regulären Zugängen und Gastzugängen
 
 Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kontaktübersicht zu sehen (siehe Kapitel <<#_kontakt_ids, Kontakt-IDs>>).
 
-Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auftrag zugeordnet und die Adresse gespeichert. Über die Schnellsuche kann der Anwender sehen, wie viele Aufträge ein bestimmter Gastkunde im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: Wenn der Kunde seine Bestellung reklamiert, wird ggf. eine Gutschrift angelegt.
+Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auftrag zugeordnet und die Adresse gespeichert. Über die Kontaktübersicht kann der Anwender anhand eines Häkchens sehen, dass es sich um eine Gastbestellung handelt. Im Datensatz selbst wird der Bereich *Gastübersicht* für Gastbestellungen bzw. *Kontaktübersicht* für registrierte Kunden dauerhaft angezeigt. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: Wenn der Kunde seine Bestellung reklamiert, wird ggf. eine Gutschrift angelegt.
 
 == Typen
 
@@ -130,7 +129,7 @@ Kundenklassen ermöglichen dem Anwender, seinen Kundenstamm nach unterschiedlich
 
 Ein möglicher Anwendungsfall für eine Kundenklasse wäre die Unterteilung nach Endkunden (B2C) und Händlern (B2B). Diese Unterteilung ist sinnvoll, wenn erwünscht ist, dass die Verkaufspreise im Webshop den B2C-Kunden als Bruttopreise, den B2B-Kunden jedoch als Nettopreise angezeigt werden. Ein weiterer Anwendungsfall kann beispielsweise eine VIP-Kundenklasse für Kunden, die regelmäßig und umsatzsteigernd im Webshop bestellen, sein, um für diese Kundenklasse eigene Verkaufspreise festzulegen.
 
-In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden. Die vom Anwender erstellten Kundenklassen erhalten durch das System eine fortlaufende, eindeutige ID beginnend mit ID 1. Der Anwender kann beliebig viele Kundenklassen erstellen.
+In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden. Die vom Anwender erstellten Kundenklassen erhalten durch das System eine fortlaufende, eindeutige ID beginnend mit ID 1. Der Anwender kann beliebig viele Kundenklassen erstellen.
 
 === Rabattsystem für Kundenklassen
 
@@ -231,6 +230,9 @@ Im der folgenden Tabelle wird aufgelistet, welche Daten der Anwender aus einem K
 
 |*Im Kontaktdatensatz verknüpfte Informationen* |*Kurzbeschreibung*
 
+|Kontaktübersicht/Gastübersicht
+|In diesem Bereich des Kontaktdatensatzes findet der Anwender eine Übersicht des Kontakts bzw. des Gastes. Die Daten in diesem Bereich können vom Anwender nicht angepasst werden.
+
 |Kontaktdetails
 |In diesem Bereich des Kontaktdatensatzes finden sich Informationen wie z.B. Name, Kundenklasse, Kundentyp, Eigner, Geburtsdatum und erlaubte Zahlungsarten.
 
@@ -273,11 +275,14 @@ Scheduler
 |Firma
 |Der Anwender kann die mit dem Kontakt verknüpfte Firma sehen und bearbeiten oder dem Kontakt eine Firma zuordnen.
 
-|Konto
+|Zahlungsübersicht
 |Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
 
+|Kontaktnotizen
+|Der Anwender kann interne Notizen zu dem jeweiligen Kontakt speichern. Im Messenger-Modul sind alle gespeicherten Kontaktnotizen dann in der übergeordneten Gruppe *Kontaktnotizen* verfügbar.
+
 |Messenger
-|Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger-testphase.html[Messenger^].
+|Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht und archiviert werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger.html[Messenger^].
 
 |Optionen
 |Der Anwender kann alle zum gespeicherten Optionen sehen und bearbeiten und neue Optionen hinzufügen. Optionen beinhalten zum Beispiel die private und geschäftliche E-Mail-Adresse und Telefonnummer und die private und geschäftliche Anrede.
@@ -285,16 +290,6 @@ Scheduler
 |Tickets / +
 Neues Ticket
 |Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
-
-|Scheduler
-|Der Anwender kann aus dem Kontaktdatensatz heraus einen Übersicht der Scheduler-Aufträge des Kontakts aufrufen und neue Scheduler-Aufträge für den Kontakt anlegen. Scheduler-Aufträge sind Abo-Aufträge, die dem Kunden die Möglichkeit bieten, bestimmte Artikel im Webshop des Anwenders im Abonnement zu kaufen.
-
-|Provision & Kostenstellen
-|*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
-*Kostenstellen*: Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
-
-|Statistik
-|Der Anwender kann kundenspezifische Statistiken erstellen und so bestimmte Daten speziell für diesen Kunden auswerten, z.B. den Gesamtumsatzverlauf des Kunden in einem bestimmten Zeitraum. Bestehende Statistiken können auch durch den Anwender bearbeitet werden.
 
 |====
 
@@ -326,11 +321,11 @@ Der Anwender kann eine Liste der Kunden mit unbezahlten Aufträgen aufrufen. Die
 
 Die Liste der offenen Posten aktualisiert sich einmal täglich automatisch. Daher kann es vorkommen, dass Forderungen teilweise erst am nächsten Tag in der Liste angezeigt werden. Der Anwender hat die Möglichkeit, die Liste manuell zu aktualisieren. Außerdem kann der Anwender die Liste durch Verwendung der folgenden Filter eingrenzen:
 
- * Zugangsart, d.h. ob es sich um einen Gastzugang oder einen regulären Zugang handelt
- * Anzahl der offenen Posten oder Höhe der Forderung
- * Land
- * Kundenklasse
- * Kundentyp
+* Zugangsart, d.h. ob es sich um einen Gastzugang oder einen regulären Zugang handelt
+* Anzahl der offenen Posten oder Höhe der Forderung
+* Land
+* Kundenklasse
+* Kundentyp
 
 == Zustimmung zur Speicherung von datenschutzrelevanten Informationen
 
@@ -342,7 +337,6 @@ Ein möglicher Fall wäre auch, dass der Anwender beispielsweise in der Datensch
 .Beispiel der Pflichtfelder (mit * gekennzeichnet) im Webshop
 image::assets/AGB_Widerrufsrecht.png[]
 
-
 == Speicherung von marktplatzspezifischen Kundendaten
 
 Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden im Modul *Fachliche und technische Beschreibung des Moduls plentyChannel* beschrieben.
@@ -353,7 +347,7 @@ Es ist möglich, für jeden im System gespeicherten regulären Kunden ein neues 
 
 Es gibt zwei Möglichkeiten zur Passwortänderung:
 
-1. Der Anwender vergibt manuell ein neues Passwort im Kontaktdatenssatz und teilt dem Kunden dieses mit.
+1. Der Anwender vergibt manuell ein neues Passwort im Kontaktdatensatz und teilt dem Kunden dieses mit.
 2. Der Anwender verschickt manuell eine E-Mail an den Kunden, die einen Link zur Passwortänderung enthält. Diese E-Mail erhält der Kunde auch, wenn er im Webshop des Anwenders auf "Passwort vergessen" klickt.
 
 Es wird ein Hash des Passworts mit dem Passwort-Hashing-Verfahren _bcrypt_ in der Datenbank gespeichert. Die Passwörter können nicht entschlüsselt werden.
@@ -383,7 +377,12 @@ Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen
 
 Der Anwender hat die Möglichkeit, Kontaktdaten in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
-Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-exportieren.html[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
+Für den manuellen Austausch von Kontaktdaten stehen dem Anwender die folgenden Formate zur Verfügung:
+
+* Für den Import der Import-Typ *Kontakt* im Import-Tool
+* Für den Export der Katalog-Formattyp *Kontakt* oder das Datenformat *Kontakte* im Elastischen Export 
+
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
 
 [discrete]
 === Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
@@ -393,7 +392,6 @@ Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden bzw. Gastkunden ge
 == Backup
 
 Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentysystems dafür vorgesehene Menü einzuspielen.
-
 
 == CRM Historie
 
