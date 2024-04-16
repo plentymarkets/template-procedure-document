@@ -9,8 +9,17 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
-|V8.1 |Allgemein |TBD |In allen Bereichen wurde der Name des ERP-Systems plentymarkets in plentysystems geändert.
-|V8.1 |Editionsübersicht |TBD |Dieser Bereich wurde überarbeitet. Informationen zu plentysystems Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
+|V9.0 |Messenger |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
+|V9.0 |plentyBI |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
+|V9.0 |plentyWarehouse |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
+|V9.0 |Login |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
+|V9.0 |App |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
+|V9.0 |POS |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
+|V9.0 |CRM |17.04.2024 |Geändert: Die Bereiche "CRM", "E-Mail-Versand", "Newsletter" und "Gutscheine" wurden überarbeitet.
+|V9.0 |Versandabwicklung |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Informationen zu Lieferländern und Versanddienstleistern wurden aktualisiert.
+|V9.0 |Webshop |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
+|V9.0 |Editionsübersicht |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu plentysystems Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
+|V9.0 |Allgemein |17.04.2024 |Geändert: In allen Bereichen wurde der Name des ERP-Systems plentymarkets in plentysystems geändert.
 |V8.0 |POS |15.09.2023 |Geändert: Informationen zur Zusammensetzung der Daten in Tagesabschlussberichten wurden korrigiert.
 |V7.9 |Benutzerrechte |17.03.2023 |Geändert: Benutzerrechte wurden aktualisiert sowie der Anhang mit den REST-Berechtigungen.
 |V7.8 |POS |31.01.2023 |Geändert: Der Menüpfad für Kassenjournal, IDEA-Export, DEP-Export, TSE-Export und DSFinV-K-Export wurde geändert.
