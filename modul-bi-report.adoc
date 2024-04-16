@@ -1,415 +1,52 @@
 = Fachliche und technische Beschreibung des Moduls plentyBI
 
+Das Modul plentyBI von plentysystems erlaubt den Abruf, die Speicherung und die visuelle Darstellung von unternehmerischen Kennzahlen des Systems.
 
-// UNDER CONSTRUCTION - Copied CRM module for structure
+== Rohdaten
 
-Das CRM-Modul von plentysystems erlaubt das Verwalten, Speichern und Bearbeiten von Kontaktdaten inklusive Adress- und Firmendaten. Kontaktdatensätze, die im System gespeichert sind, können aus verschiedenen Kanälen stammen:
+Grundlage für den Abruf und die Zusammenstellung der Datengrundlage für Kennzahlen sind so genannte Rohdaten. Diese Rohdaten bilden wiederum die Datenbasis für so genannte _Reports_, aus denen sich letztendlich als Ergebnis einzelne Kennzahlen ableiten.
 
-* Webshop des Anwenders
-* Marktplätze
-* REST-API
-* Import
-* manuelles Erstellen im Backend durch den Anwender
+Rohdaten werden im Hintergrund und im Regelfall nachts ermittelt. Anwender haben auf diesen Ermittlungsprozess keinen direkten Zugriff oder Einfluss, können aber festlegen, welche Rohdaten abgelegt werden sollen. Rohdaten werden begrenzt gespeichert, je nachdem, welche plentyBI Edition für das System gebucht wurde. Hierbei ist zu beachten, dass Rohdaten immer mindestens 6 Monate, Berechnungsergebnisse immer für mindestens 12 Monate verfügbar sind. Weitere Details dazu sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html#_datenformat_creator[Reports verwalten^] festgehalten.
 
-In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _Kontakt_ synonym verwendet.
+Nachdem die Generierung von Rohdaten abgeschlossen ist, können die Dateien per REST-API abgerufen und extern weiterbearbeitet werden. Rohdatendateien werden als per GZIP (RFC 1952) komprimierte CSV-Dateien geliefert, wobei als Spaltentrennzeichen ein Komma verwendet wird. Auf die Weiterarbeitung hat plentysystems keinen Einfluss. Anwender entscheiden selbst, wie und mit welchen zusätzlichen Softwarelösungen Rohdaten ausgelesen und ggf. weiterverarbeitet werden. Weitere Informationen zu Rohdaten und Abrufmöglichkeiten sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html[Reports verwalten^] beschrieben.
 
-== Kontakt-IDs
+Ergänzen Sie die folgende Tabelle. Das Unternehmen nutzt folgende externe Softwarelösungen zur Auswertung und Weiterverarbeitung von Rohdaten. Diese Lösungen haben die folgenden Namen:
 
-Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann.
+[[tabelle-rohdaten-software]]
+.Eingesetzte Softwarelösungen
+[cols="1,2"]
+|===
+|Softwarelösung (Name) |Einsatzzeitraum (von/bis)
 
-Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-erstellen.html#kontakt-erstellen[Kontakt erstellen^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] beschrieben.
+|{nbsp} +
+|{nbsp}
 
-In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
+|{nbsp} +
+|{nbsp}
 
-Die folgende Tabelle listet die Beispielkontaktdatensätze mit einigen der vorausgefüllten Daten auf.
+|{nbsp} +
+|{nbsp}
+|===
 
-[[tabelle-beispielkontaktdatensaetze]]
-.Beispielkontaktdatensätze
-[cols="1,3,3,3"]
+== Kennzahlen
 
-|====
-|ID |Typ |Firma / Name |Aufträge
+Kennzahlen sind Konfigurationen, die von Anwendern innerhalb des plentysystems Systems zusammengestellt werden können, um die zugrundeliegenden Rohdaten weiter aufzubereiten und schließlich im Menü *plentysystems Logo (Start) » Dashboard* visuell darzustellen.
 
-|100
-|Kunde
-|Barverkauf
-|0
+plentysystems stellt verschiedene Kennzahltypen bereit, auf deren Basis Anwender im Menü *Einrichtung » plentyBI » Kennzahlen* eigene Konfigurationen erstellen können. Pro Kennzahl stehen vielfältige Filtermöglichkeiten zur Verfügung, mit denen die Ergebnisse je nach Bedürfnis des Anwenders eingegrenzt werden können. Eine Auflistung aller verfügbaren Kennzahltypen ist auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/kennzahlen.html[Kennzahlen^] zu finden. Die Anzahl der maximal möglichen Konfigurationen pro System richten sich nach der <<#_plentyBI, plentyBI Edition>>, die für das System gebucht wurde.
 
-|101
-|Partner
-|plentymarkets GmbH
-|1
+plentysystems stellt so genannte Standard-Kennzahlkonfigurationen bereit, die von allen Anwendern unabhängig von der BI-Edition genutzt werden können. Diese Standard-Kennzahlkonfigurationen können jedoch nicht von Anwendern bearbeitet oder geändert werden. Die Standardkennzahlen sind im Menü *Einrichtung » plentyBI » Kennzahlen* dadurch erkennbar, dass als Ersteller *plentymarkets* angegeben ist. 
 
-|102
-|Kunde
-|Joseph Waits
-|1
+Alle Kennzahlkonfigurationen erhalten bei ihrer Erstellung eine einzigartige ID, die durch Anwender nicht änderbar ist.
 
-|103
-|Lieferant
-|Michael Wilford
-|0
-|====
+Anwender müssen anderen Benutzern des Systems über die Rechteverwaltung explizit erlauben, Kennzahlkonfigurationen zu erstellen, soweit diese Benutzer nicht vom Typ *Admin* sind.
 
-Öffnet der Anwender einen Kontaktdatensatz sind weitere Informationen sichtbar. Dazu gehören z.B. Firmenname, Adressen, E-Mail-Adresse, Telefonnummer und USt-IdNr, Bankdaten, Optionen, Dokumente und Aufträge. +
-Bei ID 100 handelt es sich um den Barverkauf. Dem Datensatz _Barverkauf_ ist kein Kunde zugeordnet. Der Grund dafür ist, dass Aufträge, die z.B. über das Kassensystem plenyPOS im stationären Ladengeschäft oder über ein anderes Kassensystem abgewickelt werden, der ID 100 zugeordnet werden und demnach keine Kundendaten gespeichert werden.
+Detaillierte Informationen zum Erstellen von Kennzahlkonfigurationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/myview-dashboard.html#200[Dashboard] beschrieben.
 
-Der Barverkauf ist – da es sich im klassischen Sinne nicht um einen "realen" Kunden handelt – der einzige, bereits vorhandene Datensatz in einem neuem System, bei dem keine Bewegungsdaten gespeichert sind.
+== Dashboard
 
-Für die anderen drei Beispielkontaktdatensätze (IDs 101, 102 und 103) sind bereits Bewegungsdaten gespeichert. Bewegungsdaten beinhalten die folgenden Informationen:
+Die Ergebnisse der oben berechneten Kennzahlkonfigurationen können von Anwendern auf einem oder mehreren Dashboard-Ansichten visualisiert werden. Dies ist beispielsweise in Tabellen- oder Diagrammform möglich. Der Zugriff auf diese Dashboard-Ansichten kann wiederum für Benutzer, die nicht vom Typ *Admin* sind, eingeschränkt werden. Weitere Informationen zu den relevanten Benutzerrechten sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/myview-dashboard.html#408[Dashboard] verfügbar.
 
-* Datum und Uhrzeit der Registrierung im Webshop des Anwenders
-* die Art, wie sich der Kontakt registriert hat; d.h. regulärer Zugang oder Gastzugang (siehe Kapitel <<#_regulärer_zugang_und_gastzugang, Regulärer Zugang und Gastzugang>>)
-* Datum und Uhrzeit der letzten Aktualisierung des Kontaktdatensatzes
-* Datum und Uhrzeit des letzten Logins
-* Datum und Uhrzeit des letzten Auftrags
+Für jedes Darstellungselement innerhalb einer Dashboard-Ansicht gibt es zusätzliche Formatierungs-, Filter- und Exportmöglichkeiten. Diese Möglichkeiten sind im Detail ebenfalls auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/myview-dashboard.html#410[Dashboard] für jedes Darstellungselement separat beschrieben.
 
-== Regulärer Zugang und Gastzugang
 
-In plentysystems gibt es zwei Zugangsarten, wenn eine Bestellung (Auftrag) im System angelegt wird.
 
-* Bei einem regulären Zugang handelt es sich um einen Bestandskunden, der sich in der Vergangenheit im Webshop des Anwenders registriert hat und sich regelmäßig mit seinen Daten einloggt. Die reguläre Zugangsart wird außerdem auch gespeichert, wenn der Anwender einen neuen Kontaktdatensatz manuell, z.B während eines Telefonats mit einem Interessenten, erstellt.
-
-* Gastzugang bedeutet, dass sich der Kontakt nicht registriert hat und als Gast bestellt hat. Ein Passwort ist nicht vorhanden; der Gastkunde kann sich daher nicht in den Mein Konto-Bereich einloggen. Es ist möglich, dass mehrere Datensätze, die die identischen Daten des Gastkunden enthalten, im System gespeichert werden. Bei regulären Zugängen findet eine Überprüfung statt. Der Anwender legt fest, ob die Überprüfung anhand der E-Mail-Adresse oder zusätzlich anhand der Anschrift erfolgt.
-
-Wenn Bestellungen über Marktplätze in das System des Anwenders eingehen, legt der Marktplatz fest, welche Zugangsart im Kontaktdatensatz gespeichert wird.
-
-
-[discrete]
-=== Auftragszuordnung bei regulären Zugängen und Gastzugängen
-
-Bei regulären Zugängen wird die Anzahl der Aufträge summiert. Die Summe der Aufträge ist dann z.B. auch in der Kontaktübersicht zu sehen (siehe Kapitel <<#_kontakt_ids, Kontakt-IDs>>).
-
-Bei Gastzugängen wird die Anzahl der Aufträge nicht summiert; es wird ein Auftrag zugeordnet und die Adresse gespeichert. Über die Schnellsuche kann der Anwender sehen, wie viele Aufträge ein bestimmter Gastkunde im Webshop getätigt hat. Unter bestimmten Voraussetzungen können einem Gastzugang jedoch auch mehrere Aufträge zugeordnet sein: Wenn der Kunde seine Bestellung reklamiert, wird ggf. eine Gutschrift angelegt.
-
-== Typen
-
-Typen dienen der Einordnung und Unterscheidung von Kontakten. Sechs Typen sind standardmäßig in jedem System vorhanden und können nicht gelöscht werden. Jeder Typ hat eine ID. Bei dieser ID handelt es sich um einen sogenannten Auto-Increment-Wert, der durch das System vergeben wird und nicht geändert werden kann. In der folgenden Tabelle werden die standardmäßig vorhandenen Typen und deren IDs aufgelistet.
-
-[[tabelle-fest-integrierte-typen]]
-.Fest integrierte Typen und deren IDs
-[cols="1,3"]
-|====
-
-|*ID* |*Typ*
-
-|1
-|Kunde
-
-|2
-|Interessent
-
-|3
-|Handelsvertreter
-
-|4
-|Lieferant
-
-|5
-|Hersteller
-
-|6
-|Partner
-|====
-
-Wenn ein neuer Kontaktdatensatz erstellt wird, ist automatisch der Typ *Kunde* vorausgewählt. Der Anwender kann den Typ jedoch nachträglich anpassen. Einem Kontaktdatensatz muss immer ein Typ zugeordnet sein.
-
-Abhängig von der Wahl des Typen können unterschiedliche Datenfelder im Kontaktdatensatz eingestellt werden: Für die Typen *Kunde*, *Interessent*, *Hersteller* und *Partner* sind die Datenfelder identisch. Bei Auswahl des Typen *Handelsvertreter* kann der Anwender zusätzlich den PLZ-Bereich des Handelsvertreters eingeben; bei Auswahl des Typen *Lieferant* kann der Anwender zusätzlich die Lieferzeit und den Mindestbestellwert eingeben.
-
-Eine mögliche Verwendung für die Typen wäre wie folgt:
-
-Der Typ *Kunde* dient zur Markierung von Kontakten, die bereits beim Anwender gekauft haben. +
-Der Typ *Handelsvertreter* dient zur Markierung von Kontakten, die – nach PLZ eingeteilt – Aufträgen zugewiesen werden können, um z.B. die Kundenpflege zu leisten. +
-Der Typ *Interessent* dient zur Markierung von Kontakten, die Kaufinteresse signalisiert haben, aber noch nicht beim Anwender haben bzw. die ein Angebot eingefordert haben, aber daraus noch keine Bestellung resultiert ist. +
-Der Typ *Lieferant* dient zur Markierung von Kontakten, die Waren anbieten, die vom Shopbetreiber für den Shop gekauft werden. +
-Der Typ *Hersteller* dient zur Markierung von Kontakten, die Artikel oder Artikelbestandteile für den Shop herstellen. +
-Der Typ *Partner* dient zur Markierung von Kontakten, die z.B. Wiederverkäufer sind und mit dem Shopbetreiber gesonderte Konditionen vereinbart haben.
-
-Es ist möglich, weitere eigene Typen zu definieren und der Liste der vorhandenen Typen hinzuzufügen. Ausgehend von ID 6 wird hochgezählt, wenn ein neuer Typ erstellt wird. Für die Typen, die der Anwender hinzugefügt, stehen dieselben Datenfelder zur Verfügung wie für die Typen *Kunde*, *Interessent*, *Hersteller* und *Partner*.
-
-== Kundenklassen
-
-Kundenklassen ermöglichen dem Anwender, seinen Kundenstamm nach unterschiedlichen Kriterien zu unterteilen. Beispielsweise können für Kundenklassen Mindestbestellmengen definiert, unterschiedliche Rabatte zugeordnet, Zahlungsarten festgelegt, Mengenrabatte gewährt und Zahlungsbedingungen eingestellt werden. Diese Einstellungen sind dann nur für die Kundenklasse wirksam. Der Anwender kann die Kundenklasse dem Kunden im  zuordnen. Die Verwendung von Kundenklassen ist optional.
-
-Ein möglicher Anwendungsfall für eine Kundenklasse wäre die Unterteilung nach Endkunden (B2C) und Händlern (B2B). Diese Unterteilung ist sinnvoll, wenn erwünscht ist, dass die Verkaufspreise im Webshop den B2C-Kunden als Bruttopreise, den B2B-Kunden jedoch als Nettopreise angezeigt werden. Ein weiterer Anwendungsfall kann beispielsweise eine VIP-Kundenklasse für Kunden, die regelmäßig und umsatzsteigernd im Webshop bestellen, sein, um für diese Kundenklasse eigene Verkaufspreise festzulegen.
-
-In einem neu angelegten System ist keine Kundenklasse standardmäßig vorhanden. Die vom Anwender erstellten Kundenklassen erhalten durch das System eine fortlaufende, eindeutige ID beginnend mit ID 1. Der Anwender kann beliebig viele Kundenklassen erstellen.
-
-=== Rabattsystem für Kundenklassen
-
-Wie im Kapitel <<#_kundenklassen, Kundenklassen>> beschrieben, hat der Anwender die Möglichkeit, Kundenklassen zu erstellen und diese seinen Kunden zuzuordnen. Innerhalb der Kundenklasse besteht die Möglichkeit, einen Rabatte festzulegen. Die folgenden Rabatte können eingestellt werden:
-
- * Kundenklassenrabatt
- * Rabatt auf den Nettowarenwert
- * Rabatte auf die Zahlungsart
- * Rabattstaffeln
-
-In den folgenden Unterkapiteln werden die Rabattmöglichkeiten erläutert.
-
-=== Kundenklassenrabatt
-
-In einer Kundenklasse legt der Anwender einen Rabatt fest, der dann nur für die Kundenklasse wirksam wird. Darüber hinaus bestehen hier weitere Konfigurationsmöglichkeiten, z.B. die Aktivierung von Mengenrabatten der Verkaufspreise. Der Anwender sollte dabei beachten, dass sich je nach Konfiguration Rabatte addieren können.
-
-=== Rabattstaffel auf Nettowarenwert
-
-Möchte der Anwender seinen Kunden Rabatte gewähren, wenn diese häufig und umsatzsteigernd im Webshop einkaufen, ist es möglich, Rabattwerte auf den Nettowarenwert des Auftrages festzulegen.
-
-Die folgende Beschreibung bezieht sich auf den Verkauf über den Webshop. Für Verkäufe über andere Kanäle erfolgt die Beschreibung an anderer Stelle.
-
-Der Rabatt wird berechnet und im Webshop angezeigt, wenn der Kunde seinen Einkauf beendet und zur Kasse geht. Im Warenkorb wird zunächst nur der gesamte Rabattbetrag ausgewiesen. Während des Bestellvorgangs wird zusätzlich zum Gesamtrabatt der Rabatt auf die einzelnen Artikelpositionen berechnet und angezeigt.
-
-=== Rabatt auf Zahlungsart
-
-Mit dem Rabatt auf eine Zahlungsart gewährt der Anwender Kunden einen Rabatt auf die Verwendung einer oder mehrerer Zahlungsarten.
-
-=== Verkaufspreis als Rabatt
-
-Der Anwender kann einen mengenbezogenen Rabatt als eigenen Preis anlegen. Der Anwender legt für den Verkaufspreis fest, ab welcher Artikelmenge der rabattierte Preis gelten soll. Eine Staffelung wird durch das Anlegen entsprechender Verkaufspreise mit den gewünschten Mindestmengen realisiert. +
-Ein Kunde erhält den Rabatt, wenn er a) zu der betreffenden Kundenklasse gehört und b) mindestens die beim Verkaufspreis hinterlegte Menge bestellt.
-
-== Eigenschaften
-
-Eigenschaften dienen einer näheren Charakterisierung von Kunden. In einem neu angelegten System ist keine Eigenschaft standardmäßig vorhanden, d.h. die Verwendung ist optional. Die vom Anwender erstellten Eigenschaften erhalten eine fortlaufende, eindeutige ID beginnend mit ID 1. Die ID wird durch das System vergeben und kann nicht geändert werden. Der Anwender kann beliebig viele Eigenschaften für den Bereich *Kontakt* erstellen.
-
-Für die spätere Verwendung der Eigenschaften gibt es mehrere Möglichkeiten: Der Anwender kann die Informationen entweder im Bestellvorgang oder in der Kundenregistrierung von seinen Kunden abfragen; der Anwender nutzt die Eigenschaften, um selbst Informationen zu den Kunden im jeweiligen Kontaktdatensatz zu speichern; der Anwender kann einige der Eigenschaften auf seinen Auftragsdokumenten ausgeben lassen.
-
-Im Fall der Abfrage vom Kunden im Webshop bestimmt der Anwender, ob die Angabe ein Pflichtfeld ist und somit zwingend durch den Kunden eingegeben werden muss. Der Anwender kann beispielsweise bei der Registrierung abfragen, wie der Kunde auf seinen Webshop aufmerksam geworden ist.
-
-Für jede Eigenschaft muss der Anwender einen Typen wählen. Der Typ legt fest, welche Art von Information der Anwender für die Eigenschaft eingeben kann. Diese Typen sind:
-
- * Ganze Zahl
- * Kommazahl
- * Auswahl
- * Mehrfachauswahl
- * Kurztext
- * Text
- * Datum
- * Datei
-
-Die folgende Tabelle listet die in plentysystems verfügbaren Typen auf. Ein Beispiel erläutert die Verwendung der Eigenschaft.
-
-[[tabelle-typen-kundeneigenschaften]]
-.Auswählbare Typen für die Kundeneigenschaften
-[cols="1,3"]
-|====
-
-|*Typ* |*Beispiel*
-
-|Ganze Zahl
-|Der Anwender möchte von seinem Kunden wissen, in welchem Jahr der Kunde geboren ist.
-
-|Kommazahl
-|Der Anwender möchte von seinem Kunden eine Gewichtseinheit in Bezug auf die Bestellmenge wissen, z.B. 2,5 kg.
-
-|Auswahl
-|Der Anwender möchte von seinem Kunden wissen, auf welchem Weg er den Produktkatalog zugestellt bekommen möchte. Der Anwender gibt seinem Kunden eine Vorauswahl an Antworten vor, aus welcher der Kunde eine Antwort wählen kann, z.B.: per E-Mail oder auf dem Postweg.
-
-|Mehrfachauswahl
-|Der Anwender möchte von seinem Kunden wissen, über welchen Kanal der Kunde auf seinen Webshop aufmerksam geworden ist. Der Anwender gibt seinem Kunden eine Vorauswahl an Antworten vor, aus welchen der Kunde eine oder mehrere Antworten wählen kann, z.B. Werbung, Newsletter, Webseite, Online-Suchmaschine, über Freunde und Bekannte etc.
-
-|Kurztext
-|Ein bestehender Kunde hat einen neuen Kunden geworben. Der Anwender möchte von seinem neuen Kunden wissen, wie die Kundennummer des bestehenden Kunden lautet.
-
-|Text
-|Der Anwender möchte von seinem Kunden abfragen, wie der Kunde auf seinen Webshop aufmerksam geworden ist und gibt ihm die Möglichkeit, dies in einem Textfeld zu beschreiben.
-
-|Datum
-|Der Anwender möchte das Geburtsdatum des Kunden wissen.
-
-|Datei
-|Der Anwender möchte, dass der Kunde eine Kopie des Personalausweises hochlädt, wenn der Kunde z.B. Artikel mit Altersfreigabe kaufen möchte.
-
-|====
-
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#eigenschaften-einleitung[Kontakte - Vorbereitende Einstellungen vornehmen^] zu finden.
-
-== Im Kontaktdatensatz verknüpfte Daten
-
-Im der folgenden Tabelle wird aufgelistet, welche Daten der Anwender aus einem Kontaktdatensatz heraus aufrufen kann.
-
-[[tabelle-verknuepfte-daten-kontaktdatensatz]]
-.In einem Kontaktdatensatz verknüpfte Daten
-[cols="1,3"]
-|====
-
-|*Im Kontaktdatensatz verknüpfte Informationen* |*Kurzbeschreibung*
-
-|Kontaktdetails
-|In diesem Bereich des Kontaktdatensatzes finden sich Informationen wie z.B. Name, Kundenklasse, Kundentyp, Eigner, Geburtsdatum und erlaubte Zahlungsarten.
-
-|Adressen / +
-Neue Adresse
-|Der Anwender kann mehrere Liefer- und Rechnungsadressen pro Kontakt eingeben und diese Lieferadressen dann pro Auftrag individuell zuordnen. Es werden auch die Lieferadressen, die der Kunde über seinen Mein Konto-Bereich im Webshop oder im Zuge einer Bestellung eingegeben hat, angezeigt. Der Anwender kann jeweils eine Lieferadresse und eine Rechnungsadresse als primär definieren.
-
-|Dokumente
-|Im Kontaktdatensatz können Dateien, die den Kunden betreffen, hochgeladen werden. Die folgenden Dateiformate sind gültig: +
-JPEG, PNG, GIF, TIFF, PDF, DOC, ODC, OTH, XLS, XML, HTML, HTM, CSS, ZIP, GZIP.
-
-|Eigenschaften
-|Die Eigenschaften, die für die Kunden erstellt wurden, kann der Anwender speichern bzw. diese werden im Kontaktdatensatz angezeigt, wenn der Kunde Informationen im Webshop eingetragen hat.
-
-|Tags
-|Der Anwender kann dem Kontakt Tags zuweisen, um diese als Suchfilter zu verwenden. 
-
-|plentyShop-Login
-|*Passwort ändern*: Der Anwender kann ein neues Passwort für den Kunden eingeben. Allerdings wird dieses aus Sicherheitsgründen nicht über eine E-Mail-Vorlage, die der Anwender im Vorfeld in seinem System konfiguriert hat, versendet. (Der E-Mail-Versand über Vorlagen wird an anderer Stelle erläutert). Es wäre jedoch denkbar, dass der Anwender dem Kunden während eines Telefongesprächs das neue Passwort mitteilt. +
-*E-Mail zum Zurücksetzen des Passworts*: Der Anwender kann dem Kunden eine E-Mail-Vorlage zum Zurücksetzen des Passworts senden. Voraussetzung dafür ist, dass eine E-Mail-Vorlage, die die entsprechende Variable enthält, mit dem entsprechenden Ereignis verknüpft ist. +
-*Login entsperren*: Der Anwender kann den Login des Kunden entsperren, wenn dieser zum Beispiel 4 Mal hintereinander das Passwort falsch im plentyShop eingegeben hat und deshalb für den Login gesperrt wurde. +
-*Login-URL*: Im plentysystems Backend kann der Anwender die URL für einen direkten Zugang zum Mein Konto-Bereich des Kunden im Webshop aufrufen. Die URL wird gespeichert, sobald der Kunde sich mit E-Mail-Adresse und Passwort registriert hat. Eine Eingabe der Login-Daten (E-Mail-Adresse und Passwort) im Webshop ist dann nicht mehr nötig.
-
-|Aufträge / +
-Neuer Auftrag / +
-Neues Angebot / +
-Neuer Auftrag [beta]/ +
-Neues Angebot [beta]/ +
-Neues Abonnement [beta]/ +
-Neuer Sammelauftrag / +
-Scheduler
-|Aus dem Kontaktdatensatz heraus kann der Anwender die Auftragsübersicht bzw. die Übersicht der Abonnements des Kontakts öffnen und neue Aufträge bzw. Angebote und Sammelaufträge manuell erstellen.
-
-|Historie
-|Der Anwender kann die Bewegungsdaten des Kontakts einsehen. Diese Daten beinhalten zum Beispiel das Datum und die Uhrzeit des letzten Logins, des letzten Auftrags und der Registrierung des Kunden im Webshop des Anwenders.
-
-|Bankdaten
-|Der Anwender kann die Bankdaten des Kunden eingeben und diese bei Bedarf löschen.
-
-|Firma
-|Der Anwender kann die mit dem Kontakt verknüpfte Firma sehen und bearbeiten oder dem Kontakt eine Firma zuordnen.
-
-|Konto
-|Der Anwender kann aus dem Kontaktdatensatz eine Übersicht der Umsätze des Kunden aufrufen. Somit sieht der Anwender auf einen Blick, ob es noch ausstehende Beträge gibt oder ob alle Rechnungen beglichen wurden. Außerdem werden dort weitere Aufträge, Retouren, Gutschriften etc. des Kunden angezeigt.
-
-|Messenger
-|Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger-testphase.html[Messenger^].
-
-|Optionen
-|Der Anwender kann alle zum gespeicherten Optionen sehen und bearbeiten und neue Optionen hinzufügen. Optionen beinhalten zum Beispiel die private und geschäftliche E-Mail-Adresse und Telefonnummer und die private und geschäftliche Anrede.
-
-|Tickets / +
-Neues Ticket
-|Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
-
-|Scheduler
-|Der Anwender kann aus dem Kontaktdatensatz heraus einen Übersicht der Scheduler-Aufträge des Kontakts aufrufen und neue Scheduler-Aufträge für den Kontakt anlegen. Scheduler-Aufträge sind Abo-Aufträge, die dem Kunden die Möglichkeit bieten, bestimmte Artikel im Webshop des Anwenders im Abonnement zu kaufen.
-
-|Provision & Kostenstellen
-|*Provision*: Standardprovisionen sind für alle Kunden gültig; Artikel-Provisionen beziehen sich nur auf den Kunden, dessen Kontaktdatensatz gerade geöffnet ist. +
-*Kostenstellen*: Der Anwender kann Kostenstellen anlegen. Bei einer Kostenstelle handelt es sich um den Ort der Kostenentstehung und Kostenzurechnung, quasi ein betrieblicher Bereich, der selbstständig abgerechnet wird.
-
-|Statistik
-|Der Anwender kann kundenspezifische Statistiken erstellen und so bestimmte Daten speziell für diesen Kunden auswerten, z.B. den Gesamtumsatzverlauf des Kunden in einem bestimmten Zeitraum. Bestehende Statistiken können auch durch den Anwender bearbeitet werden.
-
-|====
-
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] zu finden.
-
-== Zahlungsarten
-
-Der Anwender kann im Kontaktdatensatz einstellen, dass die Zahlungsarten *Lastschrift* und *Rechnung* für den Kunden erlaubt sind. Der Anwender kann diese Zahlungsarten individuell pro Kunde zulassen, selbst wenn die Zahlungsarten global für den Webshop nicht verwendet werden.  +
-Weitere Informationen zu Zahlungsarten werden in einem anderen Bereich beschrieben.
-
-== Prüfung der Bonität und Umsatzsteueridentifikationsnummer
-
-Der Anwender hat die Möglichkeit, die Bonität sowie die Umsatzsteueridentifikationsnummer des Kunden durch Anbindung an externe Services über Plugins zu prüfen.
-
-Weitere Informationen sind im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] zu finden.
-
-== Kunden sperren
-
-Der Anwender hat die Möglichkeit, Kunden zu sperren, damit diese sich nicht mehr in seinem Webshop einloggen und bestellen können. Hierbei wird der Kunde für den in seinem Kontaktdatensatz eingestellten Mandanten (Shop) gesperrt.
-
-Da der Anwender festlegt, wie der Kundenlogin im Mein Konto-Bereich der Kunden erfolgen soll, wird der Kunde anhand dieser Einstellung gesperrt:
-
-* mittels E-Mail-Adresse und Passwort oder
-* mittels Kunden-ID und Passwort.
-
-== Unbezahlte Aufträge von Kunden einsehen
-
-Der Anwender kann eine Liste der Kunden mit unbezahlten Aufträgen aufrufen. Die Liste enthält die Anzahl der offenen Posten eines Kunden sowie die Höhe der Forderung, die sich aus den offenen Posten ergibt.
-
-Die Liste der offenen Posten aktualisiert sich einmal täglich automatisch. Daher kann es vorkommen, dass Forderungen teilweise erst am nächsten Tag in der Liste angezeigt werden. Der Anwender hat die Möglichkeit, die Liste manuell zu aktualisieren. Außerdem kann der Anwender die Liste durch Verwendung der folgenden Filter eingrenzen:
-
- * Zugangsart, d.h. ob es sich um einen Gastzugang oder einen regulären Zugang handelt
- * Anzahl der offenen Posten oder Höhe der Forderung
- * Land
- * Kundenklasse
- * Kundentyp
-
-== Zustimmung zur Speicherung von datenschutzrelevanten Informationen
-
-Welche datenschutzrelevanten Informationen im System gespeichert werden, hängt davon ab, welche Felder der Anwender als Pflichtangaben einstellt und welche Informationen der Kunde zusätzlich bei freiwillig auszufüllenden Feldern bei der Registrierung im Webshop angibt. Neben Name, Anschrift, Telefonnummer und E-Mail-Adresse, die für eine Zuordnung zu einer Person dienen können, ist z.B. noch die Speicherung der Bankdaten möglich. In Aufträgen kann z.B. noch die IP-Adresse, über die der Auftrag erstellt wurde, abgerufen werden. Ebenso wird das Datum und die Uhrzeit des letzten Login gespeichert.
-
-Ein möglicher Fall wäre auch, dass der Anwender beispielsweise in der Datenschutzerklärung beschreibt, in welcher Form und für welche Dauer die Daten des Kunden gespeichert werden und dass die Daten nicht an Dritte weitergegeben werden. Außerdem legt der Anwender in seinem Webshop fest, dass das Lesen der Datenschutzerklärung und die anschließende Zustimmung zwingend notwendig ist. Das bedeutet, der Kunde muss während der Registrierung im Webshop eine Checkbox aktivieren und stimmt somit bewusst der Speicherung seiner Daten zu.
-
-[[bild-beispiel-pflichtfelder-webshop]]
-.Beispiel der Pflichtfelder (mit * gekennzeichnet) im Webshop
-image::assets/AGB_Widerrufsrecht.png[]
-
-
-== Speicherung von marktplatzspezifischen Kundendaten
-
-Bei einigen Marktplätzen muss der Kunde der Weitergabe seiner Daten an ein Drittsystem zustimmen. Weitere Informationen dazu werden im Modul *Fachliche und technische Beschreibung des Moduls plentyChannel* beschrieben.
-
-== Passwörter
-
-Es ist möglich, für jeden im System gespeicherten regulären Kunden ein neues Passwort zu generieren. Bei Gastkonten ist dies nicht möglich, da diese sich nicht im Webshop des Anwenders registrieren und daher auch nicht über ein Passwort verfügen. Wenn sich der Kunde im Webshop des Anwenders registriert, vergibt der Kunde bei der Registrierung ein Passwort für sein Konto.
-
-Es gibt zwei Möglichkeiten zur Passwortänderung:
-
-1. Der Anwender vergibt manuell ein neues Passwort im Kontaktdatenssatz und teilt dem Kunden dieses mit.
-2. Der Anwender verschickt manuell eine E-Mail an den Kunden, die einen Link zur Passwortänderung enthält. Diese E-Mail erhält der Kunde auch, wenn er im Webshop des Anwenders auf "Passwort vergessen" klickt.
-
-Es wird ein Hash des Passworts mit dem Passwort-Hashing-Verfahren _bcrypt_ in der Datenbank gespeichert. Die Passwörter können nicht entschlüsselt werden.
-
-== Löschung von datenschutzrelevanten Informationen
-
-Automatische Löschungen von Kundendaten wie Name, Anschrift etc. werden vom System nicht durchgeführt. Der Anwender entscheidet aktiv, ob die Daten nach einer für ihn selbst definierten Zeit  gelöscht werden.
-
-Wenn keine Verknüpfung zwischen einem Kontaktdatensatz und einem Auftrag besteht –  das heißt, der Auftrag ist archiviert – kann der Anwender den Kontaktdatensatz löschen. Denkbar wäre auch, dass der Kunde sich zwar registriert hat, jedoch nie eine Bestellung über seinen Zugang eingegangen ist; in diesem Fall kann der Anwender den Kontaktdatensatz ebenfalls löschen.
-
-[discrete]
-=== Anonymisierung von Kundendaten
-
-Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dieser Person hergestellt werden kann, indem er Datensätze anonymisiert. Das Anonymisieren der Daten ist nur bei einem Kontaktdatensatz möglich, nicht bei einem Gastzugang. Des Weiteren können nur Datensätze anonymisiert werden, deren verknüpfte Aufträge sich nicht im Archiv befinden. Wenn der Anwender den Auftrag gelöscht hat – manuell über das Backend, über die Datenbereinigung im Backend oder per REST-API – befindet sich der Auftrag im Archiv. Es erfolgt keine automatische Löschung bzw. Archivierung des Auftrags seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern.
-
-[discrete]
-=== Löschung von Kundendaten
-
-Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen, Tickets oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] zu finden.
-
-[discrete]
-=== Aufbewahrungspflicht
-
-Der Anwender trägt selbst Sorge dafür, die gesetzlich aufbewahrungspflichtigen Daten zu sichern und diese ggf. nach Ablauf der Aufbewahrungsfrist selbstständig zu löschen. Eine systemseitige Erinnerungsfunktion o.ä. für das Löschen von Daten ist in plentysystems nicht vorhanden.
-
-== Import und Export
-
-Der Anwender hat die Möglichkeit, Kontaktdaten in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
-
-Für den manuellen Austausch von Kontaktdaten stehen dem Anwender das link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool^] für den Import und der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/daten-exportieren.html[Elastische Export^] mit dem FormatDesigner für den Export zur Verfügung.
-
-[discrete]
-=== Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
-
-Der Anwender kann auf Wunsch des Kunden sämtliche vom Kunden bzw. Gastkunden gespeicherte Daten zum Download zur Verfügung stellen.
-
-== Backup
-
-Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten über das in plentysystems dafür vorgesehene Menü einzuspielen.
-
-
-== CRM Historie
-
-Mit Hilfe der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/aenderungshistorie.html#1300[CRM Historie^] können Anwender Änderungen an Kundendaten, ShopBooster-Daten oder die Einstellungen zur link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] nachvollziehen. Die Daten in diesem Menü werden 1 Jahr gespeichert.
-
-Der Anwender wählt einen Referenztyp, z.B. die Adresse, und gibt anschließend die eindeutige ID der Adresse ein. Das bedeutet, dass der Anwender die ID kennen muss, um eine Anpassung an einem Datensatz nachverfolgen zu können. Für den Bereich der Kundendaten stehen die Referenztypen Kontakt, Adresse und Firma zur Verfügung.
-
-Dem Anwender werden dann in einer Übersicht die folgenden Werte angezeigt:
-
-* Referenztyp
-* Referenz-ID
-* Neuer Wert
-* Alter Wert
-* Datum der Änderung
-* Name des Benutzers, der die Änderung vorgenommen hat
-* ID des Benutzers, der die Änderung vorgenommen hat
