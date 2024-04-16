@@ -18,6 +18,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 |V9.0 |CRM |17.04.2024 |Geändert: Die Bereiche "CRM", "E-Mail-Versand", "Newsletter" und "Gutscheine" wurden überarbeitet.
 |V9.0 |Versandabwicklung |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Informationen zu Lieferländern und Versanddienstleistern wurden aktualisiert.
 |V9.0 |Webshop |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
+|V9.0 |Warenwirtschaft |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu den Funktionen der plentyWarehouse App wurden hinzugefügt.
 |V9.0 |Editionsübersicht |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu plentysystems Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
 |V9.0 |Allgemein |17.04.2024 |Geändert: In allen Bereichen wurde der Name des ERP-Systems plentymarkets in plentysystems geändert.
 |V8.0 |POS |15.09.2023 |Geändert: Informationen zur Zusammensetzung der Daten in Tagesabschlussberichten wurden korrigiert.
