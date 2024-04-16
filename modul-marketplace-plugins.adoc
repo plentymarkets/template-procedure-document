@@ -8,7 +8,7 @@ Plugins können über verschiedene Quellen im System eingebunden werden:
     * Git
     * https://marketplace.plentymarkets.com/plenty-tools/plentydevtool_6652[plentyDevTool^]
 
-Nach dem Einbinden müssen Plugins in einem Plugin-Set installiert, aktiviert und bereitgestellt werden, damit ihr Code ausgeführt wird. Weitere Informationen zu diesen Schritten sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/hinzugefuegte-plugins-installieren[Hinzugefügte Plugins installieren^] beschrieben.
+Nach dem Einbinden müssen Plugins in einem Plugin-Set installiert, aktiviert und bereitgestellt werden, damit ihr Code ausgeführt wird. Weitere Informationen zu diesen Schritten sind auf der Handbuchseite https://knowledge.plentymarkets.com/de-de/manual/main/plugins/hinzugefuegte-plugins-installieren[Hinzugefügte Plugins installieren^] beschrieben.
 
 == plentyMarketplace
 
@@ -16,7 +16,7 @@ Auf plentyMarketplace können Plugins entweder entgeltlich oder unentgeltlich er
 
 Je nach Anbieter ist es möglich, Plugins für einen Zeitraum von 30 Tagen kostenlos zu testen oder sie zu abonnieren. Bei Abonnements kann das Zahlungsintervall zwischen monatlich, 3-monatlich, halbjährlich und jährlich variieren, je nach Ermessen des Anbieters. Außerdem ist es möglich, einige Funktionen des Plugins kostenlos und andere kostenpflichtig anzubieten. Anbieter definieren diese Modelle in der Marketplace-JSON.
 
-Einzelheiten zu den Arten von angebotenen Plugins sowie den verschiedenen Kaufoptionen sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/plugins-system-hinzufuegen#marketplace-plugins[Plugins dem System hinzufügen^] beschrieben. Einzelheiten zur Implementierung des verschiedenen Modelle sind auf der Entwicklerseite https://developers.plentymarkets.com/marketplace/plugin-pricing-models[Plugin pricing models^] und dem zugehörigen Tutorial https://developers.plentymarkets.com/tutorials/marketplace-subscriptions[Marketplace subscription plugins^] beschrieben.
+Einzelheiten zu den Arten von angebotenen Plugins sowie den verschiedenen Kaufoptionen sind auf der Handbuchseite https://knowledge.plentymarkets.com/de-de/manual/main/plugins/plugins-system-hinzufuegen#marketplace-plugins[Plugins dem System hinzufügen^] beschrieben. Einzelheiten zur Implementierung des verschiedenen Modelle sind auf der Entwicklerseite https://developers.plentymarkets.com/marketplace/plugin-pricing-models[Plugin pricing models^] und dem zugehörigen Tutorial https://developers.plentymarkets.com/tutorials/marketplace-subscriptions[Marketplace subscription plugins^] beschrieben.
 
 Wenn ein Plugin erworben wird, wird von plentysystems automatisch ein Auftrag an der entsprechenden Kunden-ID hinterlegt (siehe Kapitel <<#_kontakt_ids>>). Sind einer Kunden-ID mehrere plentysystems Systeme zugeordnet, steht das Plugin in all diesen Systemen zu Verfügung.
 
@@ -54,6 +54,6 @@ Wenn ein Plugin-Set bereitgestellt wird, werden folgenden Schritte ausgeführt:
 
 == Konfiguration
 
-Teilweise müssen Einstellungen für Plugins vorgenommen oder Verknüpfungen mit Containern angelegt werden. Einzelheiten zum Einrichten von Einstellungen und Verknüpfungen sind auf der Handbuchseite https://knowledge.plentymarkets.com/plugins/installierte-plugins-konfigurieren[Installierte Plugins konfigurieren^] beschrieben.
+Teilweise müssen Einstellungen für Plugins vorgenommen oder Verknüpfungen mit Containern angelegt werden. Einzelheiten zum Einrichten von Einstellungen und Verknüpfungen sind auf der Handbuchseite https://knowledge.plentymarkets.com/de-de/manual/main/plugins/installierte-plugins-konfigurieren[Installierte Plugins konfigurieren^] beschrieben.
 
 Alle notwendigen Schritte zur Einrichtung werden vom Anwender anhand einer vom Anbieter des Plugins zu Verfügung gestellten Anleitung vorgenommen.
