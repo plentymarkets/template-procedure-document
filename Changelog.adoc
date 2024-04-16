@@ -16,6 +16,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 |V9.0 |App |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
 |V9.0 |POS |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
 |V9.0 |CRM |17.04.2024 |Geändert: Die Bereiche "CRM", "E-Mail-Versand", "Newsletter" und "Gutscheine" wurden überarbeitet.
+|V9.0 |Marketplace Plugins |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Verlinkungen auf das plentysystems Handbuch wurden angepasst.
 |V9.0 |Versandabwicklung |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Informationen zu Lieferländern und Versanddienstleistern wurden aktualisiert.
 |V9.0 |Webshop |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
 |V9.0 |Warenwirtschaft |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu den Funktionen der plentyWarehouse App wurden hinzugefügt.
