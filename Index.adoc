@@ -95,6 +95,10 @@ include::cloud.adoc[]
 
 <<<
 
+include::modul-bi-report.adoc[]
+
+<<<
+
 include::wording-examples.adoc[]
 
 <<<

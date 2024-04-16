@@ -1,0 +1,52 @@
+= Fachliche und technische Beschreibung des Moduls plentyBI
+
+Das Modul plentyBI von plentysystems erlaubt den Abruf, die Speicherung und die visuelle Darstellung von unternehmerischen Kennzahlen des Systems.
+
+== Rohdaten
+
+Grundlage für den Abruf und die Zusammenstellung der Datengrundlage für Kennzahlen sind so genannte Rohdaten. Diese Rohdaten bilden wiederum die Datenbasis für so genannte _Reports_, aus denen sich letztendlich als Ergebnis einzelne Kennzahlen ableiten.
+
+Rohdaten werden im Hintergrund und im Regelfall nachts ermittelt. Anwender haben auf diesen Ermittlungsprozess keinen direkten Zugriff oder Einfluss, können aber festlegen, welche Rohdaten abgelegt werden sollen. Rohdaten werden begrenzt gespeichert, je nachdem, welche plentyBI Edition für das System gebucht wurde. Hierbei ist zu beachten, dass Rohdaten immer mindestens 6 Monate, Berechnungsergebnisse immer für mindestens 12 Monate verfügbar sind. Weitere Details dazu sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html#_datenformat_creator[Reports verwalten^] festgehalten.
+
+Nachdem die Generierung von Rohdaten abgeschlossen ist, können die Dateien per REST-API abgerufen und extern weiterbearbeitet werden. Rohdatendateien werden als per GZIP (RFC 1952) komprimierte CSV-Dateien geliefert, wobei als Spaltentrennzeichen ein Komma verwendet wird. Auf die Weiterarbeitung hat plentysystems keinen Einfluss. Anwender entscheiden selbst, wie und mit welchen zusätzlichen Softwarelösungen Rohdaten ausgelesen und ggf. weiterverarbeitet werden. Weitere Informationen zu Rohdaten und Abrufmöglichkeiten sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html[Reports verwalten^] beschrieben.
+
+Ergänzen Sie die folgende Tabelle. Das Unternehmen nutzt folgende externe Softwarelösungen zur Auswertung und Weiterverarbeitung von Rohdaten. Diese Lösungen haben die folgenden Namen:
+
+[[tabelle-rohdaten-software]]
+.Eingesetzte Softwarelösungen
+[cols="1,2"]
+|===
+|Softwarelösung (Name) |Einsatzzeitraum (von/bis)
+
+|{nbsp} +
+|{nbsp}
+
+|{nbsp} +
+|{nbsp}
+
+|{nbsp} +
+|{nbsp}
+|===
+
+== Kennzahlen
+
+Kennzahlen sind Konfigurationen, die von Anwendern innerhalb des plentysystems Systems zusammengestellt werden können, um die zugrundeliegenden Rohdaten weiter aufzubereiten und schließlich im Menü *plentysystems Logo (Start) » Dashboard* visuell darzustellen.
+
+plentysystems stellt verschiedene Kennzahltypen bereit, auf deren Basis Anwender im Menü *Einrichtung » plentyBI » Kennzahlen* eigene Konfigurationen erstellen können. Pro Kennzahl stehen vielfältige Filtermöglichkeiten zur Verfügung, mit denen die Ergebnisse je nach Bedürfnis des Anwenders eingegrenzt werden können. Eine Auflistung aller verfügbaren Kennzahltypen ist auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/kennzahlen.html[Kennzahlen^] zu finden. Die Anzahl der maximal möglichen Konfigurationen pro System richten sich nach der <<#_plentyBI, plentyBI Edition>>, die für das System gebucht wurde.
+
+plentysystems stellt so genannte Standard-Kennzahlkonfigurationen bereit, die von allen Anwendern unabhängig von der BI-Edition genutzt werden können. Diese Standard-Kennzahlkonfigurationen können jedoch nicht von Anwendern bearbeitet oder geändert werden. Die Standardkennzahlen sind im Menü *Einrichtung » plentyBI » Kennzahlen* dadurch erkennbar, dass als Ersteller *plentymarkets* angegeben ist. 
+
+Alle Kennzahlkonfigurationen erhalten bei ihrer Erstellung eine einzigartige ID, die durch Anwender nicht änderbar ist.
+
+Anwender müssen anderen Benutzern des Systems über die Rechteverwaltung explizit erlauben, Kennzahlkonfigurationen zu erstellen, soweit diese Benutzer nicht vom Typ *Admin* sind.
+
+Detaillierte Informationen zum Erstellen von Kennzahlkonfigurationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/myview-dashboard.html#200[Dashboard] beschrieben.
+
+== Dashboard
+
+Die Ergebnisse der oben berechneten Kennzahlkonfigurationen können von Anwendern auf einem oder mehreren Dashboard-Ansichten visualisiert werden. Dies ist beispielsweise in Tabellen- oder Diagrammform möglich. Der Zugriff auf diese Dashboard-Ansichten kann wiederum für Benutzer, die nicht vom Typ *Admin* sind, eingeschränkt werden. Weitere Informationen zu den relevanten Benutzerrechten sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/myview-dashboard.html#408[Dashboard] verfügbar.
+
+Für jedes Darstellungselement innerhalb einer Dashboard-Ansicht gibt es zusätzliche Formatierungs-, Filter- und Exportmöglichkeiten. Diese Möglichkeiten sind im Detail ebenfalls auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/myview-dashboard.html#410[Dashboard] für jedes Darstellungselement separat beschrieben.
+
+
+
