@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         
       - name: Setup Ruby, JRuby and TruffleRuby
         uses: ruby/setup-ruby@v1
@@ -40,7 +40,7 @@ jobs:
         run: ruby ./main.rb
 
       - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Verfahrensdokumentation
           path: ./Index.pdf
