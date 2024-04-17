@@ -23,6 +23,10 @@ include::modul-benutzer-benutzerrechte.adoc[]
 
 <<<
 
+include::modul-login.adoc[]
+
+<<<
+
 include::editionsuebersicht.adoc[]
 
 <<<
@@ -96,10 +100,6 @@ include::modul-marketplace-plugins.adoc[]
 <<<
 
 include::cloud.adoc[]
-
-<<<
-
-include::modul-login.adoc[]
 
 <<<
 
