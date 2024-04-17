@@ -23,6 +23,10 @@ include::modul-benutzer-benutzerrechte.adoc[]
 
 <<<
 
+include::modul-login.adoc[]
+
+<<<
+
 include::editionsuebersicht.adoc[]
 
 <<<
@@ -51,7 +55,7 @@ include::modul-warenwirtschaft.adoc[]
 
 <<<
 
-include:modul-plentywarehouse-app.adoc[]
+include::modul-plentywarehouse-app.adoc[]
 
 <<<
 
@@ -60,6 +64,10 @@ include::modul-versandabwicklung.adoc[]
 <<<
 
 include::modul-crm.adoc[]
+
+<<<
+
+include::modul-messenger.adoc[]
 
 <<<
 
