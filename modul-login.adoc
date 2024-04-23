@@ -9,7 +9,7 @@ Die Sprache des plentysystems Login wird automatisch durch die Sprache des Webbr
 
 == Sessiondauer
 
-Die Session eines plentysystems System endet nach 24 Stunden. Die Session des plentysystems Login endet nach 30 Tagen.
+Die Session eines plentysystems System und des plentysystems Login endet nach 24 Stunden.
 
 == Kontoeinstellungen
 
