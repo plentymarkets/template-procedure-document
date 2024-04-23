@@ -1,6 +1,6 @@
 = Anhang: REST-Berechtigungen
 
-Die folgenden Diagramme listen die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Backend* auf. Die Berechtigungen können über das Menü *Einrichtung » Einstellungen » Benutzer » Rechte » Benutzer* » _Benutzer öffnen_ » *Bereich: Berechtigungen* gewählt werden.
+Die folgenden Diagramme listen die verfügbaren REST-Berechtigungen für Benutzer mit dem Zugang *Nur API-Benutzer* auf. Die Berechtigungen können über das Menü *Einrichtung » Kontoverwaltung » Rollen » _Rolle öffnen_ » Erweiterter Modus* gewählt werden.
 
 Die Berechtigungen sind in folgende Bereiche unterteilt:
 
@@ -20,7 +20,6 @@ Berechtigungen
 |_ CRM
 |_ Daten
 |_ Dokumente
-|_ Editoren
 |_ Artikel
 |_ Listing
 |_ Märkte
@@ -30,10 +29,11 @@ Berechtigungen
 |_ Zahlenformat
 |_ Aufträge
 |_ plentyBI
+|_ plentyWarehouse
 |_ plentyBase-Einstellungen
 |_ Plugins
 |_ POS
-|_ Prozesse
+|_ Prozesse (Veraltet)
 |_ Service
 |_ Service-Center
 |_ Einrichtung
@@ -42,6 +42,7 @@ Berechtigungen
 |_ plentymarkets Systeme
 |_ Vorlage
 |_ Benutzer
+|_ Webhooks
 end legend
 ----
 
@@ -91,17 +92,17 @@ end legend
 
 <<<
 
-== Automation
+== Automatisierung
 
-In diesem Abschnitt werden die Berechtigungen für den Bereich Automation aufgelistet.
+In diesem Abschnitt werden die Berechtigungen für den Bereich Automatisierung aufgelistet.
 
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Automation
-|_ Plenty Flow
-  |_ Flow configuration
+Automatisierung
+|_ Flow
+|_ Prozesse
 end legend
 ----
 
@@ -116,6 +117,7 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Blog aufgelistet.
 !include styles/tree-style.iuml
 legend
 Blog
+|_ Eigenschaft
 end legend
 ----
 
@@ -183,7 +185,6 @@ end legend
 !include styles/tree-style.iuml
 legend
 Domains
-|_ Domains 
   |_ Bearbeiten
 end legend
 ----
@@ -309,20 +310,20 @@ legend
 Mandantenspezifische Einstellungen
 |_ Affiliate
   |_ Bearbeiten
-|_ Bearbeiten
-|_ Bestellvorgang
-  |_ Bearbeiten
 |_ Kategorieeinstellungen
+  |_ Bearbeiten
+|_ Bearbeiten
+|_ ShopBooster
+  |_ Bearbeiten
+|_ Module
   |_ Bearbeiten
 |_ Mein Konto
   |_ Bearbeiten
-|_ Module
+|_ Bestellvorgang
   |_ Bearbeiten
 |_ SEO-Einstellungen
   |_ Bearbeiten
 |_ Services
-  |_ Bearbeiten
-|_ ShopBooster
   |_ Bearbeiten
 |_ Zolltarifnummern
   |_ Anzeigen
@@ -388,6 +389,7 @@ CMS
 |_ Rechtliche Angaben
 |_ Mehrsprachigkeit
 |_ Alt
+|_ PWA
 |_ RSS
 |_ ShopBuilder
 |_ Templates
@@ -519,14 +521,15 @@ CRM
 |_ E-Mail
 |_ EmailBuilder
 |_ Event
+|_ Jobtitel
 |_ Nachricht
 |_ Messenger
 |_ Newsletter
-|_ Opportunities
 |_ Auftragszusammenfassung
 |_ Passwort
 |_ Eigenschaft
-|_ Serviceeinheit
+|_ Umsatzsteuereinheiten
+|_ Serviceeinheiten
 |_ Ticket
 |_ Typ
 end legend
@@ -601,9 +604,6 @@ legend
 Kontakt
 |_ Kontakt
 |_ Anonymisieren
-|_ Leads
-  |_ Leads
-  |_ Status Historie
 |_ Typ der Kontaktoption
 |_ Eigner ändern
 end legend
@@ -653,6 +653,7 @@ legend
 Messenger
 |_ Bearbeiten
 |_ Konversationen
+|_ Eignerschaft
 end legend
 ----
 
@@ -669,21 +670,6 @@ Newsletter
 |_ Bearbeiten
 |_ Newsletter-Ordner
 |_ Newsletter-Empfänger
-end legend
-----
-
-<<<
-
-=== Opportunities
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Opportunities
-|_ Opportunities
-|_ Typen
-|_ Eigner ändern
 end legend
 ----
 
@@ -754,6 +740,7 @@ Ticket
 |_ Ticketnachricht
   |_ Interne Ticke-Nachricht
   |_ Öffentliche Ticket-Nachricht
+|_ Eignerschaft
 |_ Ticket-Rolle
 |_ Ticket-Status
 |_ Ticket-Typ
@@ -967,6 +954,7 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Dokumente aufgeli
 legend
 |_ DocumentBuilder
 |_ Nummernkreise
+|_ Einstellungen
 end legend
 ----
 
@@ -981,6 +969,8 @@ legend
 |_ Dokumentvorlagen
   |_ Dokumentvorlagen
   |_ Aktivieren/Deaktvieren
+|_ Nummernkreise
+|_ Einstellungen  
 end legend
 ----
 
@@ -1025,8 +1015,8 @@ Artikel
 |_ Lionbridge
 |_ Hersteller
 |_ Neue Artikel UI
-|_ Preiskalkulation
 |_ Packstück
+|_ Preiskalkulation
 |_ Merkmal
 |_ Verkaufspreis
 |_ Suche
@@ -1229,6 +1219,20 @@ end legend
 
 <<<
 
+===== Marktplatz
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Marktplatz
+|_ Marktplatz
+|_ ASIN/ePID
+end legend
+----
+
+<<<
+
 ===== Merkmal
 
 [plantuml, format=png, opts="inline"]
@@ -1240,20 +1244,6 @@ Merkmal
 |_ Eigenschaftswerte
 |_ Eigenschaftswerte
 |_ Text
-end legend
-----
-
-<<<
-
-===== Marktplatz
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Marktplatz
-|_ Marktplatz
-|_ ASIN/ePID
 end legend
 ----
 
@@ -1355,9 +1345,9 @@ Suche
 |_ Backend
   |_ Bearbeiten
 |_ Frontend
-  |_ Einstellungen
-    |_ Bearbeiten
   |_ Sprache
+    |_ Bearbeiten
+  |_ Einstellungen
     |_ Bearbeiten
 end legend
 ----
@@ -1531,8 +1521,11 @@ Märkte
 |_ bol.com
 |_ Cdiscount
 |_ Check24
+|_ Conrad
 |_ Zugangsdaten
+|_ Decathlon
 |_ eBay
+|_ eMAG
 |_ Flubit
 |_ Fruugo
 |_ Google Shopping DE
@@ -1552,6 +1545,8 @@ Märkte
 |_ Restposten
 |_ ricardo
 |_ Shopgate
+|_ Shopify App
+|_ Völkner
 |_ Yatego
 |_ Zalando
 end legend
@@ -1574,6 +1569,8 @@ Amazon
   |_ FBA Warenbestand
     |_ Bearbeiten
   |_ Auftragsimport
+    |_ Bearbeiten
+  |_ Berichte
     |_ Bearbeiten
   |_ Versandbestätigung
     |_ Bearbeiten
@@ -1631,6 +1628,48 @@ end legend
 
 <<<
 
+=== Conrad
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Conrad
+|_ Datenaustausch
+  |_ Datenexport
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+|_ Berichte
+  |_ Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
+end legend
+----
+
+<<<
+
+=== Decathlon
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Decathlon
+|_ Datenaustausch
+  |_ Datenexport
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
+end legend
+----
+
+<<<
+
 === eBay
 
 [plantuml, format=png, opts="inline"]
@@ -1664,6 +1703,26 @@ eBay
   |_ Bearbeiten
 |_ Rücknahmebedingungen nach ElektroG
 end legend
+----
+
+<<<
+
+=== eMAG
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+eMAG
+|_ Datenaustausch
+  |_ Artikelexport
+    |_ Bearbeiten
+  |_ Angebotsaktualisierung
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+|_ Einstellungen
+  |_ Bearbeiten
 ----
 
 <<<
@@ -1946,6 +2005,51 @@ end legend
 
 <<<
 
+=== Shopify App
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+|_ Hilfe
+  |_ Bereitschaft prüfen
+    |_ Bearbeiten
+  |_ Exportbedingungen
+    |_ Bearbeiten
+  |_ Auftrags-ID finden
+    |_ Bearbeiten
+  |_ Artikelbereinigung
+    |_ Bearbeiten
+  |_ Artikelexport
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+  |_ Bestandsexport
+    |_ Bearbeiten
+----
+
+<<<
+
+=== Völkner
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+|_ Datenaustausch
+  |_ Datenexport
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+|_ Berichte
+  |_  Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
+----
+
+<<<
+
 === Yatego
 
 [plantuml, format=png, opts="inline"]
@@ -2070,6 +2174,7 @@ legend
 Dokumente
 |_ Dokumente
 |_ Dokumenteinstellungen
+|_ Dokumente zusammenfügen
 end legend
 ----
 
@@ -2120,15 +2225,21 @@ Gruppenfunktion (neue Auftrags-UI)
 |_ Status
 |_ Tags
 |_ Dokumente
+  |_ Korrektubeleg
   |_ Gutschrift
   |_ Lieferschein
+  |_ Mahnung
   |_ Gelangensbestätigung
   |_ Rechnung
   |_ Auftragsbestätigung
+  |_ Proformarechnung
+  |_ Reparaturschein
   |_ Rücksendeschein
   |_ Stornobeleg Rechnung
+  |_ Stornobeleg Mahnung
   |_ Stornobeleg Gutschrift
 |_ Aufträge gruppieren
+|_ Dokumente zusammenfügen
 |_ E-Mail
 end legend
 ----
@@ -2158,8 +2269,8 @@ end legend
 !include styles/tree-style.iuml
 legend
 Zahlung
+|_ Zahlung
 |_ Zahlungseinstellungen
-|_ Zahlungsverkehr anzeigen
 end legend
 ----
 
@@ -2187,6 +2298,14 @@ end legend
 legend
 Bestellungen
 |_ Bestellungen
+|_ Gruppenfunktion
+  |_ Gruppenfunktion
+  |_ Lieferdatum
+  |_ Abschlussdatum
+  |_ Bestelldatum
+  |_ Status
+  |_ Löschen
+  |_ E-Mail
 |_ Bestellungseinstellungen
 end legend
 ----
@@ -2239,12 +2358,17 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBI aufgelis
 legend
 plentyBI
 |_ Kennzahlen
+  |_ Arithmetik
+    |_ Konfigurieren
+    |_ Rohdaten anzeigen
   |_ plentyBI
   |_ CRM
+  |_ Artikel
   |_ Messenger
+  |_ Omni-Channel
   |_ Aufträge
+  |_ Zahlungen
   |_ Plugins
-  |_ Validierung
   |_ Verbrauch
 end legend
 ----
@@ -2276,10 +2400,27 @@ CRM
 |_ Kontakte
   |_ Konfigurieren
   |_ Rohdaten anzeigen
-|_ Opportunities
+end legend
+----
+
+<<<
+
+=== Artikel
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Artikel
+|_ Wareneingänge
   |_ Konfigurieren
   |_ Rohdaten anzeigen
-end legend
+|_ Artikel unter Meldebestand (Live)
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Listings (Live)
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
 ----
 
 <<<
@@ -2299,6 +2440,20 @@ end legend
 
 <<<
 
+=== Omni-Channel
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Omni-Channel
+|_ Marktplatz-Variantenvalidierung
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+----
+
+<<<
+
 === Aufträge
 
 [plantuml, format=png, opts="inline"]
@@ -2306,10 +2461,10 @@ end legend
 !include styles/tree-style.iuml
 legend
 Aufträge
-|_ Durchschschnittliche Auftragspositionen
+|_ Ø Anzahl an Auftragspositionen
   |_ Konfigurieren
   |_ Rohdaten anzeigen
-|_ Durchschnittlicher Bestellwert
+|_ Ø Bestellwert
   |_ Konfigurieren
   |_ Rohdaten anzeigen
 |_ Global
@@ -2324,7 +2479,7 @@ Aufträge
 |_ Aufträge
   |_ Konfigurieren
   |_ Rohdaten anzeigen
-|_ Aufträge (direkte Berechnung)
+|_ Aufträge (Live)
   |_ Konfigurieren
   |_ Rohdaten anzeigen
 |_ Retourenquote
@@ -2339,11 +2494,28 @@ Aufträge
 |_ Versandumsatz
   |_ Konfigurieren
   |_ Rohdaten anzeigen
+|_ Abonnement
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
 |_ Umsatzsteuer gesamt
   |_ Konfigurieren
   |_ Rohdaten anzeigen
 
 end legend
+----
+
+<<<
+
+=== Zahlungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Zahlungen
+|_ Zahlungen (Live)
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
 ----
 
 <<<
@@ -2376,7 +2548,7 @@ end legend
 !include styles/tree-style.iuml
 legend
 Verbrauch
-|_ Service Verbrauch
+|_ Service-Verbrauch
   |_ Rohdaten anzeigen
 |_ Verbrauch
   |_ Konfigurieren
@@ -2386,20 +2558,35 @@ end legend
 
 <<<
 
-=== Validierung
+== plentyWarehouse
 
 [plantuml, format=png, opts="inline"]
 ----
 !include styles/tree-style.iuml
 legend
-Validierung
-|_ Varianten
-  |_ Konfigurieren
-  |_ Rohdaten anzeigen
-end legend
+plentyWarehouse
+|_ Rollende Kommisionierung
+|_ Wareneingang
+  |_ Warenbezugskosten
+  |_ Einkaufspreis
+|_ Lagerort inspizieren
+  |_ Box lösen
+|_ Artikelsuche
+  |_ Barcode hinzufügen
+|_ Auftragsinformationen
+|_ Picklisten
+|_ Drucken
+  |_ Artikeletikett
+  |_ Lagerort-Barcode
+|_ Umbuchen
+|_ Verräumen
+|_ Einstellungen
+|_ Einzelkommissionierung
+|_ Bestandskorrektur
+|_ Inventur
 ----
 
-<<<
+<<<<
 
 == plentyBase-Einstellungen
 
@@ -2428,8 +2615,8 @@ Plugins
 |_ Plugins
 |_ Bereitstellen
 |_ Konfigurationen
-|_ plentyMarketplace
 |_ Plugin-Dateien
+|_ plentyMarketplace
 |_ Versionierung
 end legend
 ----
@@ -2515,7 +2702,7 @@ end legend
 
 <<<
 
-== Prozesse
+== Prozesse (Veraltet)
 
 In diesem Abschnitt werden die Berechtigungen für den Bereich Prozesse aufgelistet.
 
@@ -2524,8 +2711,8 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Prozesse aufgelis
 !include styles/tree-style.iuml
 legend
 Prozesse
-|_ Prozesse
-|_ Bearbeiten
+|_ Prozesse (Veraltet)
+|_ Bearbeiten (Veraltet)
 end legend
 ----
 
@@ -2570,8 +2757,8 @@ In diesem Abaschnitt werden die Berechtigungen für den Bereich Einrichtung aufg
 legend
 Einrichtung
 |_ Assistenten
-|_ Eigenschaft
 |_ Sprache
+|_ Eigenschaft
 |_ Tag
   |_ Tag
   |_ Tag-Verknüpfung
@@ -2831,19 +3018,6 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Benutzer aufgelis
 legend
 Benutzer
 |_ Konfigurieren
-end legend
-----
-
-<<<
-
-=== Container-Verknüpfungen
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Container-Verknüpfungen
-|_ Anzeigen
 end legend
 ----
 

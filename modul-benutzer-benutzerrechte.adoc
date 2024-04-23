@@ -10,7 +10,7 @@ Folgende Benutzerzugänge gibt es in plentysystems:
  * Administrator
  * Nur API-Benutzer
 
-Jeder Benutzerzugang ist mit den Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Benutzern werden Rechte durch Rollen zugewiesen. Die gleiche Rolle kann mehreren Benutzern zugewiesen werden. Die Vergabe von Rollen wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/business-entscheidungen/benutzerkonten-zugaenge#105[Benutzerkonten und Zugänge^] beschrieben. +
+Jeder Benutzerzugang ist mit den Rechten versehen, die in den folgenden Kapiteln näher beschrieben werden. Benutzern werden Rechte durch Rollen zugewiesen. Die gleiche Rolle kann mehreren Benutzern zugewiesen werden. Die Vergabe von Rollen wird detailliert im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/benutzerkonten-zugaenge.html#110[Benutzerkonten und Zugänge^] beschrieben. +
 
 === Benutzerzugang Administrator
 
