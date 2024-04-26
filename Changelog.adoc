@@ -9,6 +9,8 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V9.1 |Anhang Rest-Berechtigungen |26.04.2024 |Geändert: Es wurden neue Rest-Berechtigungen hinzugefügt und bestehende angepasst.
+|V9.1 |Login |26.04.2024 |Geändert: Die Sessiondauer des zentralen Logins wurde angepasst.
 |V9.0 |Allgemein |17.04.2024 |Geändert: In allen Bereichen wurde der Name des ERP-Systems von "plentymarkets" zu "plentysystems" geändert.
 |V9.0 |Editionsübersicht |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu plentysystems Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
 |V9.0 |Messenger |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
