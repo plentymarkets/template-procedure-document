@@ -17,120 +17,214 @@ Folgende Herkünfte sind standardmäßig in jedem plentysystems System vorangele
 [[tabelle-systemherkünfte]]
 .Systemherkünfte
 |===
-|ID|Name|Verwendung|Erstellung|Entfernt|Kommentar
+|ID|Name
 
-|0.00|Manuelle Eingabe|Auftrag|11.11.2013||
-|1.00|Mandant (Shop)|Auftrag|11.11.2013||
-|2.00|eBay|Auftrag|26.10.2012|13.10.2014|
-|2.00|eBay|Filter|18.11.2014||
-|2.01|eBay United States|Auftrag|09.12.2014||
-|2.02|eBay Canada (English)|Auftrag|09.12.2014||
-|2.03|eBay UK|Auftrag|09.12.2014||
-|2.04|eBay Australia|Auftrag|09.12.2014||
-|2.05|eBay Austria|Auftrag|09.12.2014||
-|2.06|eBay Belgium (French)|Auftrag|09.12.2014||
-|2.07|eBay France|Auftrag|09.12.2014||
-|2.08|eBay Germany|Auftrag|09.12.2014||
-|2.09|eBay Motors|Auftrag|09.12.2014||
-|2.10|eBay|Auftrag|13.10.2014|18.11.2014|
-|2.10|eBay Italy|Auftrag|09.12.2014||
-|2.11|eBay Belgium(Dutch)|Auftrag|09.12.2014||
-|2.12|eBay Netherlands|Auftrag|09.12.2014||
-|2.13|eBay Spain|Auftrag|09.12.2014||
-|2.14|eBay Switzerland|Auftrag|09.12.2014||
-|2.15|eBay Hong Kong|Auftrag|09.12.2014||
-|2.16|eBay India|Auftrag|09.12.2014||
-|2.17|eBay Ireland|Auftrag|09.12.2014||
-|2.18|eBay Malaysia|Auftrag|09.12.2014||
-|2.19|eBay Canada (French)|Auftrag|09.12.2014||
-|2.20|eBay Philippines|Auftrag|09.12.2014||
-|2.21|eBay Poland|Auftrag|09.12.2014||
-|2.22|eBay Singapore|Auftrag|09.12.2014||
-|3.00|Elmar|Auftrag|11.11.2013||
-|4.00|Amazon|Filter|26.10.2012||früher auch als Auftragsherkunft
-|4.01|Amazon Germany|Auftrag|12.12.2014||
-|4.02|Amazon UK|Auftrag|12.12.2014||
-|4.03|Amazon USA|Auftrag|12.12.2014||
-|4.04|Amazon France|Auftrag|12.12.2014||
-|4.05|Amazon Italy|Auftrag|12.12.2014||
-|4.06|Amazon Spain|Auftrag|12.12.2014||
-|4.20|Amazon B2B|Auftrag|14.09.2016|20.09.2016|
-|4.21|Amazon Germany B2B|Auftrag|14.09.2016||
-|4.22|Amazon UK B2B|Auftrag|31.05.2017||
-|5.00|Yatego|Auftrag|26.10.2012||
-|6.00|Kelkoo|Auftrag|11.11.2013||
-|7.00|Google Products|Auftrag|11.11.2013||
-|8.00|Auvito|Unbekannt|26.10.2012||
-|101.00|Ricardo|Auftrag|26.10.2012||
-|102.00|real.de|Auftrag|20.06.2013||früher Hitmeister
-|103.00|Kassensystem|Auftrag|11.11.2013||
-|104.00|Amazon FBA|Filter|11.11.2013||
-|104.01|Amazon FBA Germany|Auftrag|12.12.2014||
-|104.02|Amazon FBA UK|Auftrag|12.12.2014||
-|104.03|Amazon FBA USA|Auftrag|12.12.2014||
-|104.04|Amazon FBA France|Auftrag|12.12.2014||
-|104.05|Amazon FBA Italy|Auftrag|12.12.2014||
-|104.06|Amazon FBA Spain|Auftrag|12.12.2014||
-|104.20|Amazon FBA B2B|Auftrag|14.09.2016|20.09.2016|
-|104.21|Amazon FBA Germany B2B|Auftrag|14.09.2016||
-|104.22|Amazon FBA UK B2B|Auftrag|31.05.2017||
-|105.00|Zentralverkauf|Auftrag|26.10.2012||Marktplatz geschlossen seit 31.01.2014
-|105.00|Shopzilla|Merkmal|26.07.2017||
-|106.00|Rakuten.de|Auftrag|11.11.2013||
-|106.02|Rakuten.co.uk|Auftrag|18.05.2015||Marktplatz geschlossen seit 31.08.2016
-|107.00|Neckermann.de Enterprise|Auftrag|26.10.2012||Keine technische Anbindung vorhanden* (Insolvenz 01.10.2012)
-|108.00|Otto|Auftrag|26.10.2012||
-|108.02|Otto Integration|Auftrag|05.05.2015||
-|109.00|Shopgate|Auftrag|26.10.2012||
-|110.00|Allyouneed|Auftrag|26.10.2012|01.12.2018|früher MeinPaket
-|111.00|Gimahhot|Auftrag|26.10.2012||Marktplatz geschlossen und übergegangen in Yatego
-|112.00|Shopperella|Auftrag|26.10.2012|27.04.2017|Geschlossen bzw. Insolvenz seit Juni 2011
-|112.00|billiger.de|Auftrag|27.04.2017||
-|113.00|Shopshare|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
-|114.00|Quelle|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
-|115.00|Restposten|Auftrag|26.10.2012||
-|116.00|Kauflux|Auftrag|26.10.2012||
-|117.00|Home24|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
-|118.00|Zalando|Auftrag|26.10.2012||
-|119.00|Neckermann.at Enterprise|Auftrag|26.10.2012||
-|120.00|Neckermann.at Cross-Docking|Auftrag|26.10.2012||
-|121.00|Idealo|Auftrag|26.10.2012||
-|121.02|Idealo Direktkauf|Auftrag|14.07.2016||
-|122.00|La Redoute|Auftrag|26.10.2012||
-|123.00|Laary|Auftrag|26.10.2012||Keine technische Anbindung vorhanden*
-|124.00|SumoNet|Auftrag|26.10.2012||früher SumoScout, Abgeschaltet 30.09.2016
-|125.00|Hood|Auftrag|26.10.2012||
-|126.00|ParfumDEAL|Auftrag|26.10.2012||Marktplatz geschlossen und übergang zu Gimahhot
-|127.00|BeezUP|Auftrag|16.11.2012||
-|128.00|Google Shopping DE|Merkmal|15.01.2013||
-|129.00|Google Shopping Int.|Merkmal|15.01.2013||
-|130.00|Tracdelight|Auftrag|26.03.2013||
-|131.00|Plus.de|Auftrag|16.09.2013||
-|132.00|GartenXXL.de|Auftrag|16.09.2013||
-|133.00|Twenga|Auftrag|25.09.2013||
-|134.00|Play.com|Auftrag|21.10.2013||Keine technische Anbindung*
-|134.00|SporTrade|Auftrag|24.10.2013||Keine technische Anbindung vorhanden*, Insolvenz Februar 2014
-|135.00|Newsletter2Go|Auftrag|24.10.2013||
-|136.00|Play.com|Auftrag|24.10.2013||Marktplatz am 23.05.2015 zu Rakuten.co.uk
-|137.00|Grosshandel.eu|Auftrag|05.11.2013||
-|138.00|Hertie|Auftrag|03.12.2013||
-|139.00|CouchCommerce|Auftrag|29.01.2014||Keine technische Anbindung vorhanden*
-|140.00|Pixmania|Merkmal|28.02.2014||
-|141.00|Schuhe.de|Merkmal|12.05.2014||
-|142.00|MyBestBrands|Merkmal|04.08.2014||
-|143.00|Cdiscount|Auftrag|12.08.2014||
-|143.02|Cdiscount C Logistique|Auftrag|19.08.2016||
-|144.00|DaWanda|Auftrag|13.10.2014||
-|145.00|Fruugo|Auftrag|12.02.2015||
-|146.00|Shopping24|Merkmal|02.07.2015||
-|147.00|Flubit|Auftrag|20.07.2015||
-|148.00|Web-API|Markierung|05.08.2015||
-|149.00|Mercateo|Auftrag|10.08.2015||
-|150.00|Check24|Auftrag|01.06.2016||
-|153.00|billiger.de|Auftrag|24.04.2017|27.04.2017|
-|152.00|BOL.com|Auftrag|01.09.2016||
-|204.00|Amazon B2B|Auftrag|07.09.2016|14.09.2016|
-|204.01|Amazon Germany B2B|Auftrag|07.09.2016|14.09.2016|
+|0.00|Manuelle Eingabe
+|1.00|Mandant (Shop)
+|2.00|eBay
+|2.01|eBay United States
+|2.02|eBay Canada (English)
+|2.03|eBay UK
+|2.04|eBay Australia
+|2.05|eBay Austria
+|2.06|eBay Belgium (French)
+|2.07|eBay France
+|2.08|eBay Germany
+|2.09|eBay Motors
+|2.10|eBay Italy
+|2.11|eBay Belgium(Dutch)
+|2.12|eBay Netherlands
+|2.13|eBay Spain
+|2.14|eBay Switzerland
+|2.15|eBay Hong Kong
+|2.16|eBay India
+|2.17|eBay Ireland
+|2.18|eBay Malaysia
+|2.19|eBay Canada (French)
+|2.20|eBay Philippines
+|2.21|eBay Poland
+|2.22|eBay Singapore
+|3.00|Elmar
+|4.00|Amazon
+|4.01|Amazon Germany
+|4.02|Amazon UK
+|4.03|Amazon USA
+|4.04|Amazon France
+|4.05|Amazon Italy
+|4.06|Amazon Spain
+|4.07|Amazon Canada
+|4.08|Amazon Mexico
+|4.09|Amazon Netherlands
+|4.11|Amazon Poland
+|4.12|Amazon Sweden
+|4.13|Amazon Turkey
+|4.14|Amazon United Arab Emirates (U.A.E)
+|4.15|Amazon Belgium
+|4.21|Amazon Germany B2B
+|4.22|Amazon UK B2B
+|4.24|Amazon FR B2B
+|4.25|Amazon IT B2B
+|4.26|Amazon ES B2B
+|5.00|Yatego
+|6.00|Kelkoo
+|7.00|Google Products
+|101.00|Ricardo
+|102.00|Kaufland
+|102.01|Kaufland DE
+|102.02|Kaufland CZ
+|102.03|Kaufland SK
+|103.00|Kassensystem
+|104.00|Amazon FBA
+|104.01|Amazon FBA Germany
+|104.02|Amazon FBA UK
+|104.03|Amazon FBA USA
+|104.04|Amazon FBA France
+|104.05|Amazon FBA Italy
+|104.06|Amazon FBA Spain
+|104.07|Amazon FBA Canada
+|104.08|Amazon FBA Mexico
+|104.09|Amazon FBA Netherlands
+|104.11|Amazon FBA Poland
+|104.12|Amazon FBA Sweden
+|104.13|Amazon FBA Turkey
+|104.14|Amazon FBA United Arab Emirates (U.A.E)
+|104.15|Amazon FBA Belgium
+|104.21|Amazon FBA Germany B2B
+|104.22|Amazon FBA UK B2B
+|104.24|Amazon FBA FR B2B
+|104.25|Amazon FBA IT B2B
+|104.26|Amazon FBA ES B2B
+|105.00|Zentralverkauf
+|106.00|Rakuten.de
+|107.00|Neckermann.de Enterprise
+|108.00|Otto Cooperation
+|108.02|Otto Integration
+|108.03|Otto Direktversand
+|108.04|Otto PreDropshipment
+|109.00|Shopgate
+|112.00|Shopperella
+|115.00|Restposten
+|116.00|Kauflux
+|117.00|Home24
+|118.00|Zalando MAIN
+|118.01|Zalando DE
+|118.02|Zalando NL
+|118.03|Zalando FR
+|118.04|Zalando IT
+|118.05|Zalando UK
+|118.06|Zalando AT
+|118.07|Zalando CH
+|118.08|Zalando PL
+|118.09|Zalando BE
+|118.10|Zalando SE
+|118.11|Zalando FI
+|118.12|Zalando DK
+|118.13|Zalando ES
+|118.14|Zalando NO
+|118.15|Zalando CZ
+|118.16|Zalando IE
+|118.17|Zalando PT
+|118.18|Zalando SK
+|118.19|Zalando SI
+|118.20|Zalando LT
+|118.21|Zalando LV
+|118.22|Zalando EE
+|118.23|Zalando HR
+|118.24|Zalando HU
+|118.25|Zalando RO
+|119.00|NeckermannATEP
+|120.00|NeckermannATCD
+|121.00|Idealo
+|121.02|Idealo Direktkauf
+|122.00|La Redoute
+|124.00|SumoScout
+|125.00|Hood
+|127.00|BeezUP
+|130.00|Tracdelight
+|131.00|Plus.de
+|133.00|Twenga
+|135.00|Newsletter2GO
+|137.00|Grosshandel.eu
+|138.00|Hertie
+|143.00|Cdiscount
+|143.02|Cdiscount.com C Logistique
+|145.00|Fruugo
+|147.00|Flubit
+|148.00|Web-API
+|149.00|Mercateo
+|150.00|Check24
+|152.00|BOL.com
+|152.01|BOL.com FBB
+|154.00|Netto
+|156.00|Etsy
+|160.00|OTTO
+|160.10|OTTO market
+|161.00|ebay Fulfillment by Orange Connex
+|162.00|Shopify App
+|169.00|eMAG
+|169.01|eMAG Romania
+|169.02|eMAG Bulgaria
+|169.03|eMAG Hungary
+|170.00|Kaufland FBK
+|170.01|Kaufland DE FBK
+|170.02|Kaufland CZ FBK
+|170.03|Kaufland SK FBK
+|171.00|Marktkauf
+|172.00|Zalando ZFS
+|172.01|Zalando ZFS DE
+|172.02|Zalando ZFS NL
+|172.03|Zalando ZFS FR
+|172.04|Zalando ZFS IT
+|172.05|Zalando ZFS UK
+|172.06|Zalando ZFS AT
+|172.07|Zalando ZFS CH
+|172.08|Zalando ZFS PL
+|172.09|Zalando ZFS BE
+|172.10|Zalando ZFS SE
+|172.11|Zalando ZFS FI
+|172.12|Zalando ZFS DK
+|172.13|Zalando ZFS ES
+|172.14|Zalando ZFS NO
+|172.15|Zalando ZFS CZ
+|172.16|Zalando ZFS IE
+|172.17|Zalando ZFS PT
+|172.18|Zalando ZFS SK
+|172.19|Zalando ZFS SI
+|172.20|Zalando ZFS LT
+|172.21|Zalando ZFS LV
+|172.22|Zalando ZFS EE
+|172.23|Zalando ZFS HR
+|172.24|Zalando ZFS HU
+|172.25|Zalando ZFS RO
+|173.00|Decathlon
+|173.01|Decathlon Germany
+|173.02|Decathlon Belgium
+|173.03|Decathlon France
+|173.04|Decathlon Italy
+|173.05|Decathlon Great Britain
+|173.06|Decathlon Czechia
+|173.07|Decathlon Switzerland
+|173.08|Decathlon Poland
+|173.09|Decathlon Spain
+|173.10|Decathlon Hungary
+|173.11|Decathlon Portugal
+|173.12|Decathlon Netherlands
+|173.13|Decathlon Romania
+|174.00|Decathlon Fulfillment
+|174.01|Decathlon Fulfillment Germany
+|174.02|Decathlon Fulfillment Belgium
+|174.03|Decathlon Fulfillment France
+|174.04|Decathlon Fulfillment Italy
+|174.05|Decathlon Fulfillment Great Britain
+|174.06|Decathlon Fulfillment Czechia
+|174.07|Decathlon Fulfillment Switzerland
+|174.08|Decathlon Fulfillment Poland
+|174.09|Decathlon Fulfillment Spain
+|174.10|Decathlon Fulfillment Hungary
+|174.11|Decathlon Fulfillment Portugal
+|174.12|Decathlon Fulfillment Netherlands
+|174.13|Decathlon Fulfillment Romania
+|175.00|Voelkner
 |===
 
 [NOTE]
@@ -593,30 +687,37 @@ Im System stehen dem Anwender 4 Mahnstufen zur Verfügung. Für jede Mahnstufe m
 
 Die Thematik Buchhaltung umfasst zum einen grundlegende Einstellungen, die getroffen werden müssen, zum Beispiel Umsatzsteuersätze einrichten. Sie umfasst zum anderen aber auch Funktionen wie zum Beispiel den Export von Buchhaltungsdaten. In diesem Unterkapitel werden sowohl die Einstellungsmöglichkeiten als auch die technischen Voraussetzungen und Funktionen beschrieben. Wie in anderen Modulen gilt auch hier, dass die Anwender über Einstellungen und Nutzung entscheiden.
 
-=== Grundeinstellungen
+=== Allgemeine Einstellungen
 
-Die im Folgenden beschriebenen Grundeinstellungen werden pro Mandant und Standort gewählt. Als Grundeinstellung sind dies gewählte Einstellungen, die für den jeweiligen Bereich Bestand haben, d.h. zum Beispiel vorausgewählt sind und somit auf Benutzeroberflächen in anderen Bereichen des Systems Auswirkungen haben. Die Einstellungen finden sich im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Grundeinstellungen*.
+Die im Folgenden beschriebenen allgemeinen Einstellungen werden pro Mandant und Standort gewählt. Als allgemeine Einstellungen sind dies gewählte Einstellungen, die für den jeweiligen Bereich Bestand haben, d.h. zum Beispiel vorausgewählt sind und somit auf Benutzeroberflächen in anderen Bereichen des Systems Auswirkungen haben. Die Einstellungen finden sich im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Allgemein*.
 
 [[tabelle-grundeinstellungen-buchhaltung]]
 [cols="1,3"]
-.Mandanten- und standortabhängige Grundeinstellungen Buchhaltung
+.Mandanten- und standortabhängige allgemeine Einstellungen
 |===
 |Einstellung|Erläuterung
 
-|Umsatzsteuer-ID|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. Diese Einstellung gilt nur für Lieferungen innerhalb der EU, für Standorte außerhalb der EU hat sie keine Auswirkung. +
-*Brutto-Rechnung*: Alle Rechnungen für innergemeinschaftliche Lieferungen werden brutto ausgestellt. +
-*Netto-Rechnung*: Rechnungen für Kunden, die eine Umsatzsteuer-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
+2+^|*Verwaltung der Mehrwertsteuer für Unternehmen*
+|Mehrwertsteuerbefreiung für Kleinunternehmen (nur Deutschland)|Es besteht die Möglichkeit, zu wählen, ob die Kleinunternehmerregelung greift.
+|Reverse-Charge-Verfahren|Beim Reverse-Charge-Verfahren (auch _Umkehr der Steuerschuldnerschaft_ oder _Abzugsverfahren_ genannt) handelt es sich um eine Sonderregelung der Umsatzsteuer. Wird das Verfahren angewendet, sind Leistungsempfänger umsatzsteuerpflichtig und nicht die leistende Händler bzw. das Unternehmen. +
+Das Reverse-Charge-Verfahren ist nur für B2B-Lieferungen anwendbar. +
+Wenn die Option ausgewählt ist, wird die Rechnung als Netto-Rechnung ausgestellt und der Hinweis zur Anwendung des Reverse-Charge-Verfahrens wird auf der Rechnung wiedergegeben. Der Hinweis muss vorher in der Dokumentvorlage für die Rechnung gespeichert werden.
+2+^|*Einstellungen für die Umsatzsteuer*
+|Beträge in Aufträgen, wo eine Umsatzsteuer-ID angegeben wird (innergemeinschaftliche Lieferungen)|Hier kann zwischen zwei Optionen gewählt werden: *Brutto* und *Netto*. +
+*Brutto*: Alle Rechnungen für innergemeinschaftliche Lieferungen werden brutto ausgestellt. +
+*Netto*: Rechnungen für Kunden, die eine Umsatzsteuer-ID, werden netto, d.h. ohne Umsatzsteuer ausgestellt. +
 Liegt die Lieferadresse des Kunden im selben Land, wie der Standort, wird für den Auftrag trotzdem Umsatzsteuer berechnet. Per Gesetz ist es jedoch zulässig, bei Kunden mit gültiger Umsatzsteuer-ID im europäischen Ausland auch bei einer deutschen Lieferadresse den Auftrag netto auszuführen, wenn dem Auftrag eine Gelangensbestätigung beigelegt wird. Daher gibt es in der Lieferanschrift im Auftrag und in den Kundendaten die Einstellung *Gelangensbestätigung*. Das Aktivieren im Auftrag bewirkt, dass die Gelangensbestätigung einmalig für diesen Auftrag angewendet wird. Das Aktivieren in den Kundendaten bewirkt, dass die Gelangensbestätigung immer bei dieser Lieferadresse des Kunden angewendet wird. Wird die Option Gelangensbestätigung aktiviert, werden Lieferungen ins EU-Ausland mit deutscher Lieferanschrift wie eine EU-Auslandssendung behandelt. Ob die Rechnung brutto oder netto ausgestellt wird, ist dann von den Einstellungen *Umsatzsteuer-ID* und *Ausfuhrlieferung* abhängig. Ist die Option Gelangensbestätigung nicht aktiviert, werden diese Aufträge brutto berechnet.
-|Ausfuhrlieferung|Aus einer Dropdown-Liste kann zwischen Brutto-Rechnung oder Netto-Rechnung gewählt werden. +
-*Netto-Rechnung*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese Einstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
-*Brutto-Rechnung*: Die Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzsteuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
-|Umsatzsteuer der Versandkosten auf Rechnung ausweisen|Die Auswahlmöglichkeit in der Dropdown-Liste besteht hier zwischen *Immer* oder *Nur Inland und EU*.
-|Kleinunternehmer (nur Deutschland)|Es besteht die Möglichkeit, ein Häkchen zu setzen, wenn die Kleinunternehmerregelung greift.
-|Anzahl Nachkommastellen bei Preisen|Hier wird ausgewählt, ob Preise im Auftrag mit *2* oder *4* Nachkommastellen ausgegeben werden. Bei der Auswahl *2* Nachkommastellen wird indirekt erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen. +
-Bei der Auswahl *4* Nachkommastellen, werden standardmäßig die Summen von Auftragspositionen gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, so dass es möglich bleibt, später auch nur die Gesamtbeträge zu runden. Wenn die nachfolgende Option *Nur Gesamtpreise runden* aktiviert wird, wird das standardmäßige Rundungsverhalten bei 4 Nachkommastellen aufgehoben und die Rundung kann zu einem späteren Zeitpunkt durchgeführt werden.
-|Nur Gesamtpreis runden|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrages. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift *Summen* aufgeführt werden. +
-Bei 2 Nachkommastellen hat das Aktivieren der Option keine Auswirkungen, da bereits der Einzelpreis gerundet wird. +
-Bei 4 Nachkommastellen werden ohne Aktivieren dieser Option die Summen der Auftragspositionen gerundet.
+|Beträge in Aufträgen für Ausfuhrlieferungen (Lieferung aus der EU in Drittland)|Hier kann zwischen zwei Optionen gewählt werden: *Brutto* und *Netto*. +
+*Netto*: Rechnungen für Ausfuhrlieferungen werden ohne Umsatzsteuer ausgestellt. Diese Einstellung wird jedoch ignoriert, wenn für das Ausfuhr-Lieferland Steuersätze eingetragen sind. In diesem Fall wird die Rechnung trotzdem brutto ausgestellt. +
+*Brutto*: Die Umsatzsteuer wird auf Rechnungen für Ausfuhrlieferungen ausgewiesen. Welcher Steuersatz angewendet wird, hängt davon ab, ob für das Ausfuhr-Lieferland ein Umsatzsteuersatz eingestellt wurde oder nicht. Wenn für das Ausfuhr-Lieferland Steuersätze eingestellt sind, werden diese verwendet. Wenn für das Ausfuhr-Lieferland keine Steuersätze eingestellt sind, wird der Steuersatz des Standortlandes angewendet.
+|Steuern auf die Versandkosten erheben|Die Auswahlmöglichkeit besteht hier zwischen *Immer* oder *Nur Inland und EU*.
+2+^|*Berechnungsmethode für Auftragsbeträge*
+|Zwei Nachkommastellen, alle Auftragsbeträge runden|Preise innerhalb von Aufträgen werden mit nur 2 Nachkommastellen gespeichert. Dadurch wird indirekt auch erreicht, dass der Einzelpreis gerundet wird. Die weitere Berechnung der Summen und des Rechnungsbetrages erfolgt dann basierend auf den gerundeten Einzelpreisen.
+|Vier Nachkommastellen, alle Auftragsbeträge runden|Preise innerhalb von Aufträgen werden mit 4 Nachkommastellen gespeichert. Wenn 4 Nachkommastellen gewählt werden, werden standardmäßig die Summen von Auftragsposition gerundet. Im Hintergrund werden die Summen jedoch ungerundet mit 4 Nachkommastellen gespeichert, sodass es möglich bleibt, später auch nur die Gesamtbeträge zu runden.
+|Zwei Nachkommastellen, nur Gesamtpreise runden|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrags. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift Summen aufgeführt werden.
+Bei 2 Nachkommastellen hat die Aktivierung dieser Option keine Auswirkungen, da bereits der Einzelpreis gerundet wird.
+|Vier Nachkommastellen, nur Gesamtpreise runden|Wenn diese Option aktiviert ist, wird das standardmäßige Runden bei 4 Nachkommastellen außer Kraft gesetzt und stattdessen können die Gesamtbeträge gerundet werden. Gesamtbeträge beziehen sich auf den Warenwert eines Auftrags. Bezogen auf die Dokumenteinstellungen einer Rechnung sind das die Werte, die unter der Überschrift Summen aufgeführt werden.
+Bei 4 Nachkommastellen werden ohne Aktivierung dieser Option die Summen der Auftragspositionen gerundet.
 |===
 
 *Zum Hintergrund der Preisberechnung bei plentysystems:*
@@ -629,7 +730,7 @@ Mithilfe der oben erläuterten Einstellungen lassen sich demzufolge folgende Res
 * Gerundete Auftragspositionssummen
 * Gerundete Gesamtbeträge
 
-=== Umsatzsteuereinstellungen
+=== Länderspezifische Umsatzsteuersätze
 
 Umsatzsteuereinstellungen werden für jeden Standort separat angelegt, sie sind also standortabhängig im System. Standorte sind notwendig für Firmensitze oder Versandländer. In plentysystems wird zwischen Standorten und Lieferländern, in denen man steuerpflichtig ist, unterschieden. Ein Standort ist sozusagen ein Firmensitz. +
 Standardmäßig sind 2 Standorte, Deutschland und United Kingdom, als Beispiele im System voreingerichtet. Für den Produktivbetrieb müssen jedoch eigene Standorte angelegt werden. Benötigt wird mindestens ein Standort. Weitere Standorte werden benötigt, wenn Niederlassungen in anderen Ländern bestehen. +
@@ -638,7 +739,7 @@ Zu den umsatzsteuerrelevanten Grundeinstellungen zählen Festlegungen zum Umgang
 
 Mindestens eine Steuerkonfiguration muss im System hinzugefügt werden, mit dieser kann auch in verschiedene Länder versendet werden. Sobald die Lieferschwelle für Lieferungen in andere EU-Länder überschritten wird, müssen Steuerkonfigurationen für diese Lieferländer hinzugefügt werden, damit die Steuerabgaben korrekt berechnet werden können. Standorte werden für Firmensitze hinzugefügt, das Land des Standortes wird mit den entsprechenden Steuerkonfigurationen für die korrekte Abrechnung hinzugefügt.
 
-Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
+Umsatzsteuersätze werden im System im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Länderspezifische Umsatzsteuersätze* eingerichtet. Dabei sind die folgenden Einstellungsmöglichkeiten gegeben:
 
 [[tabelle-einstellungen-umsatzsteuersätze]]
 [cols="1,3"]
@@ -653,7 +754,7 @@ Steuersatz B in % +
 Steuersatz C in % +
 Steuersatz D in % +
 Steuersatz E in % +
-Steuersatz F in % |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden könne, sind nur die die Buchhaltungssoftware Xero relevant.
+Steuersatz F in % |Beginnend mit dem höchsten und dann absteigend werden hier die entsprechenden Steuersätze eingetragen. Es können einer Konfiguration nachträglich keine Steuersätze hinzugefügt oder bestehende Einträge geändert werden. Die Namen, die in dieser Einstellung hinzugefügt werden können, sind nur die, die für die Buchhaltungssoftware Xero relevant sind.
 
 |Gültig ab|Das Datum, ab dem die Steuersätze gelten sollen.
 
@@ -661,19 +762,16 @@ Steuersatz F in % |Beginnend mit dem höchsten und dann absteigend werden hier d
 
 |Nur für digitale Artikel|Diese Option wird mit einem Häkchen aktiviert, wenn eine Steuerkonfiguration nur für digitale Artikel gelten soll. +
 Wenn für ein Lieferland bereits ein Steuersatz vorhanden ist, z.B. weil die Lieferschwelle überschritten wurde, muss kein weiterer Steuersatz nur für digitale Artikel angelegt werden, da der vorhandene Steuersatz verwendet wird.
-
-|Differenzbesteuerung|Hier wird angegeben, welcher Steuersatz für differenzbesteuerte Artikelpositionen in Rechnungen benutzt werden soll. Wenn kein Steuersatz ausgewählt ist, können differenzbesteuerte Artikelpositionen in Rechnungen nicht angezeigt werden. Diese Einstellung wird erst nach dem Speichern einer Konfiguration sichtbar. +
-Bei dieser Einstellung handelt es sich um eine ältere Sonderimplementierung, bei der der Steuersatz für den gesamten Betrag der differenzbesteuerten Artikelposition verwendet wird und nicht nur für die Differenz zwischen Verkaufs- und Einkaufspreis.
-
 |===
 
-=== Zolltarifnummern
+=== Buchungsschlüssel 
 
-Zolltarifnummern werden in plentysystems direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen Import befüllt werden.
+Die Buchungsschlüssel sind einzig für den DATEV-Export relevant. Buchungsschlüssel heißen bei DATEV Steuerschlüssel und dienen der korrekten Übertragung von Buchungsdaten. Die entsprechenden Daten erhalten Sie bei Ihrem Steuerbüro. 
+
 
 === Debitoren- und Erlöskonten
 
-In plentymarktes kann gewählt werden, anhand welches Kriteriums Forderungen Debitorenkonten zugeordnet werden. Es kann zum Beispiel der Nachname eines Debitors oder das Lieferland für die Zuordnung genutzt werden. Das Kriterium muss festgelegt werden, bevor die Konten eingetragen werden. Eingerichtet wird ein Debitorenkonto im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Debitorenkonten*. Folgende Einstellungsmöglichkeiten ergeben sich dort:
+In plentymarktes kann gewählt werden, anhand welches Kriteriums Forderungen Debitorenkonten zugeordnet werden. Es kann zum Beispiel der Nachname eines Debitors oder das Lieferland für die Zuordnung genutzt werden. Das Kriterium muss festgelegt werden, bevor die Konten eingetragen werden. Eingerichtet wird ein Debitorenkonto im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Debitorenkonten*. Folgende Einstellungsmöglichkeiten ergeben sich dort:
 
 [[tabelle-einstellungen-debitorenkonten]]
 [cols="1,3"]
@@ -681,26 +779,31 @@ In plentymarktes kann gewählt werden, anhand welches Kriteriums Forderungen Deb
 |===
 |Einstellung|Erläuterung
 
-|Standard-Debitorenkonto|Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debitorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Dazu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
+|*Standard-Debitorenkonto* |Das hier eingetragene Standard-Debitorenkonto wird verwendet, wenn kein anderes Debitorenkonto zutrifft oder eingerichtet wurde. Wenn im Kundendatensatz eines Kunden ein Debitorenkonto gespeichert wurde, wird dieses Debitorenkonto immer exportiert. Das Debitorenkonto wird in den Kundendaten hinterlegt, sobald es das erste Mal ermittelt wird. Dazu muss mindestens ein Umsatzexport ausgeführt werden, der die Debitorenkonten ausgibt, z.B. ein Finanzbuchhaltungs-Export (DATEV).
 
-|Speichere Debitorenkonto am Kundenstammdatensatz|Wird hier ein Häkchen gesetzt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Vergabe von Debitorenkonten* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkonto hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
+|*Speichere Debitorenkonto am Kundenstammdatensatz* |Wird hier *Ja* gewählt, wird im Kundendatensatz ein Debitorenkonto gespeichert, wenn noch keines gespeichert wurde. Das Debitorenkonto wird nach der eingestellten Option für *Automatische Zuordnung basierend auf* vergeben. Wenn zu dem gewählten Verfahren kein Debitorenkonto hinterlegt ist, wird das Standard-Debitorenkonto verwendet.
 
-|Automatische Vergabe von Debitorenkonten nach|Aus einer Dropdown-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
+|*Automatische Zuordnung basierend auf*|Aus einer Dropdown-Liste kann ein Kriterium zur Vergabe von Debitorenkonten gewählt werden. Es muss sichergestellt sein, dass je nach gewähltem Kriterium später auch die tatsächlichen Konten eingetragen werden. +
 *Anfangsbuchstabe*: Debitorenkonto wird anhand der Anfangsbuchstaben von Kundendaten zugeordnet. Welche Kundendaten und in welcher Reihenfolge berücksichtigt werden, werden in einer zweiten Dropdown-Liste bestimmt. +
-Die Reihenfolge *Firma, Nachname, Vorname* sorgt dafür, dass zuerst der Firmenname berücksichtigt wird. Wenn kein Firmenname eingetragen wurde, wird der Nachname berücksichtigt usw. +
 *Zahlungsart*: Das Debitorenkonto wird anhand der Zahlungsart eines Auftrages zugeordnet. +
 *Lieferland*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet. +
-*Lieferland, für Inland jedoch Zahlungsart*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Lieferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
+*Lieferland, Zahlungsart für Inland*: Das Debitorenkonto wird anhand des Lieferlandes eines Auftrages zugeordnet und wenn das Lieferland des Auftrages dem Land der Steuerkonfiguration entspricht, dann wird die Zahlungsart als weiteres Kriterium berücksichtigt.
 
-|Anfangsbuchstaben (A-Z bzw. 0-9 Debitorenkonto)|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
+|*Reihenfolge* |Kann zwischen *Firma, Nachname, Vorname*, *Nachname, Vorname, Firma* und *Nachname, Firma, Vorname* ausgewählt werden.
 
-|Lieferländer|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Lieferländern vergeben werden sollen.
+|*Anfangsbuchstabe* (A-Z bzw. 0-9 Debitorenkonto)|Hier werden Debitorenkonten eingetragen, die in Abhängigkeit der Anfangsbuchstaben verwendet werden sollen.
 
-|Zahlungsarten|Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Zahlungsarten vergeben werden sollen.
+|*Lieferländer* |Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Lieferländern vergeben werden sollen.
+
+|*Zahlungsarten* |Hier werden Debitorenkonten eingetragen, die nach im System eingerichteten Zahlungsarten vergeben werden sollen.
 
 |===
 
-Des Weiteren sind Erlöskonten einzurichten, um die Umsatzerlöse einem Konto zuzuordnen. Es besteht die Möglichkeit, für steuerpflichtige Erlöse pro Steuersatz ein Erlöskonto anzugeben sowie für umsatzsteuerfreie Erlöse. Die Einrichtung von Erlöskonten für steuerpflichtige Erlöse erfolgt ebenfalls im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Erlöskonten*. Erlöskonten für umsatzsteuerfreie Erlöse sind einzurichten unter im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung* im Tab *Konten* und dort im weiteren Tab *Umsatzsteuerfreie Erlöse*.
+Des Weiteren sind Erlöskonten einzurichten, um die Umsatzerlöse einem Konto zuzuordnen. Es besteht die Möglichkeit, für steuerpflichtige Erlöse pro Steuersatz ein Erlöskonto anzugeben sowie für umsatzsteuerfreie Erlöse. Die Einrichtung von Erlöskonten für steuerpflichtige Erlöse erfolgt ebenfalls im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Erlöskonten*. Erlöskonten für umsatzsteuerfreie Erlöse sind einzurichten unter im Menü *Einrichtung » Mandant » Mandant wählen » Standorte » Standort wählen » Buchhaltung » Umsatzsteuerfreie Erlöse*.
+
+=== Zolltarifnummern
+
+Zolltarifnummern werden in plentysystems direkt an den Varianten hinterlegt. Zur Abbildung einer unterschiedlichen Besteuerung eines Produktes bzw. einer Ware im Ausland, kann eine Zolltarifnummer in einem eigenen Bereich aber auch mit abweichenden Steuersätzen verknüpft werden. Dies dient der korrekten Besteuerung und somit auch der exakten Auftragsberechnung bei abweichender Besteuerung im Ausland. Voraussetzung für die Verknüpfung ist, dass bereits Umsatzsteuersätze im System hinterlegt wurden. In der Tabelle im Menü *Einrichtung » Mandant » Global » Zolltarifnummern* werden die Zolltarifnummern dann mit dem entsprechenden Land und Steuersatz verknüpft. Die Tabelle kann manuell oder durch einen Import befüllt werden.
 
 === Export
 
