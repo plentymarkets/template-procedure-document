@@ -41,7 +41,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |GoogleShopping Int.|[_Ja/Nein_]|
 |grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
 |Hood|[_Ja/Nein_]|
-|Kaufland.de|[_Ja/Nein_]|_früher real.de_
+|Kaufland|[_Ja/Nein_]|_früher real.de_
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
@@ -113,7 +113,7 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentysystems System kommen.
 |Hood Pay|Zahlungsart für Aufträge, die über HoodPay bezahlt wurden.
 |idealo|Zahlungsart für Aufträge, die über den Marktplatz idealo ins plentysystems System kommen.
-|Kaufland.de Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentysystems System kommen.
+|Kaufland Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentysystems System kommen.
 |Neckermann.at Payment|Zahlungsart für Aufträge, die über den Marktplatz Neckermann.at ins plentysystems System kommen.
 |Netto.de|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentysystems System kommen.
 |Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation, OTTO Integration und OTTO Market.
