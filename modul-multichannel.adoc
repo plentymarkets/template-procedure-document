@@ -41,7 +41,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |GoogleShopping Int.|[_Ja/Nein_]|
 |grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
 |Hood|[_Ja/Nein_]|
-|Kaufland.de|[_Ja/Nein_]|_früher real.de_
+|Kaufland|[_Ja/Nein_]|_früher real.de_
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
@@ -69,7 +69,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |Cdiscount|[_Ja/Nein_]
 |CHECK24|[_Ja/Nein_]
 |Google Shopping|[_Ja/Nein_]
-|idealo Direktkauf|[_Ja/Nein_]
+|idealo|[_Ja/Nein_]
 |Kauflux|[_Ja/Nein_]
 |===
 
@@ -112,8 +112,8 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 |Flubit|Zahlungsart für Aufträge, die über den Marktplatz Flubit ins plentysystems System kommen.
 |Fruugo|Zahlungsart für Aufträge, die über den Marktplatz Fruugo ins plentysystems System kommen.
 |Hood Pay|Zahlungsart für Aufträge, die über HoodPay bezahlt wurden.
-|idealo Direktkauf|Zahlungsart für Aufträge, die über den Marktplatz idealo Direktkauf ins plentysystems System kommen.
-|Kaufland.de Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentysystems System kommen.
+|idealo|Zahlungsart für Aufträge, die über den Marktplatz idealo ins plentysystems System kommen.
+|Kaufland Payment (Zahlung über real.de)|Zahlungsart für Aufträge, die über den Marktplatz Kaufland ins plentysystems System kommen.
 |Neckermann.at Payment|Zahlungsart für Aufträge, die über den Marktplatz Neckermann.at ins plentysystems System kommen.
 |Netto.de|Zahlungsart für Aufträge, die über den Marktplatz Netto ins plentysystems System kommen.
 |Otto Payment|Zahlungsart für die Schnittstellen OTTO Cooperation, OTTO Integration und OTTO Market.
@@ -158,7 +158,7 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |GoogleShopping Int.|Export über elastischen Export
 |grosshandel.eu|Im- und Export über SOAP-API
 |Hood|Im- und Export über REST-API mit XML-Dateien
-|idealo|Export über elastischen Export und REST-API mit JSON
+|idealo|Export über elastischen Export und REST-API mit JSON; Export über Kataloge
 |Kaufland|Im- und Export über REST-API mit CSV-Datei; Export über Kataloge
 |Kauflux|Export über elastischen Export; Export über Kataloge +
  Import über REST-API mit XML-Datei
