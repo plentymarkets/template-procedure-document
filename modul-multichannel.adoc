@@ -154,7 +154,7 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
  Import über FTP-Server mit XML-Datei
 |eBay|Im- und Export über REST-API mit XML-Dateien
 |Flubit|Im- und Export über REST-API mit JSON
-|Fruugo|Im- und Export über REST-API mit XML-Datei
+|Fruugo|Export über Kataloge
 |GoogleShopping Int.|Export über elastischen Export
 |grosshandel.eu|Im- und Export über SOAP-API
 |Hood|Im- und Export über REST-API mit XML-Dateien

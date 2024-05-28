@@ -1714,6 +1714,8 @@ end legend
 !include styles/tree-style.iuml
 legend
 eMAG
+|_ Einstellungen
+  |_ Bearbeiten
 |_ Datenaustausch
   |_ Artikelexport
     |_ Bearbeiten
@@ -1721,8 +1723,6 @@ eMAG
     |_ Bearbeiten
   |_ Auftragsimport
     |_ Bearbeiten
-|_ Einstellungen
-  |_ Bearbeiten
 ----
 
 <<<
@@ -2011,6 +2011,7 @@ end legend
 ----
 !include styles/tree-style.iuml
 legend
+|_ Migrationsassistent
 |_ Hilfe
   |_ Bereitschaft prüfen
     |_ Bearbeiten
