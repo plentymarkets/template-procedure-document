@@ -2011,6 +2011,7 @@ end legend
 ----
 !include styles/tree-style.iuml
 legend
+|_ Migrationsassistent
 |_ Hilfe
   |_ Bereitschaft prüfen
     |_ Bearbeiten
