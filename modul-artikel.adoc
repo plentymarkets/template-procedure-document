@@ -132,6 +132,8 @@ Alternativ können Anwender selbst entscheiden:
 In plentysystems werden jeweils beim Erstellen und Ändern von Artikel- und Variantendaten Zeitstempel erzeugt. Der Zeitstempel der letzten Änderung wird bei jeder Änderung der Daten entsprechend aktualisiert.
 Für Artikel sind diese Zeitstempel im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* zu finden, für Varianten im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: [Varianten-ID]*.
 
+Einige verknüpfte Entitäten haben einen eigenen Timestamp, der bei Änderungen aktualisiert wird. Timestamps sind nicht in der Variante sichtbar.
+
 ==== Sonstige Möglichkeiten
 
 Anwender können Änderungen an Artikel- und Variantendaten auch selbst erfassen und dokumentieren.
@@ -141,7 +143,7 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 
 * [_Beschreibung des Ablaufs im Unternehmen einfügen_]
 
-Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Systems plentysystems protokolliert und kann vom Benutzer nicht im System selbst nachvollzogen werden.
+Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Systems plentysystems protokolliert.
 
 === Preise
 ==== Was sind Verkaufspreise?
