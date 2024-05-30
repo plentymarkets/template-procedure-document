@@ -45,7 +45,6 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
-|OTTO|[_Ja/Nein_]|
 |OTTO market|[_Ja/Nein_]|
 |Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
 |ricardo.ch|[_Ja/Nein_]|
