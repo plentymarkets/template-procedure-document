@@ -1561,29 +1561,32 @@ end legend
 !include styles/tree-style.iuml
 legend
 Amazon
+|_ Einstellungen
+  |_ Bearbeiten
+|_ Neue Einstellungen
+  |_ Bearbeiten
+|_ Berichte
+  |_ Verarbeitung
+    |_ Bearbeiten
+  |_ Anfordern
+    |_ Bearbeiten
+|_ Frei definierbare Felder
+  |_ Bearbeiten
 |_ Kategorieverknüpfung
   |_ Bearbeiten
 |_ Datenaustausch
   |_ Datenexport
     |_ Bearbeiten
-  |_ FBA Warenbestand
-    |_ Bearbeiten
   |_ Auftragsimport
-    |_ Bearbeiten
-  |_ Berichte
     |_ Bearbeiten
   |_ Versandbestätigung
     |_ Bearbeiten
+  |_ Berichte
+    |_ Bearbeiten
+  |_ FBA Warenbestand
+    |_ Bearbeiten
 |_ ASIN-Verknüpfung
   |_ Bearbeiten  
-|_ Frei definierbare Felder
-  |_ Bearbeiten
-|_ Berichte
-  |_ Verarbeitungsstatus
-    |_ Verarbeitungsstatus
-    |_ Herunterladen 
-|_ Einstellungen
-  |_ Bearbeiten
 end legend
 ----
 

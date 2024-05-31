@@ -34,6 +34,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 
 |Amazon|[_Ja/Nein_]|
 |bol.com|[_Ja/Nein_]|
+|Cdiscount|[_Ja/Nein_]|
 |eBay|[_Ja/Nein_]|
 |Flubit|[_Ja/Nein_]|
 |Fruugo|[_Ja/Nein_]|
@@ -45,7 +46,6 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
-|OTTO|[_Ja/Nein_]|
 |OTTO market|[_Ja/Nein_]|
 |Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
 |ricardo.ch|[_Ja/Nein_]|
@@ -66,7 +66,6 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |===
 |Marktplatz|*In Verwendung*
 
-|Cdiscount|[_Ja/Nein_]
 |CHECK24|[_Ja/Nein_]
 |Google Shopping|[_Ja/Nein_]
 |idealo|[_Ja/Nein_]
