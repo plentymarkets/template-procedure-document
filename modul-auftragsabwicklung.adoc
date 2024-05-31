@@ -585,7 +585,7 @@ Die Werte, die in einem Auftrag hinterlegt sind, werden bei der Dokumentenerstel
 
 == Auftragsdokumente
 
-In plentysystems gibt es einige Dokumente, die im Zusammenhang mit der Auftragsabwicklung eingerichtet, erstellt und versendet werden können. Für jedes Dokument, das der Anwender nutzen möchte, muss er eine Vorlage erstellen. Die Gestaltung dieser Vorlage (z.B. Sprache, Schriftart, Seitenränder) steht dem Anwender frei. Es gibt jedoch einige Pflichtelemente, die bei der Einrichtung einer Dokumentenvorlage einzufügen sind. Eine Liste aller Pflichtelemente findest du in der Tabelle auf der folgenden Seite. Das System stellt außerdem eine Standard-Dokumentenvorlage zur Verfügung, die vom Anwender genutzt werden kann. +
+In plentysystems gibt es einige Dokumente, die im Zusammenhang mit der Auftragsabwicklung eingerichtet, erstellt und versendet werden können. Für jedes Dokument, das der Anwender nutzen möchte, muss er eine Vorlage erstellen. Über die Auftragseinstellungen legt der Anwender fest, für welche Art Auftrag eine Vorlage verwendet wird. Die Gestaltung dieser Vorlage (z.B. Sprache, Schriftart, Seitenränder) steht dem Anwender frei. Es gibt jedoch einige Pflichtelemente, die bei der Einrichtung bestimmter Dokumentenvorlagen einzufügen sind. Eine Liste aller Pflichtelemente findest du in der Tabelle auf der folgenden Seite. Für einige Dokumenttypen stellt das System außerdem Standardvorlagen zur Verfügung, die vom Anwender genutzt werden können. +
 Sobald für einen Auftrag steuerrelevante Dokumente (wie z.B. eine Rechnung oder Stornobelege) erzeugt wurden, kann dieser Auftrag nicht mehr gelöscht werden.
 
 Folgende Dokumente sind in plentysystems erstellbar:
@@ -600,10 +600,36 @@ Folgende Dokumente sind in plentysystems erstellbar:
 * Rücksendeschein
 * Gelangensbestätigung
 * SEPA-Lastschriftmandat
+
+
+* Abhollieferung
 * Adressetikett
-* Pickliste
-* Lager-Pickliste
+* Angebot
+* Auftragsbestätigung
+* Benutzerdefiniertes Auftragsdokument
+* Bestellschein
+* Gelangensbestätigung
+* Gutschrift
+* Korrekturbeleg
+* Lieferschein
+* Mahnung
 * Packliste
+* Pickliste
+* PO-Lieferschein
+* Proformarechnung
+* Rechnung
+* Reparaturschein
+* Rücksendeschein
+* Sammelgutschrift
+* SEPA-Lastschriftmandat
+* Stornobeleg Gutschrift
+* Stornobeleg Mahnung
+* Stornobeleg Rechnung
+* Wareneingangsbeleg
+
+
+*_Hinweis:_* Bei Vorlagen vom Typ Rechnung kann der Anwender über die Ausgabeeinstellungen die Vorlage so einrichten, dass sie Rechnungsdokumente im elektronischen Format (X-Rechnung oder Factur-X-Basic) generiert. Hier obliegt es dem Anwender sicherzustellen, dass auch die Rechnungsinhalte mit den gesetzlichen Anforderungen an E-Rechnungen konform sind.
+
 
 Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 
@@ -669,8 +695,8 @@ Folgende Pflichtelemente müssen auf jedem Dokument angezeigt werden:
 |====
 
 _Wichtig_: Rechnungsbedingende Auftragsdokumente und Rechnungsdokumente unterliegen einer *Aufbewahrungspflicht*. Die Aufbewahrung von sowie der Umgang mit den Dokumenten liegt in der Verantwortung des Anwenders. +
-Erstellte Dokumente und Belege eines Auftrages erhalten eine fortlaufende Nummer und sind im plentysystems Backend im Bereich *Dokumente* des jeweiligen Auftrages zu finden. Die Erstellung eines Dokumentes kann nicht rückgängig gemacht werden. Gelöscht werden können ausschließlich externe Dokumente. Für die Richtigkeit der Daten von externen Dokumenten ist der Anwender selbst verantwortlich. +
-In plentysystems erstellte Dokumente können im Bereich *Dokumente* archiviert werden und sind dann im Ordner *Archivierte Dokumente* zu finden. Auch hier können die erstellten Belege nicht gelöscht werden. Das Archivieren der Dokumente ermöglicht nicht nur Nachvollziehbarkeit, sondern auch eine Neuerstellung des Dokumentes. Ausgenommen von dieser Funktionsweise sind Dokumente, für die ein Stornobeleg erstellt werden muss, wie z.B. Rechnungen, Gutschriften und Mahnungen. Dies gewährleistet sowohl die Nachvollziehbarkeit als auch die Unveränderbarkeit von Rechnungsdokumenten.
+Erstellte Dokumente und Belege eines Auftrages erhalten über die Verknüpfung mit einem Nummernkreis eine fortlaufende Nummer und sind im plentysystems Backend im Bereich *Dokumente* des jeweiligen Auftrages zu finden. Die Erstellung eines Dokumentes kann nicht rückgängig gemacht werden. Gelöscht werden können ausschließlich externe Dokumente. Für die Richtigkeit der Daten von externen Dokumenten ist der Anwender selbst verantwortlich. +
+In plentysystems erstellte Dokumente werden im Menü *Daten » Dokumentenarchiv* archiviert. Auch hier können die erstellten Belege nicht gelöscht werden. Das Archivieren der Dokumente ermöglicht nicht nur Nachvollziehbarkeit, sondern auch eine Neuerstellung des Dokumentes. Ausgenommen von dieser Funktionsweise sind Dokumente, für die ein Stornobeleg erstellt werden muss, wie z.B. Rechnungen, Gutschriften und Mahnungen. Dies gewährleistet sowohl die Nachvollziehbarkeit als auch die Unveränderbarkeit von Rechnungsdokumenten.
 
 *Zu beachten:* Anstatt Dokumente in plentysystems zu erstellen, können auch externe Dokumente (wie z.B. eine externe Rechnung oder eine externe Gutschrift) hochgeladen und einem Auftrag zugeordnet werden. In diesem Fall kann vom System nicht gewährleistet werden, dass der Beleg dem richtigen Auftrag zugeordnet ist und auch nicht, dass die zugeordnete Zahlung mit Auftrag und Beleg übereinstimmt. Dies lässt sich systemseitig nicht überprüfen. Wurde ein externer Beleg zugeordnet und nicht im System erstellt, ist es danach nicht mehr möglich, den gleichen Beleg (z.B. bei zugeordneter externer Rechnung eine Rechnung aus plentysystems heraus) im System zu erstellen. So wird verhindert, dass nicht zwei Rechnungen oder Gutschriften für den gleichen Auftrag existieren.
 
