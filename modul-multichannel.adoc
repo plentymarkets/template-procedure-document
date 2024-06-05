@@ -35,6 +35,8 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |Amazon|[_Ja/Nein_]|
 |bol.com|[_Ja/Nein_]|
 |Cdiscount|[_Ja/Nein_]|
+|Conrad|[_Ja/Nein_]|
+|Decathlon|[_Ja/Nein_]|
 |eBay|[_Ja/Nein_]|
 |Flubit|[_Ja/Nein_]|
 |Fruugo|[_Ja/Nein_]|
@@ -43,6 +45,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
 |Hood|[_Ja/Nein_]|
 |Kaufland|[_Ja/Nein_]|_früher real.de_
+|Marktkauf|[_Ja/Nein_]|
 |Mercateo|[_Ja/Nein_]|
 |Neckermann.at|[_Ja/Nein_]|
 |Netto|[_Ja/Nein_]|
@@ -50,6 +53,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit plentysy
 |Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
 |ricardo.ch|[_Ja/Nein_]|
 |Shopgate|[_Ja/Nein_]|
+|Voelkner|[_Ja/Nein_]|
 |Yatego|[_Ja/Nein_]|
 |Zalando|[_Ja/Nein_]|
 |===
@@ -151,6 +155,10 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |Cdiscount|Im- und Export über SOAP-API mit XML-Datei
 |CHECK24|Export über elastischen Export; Export über Kataloge +
  Import über FTP-Server mit XML-Datei
+|Conrad|Import über REST-API mit XML-Dateien +
+Export über Kataloge
+|Decathlon|Import über REST-API mit XML-Dateien +
+Export über Kataloge
 |eBay|Im- und Export über REST-API mit XML-Dateien
 |Flubit|Im- und Export über REST-API mit JSON
 |Fruugo|Export über Kataloge
@@ -161,6 +169,7 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |Kaufland|Im- und Export über REST-API mit CSV-Datei; Export über Kataloge
 |Kauflux|Export über elastischen Export; Export über Kataloge +
  Import über REST-API mit XML-Datei
+|Marktkauf|Im- und Export über FTP-Server mit XML-Datei
 |Mercateo|Export über FTP-Server mit XML-Datei +
  Import über E-Mail
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
@@ -171,6 +180,8 @@ Export über Kataloge
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
 |Shopgate|Im- und Export über REST-API mit CSV-Datei
+|Voelkner|Import über REST-API mit XML-Dateien +
+Export über Kataloge
 |Yatego|Export über FTP-Server mit CSV-Datei +
  Import über REST-API
 |Zalando|Im- und Export über REST-API mit XML-Datei

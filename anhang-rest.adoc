@@ -1660,14 +1660,14 @@ end legend
 !include styles/tree-style.iuml
 legend
 Decathlon
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
 |_ Datenaustausch
   |_ Datenexport
     |_ Bearbeiten
   |_ Auftragsimport
     |_ Bearbeiten
-|_ Einstellungen
-|_ Katalog-Vorlagen
-  |_ Bearbeiten
 end legend
 ----
 
@@ -2040,16 +2040,16 @@ legend
 ----
 !include styles/tree-style.iuml
 legend
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
+|_ Berichte
+  |_  Bearbeiten
 |_ Datenaustausch
   |_ Datenexport
     |_ Bearbeiten
   |_ Auftragsimport
     |_ Bearbeiten
-|_ Berichte
-  |_  Bearbeiten
-|_ Einstellungen
-|_ Katalog-Vorlagen
-  |_ Bearbeiten
 ----
 
 <<<
