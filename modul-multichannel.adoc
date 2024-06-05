@@ -165,6 +165,7 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |Kaufland|Im- und Export über REST-API mit CSV-Datei; Export über Kataloge
 |Kauflux|Export über elastischen Export; Export über Kataloge +
  Import über REST-API mit XML-Datei
+|Marktkauf|Im- und Export über FTP-Server mit XML-Datei
 |Mercateo|Export über FTP-Server mit XML-Datei +
  Import über E-Mail
 |Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
