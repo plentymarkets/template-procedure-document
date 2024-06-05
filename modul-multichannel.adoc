@@ -155,6 +155,8 @@ Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzog
 |Cdiscount|Im- und Export über SOAP-API mit XML-Datei
 |CHECK24|Export über elastischen Export; Export über Kataloge +
  Import über FTP-Server mit XML-Datei
+|Decathlon|Import über REST-API mit XML-Dateien +
+Export über Kataloge
 |eBay|Im- und Export über REST-API mit XML-Dateien
 |Flubit|Im- und Export über REST-API mit JSON
 |Fruugo|Export über Kataloge
@@ -176,6 +178,8 @@ Export über Kataloge
 |Restposten.de|Im- und Export über SOAP-API
 |ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
 |Shopgate|Im- und Export über REST-API mit CSV-Datei
+|Voelkner|Import über REST-API mit XML-Dateien +
+Export über Kataloge
 |Yatego|Export über FTP-Server mit CSV-Datei +
  Import über REST-API
 |Zalando|Im- und Export über REST-API mit XML-Datei
