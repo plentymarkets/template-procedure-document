@@ -826,9 +826,11 @@ plentyPOS bietet umfassende Berichtsfunktionen. Folgende Berichte können erstel
 
 === Zwischenberichte (X-Berichte)
 
-Zwischenberichte zeigen eine Auflistung der Umsätze über die Kasse seit dem letzten Tagesabschluss. In plentyPOS können jederzeit und link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#220[beliebig viele Zwischenberichte erstellt werden^].
+Zwischenberichte zeigen eine Auflistung der Barbestände und der Umsätze über die Kasse seit dem letzten Tagesabschluss. Die Erstellung von Zwischenberichten ist mit einem Recht verknüpft. Benutzern, denen das globale Rollen-Template "Kassierer" zugewiesen wird, ist es nicht möglich, Zwischenberichte zu erstellen. 
 
-Zwischenberichte sind kein gültiger Nachweis gegenüber dem Finanzamt und werden daher weder in der plentymarkets App noch im ERP-System plentysystems gespeichert. Sie werden daher auch keinem Nummernkreis zugeordnet.
+In plentyPOS können jederzeit und link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#220[beliebig viele Zwischenberichte erstellt werden^].
+
+Zwischenberichte sind kein gültiger Nachweis gegenüber dem Finanzamt und werden daher weder in der plentymarkets App noch im ERP-System plentysystems gespeichert. Sie werden daher auch keinem Nummernkreis zugeordnet. Dadurch lässt sich nicht nachvollziehen, ob vor einem Tagesabschluss ein Zwischenbericht gedruckt wurde. Die Rolle "Kassierer" sichert ab, dass die Barbestände von Benutzern mit dieser Rolle nicht vor Tagesabschluss eingesehen werden können.
 
 Im Unternehmen wird mit den Ausdrucken von Zwischenberichten wie folgt verfahren:
 
