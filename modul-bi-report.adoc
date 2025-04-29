@@ -1,6 +1,6 @@
 = Fachliche und technische Beschreibung des Moduls plentyBI
 
-Das Modul plentyBI von plentysystems erlaubt den Abruf, die Speicherung und die visuelle Darstellung von unternehmerischen Kennzahlen des Systems.
+Das Modul plentyBI von PlentyONE erlaubt den Abruf, die Speicherung und die visuelle Darstellung von unternehmerischen Kennzahlen des Systems.
 
 == Rohdaten
 
@@ -8,7 +8,7 @@ Grundlage für den Abruf und die Zusammenstellung der Datengrundlage für Kennza
 
 Rohdaten werden im Hintergrund und im Regelfall nachts ermittelt. Anwender haben auf diesen Ermittlungsprozess keinen direkten Zugriff oder Einfluss, können aber festlegen, welche Rohdaten abgelegt werden sollen. Rohdaten werden begrenzt gespeichert, je nachdem, welche plentyBI Edition für das System gebucht wurde. Hierbei ist zu beachten, dass Rohdaten immer mindestens 6 Monate, Berechnungsergebnisse immer für mindestens 12 Monate verfügbar sind. Weitere Details dazu sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html#_datenformat_creator[Reports verwalten^] festgehalten.
 
-Nachdem die Generierung von Rohdaten abgeschlossen ist, können die Dateien per REST-API abgerufen und extern weiterbearbeitet werden. Rohdatendateien werden als per GZIP (RFC 1952) komprimierte CSV-Dateien geliefert, wobei als Spaltentrennzeichen ein Komma verwendet wird. Auf die Weiterarbeitung hat plentysystems keinen Einfluss. Anwender entscheiden selbst, wie und mit welchen zusätzlichen Softwarelösungen Rohdaten ausgelesen und ggf. weiterverarbeitet werden. Weitere Informationen zu Rohdaten und Abrufmöglichkeiten sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html[Reports verwalten^] beschrieben.
+Nachdem die Generierung von Rohdaten abgeschlossen ist, können die Dateien per REST-API abgerufen und extern weiterbearbeitet werden. Rohdatendateien werden als per GZIP (RFC 1952) komprimierte CSV-Dateien geliefert, wobei als Spaltentrennzeichen ein Komma verwendet wird. Auf die Weiterarbeitung hat PlentyONE keinen Einfluss. Anwender entscheiden selbst, wie und mit welchen zusätzlichen Softwarelösungen Rohdaten ausgelesen und ggf. weiterverarbeitet werden. Weitere Informationen zu Rohdaten und Abrufmöglichkeiten sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/reports-verwalten.html[Reports verwalten^] beschrieben.
 
 Ergänzen Sie die folgende Tabelle. Das Unternehmen nutzt folgende externe Softwarelösungen zur Auswertung und Weiterverarbeitung von Rohdaten. Diese Lösungen haben die folgenden Namen:
 
@@ -30,11 +30,11 @@ Ergänzen Sie die folgende Tabelle. Das Unternehmen nutzt folgende externe Softw
 
 == Kennzahlen
 
-Kennzahlen sind Konfigurationen, die von Anwendern innerhalb des plentysystems Systems zusammengestellt werden können, um die zugrundeliegenden Rohdaten weiter aufzubereiten und schließlich im Menü *plentysystems Logo (Start) » Dashboard* visuell darzustellen.
+Kennzahlen sind Konfigurationen, die von Anwendern innerhalb des PlentyONE Systems zusammengestellt werden können, um die zugrundeliegenden Rohdaten weiter aufzubereiten und schließlich im Menü *PlentyONE Logo (Start) » Dashboard* visuell darzustellen.
 
-plentysystems stellt verschiedene Kennzahltypen bereit, auf deren Basis Anwender im Menü *Einrichtung » plentyBI » Kennzahlen* eigene Konfigurationen erstellen können. Pro Kennzahl stehen vielfältige Filtermöglichkeiten zur Verfügung, mit denen die Ergebnisse je nach Bedürfnis des Anwenders eingegrenzt werden können. Eine Auflistung aller verfügbaren Kennzahltypen ist auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/kennzahlen.html[Kennzahlen^] zu finden. Die Anzahl der maximal möglichen Konfigurationen pro System richten sich nach der <<#_plentyBI, plentyBI Edition>>, die für das System gebucht wurde.
+PlentyONE stellt verschiedene Kennzahltypen bereit, auf deren Basis Anwender im Menü *Einrichtung » plentyBI » Kennzahlen* eigene Konfigurationen erstellen können. Pro Kennzahl stehen vielfältige Filtermöglichkeiten zur Verfügung, mit denen die Ergebnisse je nach Bedürfnis des Anwenders eingegrenzt werden können. Eine Auflistung aller verfügbaren Kennzahltypen ist auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/business-entscheidungen/kennzahlen.html[Kennzahlen^] zu finden. Die Anzahl der maximal möglichen Konfigurationen pro System richten sich nach der <<#_plentyBI, plentyBI Edition>>, die für das System gebucht wurde.
 
-plentysystems stellt so genannte Standard-Kennzahlkonfigurationen bereit, die von allen Anwendern unabhängig von der BI-Edition genutzt werden können. Diese Standard-Kennzahlkonfigurationen können jedoch nicht von Anwendern bearbeitet oder geändert werden. Die Standardkennzahlen sind im Menü *Einrichtung » plentyBI » Kennzahlen* dadurch erkennbar, dass als Ersteller *plentymarkets* angegeben ist. 
+PlentyONE stellt so genannte Standard-Kennzahlkonfigurationen bereit, die von allen Anwendern unabhängig von der BI-Edition genutzt werden können. Diese Standard-Kennzahlkonfigurationen können jedoch nicht von Anwendern bearbeitet oder geändert werden. Die Standardkennzahlen sind im Menü *Einrichtung » plentyBI » Kennzahlen* dadurch erkennbar, dass als Ersteller *plentymarkets* angegeben ist. 
 
 Alle Kennzahlkonfigurationen erhalten bei ihrer Erstellung eine einzigartige ID, die durch Anwender nicht änderbar ist.
 

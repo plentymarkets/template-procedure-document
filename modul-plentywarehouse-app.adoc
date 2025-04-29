@@ -26,7 +26,7 @@ Die plentyWarehouse App ist ausschließlich für Geräte mit Android-Betriebssys
 
 ** https://play.google.com/store/apps/details?id=com.plentysystems.plentywarehouse[https://play.google.com/store/apps/details?id=com.plentysystems.plentywarehouse^]
 
-Versionen der plentyWarehouse App sind durch Versionsnummern gekennzeichnet. Änderungen an der Software werden sowohl im Changelog des Google Play Store als auch im plentysystems Forum veröffentlicht.
+Versionen der plentyWarehouse App sind durch Versionsnummern gekennzeichnet. Änderungen an der Software werden sowohl im Changelog des Google Play Store als auch im PlentyONE Forum veröffentlicht.
 
 ** https://forum.plentymarkets.com/c/changelog/plentywarehouse-app/1035[https://forum.plentymarkets.com/c/changelog/plentywarehouse-app/1035]
 
@@ -62,7 +62,7 @@ Ergänzen Sie die folgende Tabelle. Hier werden die unternehmenseigenen Tablets,
 
 === Anmeldung
 
-Die plentyWarehouse App ist nur in Kombination mit einem gebuchten plentysystems ERP-System funktionsfähig. Das heißt, dass Sie bei der Erstanmeldung die Login-Daten Ihres plentysystems ERP-Systems eingeben müssen. Diese Login-Daten bestehen aus:
+Die plentyWarehouse App ist nur in Kombination mit einem gebuchten PlentyONE ERP-System funktionsfähig. Das heißt, dass Sie bei der Erstanmeldung die Login-Daten Ihres PlentyONE ERP-Systems eingeben müssen. Diese Login-Daten bestehen aus:
 
 * plentyID des Systems
 * Benutzer

@@ -4,15 +4,15 @@
 
 == plentyShop LTS
 
-plentysystems stellt seinen Anwendern den vollumfänglichen Webshop *plentyShop LTS* zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die dem Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
+PlentyONE stellt seinen Anwendern den vollumfänglichen Webshop *plentyShop LTS* zur Verfügung, der über die beiden Plugins plentyShop LTS und IO individualisierbar ist. Das Plugin plentyShop LTS ist für die optische und funktionale Gestaltung des Webshops zuständig. Das Plugin IO enthält die dem Webshop zugrundeliegende Logik. Beide Plugins können in der jeweils aktuellen Version über den plentyMarketplace heruntergeladen und installiert werden oder alternativ als Beta-Version über Git eingebunden werden, um Funktionalitäten bereits vor der offiziellen Veröffentlichung testen zu können.
 
-Anwender erstellen das Design des plentyShops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, unterschiedliche Artikelseiten (auch für Artikelpakete und -sets), Seiten für rechtliche Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO oder in den dazugehörigen Assistenten vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im plentysystems System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
+Anwender erstellen das Design des plentyShops größtenteils über den ShopBuilder, eine Form von What-you-see-is-what-you-get-Baukastenmodul, mit dem Kunden ihre Startseite, unterschiedliche Artikelseiten (auch für Artikelpakete und -sets), Seiten für rechtliche Informationen, weitere statische Seiten, den Kundenbereich und die Kaufabwicklung erstellen können. Einstellungen, die aus technischen Gründen nicht über den ShopBuilder vorgenommen werden können, werden in den Einstellungen der beiden Plugins plentyShop LTS und IO oder in den dazugehörigen Assistenten vorgenommen. Darüber hinaus bedient sich der Webshop einer Reihe von im PlentyONE System hinterlegten Informationen und Einstellungen, wie z.B. Lieferländer oder Kundenklassen.
 
 Nach Änderungen an den Einstellungen der Plugin-Konfigurationen müssen die Plugins plentyShop LTS und IO erneut gespeichert und bereitgestellt werden, damit die vorgenommenen Änderungen im Webshop greifen. Änderungen, die mit dem ShopBuilder vorgenommen werden, sind direkt sichtbar.
 
-== Webshop-relevante Einstellungen im plentysystems System
+== Webshop-relevante Einstellungen im PlentyONE System
 
-Einige für den Webshop relevante Einstellungen müssen im plentysystems System selbst vorgenommen werden. Dies sind konkret: 
+Einige für den Webshop relevante Einstellungen müssen im PlentyONE System selbst vorgenommen werden. Dies sind konkret: 
 
 * Die im Webshop verwendete Standardsprache, die im Menü *Einrichtung » Mandant » Mandant wählen » Aufträge* hinterlegt wird und im Webshop vorausgewählt ist.
 * Die Standardversandart, die im Menü *Einrichtung » Mandant » Mandant wählen » Aufträge* hinterlegt wird und im Webshop vorausgewählt ist.
@@ -49,7 +49,7 @@ Der ShopBooster ist eine Zusatzfunktion für den Webshop, welcher dazu dient, di
 //* Speichern von Einstellungen des Webshops
 //* Invalidieren des Caches bei Deaktivierung des ShopBoosters
 
-Der ShopBooster ist für alle plentysystems Editionen verfügbar und ist kostenlos. 
+Der ShopBooster ist für alle PlentyONE Editionen verfügbar und ist kostenlos. 
 Der ShopBooster ist standardmäßig für alle Systeme aktiv.
 Im Menü *Einrichtung » plentyShop » Mandanten wählen » ShopBooster* haben Kunden die Möglichkeit, die Invalidierung von Seiten für einen frei wählbaren Zeitraum auszusetzen. Ebenfalls besteht die Möglichkeit, den ShopBooster-Cache manuell zu invalidieren; diese Funktion steht Kunden allerdings nur 5 mal alle 24 Stunden zur Verfügung.
 
@@ -68,15 +68,15 @@ Beispielablauf:
 . Der Kunde verwendet einen Gutschein. Die Datenbank Gutscheine liefert die nötigen Informationen.
 . Der Kunde wählt eine Zahlungsart. Die Datenbank Zahlung liefert die für die Abwicklung nötigen Informationen.
 . Der Kunde wählt eine Versandart. Die Datenbank Versand liefert die für die Abwicklung nötigen Informationen.
-. Der Kunde schickt die Bestellung ab. Im plentysystems System wird ein Auftrag angelegt.
+. Der Kunde schickt die Bestellung ab. Im PlentyONE System wird ein Auftrag angelegt.
 . Die Datenbank Waren passt den Bestand des Artikels an.
 . Der Kunde erhält eine Bestellbestätigung.
-. Die weitere Bearbeitung des Auftrags erfolgt im plentysystems System.
+. Die weitere Bearbeitung des Auftrags erfolgt im PlentyONE System.
 
 == plentyShop PWA
 
 plentyShop PWA ist der technische Nachfolger von plentyShop LTS und bietet einen Webshop als Progressive Web Application auf Basis des E-Commerce-Frameworks Alokai. plentyShop LTS und plentyShop PWA können nicht gleichzeitig betrieben werden. 
 Im ersten Schritt wurde plentyShop PWA nur für ausgewählte Kunden freigeschaltet. 
-plentyShop PWA kann bislang nicht nativ über plentysystems Systeme eingerichtet werden; es ist Entwicklungserfahrung nötig, um plentyShop PWA pdoduktiv nutzen zu können.
+plentyShop PWA kann bislang nicht nativ über PlentyONE Systeme eingerichtet werden; es ist Entwicklungserfahrung nötig, um plentyShop PWA pdoduktiv nutzen zu können.
 
 In unserer link:https://pwa-docs.plentymarkets.com/guide/product/[PWA Entwicklerdokumentation^] finden Interessierte alle Informationen, um plentyShop PWA zu integrieren. 

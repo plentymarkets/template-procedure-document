@@ -1,6 +1,6 @@
 = Fachliche und technische Beschreibung E-Mail-Versand
 
-plentysystems selbst ist kein E-Mail-Provider und bietet auch keine Services eines E-Mail-Providers an. Der Anwender bestimmt, welchen Anbieter er mit dem plentysystems System für den Versand seiner E-Mails verknüpft.
+PlentyONE selbst ist kein E-Mail-Provider und bietet auch keine Services eines E-Mail-Providers an. Der Anwender bestimmt, welchen Anbieter er mit dem PlentyONE System für den Versand seiner E-Mails verknüpft.
 
 Alle E-Mails, die über das System versendet werden, basieren auf E-Mail-Vorlagen, die der Anwender einrichten muss. Einige E-Mail-Vorlagen sind bereits im System vorhanden – diese kann der Anwender gemäß seiner Bedürfnisse anpassen. Die Signatur beispielsweise muss der Anwender anpassen, da standardmäßig eine Mustersignatur eingestellt ist. Der Anwender kann beliebig viele E-Mail-Vorlagen erstellen.
 

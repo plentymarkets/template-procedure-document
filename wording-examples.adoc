@@ -1,17 +1,17 @@
-= Anhang: Formulierungsvorschlag zur Verfahrensdokumentation für plentysystems Anwender
+= Anhang: Formulierungsvorschlag zur Verfahrensdokumentation für PlentyONE Anwender
 
-Dieser Anhang liefert Formulierungsbeispiele für eine Verfahrensdokumentation beim Einsatz der Software plentysystems. Die Beispiele bedürfen in jedem Fall Anpassungen an die tatsächlichen Gegebenheiten des Unternehmens, das plentysystems einsetzt. Die hier angegebenen Beispielformulierungen sind nicht rechtlich geprüft. +
+Dieser Anhang liefert Formulierungsbeispiele für eine Verfahrensdokumentation beim Einsatz der Software PlentyONE. Die Beispiele bedürfen in jedem Fall Anpassungen an die tatsächlichen Gegebenheiten des Unternehmens, das PlentyONE einsetzt. Die hier angegebenen Beispielformulierungen sind nicht rechtlich geprüft. +
 _Hinweis: Dieses Kapitel ist nicht Teil des Formulierungsvorschlag und sollte nicht in Ihre Verfahrensdokumentation übernommen werden._
 
 == Edition und Hosting
 
-Ich nutze die Software plentysystems in der Edition … In dieser Edition sind folgende Module … integral. Außerdem habe ich folgende optionale Module hinzugebucht: … +
-Ich habe mich für das von plentysystems angebotene Hosting in … entschieden.
+Ich nutze die Software PlentyONE in der Edition … In dieser Edition sind folgende Module … integral. Außerdem habe ich folgende optionale Module hinzugebucht: … +
+Ich habe mich für das von PlentyONE angebotene Hosting in … entschieden.
 
-== Fachliche Beschreibung plentysystems
+== Fachliche Beschreibung PlentyONE
 
-plentysystems ist eine modular aufgebaute und Plugin-fähige Software für den Handel mit Sachgütern, digitalen Gütern und immateriellen Gütern. +
-plentysystems wird in unserem Unternehmen insbesondere zum Verkauf von … sowie zur zentralen Verwaltung von Produktinformationen und zur Abwicklung von Bestellungen genutzt. Hierbei kommen die genannten Module zum Einsatz. Die Vorteile beim Einsatz von plentysystems liegen für unser Unternehmen insbesondere darin, dass Artikelinformationen zentral in plentysystems erfasst und verwaltet werden und von hier aus an verschiedene Kanäle für den Verkauf übermittelt werden. Des Weiteren liegen Vorteile darin, dass egal über welchen Kanal ein Artikel verkauft wurde, nach dem Verkauf eine Übermittlung der Auftrags- und Kundendaten an das plentysystems System des Anwenders erfolgt, sodass die anschließende Abwicklung wieder zentral in unserem plentysystems System erfolgt. Ein weiterer Vorteil liegt in der Möglichkeit diese Abwicklung bis zu einem hohen Grad zu automatisieren.
+PlentyONE ist eine modular aufgebaute und Plugin-fähige Software für den Handel mit Sachgütern, digitalen Gütern und immateriellen Gütern. +
+PlentyONE wird in unserem Unternehmen insbesondere zum Verkauf von … sowie zur zentralen Verwaltung von Produktinformationen und zur Abwicklung von Bestellungen genutzt. Hierbei kommen die genannten Module zum Einsatz. Die Vorteile beim Einsatz von PlentyONE liegen für unser Unternehmen insbesondere darin, dass Artikelinformationen zentral in PlentyONE erfasst und verwaltet werden und von hier aus an verschiedene Kanäle für den Verkauf übermittelt werden. Des Weiteren liegen Vorteile darin, dass egal über welchen Kanal ein Artikel verkauft wurde, nach dem Verkauf eine Übermittlung der Auftrags- und Kundendaten an das PlentyONE System des Anwenders erfolgt, sodass die anschließende Abwicklung wieder zentral in unserem PlentyONE System erfolgt. Ein weiterer Vorteil liegt in der Möglichkeit diese Abwicklung bis zu einem hohen Grad zu automatisieren.
 
 == Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 

@@ -1,6 +1,6 @@
 = Fachliche und technische Beschreibung des Moduls Newsletter
 
-Um Newsletter an Kontakte zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in plentysystems speichern oder einen externen Newsletter-Anbieter mit plentysystems verknüpfen.
+Um Newsletter an Kontakte zu senden, muss der Anwender entweder die Zugangsdaten seines E-Mail-Providers in PlentyONE speichern oder einen externen Newsletter-Anbieter mit PlentyONE verknüpfen.
 
 Der Anwender kann den im System integrierten Newsletter-Dienst nutzen, seine Newsletter über den externen Anbieter CleverReach versenden oder einen Newsletter-Anbieter über ein Plugin anbinden. Weitere Informationen zu Newsletter-Plugins sind auf dem link:https://marketplace.plentymarkets.com/plugins/sales/marketing[plentyMarketplace^] zu finden.
 
@@ -46,7 +46,7 @@ Neben dem im System verfügbaren internen Newsletter-Dienst und dem Angebot von 
 
 Möchte der Anwender die Newsletter an seine Kunden über die externe Schnittstelle CleverReach versenden, muss er sich zunächst über die Website von CleverReach registrieren. Im Anschluss daran muss er die Schnittstelle im System einrichten, damit die Daten zu CleverReach übertragen werden können.
 
-plentysystems überträgt die folgenden Daten an CleverReach, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
+PlentyONE überträgt die folgenden Daten an CleverReach, sofern der Newsletter-Bezug über das Double-Opt-In-Verfahren durch den Kunden bestätigt wurde:
 
  * Vorname
  * Nachname
@@ -59,7 +59,7 @@ plentysystems überträgt die folgenden Daten an CleverReach, sofern der Newslet
 
 == Import und Export
 
-Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in plentysystems automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
+Der Anwender hat die Möglichkeit, z.B. Newsletterempfänger sowie die Ordner, in denen die Empfänger gespeichert sind, in PlentyONE automatisch oder manuell auszutauschen. Für den Austausch von Daten zwischen dem System des Anwenders und externen Systemen steht die link:https://developers.plentymarkets.com/[REST-API^] zur Verfügung.
 
 Für den manuellen Austausch von Newsletter-Daten stehen dem Anwender die folgenden Formate zur Verfügung:
 

@@ -1,6 +1,6 @@
 = Editionsübersicht
 
-Aktuell ist plentysystems in den Editionen *CLASSIC* und *ENTERPRISE* verfügbar. Diese Editionen werden im Folgenden detailliert aufgeschlüsselt.
+Aktuell ist PlentyONE in den Editionen *CLASSIC* und *ENTERPRISE* verfügbar. Diese Editionen werden im Folgenden detailliert aufgeschlüsselt.
 
 In allen Editionen stehen integrale und optionale Module zur Verfügung. Integrale Module sind Module, die von Anfang an im Funktionsumfang des jeweiligen Systems enthalten sind. Optionale Module können zusätzlich gewählt werden und gehören dann ebenfalls zum Funktionsumfang des Systems. Die integralen und optionalen Module unterscheiden sich je nach Tarif. Das Modul *POS* ist immer optional und muss bei beiden Tarifen separat hinzugebucht werden.
 
@@ -56,11 +56,11 @@ Benutzerlizenzen, Vertriebslager, Mandanten und Kassen können bis zu den in Tab
 
 == ENTERPRISE
 
-Die Edition *ENTERPRISE* wird auf Anfrage von Anwendern auf die individuellen Bedürfnisse des Betriebs abgestimmt. Somit ist es nicht möglich, allgemeingültige Aussagen zu maximal verfügbaren Mandanten, Vertriebslagern und weiteren Ressourcen zu treffen. Die Edition *ENTERPRISE* kann nur über vorherige link:https://www.plentyone.com/de/kontakt/[Kontaktaufnahme zu plentysystems] gebucht werden und beinhaltet typischerweise umfangreiche, individuell auf Anwender zugeschnittene Services und diverse Zusatzleistungen. Es liegt in der Pflicht des Anwenders, inkludierte Leistungen an Beispiel von Tabelle 1 für die Edition *ENTERPRISE* aufzulisten.
+Die Edition *ENTERPRISE* wird auf Anfrage von Anwendern auf die individuellen Bedürfnisse des Betriebs abgestimmt. Somit ist es nicht möglich, allgemeingültige Aussagen zu maximal verfügbaren Mandanten, Vertriebslagern und weiteren Ressourcen zu treffen. Die Edition *ENTERPRISE* kann nur über vorherige link:https://www.plentyone.com/de/kontakt/[Kontaktaufnahme zu PlentyONE] gebucht werden und beinhaltet typischerweise umfangreiche, individuell auf Anwender zugeschnittene Services und diverse Zusatzleistungen. Es liegt in der Pflicht des Anwenders, inkludierte Leistungen an Beispiel von Tabelle 1 für die Edition *ENTERPRISE* aufzulisten.
 
 == plentyBI
 
-Das Produkt *plentyBI* muss unter Umständen separat gebucht werden. Das Produkt *plentyBI XS* ist in allen plentysystems Editionen verfügbar und bei Buchung eines plentysystems Systems automatisch inkludiert. Desweiteren stehen folgende plentyBI Editionen zur Verfügung:
+Das Produkt *plentyBI* muss unter Umständen separat gebucht werden. Das Produkt *plentyBI XS* ist in allen PlentyONE Editionen verfügbar und bei Buchung eines PlentyONE Systems automatisch inkludiert. Desweiteren stehen folgende plentyBI Editionen zur Verfügung:
 
 * *plentyBI S*
 * *plentyBI M*
@@ -108,7 +108,7 @@ Das Alter der verfügbaren Rohdaten, die Speicherdauer der berechneten Ergebniss
 
 == Hosting-Optionen
 
-Bei der Buchung von plentysystems muss _eine_ der von plentysystems angebotenen Hosting-Optionen ausgewählt werden. Die folgenden Hosting-Optionen in Form von Server-Standorten stehen hierbei zur Verfügung:
+Bei der Buchung von PlentyONE muss _eine_ der von PlentyONE angebotenen Hosting-Optionen ausgewählt werden. Die folgenden Hosting-Optionen in Form von Server-Standorten stehen hierbei zur Verfügung:
 
  * AWS Dublin
  * AWS Frankfurt

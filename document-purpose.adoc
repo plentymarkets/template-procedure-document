@@ -1,5 +1,5 @@
 = Zweck dieses Dokuments
 
-Die Beschreibungen in diesem Dokument dienen den Anwendern der Software plentysystems lediglich als Grundlage zur Erstellung ihrer Verfahrensdokumentation. Die konkrete Vorgehensweise bei der täglichen Arbeit liegt im Ermessen des Anwenders und muss durch ihn genau beschrieben werden.
+Die Beschreibungen in diesem Dokument dienen den Anwendern der Software PlentyONE lediglich als Grundlage zur Erstellung ihrer Verfahrensdokumentation. Die konkrete Vorgehensweise bei der täglichen Arbeit liegt im Ermessen des Anwenders und muss durch ihn genau beschrieben werden.
 
 Im vorliegenden Dokument wird darauf verzichtet, bei Personenbezeichnungen sowohl die weibliche als auch die männliche und diverse Form zu nennen. Das generische Maskulinum adressiert alle Leser:innen und Leser sowie Anwender:innen und Anwender und gilt somit in allen Fällen, in denen dies nicht explizit ausgeschlossen wird, für alle Geschlechter.
