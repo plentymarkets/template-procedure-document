@@ -1,4 +1,4 @@
-= Technische Systemdokumentation plentysystems
+= Technische Systemdokumentation PlentyONE
 :toc:
 :toc-title: Inhaltsverzeichnis
 :toclevels: 3

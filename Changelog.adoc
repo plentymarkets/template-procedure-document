@@ -9,12 +9,13 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 
 |*Version* |*Bereich* |*Datum* |*Kurzbeschreibung*
 
+|V9.6 |Allgemein |29.04.2025 | Geändert: plenysystems umbenannt in PlentyONE, plentyPOS umbenannt in PlentyONE POS
 |V9.5 |Benutzerrechte |27.09.2024 |Geändert: Das Unterkapitel zu Rechte vergeben wurde um einen Absatz zu globalen Rollen-Templates erweitert.
-|V9.4 |plentyPOS Berichte |23.09.2024 |Geändert: Das Unterkapitel zu Zwischenberichten wurde angepasst.
+|V9.4 |PlentyONE POSBerichte |23.09.2024 |Geändert: Das Unterkapitel zu Zwischenberichten wurde angepasst.
 |V9.1 |Anhang Rest-Berechtigungen |26.04.2024 |Geändert: Es wurden neue Rest-Berechtigungen hinzugefügt und bestehende angepasst.
 |V9.1 |Login |26.04.2024 |Geändert: Die Sessiondauer des zentralen Logins wurde angepasst.
 |V9.0 |Allgemein |17.04.2024 |Geändert: In allen Bereichen wurde der Name des ERP-Systems von "plentymarkets" zu "plentysystems" geändert.
-|V9.0 |Editionsübersicht |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu plentysystems Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
+|V9.0 |Editionsübersicht |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu PlentyONE Editionen und plentyBI Editionen wurden aktualisiert und ergänzt.
 |V9.0 |Messenger |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
 |V9.0 |plentyBI |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
 |V9.0 |plentyWarehouse App |17.04.2024 |Neu: Dieser Bereich wurde hinzugefügt.
@@ -22,7 +23,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 |V9.0 |App |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
 |V9.0 |POS |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
 |V9.0 |CRM |17.04.2024 |Geändert: Die Bereiche "CRM", "E-Mail-Versand", "Newsletter" und "Gutscheine" wurden überarbeitet.
-|V9.0 |Marketplace Plugins |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Verlinkungen auf das plentysystems Handbuch wurden angepasst.
+|V9.0 |Marketplace Plugins |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Verlinkungen auf das PlentyONE Handbuch wurden angepasst.
 |V9.0 |Versandabwicklung |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Die Informationen zu Lieferländern und Versanddienstleistern wurden aktualisiert.
 |V9.0 |Webshop |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet.
 |V9.0 |Warenwirtschaft |17.04.2024 |Geändert: Dieser Bereich wurde überarbeitet. Informationen zu den Funktionen der plentyWarehouse App wurden hinzugefügt.
@@ -31,7 +32,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 |V7.8 |POS |31.01.2023 |Geändert: Der Menüpfad für Kassenjournal, IDEA-Export, DEP-Export, TSE-Export und DSFinV-K-Export wurde geändert.
 |V7.7 |plentyChannel |25.10.2022 |Geändert: Dieser Bereich wurde überarbeitet. Es wurden Informationen zum Katalogexport für Marktplätze hinzugefügt.
 |V7.7 |Auftragsverwaltung |25.10.2022 |Geändert: Dieser Bereich wurde überarbeitet. Es wurden Informationen zur neuen Auftrags-UI hinzugefügt.
-|V7.7 |Allgemein |25.10.2022 |Geändert: In allen Bereichen wurden die Verlinkungen auf das plentysystems Handbuch angepasst.
+|V7.7 |Allgemein |25.10.2022 |Geändert: In allen Bereichen wurden die Verlinkungen auf das PlentyONE Handbuch angepasst.
 |V7.6 |Warenwirtschaft |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet und um diverse Informationen zur plentyWarehouse App und zu Zählprotokollen erweitert.
 |V7.6 |Webshop |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet. Das Plugin "Ceres" wurde in "plentyShop LTS" umbenannt.
 |V7.6 |Multi-Channel |08.02.2022 |Geändert: Dieser Bereich wurde überarbeitet. Das Modul "Multi-Channel" wurde in "plentyChannel" umbenannt.
@@ -42,7 +43,7 @@ NOTE: Dieses Dokument unterliegt Änderungen, die durch Versionierung gekennzeic
 |V7.4 |Artikel |24.03.2021 |Geändert: Dieser Bereich wurde überarbeitet.
 |V7.3 |Artikel + Auftragsabwicklung |16.02.2021 |Neu: Eine Beschreibung der globalen Änderungshistorie wurde hinzugefügt.
 |V7.3 |CRM |16.02.2021 |Geändert: Die alte Änderungshistorie wurde in CRM-Historie umbenannt.
-|V7.2 |POS |27.01.2021 |Geändert: Dieser Bereich wurde um Informationen zur Retourenerstattung in plentyPOS ergänzt.
+|V7.2 |POS |27.01.2021 |Geändert: Dieser Bereich wurde um Informationen zur Retourenerstattung in PlentyONE POSergänzt.
 |V7.2 |Kataloge |27.01.2021 |Neu: Dieser Bereich wurde hinzugefügt.
 |V7.2 |ElasticSync |27.01.2021 |Geändert: Dieser Bereich wurde überarbeitet. Die Funktionalität "ElasticSync" wurde in "Import" umbenannt.
 |V7.1|Auftragsabwicklung |25.09.2020 |Geändert: Bereich Zahlungsbedingungen wurde hinzugefügt.

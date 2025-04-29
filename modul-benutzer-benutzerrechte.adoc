@@ -1,11 +1,11 @@
 = Fachliche und technische Beschreibung Benutzer und Benutzerrechte
 
-Benutzer sind die Personen, die die Software plentysystems bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in plentysystems Rechte. +
-Die Benutzerrechte eines Benutzers in plentysystems hängen zunächst von seinem Benutzerzugang ab. Wird dem Benutzer kein Benutzerzugang zugewiesen, hängen die Benutzerrechte von den zugewiesenen Rollen ab. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
+Benutzer sind die Personen, die die Software PlentyONE bedienen. Die Benutzerrechte dienen dazu, einem Benutzer den Zugriff zu Bereichen oder Menüs der Software zu ermöglichen, zu beschränken oder zu verwehren. Benutzerrechte heißen in PlentyONE Rechte. +
+Die Benutzerrechte eines Benutzers in PlentyONE hängen zunächst von seinem Benutzerzugang ab. Wird dem Benutzer kein Benutzerzugang zugewiesen, hängen die Benutzerrechte von den zugewiesenen Rollen ab. Die Benutzerzugänge sind systemseitig vorgegeben und können durch die Anwender nicht geändert werden. +
 
 == Benutzerzugänge
 
-Folgende Benutzerzugänge gibt es in plentysystems:
+Folgende Benutzerzugänge gibt es in PlentyONE:
 
  * Administrator
  * Nur API-Benutzer
@@ -25,14 +25,14 @@ Eine detaillierte Beschreibung der REST-Schnittstelle befindet sich in der link:
 
 == Rechte vergeben
 
-Die Benutzerrechte in plentysystems werden über Rollen verwaltet und unterteilen sich in:
+Die Benutzerrechte in PlentyONE werden über Rollen verwaltet und unterteilen sich in:
 
 * Menü- und Plugin-Sichtbarkeiten
 * Berechtigungen
 
 Die Menü- und Plugin-Sichtbarkeiten werden im einfachen Modus der Rollenerstellung vergeben, die Berechtigungen im erweiterten Modus der Rollenerstellung. Der einfache Modus und der erweiterte Modus sind miteinander verknüpft. Wenn Menü-Sichtbarkeiten im einfachen Modus aktiviert werden, sind dazugehörige Berechtigungen auch im erweiterten Modus automatisch aktiv. Diese Verknüpfung existiert nur in diese Richtung. Wenn im erweiterten Modus Berechtigungen vergeben werden, werden keine Menü- oder Plugin-Sichtbarkeiten automatisch aktiviert.
 
-Beim Erstellen neuer Rollen können Nutzer auf globale Vorlagen, sogenannte globale Rollen-Templates, zurückgreifen. Diese werden von plentysystems für alle Systeme gleichermaßen zur Verfügung gestellt. Jedes Template hat voreingestellte Berechtigungen, die verändert und erweitert werden können. Die von plentysystems bereitgestellten Vorlagen können nicht durch Nutzer verändert werden. 
+Beim Erstellen neuer Rollen können Nutzer auf globale Vorlagen, sogenannte globale Rollen-Templates, zurückgreifen. Diese werden von PlentyONE für alle Systeme gleichermaßen zur Verfügung gestellt. Jedes Template hat voreingestellte Berechtigungen, die verändert und erweitert werden können. Die von PlentyONE bereitgestellten Vorlagen können nicht durch Nutzer verändert werden. 
 
 Beim Vergeben von Menü- und Plugin-Sichtbarkeiten sowie Berechtigungen gilt generell, dass das Aktivieren einer Berechtigung einer übergeordneten Ebene alle darunter liegenden Berechtigungen aktiviert. Das Entfernen einer Berechtigung einer übergeordneten Ebene entfernt analog alle darunter einsortieren Berechtigungen.
 
@@ -40,13 +40,13 @@ Beim Vergeben von Menü- und Plugin-Sichtbarkeiten sowie Berechtigungen gilt gen
 
 Ergänzen Sie in der folgenden Tabelle, welche Personen über welchen Zugriff verfügen.
 
-Folgende Personen sind Administratoren und verfügen über uneingeschränkten Zugriff auf das plentysystems System
+Folgende Personen sind Administratoren und verfügen über uneingeschränkten Zugriff auf das PlentyONE System
 
 Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 3: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_)
 
-Folgende Personen sind Standardbenutzer und verfügen über eingeschränkten Zugriff auf das plentysystems System:
+Folgende Personen sind Standardbenutzer und verfügen über eingeschränkten Zugriff auf das PlentyONE System:
 
 Person 1: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
 Person 2: (_Name, Vorname; ggf. Personalnummer, Organisationseinheit, Funktion im Unternehmen_) +
@@ -72,7 +72,7 @@ In diesem Bereich wird die Abbildung von Menü und Systemeinstellungen verwaltet
 * Automatisierung
 * Einrichtung
 * Support
-* plentymarkets App / plentyPOS
+* plentymarkets App / PlentyONE POS
 * plentyWarehouse
 
 === Berechtigungen im erweiterten Modus

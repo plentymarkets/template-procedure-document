@@ -1,6 +1,6 @@
 = Fachliche und technische Beschreibung des Moduls Messenger
 
-Im Messenger-Modul in plentysystems verwaltet der Anwender sowohl die externe Kommunikation mit den Endkunden in Form von E-Mails als auch die interne Kommunikation in Form von Nachrichten. Wenn Nachrichten geflüstert werden, sind diese Nachrichten nur innerhalb des Systems sichtbar und können von den Endkunden nicht eingesehen werden.
+Im Messenger-Modul in PlentyONE verwaltet der Anwender sowohl die externe Kommunikation mit den Endkunden in Form von E-Mails als auch die interne Kommunikation in Form von Nachrichten. Wenn Nachrichten geflüstert werden, sind diese Nachrichten nur innerhalb des Systems sichtbar und können von den Endkunden nicht eingesehen werden.
 
 Neben dem Versand von E-Mails im Messenger ist es auch möglich, E-Mails zu empfangen, wenn man den Messenger-Service aktiviert, eine E-Mail-Weiterleitung eingerichtet und einige andere Einstellungen sowohl für den E-Mail-Versand als auch den E-Mail-Empfang eingestellt hat. 
 

@@ -1,31 +1,31 @@
 = Fachliche und technische Beschreibung des Moduls Login
 
-Über den Login melden sich Anwender in ihrem plentysystems System an. Im Login können außerdem Kontoeinstellungen sowie Sicherheitseinstellungen vorgenommen werden. Anwender können sich über zwei Wege in ihrem plentysystems System anmelden:
+Über den Login melden sich Anwender in ihrem PlentyONE System an. Im Login können außerdem Kontoeinstellungen sowie Sicherheitseinstellungen vorgenommen werden. Anwender können sich über zwei Wege in ihrem PlentyONE System anmelden:
 
 * E-Mail-Adresse und Passwort
 * plenty ID, Benutzername und Passwort
 
-Die Sprache des plentysystems Login wird automatisch durch die Sprache des Webbrowsers ermittelt.
+Die Sprache des PlentyONE Login wird automatisch durch die Sprache des Webbrowsers ermittelt.
 
 == Sessiondauer
 
-Die Session eines plentysystems System und des plentysystems Login endet nach 24 Stunden.
+Die Session eines PlentyONE System und des PlentyONE Login endet nach 24 Stunden.
 
 == Kontoeinstellungen
 
-In den Kontoeinstellungen kann ein Profilbild vom Endgerät des Anwenders hochgeladen werden, die E-Mail-Adresse des plentysystems Kontos geändert werden, Vor- und Nachname des plentysystems Kontos geändert sowie die Zeitzone und Sprache werden. +
+In den Kontoeinstellungen kann ein Profilbild vom Endgerät des Anwenders hochgeladen werden, die E-Mail-Adresse des PlentyONE Kontos geändert werden, Vor- und Nachname des PlentyONE Kontos geändert sowie die Zeitzone und Sprache werden. +
 
-Das Profilbild wird im plentysystems System des Anwenders oben rechts angezeigt. +
+Das Profilbild wird im PlentyONE System des Anwenders oben rechts angezeigt. +
 
 Die E-Mail-Adresse, Vor- und Nachname werden in der Detailansicht des Benutzerkontos. +
 
 == Passwort ändern
 
-Im Login kann das Passwort des plentysystems Konto geändert werden. Bei einer Passwortänderung wird der Anwender abgemeldet und muss sich mit dem neuen Passowrt anmelden.
+Im Login kann das Passwort des PlentyONE Konto geändert werden. Bei einer Passwortänderung wird der Anwender abgemeldet und muss sich mit dem neuen Passowrt anmelden.
 
 == Multi-Faktor-Authentifizierung
 
-Um die Sicherheit des Logins zu erhöhen, kann die Multi-Faktor-Authentifizierung im plentysystems Konto aktiviert werden. Die Multi-Faktor-Authentifizierung von plentysystems funktioniert mit jeder gängigen Authenticator-App. Ist die Multi-Faktor-Authentifizierung aktiv, muss der Anwender bei jeder Anmeldung mit einem Bestätigungscode aus der Authenticator-App verifizieren. +
+Um die Sicherheit des Logins zu erhöhen, kann die Multi-Faktor-Authentifizierung im PlentyONE Konto aktiviert werden. Die Multi-Faktor-Authentifizierung von PlentyONE funktioniert mit jeder gängigen Authenticator-App. Ist die Multi-Faktor-Authentifizierung aktiv, muss der Anwender bei jeder Anmeldung mit einem Bestätigungscode aus der Authenticator-App verifizieren. +
 
 Die Multi-Faktor-Authentifizierung kann jederzeit deaktiviert werden. +
 
