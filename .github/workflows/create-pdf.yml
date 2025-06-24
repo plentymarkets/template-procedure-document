@@ -35,6 +35,9 @@ jobs:
       - name: Install Asciidoctor-Diagram
         run: gem install asciidoctor-diagram
 
+      - name: Install Asciidoctor-Diagram-PlantUML
+        run: gem install asciidoctor-diagram-plantuml
+
       - name: Install text hyphenation
         run: gem install text-hyphen
 
