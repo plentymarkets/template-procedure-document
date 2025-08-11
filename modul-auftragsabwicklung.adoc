@@ -32,7 +32,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |2.08|eBay Germany
 |2.09|eBay Motors
 |2.10|eBay Italy
-|2.11|eBay Belgium(Dutch)
+|2.11|eBay Belgium (Dutch)
 |2.12|eBay Netherlands
 |2.13|eBay Spain
 |2.14|eBay Switzerland
@@ -60,6 +60,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |4.13|Amazon Turkey
 |4.14|Amazon United Arab Emirates (U.A.E)
 |4.15|Amazon Belgium
+|4.16|Amazon Ireland
 |4.21|Amazon Germany B2B
 |4.22|Amazon UK B2B
 |4.24|Amazon FR B2B
@@ -73,6 +74,10 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |102.01|Kaufland DE
 |102.02|Kaufland CZ
 |102.03|Kaufland SK
+|102.04|Kaufland PL
+|102.05|Kaufland AT
+|102.06|Kaufland FR
+|102.07|Kaufland IT
 |103.00|Kassensystem
 |104.00|Amazon FBA
 |104.01|Amazon FBA Germany
@@ -94,13 +99,13 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |104.24|Amazon FBA FR B2B
 |104.25|Amazon FBA IT B2B
 |104.26|Amazon FBA ES B2B
-|105.00|Zentralverkauf
+|105.00|Zentralverkauf.de
 |106.00|Rakuten.de
 |107.00|Neckermann.de Enterprise
 |108.00|Otto Cooperation
 |108.02|Otto Integration
-|108.03|Otto Direktversand
-|108.04|Otto PreDropshipment
+|108.03|OTTO Direktversand
+|108.04|OTTO PreDropshipment
 |109.00|Shopgate
 |112.00|Shopperella
 |115.00|Restposten
@@ -140,27 +145,29 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |124.00|SumoScout
 |125.00|Hood
 |127.00|BeezUP
-|130.00|Tracdelight
+|130.00|tracdelight
 |131.00|Plus.de
 |133.00|Twenga
 |135.00|Newsletter2GO
-|137.00|Grosshandel.eu
+|137.00|grosshandel.eu
 |138.00|Hertie
-|143.00|Cdiscount
+|143.00|Cdiscount.com
 |143.02|Cdiscount.com C Logistique
 |145.00|Fruugo
 |147.00|Flubit
-|148.00|Web-API
+|148.00|WEB-API
 |149.00|Mercateo
 |150.00|Check24
-|152.00|BOL.com
-|152.01|BOL.com FBB
+|152.00|bol.com
+|152.01|bol.com FBB
 |154.00|Netto
 |156.00|Etsy
 |160.00|OTTO
 |160.10|OTTO market
 |161.00|ebay Fulfillment by Orange Connex
 |162.00|Shopify App
+|168.00|Octopia
+|168.01|Octopia Cdiscount
 |169.00|eMAG
 |169.01|eMAG Romania
 |169.02|eMAG Bulgaria
@@ -169,6 +176,10 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |170.01|Kaufland DE FBK
 |170.02|Kaufland CZ FBK
 |170.03|Kaufland SK FBK
+|170.04|Kaufland PL FBK
+|170.05|Kaufland AT FBK
+|170.06|Kaufland FR FBK
+|170.07|Kaufland IT FBK
 |171.00|Marktkauf
 |172.00|Zalando ZFS
 |172.01|Zalando ZFS DE
@@ -225,6 +236,43 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |174.12|Decathlon Fulfillment Netherlands
 |174.13|Decathlon Fulfillment Romania
 |175.00|Voelkner
+|176.00|Conrad
+|177.00|OBI
+|177.01|OBI DE
+|178.00|MediaMarktSaturn
+|178.01|MediaMarkt Germany
+|178.02|MediaMarkt Austria
+|178.03|MediaMarkt Spain
+|178.04|MediaMarkt Netherlands
+|178.05|Saturn Germany
+|178.06|MediaMarkt Italy
+|178.07|MediaMarkt Belgium
+|178.08|MediaMarkt Poland
+|179.00|XXXLutz
+|179.01|XXXLutz Germany
+|180.00|Neckermann.at/Topagers.de
+|180.01|Neckermann.at
+|180.02|Topagers.de
+|182.00|Temu
+|183.00|refurbed
+|184.00|OTTO Austria Group
+|184.01|OTTO Versand AT
+|184.02|Universal AT
+|184.03|Ackermann CH
+|184.04|Jelmoli Shop CH
+|184.05|Baur DE
+|185.00|Metro
+|186.00|ABOUT YOU
+|186.01|ABOUT YOU Germany
+|186.02|ABOUT YOU Austria
+|186.03|ABOUT YOU Netherlands
+|186.04|ABOUT YOU Belgium
+|186.05|ABOUT YOU France
+|186.06|ABOUT YOU Finland
+|186.07|ABOUT YOU Denmark
+|186.08|ABOUT YOU Italy
+|186.09|ABOUT YOU Spain
+|186.10|ABOUT YOU Portugal
 |===
 
 [NOTE]
