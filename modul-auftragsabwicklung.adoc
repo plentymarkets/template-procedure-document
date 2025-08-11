@@ -262,6 +262,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |184.04|Jelmoli Shop CH
 |184.05|Baur DE
 |185.00|Metro
+////
 |186.00|ABOUT YOU
 |186.01|ABOUT YOU Germany
 |186.02|ABOUT YOU Austria
@@ -273,6 +274,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |186.08|ABOUT YOU Italy
 |186.09|ABOUT YOU Spain
 |186.10|ABOUT YOU Portugal
+////
 |===
 
 [NOTE]
