@@ -79,4 +79,4 @@ plentyShop PWA ist der technische Nachfolger von plentyShop LTS und bietet einen
 Im ersten Schritt wurde plentyShop PWA nur für ausgewählte Kunden freigeschaltet. 
 plentyShop PWA kann bislang nicht nativ über PlentyONE Systeme eingerichtet werden; es ist Entwicklungserfahrung nötig, um plentyShop PWA pdoduktiv nutzen zu können.
 
-In unserer link:https://pwa-docs.plentymarkets.com/guide/product/[PWA Entwicklerdokumentation^] finden Interessierte alle Informationen, um plentyShop PWA zu integrieren. 
+In unserer link:https://pwa-docs.plentyone.com/guide/product/[PWA Entwicklerdokumentation^] finden Interessierte alle Informationen, um plentyShop PWA zu integrieren. 
