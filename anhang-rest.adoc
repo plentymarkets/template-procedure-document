@@ -101,8 +101,9 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Automatisierung a
 !include styles/tree-style.iuml
 legend
 Automatisierung
-|_ Flow
+|_ PlentyONE Flow Studio
 |_ Prozesse
+|_ PlentyONE Flow Tracker
 end legend
 ----
 
@@ -117,6 +118,7 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich Blog aufgelistet.
 !include styles/tree-style.iuml
 legend
 Blog
+|_ Blog
 |_ Eigenschaft
 end legend
 ----
@@ -279,7 +281,7 @@ Dienste
   |_ Bearbeiten
 |_ Picalike
   |_ Bearbeiten
-|_ Testbericht.de
+|_ Testberichte.de
   |_ Bearbeiten
 |_ Twitter
   |_ Bearbeiten
@@ -326,7 +328,7 @@ Mandantenspezifische Einstellungen
 |_ Services
   |_ Bearbeiten
 |_ Zolltarifnummern
-  |_ Anzeigen
+  |_ Zolltraifnummern
   |_ Bearbeiten
 end legend
 ----
@@ -459,6 +461,20 @@ end legend
 
 <<<
 
+=== PWA
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+PWA
+|_ PWA
+|_ Bearbeiten
+end legend
+----
+
+<<<
+
 === RSS
 
 [plantuml, format=png, opts="inline"]
@@ -519,19 +535,32 @@ CRM
 |_ Kontaktklasse
 |_ Schuldner
 |_ E-Mail
+|_ E-Mail-Konten
 |_ EmailBuilder
-|_ Event
-|_ Jobtitel
-|_ Nachricht
+|_ Job-Titel
 |_ Messenger
 |_ Newsletter
+|_ Opportunities
 |_ Auftragszusammenfassung
 |_ Passwort
 |_ Eigenschaft
-|_ Umsatzsteuereinheiten
 |_ Serviceeinheiten
 |_ Ticket
 |_ Typ
+end legend
+----
+
+<<<
+
+=== Firma
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Firma
+|_ Firma
+|_ Eignerschaft
 end legend
 ----
 
@@ -604,8 +633,25 @@ legend
 Kontakt
 |_ Kontakt
 |_ Anonymisieren
+|_ Leads
 |_ Typ der Kontaktoption
+|_ Eignerschaft
 |_ Eigner ändern
+end legend
+----
+
+<<<
+
+==== Leads
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Leads
+|_ Leads
+|_ Eignerschaft
+|_ Status Historie
 end legend
 ----
 
@@ -644,6 +690,20 @@ end legend
 
 <<<
 
+=== EmailBuilder
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+EmailBuilder
+|_ EmailBuilder
+|_ Eignerschaft
+end legend
+----
+
+<<<
+
 === Messenger
 
 [plantuml, format=png, opts="inline"]
@@ -651,9 +711,26 @@ end legend
 !include styles/tree-style.iuml
 legend
 Messenger
-|_ Bearbeiten
-|_ Konversationen
+|_ Messenger
 |_ Eignerschaft
+|_ Einstellungen
+end legend
+----
+
+<<<
+
+==== Einstellungen
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Einstellungen
+|_ Automatisierung
+|_ Allgemein
+|_ Gruppen, Typen und Status
+|_ Kanäle
+|_ Rollen
 end legend
 ----
 
@@ -670,6 +747,22 @@ Newsletter
 |_ Bearbeiten
 |_ Newsletter-Ordner
 |_ Newsletter-Empfänger
+end legend
+----
+
+<<<
+
+=== Opportunities
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Opportunities
+|_ Opportunities
+|_ Eignerschaft
+|_ Typen
+|_ Eigner ändern
 end legend
 ----
 
@@ -695,33 +788,6 @@ end legend
 !include styles/tree-style.iuml
 legend
 Eigenschaft
-|_ Bearbeiten
-end legend
-----
-
-<<<
-
-=== Serviceeinheiten
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Serviceeinheiten
-|_ Serviceeinheiten
-|_ Bearbeiten
-end legend
-----
-
-<<<
-
-=== Umsatzsteuer-ID
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Umsatzsteuer-ID
 |_ Bearbeiten
 end legend
 ----
