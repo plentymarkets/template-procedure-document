@@ -27,15 +27,15 @@ Einige für den Webshop relevante Einstellungen müssen im PlentyONE System selb
 Einstellungen am Plugin plentyShop LTS werden im Menü *Plugins » Plugin-Set-Übersicht » plentyShop LTS* getroffen. Das Tab *Konfiguration* enthält 14 weitere Tabs, die jeweils die Einstellungen für die Bereiche Startseite, Header, Footer, Artikelansicht, Warenkorb, Kontaktformular, Paginierung und Sortierung, Kaufabwicklung und Mein Konto, Sprachen, Währungen. SEO, Design und Logging und Performance enthalten. 
 Alle Einstellungen, die am Plugin plentyShop LTS direkt vorgenommen werden, werden in einer eigenen Datenbank gespeichert (siehe Kapitel <<#_aws_cloud_aufbau_sicherheitsarchitektur_speicherkonzept_löschkonzept>>). Alle Einstellungen, die in den Plugin-Einstellungen getroffen werden, können auch über den plentyShop LTS-Assistenten abgewickelt werden. Dieser ist kann über das Menü *Einrichtung » Assistenten » Plugins » Plugin-Set wählen » plentyShop LTS » Mandant wählen* aufgerufen werden.
 
-Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/ceres-einrichten.html[Anwenderdokumentation für plentyShop LTS^] enthält Anleitungen für alle relevanten plentyShop LTS Einstellungen.
+Die link:https://knowledge.plentyone.com/de-de/manual/main/webshop/ceres-einrichten.html[Anwenderdokumentation für plentyShop LTS^] enthält Anleitungen für alle relevanten plentyShop LTS Einstellungen.
 
-Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/shop-builder.html[Anwenderdokumentation für ShopBuilder^] enthält Anleitungen für alle Vorgänge, die über den ShopBuilder abgewickelt werden.
+Die link:https://knowledge.plentyone.com/de-de/manual/main/webshop/shop-builder.html[Anwenderdokumentation für ShopBuilder^] enthält Anleitungen für alle Vorgänge, die über den ShopBuilder abgewickelt werden.
 
 == Einstellungen am Plugin IO
 
 Das Plugin IO stellt die dem Webshop zugrundeliegende Logik zur Verfügung. Einstellungen am Plugin IO werden im Menü *Plugins » Plugin-Set-Übersicht » IO* getroffen. Dort werden beispielsweise Einstellungen bezüglich der verwendeten Zahlenformate und der Webshop-Routen vorgenommen.
 
-Die link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/io-einrichten.html[Andwenderdokumentation für IO^] enthält Anleitungen für alle relevanten IO-Einstellungen.
+Die link:https://knowledge.plentyone.com/de-de/manual/main/webshop/io-einrichten.html[Andwenderdokumentation für IO^] enthält Anleitungen für alle relevanten IO-Einstellungen.
 
 == ShopBooster 
 

@@ -8,9 +8,9 @@ Das Softwaremodul plentyChannel dient dem zusätzlichen Vertrieb auf Online-Mark
  * Bestandsabgleich über automatische Prozesse mit zeitlich festlegten Intervallen
  * Produktdatenaustausch über automatische Prozesse mit zeitlich festlegten Intervallen
  * Auftragsimport über automatische Prozesse mit zeitlich festlegten Intervallen
- * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
- * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^]
- * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/ticketsystem-nutzen.html[Ticketsystem^]
+ * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^]
+ * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentyone.com/de-de/manual/main/crm/ticketsystem-nutzen.html[Ticketsystem^]
 
 == Verfügbarkeit
 
@@ -18,7 +18,7 @@ Aktuell ist das Softwaremodul plentyChannel in allen von PlentyONE angebotenen E
 
 == Dokumentation
 
-Die Dokumentation des Moduls plentyChannel ist über die folgende URL erreichbar: link:https://knowledge.plentymarkets.com/de-de/manual/main/maerkte/maerkte.html[https://knowledge.plentymarkets.com/de-de/manual/main/maerkte/maerkte.html^]. Die Dokumentation der Marktplatz- und Preisportal-Plugins kann im jeweiligen Plugin im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] angesehen werden. Ein Download der Dokumentation ist zurzeit nicht möglich. +
+Die Dokumentation des Moduls plentyChannel ist über die folgende URL erreichbar: link:https://knowledge.plentyone.com/de-de/manual/main/maerkte/maerkte.html[https://knowledge.plentyone.com/de-de/manual/main/maerkte/maerkte.html^]. Die Dokumentation der Marktplatz- und Preisportal-Plugins kann im jeweiligen Plugin im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] angesehen werden. Ein Download der Dokumentation ist zurzeit nicht möglich. +
 Auf Anfrage stellt die PlentyONE GmbH prüfenden Finanzbehörden ältere Versionen der Verfahrensdokumentation zur Verfügung.
 
 == Integrierte Kanäle
@@ -58,7 +58,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit PlentyON
 |Zalando|[_Ja/Nein_]|
 |===
 
-Es sind jedoch nicht alle von PlentyONE angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in PlentyONE als link:https://knowledge.plentymarkets.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
+Es sind jedoch nicht alle von PlentyONE angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in PlentyONE als link:https://knowledge.plentyone.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
 
 Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einrichtung » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul plentyChannel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig: +
 
@@ -76,7 +76,7 @@ Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit PlentyON
 |Kauflux|[_Ja/Nein_]
 |===
 
-*_Hinweis:_* Für die Märkte CHECK24 und Kauflux können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge^] wird kein Plugin mehr benötigt.
+*_Hinweis:_* Für die Märkte CHECK24 und Kauflux können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über link:https://knowledge.plentyone.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge^] wird kein Plugin mehr benötigt.
 
 == Zusätzliche Marktplatz-Services
 
@@ -95,7 +95,7 @@ Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer 
 
 Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich PlentyONE Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. +
 
-Bei vielen Marktplätzen können zudem über link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
+Bei vielen Marktplätzen können zudem über link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
 
 == Marktplatz-Zahlungsarten
 
@@ -131,7 +131,7 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 
 == Preisbildung
 
-Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in PlentyONE finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des PlentyONE Handbuchs. +
+Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in PlentyONE finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentyone.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des PlentyONE Handbuchs. +
 In PlentyONE können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
 Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
