@@ -69,7 +69,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |5.00|Yatego
 |6.00|Kelkoo
 |7.00|Google Products
-|101.00|Ricardo
+|101.00|Ricardo (_veraltet_)
 |102.00|Kaufland
 |102.01|Kaufland DE
 |102.02|Kaufland CZ
@@ -94,21 +94,22 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |104.13|Amazon FBA Turkey
 |104.14|Amazon FBA United Arab Emirates (U.A.E)
 |104.15|Amazon FBA Belgium
+|104.16|Amazon FBA Ireland
 |104.21|Amazon FBA Germany B2B
 |104.22|Amazon FBA UK B2B
 |104.24|Amazon FBA FR B2B
 |104.25|Amazon FBA IT B2B
 |104.26|Amazon FBA ES B2B
-|105.00|Zentralverkauf.de
-|106.00|Rakuten.de
-|107.00|Neckermann.de Enterprise
+|105.00|Zentralverkauf.de (_veraltet_)
+|106.00|Rakuten.de (_veraltet_)
+|107.00|Neckermann.de Enterprise (_veraltet_)
 |108.00|Otto Cooperation
 |108.02|Otto Integration
 |108.03|OTTO Direktversand
 |108.04|OTTO PreDropshipment
-|109.00|Shopgate
-|112.00|Shopperella
-|115.00|Restposten
+|109.00|Shopgate (_veraltet_)
+|112.00|Shopperella (_veraltet_)
+|115.00|Restposten (_veraltet_)
 |116.00|Kauflux
 |117.00|Home24
 |118.00|Zalando MAIN
@@ -137,11 +138,12 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |118.23|Zalando HR
 |118.24|Zalando HU
 |118.25|Zalando RO
+|118.16|Zalando LU
 |119.00|NeckermannATEP
 |120.00|NeckermannATCD
 |121.00|Idealo
 |121.02|Idealo Direktkauf
-|122.00|La Redoute
+|122.00|La Redoute (_veraltet_)
 |124.00|SumoScout
 |125.00|Hood
 |127.00|BeezUP
