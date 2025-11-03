@@ -1,0 +1,33 @@
+= Fachliche und technische Beschreibung des Moduls EmailBuilder
+
+Der EmailBuilder ist ein Bestandteil des CRMs in PlentyONE und bildet die technische Grundlage für die Erstellung und Verwaltung von E-Mail-Vorlagen.
+Er ermöglicht die Generierung von HTML- und textbasierten Vorlagen, die vor dem Versand dynamisch mithilfe von Variablen mit Kunden-, Auftrags- oder anderen Systemdaten befüllt werden können.
+
+Der EmailBuilder ist in das CRM integriert und kommuniziert über interne REST-Schnittstellen mit anderen Modulen von PlentyONE.
+Daten werden live aus anderen Modulen von PlentyONE geladen (read only).
+
+* Template Engine: Rendert HTML- und Textvorlagen auf Basis der Twig-Syntax.
+* Template-Speicher: Verwaltung der Metadaten wie Name, Betreff, Absender und CSS-Stile.
+* Rendering Engine: Fügt Variablen zur Laufzeit mit aktuellen Daten aus verbundenen Modulen (z. B. Aufträge, Kontakte) zusammen.
+* Mail Transport: Verbindung zum konfigurierten E-Mail-Dienst (SMTP oder OAuth).
+* Logging und Monitoring: Erfassung von Versandstatus und Fehlermeldungen über ElasticSearch und Grafana.
+
+Metadaten und Konfiguration der Templates werden in einer MySQL-Datenbank gespeichert , darunter:
+
+Template-ID, Name, Betreff, Antwortadresse (Reply-to), CC, BCC, CSS-Stile und Spracheinstellungen.
+
+Der eigentliche Vorlageninhalt (HTML/Text) wird in einem Amazon-S3-Bucket gespeichert.
+Die Templates enthalten Variablen, die sich auf Daten aus anderen Systemmodulen beziehen. Die Templates verwenden Twig und HTML zur strukturierten Gestaltung und zur Nutzung von Bedingungen und Platzhaltern.
+Beim Rendern werden die Variablen durch aktuelle Werte aus den angebundenen Modulen ersetzt.
+
+Der Zugriff auf Vorlagen wird über das interne Rollen- und Rechtesystem gesteuert. Bestimmte Rechte definieren, ob Benutzer Vorlagen lesen, bearbeiten oder verwenden dürfen. Da der EmailBuilder für das Rendern auf Daten anderer Module (z. B. Aufträge, Kontakte, Artikel) zugreifen muss, übersteuern seine Berechtigungen teilweise andere Modulrechte.
+
+Wenn der Versandvorgang fehlschlägt, erfolgt ein automatischer Wiederholungsversuch, abhängig vom Fehlertyp.
+Dauerhafte Fehler (z. B. ungültige Zugangsdaten) werden nicht erneut versucht.
+
+Versandfehler und Zustellfehler werden protokolliert und über folgende Systeme erfasst:
+
+* ElasticSearch (technisches Logging),
+* Grafana (Visualisierung von Fehlern und Status)
+
+Weitere Informationen zum EmailBuilder finden sich auf der Handbuchseite link:https://knowledge.plentyone.com/de-de/manual/main/crm/emailbuilder-uebersicht.html[EmailBuilder^].
