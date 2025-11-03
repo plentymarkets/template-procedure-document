@@ -44,7 +44,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |2.20|eBay Philippines
 |2.21|eBay Poland
 |2.22|eBay Singapore
-|3.00|Elmar
+|3.00|Elmar (_veraltet_)
 |4.00|Amazon
 |4.01|Amazon Germany
 |4.02|Amazon UK
@@ -66,10 +66,10 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |4.24|Amazon FR B2B
 |4.25|Amazon IT B2B
 |4.26|Amazon ES B2B
-|5.00|Yatego
+|5.00|Yatego (_veraltet_)
 |6.00|Kelkoo
-|7.00|Google Products
-|101.00|Ricardo
+|7.00|Google Products (_veraltet_)
+|101.00|Ricardo (_veraltet_)
 |102.00|Kaufland
 |102.01|Kaufland DE
 |102.02|Kaufland CZ
@@ -94,21 +94,22 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |104.13|Amazon FBA Turkey
 |104.14|Amazon FBA United Arab Emirates (U.A.E)
 |104.15|Amazon FBA Belgium
+|104.16|Amazon FBA Ireland
 |104.21|Amazon FBA Germany B2B
 |104.22|Amazon FBA UK B2B
 |104.24|Amazon FBA FR B2B
 |104.25|Amazon FBA IT B2B
 |104.26|Amazon FBA ES B2B
-|105.00|Zentralverkauf.de
-|106.00|Rakuten.de
-|107.00|Neckermann.de Enterprise
-|108.00|Otto Cooperation
-|108.02|Otto Integration
-|108.03|OTTO Direktversand
-|108.04|OTTO PreDropshipment
-|109.00|Shopgate
-|112.00|Shopperella
-|115.00|Restposten
+|105.00|Zentralverkauf.de (_veraltet_)
+|106.00|Rakuten.de (_veraltet_)
+|107.00|Neckermann.de Enterprise (_veraltet_)
+|108.00|Otto Cooperation (_veraltet_)
+|108.02|Otto Integration (_veraltet_)
+|108.03|OTTO Direktversand (_veraltet_)
+|108.04|OTTO PreDropshipment (_veraltet_)
+|109.00|Shopgate (_veraltet_)
+|112.00|Shopperella (_veraltet_)
+|115.00|Restposten (_veraltet_)
 |116.00|Kauflux
 |117.00|Home24
 |118.00|Zalando MAIN
@@ -137,26 +138,27 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |118.23|Zalando HR
 |118.24|Zalando HU
 |118.25|Zalando RO
-|119.00|NeckermannATEP
-|120.00|NeckermannATCD
+|118.16|Zalando LU
+|119.00|NeckermannATEP (_veraltet_)
+|120.00|NeckermannATCD (_veraltet_)
 |121.00|Idealo
 |121.02|Idealo Direktkauf
-|122.00|La Redoute
+|122.00|La Redoute (_veraltet_)
 |124.00|SumoScout
-|125.00|Hood
+|125.00|Hood (_veraltet_)
 |127.00|BeezUP
 |130.00|tracdelight
 |131.00|Plus.de
 |133.00|Twenga
 |135.00|Newsletter2GO
-|137.00|grosshandel.eu
+|137.00|grosshandel.eu (_veraltet_)
 |138.00|Hertie
-|143.00|Cdiscount.com
-|143.02|Cdiscount.com C Logistique
+|143.00|Cdiscount.com (_veraltet_)
+|143.02|Cdiscount.com C Logistique (_veraltet_)
 |145.00|Fruugo
-|147.00|Flubit
+|147.00|Flubit (_veraltet_)
 |148.00|WEB-API
-|149.00|Mercateo
+|149.00|Mercateo (_veraltet_)
 |150.00|Check24
 |152.00|bol.com
 |152.01|bol.com FBB
@@ -207,6 +209,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |172.23|Zalando ZFS HR
 |172.24|Zalando ZFS HU
 |172.25|Zalando ZFS RO
+|172.26|Zalando ZFS LU
 |173.00|Decathlon
 |173.01|Decathlon Germany
 |173.02|Decathlon Belgium
@@ -262,11 +265,13 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |184.04|Jelmoli Shop CH
 |184.05|Baur DE
 |185.00|Metro
-|===
-
-////
-folgende Auftragsherkünfte für ABOUT YOU einfügen, wenn Sales Channel live ist:
-
+|185.01|Metro Germany Mainland
+|185.02|Metro France Mainland
+|185.03|Metro Italy Mainland
+|185.04|Metro Spain Mainland
+|185.05|Metro Netherlands Mainland
+|185.06|Metro Portugal Mainland
+|185.07|Metro Balearic Islands
 |186.00|ABOUT YOU
 |186.01|ABOUT YOU Germany
 |186.02|ABOUT YOU Austria
@@ -278,7 +283,26 @@ folgende Auftragsherkünfte für ABOUT YOU einfügen, wenn Sales Channel live is
 |186.08|ABOUT YOU Italy
 |186.09|ABOUT YOU Spain
 |186.10|ABOUT YOU Portugal
-////
+|187.00|ManoMano
+|187.01|ManoMano MF b2b DE
+|187.02|ManoMano MF b2b FR
+|187.03|ManoMano MF b2b IT
+|187.04|ManoMano MF b2b ES
+|187.05|ManoMano MF b2c DE
+|187.06|ManoMano MF b2c FR
+|187.07|ManoMano MF b2c IT
+|187.08|ManoMano MF b2c ES
+|187.09|ManoMano NMF b2b DE
+|187.10|ManoMano NMF b2b FR
+|187.11|ManoMano NMF b2b GB
+|187.12|ManoMano NMF b2b IT
+|187.13|ManoMano NMF b2b ES
+|187.14|ManoMano NMF b2c DE
+|187.15|ManoMano NMF b2c FR
+|187.16|ManoMano NMF b2c GB
+|187.17|ManoMano NMF b2c IT
+|187.18|ManoMano NMF b2c ES
+|===
 
 [NOTE]
 .Einschränkungen
