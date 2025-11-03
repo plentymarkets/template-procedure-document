@@ -71,6 +71,10 @@ include::modul-messenger.adoc[]
 
 <<<
 
+include::modul-emailbuilder.adoc[]
+
+<<<
+
 include::modul-app.adoc[]
 
 <<<

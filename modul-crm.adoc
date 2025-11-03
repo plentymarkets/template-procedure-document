@@ -287,10 +287,6 @@ Scheduler
 |Optionen
 |Der Anwender kann alle zum gespeicherten Optionen sehen und bearbeiten und neue Optionen hinzufügen. Optionen beinhalten zum Beispiel die private und geschäftliche E-Mail-Adresse und Telefonnummer und die private und geschäftliche Anrede.
 
-|Tickets / +
-Neues Ticket
-|Wird das Ticketsystem genutzt, hat der Anwender die Möglichkeit, die Tickets des Kunden aus dem Kontaktdatensatz heraus aufzurufen. Der Anwender kann bestehende Tickets bearbeiten und neue Tickets hinzufügen.
-
 |====
 
 Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] zu finden.
@@ -366,7 +362,7 @@ Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dies
 [discrete]
 === Löschung von Kundendaten
 
-Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen, Tickets oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] zu finden.
+Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] zu finden.
 
 [discrete]
 === Aufbewahrungspflicht
