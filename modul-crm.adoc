@@ -14,7 +14,7 @@ In diesem Bereich der Verfahrensdokumentation werden die Begriffe _Kunde_ und _K
 
 Wenn ein neuer Kontaktdatensatz erstellt wird, erhält dieser eine ID. Die Kontakt-ID wird durch das System vergeben. Es handelt sich hierbei um einen eindeutigen, sogenannten Auto-Increment-Wert, der vom Anwender nicht geändert werden kann.
 
-Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-erstellen.html#kontakt-erstellen[Kontakt erstellen^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] beschrieben.
+Welche Informationen im Kontaktdatensatz gespeichert werden können, ist im Handbuch auf den Seiten link:https://knowledge.plentyone.com/de-de/manual/main/crm/kontakt-erstellen.html#kontakt-erstellen[Kontakt erstellen^] und link:https://knowledge.plentyone.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] beschrieben.
 
 In einem neu angelegten System sind vier Beispielkontaktdatensätze mit den IDs 100, 101, 102 und 103 vorhanden. Ausgehend von ID 103 wird hochgezählt, wenn ein neuer Kontaktdatensatz erstellt wird. Der Startwert für die Kontakt-IDs sowie die IDs der Kontaktdatensätze selbst können nicht geändert werden.
 
@@ -217,7 +217,7 @@ Die folgende Tabelle listet die in PlentyONE verfügbaren Typen auf. Ein Beispie
 
 |====
 
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#eigenschaften-einleitung[Kontakte - Vorbereitende Einstellungen vornehmen^] zu finden.
+Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentyone.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#eigenschaften-einleitung[Kontakte - Vorbereitende Einstellungen vornehmen^] zu finden.
 
 == Im Kontaktdatensatz verknüpfte Daten
 
@@ -282,14 +282,14 @@ Scheduler
 |Der Anwender kann interne Notizen zu dem jeweiligen Kontakt speichern. Im Messenger-Modul sind alle gespeicherten Kontaktnotizen dann in der übergeordneten Gruppe *Kontaktnotizen* verfügbar.
 
 |Messenger
-|Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht und archiviert werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/messenger.html[Messenger^].
+|Der Anwender kann Nachrichten über den Messenger versenden. Nachrichten können geflüstert werden und sind dann nur im Backend sichtbar; d.h. diese sind im Mein Konto-Bereich des Kunden im Webshop nicht sichtbar. Nachrichten (also E-Mails) können auch extern versendet werden. Nachrichten können gelöscht und archiviert werden. Weitere Informationen zum Messenger finden sich auf der Handbuchseite link:https://knowledge.plentyone.com/de-de/manual/main/crm/messenger.html[Messenger^].
 
 |Optionen
 |Der Anwender kann alle zum gespeicherten Optionen sehen und bearbeiten und neue Optionen hinzufügen. Optionen beinhalten zum Beispiel die private und geschäftliche E-Mail-Adresse und Telefonnummer und die private und geschäftliche Anrede.
 
 |====
 
-Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] zu finden.
+Weitere Informationen sind im Handbuch auf der Seite link:https://knowledge.plentyone.com/de-de/manual/main/crm/kontakt-bearbeiten.html[Kontakt bearbeiten^] zu finden.
 
 == Zahlungsarten
 
@@ -362,7 +362,7 @@ Der Anwender kann Kundendaten unkenntlich machen, sodass kein Bezug mehr zu dies
 [discrete]
 === Löschung von Kundendaten
 
-Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] zu finden.
+Es erfolgt keine automatische Löschung der Kundendaten seitens des Systems. Der Anwender muss dies explizit über die Datenbereinigung steuern. Kundendaten können nur gelöscht werden, wenn diese nicht mit Wareneingängen, Tickets oder Aufträgen verknüpft sind. Weitere Informationen sind auf der Handbuchseite link:https://knowledge.plentyone.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] zu finden.
 
 [discrete]
 === Aufbewahrungspflicht
@@ -378,7 +378,7 @@ Für den manuellen Austausch von Kontaktdaten stehen dem Anwender die folgenden 
 * Für den Import der Import-Typ *Kontakt* im Import-Tool
 * Für den Export der Katalog-Formattyp *Kontakt* oder das Datenformat *Kontakte* im Elastischen Export 
 
-Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentyone.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentyone.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentyone.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
 
 [discrete]
 === Export aller zu einem Kontakt oder Gastzugang gespeicherten Daten
@@ -391,7 +391,7 @@ Aktuell ist es für den Anwender nicht möglich, ein Backup der Kontaktdaten üb
 
 == CRM Historie
 
-Mit Hilfe der link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/aenderungshistorie.html#1300[CRM Historie^] können Anwender Änderungen an Kundendaten, ShopBooster-Daten oder die Einstellungen zur link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] nachvollziehen. Die Daten in diesem Menü werden 1 Jahr gespeichert.
+Mit Hilfe der link:https://knowledge.plentyone.com/de-de/manual/main/daten/aenderungshistorie.html#1300[CRM Historie^] können Anwender Änderungen an Kundendaten, ShopBooster-Daten oder die Einstellungen zur link:https://knowledge.plentyone.com/de-de/manual/main/daten/datenbereinigung.html[Datenbereinigung^] nachvollziehen. Die Daten in diesem Menü werden 1 Jahr gespeichert.
 
 Der Anwender wählt einen Referenztyp, z.B. die Adresse, und gibt anschließend die eindeutige ID der Adresse ein. Das bedeutet, dass der Anwender die ID kennen muss, um eine Anpassung an einem Datensatz nachverfolgen zu können. Für den Bereich der Kundendaten stehen die Referenztypen Kontakt, Adresse und Firma zur Verfügung.
 

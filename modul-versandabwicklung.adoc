@@ -143,7 +143,7 @@ Wenn mehrere Versandprofile vorhanden sind, erfolgt die Zuordnung zu einem Auftr
 
 Der Anwender legt fest, welche Versandmöglichkeiten es für einen Artikel gibt, indem er das Versandprofil anlegt und in diesem Mandanten (Shops), Herkünfte und Portotabellen – diese enthalten die Versandregionen – für den Endkunden freigibt. Wichtig hierbei ist, dass der Anwender dieses Versandprofil an den entsprechenden Artikeln verknüpft, damit diese Versandbedingungen dem Kunden im Webshop des Anwenders angezeigt werden.
 
-Weitere Informationen zu den Einstellungen im Versandprofil sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/fulfillment/versand-vorbereiten.html[Versand vorbereiten^] zu finden.
+Weitere Informationen zu den Einstellungen im Versandprofil sind im Handbuch auf der Seite link:https://knowledge.plentyone.com/de-de/manual/main/fulfillment/versand-vorbereiten.html[Versand vorbereiten^] zu finden.
 
 === Artikel-Portoaufschlag
 
@@ -283,7 +283,7 @@ Iloxx |DPD Print
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Versanddienstleister registrieren.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/fulfillment/versand-vorbereiten.html#2500[Versanddienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Versanddienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentyone.com/de-de/manual/main/fulfillment/versand-vorbereiten.html#2500[Versanddienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Versanddienstleister zu finden.
 
 === Integrierte Fulfillment-Dienstleister
 
@@ -298,7 +298,7 @@ Zu den folgenden Fulfillment-Dienstleistern besteht standardmäßig eine Schnitt
 
 Möchte der Anwender eine dieser Schnittstellen nutzen, muss er sich in der Regel zunächst bei dem Fulfillment-Dienstleister registrieren und erhält daraufhin die für das PlentyONE System benötigten Zugangsdaten.
 
-Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentymarkets.com/de-de/manual/main/fulfillment/versand-vorbereiten.html#4700[Fulfillment-Dienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
+Eine Übersicht über die im System fest integrierten Schnittstellen zu Fulfillment-Dienstleistern ist im Handbuch im Kapitel link:https://knowledge.plentyone.com/de-de/manual/main/fulfillment/versand-vorbereiten.html#4700[Fulfillment-Dienstleister im Überblick^] zu finden. Über die Übersicht gelangt der Anwender in die Unterkapitel bzw. auf die eigenen Handbuchseiten. Dort sind auch die Anleitungen zum Einrichten der Fulfillment-Dienstleister zu finden.
 
 == Datenübertragung
 

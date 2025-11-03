@@ -46,7 +46,7 @@ Der Anwender kann die Namen der Vorlagen sowie deren Inhalt und Betreff ändern.
 
 Beim Erstellen der Vorlagen über den EmailBuilder stehen dem Anwender Widgets zur Verfügung. Diese können per Drag-and-drop an die gewünschte Stelle der Vorlage gesetzt werden und mit Inhalt, wie z.B. Variablen, befüllt werden. Die Variablen werden dann in der versendeten E-Mail durch die korrekten Werte ersetzt.
 
-Weitere Informationen zum EmailBuilder sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/emailbuilder.html[EmailBuilder^] zu finden.
+Weitere Informationen zum EmailBuilder sind im Handbuch auf der Seite link:https://knowledge.plentyone.com/de-de/manual/main/crm/emailbuilder.html[EmailBuilder^] zu finden.
 
 == E-Mail-Versand automatisieren
 
@@ -95,7 +95,7 @@ Die E-Mail-Vorlage sollte den Link zur Auftragsübersicht enthalten.
 
 Neben dem Verknüpfen von E-Mail-Vorlagen mit Ereignissen besteht die Möglichkeit, Ereignisaktionen einzurichten: Der Anwender definiert ein Ereignis, setzt Filter und legt Aktionen fest, die dann vom System automatisch im Ereignisfall ausgeführt werden. Beispielsweise kann der E-Mail-Versand eines Gutscheins ausgelöst werden, wenn der Kunde eine bestimmte Anzahl an Aufträgen generiert hat.
 
-Weitere Informationen zu Ereignisaktionen sind im Handbuch auf der Seite link:https://knowledge.plentymarkets.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] zu finden.
+Weitere Informationen zu Ereignisaktionen sind im Handbuch auf der Seite link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] zu finden.
 
 == Gesendete E-Mails einsehen
 

@@ -12,7 +12,7 @@ Die plentyWarehouse App enthält die folgenden Funktionen zur Verwaltung von Lag
 - Rollende Kommissionierung
 - Einzelkommissionierung
 
-Detaillierte Informationen zu den einzelnen Funktionen sind im link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/plentywarehouse.html#100[Handbuch^] verfügbar.
+Detaillierte Informationen zu den einzelnen Funktionen sind im link:https://knowledge.plentyone.com/de-de/manual/main/warenwirtschaft/plentywarehouse.html#100[Handbuch^] verfügbar.
 
 [TIP]
 .Ergänzen Sie Ihre eigenen Firmendaten
@@ -36,7 +36,7 @@ Die plentyWarehouse App kann auf mobilen Endgeräten mit folgenden Systemvorauss
 
 * Android-Geräte mit OS-Version ab 7.0
 
-Die plentyWarehouse App wird ohne eigene Hardware ausgeliefert. Je nach Anwendungsfall werden aber link:https://knowledge.plentymarkets.com/de-de/manual/main/willkommen/systemvoraussetzungen.html#450[unterschiedliche Endgeräte^] empfohlen.
+Die plentyWarehouse App wird ohne eigene Hardware ausgeliefert. Je nach Anwendungsfall werden aber link:https://knowledge.plentyone.com/de-de/manual/main/willkommen/systemvoraussetzungen.html#450[unterschiedliche Endgeräte^] empfohlen.
 
 Ergänzen Sie die folgende Tabelle. Hier werden die unternehmenseigenen Tablets, Smartphones und sonstigen mobilen Endgeräte aufgelistet, auf denen die plentyWarehouse App installiert wurde.
 
@@ -76,6 +76,6 @@ Für alle anderen Benutzerklassen müssen die Benutzerrechte pro Rolle definiert
 
 == App-Funktionen
 
-Die plentyWarehouse App beinhaltet eine Reihe verschiedener Funktionen, die im link:https://knowledge.plentymarkets.com/de-de/manual/main/warenwirtschaft/plentywarehouse.html#100[Handbuch^] beschrieben sind. Besonders relevant ist die plentyWarehouse App für das Modul <<#_fachliche_und_technische_beschreibung_des_moduls_warenwirtschaft, Warenwirtschaft>>.
+Die plentyWarehouse App beinhaltet eine Reihe verschiedener Funktionen, die im link:https://knowledge.plentyone.com/de-de/manual/main/warenwirtschaft/plentywarehouse.html#100[Handbuch^] beschrieben sind. Besonders relevant ist die plentyWarehouse App für das Modul <<#_fachliche_und_technische_beschreibung_des_moduls_warenwirtschaft, Warenwirtschaft>>.
 
 Je nach App-Version, die laut der obigen Tabelle auf den mobilen Endgeräten installiert ist, können der Funktionsumfang der plentyWarehouse App hinsichtlich der Einstellungsmöglichkeiten und verfügbarer Funktionen abweichen. Die vorliegenden Informationen sowie die Beschreibungen des <<#_fachliche_und_technische_beschreibung_des_moduls_warenwirtschaft, Moduls Warenwirtschaft>> basieren stets auf dem Funktionsumfang der jeweils aktuell verfügbaren, neuesten Version der plentyWarehouse App. Bei der Erstellung der unternehmenseigenen Verfahrensdokumentation muss daher genau beachtet werden, welche Versionen der plentyWarehouse App genutzt werden. Informationen zum Funktionsumfang und Änderungen in einzelnen Versionen der plentyWarehouse App können link:https://forum.plentymarkets.com/c/changelog/plentywarehouse-app/1035[hier^] eingesehen werden.

@@ -71,15 +71,15 @@ Die Vererbungsfunktion ist standardmäßig aktiviert. Wenn eine neue Variante ei
 [#100]
 == Erstellung, Import und Export von Artikeldaten
 
-Einerseits können Anwender Artikel- und Variantendaten link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/neue-artikel.html[manuell in PlentyONE erstellen^].
+Einerseits können Anwender Artikel- und Variantendaten link:https://knowledge.plentyone.com/de-de/manual/main/artikel/neue-artikel.html[manuell in PlentyONE erstellen^].
 Andererseits können sie auch Daten zwischen ihrem PlentyONE System und anderen, externen Systeme austauschen.
-Hierfür stehen link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/import-export-anlage.html[unterschiedliche Tools^] zur Verfügung.
+Hierfür stehen link:https://knowledge.plentyone.com/de-de/manual/main/artikel/import-export-anlage.html[unterschiedliche Tools^] zur Verfügung.
 Anwender können Artikeldatensätze z.B.:
 
-* link:https://knowledge.plentymarkets.com/de-de/manual/main/maerkte/ebay-einrichten.html#11000[aus vorhandenen eBay-Listings importieren^].
-* link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[in CSV-Dateien pflegen und anschließend importieren^].
-* link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/rest-api.html[aus externen Systemen mit der REST-API importieren^].
-* link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/export.html[aus ihrem PlentyONE System exportieren^].
+* link:https://knowledge.plentyone.com/de-de/manual/main/maerkte/ebay-einrichten.html#11000[aus vorhandenen eBay-Listings importieren^].
+* link:https://knowledge.plentyone.com/de-de/manual/main/daten/ElasticSync.html[in CSV-Dateien pflegen und anschließend importieren^].
+* link:https://knowledge.plentyone.com/de-de/manual/main/daten/rest-api.html[aus externen Systemen mit der REST-API importieren^].
+* link:https://knowledge.plentyone.com/de-de/manual/main/artikel/export.html[aus ihrem PlentyONE System exportieren^].
 
 Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter Produktdaten anlegen und austauschen:
 
@@ -108,7 +108,7 @@ Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben S
 ==== Änderungshistorie
 //Der gleiche Inhalt findet sich auch im Kapitel Auftragsabwicklung
 
-Mit Hilfe der link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/aenderungen.html[Änderungshistorie^] können Anwender Änderungen an rechnungsrelevanten Daten verfolgen. Zum Beispiel können Anwender den gesamten Lebensweg eines Artikels oder eines Auftrags nachvollziehen.
+Mit Hilfe der link:https://knowledge.plentyone.com/de-de/manual/main/artikel/aenderungen.html[Änderungshistorie^] können Anwender Änderungen an rechnungsrelevanten Daten verfolgen. Zum Beispiel können Anwender den gesamten Lebensweg eines Artikels oder eines Auftrags nachvollziehen.
 Die Änderungshistorie setzt sich aus den folgenden Teilen zusammen:
 
 * *_Suche_*: Änderungsaufzeichnungen, die weniger als sechs Monate zurückliegen, können live durchsucht werden.
@@ -137,7 +137,7 @@ Einige verknüpfte Entitäten haben einen eigenen Timestamp, der bei Änderungen
 ==== Sonstige Möglichkeiten
 
 Anwender können Änderungen an Artikel- und Variantendaten auch selbst erfassen und dokumentieren.
-Zu diesem Zweck können Anwender diverse link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[Artikel- und Variantendaten exportieren^].
+Zu diesem Zweck können Anwender diverse link:https://knowledge.plentyone.com/de-de/manual/main/daten/FormatDesigner.html[Artikel- und Variantendaten exportieren^].
 
 Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter Änderungen an Artikel- und Variantendaten protokollieren:
 
@@ -151,7 +151,7 @@ Das Löschen von Artikeln und Varianten wird lediglich vom Anbieter des ERP-Syst
 In PlentyONE wird zwischen Verkaufspreisen und Preisen unterschieden.
 Die Verkaufspreise sind Datencontainer (ähnlich wie Artikel es auch sind).
 Sie ermöglichen das zentrale Verwalten von Bedingungen, die auf Preise zutreffen sollen.
-Verkaufspreise bestimmen also link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html[in welchen Situationen^] eine Variante zu einem bestimmten Preis verkauft wird.
+Verkaufspreise bestimmen also link:https://knowledge.plentyone.com/de-de/manual/main/artikel/preise.html[in welchen Situationen^] eine Variante zu einem bestimmten Preis verkauft wird.
 
 Verkaufspreise gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Nach der Erstellung werden Verkaufspreise mit einzelnen Varianten verknüpft.
 
@@ -174,17 +174,17 @@ Es werden _ausschließlich_ Bruttopreise in der Datenbank gespeichert.
 
 Die Preise einer einzigen Variante können geändert werden, z.B.:
 
-* durch die manuelle link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/import-export-anlage-verzeichnis.html#240[Eingabe eines neuen Preises^].
+* durch die manuelle link:https://knowledge.plentyone.com/de-de/manual/main/artikel/import-export-anlage-verzeichnis.html#240[Eingabe eines neuen Preises^].
 * durch das Aktivieren oder Deaktivieren der Vererbung.
 * durch die Änderung eines Preises der Hauptvariante bei aktiver Vererbung.
 * durch Verknüpfung mit einer <<#_preiskalkulationen, Preiskalkulation>>.
 
 Die Preise mehrere Varianten können gleichzeitig geändert werden, z.B.:
 
-* über die link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/massenbearbeitung.html#300[Varianten-Gruppenfunktion^].
-* über die link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/massenbearbeitung.html#600[Stapelverarbeitung^].
-* durch den link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import von Preisdaten^].
-* per link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/rest-api.html[REST-API^].
+* über die link:https://knowledge.plentyone.com/de-de/manual/main/artikel/massenbearbeitung.html#300[Varianten-Gruppenfunktion^].
+* über die link:https://knowledge.plentyone.com/de-de/manual/main/artikel/massenbearbeitung.html#600[Stapelverarbeitung^].
+* durch den link:https://knowledge.plentyone.com/de-de/manual/main/daten/ElasticSync.html[Import von Preisdaten^].
+* per link:https://knowledge.plentyone.com/de-de/manual/main/daten/rest-api.html[REST-API^].
 
 Preisänderungen können in der PlentyONE <<#_änderungshistorie, Änderungshistorie>> protokolliert werden. Dies setzt voraus, dass der Anwender die Änderungshistorie und die relevanten Datenfelder aktiviert hat.
 Alternativ können Anwender GoBD-relevante Änderungen selbst erfassen und dokumentieren. Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
@@ -193,7 +193,7 @@ Alternativ können Anwender GoBD-relevante Änderungen selbst erfassen und dokum
 
 ==== Preiskalkulationen
 
-link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/preise.html#1000[Preiskalkulationen^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>.
+link:https://knowledge.plentyone.com/de-de/manual/main/artikel/preise.html#1000[Preiskalkulationen^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>.
 Sie dienen dazu, die Geldpreise von Varianten automatisch anhand bestimmter Kriterien zu berechnen und zu aktualisieren.
 
 *_Beispiel_*: Anwender können mit dem Einkaufspreis des Artikels starten und dann die Transportkosten, Lagerkosten und Steuern hinzufügen. Schließlich können Anwender eine Gewinnspanne von 7% oben drauf legen.
@@ -204,9 +204,9 @@ Diese können nur manuell erstellt und bearbeitet werden.
 _Im zweiten Schritt_ bestimmen Anwender, für welche Varianten die Preiskalkulation verwendet werden soll.
 Dies geschieht z.B. durch:
 
-* die link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/import-export-anlage-verzeichnis.html#240[manuelle Verknüpfung^] der Preiskalkulation mit einer Variation.
-* den link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/elasticSync-artikel.html#2300[Import^] von Preiskalkulationsverknüpfungen.
-* die Verwendung der link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/massenbearbeitung.html#300[Varianten-Gruppenfunktion^].
+* die link:https://knowledge.plentyone.com/de-de/manual/main/artikel/import-export-anlage-verzeichnis.html#240[manuelle Verknüpfung^] der Preiskalkulation mit einer Variation.
+* den link:https://knowledge.plentyone.com/de-de/manual/main/daten/elasticSync-artikel.html#2300[Import^] von Preiskalkulationsverknüpfungen.
+* die Verwendung der link:https://knowledge.plentyone.com/de-de/manual/main/artikel/massenbearbeitung.html#300[Varianten-Gruppenfunktion^].
 
 Bei aktivierter Vererbung werden diese Preise wie andere Preise auch von der Hauptvariante an die anderen Varianten des Artikels vererbt.
 
@@ -216,26 +216,26 @@ Bei aktivierter Vererbung werden diese Preise wie andere Preise auch von der Hau
 
 ==== Welche Rabatte auf Preise sind möglich?
 
-In PlentyONE sind link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
+In PlentyONE sind link:https://knowledge.plentyone.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 
 * bestimmten Kundenklassen einen günstigeren Preis anzubieten.
-* die Artikel einer bestimmten link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/kategorien.html#1530[Kategorie^] zu vergünstigen.
+* die Artikel einer bestimmten link:https://knowledge.plentyone.com/de-de/manual/main/artikel/kategorien.html#1530[Kategorie^] zu vergünstigen.
 * bestimmte Zahlungsarten attraktiver zu machen.
-* beschädigte Ware manuell link:https://knowledge.plentymarkets.com/de-de/manual/main/pos/pos-kassenbenutzer.html#140[an der Kasse im stationären Laden^] zu vergünstigen.
-* werbliche Aktionen durchzuführen, z.B. 20% auf alles außer Tiernahrung. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html[Aktionsgutscheinen^] durchgeführt.
+* beschädigte Ware manuell link:https://knowledge.plentyone.com/de-de/manual/main/pos/pos-kassenbenutzer.html#140[an der Kasse im stationären Laden^] zu vergünstigen.
+* werbliche Aktionen durchzuführen, z.B. 20% auf alles außer Tiernahrung. Solche Aktionen werden mit sogenannten link:https://knowledge.plentyone.com/de-de/manual/main/auftraege/gutscheine.html[Aktionsgutscheinen^] durchgeführt.
 
-Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* mit der Option link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/import-export-anlage-verzeichnis.html#40[Aktionsgutschein/POS-Rabatt^] von Rabatten an der PlentyONE POSKasse ausgeschlossen werden. Das bedeutet, dass das Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte und Aktionsrabatte sind für diese nicht rabattfähigen Artikel ungültig.
+Artikel können im Menü *Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Global* mit der Option link:https://knowledge.plentyone.com/de-de/manual/main/artikel/import-export-anlage-verzeichnis.html#40[Aktionsgutschein/POS-Rabatt^] von Rabatten an der PlentyONE POSKasse ausgeschlossen werden. Das bedeutet, dass das Kassenpersonal keinen manuellen Rabatt eingeben kann. Auch Kundenklassenrabatte und Aktionsrabatte sind für diese nicht rabattfähigen Artikel ungültig.
 
 ==== Anzeige des niedrigsten Preises der letzten 30 Tage
 
-PlentyONE enthält eine link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/verzeichnis.html#340[Niedrigstpreisfunktion], die es Händlern ermöglicht, die Anforderungen, die in § 11 (1) der link:https://www.bmwk.de/Redaktion/DE/Downloads/P-R/novelle-der-preisangabenverordnung-pangv.pdf?__blob=publicationFile&v=4[Preisangabenverordnung] festgelegt sind, zu erfüllen.
+PlentyONE enthält eine link:https://knowledge.plentyone.com/de-de/manual/main/artikel/verzeichnis.html#340[Niedrigstpreisfunktion], die es Händlern ermöglicht, die Anforderungen, die in § 11 (1) der link:https://www.bmwk.de/Redaktion/DE/Downloads/P-R/novelle-der-preisangabenverordnung-pangv.pdf?__blob=publicationFile&v=4[Preisangabenverordnung] festgelegt sind, zu erfüllen.
 Händler können den niedrigsten Preis manuell in PlentyONE eingeben, den Preis importieren oder PlentyONE den niedrigsten Preis automatisch ermitteln lassen.
 Daraufhin kann der niedrigste Preis im Webshop angezeigt werden.
 
 === Kategorien
 //aktualisieren wenn Limits da sind
 
-In PlentyONE können link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/kategorien.html[Kategorien^] sowohl im Sinne von _Warengruppen_ als auch im Sinne von den _Content-Seiten_ eines Webshops verstanden werden. In diesem Kapitel sind mit Kategorien Warengruppen gemeint. Sie dienen dazu, Produkte übersichtlich zu gruppieren.
+In PlentyONE können link:https://knowledge.plentyone.com/de-de/manual/main/artikel/kategorien.html[Kategorien^] sowohl im Sinne von _Warengruppen_ als auch im Sinne von den _Content-Seiten_ eines Webshops verstanden werden. In diesem Kapitel sind mit Kategorien Warengruppen gemeint. Sie dienen dazu, Produkte übersichtlich zu gruppieren.
 
 Varianten können beliebig vielen Kategorien zugeordnet werden. Allerdings muss bereits bei der Erstellung einer neuen Variante eine Standardkategorie festgelegt werden. Diese Standardkategorie kann jederzeit geändert werden, allerdings ist es nicht möglich, Varianten ohne Standardkategorie zu pflegen.
 
@@ -243,7 +243,7 @@ Kategorien haben steuerrechtliche Relevanz, da ein oder mehrere Mengenrabatte f�
 
 === Einheiten
 
-link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/einheiten.html[Einheiten^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
+link:https://knowledge.plentyone.com/de-de/manual/main/artikel/einheiten.html[Einheiten^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
 
 * verschiedene Varianten eines Artikels zu bilden.
 * den Inhalt von Varianten zu definieren. Hierfür werden Einheiten mit den Varianten verknüpft und Mengenangaben hinterlegt.
@@ -253,7 +253,7 @@ Standardmäßig sind 52 Einheiten nach ISO-Code in PlentyONE Systemen gespeicher
 
 === Attribute
 
-link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/attribute.html[Attribute^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
+link:https://knowledge.plentyone.com/de-de/manual/main/artikel/attribute.html[Attribute^] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>. Sie dienen dazu:
 
 * Produkte zu charakterisieren.
 * verschiedene Varianten eines Artikels zu bilden.
@@ -273,7 +273,7 @@ Im Menü *Einrichtung » Artikel » Attribute* können beliebig viele Attribute 
 === Eigenschaften und Merkmale
 
 In PlentyONE ist es auch möglich, Produkte zu charakterisieren, ohne dabei Varianten zu bilden.
-Hierfür werden link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/eigenschaften.html[Eigenschaften und Merkmale] verwendet.
+Hierfür werden link:https://knowledge.plentyone.com/de-de/manual/main/artikel/eigenschaften.html[Eigenschaften und Merkmale] verwendet.
 Darüber lassen sich Features, z.B. technische Details wie “Bluetooth” oder “WLAN” abbilden.
 Eigenschaften und Merkmale sind nicht an den Warenbestand gekoppelt.
 
@@ -284,7 +284,7 @@ Eigenschaften und Merkmalen kommen eine besondere Bedeutung im Sinne der GoBD zu
 Anwender tragen einen Wert ein, wenn sie für das Merkmal/die Eigenschaft einen Aufpreis berechnen möchten.
 Dieser Wert wird automatisch zum Artikelpreis addiert.
 Anwender entscheiden auch, ob der Aufpreis besteuert werden soll und falls ja, welcher Steuersatz gelten soll.
-link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/personalisierte-artikel.html#verpflichtend-vorausgewaehlt[Eine mögliche Anwendung] ist zum Beispiel die Darstellung von Pfandbeträgen, bei denen keine Mehrwertsteuer angewendet wird.
+link:https://knowledge.plentyone.com/de-de/manual/main/artikel/personalisierte-artikel.html#verpflichtend-vorausgewaehlt[Eine mögliche Anwendung] ist zum Beispiel die Darstellung von Pfandbeträgen, bei denen keine Mehrwertsteuer angewendet wird.
 
 Der Aufschlag kann direkt in der Eigenschaft/im Merkmal gespeichert werden.
 Alternativ kann auch ein produktspezifischer Aufpreis direkt im Artikel/Variante gespeichert werden.
@@ -306,7 +306,7 @@ Beim Erstellen eines neuen Artikels ist standardmäßig kein Versandprofil aktiv
 
 === Hersteller
 
-link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/hersteller.html[Herstellerdaten] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>.
+link:https://knowledge.plentyone.com/de-de/manual/main/artikel/hersteller.html[Herstellerdaten] gehören zu den zentral gespeicherten <<#_einführung_in_die_plentymarkets_artikelstruktur, Systemeinstellungen>>.
 Im zentralen Herstellerdatensatz werden Name, Kontaktdaten und marktplatzspezifische IDs des Herstellers gespeichert.
 Nach der Erstellung werden Hersteller mit Artikeln verknüpft.
 
@@ -318,7 +318,7 @@ Die vom Anwender erstellten Datensätze erhalten eine fortlaufende ID beginnend 
 
 Manche Hersteller erheben für den Verkauf auf bestimmten Kanälen Provisionen.
 Um dieser Forderung Rechnung zu tragen, kann am Hersteller ein Provisionsbetrag in Prozent gespeichert werden.
-Provisionen werden immer für eine bestimmte Kombination aus link:https://knowledge.plentymarkets.com/de-de/manual/main/webshop/mandanten-verwalten.html[Mandant^] und link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/auftragsherkunft.html[Herkunft^] gespeichert.
+Provisionen werden immer für eine bestimmte Kombination aus link:https://knowledge.plentyone.com/de-de/manual/main/webshop/mandanten-verwalten.html[Mandant^] und link:https://knowledge.plentyone.com/de-de/manual/main/auftraege/auftragsherkunft.html[Herkunft^] gespeichert.
 
 Herstellerprovisionen können nur manuell im Menü *Einrichtung » Artikel » Hersteller* hinterlegt werden. Änderungen an den Einstellungen für Herstellerprovisionen werden nicht protokolliert. Ergänzen Sie die Beschreibung des Ablaufs in Ihrem eigenen Unternehmen. Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
 
@@ -334,7 +334,7 @@ Anwender haben drei verschiedene Möglichkeiten, Produkte zu kombinieren und als
 |===
 |Art |Erläuterung
 
-|link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/multipacks-pakete-sets-verwalten.html#1000[Multipack^]
+|link:https://knowledge.plentyone.com/de-de/manual/main/artikel/multipacks-pakete-sets-verwalten.html#1000[Multipack^]
 |*_Beispiel_*: 1 Flasche Wasser, eine Packung mit 6 Flaschen und eine Packung mit 12 Flaschen.
 
 *_Technische Angaben_*:
@@ -345,7 +345,7 @@ Anwender haben drei verschiedene Möglichkeiten, Produkte zu kombinieren und als
 * <<#_preise, Preise>> funktionieren genauso wie bei normalen Artikeln. Verkäufer werden allerdings empfohlen, die Vererbungsfunktion zu deaktivieren und stattdessen für jede Variante einen eigenen Preis zu speichern.
 * Bestand wird nur an der Hauptvariante verwaltet.
 
-|link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/multipacks-pakete-sets-verwalten.html#2000[Paket^]
+|link:https://knowledge.plentyone.com/de-de/manual/main/artikel/multipacks-pakete-sets-verwalten.html#2000[Paket^]
 |*_Beispiel_*: Ein Bartpflege-Kit bestehend aus einer Schere, einer Bürste, Bartöl und Bartwachs.
 
 *_Technische Angaben_*:
@@ -357,7 +357,7 @@ Anwender haben drei verschiedene Möglichkeiten, Produkte zu kombinieren und als
 * Anwender geben den Paketpreis und den Umsatzsteuersatz am Artikeldatensatz selbst ein. Preis und Umsatzsteuersatz werden _nicht_ automatisch von PlentyONE anhand der Bestandteile berechnet.
 * Der Einkaufspreis kann dagegen automatisch auf Grundlage der Bestandteile berechnet werden.
 
-|link:https://knowledge.plentymarkets.com/de-de/manual/main/artikel/multipacks-pakete-sets-verwalten.html#3000[Set^]
+|link:https://knowledge.plentyone.com/de-de/manual/main/artikel/multipacks-pakete-sets-verwalten.html#3000[Set^]
 |*_Beispiel_*: Eine Fußballuniform bestehend aus einem Trikot, Shorts und Socken. Der Endkunde stellt sich seine eigene Uniform zusammen, indem er die gewünschte Größe und Farbe für jede der drei Komponenten auswählt.
 
 *_Technische Angaben_*:
@@ -384,6 +384,6 @@ Geben Sie an, wie Ihre Mitarbeiter GoBD-relevante Änderungen erfassen:
 
 == Backup
 
-Anwender können eine link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/backup.html[Backup-Funktion^] nutzen, um Artikel- und Variantendaten in der Datenbank auf einen früheren Stand zurückzusetzen oder um gelöschte Daten wiederherzustellen.
+Anwender können eine link:https://knowledge.plentyone.com/de-de/manual/main/daten/backup.html[Backup-Funktion^] nutzen, um Artikel- und Variantendaten in der Datenbank auf einen früheren Stand zurückzusetzen oder um gelöschte Daten wiederherzustellen.
 
 Im Menü *Einrichtung » Einstellungen » Hosting » Backup* finden Anwender eine Übersicht der Backups, die in den letzten Monate automatisch erstellt wurden. Anwender können diese Backups entweder einspielen oder als .sql.gz-Dateien herunterladen.

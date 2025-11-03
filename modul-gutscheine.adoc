@@ -4,7 +4,7 @@
 
 In PlentyONE gibt es zwei Gutscheintypen (Gutschein und Voucher) sowie zwei Gutscheinarten (Aktionsgutschein und Mehrzweckgutschein).
 
-Es handelt sich dann um einen link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html[Gutschein^], wenn der Inhaber diesen zur Einlösung gegen Gegenstände oder Dienstleistungen verwenden kann.
+Es handelt sich dann um einen link:https://knowledge.plentyone.com/de-de/manual/main/auftraege/gutscheine.html[Gutschein^], wenn der Inhaber diesen zur Einlösung gegen Gegenstände oder Dienstleistungen verwenden kann.
 
 Es handelt sich _nicht_ um einen Gutschein, wenn der Inhaber lediglich zu einem Preisnachlass beim Erwerb von Gegenständen oder Dienstleistungen berechtigt wird.
 
@@ -14,7 +14,7 @@ Diese Gutscheinart kann in PlentyONE sowohl verkauft als auch eingelöst werden.
 
 Hierfür sind einige Vorbereitungen im ERP-System PlentyONE nötig:
 
-* Pro Gutscheinwert muss ein Artikel in PlentyONE erstellt und mit einer link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html#kampagne-erstellen[Kampagne^] verknüpft werden.
+* Pro Gutscheinwert muss ein Artikel in PlentyONE erstellt und mit einer link:https://knowledge.plentyone.com/de-de/manual/main/auftraege/gutscheine.html#kampagne-erstellen[Kampagne^] verknüpft werden.
 * Diese Artikel erhalten den Mehrwertsteuersatz 0%.
 * Der Artikelpreis entspricht jeweils dem Gutscheinwert.
 
@@ -27,12 +27,12 @@ Zum Einlösen eines Gutscheins benötigt der Kunde lediglich seinen Gutschein-Co
 
 == Rabatte und Preisnachlässe
 
-In PlentyONE sind link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
+In PlentyONE sind link:https://knowledge.plentyone.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatte^] im Sinne von _Preisnachlässen_ zu verstehen. Rabatte können beispielsweise verwendet werden, um:
 
 * Bestandskunden einen günstigeren Preis als Standardkunden anzubieten.
-* werbliche Aktionen durchzuführen, z.B. 20% auf alle Produkte. Solche Aktionen werden mit sogenannten link:https://knowledge.plentymarkets.com/de-de/manual/main/auftraege/gutscheine.html[Aktionsgutscheinen^] durchgeführt.
+* werbliche Aktionen durchzuführen, z.B. 20% auf alle Produkte. Solche Aktionen werden mit sogenannten link:https://knowledge.plentyone.com/de-de/manual/main/auftraege/gutscheine.html[Aktionsgutscheinen^] durchgeführt.
 
-PlentyONE Händler können Bestandskunden einen anderen Preis anbieten als Standardkunden. Solche Rabatte hängen von der link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#kundenklasse-erstellen[Kundenklasse^] des Bestandskunden ab, und davon, ob für diese Kundenklasse ein link:https://knowledge.plentymarkets.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatt^] im ERP-System PlentyONE gespeichert ist.
+PlentyONE Händler können Bestandskunden einen anderen Preis anbieten als Standardkunden. Solche Rabatte hängen von der link:https://knowledge.plentyone.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#kundenklasse-erstellen[Kundenklasse^] des Bestandskunden ab, und davon, ob für diese Kundenklasse ein link:https://knowledge.plentyone.com/de-de/manual/main/crm/vorbereitende-einstellungen.html#rabattsystem-nutzen[Rabatt^] im ERP-System PlentyONE gespeichert ist.
 
 Kundenklassenrabatte werden direkt auf den Auftrag angewendet, jedoch nicht separat im Auftrag ausgewiesen.
 
@@ -48,4 +48,4 @@ Für den manuellen Austausch von Gutscheindaten stehen dem Anwender die folgende
 * Für den Import von Kampagnen der Import-Typ *Kampagnen*
 * Für den Export in der Gutscheine-Bedienoberfläche eine Schaltfläche zum Exportieren der Kampagnendaten in eine CSV-Datei
 
-Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentymarkets.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
+Weitere Informationen sind im Handbuch auf den Seiten link:https://knowledge.plentyone.com/de-de/manual/main/daten/ElasticSync.html[Import-Tool nutzen^], link:https://knowledge.plentyone.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge kennenlernen] und link:https://knowledge.plentyone.com/de-de/manual/main/daten/FormatDesigner.html[FormatDesigner^] zu finden.
