@@ -142,7 +142,7 @@ Folgende Herkünfte sind standardmäßig in jedem PlentyONE System vorangelegt:
 |119.00|NeckermannATEP (_veraltet_)
 |120.00|NeckermannATCD (_veraltet_)
 |121.00|Idealo
-|121.02|Idealo Direktkauf
+|121.02|Idealo Direktkauf (_veraltet_)
 |122.00|La Redoute (_veraltet_)
 |124.00|SumoScout
 |125.00|Hood (_veraltet_)
