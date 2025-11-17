@@ -1042,21 +1042,6 @@ end legend
 
 <<<
 
-== Editoren
-
-In diesem Abschnitt werden die Berechtigungen für den Bereich Editoren aufgelistet.
-
-[plantuml, format=png, opts="inline"]
-----
-!include styles/tree-style.iuml
-legend
-Editoren
-|_ Bearbeiten
-end legend
-----
-
-<<<
-
 == Artikel
 
 In diesem Abschnitt werden die Berechtigungen für den Bereich Artikel aufgelistet.
@@ -1308,8 +1293,8 @@ legend
 Merkmal
 |_ Merkmal
 |_ Eigenschaftswerte
-|_ Eigenschaftswerte
-|_ Text
+  |_ Eigenschaftswerte
+  |_ Text
 end legend
 ----
 
@@ -1601,9 +1586,11 @@ Märkte
 |_ idealo
 |_ Kauflux
 |_ La Redoute
+|_ Mediamarkt
 |_ Mercateo
 |_ Neckermann Österreich Enterprise
 |_ Netto eStores
+|_ OBI
 |_ Otto
 |_ PIXmania
 |_ Rakuten.de
@@ -1613,6 +1600,7 @@ Märkte
 |_ Shopgate
 |_ Shopify App
 |_ Völkner
+|_ XXXLutz
 |_ Yatego
 |_ Zalando
 end legend
@@ -1627,32 +1615,32 @@ end legend
 !include styles/tree-style.iuml
 legend
 Amazon
-|_ Einstellungen
-  |_ Bearbeiten
-|_ Neue Einstellungen
-  |_ Bearbeiten
-|_ Berichte
-  |_ Verarbeitung
-    |_ Bearbeiten
-  |_ Anfordern
-    |_ Bearbeiten
-|_ Frei definierbare Felder
-  |_ Bearbeiten
+
 |_ Kategorieverknüpfung
   |_ Bearbeiten
 |_ Datenaustausch
   |_ Datenexport
     |_ Bearbeiten
-  |_ Auftragsimport
+  |_ FBA Warenbestand
     |_ Bearbeiten
-  |_ Versandbestätigung
+  |_ Auftragsimport
     |_ Bearbeiten
   |_ Berichte
     |_ Bearbeiten
-  |_ FBA Warenbestand
+  |_ Versandbestätigung
     |_ Bearbeiten
 |_ ASIN-Verknüpfung
-  |_ Bearbeiten  
+  |_ Bearbeiten
+|_ Frei definierbare Felder
+  |_ Bearbeiten
+|_ Katalog-Vorlagen hinzufügen
+  |_ Bearbeiten
+|_ Berichte
+  |_ Verarbeitungsstatus
+    |_ Verarbeitungssattus
+    |_ Herunterladen  
+|_ Einstellungen
+  |_ Bearbeiten
 end legend
 ----
 
@@ -1726,14 +1714,16 @@ end legend
 !include styles/tree-style.iuml
 legend
 Decathlon
-|_ Einstellungen
-|_ Katalog-Vorlagen
-  |_ Bearbeiten
 |_ Datenaustausch
   |_ Datenexport
     |_ Bearbeiten
   |_ Auftragsimport
     |_ Bearbeiten
+|_ Berichte
+  |_ Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
 end legend
 ----
 
@@ -1759,7 +1749,7 @@ eBay
 |_ Versandbedingungen
 |_ eBay-Merkmal
 |_ Marktplatz
-|_ eBay-Zahlungsbedingungen
+|_ Zahlungsbedingungen
 |_ ePID-Verknüpfung
   |_ ePID-Verknüpfung
   |_ Bearbeiten
@@ -1783,8 +1773,6 @@ end legend
 !include styles/tree-style.iuml
 legend
 eMAG
-|_ Einstellungen
-  |_ Bearbeiten
 |_ Datenaustausch
   |_ Artikelexport
     |_ Bearbeiten
@@ -1792,6 +1780,8 @@ eMAG
     |_ Bearbeiten
   |_ Auftragsimport
     |_ Bearbeiten
+|_ Einstellungen
+  |_ Bearbeiten
 ----
 
 <<<
@@ -1922,6 +1912,28 @@ end legend
 
 <<<
 
+=== Mediamarkt
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Mediamarkt
+|_ Datenaustausch
+  |_ Datenexport
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+|_ Berichte
+  |_ Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
+end legend
+----
+
+<<<
+
 === Mercateo
 
 [plantuml, format=png, opts="inline"]
@@ -1960,6 +1972,19 @@ end legend
 !include styles/tree-style.iuml
 legend
 Netto eStores
+|_ Bearbeiten
+end legend
+----
+
+<<<
+
+=== OBI
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+OBI
 |_ Bearbeiten
 end legend
 ----
@@ -2080,7 +2105,6 @@ end legend
 ----
 !include styles/tree-style.iuml
 legend
-|_ Migrationsassistent
 |_ Hilfe
   |_ Bereitschaft prüfen
     |_ Bearbeiten
@@ -2106,16 +2130,40 @@ legend
 ----
 !include styles/tree-style.iuml
 legend
-|_ Einstellungen
-|_ Katalog-Vorlagen
-  |_ Bearbeiten
-|_ Berichte
-  |_  Bearbeiten
+Völkner
+
 |_ Datenaustausch
   |_ Datenexport
     |_ Bearbeiten
   |_ Auftragsimport
     |_ Bearbeiten
+|_ Berichte
+  |_  Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
+----
+
+<<<
+
+=== XXXLutz
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+XXXLutz
+
+|_ Datenaustausch
+  |_ Datenexport
+    |_ Bearbeiten
+  |_ Auftragsimport
+    |_ Bearbeiten
+|_ Berichte
+  |_  Bearbeiten
+|_ Einstellungen
+|_ Katalog-Vorlagen
+  |_ Bearbeiten
 ----
 
 <<<
@@ -2208,6 +2256,7 @@ legend
 Aufträge
 |_ Aufträge
 |_ Auftragsadressen
+|_ Automatisierung
 |_ Warenausgang buchen
 |_ Buchung
 |_ Auftragseinstellungen
@@ -2230,6 +2279,21 @@ Aufträge
 |_ Seriennummern im Auftrag
 |_ Versand
 |_ Auftragsstatus
+|_ Abonnement
+end legend
+----
+
+<<<
+
+=== Automatisierung
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Automatisierung
+|_ Automatisierung
+|_ Flow starten
 end legend
 ----
 
@@ -2243,6 +2307,7 @@ end legend
 legend
 Dokumente
 |_ Dokumente
+|_ Dpkumente archivieren
 |_ Dokumenteinstellungen
 |_ Dokumente zusammenfügen
 end legend
@@ -2287,6 +2352,7 @@ Gruppenfunktion (neue Auftrags-UI)
 |_ Gruppenfunktion (neue Auftrags-UI)
 |_ Warenausgang buchen
 |_ Warenausgang zurücksetzen
+|_ Markierung
 |_ Lieferdatum
 |_ Versanddatum
 |_ Eigner
@@ -2294,6 +2360,8 @@ Gruppenfunktion (neue Auftrags-UI)
 |_ Versandprofil
 |_ Status
 |_ Tags
+|_ Lager
+|_ Transfer-Lagerort entfernen
 |_ Dokumente
   |_ Korrektubeleg
   |_ Gutschrift
@@ -2301,7 +2369,9 @@ Gruppenfunktion (neue Auftrags-UI)
   |_ Mahnung
   |_ Gelangensbestätigung
   |_ Rechnung
+  |_ Angebot
   |_ Auftragsbestätigung
+  |_ Abhollieferung
   |_ Proformarechnung
   |_ Reparaturschein
   |_ Rücksendeschein
@@ -2311,6 +2381,7 @@ Gruppenfunktion (neue Auftrags-UI)
 |_ Aufträge gruppieren
 |_ Dokumente zusammenfügen
 |_ E-Mail
+|_ Flow starten
 end legend
 ----
 
@@ -2369,13 +2440,20 @@ legend
 Bestellungen
 |_ Bestellungen
 |_ Gruppenfunktion
-  |_ Gruppenfunktion
   |_ Lieferdatum
   |_ Abschlussdatum
   |_ Bestelldatum
   |_ Status
   |_ Löschen
+  |_ Gruppieren
   |_ E-Mail
+|_ Umbuchung
+  |_ Eignerschaft
+  |_ Entsperren
+|_ Nachbestellung
+  |_ Eignerschaft
+  |_ Splitten
+  |_ Entsperren
 |_ Bestellungseinstellungen
 end legend
 ----
@@ -2418,6 +2496,48 @@ end legend
 
 <<<
 
+=== Versand
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Versand
+|_ Versandeinstellungen
+|_ Versandpaket
+  |_ Versandpaket
+  |_ Artikel im Versandpaket
+|_ Pakettyp
+|_ Versandpaletten
+|_ Retourenlabel
+  |_ Retourenlabel
+  |_ Retourendienstleister
+end legend
+----
+
+<<<
+
+=== Abonnement
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Abonnement
+|_ Gruppenfunktion (Abonnement-UI)
+  |_ Versandkosten
+  |_ Versandprofil
+  |_ Status
+  |_ Tags
+  |_ Löschen
+  |_ Sperren
+  |_ Manueller Durchlauf
+  |_ Entsperren
+end legend
+----
+
+<<<
+
 == plentyBI
 
 In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBI aufgelistet.
@@ -2428,6 +2548,7 @@ In diesem Abschnitt werden die Berechtigungen für den Bereich plentyBI aufgelis
 legend
 plentyBI
 |_ Kennzahlen
+  |_ Amazon
   |_ Arithmetik
     |_ Konfigurieren
     |_ Rohdaten anzeigen
@@ -2444,6 +2565,21 @@ end legend
 ----
 
 <<<
+
+=== Amazon
+
+[plantuml, format=png, opts="inline"]
+----
+!include styles/tree-style.iuml
+legend
+Amazon
+|_ Marktplatz-Bestandsinformationen
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+end legend
+----
+
+<<< 
 
 === plentyBI
 
@@ -2468,6 +2604,9 @@ end legend
 legend
 CRM
 |_ Kontakte
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Opportunities
   |_ Konfigurieren
   |_ Rohdaten anzeigen
 end legend
@@ -2565,6 +2704,9 @@ Aufträge
   |_ Konfigurieren
   |_ Rohdaten anzeigen
 |_ Abonnement
+  |_ Konfigurieren
+  |_ Rohdaten anzeigen
+|_ Renner & Penner
   |_ Konfigurieren
   |_ Rohdaten anzeigen
 |_ Umsatzsteuer gesamt
@@ -2882,7 +3024,7 @@ Eignerschaft
   |_ Gruppenoptionen
 |_ Markt
 |_ Name
-|_ Optionen
+|_ Option
 |_ Verknüpfung
   |_ Verknüpfung
   |_ Verknüpfungswert
