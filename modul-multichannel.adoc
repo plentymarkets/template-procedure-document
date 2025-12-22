@@ -8,13 +8,14 @@ Das Softwaremodul plentyChannel dient dem zusätzlichen Vertrieb auf Online-Mark
  * Bestandsabgleich über automatische Prozesse mit zeitlich festlegten Intervallen
  * Produktdatenaustausch über automatische Prozesse mit zeitlich festlegten Intervallen
  * Auftragsimport über automatische Prozesse mit zeitlich festlegten Intervallen
- * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
- * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^]
- * Empfang von Kundennachrichten an zentraler Stelle über das link:https://knowledge.plentyone.com/de-de/manual/main/crm/ticketsystem-nutzen.html[Ticketsystem^]
+ * Übermittlung von Zahlungs- und Versandbestätigungen per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/plentyflow-uebersicht.html[Flow^] oder per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^] oder über automatische Prozesse mit zeitlich festlegten Intervallen
+ * Meldung des Auftragsstatus an Marktplatzkunden per E-Mail per link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/plentyflow-uebersicht.html[Flow^] oder per  link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktion^]
 
 == Verfügbarkeit
 
-Aktuell ist das Softwaremodul plentyChannel in allen von PlentyONE angebotenen Editionen inklusive (Basic, Classic, Flex, Plus, Enterprise).
+Aktuell ist das Softwaremodul plentyChannel in allen PlentyONE Plänen inklusive (Lite, Lite+, Expand, Scale, Ultimate).
+
+// Je nach gebuchtem PlentyONE Plan steht eine unterschiedliche Anzahl von Marktplatzanbindungen zur Verfügung. 
 
 == Dokumentation
 
@@ -23,67 +24,63 @@ Auf Anfrage stellt die PlentyONE GmbH prüfenden Finanzbehörden ältere Version
 
 == Integrierte Kanäle
 
-Die im Modul plentyChannel fest integrierten Online-Marktplätze werden im Menü *Einrichtung » Märkte* eingerichtet. Folgende Online-Marktplätze sind im Modul plentyChannel fest integriert: +
+Die im Modul plentyChannel fest integrierten Online-Marktplätze werden je nach Art der Integration im Menü *Sales Channels » Konten* oder im Menü *Einrichtung » Märkte* eingerichtet. +
+Nicht alle von PlentyONE angebotenen Online-Marktplätze sind im Modul plentyChannel fest integriert. Weitere Märkte stehen in PlentyONE als link:https://knowledge.plentyone.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
 
-Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit PlentyONE verkaufen.
+Die folgenden Online-Marktplätze sind in PlentyONE integriert. Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit PlentyONE verkaufen.
 
 [[online-marktplätze]]
-.Online-Marktplätze
+.Online-Marktplätze in PlentyONE
 |===
-|*Marktplatz*|*In Verwendung*|*Hinweis*
+|*Marktplatz*|*Art der Anbindung*|*In Verwendung*|*Hinweis*
 
-|Amazon|[_Ja/Nein_]|
-|bol.com|[_Ja/Nein_]|
-|Cdiscount|[_Ja/Nein_]|
-|Conrad|[_Ja/Nein_]|
-|Decathlon|[_Ja/Nein_]|
-|eBay|[_Ja/Nein_]|
-|Flubit|[_Ja/Nein_]|
-|Fruugo|[_Ja/Nein_]|
-|GoogleShopping DE|[_Ja/Nein_]|Veraltete Schnittstelle, die nicht mehr verwendet wird.
-|GoogleShopping Int.|[_Ja/Nein_]|
-|grosshandel.eu|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von grosshandel.eu entwickelt.
-|Hood|[_Ja/Nein_]|
-|Kaufland|[_Ja/Nein_]|_früher real.de_
-|Marktkauf|[_Ja/Nein_]|
-|Mercateo|[_Ja/Nein_]|
-|Neckermann.at|[_Ja/Nein_]|
-|Netto|[_Ja/Nein_]|
-|OTTO market|[_Ja/Nein_]|
-|Restposten.de|[_Ja/Nein_]|Die Schnittstellenanbindung wurde von Restposten.de entwickelt.
-|ricardo.ch|[_Ja/Nein_]|
-|Shopgate|[_Ja/Nein_]|
-|Voelkner|[_Ja/Nein_]|
-|Yatego|[_Ja/Nein_]|
-|Zalando|[_Ja/Nein_]|
-|===
-
-Es sind jedoch nicht alle von PlentyONE angebotenen Online-Marktplätze im Modul plentyChannel fest integriert. Weitere Märkte stehen in PlentyONE als link:https://knowledge.plentyone.com/de-de/manual/main/plugins/plugins.html[Plugins^] zur Verfügung und müssen zunächst installiert werden, damit sie im Menü *Einrichtung » Märkte* sichtbar sind und somit eingerichtet werden können. Plugins können im link:https://marketplace.plentymarkets.com/[plentyMarketplace^] heruntergeladen werden.
-
-Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einrichtung » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul plentyChannel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig: +
-
-Tragen Sie in die Tabelle ein, auf welchen Online-Marktplätzen Sie mit PlentyONE verkaufen.
-
-[[online-marktplätze-verkauf]]
-.Verkauf auf Online-Marktplätzen
-[cols="1,3"]
-|===
-|Marktplatz|*In Verwendung*
-
-|CHECK24|[_Ja/Nein_]
-|Google Shopping|[_Ja/Nein_]
-|idealo|[_Ja/Nein_]
-|Kauflux|[_Ja/Nein_]
+|ABOUT YOU|Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|
+|Amazon|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|bol.com|Festintegration im Menü *Einrichtung » Assistenten » Omni-Channel*|[_Ja/Nein_]|
+|Cdiscount|Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|
+|CHECK24|Festintegration im Menü *Einrichtung » Märkte* oder über Plugin|[_Ja/Nein_]|_Der Marktplatz kann über Festintegration oder über Plugin angebunden werden. Die Integration über Plugin ist veraltet. PlentyONE empfiehlt, die Festintegration zu nutzen._
+|Conrad|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Decathlon|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|eBay|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|eMAG|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Etsy|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Fruugo|Plugin|[_Ja/Nein_]|
+|Galaxus.ch|Plugin|[_Ja/Nein_]|_Für Galaxus.ch wird zusätzlich das Plugin *Elastischer Export* benötigt._
+|Galaxus.de|Plugin|[_Ja/Nein_]|_Für Galaxus.de wird zusätzlich das Plugin *Elastischer Export* benötigt._
+|GoogleShopping DE|Plugin|[_Ja/Nein_]|_Veraltete Schnittstelle, die nicht mehr verwendet wird._
+|GoogleShopping Int.|Plugin|[_Ja/Nein_]|
+|idealo|Plugin|[_Ja/Nein_]|_Für idealo wird zusätzlich das Plugin *Elastischer Export* benötigt._
+|Kaufland|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|_früher real.de_
+|Kauflux|Festintegration im Menü *Einrichtung » Märkte* oder über Plugin|[_Ja/Nein_]|_Der Marktplatz kann über Festintegration oder über Plugin angebunden werden. Die Integration über Plugin ist veraltet. PlentyONE empfiehlt, die Festintegration zu nutzen._
+|limango|Plugin|[_Ja/Nein_]|
+|Marktkauf|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|_Um Marktkauf zu nutzen, müssen zusätzlich die Einstellungen für Netto vorgenommen werden._
+|Metro|Plugin oder Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|_Für Metro ist eine alte Integration über Plugin und eine neue Festintegration verfügbar._
+|MediaMarktSaturn|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Neckermann.at/Topagers.de|Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|
+|Netto|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|OBI|Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|
+|OTTO Austria Group|Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|
+|OTTO market|Festintegration im Menü *Einrichtung » Assistenten » Omni-Channel*|[_Ja/Nein_]|
+|refurbed|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Temu|Festintegration im Menü *Sales Channels » Konten*|[_Ja/Nein_]|
+|Voelkner|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Wayfair|Plugin|[_Ja/Nein_]|
+|XXXLutz|Festintegration im Menü *Einrichtung » Märkte*|[_Ja/Nein_]|
+|Zalando|Festintegration im Menü *Einrichtung » Märkte* oder im Menü *Sales Channels » Konten*|[_Ja/Nein_]|_Für Zalando gibt es zwei Integrationen. Beide Integrationen werden mit dem Assistenten *Kontoeinstellungen - Zalando* im Menü *Einrichtung » Assistenten » Omni-Channel* eingerichtet._
 |===
 
-*_Hinweis:_* Für die Märkte CHECK24 und Kauflux können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über link:https://knowledge.plentyone.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge^] wird kein Plugin mehr benötigt.
+Für einige Online-Marktplätze und Preissuchmaschinen, bei denen Daten über den elastischen Export übertragen werden, sind Grundeinstellungen bereits im Menü *Einrichtung » Märkte* fest integriert und konfigurierbar. Für diese Märkte werden jedoch zusätzlich die jeweiligen Datenformate, die als Plugins zur Verfügung stehen, für den elastischen Export benötigt. Für folgende im Modul plentyChannel integrierten Online-Marktplätze sind zusätzlich Plugin-Datenformate für den elastischen Export nötig.
+
+// Tabelle mit Plugins einfügen?
+
+*_Hinweis:_* Für die meisten Marktplätze und Preisportale können Artikeldaten jetzt per Katalogexport übertragen werden. Für den Artikelexport über link:https://knowledge.plentyone.com/de-de/manual/main/daten/catalogues-first-contact.html[Kataloge^] wird kein Plugin mehr benötigt.
 
 == Zusätzliche Marktplatz-Services
 
 Für den Marktplatz Amazon steht der Amazon-Umsatzsteuerservice VCS zur Verfügung. Mit diesem Service können Amazon-Rechnungen durch PlentyONE oder durch Amazon erzeugt werden. +
 Wenn Amazon-Rechnungen durch PlentyONE erzeugt werden, werden diese mit Daten von Amazon erzeugt, automatisch zu Amazon übertragen und bei Amazon gespeichert. Wenn Rechnungen durch Amazon erzeugt werden, werden diese mit Daten von Amazon erzeugt und bei Amazon gespeichert. In beiden Fällen können die Rechnungen nicht nachträglich geändert werden.
 
-Weiterhin steht der Amazon-Service plentyChannel zur Verfügung, womit Aufträge von externen Verkaufskanälen über Amazon abgewickelt werden können.
+Weiterhin steht der Amazon-Service Multi-Channel zur Verfügung, womit Aufträge von externen Verkaufskanälen über Amazon abgewickelt werden können.
 
 == Auftragsherkünfte
 
@@ -93,13 +90,16 @@ Damit über Online-Marktplätze Artikel verkauft, Aufträge generiert und einer 
 
 == Verkauf über plentyChannel
 
-Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. Bei den meisten Online-Marktplätzen müssen zusätzlich PlentyONE Attribute, Kategorien, Merkmale oder Eigenschaften mit den Attributen, Kategorien und Merkmalen des Online-Marktes verknüpft werden. +
+Um Artikel über das Modul plentyChannel verkaufen zu können, müssen zunächst allgemeine Einstellungen vorgenommen werden. Eine Händlerregistrierung beim Online-Marktplatz ist Voraussetzung für den Verkauf von Artikeln. Grundsätzlich gilt für alle Marktplätze, dass zumindest die Artikelverfügbarkeit für die gewünschten Märkte und die jeweilige Auftragsherkunft aktiviert sowie der Verkaufspreis festgelegt wurden. Zudem müssen noch weitere Grundeinstellungen vorgenommen werden, die je nach Marktplatz variieren. +
 
-Bei vielen Marktplätzen können zudem über link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden.
+Bei vielen Marktplätzen können zudem über link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/plentyflow-uebersicht.html[Flows^] oder link:https://knowledge.plentyone.com/de-de/manual/main/automatisierung/ereignisaktionen.html[Ereignisaktionen^] automatisch Informationen zu Versandbestätigungen, Stornierungen, Retouren etc. an die Schnittstelle gesendet werden. +
+*_Hinweis:_* Ereignisaktionen sind veraltet und in neuen Systemen nicht mehr verfügbar.
 
 == Marktplatz-Zahlungsarten
 
 Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtung eines Marktplatzes zur Kennzeichnung von Zahlungseingängen genutzt werden. Die Marktplatz-Zahlungsarten sind automatisch verfügbar, sobald ein aktives Konto für den Marktplatz in PlentyONE existiert. Eine Übersicht zu den Marktplatz-Zahlungsarten finden Sie in der folgenden Tabelle.
+
+// hier Zahlungsarten als veraltet kennzeichnen oder komplett entfernen?
 
 [[marktplatz-zahlungsarten]]
 .Marktplatz-Zahlungsarten
@@ -134,16 +134,16 @@ Marktplatz-Zahlungsarten sind Zahlungsarten, die in Verbindung mit der Einrichtu
 Verkaufspreise werden zentral verwaltet. Informationen zur Preisverwaltung in PlentyONE finden Sie im Kapitel <<#_Preise, Preise>> der Verfahrensdokumentation. Weitere Informationen zu Verkaufspreisen finden Sie im Kapitel link:https://knowledge.plentyone.com/de-de/manual/main/artikel/preise.html[Verkaufspreise^] des PlentyONE Handbuchs. +
 In PlentyONE können beliebig viele Preise erstellt werden und somit können unterschiedliche Preise an die verschiedenen Schnittstellen übertragen werden. Damit Preise zu den Online-Marktplätzen übertragen werden können, müssen die Preise zunächst mit der Auftragsherkunft verknüpft werden. Für eBay und Amazon müssen zusätzlich die Plattform-Konten mit dem Verkaufspreis verknüpft sein, damit Preise übertragen werden. Verkaufspreise können auch als Aktionspreis gekennzeichnet werden. Aktionspreise werden z.B. für Marktplätze wie Amazon verwendet. Preisänderungen können manuell oder automatisch an die Schnittstellen übertragen werden.
 
-Die Marktplätze eBay, Hood und ricardo.ch bilden bei der Preisbildung eine Ausnahme. Auf diesen Märkten werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
+Der Marktplatz eBay bildet bei der Preisbildung eine Ausnahme. Bei eBay werden Listings vom Typ *Auktion* oder *Festpreis* zum Verkauf angeboten. +
 Auf Listings vom Typ *Auktion* kann geboten werden. Diese Listings werden mit einem Startpreis gestartet und an den Höchstbietenden verkauft. Listings vom Typ *Festpreis* werden zu einem festgelegten Preis angeboten. +
 Ob ein Listing mit einem Festpreis oder in einer Auktion angeboten werden soll, wird im Artikel oder im Listing in PlentyONE eingestellt.
 
 == Datenaustausch
 
-Daten können in PlentyONE automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten bei einigen Marktplätzen und Preisportalen mit dem Katalogexport übertragen werden. +
+Daten können in PlentyONE automatisch über REST-API und FTP-Server oder manuell über das Import-Tool und den elastischen Export mit den Schnittstellen ausgetauscht werden. Außerdem können Daten bei den meisten Marktplätzen und Preisportalen mit dem Katalogexport übertragen werden. +
 Im Log und API-Log kann anhand von Log-Einträgen der Datenaustausch nachvollzogen werden.
 
-[[datenaustausch-markplätze]]
+[[datenaustausch-marktplätze]]
 .Datenaustausch mit Marktplätzen
 [cols="1,3"]
 |===
@@ -160,30 +160,18 @@ Export über Kataloge
 |Decathlon|Import über REST-API mit XML-Dateien +
 Export über Kataloge
 |eBay|Im- und Export über REST-API mit XML-Dateien
-|Flubit|Im- und Export über REST-API mit JSON
 |Fruugo|Export über Kataloge
 |GoogleShopping Int.|Export über elastischen Export
-|grosshandel.eu|Im- und Export über SOAP-API
-|Hood|Im- und Export über REST-API mit XML-Dateien
 |idealo|Export über elastischen Export und REST-API mit JSON; Export über Kataloge
 |Kaufland|Im- und Export über REST-API mit CSV-Datei; Export über Kataloge
 |Kauflux|Export über elastischen Export; Export über Kataloge +
  Import über REST-API mit XML-Datei
 |Marktkauf|Im- und Export über FTP-Server mit XML-Datei
-|Mercateo|Export über FTP-Server mit XML-Datei +
- Import über E-Mail
-|Neckermann.at|Im- und Export über FTP-Server mit XML-Datei
-|Netto eStores|Im- und Export über SFTP-Server mit XML-Datei
-|OTTO|Im- und Export über FTP-Server mit XML-Datei
+|Netto|Im- und Export über SFTP-Server mit XML-Datei
 |OTTO Market|Import über REST-API mit JSON +
 Export über Kataloge
-|Restposten.de|Im- und Export über SOAP-API
-|ricardo.ch|Im- und Export über SOAP-API mit XML-Dateien
-|Shopgate|Im- und Export über REST-API mit CSV-Datei
 |Voelkner|Import über REST-API mit XML-Dateien +
 Export über Kataloge
-|Yatego|Export über FTP-Server mit CSV-Datei +
- Import über REST-API
 |Zalando|Im- und Export über REST-API mit XML-Datei
 |===
 
